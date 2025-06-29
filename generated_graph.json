@@ -1,0 +1,822 @@
+{
+  "R": [
+    {
+      "E1": "Ezra Edwards",
+      "E2": "Noa Middleton",
+      "R": [
+        {
+          "time": "2025-09-13",
+          "relationship": "demonstrated skills to / received approval from",
+          "event": "Ezra Edwards demonstrated cat leaps at the parkour workshop, and Noa Middleton, the lead instructor, nodded approvingly."
+        }
+      ]
+    },
+    {
+      "E1": "Mara Ledbetter",
+      "E2": "Ezra Edwards",
+      "R": [
+        {
+          "time": "2025-09-13",
+          "relationship": "saved from falling / assisted",
+          "event": "Ezra Edwards instinctively reached out to help Mara Ledbetter when they stumbled on a tricky jump."
+        }
+      ]
+    },
+    {
+      "E1": "Chloe Castillo",
+      "E2": "Sienna Hamrick",
+      "R": [
+        {
+          "time": "2026-09-22",
+          "relationship": "designer/audience",
+          "event": "Chloe Castillo presented her magical fashion show, with Sienna Hamrick watching eagerly from the front row."
+        }
+      ]
+    },
+    {
+      "E1": "Chloe Castillo",
+      "E2": "Reid Blunt",
+      "R": [
+        {
+          "time": "2026-09-22",
+          "relationship": "designer/audience-interactor",
+          "event": "Reid Blunt interacted with Chloe Castillo's magical creations, having their clothing transformed during the show."
+        }
+      ]
+    },
+    {
+      "E1": "Henry Reed",
+      "E2": "Ronan Guevara",
+      "R": [
+        {
+          "time": "2026-09-22",
+          "relationship": "observer/suspect",
+          "event": "Henry Reed overheard a hushed conversation between Ronan Guevara and Miles Pritchett at the photography exhibition, sparking his suspicion."
+        }
+      ]
+    },
+    {
+      "E1": "Henry Reed",
+      "E2": "Miles Pritchett",
+      "R": [
+        {
+          "time": "2026-09-22",
+          "relationship": "observer/suspect",
+          "event": "Henry Reed overheard a hushed conversation between Miles Pritchett and Ronan Guevara at the photography exhibition."
+        }
+      ]
+    },
+    {
+      "E1": "Henry Reed",
+      "E2": "Amira Hayes",
+      "R": [
+        {
+          "time": "2026-09-22",
+          "relationship": "observer/subject of interest",
+          "event": "Henry Reed noticed Amira Hayes studying a photograph intently and decided to investigate further."
+        }
+      ]
+    },
+    {
+      "E1": "Zoe Brown",
+      "E2": "Alma Aultman",
+      "R": [
+        {
+          "time": "2024-05-07",
+          "relationship": "performer/audience",
+          "event": "Alma Aultman greeted Zoe Brown at the open mic event."
+        }
+      ]
+    },
+    {
+      "E1": "Zoe Brown",
+      "E2": "Alondra Wilkinson",
+      "R": [
+        {
+          "time": "2024-05-07",
+          "relationship": "performer/observer",
+          "event": "Alondra Wilkinson watched Zoe Brown's performance intently from the shadows."
+        }
+      ]
+    },
+    {
+      "E1": "Logan Diaz",
+      "E2": "Meredith Gardner",
+      "R": [
+        {
+          "time": "2024-03-23",
+          "relationship": "networking/romantic interest",
+          "event": "Logan Diaz and Meredith Gardner exchanged champagne and shared a moment of connection at the networking event."
+        }
+      ]
+    },
+    {
+      "E1": "Logan Diaz",
+      "E2": "Uri Wemple",
+      "R": [
+        {
+          "time": "2024-03-23",
+          "relationship": "networking/colleague",
+          "event": "Logan Diaz and Uri Wemple exchanged business cards and had a meaningful conversation at the networking event."
+        }
+      ]
+    },
+    {
+      "E1": "Julian Ross",
+      "E2": "Hezekiah Bean",
+      "R": [
+        {
+          "time": "2024-05-31",
+          "relationship": "mentor/colleague",
+          "event": "Hezekiah Bean approached Julian Ross with a security concern at the hackathon."
+        }
+      ]
+    },
+    {
+      "E1": "Julian Ross",
+      "E2": "Sienna Lyles",
+      "R": [
+        {
+          "time": "2024-05-31",
+          "relationship": "mentor/security lead",
+          "event": "Julian Ross and Sienna Lyles collaborated to investigate a security breach at the hackathon."
+        }
+      ]
+    },
+    {
+      "E1": "Benjamin Green",
+      "E2": "Dakari Liebert",
+      "R": [
+        {
+          "time": "2026-02-27",
+          "relationship": "participant/organizer",
+          "event": "Dakari Liebert organized the ice sculpture exhibition attended by Benjamin Green."
+        }
+      ]
+    },
+    {
+      "E1": "Benjamin Green",
+      "E2": "Creed Berlin",
+      "R": [
+        {
+          "time": "2026-02-27",
+          "relationship": "participant/observer",
+          "event": "Creed Berlin discussed the ice sculptures with Benjamin Green, unaware of his expertise."
+        }
+      ]
+    },
+    {
+      "E1": "Owen Thomas",
+      "E2": "Lilah Hamilton",
+      "R": [
+        {
+          "time": "2025-09-27",
+          "relationship": "student/instructor",
+          "event": "Owen Thomas participated in spatial awareness exercises led by Lilah Hamilton at the parkour workshop."
+        }
+      ]
+    },
+    {
+      "E1": "Owen Thomas",
+      "E2": "Axl Mims",
+      "R": [
+        {
+          "time": "2025-09-27",
+          "relationship": "student/helper",
+          "event": "Axl Mims helped Owen Thomas up after he fell during the parkour workshop."
+        }
+      ]
+    },
+    {
+      "E1": "Owen Thomas",
+      "E2": "Rocco Cormier",
+      "R": [
+        {
+          "time": "2025-09-27",
+          "relationship": "student/peer",
+          "event": "Rocco Cormier encouraged Owen Thomas at the parkour workshop."
+        }
+      ]
+    },
+    {
+      "E1": "Mila Gonzalez",
+      "E2": "Diem Nix",
+      "R": [
+        {
+          "time": "2026-02-27",
+          "relationship": "performer/mentor",
+          "event": "Diem Nix watched and approved Mila Gonzalez's dramatic performance."
+        }
+      ]
+    },
+    {
+      "E1": "Mila Gonzalez",
+      "E2": "Eli Groth",
+      "R": [
+        {
+          "time": "2026-02-27",
+          "relationship": "performer/audience",
+          "event": "Eli Groth praised Mila Gonzalez's performance."
+        }
+      ]
+    },
+    {
+      "E1": "Mila Gonzalez",
+      "E2": "Rey Pierre",
+      "R": [
+        {
+          "time": "2026-02-27",
+          "relationship": "performer/prophet",
+          "event": "Rey Pierre told Mila Gonzalez she had awakened something ancient with her performance."
+        }
+      ]
+    },
+    {
+      "E1": "Henry Reed",
+      "E2": "Zander Davenport",
+      "R": [
+        {
+          "time": "2024-10-13",
+          "relationship": "co-organizer",
+          "event": "Henry Reed and Zander Davenport organized the film festival on the Queensboro Bridge."
+        }
+      ]
+    },
+    {
+      "E1": "Henry Reed",
+      "E2": "Oakley Goetz",
+      "R": [
+        {
+          "time": "2024-10-13",
+          "relationship": "organizer/assistant",
+          "event": "Oakley Goetz informed Henry Reed about the missing Hitchcock poster at the film festival."
+        }
+      ]
+    },
+    {
+      "E1": "Henry Reed",
+      "E2": "Jonah Kramer",
+      "R": [
+        {
+          "time": "2026-05-11",
+          "relationship": "visitor/companion",
+          "event": "Jonah Kramer and Henry Reed enjoyed the ice sculpture exhibition together."
+        }
+      ]
+    },
+    {
+      "E1": "Henry Reed",
+      "E2": "Karsyn Schaeffer",
+      "R": [
+        {
+          "time": "2026-05-11",
+          "relationship": "visitor/instructor",
+          "event": "Karsyn Schaeffer taught Henry Reed how to carve ice at the exhibition."
+        }
+      ]
+    },
+    {
+      "E1": "Chloe Castillo",
+      "E2": "Luka Shaffer",
+      "R": [
+        {
+          "time": "2026-05-11",
+          "relationship": "workshop leader/participant",
+          "event": "Luka Shaffer screamed during Chloe Castillo's parkour workshop when a sculpture moved."
+        }
+      ]
+    },
+    {
+      "E1": "Scarlett Thomas",
+      "E2": "Meredith Lester",
+      "R": [
+        {
+          "time": "2024-10-13",
+          "relationship": "organizer/attendee",
+          "event": "Scarlett Thomas organized the craft beer festival attended by Meredith Lester."
+        }
+      ]
+    },
+    {
+      "E1": "Scarlett Thomas",
+      "E2": "Presley Lunt",
+      "R": [
+        {
+          "time": "2024-10-13",
+          "relationship": "organizer/attendee",
+          "event": "Scarlett Thomas avoided a collision with Presley Lunt at the beer festival."
+        }
+      ]
+    },
+    {
+      "E1": "Scarlett Thomas",
+      "E2": "Kali Newcomb",
+      "R": [
+        {
+          "time": "2024-10-13",
+          "relationship": "organizer/educator",
+          "event": "Kali Newcomb explained sour beer to Ronan Francois at Scarlett Thomas's festival."
+        }
+      ]
+    },
+    {
+      "E1": "Scarlett Thomas",
+      "E2": "Ronan Francois",
+      "R": [
+        {
+          "time": "2024-10-13",
+          "relationship": "organizer/attendee",
+          "event": "Scarlett Thomas observed Ronan Francois at the beer festival."
+        }
+      ]
+    },
+    {
+      "E1": "Scarlett Thomas",
+      "E2": "Cora Xiong",
+      "R": [
+        {
+          "time": "2024-10-13",
+          "relationship": "organizer/attendee",
+          "event": "Scarlett Thomas intervened in a debate involving Cora Xiong at the beer festival."
+        }
+      ]
+    },
+    {
+      "E1": "Scarlett Thomas",
+      "E2": "Nyla Bower",
+      "R": [
+        {
+          "time": "2024-10-13",
+          "relationship": "organizer/assistant",
+          "event": "Nyla Bower demonstrated homebrewing at Scarlett Thomas's festival."
+        }
+      ]
+    },
+    {
+      "E1": "Scarlett Thomas",
+      "E2": "Delphi Parent",
+      "R": [
+        {
+          "time": "2024-10-13",
+          "relationship": "organizer/attendee",
+          "event": "Scarlett Thomas consoled Delphi Parent at the beer festival."
+        }
+      ]
+    },
+    {
+      "E1": "Benjamin Green",
+      "E2": "Genevieve Burgin",
+      "R": [
+        {
+          "time": "2026-04-09",
+          "relationship": "collaborators/romantic interest",
+          "event": "Benjamin Green and Genevieve Burgin formed a developer team and developed a romantic connection at the hackathon."
+        }
+      ]
+    },
+    {
+      "E1": "Levi Rodriguez",
+      "E2": "Quill Womack",
+      "R": [
+        {
+          "time": "2026-12-26",
+          "relationship": "host/attendee",
+          "event": "Quill Womack approached Levi Rodriguez at the planetarium event."
+        }
+      ]
+    },
+    {
+      "E1": "Levi Rodriguez",
+      "E2": "audience",
+      "R": [
+        {
+          "time": "2026-12-26",
+          "relationship": "host/participants",
+          "event": "Levi Rodriguez hosted astronomy trivia contests for the planetarium audience."
+        }
+      ]
+    },
+    {
+      "E1": "Zoe Brown",
+      "E2": "Remy Waterman",
+      "R": [
+        {
+          "time": "2024-03-23",
+          "relationship": "hackathon participants/romantic interest",
+          "event": "Zoe Brown and Remy Waterman exchanged ideas and developed a mutual attraction at the Port Jefferson hackathon."
+        }
+      ]
+    },
+    {
+      "E1": "Mila Gonzalez",
+      "E2": "Nash Ensign",
+      "R": [
+        {
+          "time": "2026-01-03",
+          "relationship": "collaborators/confidants",
+          "event": "Mila Gonzalez and Nash Ensign had an intense conversation during intermission at the St. Patrick's Cathedral performance."
+        }
+      ]
+    },
+    {
+      "E1": "Jackson Ramos",
+      "E2": "Israel Gallo",
+      "R": [
+        {
+          "time": "2026-02-27",
+          "relationship": "colleagues/discussed funding",
+          "event": "Jackson Ramos discussed theater funding with Israel Gallo before attending the performance."
+        }
+      ]
+    },
+    {
+      "E1": "Hazel Lewis",
+      "E2": "Sol Schiller",
+      "R": [
+        {
+          "time": "2026-09-03",
+          "relationship": "organizer/participant",
+          "event": "Hazel Lewis observed Sol Schiller's unsettling behavior at the historical fashion reenactment."
+        }
+      ]
+    },
+    {
+      "E1": "Hazel Lewis",
+      "E2": "Octavia Talley",
+      "R": [
+        {
+          "time": "2026-09-03",
+          "relationship": "organizer/participant",
+          "event": "Hazel Lewis found Octavia Talley motionless on the Brooklyn Bridge during the temporal chaos."
+        }
+      ]
+    }
+  ],
+  "L": [
+    {
+      "Label": "Parkour Instructor",
+      "Entity": "Noa Middleton",
+      "time": "2025-09-13"
+    },
+    {
+      "Label": "Parkour Athlete",
+      "Entity": "Ezra Edwards",
+      "time": "2025-09-13"
+    },
+    {
+      "Label": "Parkour Participant",
+      "Entity": "Mara Ledbetter",
+      "time": "2025-09-13"
+    },
+    {
+      "Label": "Location",
+      "Entity": "Bethpage Black Course",
+      "time": "2025-09-13"
+    },
+    {
+      "Label": "Parkour Instructor",
+      "Entity": "Lilah Hamilton",
+      "time": "2025-09-27"
+    },
+    {
+      "Label": "Parkour Student",
+      "Entity": "Owen Thomas",
+      "time": "2025-09-27"
+    },
+    {
+      "Label": "Parkour Participant",
+      "Entity": "Rocco Cormier",
+      "time": "2025-09-27"
+    },
+    {
+      "Label": "Parkour Participant",
+      "Entity": "Axl Mims",
+      "time": "2025-09-27"
+    },
+    {
+      "Label": "Location",
+      "Entity": "Snug Harbor Cultural Center",
+      "time": "2025-09-27"
+    },
+    {
+      "Label": "Fashion Designer",
+      "Entity": "Chloe Castillo",
+      "time": "2026-09-22"
+    },
+    {
+      "Label": "Fashion Show Audience",
+      "Entity": "Sienna Hamrick",
+      "time": "2026-09-22"
+    },
+    {
+      "Label": "Fashion Show Audience",
+      "Entity": "Reid Blunt",
+      "time": "2026-09-22"
+    },
+    {
+      "Label": "Location",
+      "Entity": "American Museum of Natural History",
+      "time": "2026-09-22"
+    },
+    {
+      "Label": "Detective",
+      "Entity": "Henry Reed",
+      "time": "2026-09-22"
+    },
+    {
+      "Label": "Photographer",
+      "Entity": "Henry Reed",
+      "time": "2026-09-22"
+    },
+    {
+      "Label": "Photography Exhibition Participant",
+      "Entity": "Ronan Guevara",
+      "time": "2026-09-22"
+    },
+    {
+      "Label": "Photography Exhibition Participant",
+      "Entity": "Miles Pritchett",
+      "time": "2026-09-22"
+    },
+    {
+      "Label": "Photography Exhibition Audience",
+      "Entity": "Amira Hayes",
+      "time": "2026-09-22"
+    },
+    {
+      "Label": "Performer",
+      "Entity": "Zoe Brown",
+      "time": "2024-05-07"
+    },
+    {
+      "Label": "Open Mic Audience",
+      "Entity": "Alma Aultman",
+      "time": "2024-05-07"
+    },
+    {
+      "Label": "Open Mic Audience",
+      "Entity": "Alondra Wilkinson",
+      "time": "2024-05-07"
+    },
+    {
+      "Label": "Location",
+      "Entity": "Hither Hills State Park",
+      "time": "2024-05-07"
+    },
+    {
+      "Label": "Networker",
+      "Entity": "Logan Diaz",
+      "time": "2024-03-23"
+    },
+    {
+      "Label": "Networking Event Attendee",
+      "Entity": "Meredith Gardner",
+      "time": "2024-03-23"
+    },
+    {
+      "Label": "Networking Event Attendee",
+      "Entity": "Uri Wemple",
+      "time": "2024-03-23"
+    },
+    {
+      "Label": "Location",
+      "Entity": "High Line",
+      "time": "2024-03-23"
+    },
+    {
+      "Label": "Hackathon Mentor",
+      "Entity": "Julian Ross",
+      "time": "2024-05-31"
+    },
+    {
+      "Label": "Hackathon Participant",
+      "Entity": "Hezekiah Bean",
+      "time": "2024-05-31"
+    },
+    {
+      "Label": "Hackathon Security Lead",
+      "Entity": "Sienna Lyles",
+      "time": "2024-05-31"
+    },
+    {
+      "Label": "Location",
+      "Entity": "Woolworth Building",
+      "time": "2024-05-31"
+    },
+    {
+      "Label": "Ice Preservation Expert",
+      "Entity": "Benjamin Green",
+      "time": "2026-02-27"
+    },
+    {
+      "Label": "Ice Sculpture Event Organizer",
+      "Entity": "Dakari Liebert",
+      "time": "2026-02-27"
+    },
+    {
+      "Label": "Ice Sculpture Enthusiast",
+      "Entity": "Creed Berlin",
+      "time": "2026-02-27"
+    },
+    {
+      "Label": "Location",
+      "Entity": "Washington Square Park",
+      "time": "2026-02-27"
+    },
+    {
+      "Label": "Dramatic Performer",
+      "Entity": "Mila Gonzalez",
+      "time": "2026-02-27"
+    },
+    {
+      "Label": "Performance Mentor",
+      "Entity": "Diem Nix",
+      "time": "2026-02-27"
+    },
+    {
+      "Label": "Audience",
+      "Entity": "Eli Groth",
+      "time": "2026-02-27"
+    },
+    {
+      "Label": "Prophet",
+      "Entity": "Rey Pierre",
+      "time": "2026-02-27"
+    },
+    {
+      "Label": "Location",
+      "Entity": "Statue of Liberty",
+      "time": "2026-02-27"
+    },
+    {
+      "Label": "Film Festival Organizer",
+      "Entity": "Henry Reed",
+      "time": "2024-10-13"
+    },
+    {
+      "Label": "Film Festival Organizer",
+      "Entity": "Zander Davenport",
+      "time": "2024-10-13"
+    },
+    {
+      "Label": "Film Festival Assistant",
+      "Entity": "Oakley Goetz",
+      "time": "2024-10-13"
+    },
+    {
+      "Label": "Location",
+      "Entity": "Queensboro Bridge",
+      "time": "2024-10-13"
+    },
+    {
+      "Label": "Ice Sculpture Exhibition Visitor",
+      "Entity": "Jonah Kramer",
+      "time": "2026-05-11"
+    },
+    {
+      "Label": "Ice Sculptor",
+      "Entity": "Karsyn Schaeffer",
+      "time": "2026-05-11"
+    },
+    {
+      "Label": "Parkour Workshop Leader",
+      "Entity": "Chloe Castillo",
+      "time": "2026-05-11"
+    },
+    {
+      "Label": "Parkour Workshop Participant",
+      "Entity": "Luka Shaffer",
+      "time": "2026-05-11"
+    },
+    {
+      "Label": "Craft Beer Festival Organizer",
+      "Entity": "Scarlett Thomas",
+      "time": "2024-10-13"
+    },
+    {
+      "Label": "Craft Beer Festival Attendee",
+      "Entity": "Meredith Lester",
+      "time": "2024-10-13"
+    },
+    {
+      "Label": "Craft Beer Festival Attendee",
+      "Entity": "Presley Lunt",
+      "time": "2024-10-13"
+    },
+    {
+      "Label": "Beer Educator",
+      "Entity": "Kali Newcomb",
+      "time": "2024-10-13"
+    },
+    {
+      "Label": "Beer Festival Attendee",
+      "Entity": "Ronan Francois",
+      "time": "2024-10-13"
+    },
+    {
+      "Label": "Beer Festival Attendee",
+      "Entity": "Cora Xiong",
+      "time": "2024-10-13"
+    },
+    {
+      "Label": "Homebrewing Workshop Assistant",
+      "Entity": "Nyla Bower",
+      "time": "2024-10-13"
+    },
+    {
+      "Label": "Beer Festival Attendee",
+      "Entity": "Delphi Parent",
+      "time": "2024-10-13"
+    },
+    {
+      "Label": "Developer",
+      "Entity": "Benjamin Green",
+      "time": "2026-04-09"
+    },
+    {
+      "Label": "Developer",
+      "Entity": "Genevieve Burgin",
+      "time": "2026-04-09"
+    },
+    {
+      "Label": "Planetarium Host",
+      "Entity": "Levi Rodriguez",
+      "time": "2026-12-26"
+    },
+    {
+      "Label": "Astronomy Event Attendee",
+      "Entity": "Quill Womack",
+      "time": "2026-12-26"
+    },
+    {
+      "Label": "Hackathon Participant",
+      "Entity": "Zoe Brown",
+      "time": "2024-03-23"
+    },
+    {
+      "Label": "Hackathon Participant",
+      "Entity": "Remy Waterman",
+      "time": "2024-03-23"
+    },
+    {
+      "Label": "Theater Audience",
+      "Entity": "Mila Gonzalez",
+      "time": "2026-01-03"
+    },
+    {
+      "Label": "Theater Audience",
+      "Entity": "Josephine Gaither",
+      "time": "2026-01-03"
+    },
+    {
+      "Label": "Theater Actor",
+      "Entity": "Kylee Beard",
+      "time": "2026-01-03"
+    },
+    {
+      "Label": "Theater Actor",
+      "Entity": "Nylah Zavala",
+      "time": "2026-01-03"
+    },
+    {
+      "Label": "Theater Audience",
+      "Entity": "Nash Ensign",
+      "time": "2026-01-03"
+    },
+    {
+      "Label": "Location",
+      "Entity": "St. Patrick's Cathedral",
+      "time": "2026-01-03"
+    },
+    {
+      "Label": "Theater Audience",
+      "Entity": "Jackson Ramos",
+      "time": "2026-02-27"
+    },
+    {
+      "Label": "Theater Funding Advocate",
+      "Entity": "Israel Gallo",
+      "time": "2026-02-27"
+    },
+    {
+      "Label": "Historical Fashion Show Organizer",
+      "Entity": "Hazel Lewis",
+      "time": "2026-09-03"
+    },
+    {
+      "Label": "Historical Fashion Show Participant",
+      "Entity": "Sol Schiller",
+      "time": "2026-09-03"
+    },
+    {
+      "Label": "Historical Fashion Show Participant",
+      "Entity": "Octavia Talley",
+      "time": "2026-09-03"
+    },
+    {
+      "Label": "Location",
+      "Entity": "Brooklyn Bridge",
+      "time": "2026-09-03"
+    }
+  ]
+}
