@@ -1,0 +1,649 @@
+{
+  "nodes": [
+    {
+      "id": "1",
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Ezra Edwards"
+      }
+    },
+    {
+      "id": "2",
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Noa Middleton"
+      }
+    },
+    {
+      "id": "3",
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Mara Ledbetter"
+      }
+    },
+    {
+      "id": "4",
+      "labels": [
+        "Place"
+      ],
+      "properties": {
+        "name": "Bethpage Black Course"
+      }
+    },
+    {
+      "id": "5",
+      "labels": [
+        "Event"
+      ],
+      "properties": {
+        "name": "Parkour Workshop",
+        "date": "September 13, 2025"
+      }
+    },
+    {
+      "id": "6",
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Chloe Castillo"
+      }
+    },
+    {
+      "id": "7",
+      "labels": [
+        "Place"
+      ],
+      "properties": {
+        "name": "American Museum of Natural History"
+      }
+    },
+    {
+      "id": "8",
+      "labels": [
+        "Event"
+      ],
+      "properties": {
+        "name": "Fashion Show",
+        "date": "September 22, 2026"
+      }
+    },
+    {
+      "id": "9",
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Sienna Hamrick"
+      }
+    },
+    {
+      "id": "10",
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Reid Blunt"
+      }
+    },
+    {
+      "id": "11",
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Henry Reed"
+      }
+    },
+    {
+      "id": "12",
+      "labels": [
+        "Place"
+      ],
+      "properties": {
+        "name": "Port Jefferson"
+      }
+    },
+    {
+      "id": "13",
+      "labels": [
+        "Event"
+      ],
+      "properties": {
+        "name": "Photography Exhibition",
+        "date": "September 22, 2026"
+      }
+    },
+    {
+      "id": "14",
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Ronan Guevara"
+      }
+    },
+    {
+      "id": "15",
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Miles Pritchett"
+      }
+    },
+    {
+      "id": "16",
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Amira Hayes"
+      }
+    },
+    {
+      "id": "17",
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Zoe Brown"
+      }
+    },
+    {
+      "id": "18",
+      "labels": [
+        "Place"
+      ],
+      "properties": {
+        "name": "Hither Hills State Park"
+      }
+    },
+    {
+      "id": "19",
+      "labels": [
+        "Event"
+      ],
+      "properties": {
+        "name": "Music Performance",
+        "date": "May 07, 2024"
+      }
+    },
+    {
+      "id": "20",
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Alma Aultman"
+      }
+    },
+    {
+      "id": "21",
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Alondra Wilkinson"
+      }
+    },
+    {
+      "id": "22",
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Logan Diaz"
+      }
+    },
+    {
+      "id": "23",
+      "labels": [
+        "Place"
+      ],
+      "properties": {
+        "name": "High Line"
+      }
+    },
+    {
+      "id": "24",
+      "labels": [
+        "Event"
+      ],
+      "properties": {
+        "name": "Networking Event",
+        "date": "March 23, 2024"
+      }
+    },
+    {
+      "id": "25",
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Meredith Gardner"
+      }
+    },
+    {
+      "id": "26",
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Uri Wemple"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "start_node_id": "1",
+      "end_node_id": "5",
+      "type": "PERFORMED_AT",
+      "properties": {
+        "event": "Parkour Workshop",
+        "date": "September 13, 2025"
+      }
+    },
+    {
+      "start_node_id": "2",
+      "end_node_id": "4",
+      "type": "INSTRUCTED",
+      "properties": {
+        "event": "Parkour Workshop",
+        "date": "September 13, 2025"
+      }
+    },
+    {
+      "start_node_id": "3",
+      "end_node_id": "4",
+      "type": "PARTICIPATED_IN",
+      "properties": {
+        "event": "Parkour Workshop",
+        "date": "September 13, 2025"
+      }
+    },
+    {
+      "start_node_id": "6",
+      "end_node_id": "7",
+      "type": "ORGANIZED",
+      "properties": {
+        "event": "Fashion Show",
+        "date": "September 22, 2026"
+      }
+    },
+    {
+      "start_node_id": "6",
+      "end_node_id": "8",
+      "type": "TRANSFORMED",
+      "properties": {
+        "event": "Fashion Show",
+        "date": "September 22, 2026"
+      }
+    },
+    {
+      "start_node_id": "9",
+      "end_node_id": "7",
+      "type": "ATTENDED",
+      "properties": {
+        "event": "Fashion Show",
+        "date": "September 22, 2026"
+      }
+    },
+    {
+      "start_node_id": "10",
+      "end_node_id": "7",
+      "type": "EXPERIENCED",
+      "properties": {
+        "event": "Fashion Show",
+        "date": "September 22, 2026"
+      }
+    },
+    {
+      "start_node_id": "1",
+      "end_node_id": "4",
+      "type": "PERFORMED_AT",
+      "properties": {
+        "event": "Parkour Workshop"
+      }
+    },
+    {
+      "start_node_id": "2",
+      "end_node_id": "4",
+      "type": "INSTRUCTED_AT",
+      "properties": {
+        "event": "Parkour Workshop"
+      }
+    },
+    {
+      "start_node_id": "3",
+      "end_node_id": "4",
+      "type": "PARTICIPATED_AT",
+      "properties": {
+        "event": "Parkour Workshop"
+      }
+    },
+    {
+      "start_node_id": "6",
+      "end_node_id": "7",
+      "type": "DESIGNED_AT",
+      "properties": {
+        "event": "Fashion Show"
+      }
+    },
+    {
+      "start_node_id": "9",
+      "end_node_id": "7",
+      "type": "ATTENDED",
+      "properties": {
+        "event": "Fashion Show"
+      }
+    },
+    {
+      "start_node_id": "10",
+      "end_node_id": "7",
+      "type": "TRANSFORMED_AT",
+      "properties": {
+        "event": "Fashion Show"
+      }
+    },
+    {
+      "start_node_id": "11",
+      "end_node_id": "12",
+      "type": "VISITED",
+      "properties": {
+        "event": "Photography Exhibition"
+      }
+    },
+    {
+      "start_node_id": "14",
+      "end_node_id": "12",
+      "type": "DISCUSSED_AT",
+      "properties": {
+        "event": "Photography Exhibition"
+      }
+    },
+    {
+      "start_node_id": "15",
+      "end_node_id": "12",
+      "type": "DISCUSSED_AT",
+      "properties": {
+        "event": "Photography Exhibition"
+      }
+    },
+    {
+      "start_node_id": "16",
+      "end_node_id": "12",
+      "type": "STUDIED_AT",
+      "properties": {
+        "event": "Photography Exhibition"
+      }
+    },
+    {
+      "start_node_id": "17",
+      "end_node_id": "18",
+      "type": "PERFORMED_AT",
+      "properties": {
+        "event": "Music Performance"
+      }
+    },
+    {
+      "start_node_id": "20",
+      "end_node_id": "18",
+      "type": "ATTENDED",
+      "properties": {
+        "event": "Music Performance"
+      }
+    },
+    {
+      "start_node_id": "21",
+      "end_node_id": "18",
+      "type": "OBSERVED",
+      "properties": {
+        "event": "Music Performance"
+      }
+    },
+    {
+      "start_node_id": "22",
+      "end_node_id": "23",
+      "type": "ATTENDED",
+      "properties": {
+        "event": "Networking Event"
+      }
+    },
+    {
+      "start_node_id": "25",
+      "end_node_id": "23",
+      "type": "APPROACHED",
+      "properties": {
+        "event": "Networking Event"
+      }
+    },
+    {
+      "start_node_id": "26",
+      "end_node_id": "23",
+      "type": "CONVERSED_AT",
+      "properties": {
+        "event": "Networking Event"
+      }
+    },
+    {
+      "start_node_id": "1",
+      "end_node_id": "4",
+      "type": "PERFORMED_AT",
+      "properties": {
+        "event": "Parkour Workshop",
+        "date": "September 13, 2025"
+      }
+    },
+    {
+      "start_node_id": "2",
+      "end_node_id": "4",
+      "type": "INSTRUCTED_AT",
+      "properties": {
+        "event": "Parkour Workshop",
+        "date": "September 13, 2025"
+      }
+    },
+    {
+      "start_node_id": "3",
+      "end_node_id": "4",
+      "type": "PARTICIPATED_AT",
+      "properties": {
+        "event": "Parkour Workshop",
+        "date": "September 13, 2025"
+      }
+    },
+    {
+      "start_node_id": "6",
+      "end_node_id": "7",
+      "type": "HOSTED_AT",
+      "properties": {
+        "event": "Fashion Show",
+        "date": "September 22, 2026"
+      }
+    },
+    {
+      "start_node_id": "9",
+      "end_node_id": "8",
+      "type": "ATTENDED",
+      "properties": {
+        "role": "Audience Member"
+      }
+    },
+    {
+      "start_node_id": "10",
+      "end_node_id": "8",
+      "type": "TRANSFORMED_AT",
+      "properties": {
+        "event": "Fashion Show",
+        "date": "September 22, 2026"
+      }
+    },
+    {
+      "start_node_id": "1",
+      "end_node_id": "4",
+      "type": "PERFORMED_AT",
+      "properties": {
+        "event": "Parkour Workshop",
+        "date": "September 13, 2025"
+      }
+    },
+    {
+      "start_node_id": "2",
+      "end_node_id": "4",
+      "type": "INSTRUCTED_AT",
+      "properties": {
+        "event": "Parkour Workshop",
+        "date": "September 13, 2025"
+      }
+    },
+    {
+      "start_node_id": "3",
+      "end_node_id": "4",
+      "type": "PARTICIPATED_AT",
+      "properties": {
+        "event": "Parkour Workshop",
+        "date": "September 13, 2025"
+      }
+    },
+    {
+      "start_node_id": "6",
+      "end_node_id": "7",
+      "type": "HOSTED_EVENT",
+      "properties": {
+        "event": "Fashion Show",
+        "date": "September 22, 2026"
+      }
+    },
+    {
+      "start_node_id": "9",
+      "end_node_id": "7",
+      "type": "ATTENDED",
+      "properties": {
+        "event": "Fashion Show",
+        "date": "September 22, 2026"
+      }
+    },
+    {
+      "start_node_id": "10",
+      "end_node_id": "7",
+      "type": "EXPERIENCED_TRANSFORMATION",
+      "properties": {
+        "event": "Fashion Show",
+        "date": "September 22, 2026"
+      }
+    },
+    {
+      "start_node_id": "11",
+      "end_node_id": "12",
+      "type": "ATTENDED",
+      "properties": {
+        "event": "Photography Exhibition",
+        "date": "September 22, 2026"
+      }
+    },
+    {
+      "start_node_id": "14",
+      "end_node_id": "12",
+      "type": "DISCUSSED_AT",
+      "properties": {
+        "event": "Photography Exhibition",
+        "date": "September 22, 2026"
+      }
+    },
+    {
+      "start_node_id": "15",
+      "end_node_id": "12",
+      "type": "DISCUSSED_AT",
+      "properties": {
+        "event": "Photography Exhibition",
+        "date": "September 22, 2026"
+      }
+    },
+    {
+      "start_node_id": "16",
+      "end_node_id": "12",
+      "type": "STUDIED_PHOTO_AT",
+      "properties": {
+        "event": "Photography Exhibition",
+        "date": "September 22, 2026"
+      }
+    },
+    {
+      "start_node_id": "1",
+      "end_node_id": "4",
+      "type": "PERFORMED_AT",
+      "properties": {
+        "event": "Parkour Workshop",
+        "date": "September 13, 2025"
+      }
+    },
+    {
+      "start_node_id": "2",
+      "end_node_id": "4",
+      "type": "INSTRUCTED_AT",
+      "properties": {
+        "event": "Parkour Workshop",
+        "date": "September 13, 2025"
+      }
+    },
+    {
+      "start_node_id": "3",
+      "end_node_id": "4",
+      "type": "PARTICIPATED_AT",
+      "properties": {
+        "event": "Parkour Workshop",
+        "date": "September 13, 2025"
+      }
+    },
+    {
+      "start_node_id": "5",
+      "end_node_id": "4",
+      "type": "HELD_AT",
+      "properties": {
+        "date": "September 13, 2025"
+      }
+    },
+    {
+      "start_node_id": "6",
+      "end_node_id": "7",
+      "type": "HOSTED_EVENT",
+      "properties": {
+        "event": "Fashion Show",
+        "date": "September 22, 2026"
+      }
+    },
+    {
+      "start_node_id": "8",
+      "end_node_id": "7",
+      "type": "TOOK_PLACE_AT",
+      "properties": {
+        "date": "September 22, 2026"
+      }
+    },
+    {
+      "start_node_id": "9",
+      "end_node_id": "7",
+      "type": "ATTENDED",
+      "properties": {
+        "event": "Fashion Show",
+        "date": "September 22, 2026"
+      }
+    },
+    {
+      "start_node_id": "10",
+      "end_node_id": "7",
+      "type": "EXPERIENCED",
+      "properties": {
+        "event": "Fashion Show",
+        "date": "September 22, 2026"
+      }
+    }
+  ]
+}
