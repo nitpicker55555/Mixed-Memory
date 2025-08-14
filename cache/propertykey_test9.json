@@ -1,0 +1,28 @@
+{
+  "database": "test9",
+  "generated_at": "2025-08-13T14:50:39.024618",
+  "total_labels": 3,
+  "property_keys": {
+    "Event": [
+      "location",
+      "chapter",
+      "participants",
+      "id",
+      "date",
+      "event_type",
+      "original_story",
+      "description",
+      "name"
+    ],
+    "Person": [
+      "original_story",
+      "id",
+      "name"
+    ],
+    "Location": [
+      "original_story",
+      "id",
+      "name"
+    ]
+  }
+}

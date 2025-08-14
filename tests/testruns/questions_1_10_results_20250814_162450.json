@@ -1,0 +1,308 @@
+{
+  "test_summary": {
+    "total_questions": 10,
+    "successful": 10,
+    "success_rate": 1.0,
+    "total_gpt_interactions": 50,
+    "log_file": "questions_1_10_test_20250814_162445.log"
+  },
+  "results": [
+    {
+      "question_id": 1,
+      "question": "Consider all events that happened on August 12, 2025. Provide a list of all protagonists involved in any of these events, without describing the events themselves.",
+      "expected_answer": [],
+      "analysis": {
+        "entities": [
+          "Person entities based on events"
+        ],
+        "constraints": [
+          "Date constraint",
+          "Event participation"
+        ],
+        "intent": "List people involved in events on specific date"
+      },
+      "candidates_generated": 3,
+      "mock_results": 2,
+      "evaluation": {
+        "confidence_score": 85,
+        "reasoning": "Results appear relevant to question about Consider all events that happened on August 12, 20...",
+        "should_continue": false,
+        "suggested_answer": "Based on 2 results, the answer addresses the question",
+        "relevance": 0.85,
+        "completeness": 0.8,
+        "quality": 0.9
+      },
+      "execution_time": 0.0007719993591308594,
+      "success": true
+    },
+    {
+      "question_id": 2,
+      "question": "Reflect on August 12, 2025. Describe all the key events that occurred on this date, focusing on what happened rather than who was involved or where it took place.",
+      "expected_answer": [],
+      "analysis": {
+        "entities": [
+          "Event entities"
+        ],
+        "constraints": [
+          "Date constraint"
+        ],
+        "intent": "Describe events on specific date"
+      },
+      "candidates_generated": 3,
+      "mock_results": 2,
+      "evaluation": {
+        "confidence_score": 85,
+        "reasoning": "Results appear relevant to question about Reflect on August 12, 2025. Describe all the key e...",
+        "should_continue": false,
+        "suggested_answer": "Based on 2 results, the answer addresses the question",
+        "relevance": 0.85,
+        "completeness": 0.8,
+        "quality": 0.9
+      },
+      "execution_time": 0.0013890266418457031,
+      "success": true
+    },
+    {
+      "question_id": 3,
+      "question": "Think about all events that have occurred at Bethpage Black Course. Provide a list of all dates when these events took place, without describing the events.",
+      "expected_answer": [
+        "September 03, 2026"
+      ],
+      "analysis": {
+        "entities": [
+          "Event entities",
+          "Location entities"
+        ],
+        "constraints": [
+          "Location constraint"
+        ],
+        "intent": "List dates of events at location"
+      },
+      "candidates_generated": 3,
+      "mock_results": 2,
+      "evaluation": {
+        "confidence_score": 85,
+        "reasoning": "Results appear relevant to question about Think about all events that have occurred at Bethp...",
+        "should_continue": false,
+        "suggested_answer": "Based on 2 results, the answer addresses the question",
+        "relevance": 0.85,
+        "completeness": 0.8,
+        "quality": 0.9
+      },
+      "execution_time": 0.0013248920440673828,
+      "success": true
+    },
+    {
+      "question_id": 4,
+      "question": "Consider the location Bethpage Black Course. List all protagonists that have been involved in any events at this location, without mentioning the events themselves.",
+      "expected_answer": [
+        "Carter Stewart"
+      ],
+      "analysis": {
+        "entities": [
+          "Person entities based on events"
+        ],
+        "constraints": [
+          "Date constraint",
+          "Event participation"
+        ],
+        "intent": "List people involved in events on specific date"
+      },
+      "candidates_generated": 3,
+      "mock_results": 2,
+      "evaluation": {
+        "confidence_score": 85,
+        "reasoning": "Results appear relevant to question about Consider the location Bethpage Black Course. List ...",
+        "should_continue": false,
+        "suggested_answer": "Based on 2 results, the answer addresses the question",
+        "relevance": 0.85,
+        "completeness": 0.8,
+        "quality": 0.9
+      },
+      "execution_time": 0.002232789993286133,
+      "success": true
+    },
+    {
+      "question_id": 5,
+      "question": "Recall the various events that have taken place at Bethpage Black Course. Describe what happened during these events, focusing on the actions or occurrences rather than the timing or people involved.",
+      "expected_answer": [
+        "Environmental Summit"
+      ],
+      "analysis": {
+        "entities": [
+          "Event entities"
+        ],
+        "constraints": [
+          "Date constraint"
+        ],
+        "intent": "Describe events on specific date"
+      },
+      "candidates_generated": 3,
+      "mock_results": 2,
+      "evaluation": {
+        "confidence_score": 85,
+        "reasoning": "Results appear relevant to question about Recall the various events that have taken place at...",
+        "should_continue": false,
+        "suggested_answer": "Based on 2 results, the answer addresses the question",
+        "relevance": 0.85,
+        "completeness": 0.8,
+        "quality": 0.9
+      },
+      "execution_time": 0.0012471675872802734,
+      "success": true
+    },
+    {
+      "question_id": 6,
+      "question": "Reflect on all events involving Carter Stewart. Provide a list of all dates when these events occurred, without describing the events.",
+      "expected_answer": [
+        "September 03, 2026",
+        "March 23, 2024",
+        "October 13, 2024"
+      ],
+      "analysis": {
+        "entities": [
+          "Event entities",
+          "Location entities"
+        ],
+        "constraints": [
+          "Location constraint"
+        ],
+        "intent": "List dates of events at location"
+      },
+      "candidates_generated": 3,
+      "mock_results": 2,
+      "evaluation": {
+        "confidence_score": 85,
+        "reasoning": "Results appear relevant to question about Reflect on all events involving Carter Stewart. Pr...",
+        "should_continue": false,
+        "suggested_answer": "Based on 2 results, the answer addresses the question",
+        "relevance": 0.85,
+        "completeness": 0.8,
+        "quality": 0.9
+      },
+      "execution_time": 0.002317190170288086,
+      "success": true
+    },
+    {
+      "question_id": 7,
+      "question": "Consider all events that Carter Stewart has been involved in. List all the locations where these events took place, without mentioning the events themselves.",
+      "expected_answer": [
+        "Snug Harbor Cultural Center",
+        "Bethpage Black Course",
+        "Yankee Stadium"
+      ],
+      "analysis": {
+        "entities": [
+          "Unknown"
+        ],
+        "constraints": [
+          "Unknown"
+        ],
+        "intent": "Unknown query type"
+      },
+      "candidates_generated": 3,
+      "mock_results": 2,
+      "evaluation": {
+        "confidence_score": 85,
+        "reasoning": "Results appear relevant to question about Consider all events that Carter Stewart has been i...",
+        "should_continue": false,
+        "suggested_answer": "Based on 2 results, the answer addresses the question",
+        "relevance": 0.85,
+        "completeness": 0.8,
+        "quality": 0.9
+      },
+      "execution_time": 0.002300739288330078,
+      "success": true
+    },
+    {
+      "question_id": 8,
+      "question": "Think about Carter Stewart's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+      "expected_answer": [
+        "Storytelling Festival",
+        "Environmental Summit",
+        "Carnival"
+      ],
+      "analysis": {
+        "entities": [
+          "Event entities"
+        ],
+        "constraints": [
+          "Date constraint"
+        ],
+        "intent": "Describe events on specific date"
+      },
+      "candidates_generated": 3,
+      "mock_results": 2,
+      "evaluation": {
+        "confidence_score": 85,
+        "reasoning": "Results appear relevant to question about Think about Carter Stewart's experiences. Describe...",
+        "should_continue": false,
+        "suggested_answer": "Based on 2 results, the answer addresses the question",
+        "relevance": 0.85,
+        "completeness": 0.8,
+        "quality": 0.9
+      },
+      "execution_time": 0.002357959747314453,
+      "success": true
+    },
+    {
+      "question_id": 9,
+      "question": "Recall all events related to Archery Tournament. Provide a list of all dates when these events occurred, without describing the events.",
+      "expected_answer": [
+        "May 14, 2025"
+      ],
+      "analysis": {
+        "entities": [
+          "Event entities",
+          "Location entities"
+        ],
+        "constraints": [
+          "Location constraint"
+        ],
+        "intent": "List dates of events at location"
+      },
+      "candidates_generated": 3,
+      "mock_results": 2,
+      "evaluation": {
+        "confidence_score": 85,
+        "reasoning": "Results appear relevant to question about Recall all events related to Archery Tournament. P...",
+        "should_continue": false,
+        "suggested_answer": "Based on 2 results, the answer addresses the question",
+        "relevance": 0.85,
+        "completeness": 0.8,
+        "quality": 0.9
+      },
+      "execution_time": 0.0026018619537353516,
+      "success": true
+    },
+    {
+      "question_id": 10,
+      "question": "Consider all events involving Archery Tournament. List all the locations where these events took place, without mentioning the events themselves.",
+      "expected_answer": [
+        "Queensboro Bridge"
+      ],
+      "analysis": {
+        "entities": [
+          "Unknown"
+        ],
+        "constraints": [
+          "Unknown"
+        ],
+        "intent": "Unknown query type"
+      },
+      "candidates_generated": 3,
+      "mock_results": 2,
+      "evaluation": {
+        "confidence_score": 85,
+        "reasoning": "Results appear relevant to question about Consider all events involving Archery Tournament. ...",
+        "should_continue": false,
+        "suggested_answer": "Based on 2 results, the answer addresses the question",
+        "relevance": 0.85,
+        "completeness": 0.8,
+        "quality": 0.9
+      },
+      "execution_time": 0.0010900497436523438,
+      "success": true
+    }
+  ]
+}

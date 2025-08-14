@@ -1,0 +1,1856 @@
+[
+  {
+    "question": "Consider all events involving Archery Tournament. List all the locations where these events took place, without mentioning the events themselves.",
+    "predicted_answer": "Queensboro Bridge",
+    "gpt_answer_result": {
+      "final_answer": "Queensboro Bridge",
+      "confidence_score": 0.95,
+      "reasoning": [
+        "The Cypher query specifically searched for all unique locations of events with event_type 'Archery Tournament'. The results show only one location: 'Queensboro Bridge'. The search context confirms that multiple events of this type are present, but all are associated with the same location. There is no evidence in the relevant nodes or vector results of any other location being used for Archery Tournament events. The query and results are directly relevant and accurately answer the question by listing all locations without mentioning the events themselves. The only possible improvement would be to verify that no data is missing from the database, but based on the provided context, this appears complete."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "116af96d-2e4b-4bce-b908-ee9304399fb4",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.event_type = 'Archery Tournament' RETURN DISTINCT e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 1,
+    "expected_answer": [
+      "Queensboro Bridge"
+    ],
+    "processing_order": 1
+  },
+  {
+    "question": "Consider all events involving Astronomy Night. List all the locations where these events took place, without mentioning the events themselves.",
+    "predicted_answer": "Port Jefferson",
+    "gpt_answer_result": {
+      "final_answer": "Port Jefferson",
+      "confidence_score": 0.95,
+      "reasoning": [
+        "No results returned from query",
+        "The query was designed to extract all unique locations associated with events named 'Astronomy Night', events of type 'Astronomy Event', or events whose names contain 'Astro'. The results summary and the relevant nodes confirm that all such events (three in total) are linked to the same location: 'Port Jefferson'. There is no evidence in the provided context of any other location being associated with these events. The query logic is sound and the data returned matches the search focus and constraints, specifically excluding event details and focusing solely on location. The only minor uncertainty is whether the database might contain events with slightly different naming conventions or missing location data, but based on the current dataset and context, this seems unlikely."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "7d78c976-f964-4616-8349-3cb7fd4418f9",
+      "total_iterations": 2,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.name = 'Astronomy Night' AND exists(e.location) MATCH (l:Location) WHERE l.name = e.location RETURN DISTINCT l.name AS location_name",
+        "MATCH (e:Event) WHERE e.name = 'Astronomy Night' OR e.event_type = 'Astronomy Event' OR e.name CONTAINS 'Astro' WITH DISTINCT e.location AS location_name MATCH (l:Location) WHERE l.name = location_name RETURN DISTINCT l.name AS location_name"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 2,
+    "expected_answer": [
+      "Port Jefferson"
+    ],
+    "processing_order": 2
+  },
+  {
+    "question": "Consider all events involving Carnival. List all the locations where these events took place, without mentioning the events themselves.",
+    "predicted_answer": "Snug Harbor Cultural Center",
+    "gpt_answer_result": {
+      "final_answer": "Snug Harbor Cultural Center",
+      "confidence_score": 0.95,
+      "reasoning": [
+        "Basic evaluation - found 1 results",
+        "The Cypher query specifically matches all events where event_type is 'Carnival' and returns their distinct locations. In the provided search context, only one event with event_type 'Carnival' is found, located at 'Snug Harbor Cultural Center.' The relevant node (id 106) confirms this, and no other nodes in the context are of type 'Carnival.' The results directly answer the question by listing the location(s) without mentioning the event details. Given the data provided, there is no evidence of other 'Carnival' events or locations, so the answer appears complete and accurate. The only minor uncertainty is whether the underlying database is fully comprehensive, but based on the search context and query, this is the best possible answer."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "0274ef42-b0ae-49a5-98be-58cc4f187ce0",
+      "total_iterations": 2,
+      "query_history": [
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS 'carnival' OR toLower(e.name) CONTAINS 'carnival' OR toLower(e.description) CONTAINS 'carnival' RETURN DISTINCT e.location AS location",
+        "MATCH (e:Event) WHERE e.event_type = 'Carnival' RETURN DISTINCT e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 3,
+    "expected_answer": [
+      "Snug Harbor Cultural Center"
+    ],
+    "processing_order": 3
+  },
+  {
+    "question": "Consider all events involving Environmental Summit. List all the locations where these events took place, without mentioning the events themselves.",
+    "predicted_answer": "Bethpage Black Course",
+    "gpt_answer_result": {
+      "final_answer": "Bethpage Black Course",
+      "confidence_score": 0.95,
+      "reasoning": [
+        "No results returned from query",
+        "The query results provide only one location, 'Bethpage Black Course', where an event involving 'Environmental Summit' took place. However, the search context reveals that there are multiple nodes with varying degrees of similarity to the target entity 'Environmental Summit'. The query seems to have focused only on events explicitly named 'Environmental Summit' or categorized under 'Summit', potentially missing other relevant events that could be considered under the broader umbrella of environmental summits but not explicitly named as such. This suggests that the search might not be exhaustive, and there could be other locations associated with events related to environmental discussions that are not captured due to the strict filtering conditions of the query.",
+        "The Cypher query used specifically looks for events where the name contains 'Environmental Summit' or the event type is 'Summit', and returns distinct locations. The result summary shows only one location, 'Bethpage Black Course', which matches the event type 'Summit' and name containing 'Environmental Summit'. However, the search context suggests that there might be other events involving 'Environmental Summit' that are not directly named as such or categorized strictly under 'Summit'. The vector results and relevant nodes indicate other events and locations (like 'Port Jefferson' and 'Yankee Stadium') that are not captured by the query used. These might be related to the 'Environmental Summit' in a broader context or through indirect relationships, which the current query does not consider. Therefore, the answer might not be complete as it potentially misses other relevant locations.",
+        "The query results provide a location for an event involving 'Environmental Summit,' which is 'Bethpage Black Course.' However, the search context indicates that there are multiple nodes with varying degrees of similarity to the target entity 'Environmental Summit,' but only one node (node_id: 8) is directly related to an event named 'Environmental Summit at Bethpage Black Course.' The other nodes listed (node_id: 93, 89, etc.) do not pertain to the 'Environmental Summit' but to other events, which suggests that the query may not have captured all relevant events involving the 'Environmental Summit.' This raises concerns about the completeness of the data retrieved. The single location returned ('Bethpage Black Course') might not represent all locations where 'Environmental Summit' events occurred, considering the possibility of multiple events under the same umbrella term.",
+        "The Cypher query specifically searched for all Event nodes whose name contains 'Environmental Summit' and returned the unique locations. The only matching event in the relevant nodes is 'Environmental Summit at Bethpage Black Course', with the location 'Bethpage Black Course'. No other event nodes in the provided context reference 'Environmental Summit' in their name or description, and the query's logic is sound for extracting unique locations. The results are directly relevant to the question, and there is no evidence in the context that any other 'Environmental Summit' events exist. Thus, the answer appears complete and accurate."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "7281ece7-7afd-48b2-92fe-b1b6c13f4ff4",
+      "total_iterations": 5,
+      "query_history": [
+        "\n            MATCH (n)\n            WHERE n.name CONTAINS 'Consider'\n            RETURN n.name, labels(n), properties(n)\n            LIMIT 10\n            ",
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Environmental Summit' OR e.event_type = 'Summit' RETURN DISTINCT e.location AS location",
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Environmental Summit' OR e.event_type = 'Summit' RETURN DISTINCT e.location AS location",
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Environmental Summit' RETURN DISTINCT e.location AS location",
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Environmental Summit' RETURN DISTINCT e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 4,
+    "expected_answer": [
+      "Bethpage Black Course"
+    ],
+    "processing_order": 4
+  },
+  {
+    "question": "Consider all events involving Farmers Market. List all the locations where these events took place, without mentioning the events themselves.",
+    "predicted_answer": "Grand Central Terminal",
+    "gpt_answer_result": {
+      "final_answer": "Grand Central Terminal",
+      "confidence_score": 0.95,
+      "reasoning": [
+        "The query specifically searched for events with event_type 'Farmers Market' and returned the distinct location 'Grand Central Terminal'. The search context and relevant nodes confirm that all events tagged as 'Farmers Market' are associated with this location, and no other locations appear in the results or the provided event data. The vector results and node details do not indicate the existence of other Farmers Market events at different locations. Thus, the answer is both relevant and complete given the current dataset. The only slight uncertainty is if there are events labeled differently but still related to Farmers Market, but based on the constraints and returned data, this seems unlikely."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "0d32ea3e-26f1-4596-922b-2a72b79259fc",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.event_type = 'Farmers Market' RETURN DISTINCT e.location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 5,
+    "expected_answer": [
+      "Grand Central Terminal"
+    ],
+    "processing_order": 5
+  },
+  {
+    "question": "Reflect on events related to Archery Tournament. Provide a list of all protagonists involved in these events, without describing the events.",
+    "predicted_answer": "Hazel Lewis",
+    "gpt_answer_result": {
+      "final_answer": "Hazel Lewis",
+      "confidence_score": 0.85,
+      "reasoning": [
+        "No results returned from query",
+        "The query results and the search context indicate that Hazel Lewis is the only protagonist involved in the events related to the Archery Tournament. The query specifically aimed to extract distinct participants from events labeled as 'Archery Tournament'. The results returned Hazel Lewis as the sole participant. The search context further supports this, as all nodes related to 'Archery Tournament' events (node_ids 56 and 58) list Hazel Lewis as the participant. Node 57, although related to Hazel Lewis, is labeled as an 'Archery Demonstration' and thus does not fall under the 'Archery Tournament' category. The similarity scores and the properties of the nodes confirm that Hazel Lewis is central to the events described. The confidence score is not 100% because there is a possibility, albeit small, that there could be other participants not listed or captured due to data limitations or errors in data entry."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "2dc15a2d-cb0d-479b-98af-41842b259788",
+      "total_iterations": 2,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.event_type = 'Archery Tournament' AND exists(e.participants) UNWIND e.participants AS participant_name MATCH (p:Person) WHERE p.name = participant_name RETURN DISTINCT p.name AS protagonist",
+        "MATCH (e:Event) WHERE e.event_type = 'Archery Tournament' UNWIND e.participants AS participant RETURN DISTINCT participant AS protagonist"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 6,
+    "expected_answer": [
+      "Hazel Lewis"
+    ],
+    "processing_order": 6
+  },
+  {
+    "question": "Reflect on events related to Astronomy Night. Provide a list of all protagonists involved in these events, without describing the events.",
+    "predicted_answer": "Zoe Brown",
+    "gpt_answer_result": {
+      "final_answer": "Zoe Brown",
+      "confidence_score": 0.85,
+      "reasoning": [
+        "The query and results directly address the question by listing all protagonists (participants) involved in events related to 'Astronomy Night.' The Cypher query matches events whose name contains 'Astronomy Night' or are of type 'Astronomy Event,' then extracts all participants and matches them to Person nodes, returning distinct names. The results summary and search context show that only 'Zoe Brown' is listed as a protagonist in all relevant events. The event nodes confirm that Zoe Brown is the sole participant mentioned for each event. There is no evidence of other protagonists or participants in the provided data. However, the confidence is not 100% because: (a) there could be missing data or other events not indexed, (b) the query depends on the accuracy and completeness of the 'participants' property, and (c) the original story text mentions '$entity_5' in one event, which could hint at another person, but this is not resolved in the data. Despite these caveats, the answer is likely sufficient for the current dataset."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "aad953d5-bbf1-49d0-b4f1-71cbec8e05ff",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Astronomy Night' OR e.event_type = 'Astronomy Event' WITH e UNWIND e.participants AS participant_name MATCH (p:Person) WHERE p.name = participant_name RETURN DISTINCT p.name AS protagonist"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 7,
+    "expected_answer": [
+      "Zoe Brown"
+    ],
+    "processing_order": 7
+  },
+  {
+    "question": "Reflect on events related to Carnival. Provide a list of all protagonists involved in these events, without describing the events.",
+    "predicted_answer": [
+      "Zoe Brown",
+      "Carter Stewart",
+      "Scarlett Thomas"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "Zoe Brown",
+        "Carter Stewart",
+        "Scarlett Thomas"
+      ],
+      "confidence_score": 0.85,
+      "reasoning": [
+        "The Cypher query specifically filtered for events where event_type = 'Carnival' and returned only one result: Carter Stewart as a participant. However, the search context and relevant nodes reveal that there are other festival-related events (Reflection, Culinary Experience) involving Scarlett Thomas, but these are not explicitly labeled as 'Carnival' events. The narrative context suggests that the festival and carnival may be related or overlapping, but based strictly on the query and returned data, only Carter Stewart is linked to 'Carnival' events. There is a possibility that other protagonists participated in Carnival events that were not captured due to the event_type filter or incomplete data linkage. Therefore, the answer is likely incomplete unless it is certain that only one Carnival event exists and only Carter Stewart participated.",
+        "No results returned from query",
+        "The query and results are well aligned with the question: to list all protagonists (participants) involved in Carnival or festival-related events, without describing the events. The Cypher query specifically extracts all unique participants from events whose type contains 'Carnival' or 'Festival'. The results list three names: Zoe Brown, Carter Stewart, and Scarlett Thomas. The search context and relevant nodes confirm that Carter Stewart and Scarlett Thomas are both participants in Carnival or festival events. However, Zoe Brown appears in the results but does not appear in the detailed event nodes provided in the search context. This suggests that Zoe Brown may be a participant in another relevant event not included in the detailed nodes shown, but present in the database. There is no evidence of missing protagonists from the nodes provided, but without seeing all possible event nodes, there is a small chance another participant exists. The answer is likely complete, but not guaranteed to be exhaustive without confirmation that all relevant event nodes have been checked."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "e10e5554-1932-4c2d-b2b7-23a5576b7941",
+      "total_iterations": 3,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.event_type = 'Carnival' RETURN e.participants",
+        "MATCH (e:Event)-[:PARTICIPATED_IN|:INVOLVED_IN]->(p:Person) WHERE e.event_type = 'Carnival' RETURN DISTINCT p.name",
+        "MATCH (e:Event) WHERE e.event_type CONTAINS 'Carnival' OR e.event_type CONTAINS 'Festival' UNWIND e.participants AS protagonist RETURN DISTINCT protagonist"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 8,
+    "expected_answer": [
+      "Carter Stewart"
+    ],
+    "processing_order": 8
+  },
+  {
+    "question": "Reflect on events related to Environmental Summit. Provide a list of all protagonists involved in these events, without describing the events.",
+    "predicted_answer": "Carter Stewart",
+    "gpt_answer_result": {
+      "final_answer": "Carter Stewart",
+      "confidence_score": 0.8,
+      "reasoning": [
+        "The query specifically targets all unique participants (protagonists) involved in events named 'Environmental Summit' or of type 'Summit'. The only result returned is 'Carter Stewart', and the relevant event node (Environmental Summit at Bethpage Black Course) lists only Carter Stewart as a participant. There is no evidence in the provided data that other protagonists or organizations were involved. However, the confidence is not 100% because: (1) the search may have missed events with slightly different naming conventions (e.g., 'Eco Summit', 'Climate Summit'), (2) organizations as protagonists are not explicitly included, and (3) the database may not be fully comprehensive or up-to-date. The result is relevant and accurate for the data at hand, but there is a small chance of missing data due to the query structure and possible data gaps."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "3e897951-55b0-4cbe-9891-bff556991037",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Environmental Summit' OR e.event_type = 'Summit' WITH e UNWIND e.participants AS participant_name MATCH (p:Person) WHERE p.name = participant_name RETURN DISTINCT p.name AS Protagonist"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 9,
+    "expected_answer": [
+      "Carter Stewart"
+    ],
+    "processing_order": 9
+  },
+  {
+    "question": "Reflect on events related to Farmers Market. Provide a list of all protagonists involved in these events, without describing the events.",
+    "predicted_answer": "Nora Ramos",
+    "gpt_answer_result": {
+      "final_answer": "Nora Ramos",
+      "confidence_score": 0.85,
+      "reasoning": [
+        "The query and results directly address the question by listing all protagonists (participants) involved in events related to the Farmers Market. The Cypher query specifically filtered for events where event_type = 'Farmers Market' and returned distinct participants. The search context and relevant nodes confirm that only Nora Ramos is listed as a participant in all identified Farmers Market-related events. There is no evidence in the provided data of any other protagonists or participants. However, there is a slight possibility that other protagonists could be present if the data model distinguishes between 'participants' and other forms of involvement (e.g., agents, organizers), or if some events were not labeled precisely as 'Farmers Market'. Given the available information, the answer appears complete and accurate for the scope defined."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "836eb0b3-d48d-47b5-a842-a3b6cdc3a0d1",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.event_type = 'Farmers Market' RETURN DISTINCT e.participants AS Protagonists"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 10,
+    "expected_answer": [
+      "Nora Ramos"
+    ],
+    "processing_order": 10
+  },
+  {
+    "question": "Recall all events related to Archery Tournament. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": "The date of the Archery Tournament event is May 14, 2025.",
+    "gpt_answer_result": {
+      "final_answer": "The date of the Archery Tournament event is May 14, 2025.",
+      "confidence_score": 1.0,
+      "reasoning": [
+        "No results returned from query",
+        "The query specifically requested the dates of all events categorized as 'Archery Tournament'. The results returned a single date, 'May 14, 2025', which is consistent with the information provided in the search context. All nodes related to 'Archery Tournament' events (node 56 and node 58) also confirm the same date, 'May 14, 2025'. Node 57, which is categorized under 'Archery Demonstration', does not meet the criteria of 'Archery Tournament' and thus is correctly excluded from the results. The query was well-structured to filter events by the 'event_type' of 'Archery Tournament' and to return distinct dates, ensuring no duplicate dates are presented. The results are complete and correct as per the data provided in the search context."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "bb4a439d-6705-4321-8ac9-956e1dc5e3d0",
+      "total_iterations": 2,
+      "query_history": [
+        "\n            MATCH (n)\n            WHERE n.name CONTAINS 'Recall'\n            RETURN n.name, labels(n), properties(n)\n            LIMIT 10\n            ",
+        "MATCH (e:Event) WHERE e.event_type = 'Archery Tournament' RETURN DISTINCT e.date AS event_date ORDER BY e.date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 11,
+    "expected_answer": [
+      "May 14, 2025"
+    ],
+    "processing_order": 11
+  },
+  {
+    "question": "Recall all events related to Astronomy Night. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": "The date for the Astronomy Night events is March 23, 2024.",
+    "gpt_answer_result": {
+      "final_answer": "The date for the Astronomy Night events is March 23, 2024.",
+      "confidence_score": 0.85,
+      "reasoning": [
+        "The query results return a single date, 'March 23, 2024', for the event 'Astronomy Night'. The search context reveals that there are multiple events related to astronomy on the same date, including 'Telescopic Exploration' and 'Astrobiology Lectures', which are considered part of the broader 'Astronomy Night' event. All these events are linked by their occurrence on the same date and location, and they share a common theme centered around astronomy. The query was specifically designed to extract dates for events named 'Astronomy Night' or containing 'Astronomy' in their event type, which it did effectively. However, the confidence is not at 100% because there is a possibility that there could be other 'Astronomy Night' events on different dates not captured in the provided data or due to the specificity of the query which might have missed events not strictly named 'Astronomy Night' but related to it. The results, however, seem to comprehensively cover the known events on the specified date related to the query."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "959b349c-1b95-47c4-928e-e7b5f3f015b6",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.name = 'Astronomy Night' OR e.event_type CONTAINS 'Astronomy' RETURN DISTINCT e.date AS date ORDER BY e.date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 12,
+    "expected_answer": [
+      "March 23, 2024"
+    ],
+    "processing_order": 12
+  },
+  {
+    "question": "Recall all events related to Carnival. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": [
+      "October 13, 2024"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "October 13, 2024"
+      ],
+      "confidence_score": 0.9,
+      "reasoning": [
+        "The query specifically searched for events where the event_type is 'Carnival' or the event name contains 'carnival'. The only result returned is for October 13, 2024, which matches an event explicitly labeled as 'Carnival' in both its event_type and name. The other nodes in the context, while related to festivals or experiences, do not mention 'Carnival' in their event_type or name, nor do their descriptions suggest a direct connection to Carnival events. Therefore, the result appears both accurate and complete based on the available data and the query logic. However, there is a slight chance that a Carnival-related event could be missed if it was not labeled or named accordingly, which is why the confidence is not 100%."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "261e50c0-594e-49f0-8354-1672d91100a5",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.event_type = 'Carnival' OR toLower(e.name) CONTAINS 'carnival' RETURN DISTINCT e.date AS event_date ORDER BY e.date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 13,
+    "expected_answer": [
+      "October 13, 2024"
+    ],
+    "processing_order": 13
+  },
+  {
+    "question": "Recall all events related to Environmental Summit. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": "September 03, 2026",
+    "gpt_answer_result": {
+      "final_answer": "September 03, 2026",
+      "confidence_score": 0.95,
+      "reasoning": [
+        "The Cypher query specifically searched for events whose name contains 'Environmental Summit' and returned only one result: September 03, 2026. The search context confirms that only one event in the database matches the criteria, with no evidence of other related events named 'Environmental Summit.' The vector results and relevant nodes show other events, but their names and descriptions do not indicate any connection to the Environmental Summit. Therefore, the answer is both relevant and complete given the current data. There is a slight chance that an event related to the Environmental Summit could exist under a different name or with a less direct association, but based on the constraints and the data returned, this is unlikely."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "835ca705-37b2-4601-9d96-b2a3253291fd",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Environmental Summit' RETURN e.date AS event_date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 14,
+    "expected_answer": [
+      "September 03, 2026"
+    ],
+    "processing_order": 14
+  },
+  {
+    "question": "Recall all events related to Farmers Market. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": [
+      "July 13, 2024"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "July 13, 2024"
+      ],
+      "confidence_score": 0.95,
+      "reasoning": [
+        "The query and results directly address the question by listing all distinct dates associated with events related to 'Farmers Market.' The search context confirms that all relevant nodes (events whose name or event_type includes 'Farmers Market') have the same date: July 13, 2024. The query used a case-insensitive search on both event name and event_type, which is thorough. The relevant nodes provided in the context all have the same date, and there are no indications of other Farmers Market events on different dates. The results are complete and accurate for the specified constraints."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "2fd3e20e-9068-4a56-ae6c-336163cd0c03",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE toLower(e.name) CONTAINS 'farmers market' OR toLower(e.event_type) = 'farmers market' RETURN DISTINCT e.date AS date ORDER BY e.date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 15,
+    "expected_answer": [
+      "July 13, 2024"
+    ],
+    "processing_order": 15
+  },
+  {
+    "question": "Recall all events related to Boat Show. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "b8fb2822-c060-4957-9618-f4c663c4c489",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.description CONTAINS 'Boat Show' RETURN e.date",
+        "MATCH (event:Event) WHERE event.name CONTAINS 'Boat Show' OR event.description CONTAINS 'Boat Show' RETURN DISTINCT event.date AS date ORDER BY date",
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Boat Show' OR e.description CONTAINS 'Boat Show' RETURN DISTINCT e.date AS date ORDER BY date",
+        "MATCH (b:Event) WHERE b.name = 'Boat Show' OR b.description CONTAINS 'Boat Show' WITH b MATCH p=(b)-[*]-(e:Event) WHERE e <> b RETURN DISTINCT e.date AS date ORDER BY date",
+        "MATCH (b:Event)-[*]-(e:Event) WHERE b.name CONTAINS 'Boat Show' RETURN DISTINCT e.date AS EventDate ORDER BY EventDate"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 16,
+    "expected_answer": [],
+    "processing_order": 16
+  },
+  {
+    "question": "Recall all events related to Book Signing Event. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "c05b3e9c-e37c-4090-a224-eb234be37b82",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.event_type = 'Book Signing Event' RETURN e.date",
+        "MATCH (e:Event) WHERE e.event_type = 'Book Signing Event' OR e.name CONTAINS 'Book Signing' RETURN DISTINCT e.date ORDER BY e.date ASC",
+        "MATCH (e:Event) WHERE e.event_type = 'Book Signing Event' OR e.name CONTAINS 'Book Signing' RETURN DISTINCT e.date ORDER BY e.date",
+        "MATCH (e:Event) WHERE e.event_type = 'Book Signing Event' OR e.name CONTAINS 'Book Signing' RETURN DISTINCT e.date ORDER BY e.date ASC",
+        "MATCH (e:Event) WHERE e.event_type = 'Book Signing Event' OR e.name CONTAINS 'Book Signing' RETURN DISTINCT e.date ORDER BY e.date ASC"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 17,
+    "expected_answer": [],
+    "processing_order": 17
+  },
+  {
+    "question": "Recall all events related to Charity Gala. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "b202b7b0-02ce-42e7-a7ba-73b01981b36e",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Charity Gala' RETURN DISTINCT e.date AS event_date ORDER BY e.date",
+        "MATCH (e:Event) WHERE e.event_type = 'Charity Gala' OR e.name CONTAINS 'Charity Gala' RETURN DISTINCT e.date AS event_date ORDER BY e.date",
+        "MATCH (e:Event) WHERE e.event_type = 'Charity Gala' OR e.name CONTAINS 'Charity Gala' RETURN DISTINCT e.date AS event_date ORDER BY e.date",
+        "MATCH (e:Event) WHERE e.event_type = 'Charity Gala' OR e.name CONTAINS 'Charity Gala' RETURN DISTINCT e.date AS event_date ORDER BY e.date",
+        "MATCH (e:Event) WHERE e.event_type = 'Charity Gala' OR e.name CONTAINS 'Charity Gala' RETURN DISTINCT e.date AS event_date ORDER BY e.date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 18,
+    "expected_answer": [],
+    "processing_order": 18
+  },
+  {
+    "question": "Recall all events related to Laser Tag Tournament. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "3afd6766-4663-4b13-8e0f-42b2044e09b3",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.event_type = 'Laser Tag Tournament' RETURN DISTINCT e.date AS date ORDER BY e.date",
+        "MATCH (e:Event) WHERE e.event_type = 'Laser Tag Tournament' RETURN DISTINCT e.date AS date ORDER BY e.date",
+        "MATCH (e:Event) WHERE e.event_type = 'Laser Tag Tournament' RETURN DISTINCT e.date AS date ORDER BY e.date",
+        "MATCH (e:Event) WHERE e.event_type = 'Laser Tag Tournament' RETURN DISTINCT e.date AS EventDate ORDER BY e.date",
+        "MATCH (e:Event) WHERE e.event_type = 'Laser Tag Tournament' RETURN DISTINCT e.date AS date ORDER BY e.date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 19,
+    "expected_answer": [],
+    "processing_order": 19
+  },
+  {
+    "question": "Recall all events related to Robotics Competition. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "b0620f99-0577-4aaa-bcb6-5021ed0375cb",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS 'robotics competition' RETURN DISTINCT e.date AS event_date ORDER BY e.date",
+        "MATCH (e:Event) WHERE e.event_type = 'Robotics Competition' RETURN DISTINCT e.date AS EventDate ORDER BY e.date",
+        "MATCH (e:Event) WHERE e.event_type = 'Robotics Competition' RETURN DISTINCT e.date AS EventDate ORDER BY e.date",
+        "MATCH (e:Event) WHERE e.event_type = 'Robotics Competition' RETURN DISTINCT e.date AS event_date ORDER BY e.date",
+        "MATCH (e:Event) WHERE e.event_type = 'Robotics Competition' RETURN DISTINCT e.date AS event_date ORDER BY e.date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 20,
+    "expected_answer": [],
+    "processing_order": 20
+  },
+  {
+    "question": "Consider all events involving Boat Show. List all the locations where these events took place, without mentioning the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "462a93a4-7032-475f-8fd8-c6599ee301fc",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Boat Show' RETURN DISTINCT e.location",
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Boat Show' OR e.event_type CONTAINS 'Boat Show' RETURN DISTINCT e.location AS location",
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Boat Show' OR e.event_type CONTAINS 'Boat Show' RETURN DISTINCT e.location",
+        "MATCH (e:Event) WHERE e.event_type CONTAINS 'Boat Show' RETURN DISTINCT e.location AS Location",
+        "MATCH (e:Event) WHERE toLower(e.name) CONTAINS 'boat show' OR toLower(e.event_type) CONTAINS 'boat show' RETURN DISTINCT e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 21,
+    "expected_answer": [],
+    "processing_order": 21
+  },
+  {
+    "question": "Consider all events involving Book Signing Event. List all the locations where these events took place, without mentioning the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "2f1434f1-ecfd-4147-bf55-32c1e41853c4",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.event_type = 'Book Signing Event' AND exists(e.location) MATCH (l:Location) WHERE l.name = e.location RETURN DISTINCT l.name AS location_name",
+        "MATCH (e:Event) WHERE e.event_type = 'Book Signing Event' AND exists(e.location) MATCH (l:Location) WHERE l.name = e.location RETURN DISTINCT l.name AS location_name",
+        "MATCH (e:Event) WHERE e.event_type = 'Book Signing Event' AND exists(e.location) MATCH (l:Location) WHERE l.name = e.location RETURN DISTINCT l.name AS location_name",
+        "MATCH (e:Event) WHERE e.event_type = 'Book Signing Event' AND exists(e.location) RETURN DISTINCT e.location AS location_name",
+        "MATCH (e:Event) WHERE e.event_type = 'Book Signing Event' AND exists(e.location) MATCH (l:Location) WHERE l.name = e.location RETURN DISTINCT l.name AS location_name"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 22,
+    "expected_answer": [],
+    "processing_order": 22
+  },
+  {
+    "question": "Consider all events involving Charity Gala. List all the locations where these events took place, without mentioning the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "22859023-6f8b-4b63-b587-ce5d012b9b46",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event)-[:TOOK_PLACE_AT]->(l:Location) WHERE e.event_type = 'Charity Gala' RETURN DISTINCT l.name",
+        "MATCH (e:Event) WHERE e.event_type = 'Charity Gala' AND exists(e.location) RETURN DISTINCT e.location AS location",
+        "MATCH (e:Event) WHERE e.event_type = 'Charity Gala' AND exists(e.location) RETURN DISTINCT e.location AS location",
+        "MATCH (e:Event) WHERE e.event_type = 'Charity Gala' RETURN DISTINCT e.location AS Location",
+        "MATCH (e:Event) WHERE (e.event_type CONTAINS 'Charity Gala' OR e.name CONTAINS 'Charity Gala' OR e.description CONTAINS 'Charity Gala' OR ANY(p IN e.participants WHERE p CONTAINS 'Charity Gala')) AND exists(e.location) RETURN DISTINCT e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 23,
+    "expected_answer": [],
+    "processing_order": 23
+  },
+  {
+    "question": "Consider all events involving Laser Tag Tournament. List all the locations where these events took place, without mentioning the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "c373d7ff-af3a-4145-8a6a-e59f66b98032",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.event_type = 'Laser Tag Tournament' AND exists(e.location) RETURN DISTINCT e.location AS location",
+        "MATCH (e:Event) WHERE e.event_type = 'Laser Tag Tournament' AND exists(e.location) RETURN DISTINCT e.location AS location",
+        "MATCH (e:Event) WHERE e.event_type = 'Laser Tag Tournament' AND exists(e.location) RETURN DISTINCT e.location AS location",
+        "MATCH (e:Event) WHERE e.event_type = 'Laser Tag Tournament' AND exists(e.location) RETURN DISTINCT e.location AS location",
+        "MATCH (e:Event) WHERE e.event_type = 'Laser Tag Tournament' AND exists(e.location) RETURN DISTINCT e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 24,
+    "expected_answer": [],
+    "processing_order": 24
+  },
+  {
+    "question": "Consider all events involving Robotics Competition. List all the locations where these events took place, without mentioning the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "2873191e-c779-4b40-8d68-1172cacdd2be",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.event_type = 'Robotics Competition' RETURN DISTINCT e.location AS location",
+        "MATCH (e:Event) WHERE e.event_type = 'Robotics Competition' RETURN DISTINCT e.location AS location",
+        "MATCH (e:Event)-[:LOCATED_IN]->(l:Location) WHERE e.event_type = 'Robotics Competition' RETURN DISTINCT l.name AS LocationName",
+        "MATCH (e:Event) WHERE e.event_type = 'Robotics Competition' RETURN DISTINCT e.location AS location",
+        "MATCH (e:Event)-[:LOCATED_IN]->(l:Location) WHERE e.event_type = 'Robotics Competition' RETURN DISTINCT l.name AS LocationName"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 25,
+    "expected_answer": [],
+    "processing_order": 25
+  },
+  {
+    "question": "Reflect on events related to Boat Show. Provide a list of all protagonists involved in these events, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "25cd55b8-ec58-451b-82a0-3e50e613cc5d",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE toLower(e.name) CONTAINS 'boat show' OR toLower(e.description) CONTAINS 'boat show' OR toLower(e.event_type) CONTAINS 'boat show' UNWIND e.participants AS protagonistName MATCH (p:Person) WHERE p.name = protagonistName RETURN DISTINCT p.name AS protagonist",
+        "MATCH (e:Event) WHERE toLower(e.name) CONTAINS 'boat show' OR toLower(e.description) CONTAINS 'boat show' OR toLower(e.event_type) CONTAINS 'boat show' UNWIND e.participants AS protagonistName MATCH (p:Person) WHERE p.name = protagonistName RETURN DISTINCT p.name AS protagonist",
+        "MATCH (e:Event) WHERE toLower(e.name) CONTAINS 'boat show' OR toLower(e.description) CONTAINS 'boat show' OR toLower(e.event_type) CONTAINS 'boat show' UNWIND e.participants AS protagonistName MATCH (p:Person) WHERE toLower(p.name) = toLower(protagonistName) RETURN DISTINCT p.name AS protagonist",
+        "MATCH (e:Event) WHERE toLower(e.name) CONTAINS 'boat show' OR toLower(e.description) CONTAINS 'boat show' OR toLower(e.event_type) CONTAINS 'boat show' UNWIND e.participants AS protagonistName OPTIONAL MATCH (p:Person) WHERE p.name = protagonistName RETURN DISTINCT protagonistName AS protagonist",
+        "MATCH (e:Event) WHERE toLower(e.name) CONTAINS 'boat show' OR toLower(e.description) CONTAINS 'boat show' OR toLower(e.event_type) CONTAINS 'boat show' UNWIND e.participants AS protagonistName RETURN DISTINCT protagonistName AS protagonist"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 26,
+    "expected_answer": [],
+    "processing_order": 26
+  },
+  {
+    "question": "Reflect on events related to Book Signing Event. Provide a list of all protagonists involved in these events, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "b4802068-ee69-4cf1-8412-de9c9291640d",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.event_type = 'Book Signing Event' UNWIND e.participants AS protagonist_name RETURN DISTINCT protagonist_name AS Protagonist",
+        "MATCH (e:Event) WHERE e.event_type = 'Book Signing Event' UNWIND e.participants AS protagonist_name MATCH (p:Person) WHERE p.name = protagonist_name RETURN DISTINCT p.name AS Protagonist",
+        "MATCH (e:Event {event_type: 'Book Signing Event'}) UNWIND e.participants AS protagonist_name RETURN DISTINCT protagonist_name AS Protagonist",
+        "MATCH (e:Event) WHERE e.event_type = 'Book Signing Event' UNWIND e.participants AS participant_name MATCH (p:Person) WHERE p.name = participant_name RETURN DISTINCT p.name AS Protagonist",
+        "MATCH (e:Event {event_type: 'Book Signing Event'}) UNWIND e.participants AS protagonist_name MATCH (p:Person) WHERE p.name = protagonist_name RETURN DISTINCT p.name AS Protagonist"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 27,
+    "expected_answer": [],
+    "processing_order": 27
+  },
+  {
+    "question": "Reflect on events related to Charity Gala. Provide a list of all protagonists involved in these events, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "98399192-8658-4526-8762-2b389e336a7e",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Charity Gala' OR e.description CONTAINS 'Charity Gala' UNWIND e.participants AS protagonist MATCH (p:Person) WHERE p.name = protagonist RETURN DISTINCT p.name AS Protagonist",
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Charity Gala' OR e.description CONTAINS 'Charity Gala' UNWIND e.participants AS protagonist MATCH (p:Person) WHERE p.name = protagonist RETURN DISTINCT p.name AS Protagonist",
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Charity Gala' OR e.description CONTAINS 'Charity Gala' UNWIND e.participants AS protagonist MATCH (p:Person) WHERE p.name = protagonist RETURN DISTINCT p.name AS Protagonist",
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Charity Gala' UNWIND e.participants AS protagonist RETURN DISTINCT protagonist AS Protagonist",
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Charity Gala' OR e.description CONTAINS 'Charity Gala' UNWIND e.participants AS protagonist MATCH (p:Person) WHERE p.name = protagonist RETURN DISTINCT p.name AS Protagonist"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 28,
+    "expected_answer": [],
+    "processing_order": 28
+  },
+  {
+    "question": "Reflect on events related to Laser Tag Tournament. Provide a list of all protagonists involved in these events, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.05,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "The results do not answer the question. The user asked for a list of all protagonists involved in events related to the 'Laser Tag Tournament' event_type. However, none of the returned events have event_type 'Laser Tag Tournament'; instead, they are 'Personal Reflection', 'Archery Tournament', and 'Astronomy Event'. The participants listed (Zoe Brown, Carter Stewart, Scarlett Thomas, Hazel Lewis) are not confirmed to be involved in any Laser Tag Tournament events. The query used (searching for nodes with names containing 'Reflect') is also not aligned with the requirement to find 'Laser Tag Tournament' events. Therefore, the results are not relevant or sufficient."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "5bc536ac-2cb9-4cb2-8675-d81b372d5d80",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE toLower(e.name) CONTAINS 'laser tag tournament' OR toLower(e.event_type) CONTAINS 'laser tag tournament' WITH e UNWIND e.participants AS protagonist MATCH (p:Person) WHERE p.name = protagonist RETURN DISTINCT p.name AS protagonist",
+        "MATCH (e:Event) WHERE toLower(e.name) CONTAINS 'laser tag tournament' OR toLower(e.event_type) CONTAINS 'laser tag tournament' UNWIND e.participants AS participant MATCH (p:Person) WHERE p.name = participant RETURN DISTINCT p.name AS protagonist",
+        "MATCH (e:Event) WHERE e.event_type = 'Laser Tag Tournament' UNWIND e.participants AS participant RETURN DISTINCT participant AS Protagonist",
+        "MATCH (e:Event) WHERE e.event_type = 'Laser Tag Tournament' UNWIND e.participants AS protagonist RETURN DISTINCT protagonist AS Protagonist",
+        "\n            MATCH (n)\n            WHERE n.name CONTAINS 'Reflect'\n            RETURN n.name, labels(n), properties(n)\n            LIMIT 10\n            "
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 29,
+    "expected_answer": [],
+    "processing_order": 29
+  },
+  {
+    "question": "Reflect on events related to Robotics Competition. Provide a list of all protagonists involved in these events, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "0e678934-d0e0-4252-bec6-e71c60c3432d",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.event_type CONTAINS 'Robotics Competition' OR e.name CONTAINS 'Robotics Competition' OR e.description CONTAINS 'Robotics Competition' UNWIND e.participants AS protagonist RETURN DISTINCT protagonist",
+        "MATCH (e:Event) WHERE e.event_type = 'Robotics Competition' OR e.name CONTAINS 'Robotics Competition' OR e.description CONTAINS 'Robotics Competition' UNWIND e.participants AS protagonist RETURN DISTINCT protagonist",
+        "MATCH (e:Event) WHERE e.event_type = 'Robotics Competition' UNWIND e.participants AS protagonist RETURN DISTINCT protagonist",
+        "MATCH (e:Event) WHERE e.event_type = 'Robotics Competition' UNWIND e.participants AS protagonist RETURN DISTINCT protagonist",
+        "MATCH (e:Event) WHERE e.event_type CONTAINS 'Robotics Competition' OR e.name CONTAINS 'Robotics Competition' OR e.description CONTAINS 'Robotics Competition' UNWIND e.participants AS protagonist RETURN DISTINCT protagonist ORDER BY protagonist"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 30,
+    "expected_answer": [],
+    "processing_order": 30
+  },
+  {
+    "question": "Reflect on events related to Parkour Workshop. Provide a list of all protagonists involved in these events, without describing the events.",
+    "predicted_answer": "Lucy Carter",
+    "gpt_answer_result": {
+      "final_answer": "Lucy Carter",
+      "confidence_score": 0.8,
+      "reasoning": [
+        "The Cypher query was designed to extract distinct names of participants involved in events related to 'Parkour Workshop' or 'Parkour'. The results returned two names: Lucy Carter and Maya Smith. However, upon examining the search context and relevant nodes, it appears that only Lucy Carter is mentioned as a participant in various Parkour-related events at the Guggenheim Museum. Maya Smith's involvement is not detailed in the provided event descriptions, raising concerns about the completeness and accuracy of the query results. The query might have captured Maya Smith from a different context not detailed in the provided nodes, or there might be an error in data extraction or entry. Therefore, while the results partially answer the question by listing Lucy Carter correctly, the inclusion of Maya Smith without supporting context reduces confidence in the completeness and correctness of the answer.",
+        "The query results list two protagonists: Lucy Carter and Maya Smith. However, upon examining the relevant nodes in the search context, only Lucy Carter appears as a participant in all the Parkour Workshop-related events (workshop, discussion, film screening). Maya Smith does not appear in any of the event participant lists provided in the context. This suggests a possible data mismatch or error in the query results. Therefore, while Lucy Carter is definitely a protagonist, the inclusion of Maya Smith is not supported by the provided event data. There is also no evidence of other protagonists in the context. Thus, the answer is likely incomplete or partially incorrect, but it is highly likely that Lucy Carter is a correct answer. The confidence is not 100% due to the unexplained presence of Maya Smith."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "b9d8e4ef-c250-4bb0-8b9a-508b6fdfedf1",
+      "total_iterations": 2,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Parkour Workshop' OR e.name CONTAINS 'Parkour' WITH e UNWIND e.participants AS participant_name MATCH (p:Person) WHERE p.name = participant_name RETURN DISTINCT p.name AS protagonist",
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Parkour' UNWIND e.participants AS participant MATCH (p:Person) WHERE p.name = participant RETURN DISTINCT p.name AS protagonist"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 31,
+    "expected_answer": [
+      "Maya Smith",
+      "Lucy Carter"
+    ],
+    "processing_order": 31
+  },
+  {
+    "question": "Reflect on events related to Photography Exhibition. Provide a list of all protagonists involved in these events, without describing the events.",
+    "predicted_answer": [
+      "Zoe Brown",
+      "Scarlett Thomas",
+      "Samuel Parker"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "Zoe Brown",
+        "Scarlett Thomas",
+        "Samuel Parker"
+      ],
+      "confidence_score": 0.85,
+      "reasoning": [
+        "The results directly answer the question by listing all protagonists involved in events related to Photography Exhibitions, as extracted from the Cypher query and supported by the search context. The three protagonists—Zoe Brown, Scarlett Thomas, and Samuel Parker—are all associated with exhibition events that mention photography either in their description or event name. The relevant nodes confirm the participation of Scarlett Thomas and Samuel Parker in such events. Zoe Brown appears in the query results but is not explicitly supported by the detailed node context provided; however, since the Cypher query returned her name, it's reasonable to include her, assuming the database contains additional relevant events not shown in the node sample. There is a minor uncertainty regarding whether all possible protagonists have been captured, especially if there are other events or participants not surfaced in the current context. However, given the specificity of the query and the alignment between the results and the question, the answer is likely complete for the available data."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "297ccbd4-c8e7-4001-b14e-6d44fd6fa55a",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.event_type CONTAINS 'Exhibition' AND e.description CONTAINS 'photograph' OR e.name CONTAINS 'Exhibition' WITH e UNWIND e.participants AS protagonist RETURN DISTINCT protagonist"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 32,
+    "expected_answer": [
+      "Scarlett Thomas",
+      "Samuel Parker"
+    ],
+    "processing_order": 32
+  },
+  {
+    "question": "Recall all events related to Parkour Workshop. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": "March 23, 2024; May 11, 2026",
+    "gpt_answer_result": {
+      "final_answer": "March 23, 2024; May 11, 2026",
+      "confidence_score": 0.85,
+      "reasoning": [
+        "The query results return two dates: March 23, 2024 and May 11, 2026. However, the search context reveals that there are at least three distinct parkour-related events (Workshop, Film Screening, Philosophy Discussion), all occurring on March 23, 2024. The second date, May 11, 2026, appears in the query results but is not supported by any details in the provided relevant nodes. The query appears to have correctly identified all events containing 'Parkour' in their name, but the data suggests that all known parkour-related events occurred on a single date (March 23, 2024). The inclusion of May 11, 2026, may be an artifact of the database, but without supporting event details, its relevance is questionable. Nonetheless, based on the available data, the answer is likely complete, as all events in the context are on March 23, 2024, and no evidence of additional dates is present in the detailed nodes."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "0a79a381-113b-4656-a2ca-99e22219b2eb",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Parkour Workshop' OR e.name CONTAINS 'Parkour' RETURN DISTINCT e.date AS event_date ORDER BY e.date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 33,
+    "expected_answer": [
+      "March 23, 2024",
+      "May 11, 2026"
+    ],
+    "processing_order": 33
+  },
+  {
+    "question": "Recall all events related to Photography Exhibition. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": "September 03, 2026",
+    "gpt_answer_result": {
+      "final_answer": "September 03, 2026",
+      "confidence_score": 0.85,
+      "reasoning": [
+        "No results returned from query",
+        "The Cypher query results only returned one event date associated with the keyword 'photograph', which is 'September 03, 2026'. However, the search context indicates that there are multiple nodes with varying degrees of similarity to the target entity 'Photography Exhibition'. The node with the highest similarity (node_id: 109) indeed corresponds to an event involving photography, as described in the properties ('An art exhibition showcasing Samuel Parker's landscape photographs'). This matches the query result. However, other nodes listed in the search context (node_id: 32, 76) do not relate to photography, indicating that the query may have been too narrow or incorrectly focused. Node 76, although an art exhibition, features portraits, not photographs. The query might have missed other relevant events due to strict keyword matching ('photograph') or incomplete data indexing.",
+        "Basic evaluation - found 1 results",
+        "The query is well-constructed to target art exhibitions specifically related to photography, using both the event_type and keyword filters on description and name. The only result returned is September 03, 2026, which matches an event described as an art exhibition showcasing landscape photographs. The search context confirms that other events (such as the Scarlett Thomas Exhibition on November 13, 2026) do not mention photography in their description or name, and thus are correctly excluded. The vector results reinforce that the most relevant node (109) is the one returned. However, there is a slight possibility that some photography exhibitions might be described using synonyms or less direct language not captured by the current keyword match, so there is a minor risk of missing edge cases. Overall, the answer is likely complete given the data and constraints."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "599bfa1d-3b2e-4cd3-944f-7a3d0643a850",
+      "total_iterations": 4,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Photography Exhibition' OR e.event_type CONTAINS 'Photography Exhibition' OR e.description CONTAINS 'Photography Exhibition' RETURN DISTINCT e.date AS event_date ORDER BY e.date",
+        "MATCH (e:Event) WHERE e.description CONTAINS 'photograph' OR e.name CONTAINS 'photograph' OR e.event_type CONTAINS 'photograph' RETURN DISTINCT e.date AS event_date ORDER BY e.date",
+        "MATCH (e:Event) WHERE e.event_type CONTAINS 'Art Exhibition' AND (e.description CONTAINS 'photograph' OR e.name CONTAINS 'photograph') RETURN DISTINCT e.date AS event_date ORDER BY e.date",
+        "MATCH (e:Event) WHERE e.event_type = 'Art Exhibition' AND (toLower(e.description) CONTAINS 'photograph' OR toLower(e.name) CONTAINS 'photography exhibition') RETURN DISTINCT e.date AS event_date ORDER BY e.date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 34,
+    "expected_answer": [
+      "September 03, 2026",
+      "November 13, 2026"
+    ],
+    "processing_order": 34
+  },
+  {
+    "question": "Consider all events involving Parkour Workshop. List all the locations where these events took place, without mentioning the events themselves.",
+    "predicted_answer": "The locations where events involving 'Parkour Workshop' took place are the Guggenheim Museum and the Metropolitan Museum of Art.",
+    "gpt_answer_result": {
+      "final_answer": "The locations where events involving 'Parkour Workshop' took place are the Guggenheim Museum and the Metropolitan Museum of Art.",
+      "confidence_score": 0.9,
+      "reasoning": [
+        "The Cypher query specifically targets events containing the name 'Parkour Workshop' or 'Parkour', and returns distinct locations, which aligns well with the question's requirement to list all locations where events involving 'Parkour Workshop' took place. The results summary indicates two distinct locations: 'Guggenheim Museum' and 'Metropolitan Museum of Art'. The search context and relevant nodes confirm that multiple events related to parkour took place at the Guggenheim Museum, but there is no explicit mention of an event at the Metropolitan Museum of Art in the detailed event descriptions provided in the search context. However, since the query returned this location, it suggests that there might be an event involving 'Parkour Workshop' at the Metropolitan Museum of Art that wasn't detailed in the provided context. Given the specificity of the query and the results, it is likely that these two locations are correct and complete for the scope of the question."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "8bfa8021-5318-4d7e-8dae-f86024eb9dc7",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Parkour Workshop' OR e.name CONTAINS 'Parkour' RETURN DISTINCT e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 35,
+    "expected_answer": [
+      "Guggenheim Museum",
+      "Metropolitan Museum of Art"
+    ],
+    "processing_order": 35
+  },
+  {
+    "question": "Consider all events involving Photography Exhibition. List all the locations where these events took place, without mentioning the events themselves.",
+    "predicted_answer": "Trinity Church",
+    "gpt_answer_result": {
+      "final_answer": "Trinity Church",
+      "confidence_score": 0.85,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "The query was designed to find all events related to 'Photography Exhibition' by searching for relevant keywords in the event_type, name, or description fields. The only result returned is 'Trinity Church', which is supported by the description mentioning 'Samuel Parker's landscape photographs'. No other events in the provided relevant_nodes contain references to photography or photography exhibitions; for example, the 'High Line' event is a portrait series exhibition but does not explicitly mention photography, and the 'Port Jefferson' event is an astronomy event. Thus, based on the data provided, 'Trinity Church' is the only location identified. However, there is a slight chance that other photography exhibitions could be described in less obvious ways or that some relevant events were missed due to keyword limitations, so the confidence is not 100%."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "8e2ba0a8-54fe-4a11-959b-ad08304f12e5",
+      "total_iterations": 4,
+      "query_history": [
+        "MATCH (e:Event)-[:LOCATED_IN]->(l:Location) WHERE e.event_type = 'Photography Exhibition' RETURN DISTINCT l.name",
+        "MATCH (e:Event) WHERE e.event_type = 'Photography Exhibition' AND exists(e.location) RETURN DISTINCT e.location AS location",
+        "MATCH (e:Event) WHERE e.event_type = 'Photography Exhibition' AND exists(e.location) RETURN DISTINCT e.location AS location",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS 'photography exhibition' OR toLower(e.name) CONTAINS 'photography exhibition' OR toLower(e.description) CONTAINS 'photograph' RETURN DISTINCT e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 36,
+    "expected_answer": [
+      "Trinity Church",
+      "High Line"
+    ],
+    "processing_order": 36
+  },
+  {
+    "question": "Consider all events involving Theater Performance. List all the locations where these events took place, without mentioning the events themselves.",
+    "predicted_answer": "The locations where Theater Performance events took place are: Bethpage State Park and Port Jefferson's historic theater.",
+    "gpt_answer_result": {
+      "final_answer": "The locations where Theater Performance events took place are: Bethpage State Park and Port Jefferson's historic theater.",
+      "confidence_score": 0.95,
+      "reasoning": [
+        "The results from the query specifically target events classified as 'Theater Performance' or similar (e.g., 'Theater Experience'), which aligns with the question's focus on theater performance events. The results list two distinct locations: 'Bethpage State Park' and 'Port Jefferson's historic theater'. The query was designed to return unique locations, which it successfully did. The results are relevant and directly answer the question without including unnecessary details about the events themselves. The confidence is not 100% because there is always a possibility that not all relevant data was captured or that there are additional locations in the database not linked to the specified event types or names in the query."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "abf3a7e0-ae13-4f6d-948e-21b1fa129aa2",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.event_type = 'Theater Performance' OR e.name = 'Theater Performance' OR e.name = 'Theater Experience' RETURN DISTINCT e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 37,
+    "expected_answer": [
+      "Bethpage State Park",
+      "Lincoln Center",
+      "Port Jefferson"
+    ],
+    "processing_order": 37
+  },
+  {
+    "question": "Reflect on events related to Theater Performance. Provide a list of all protagonists involved in these events, without describing the events.",
+    "predicted_answer": [
+      "Zoe Brown",
+      "Lucy Carter",
+      "Scarlett Thomas",
+      "Nora Ramos"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "Zoe Brown",
+        "Lucy Carter",
+        "Scarlett Thomas",
+        "Nora Ramos"
+      ],
+      "confidence_score": 0.85,
+      "reasoning": [
+        "The query specifically retrieves all distinct protagonists (participants) involved in events where the event_type contains 'theater' or 'performance'. The results list four individuals: Zoe Brown, Lucy Carter, Scarlett Thomas, and Nora Ramos. The relevant nodes confirm that Zoe Brown and Lucy Carter are directly associated with theater performance events. However, the search context only provides detailed event data for Zoe Brown and Lucy Carter, while Scarlett Thomas and Nora Ramos appear in the results but lack explicit event details in the provided context. Despite this, since the Cypher query is designed to extract all relevant protagonists from the database, and the results are distinct and match the question's requirements, there is high confidence in the answer's completeness and relevance. There is a small possibility that other protagonists exist if the database is incomplete or if some events are not indexed correctly, but based on the current data, the answer appears sufficient."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "d73ac10d-83c1-48ba-8c68-4acf98aeced7",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS 'theater' OR toLower(e.event_type) CONTAINS 'performance' WITH e UNWIND e.participants AS protagonist MATCH (p:Person) WHERE p.name = protagonist RETURN DISTINCT p.name AS protagonist"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 38,
+    "expected_answer": [
+      "Scarlett Thomas",
+      "Lucy Carter",
+      "Zoe Brown"
+    ],
+    "processing_order": 38
+  },
+  {
+    "question": "Recall all events related to Theater Performance. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": [
+      "September 22, 2026",
+      "December 26, 2026"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "September 22, 2026",
+        "December 26, 2026"
+      ],
+      "confidence_score": 0.9,
+      "reasoning": [
+        "No results returned from query",
+        "The results directly answer the question by listing all dates associated with events related to 'Theater Performance' in the dataset. The Cypher query is well-constructed to match events where the type is 'Theater Performance' or the name contains 'Theater Performance', and it returns distinct dates. The search context confirms that the relevant nodes are included: two events with valid dates ('September 22, 2026' and 'December 26, 2026') and one event with an empty date field. There is no evidence in the provided context of additional 'Theater Performance' events with different dates. The empty date in one result is correctly included, as it reflects the data's current state. Thus, the answer is complete and accurate given the available data."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "110e73a4-f16b-480a-9ce7-8115f40bdfcc",
+      "total_iterations": 2,
+      "query_history": [
+        "\n            MATCH (n)\n            WHERE n.name CONTAINS 'Recall'\n            RETURN n.name, labels(n), properties(n)\n            LIMIT 10\n            ",
+        "MATCH (e:Event) WHERE e.event_type = 'Theater Performance' OR e.name CONTAINS 'Theater Performance' RETURN DISTINCT e.date AS date ORDER BY e.date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 39,
+    "expected_answer": [
+      "December 26, 2026",
+      "March 23, 2024",
+      "September 22, 2026"
+    ],
+    "processing_order": 39
+  },
+  {
+    "question": "What is the most recent location where Carter Stewart was observed in the story's chronological timeline?",
+    "predicted_answer": "Bethpage Black Course",
+    "gpt_answer_result": {
+      "final_answer": "Bethpage Black Course",
+      "confidence_score": 0.95,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "The query specifically filtered for events involving Carter Stewart that have both a location and a date, and sorted them by the most recent date. The result returned is 'Bethpage Black Course' on September 03, 2026, which is more recent than the other detailed event in the context (Yankee Stadium, March 23, 2024). There is no evidence in the provided context of a more recent event or location for Carter Stewart. The query logic and the returned result directly address the question, and the supporting context does not suggest any missing or contradictory information. The only minor uncertainty is if there are events outside the indexed nodes, but based on the available data, this is a complete and accurate answer."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "19198c08-61fc-40e8-afbb-698694afce9d",
+      "total_iterations": 4,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(x IN e.participants WHERE x = 'Carter Stewart') AND exists(e.location) AND exists(e.date) RETURN e.location AS location, e.date AS date ORDER BY e.date DESC LIMIT 1",
+        "\n            MATCH (n)\n            WHERE n.name CONTAINS 'What'\n            RETURN n.name, labels(n), properties(n)\n            LIMIT 10\n            ",
+        "MATCH (e:Event) WHERE 'Carter Stewart' IN e.participants AND exists(e.location) AND exists(e.date) RETURN e.location AS location, e.date AS date ORDER BY e.date DESC LIMIT 1",
+        "MATCH (e:Event) WHERE 'Carter Stewart' IN e.participants AND e.location IS NOT NULL AND e.date IS NOT NULL RETURN e.location AS location, e.date AS date ORDER BY e.date DESC LIMIT 1"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 40,
+    "expected_answer": [
+      "Bethpage Black Course"
+    ],
+    "processing_order": 40
+  },
+  {
+    "question": "What is the most recent location where Lucy Carter was observed in the story's chronological timeline?",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "c8e7b787-380c-4ef9-b2fb-8661ec1b9f97",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (p:Person {name: 'Lucy Carter'})<-[:participants]-(e:Event) WHERE exists(e.location) AND exists(e.date) RETURN e.location AS location, e.date AS observation_date ORDER BY e.date DESC LIMIT 1",
+        "MATCH (p:Person {name: 'Lucy Carter'})<-[:participants]-(e:Event) WHERE exists(e.location) AND exists(e.date) WITH e ORDER BY e.date DESC LIMIT 1 MATCH (loc:Location {id: e.location}) RETURN loc.name AS most_recent_location, e.date AS observation_date",
+        "MATCH (p:Person {name: 'Lucy Carter'})<-[:participants]-(e:Event) WHERE exists(e.location) AND exists(e.date) WITH e ORDER BY e.date DESC LIMIT 1 MATCH (loc:Location {id: e.location}) RETURN loc.name AS most_recent_location, e.date AS observation_date",
+        "MATCH (p:Person {name: 'Lucy Carter'})<-[:participants]-(e:Event) WHERE exists(e.location) AND exists(e.date) WITH e ORDER BY e.date DESC LIMIT 1 MATCH (loc:Location {id: e.location}) RETURN loc.name AS most_recent_location, e.date AS observation_date",
+        "MATCH (p:Person {name: 'Lucy Carter'})-[:PARTICIPATED_IN]->(e:Event) WHERE exists(e.date) AND exists(e.location) RETURN e.location AS most_recent_location, e.date AS observation_date ORDER BY e.date DESC LIMIT 1"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 41,
+    "expected_answer": [
+      "Metropolitan Museum of Art"
+    ],
+    "processing_order": 41
+  },
+  {
+    "question": "What is the most recent location where Scarlett Thomas was observed in the story's chronological timeline?",
+    "predicted_answer": "The most recent location where Scarlett Thomas was observed in the story's chronological timeline is 'High Line' on November 13, 2026.",
+    "gpt_answer_result": {
+      "final_answer": "The most recent location where Scarlett Thomas was observed in the story's chronological timeline is 'High Line' on November 13, 2026.",
+      "confidence_score": 0.9,
+      "reasoning": [
+        "The Cypher query specifically targets the person 'Scarlett Thomas' and retrieves the most recent event she participated in, ordered by date in descending order. The result indicates that the most recent location observed for Scarlett Thomas in the story's timeline is 'High Line' on 'November 13, 2026'. This directly answers the question posed. The query's focus on the latest date and the specific person ensures that the result is relevant and accurate to the question. The search context provided also aligns with the requirement to identify the most recent observation event for Scarlett Thomas, suggesting that the query was well-structured to meet the search criteria. The confidence in the result is high because the query logic directly corresponds to the question's requirement, and there is no indication of missing data or errors in the query execution."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "b1885124-c1a0-4699-9db2-a82ef3c39eb4",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (p:Person)-[:PARTICIPATED_IN]->(e:Event) WHERE p.name = 'Scarlett Thomas' RETURN e.location AS Location, e.date AS Date ORDER BY e.date DESC LIMIT 1"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 42,
+    "expected_answer": [
+      "High Line"
+    ],
+    "processing_order": 42
+  },
+  {
+    "question": "What is the most recent location where Zoe Brown was observed in the story's chronological timeline?",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "56762dcf-da12-4361-b2eb-3618fab5df2f",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (p:Person {name: 'Zoe Brown'})<-[:participants]-(e:Event) WHERE exists(e.location) AND exists(e.date) WITH e ORDER BY e.date DESC LIMIT 1 MATCH (loc:Location {id: e.location}) RETURN loc.name AS most_recent_location, e.date AS observation_date",
+        "MATCH (p:Person {name: 'Zoe Brown'})<-[:participants]-(e:Event) WHERE exists(e.location) AND exists(e.date) WITH e ORDER BY e.date DESC LIMIT 1 MATCH (loc:Location {id: e.location}) RETURN loc.name AS most_recent_location, e.date AS observation_date",
+        "MATCH (p:Person {name: 'Zoe Brown'})-[:participants]->(e:Event) WHERE exists(e.location) AND exists(e.date) WITH e ORDER BY e.date DESC LIMIT 1 RETURN e.location AS most_recent_location, e.date AS observation_date",
+        "MATCH (p:Person {name: 'Zoe Brown'})<-[:participants]-(e:Event) WHERE exists(e.location) AND exists(e.date) WITH e ORDER BY e.date DESC LIMIT 1 MATCH (loc:Location {id: e.location}) RETURN loc.name AS most_recent_location, e.date AS observation_date",
+        "MATCH (p:Person {name: 'Zoe Brown'})<-[:participants]-(e:Event) WHERE toLower(e.event_type) CONTAINS 'observe' OR toLower(e.name) CONTAINS 'observe' OR toLower(e.description) CONTAINS 'observe' WITH e WHERE exists(e.location) AND (exists(e.date) OR exists(e.chapter)) WITH e ORDER BY coalesce(e.date, ''), coalesce(e.chapter, 0) DESC LIMIT 1 MATCH (loc:Location {id: e.location}) RETURN loc.name AS most_recent_location, e.date AS event_date, e.chapter AS event_chapter, e.name AS event_name"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 43,
+    "expected_answer": [
+      "Bethpage State Park"
+    ],
+    "processing_order": 43
+  },
+  {
+    "question": "List all locations visited by Carter Stewart in chronological order according to the story's timeline.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.75,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "The results provided list multiple events all occurring at the same location (Yankee Stadium) and on the same date (March 23, 2024), with the same chapter reference (chapter 14). This suggests that all events are part of a single day's narrative involving Carter Stewart at this location. The results are consistent and relevant to the question asked, as they focus on events where Carter Stewart is a participant and provide chronological data (date and chapter). However, the results summary only shows events from one specific date and location, and there are indications of more results (6 more results not detailed). This raises a concern about whether there are other locations and dates involved in the story that are not covered in the provided summary. The confidence in completeness is therefore not at 100%, as we do not have visibility into the full range of events or locations Carter Stewart may have visited throughout the story. The results are ordered chronologically as requested, but the lack of diversity in date and location in the visible results limits the confidence in the answer's completeness."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "b1db7652-1b1a-42e4-97a6-b96ada23e8ab",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (p:Person {name: 'Carter Stewart'})<-[:participants]-(e:Event) WHERE e.location IS NOT NULL WITH e ORDER BY coalesce(e.date, ''), coalesce(e.chapter, 0) ASC MATCH (l:Location {name: e.location}) RETURN l.name AS location, e.date AS date, e.chapter AS chapter, e.name AS event_name ORDER BY coalesce(e.date, ''), coalesce(e.chapter, 0) ASC",
+        "MATCH (p:Person {name: 'Carter Stewart'})<-[:participants]-(e:Event) WHERE e.location IS NOT NULL WITH e ORDER BY coalesce(e.date, ''), coalesce(e.chapter, 0) ASC MATCH (l:Location {name: e.location}) RETURN l.name AS location, e.date AS date, e.chapter AS chapter, e.name AS event_name ORDER BY coalesce(e.date, ''), coalesce(e.chapter, 0) ASC",
+        "MATCH (p:Person {name: 'Carter Stewart'})<-[:participants]-(e:Event) WHERE e.location IS NOT NULL WITH e ORDER BY coalesce(e.date, ''), coalesce(e.chapter, 0) ASC RETURN e.location AS location, e.date AS date, e.chapter AS chapter, e.name AS event_name",
+        "MATCH (p:Person {name: 'Carter Stewart'})<-[:participants]-(e:Event) WHERE e.location IS NOT NULL WITH e ORDER BY coalesce(e.date, ''), coalesce(e.chapter, 0) ASC MATCH (l:Location {name: e.location}) RETURN l.name AS location, e.date AS date, e.chapter AS chapter, e.name AS event_name ORDER BY coalesce(e.date, ''), coalesce(e.chapter, 0) ASC",
+        "MATCH (e:Event) WHERE e.location IS NOT NULL AND ANY(participant IN e.participants WHERE participant = 'Carter Stewart') RETURN e.location AS location, e.date AS date, e.chapter AS chapter, e.name AS event_name ORDER BY coalesce(e.date, ''), coalesce(e.chapter, 0) ASC"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 44,
+    "expected_answer": [
+      "Yankee Stadium",
+      "Snug Harbor Cultural Center",
+      "Bethpage Black Course"
+    ],
+    "processing_order": 44
+  },
+  {
+    "question": "List all locations visited by Lucy Carter in chronological order according to the story's timeline.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "The results from the query do provide a list of locations visited by Lucy Carter, specifically mentioning 'Port Jefferson's historic theater' and 'Guggenheim Museum'. However, the results lack complete chronological order due to missing dates for the visits to 'Port Jefferson's historic theater'. This makes it difficult to fully ascertain the sequence of events as per the story's timeline. The results also indicate multiple entries for the same location and date, which might suggest repeated events or an error in data retrieval or entry. The search context mentions a specific date (September 22, 2026) related to the theater, which is not reflected in the query results, indicating a possible gap in the data retrieved or in the query execution.",
+        "No results returned from query",
+        "The Cypher query results provide a list of locations visited by Lucy Carter, but there are significant gaps in the data that affect the completeness and accuracy of the answer. The first three results lack specific dates, which are crucial for listing the locations in chronological order as required by the question. This omission makes it impossible to determine the exact sequence of these visits relative to other events. Additionally, the results only show repeated visits to the same two locations (Port Jefferson's historic theater and Guggenheim Museum), which might not represent all the locations Lucy visited according to the story's timeline. The search context and vector results indicate additional narrative text patterns that suggest other potential locations and events, such as a parkour film screening, which are not captured in the Cypher query results. Therefore, the answer is incomplete as it likely does not include all relevant locations and lacks proper chronological ordering for some of the listed visits.",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "d46ac57b-6d36-4b80-a67b-bf1226455077",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (p:Person)-[:PARTICIPATED_IN]->(e:Event) WHERE p.name = 'Lucy Carter' RETURN e.location AS Location, e.date AS Date ORDER BY e.date",
+        "MATCH (p:Person)-[:PARTICIPATED_IN]->(e:Event)-[:HELD_AT]->(l:Location) WHERE p.name = 'Lucy Carter' RETURN l.name AS Location, e.date AS Date ORDER BY e.date",
+        "MATCH (p:Person)-[:PARTICIPATED_IN]->(e:Event) WHERE p.name = 'Lucy Carter' RETURN e.location AS Location, e.date AS Date ORDER BY e.date",
+        "MATCH (e:Event) WHERE e.participants CONTAINS 'Lucy Carter' AND exists(e.location) OPTIONAL MATCH (l:Location {id: e.location}) RETURN l.name AS Location, e.date AS Date ORDER BY e.date ASC",
+        "MATCH (p:Person {name: 'Lucy Carter'}), (e:Event) WHERE p.name IN e.participants AND exists(e.location) AND exists(e.date) MATCH (l:Location {id: e.location}) RETURN l.name AS Location, e.date AS Date ORDER BY e.date ASC"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 45,
+    "expected_answer": [
+      "Guggenheim Museum",
+      "Port Jefferson",
+      "Metropolitan Museum of Art"
+    ],
+    "processing_order": 45
+  },
+  {
+    "question": "List all locations visited by Scarlett Thomas in chronological order according to the story's timeline.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "The results do provide some relevant information about locations visited by Scarlett Thomas, including 'New York Harbor', 'Grand Hall', and (from the context) 'High Line'. However, the query results shown are problematic: there are multiple duplicate entries for 'New York Harbor' on the same date, and the list is incomplete as only two unique locations are explicitly listed in the summary, while the context mentions at least one more ('High Line') not present in the summary. Additionally, the results are not fully ordered chronologically in the summary, and not all locations from the story's timeline are clearly enumerated. There is also ambiguity regarding the total number of unique locations and whether all visits are captured. Therefore, the answer is incomplete and possibly inaccurate.",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "2586dd8b-fb5d-4d35-a9eb-0e4282e3c0e1",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (p:Person)-[:PARTICIPATED_IN]->(e:Event) WHERE p.name = 'Scarlett Thomas' RETURN e.location AS Location, e.date AS Date ORDER BY e.date",
+        "MATCH (p:Person {name: 'Scarlett Thomas'})<-[:participants]-(e:Event) WHERE exists(e.location) WITH e ORDER BY coalesce(e.date, e.chapter) ASC RETURN e.location AS Location, e.date AS Date, e.chapter AS Chapter",
+        "MATCH (p:Person {name: 'Scarlett Thomas'}) WITH p UNWIND ['participants'] AS rel MATCH (e:Event) WHERE p.name IN e.participants AND exists(e.location) OPTIONAL MATCH (l:Location {name: e.location}) RETURN e.location AS Location, l.id AS LocationId, e.date AS Date, e.chapter AS Chapter ORDER BY coalesce(e.date, toString(e.chapter)) ASC",
+        "MATCH (e:Event) WHERE 'Scarlett Thomas' IN e.participants AND exists(e.location) AND (exists(e.date) OR exists(e.chapter)) RETURN e.location AS Location, e.date AS Date, e.chapter AS Chapter ORDER BY coalesce(e.date, toString(e.chapter)) ASC",
+        "MATCH (e:Event) WHERE 'Scarlett Thomas' IN e.participants AND exists(e.location) AND (exists(e.date) OR exists(e.chapter)) RETURN e.location AS Location, e.date AS Date, e.chapter AS Chapter ORDER BY coalesce(e.date, e.chapter) ASC"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 46,
+    "expected_answer": [
+      "Lincoln Center",
+      "Statue of Liberty",
+      "High Line"
+    ],
+    "processing_order": 46
+  },
+  {
+    "question": "List all locations visited by Zoe Brown in chronological order according to the story's timeline.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "cc5e0bdf-c59c-4a3b-80c6-39f625f90e51",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (p:Person {name: 'Zoe Brown'})<-[:participants]-(e:Event) WHERE e.event_type = 'visit' AND exists(e.location) WITH e ORDER BY coalesce(e.date, e.chapter, e.id) ASC MATCH (loc:Location {id: e.location}) RETURN loc.name AS location, coalesce(e.date, e.chapter, e.id) AS timeline_order",
+        "MATCH (p:Person {name: 'Zoe Brown'})<-[:participants]-(e:Event) WHERE e.event_type IN ['visit', 'present at'] AND exists(e.location) MATCH (loc:Location {id: e.location}) RETURN loc.name AS location, coalesce(e.date, e.chapter, e.id) AS timeline_order ORDER BY timeline_order ASC",
+        "MATCH (p:Person {name: 'Zoe Brown'})<-[:participants]-(e:Event) WHERE e.event_type IN ['visit', 'present at'] AND exists(e.location) MATCH (loc:Location {id: e.location}) RETURN loc.name AS location, coalesce(e.date, e.chapter, e.id) AS timeline_order ORDER BY timeline_order ASC",
+        "MATCH (p:Person {name: 'Zoe Brown'})<-[:participants]-(e:Event) WHERE exists(e.location) MATCH (loc:Location {id: e.location}) RETURN loc.name AS location, coalesce(e.date, e.chapter, e.id) AS timeline_order ORDER BY timeline_order ASC",
+        "MATCH (p:Person {name: 'Zoe Brown'})<-[:participants]-(e:Event) WHERE e.event_type IN ['visit', 'present at'] AND exists(e.location) MATCH (loc:Location {id: e.location}) RETURN loc.name AS location, coalesce(e.date, e.chapter, e.id) AS timeline_order ORDER BY timeline_order ASC"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 47,
+    "expected_answer": [
+      "Port Jefferson",
+      "Long Beach Boardwalk",
+      "Woolworth Building",
+      "Bethpage State Park"
+    ],
+    "processing_order": 47
+  },
+  {
+    "question": "Provide a chronological list of all dates when Carter Stewart was observed, from earliest to latest in the story's timeline.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.7,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "The query results provide a list of dates when Carter Stewart was observed, all on 'March 23, 2024'. However, all results show the same date, which raises questions about the completeness of the data. The search context indicates that the query was correctly focused on identifying all event nodes related to Carter Stewart and extracting their dates in chronological order. The vector results and relevant nodes provide additional context but do not offer different dates or events beyond what is already captured in the query results. This could suggest that either Carter Stewart was only observed on this single date, or there might be missing data or events not captured in the database. The confidence in the completeness of this answer is therefore moderate, as it is uncertain whether there are additional dates not included in the results."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "05597768-6720-4c96-b97e-2e6b7b78c3b0",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE 'Carter Stewart' IN e.participants AND exists(e.date) RETURN e.date AS observation_date ORDER BY e.date ASC",
+        "MATCH (e:Event) WHERE 'Carter Stewart' IN e.participants AND exists(e.date) RETURN e.date AS observation_date ORDER BY e.date ASC",
+        "MATCH (e:Event) WHERE 'Carter Stewart' IN e.participants AND EXISTS(e.date) RETURN e.date AS observation_date ORDER BY e.date ASC",
+        "MATCH (e:Event) WHERE 'Carter Stewart' IN e.participants AND exists(e.date) RETURN e.date AS observation_date ORDER BY date(e.date) ASC",
+        "MATCH (e:Event) WHERE 'Carter Stewart' IN e.participants AND e.date IS NOT NULL RETURN e.date AS observation_date ORDER BY e.date ASC"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 48,
+    "expected_answer": [
+      "March 23, 2024",
+      "October 13, 2024",
+      "September 03, 2026"
+    ],
+    "processing_order": 48
+  },
+  {
+    "question": "Provide a chronological list of all dates when Lucy Carter was observed, from earliest to latest in the story's timeline.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "851cf934-247a-48da-bb22-14eb3e491f3a",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE p = 'Lucy Carter') AND exists(e.date) RETURN e.date AS date ORDER BY e.date ASC",
+        "MATCH (e:Event) WHERE 'Lucy Carter' IN e.participants AND exists(e.date) RETURN e.date AS date ORDER BY e.date ASC",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE p = 'Lucy Carter') AND exists(e.date) RETURN e.date AS date, e.name AS event_name, e.description AS event_description ORDER BY e.date ASC",
+        "MATCH (p:Person)-[:PARTICIPATED_IN]->(e:Event) WHERE p.name = 'Lucy Carter' AND exists(e.date) RETURN e.date AS observation_date ORDER BY e.date ASC",
+        "MATCH (p:Person {name: 'Lucy Carter'}) WHERE exists(p.original_story) WITH p, [x IN split(p.original_story, ' ') WHERE x =~ '\\d{4}-\\d{2}-\\d{2}'] AS dates UNWIND dates AS date RETURN DISTINCT date ORDER BY date ASC"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 49,
+    "expected_answer": [
+      "March 23, 2024",
+      "September 22, 2026",
+      "November 13, 2026"
+    ],
+    "processing_order": 49
+  },
+  {
+    "question": "Provide a chronological list of all dates when Scarlett Thomas was observed, from earliest to latest in the story's timeline.",
+    "predicted_answer": "Scarlett Thomas was observed on November 13, 2026.",
+    "gpt_answer_result": {
+      "final_answer": "Scarlett Thomas was observed on November 13, 2026.",
+      "confidence_score": 0.8,
+      "reasoning": [
+        "No results returned from query",
+        "The results from the query do provide a list of dates when Scarlett Thomas was observed in various events, which is relevant to the question asked. The query specifically targets events where Scarlett Thomas is a participant and orders the dates chronologically, which aligns well with the question's requirement. However, the results summary shows repeated dates (June 14, 2025, appears four times), which could either indicate multiple events on the same day or a redundancy in the data. Additionally, the results summary only provides a partial list with '...and 4 more results', without detailing all the dates. The node details provided in the search context mention an event on November 13, 2026, which is not listed in the results summary, suggesting that the results might not be complete. This discrepancy lowers the confidence in the completeness and accuracy of the provided answer. The chronological order seems correct based on the given data, but the potential missing data points and redundancy are concerns.",
+        "The results identify a single date, November 13, 2026, when Scarlett Thomas was observed (specifically at her exhibition debut). All three results are duplicates of this same event, and no other distinct observation dates are present. The query logic appears sound, filtering for observation/appearance-related events involving Scarlett Thomas and ordering by date. However, the presence of only one unique date raises the possibility that other relevant events may have been missed, especially since the vector results reference multiple nodes (some of which are Person nodes, not Event nodes). The search context does not indicate that the story is extremely short or that only one observation event exists, so there is some uncertainty about completeness. The answer is accurate for the data returned, but completeness cannot be guaranteed without confirming that the dataset is exhaustive or that no other observation events exist.",
+        "The results provide a single date, November 13, 2026, when Scarlett Thomas was observed (specifically, her exhibition debut). This matches the query constraints for observation-related events. However, only one event was found, and the vector results suggest other nodes with moderate similarity, but those nodes are 'Person' nodes and do not contain additional observation dates. The search context and query were thorough in targeting observation, showcase, debut, and exhibition events, but it's possible the dataset may contain other relevant events not captured due to limitations in event descriptions or missing data. Therefore, while the answer is accurate for the data returned, it may not be fully complete if other observation dates exist but were not retrieved.",
+        "The query and results directly address the question by extracting events where Scarlett Thomas was 'observed' or participated in an 'Art Exhibition', returning the date 'November 13, 2026'. The supporting node details confirm this is an observation-related event (her exhibition debut). However, only one date is returned, and while the query logic is sound, there is a possibility that other observation events (such as informal sightings, other exhibitions, or narrative moments where she is observed but not explicitly labeled as 'Art Exhibition') might exist but were not captured due to the search constraints. The vector results also reference only this event as relevant. Thus, the answer is likely correct based on available data, but not guaranteed to be exhaustive if the source data or event tagging is incomplete."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "379c999a-2a65-4c44-8748-adae6636e493",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event)-[:PARTICIPANT]->(p:Person {name: 'Scarlett Thomas'}) RETURN e.date AS ObservationDate ORDER BY e.date",
+        "MATCH (e:Event) WHERE ANY(x IN e.participants WHERE x = 'Scarlett Thomas') RETURN e.date AS observation_date ORDER BY e.date ASC",
+        "MATCH (e:Event) WHERE 'Scarlett Thomas' IN e.participants AND (e.description CONTAINS 'observe' OR e.description CONTAINS 'appearance' OR e.event_type CONTAINS 'Exhibition' OR e.description CONTAINS 'showcase' OR e.description CONTAINS 'debut') RETURN e.date AS observation_date ORDER BY e.date ASC",
+        "MATCH (e:Event) WHERE 'Scarlett Thomas' IN e.participants AND (e.description CONTAINS 'observed' OR e.description CONTAINS 'showcase' OR e.description CONTAINS 'debut' OR e.event_type = 'Art Exhibition') RETURN e.date AS ObservationDate ORDER BY e.date",
+        "MATCH (e:Event) WHERE 'Scarlett Thomas' IN e.participants AND (e.description CONTAINS 'observed' OR e.event_type = 'Art Exhibition') RETURN e.date AS ObservationDate ORDER BY e.date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 50,
+    "expected_answer": [
+      "March 23, 2024",
+      "June 14, 2025",
+      "November 13, 2026"
+    ],
+    "processing_order": 50
+  },
+  {
+    "question": "Provide a chronological list of all dates when Zoe Brown was observed, from earliest to latest in the story's timeline.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "8eb5374f-f3f7-4f9e-8e92-a3ea42402e69",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (p:Person {name: 'Zoe Brown'})<-[:participants]-(e:Event) WHERE e.event_type = 'observation' AND exists(e.date) RETURN e.date AS observation_date ORDER BY e.date ASC",
+        "MATCH (p:Person {name: 'Zoe Brown'})<-[:participants]-(e:Event) WHERE e.event_type = 'observation' AND exists(e.date) RETURN e.date AS observation_date ORDER BY e.date ASC",
+        "MATCH (p:Person {name: 'Zoe Brown'})<-[:participants]-(e:Event) WHERE e.event_type = 'observation' AND exists(e.date) AND e.date IS NOT NULL RETURN e.date AS observation_date ORDER BY e.date ASC",
+        "MATCH (e:Event)-[:participants]->(p:Person {name: 'Zoe Brown'}) WHERE exists(e.date) RETURN e.date AS observation_date ORDER BY e.date ASC",
+        "MATCH (p:Person {name: 'Zoe Brown'})-[:OBSERVED]-(e:Event) WHERE exists(e.date) RETURN e.date AS observation_date ORDER BY e.date ASC"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 51,
+    "expected_answer": [
+      "March 23, 2024",
+      "October 13, 2024",
+      "June 08, 2026",
+      "December 26, 2026"
+    ],
+    "processing_order": 51
+  },
+  {
+    "question": "Think about Carter Stewart's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+    "predicted_answer": "Carter Stewart has been involved in several key events. He participated in an environmental summit, engaging in discussions about water conservation among a diverse group of attendees. At a storytelling festival held at Yankee Stadium, he experienced a range of activities: marveling at the unusual venue, reflecting on the nature of humor, observing and analyzing storytelling duels and debates, interacting socially with other storytellers, and personally reflecting on his own experience amid the lively, eclectic crowd. Throughout these events, Carter's actions included navigating complex social and thematic environments, engaging in thoughtful discussion, and actively participating in the communal and performative aspects of each gathering.",
+    "gpt_answer_result": {
+      "final_answer": "Carter Stewart has been involved in several key events. He participated in an environmental summit, engaging in discussions about water conservation among a diverse group of attendees. At a storytelling festival held at Yankee Stadium, he experienced a range of activities: marveling at the unusual venue, reflecting on the nature of humor, observing and analyzing storytelling duels and debates, interacting socially with other storytellers, and personally reflecting on his own experience amid the lively, eclectic crowd. Throughout these events, Carter's actions included navigating complex social and thematic environments, engaging in thoughtful discussion, and actively participating in the communal and performative aspects of each gathering.",
+      "confidence_score": 0.85,
+      "reasoning": [
+        "The results provide a detailed account of Carter Stewart's involvement in multiple key events, focusing on what he did and experienced rather than specific dates or locations (except where contextually relevant). The events described include his participation in an environmental summit where he discussed water conservation, his multifaceted involvement in a storytelling festival at Yankee Stadium (including marveling at the setting, reflecting on humor, eavesdropping on debates, social interactions, and personal reflections). The narratives are rich in detail about his actions, thoughts, and interactions, which directly address the question's requirement to describe all key events Carter Stewart was involved in, focusing on what happened. While there may be additional events among the 11 total results not fully shown here, the sample covers a broad range of experiences and roles, suggesting strong coverage. However, since only 6 events are summarized here and 11 were found, there is a slight possibility that a few key actions are missing, but the major themes and types of involvement are well represented."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "520a6d0b-5c14-4c5f-b141-0256aebe0be8",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE 'Carter Stewart' IN e.participants RETURN e.name AS event_name, e.event_type AS event_type, e.description AS event_description, e.chapter AS chapter, e.original_story AS event_narrative"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 52,
+    "expected_answer": [
+      "Storytelling Festival",
+      "Environmental Summit",
+      "Carnival"
+    ],
+    "processing_order": 52
+  },
+  {
+    "question": "Think about Lucy Carter's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.75,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "The results provide a detailed description of key events Lucy Carter participated in, focusing on her experiences and interactions during those events. These include attending and discussing theater performances, engaging in a parkour workshop, and hosting a parkour film screening. The descriptions are rich in narrative detail, emphasizing what happened during these events, which aligns well with the query's focus on describing events without temporal or location specifics. However, the results seem to be limited to a specific set of activities (theater and parkour), and it's unclear if these are the only significant events Lucy has been involved in or if there are other aspects of her life and experiences not captured here. The query results also do not mention any outcomes or specific roles, which might have provided a more comprehensive view of her involvement in these events."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "2c43ca92-7029-44a3-be4b-a863ac8d68de",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (p:Person {name: 'Lucy Carter'})<-[:participants]-(e:Event) RETURN e.name AS event_name, e.description AS event_description, e.original_story AS event_story",
+        "MATCH (p:Person {name: 'Lucy Carter'})-[:participants]-(e:Event) RETURN e.name AS event_name, e.description AS event_description, e.original_story AS event_story",
+        "MATCH (p:Person {name: 'Lucy Carter'})<-[:participants]-(e:Event) RETURN e.name AS event_name, e.event_type AS event_type, e.description AS event_description, e.original_story AS event_story, p.name AS person_name, p.original_story AS person_story",
+        "MATCH (p:Person {name: 'Lucy Carter'})-[:participants]-(e:Event) RETURN e.name AS EventName, e.description AS Description, e.original_story AS Story",
+        "MATCH (p:Person {name: 'Lucy Carter'})-[r]-(e:Event) RETURN e.name AS EventName, e.description AS Description, e.original_story AS Story, type(r) AS RelationshipType, r.roles AS Roles, r.outcomes AS Outcomes"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 53,
+    "expected_answer": [
+      "Fashion Show",
+      "Theater Performance",
+      "Parkour Workshop"
+    ],
+    "processing_order": 53
+  },
+  {
+    "question": "Think about Scarlett Thomas's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+    "predicted_answer": "Scarlett Thomas has been involved in several key events that are richly described: attending a musical performance where she experienced a crescendo of emotions, exploring backstage at Lincoln Center with enthusiasm, hosting her first exhibition showcasing a portrait series, and interacting intriguingly with an entity during her exhibition. These events highlight her deep engagement with the arts, both as a participant and as an artist.",
+    "gpt_answer_result": {
+      "final_answer": "Scarlett Thomas has been involved in several key events that are richly described: attending a musical performance where she experienced a crescendo of emotions, exploring backstage at Lincoln Center with enthusiasm, hosting her first exhibition showcasing a portrait series, and interacting intriguingly with an entity during her exhibition. These events highlight her deep engagement with the arts, both as a participant and as an artist.",
+      "confidence_score": 0.75,
+      "reasoning": [
+        "Basic evaluation - found 12 results",
+        "The results provide a series of narrative descriptions that detail key events involving Scarlett Thomas, focusing on what happened in each scenario. These include her attending a musical performance, exploring backstage at Lincoln Center, her first exhibition, and interactions with an entity during the exhibition. The narratives are rich in descriptive content, which helps in understanding the experiences of Scarlett Thomas. However, there are placeholders like '$entity_1' which are not resolved in the provided narratives, leaving some ambiguity about the specifics of certain events. Additionally, while the results cover various scenarios, it's unclear if these are all the significant events Scarlett Thomas has been involved in, as the query might not capture all relevant events or personal experiences unless they are explicitly linked in the database. The results seem to focus heavily on artistic and performance-related events, which might suggest a thematic limitation based on the available data."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "7723982a-398b-4d9d-9592-40ef7873db46",
+      "total_iterations": 2,
+      "query_history": [
+        "MATCH (p:Person {name: 'Scarlett Thomas'}) WHERE p.original_story IS NOT NULL RETURN p.original_story AS EventDescription UNION MATCH (e:Event) WHERE 'Scarlett Thomas' IN e.participants AND e.original_story IS NOT NULL RETURN e.original_story AS EventDescription",
+        "MATCH (e:Event) WHERE 'Scarlett Thomas' IN e.participants AND e.original_story IS NOT NULL RETURN e.description AS KeyEvent, e.original_story AS EventNarrative UNION MATCH (p:Person {name: 'Scarlett Thomas'}) WHERE p.original_story IS NOT NULL RETURN 'Personal Experience' AS KeyEvent, p.original_story AS EventNarrative"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 54,
+    "expected_answer": [
+      "Theater Performance",
+      "Street Food Festival",
+      "Photography Exhibition"
+    ],
+    "processing_order": 54
+  },
+  {
+    "question": "Think about Zoe Brown's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "530e2bea-9596-4006-8e2d-2cfcca5ca5b1",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (p:Person {name: 'Zoe Brown'})<-[:participants]-(e:Event) RETURN e.name AS event_name, e.event_type AS event_type, e.description AS event_description, e.original_story AS event_story",
+        "MATCH (p:Person {name: 'Zoe Brown'})<-[:participants]-(e:Event) RETURN e.name AS event_name, e.event_type AS event_type, e.description AS event_description, e.original_story AS event_story",
+        "MATCH (p:Person {name: 'Zoe Brown'})<-[:participants]-(e:Event) RETURN e.name AS event_name, e.event_type AS event_type, e.description AS event_description, e.original_story AS event_story",
+        "MATCH (p:Person {name: 'Zoe Brown'})<-[:participants]-(e:Event) RETURN e.original_story AS event_story",
+        "MATCH (p:Person {name: 'Zoe Brown'})<-[:participants]-(e:Event) RETURN e.name AS event_name, e.event_type AS event_type, e.description AS event_description, e.original_story AS event_story, p.original_story AS zoe_perspective"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 55,
+    "expected_answer": [
+      "Astronomy Night",
+      "Theater Performance",
+      "Film Festival",
+      "Ice Sculpture Exhibition"
+    ],
+    "processing_order": 55
+  },
+  {
+    "question": "Enumerate all activities that Carter Stewart has been involved in, ordered from earliest to latest in the story's chronology.",
+    "predicted_answer": "Carter Stewart's activities, in chronological order, are: 1) Storytelling Festival at Yankee Stadium, 2) Storytelling at Yankee Stadium, 3) Humor and Storytelling, 4) Storytelling Duel, 5) Carter's Interaction, and 6 more festival-related activities on March 23, 2024, Chapter 14. All activities pertain to his participation in the storytelling festival at Yankee Stadium.",
+    "gpt_answer_result": {
+      "final_answer": "Carter Stewart's activities, in chronological order, are: 1) Storytelling Festival at Yankee Stadium, 2) Storytelling at Yankee Stadium, 3) Humor and Storytelling, 4) Storytelling Duel, 5) Carter's Interaction, and 6 more festival-related activities on March 23, 2024, Chapter 14. All activities pertain to his participation in the storytelling festival at Yankee Stadium.",
+      "confidence_score": 0.85,
+      "reasoning": [
+        "The results provide a list of activities involving Carter Stewart, all occurring on March 23, 2024, during chapter 14 at the Storytelling Festival at Yankee Stadium. The activities are granular (e.g., 'Storytelling Duel', 'Carter's Interaction'), but they all appear to be facets of the same event. The search context mentions an earlier episode involving Carter Stewart navigating fairways and discussing water conservation, which is not reflected in the returned activities. This suggests the query may have missed earlier events or activities from previous chapters or dates. Therefore, the answer is incomplete, as it only covers a single day/event and omits earlier parts of Carter Stewart's story.",
+        "The query results provide a chronological list of 11 activities involving Carter Stewart, all occurring on March 23, 2024, during Chapter 14 at Yankee Stadium. The activities are distinct, covering various aspects of his participation in the storytelling festival, such as attending, marveling at the event, reflecting on humor, eavesdropping on a duel, and interacting with other storytellers. The results are ordered by date and chapter, matching the question's requirements. However, the context mentions Carter Stewart's involvement in water conservation and navigating fairways, which are not reflected in the returned activities. This suggests that either those events are not tagged as 'activities' in the database or were omitted due to query constraints. Despite this, the results seem to comprehensively cover Carter Stewart's activities at the festival, which is the main focus of the chapter and the majority of the story's chronology provided. Unless the question intends to capture Carter's entire story arc (including events outside the festival), these results are sufficient. For absolute completeness, a broader query or review of earlier chapters might be warranted."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "3221cd77-b8bb-4d4f-9539-07fe97aea9cc",
+      "total_iterations": 2,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE p = 'Carter Stewart') RETURN e.name AS activity, e.date AS date, e.chapter AS chapter, e.description AS description ORDER BY e.date ASC, e.chapter ASC",
+        "MATCH (e:Event) WHERE 'Carter Stewart' IN e.participants RETURN e.name AS activity, e.date AS date, e.chapter AS chapter, e.description AS description ORDER BY e.date ASC, e.chapter ASC"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 56,
+    "expected_answer": [
+      "Storytelling Festival",
+      "Carnival",
+      "Environmental Summit"
+    ],
+    "processing_order": 56
+  },
+  {
+    "question": "Enumerate all activities that Lucy Carter has been involved in, ordered from earliest to latest in the story's chronology.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "The results provide a partial answer to the question. They list several activities Lucy Carter participated in, with some events having dates (e.g., 'Parkour Workshop at Guggenheim Museum', 'Parkour Film Screening' on March 23, 2024), but others lack dates ('Discussion on Theater Technology', 'Theater Performance', 'Final Act and Audience Reaction'). The ordering is by date, but for undated events, their placement in the chronology is ambiguous. The results also mention there are three more activities, but their details are not shown, making it impossible to verify completeness. The query appears to only capture direct PARTICIPATED_IN relationships and may miss indirect involvements as requested in the constraints. Additionally, the story context hints at more nuanced involvement (e.g., hosting, eavesdropping) that may not be fully represented in the returned activities.",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "a98617d5-f560-43c3-8b27-c3df9d1d95ca",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (p:Person {name: 'Lucy Carter'}) WITH p MATCH (e:Event) WHERE p.id IN e.participants RETURN e.name AS activity, e.date AS date, e.chapter AS chapter, e.description AS description ORDER BY e.date ASC, e.chapter ASC",
+        "MATCH (p:Person {name: 'Lucy Carter'}) MATCH (e:Event) WHERE p.id IN e.participants RETURN e.name AS activity, e.date AS date, e.chapter AS chapter, e.description AS description ORDER BY e.date ASC, e.chapter ASC",
+        "MATCH (p:Person)-[:PARTICIPATED_IN]->(e:Event) WHERE p.name = 'Lucy Carter' RETURN e.name AS activity, e.date AS date ORDER BY e.date ASC",
+        "MATCH (p:Person {name: 'Lucy Carter'}) WITH p MATCH (e:Event) WHERE p.id IN e.participants RETURN e.name AS activity, e.date AS date, e.chapter AS chapter, e.description AS description, e.original_story AS event_story ORDER BY e.date ASC, e.chapter ASC",
+        "MATCH (p:Person {name: 'Lucy Carter'}) MATCH (e:Event) WHERE p.id IN e.participants RETURN e.name AS activity, e.date AS date, e.chapter AS chapter, e.description AS description, e.original_story AS event_story ORDER BY e.date ASC, e.chapter ASC, e.name ASC"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 57,
+    "expected_answer": [
+      "Parkour Workshop",
+      "Theater Performance",
+      "Fashion Show"
+    ],
+    "processing_order": 57
+  },
+  {
+    "question": "Enumerate all activities that Scarlett Thomas has been involved in, ordered from earliest to latest in the story's chronology.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "The query results provide a list of activities that Scarlett Thomas has been involved in, ordered by date and chapter, which aligns with the question's requirement for chronological order. The activities listed include various events and experiences, such as festivals, culinary experiences, and a musical performance. However, the results summary only provides partial information, listing only 5 out of 9 results. This partial visibility raises concerns about the completeness of the answer. Additionally, the results from the search context mention an 'Art Exhibition' which Scarlett Thomas participated in, but this event is not listed in the results summary. This discrepancy suggests that there might be more activities not captured in the summary provided. Therefore, while the results seem relevant and partially complete, there is uncertainty regarding their completeness.",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "caa3db6e-eb8f-4765-ba0a-edddc840c505",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE 'Scarlett Thomas' IN e.participants RETURN e.name AS activity, e.event_type AS type, e.chapter AS chapter, e.date AS date, e.description AS description ORDER BY e.date ASC, e.chapter ASC",
+        "MATCH (p:Person)-[:PARTICIPATES_IN]-(e:Event) WHERE p.name = 'Scarlett Thomas' RETURN e.name AS activity, e.event_type AS type, e.chapter AS chapter, e.date AS date, e.description AS description ORDER BY e.date ASC, e.chapter ASC",
+        "\n            MATCH (n)\n            WHERE n.name CONTAINS 'Enumerate'\n            RETURN n.name, labels(n), properties(n)\n            LIMIT 10\n            ",
+        "MATCH (p:Person)-[:PARTICIPATES_IN]->(e:Event) WHERE p.name = 'Scarlett Thomas' RETURN e.name AS activity, e.event_type AS type, e.chapter AS chapter, e.date AS date, e.description AS description ORDER BY e.date ASC, e.chapter ASC",
+        "\n            MATCH (n)\n            WHERE n.name CONTAINS 'Enumerate'\n            RETURN n.name, labels(n), properties(n)\n            LIMIT 10\n            "
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 58,
+    "expected_answer": [
+      "Theater Performance",
+      "Street Food Festival",
+      "Photography Exhibition"
+    ],
+    "processing_order": 58
+  },
+  {
+    "question": "Enumerate all activities that Zoe Brown has been involved in, ordered from earliest to latest in the story's chronology.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "22d4e769-0999-421c-bbe5-874bdf743bcf",
+      "total_iterations": 5,
+      "query_history": [
+        "\n            MATCH (n)\n            WHERE n.name CONTAINS 'Enumerate'\n            RETURN n.name, labels(n), properties(n)\n            LIMIT 10\n            ",
+        "\n            MATCH (n)\n            WHERE n.name CONTAINS 'Enumerate'\n            RETURN n.name, labels(n), properties(n)\n            LIMIT 10\n            ",
+        "\n            MATCH (n)\n            WHERE n.name CONTAINS 'Enumerate'\n            RETURN n.name, labels(n), properties(n)\n            LIMIT 10\n            ",
+        "\n            MATCH (n)\n            WHERE n.name CONTAINS 'Enumerate'\n            RETURN n.name, labels(n), properties(n)\n            LIMIT 10\n            ",
+        "\n            MATCH (n)\n            WHERE n.name CONTAINS 'Enumerate'\n            RETURN n.name, labels(n), properties(n)\n            LIMIT 10\n            "
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 59,
+    "expected_answer": [
+      "Astronomy Night",
+      "Film Festival",
+      "Ice Sculpture Exhibition",
+      "Theater Performance"
+    ],
+    "processing_order": 59
+  },
+  {
+    "question": "Consider all events that Carter Stewart has been involved in. List all the locations where these events took place, without mentioning the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "0dcf04fb-7e6f-405d-a5ff-957b5280b024",
+      "total_iterations": 5,
+      "query_history": [
+        "\n            MATCH (n)\n            WHERE n.name CONTAINS 'Consider'\n            RETURN n.name, labels(n), properties(n)\n            LIMIT 10\n            ",
+        "\n            MATCH (n)\n            WHERE n.name CONTAINS 'Consider'\n            RETURN n.name, labels(n), properties(n)\n            LIMIT 10\n            ",
+        "\n            MATCH (n)\n            WHERE n.name CONTAINS 'Consider'\n            RETURN n.name, labels(n), properties(n)\n            LIMIT 10\n            ",
+        "\n            MATCH (n)\n            WHERE n.name CONTAINS 'Consider'\n            RETURN n.name, labels(n), properties(n)\n            LIMIT 10\n            ",
+        "\n            MATCH (n)\n            WHERE n.name CONTAINS 'Consider'\n            RETURN n.name, labels(n), properties(n)\n            LIMIT 10\n            "
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 60,
+    "expected_answer": [
+      "Snug Harbor Cultural Center",
+      "Bethpage Black Course",
+      "Yankee Stadium"
+    ],
+    "processing_order": 60
+  }
+]

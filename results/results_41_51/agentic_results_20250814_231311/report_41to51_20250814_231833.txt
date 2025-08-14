@@ -1,0 +1,101 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-08-14 23:18:33
+Question Range: 41-51
+Total Questions Processed: 11
+Successful Searches: 11 (100.0%)
+Questions with Answers: 11 (100.0%)
+Average Iterations per Question: 1.2
+
+DETAILED RESULTS:
+------------------------------
+
+Question 41:
+  Text: What is the most recent location where Lucy Carter was observed in the story's chronological timeline?
+  Expected: ['Metropolitan Museum of Art']
+  Predicted: The most recent location where Lucy Carter was observed in the story's chronological timeline is the Metropolitan Museum of Art.
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+
+Question 42:
+  Text: What is the most recent location where Scarlett Thomas was observed in the story's chronological timeline?
+  Expected: ['High Line']
+  Predicted: The most recent location where Scarlett Thomas was observed in the story's chronological timeline is the High Line.
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+
+Question 43:
+  Text: What is the most recent location where Zoe Brown was observed in the story's chronological timeline?
+  Expected: ['Bethpage State Park']
+  Predicted: The most recent location where Zoe Brown was observed in the story's chronological timeline is Bethpage State Park.
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+
+Question 44:
+  Text: List all locations visited by Carter Stewart in chronological order according to the story's timeline.
+  Expected: ['Yankee Stadium', 'Snug Harbor Cultural Center', 'Bethpage Black Course']
+  Predicted: Based on the results, Carter Stewart visited Yankee Stadium, Snug Harbor Cultural Center, and Bethpage Black Course. However, the order of the visits cannot be confirmed without the dates.
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 1
+
+Question 45:
+  Text: List all locations visited by Lucy Carter in chronological order according to the story's timeline.
+  Expected: ['Guggenheim Museum', 'Port Jefferson', 'Metropolitan Museum of Art']
+  Predicted: Lucy Carter visited the following locations in chronological order: Guggenheim Museum on 2024-03-23, Port Jefferson's historic theater on 2026-09-22, and Metropolitan Museum of Art on 2026-11-13.
+  Search Success: True
+  Confidence: 0.90
+  Iterations: 2
+
+Question 46:
+  Text: List all locations visited by Scarlett Thomas in chronological order according to the story's timeline.
+  Expected: ['Lincoln Center', 'Statue of Liberty', 'High Line']
+  Predicted: Based on the results provided, Scarlett Thomas visited the 'Grand Hall' and 'Lincoln Center' on 'March 23, 2024', and 'New York Harbor' on 'June 14, 2025'.
+  Search Success: True
+  Confidence: 0.85
+  Iterations: 2
+
+Question 47:
+  Text: List all locations visited by Zoe Brown in chronological order according to the story's timeline.
+  Expected: ['Port Jefferson', 'Long Beach Boardwalk', 'Woolworth Building', 'Bethpage State Park']
+  Predicted: Zoe Brown visited the following locations in chronological order: Port Jefferson, Long Beach Boardwalk, Woolworth Building, Bethpage State Park.
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+
+Question 48:
+  Text: Provide a chronological list of all dates when Carter Stewart was observed, from earliest to latest in the story's timeline.
+  Expected: ['March 23, 2024', 'October 13, 2024', 'September 03, 2026']
+  Predicted: Carter Stewart was observed on the following dates: March 23, 2024, October 13, 2024, and September 03, 2026.
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+
+Question 49:
+  Text: Provide a chronological list of all dates when Lucy Carter was observed, from earliest to latest in the story's timeline.
+  Expected: ['March 23, 2024', 'September 22, 2026', 'November 13, 2026']
+  Predicted: Lucy Carter was observed on the following dates: March 23, 2024, September 22, 2026, and November 13, 2026.
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+
+Question 50:
+  Text: Provide a chronological list of all dates when Scarlett Thomas was observed, from earliest to latest in the story's timeline.
+  Expected: ['March 23, 2024', 'June 14, 2025', 'November 13, 2026']
+  Predicted: Scarlett Thomas was observed on the following dates: March 23, 2024; June 14, 2025; November 13, 2026.
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+
+Question 51:
+  Text: Provide a chronological list of all dates when Zoe Brown was observed, from earliest to latest in the story's timeline.
+  Expected: ['March 23, 2024', 'October 13, 2024', 'June 08, 2026', 'December 26, 2026']
+  Predicted: Zoe Brown was observed on the following dates: March 23, 2024; October 13, 2024; June 08, 2026; December 25, 2026; December 26, 2026.
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+

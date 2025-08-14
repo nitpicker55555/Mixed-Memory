@@ -1,0 +1,343 @@
+[
+  {
+    "question": "Recall all events related to Robotics Competition. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "1545c544-d0c7-46a4-8e36-3464ebca8225",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.event_type = 'Robotics Competition' AND e.date <> '' WITH e, CASE WHEN e.date CONTAINS 'January' THEN '01' WHEN e.date CONTAINS 'February' THEN '02' WHEN e.date CONTAINS 'March' THEN '03' WHEN e.date CONTAINS 'April' THEN '04' WHEN e.date CONTAINS 'May' THEN '05' WHEN e.date CONTAINS 'June' THEN '06' WHEN e.date CONTAINS 'July' THEN '07' WHEN e.date CONTAINS 'August' THEN '08' WHEN e.date CONTAINS 'September' THEN '09' WHEN e.date CONTAINS 'October' THEN '10' WHEN e.date CONTAINS 'November' THEN '11' WHEN e.date CONTAINS 'December' THEN '12' ELSE '00' END as month_num, split(e.date, ' ')[1] as day, split(e.date, ' ')[2] as year WITH e.date as original_date, year + '-' + month_num + '-' + CASE WHEN size(day) = 3 THEN substring(day, 0, 2) ELSE day END as sort_date ORDER BY sort_date ASC WITH COLLECT(DISTINCT original_date) as unique_dates UNWIND unique_dates as date RETURN date",
+        "MATCH (e:Event) WHERE e.event_type = 'Robotics Competition' AND e.date <> '' WITH e, CASE WHEN e.date CONTAINS 'January' THEN '01' WHEN e.date CONTAINS 'February' THEN '02' WHEN e.date CONTAINS 'March' THEN '03' WHEN e.date CONTAINS 'April' THEN '04' WHEN e.date CONTAINS 'May' THEN '05' WHEN e.date CONTAINS 'June' THEN '06' WHEN e.date CONTAINS 'July' THEN '07' WHEN e.date CONTAINS 'August' THEN '08' WHEN e.date CONTAINS 'September' THEN '09' WHEN e.date CONTAINS 'October' THEN '10' WHEN e.date CONTAINS 'November' THEN '11' WHEN e.date CONTAINS 'December' THEN '12' ELSE '00' END as month_num, split(e.date, ' ')[1] as day, split(e.date, ' ')[2] as year WITH e.date as original_date, year + '-' + month_num + '-' + CASE WHEN size(day) = 3 THEN substring(day, 0, 2) ELSE day END as sort_date ORDER BY sort_date ASC WITH COLLECT(DISTINCT original_date) as unique_dates UNWIND unique_dates as date RETURN date",
+        "MATCH (e:Event) WHERE e.event_type = 'Robotics Competition' AND e.date <> '' RETURN e.date ORDER BY e.date ASC",
+        "MATCH (e:Event) WHERE e.event_type = 'Robotics Competition' AND e.date <> '' WITH e, CASE WHEN e.date CONTAINS 'January' THEN '01' WHEN e.date CONTAINS 'February' THEN '02' WHEN e.date CONTAINS 'March' THEN '03' WHEN e.date CONTAINS 'April' THEN '04' WHEN e.date CONTAINS 'May' THEN '05' WHEN e.date CONTAINS 'June' THEN '06' WHEN e.date CONTAINS 'July' THEN '07' WHEN e.date CONTAINS 'August' THEN '08' WHEN e.date CONTAINS 'September' THEN '09' WHEN e.date CONTAINS 'October' THEN '10' WHEN e.date CONTAINS 'November' THEN '11' WHEN e.date CONTAINS 'December' THEN '12' ELSE '00' END as month_num, split(e.date, ' ')[1] as day, split(e.date, ' ')[2] as year WITH e.date as original_date, year + '-' + month_num + '-' + CASE WHEN size(day) = 3 THEN substring(day, 0, 2) ELSE day END as sort_date ORDER BY sort_date ASC WITH COLLECT(DISTINCT original_date) as unique_dates UNWIND unique_dates as date RETURN date",
+        "MATCH (e:Event) WHERE e.event_type = 'Robotics Competition' AND e.date <> '' WITH e, CASE WHEN e.date CONTAINS 'January' THEN '01' WHEN e.date CONTAINS 'February' THEN '02' WHEN e.date CONTAINS 'March' THEN '03' WHEN e.date CONTAINS 'April' THEN '04' WHEN e.date CONTAINS 'May' THEN '05' WHEN e.date CONTAINS 'June' THEN '06' WHEN e.date CONTAINS 'July' THEN '07' WHEN e.date CONTAINS 'August' THEN '08' WHEN e.date CONTAINS 'September' THEN '09' WHEN e.date CONTAINS 'October' THEN '10' WHEN e.date CONTAINS 'November' THEN '11' WHEN e.date CONTAINS 'December' THEN '12' ELSE '00' END as month_num, split(e.date, ' ')[1] as day, split(e.date, ' ')[2] as year WITH e.date as original_date, year + '-' + month_num + '-' + CASE WHEN size(day) = 3 THEN substring(day, 0, 2) ELSE day END as sort_date ORDER BY sort_date ASC WITH COLLECT(DISTINCT original_date) as unique_dates UNWIND unique_dates as date RETURN date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 20,
+    "expected_answer": [],
+    "processing_order": 1
+  },
+  {
+    "question": "Consider all events involving Boat Show. List all the locations where these events took place, without mentioning the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "7d3b686c-6918-4812-82f6-7637eef8e8af",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event {name: 'Boat Show'}) RETURN e.location AS Location",
+        "MATCH (e:Event {name: 'Boat Show'}) RETURN DISTINCT e.location AS Location",
+        "MATCH (e:Event {name: 'Boat Show'}) RETURN DISTINCT e.location AS Location",
+        "MATCH (e:Event {name: 'Boat Show'}) RETURN DISTINCT e.location AS Location",
+        "MATCH (e:Event {name: 'Boat Show'}) RETURN DISTINCT e.location AS Location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 21,
+    "expected_answer": [],
+    "processing_order": 2
+  },
+  {
+    "question": "Consider all events involving Book Signing Event. List all the locations where these events took place, without mentioning the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "97b27e7f-f381-4a1a-85c7-b7ac77af00e8",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.event_type = 'Book Signing Event' RETURN DISTINCT e.location",
+        "MATCH (e:Event) WHERE e.event_type = 'Book Signing Event' RETURN DISTINCT e.location",
+        "MATCH (e:Event) WHERE e.event_type = 'Book Signing Event' RETURN DISTINCT e.location",
+        "MATCH (e:Event) WHERE e.event_type = 'Book Signing Event' RETURN DISTINCT e.location",
+        "MATCH (e:Event) WHERE e.event_type = 'Book Signing Event' RETURN DISTINCT e.location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 22,
+    "expected_answer": [],
+    "processing_order": 3
+  },
+  {
+    "question": "Consider all events involving Charity Gala. List all the locations where these events took place, without mentioning the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "5f9aec53-8ac6-40de-82e5-9916aaab9a39",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event {name: 'Charity Gala'}) RETURN e.location",
+        "MATCH (e:Event {name: 'Charity Gala'}) RETURN DISTINCT e.location",
+        "MATCH (e:Event {name: 'Charity Gala'}) RETURN DISTINCT e.location",
+        "MATCH (e:Event {name: 'Charity Gala'}) RETURN DISTINCT e.location AS Location",
+        "MATCH (e:Event {name: 'Charity Gala'}) RETURN DISTINCT e.location AS Location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 23,
+    "expected_answer": [],
+    "processing_order": 4
+  },
+  {
+    "question": "Consider all events involving Laser Tag Tournament. List all the locations where these events took place, without mentioning the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "a0eb9e6a-3ad5-4dac-aec2-088c9b97bd18",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event {event_type: 'Laser Tag Tournament'}) RETURN DISTINCT e.location",
+        "MATCH (e:Event {event_type: 'Laser Tag Tournament'}) RETURN DISTINCT e.location as Location",
+        "MATCH (e:Event {event_type: 'Laser Tag Tournament'}) RETURN DISTINCT e.location as Location",
+        "MATCH (e:Event {event_type: 'Laser Tag Tournament'}) RETURN DISTINCT e.location as Location",
+        "MATCH (e:Event {event_type: 'Laser Tag Tournament'}) RETURN DISTINCT e.location as Location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 24,
+    "expected_answer": [],
+    "processing_order": 5
+  },
+  {
+    "question": "Consider all events involving Robotics Competition. List all the locations where these events took place, without mentioning the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "b33c3437-0586-4449-b4e5-98a80c0de468",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event {event_type: 'Robotics Competition'}) RETURN DISTINCT e.location AS Location",
+        "MATCH (e:Event {event_type: 'Robotics Competition'}) RETURN DISTINCT e.location AS Location",
+        "MATCH (e:Event {event_type: 'Robotics Competition'}) RETURN DISTINCT e.location AS Location",
+        "MATCH (e:Event {event_type: 'Robotics Competition'}) RETURN DISTINCT e.location AS Location",
+        "MATCH (e:Event {event_type: 'Robotics Competition'}) RETURN DISTINCT e.location AS Location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 25,
+    "expected_answer": [],
+    "processing_order": 6
+  },
+  {
+    "question": "Reflect on events related to Boat Show. Provide a list of all protagonists involved in these events, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "3cfd0aa6-8afc-4ae3-98e6-4b97136a545e",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event)-[:INVOLVES]->(p:Person) WHERE e.name='Boat Show' RETURN DISTINCT p.name",
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Boat Show' UNWIND e.participants as participant RETURN DISTINCT participant",
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Boat Show' UNWIND e.participants as participant RETURN DISTINCT participant",
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Boat Show' UNWIND e.participants as participant RETURN DISTINCT participant",
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Boat Show' UNWIND e.participants as participant RETURN DISTINCT participant"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 26,
+    "expected_answer": [],
+    "processing_order": 7
+  },
+  {
+    "question": "Reflect on events related to Book Signing Event. Provide a list of all protagonists involved in these events, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "c98c80e0-a4e0-46b5-a0ca-38cfbe7c9f31",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event)-[:PARTICIPATED_IN]-(p:Person) WHERE e.name = 'Book Signing Event' RETURN p.name",
+        "MATCH (e:Event {name: 'Book Signing Event'})-[:PARTICIPATED_IN]-(p:Person) RETURN p.name",
+        "MATCH (e:Event {name: 'Book Signing Event'}) RETURN e.participants as Protagonists",
+        "MATCH (e:Event {name: 'Book Signing Event'}) UNWIND e.participants as participant RETURN participant as Protagonists",
+        "MATCH (e:Event {name: 'Book Signing Event'}) UNWIND e.participants as participant RETURN participant as Protagonists"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 27,
+    "expected_answer": [],
+    "processing_order": 8
+  },
+  {
+    "question": "Reflect on events related to Charity Gala. Provide a list of all protagonists involved in these events, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "24de5f02-846a-46a8-aa20-4c9b24fdab27",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event {name: 'Charity Gala'}) RETURN e.participants",
+        "MATCH (e:Event {name: 'Charity Gala'}) UNWIND e.participants as participant RETURN participant",
+        "MATCH (e:Event {name: 'Charity Gala'}) UNWIND e.participants as participant MATCH (p:Person {name: participant}) RETURN p.name",
+        "MATCH (e:Event {name: 'Charity Gala'}) UNWIND e.participants as participant RETURN participant",
+        "MATCH (e:Event {name: 'Charity Gala'}) UNWIND e.participants as participant RETURN participant"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 28,
+    "expected_answer": [],
+    "processing_order": 9
+  },
+  {
+    "question": "Reflect on events related to Laser Tag Tournament. Provide a list of all protagonists involved in these events, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "5c0da059-fa85-4f5b-bea3-c99548ed1f9f",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event {name:'Laser Tag Tournament'})-[:PARTICIPATED_IN]-(p:Person) RETURN p.name",
+        "MATCH (e:Event {name:'Laser Tag Tournament'}) RETURN e.participants",
+        "MATCH (e:Event)-[r]->(p:Person) WHERE e.name CONTAINS 'Laser Tag Tournament' RETURN DISTINCT p.name",
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Laser Tag Tournament' UNWIND e.participants AS participant RETURN DISTINCT participant AS Protagonists",
+        "MATCH (e:Event)-[:PARTICIPATED_IN]-(p:Person) WHERE e.name CONTAINS 'Laser Tag Tournament' RETURN DISTINCT p.name"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 29,
+    "expected_answer": [],
+    "processing_order": 10
+  },
+  {
+    "question": "Reflect on events related to Robotics Competition. Provide a list of all protagonists involved in these events, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "195780ad-9405-4962-92cc-af4984b3c2e4",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event {event_type: 'Robotics Competition'})-[:PARTICIPATES_IN]-(p:Person) RETURN p.name",
+        "MATCH (e:Event {event_type: 'Robotics Competition'}) RETURN e.participants",
+        "MATCH (e:Event {event_type: 'Robotics Competition'}) RETURN e.participants",
+        "MATCH (e:Event {event_type: 'Robotics Competition'}) RETURN e.participants",
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Robotics Competition' UNWIND e.participants AS participant RETURN DISTINCT participant"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 30,
+    "expected_answer": [],
+    "processing_order": 11
+  }
+]
