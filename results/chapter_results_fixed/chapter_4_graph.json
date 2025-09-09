@@ -1,0 +1,118 @@
+{
+  "chapter": "Chapter 4",
+  "chapter_number": 4,
+  "processed_at": "2025-09-09T14:16:54.231031",
+  "nodes_count": 5,
+  "relationships_count": 4,
+  "actual_nodes_created": 5,
+  "actual_relationships_created": 4,
+  "graph_data": {
+    "nodes": [
+      {
+        "id": "event_1",
+        "label": "Event",
+        "properties": {
+          "name": "Unforgettable Night at Hither Hills",
+          "event_type": "Music Performance",
+          "date": "May 07, 2024",
+          "location": "Hither Hills State Park",
+          "description": "A vibrant night of music and performances at Hither Hills State Park.",
+          "chapter": "Chapter 4",
+          "chapter_number": 4,
+          "original_id": "event_1",
+          "unique_id": "chapter_4_event_1_0"
+        }
+      },
+      {
+        "id": "person_1",
+        "label": "Person",
+        "properties": {
+          "name": "Zoe Brown",
+          "description": "A performer at the event, known for her captivating voice.",
+          "role": "Performer",
+          "chapter": "Chapter 4",
+          "chapter_number": 4,
+          "original_id": "person_1",
+          "unique_id": "chapter_4_person_1_1"
+        }
+      },
+      {
+        "id": "person_2",
+        "label": "Person",
+        "properties": {
+          "name": "Alma Aultman",
+          "description": "An attendee at the event, greeted the protagonist with a plastic cup.",
+          "role": "Attendee",
+          "chapter": "Chapter 4",
+          "chapter_number": 4,
+          "original_id": "person_2",
+          "unique_id": "chapter_4_person_2_2"
+        }
+      },
+      {
+        "id": "person_3",
+        "label": "Person",
+        "properties": {
+          "name": "Alondra Wilkinson",
+          "description": "An observer of Zoe's performance, watched with intense focus.",
+          "role": "Observer",
+          "chapter": "Chapter 4",
+          "chapter_number": 4,
+          "original_id": "person_3",
+          "unique_id": "chapter_4_person_3_3"
+        }
+      },
+      {
+        "id": "location_1",
+        "label": "Location",
+        "properties": {
+          "name": "Hither Hills State Park",
+          "description": "A park transformed into a vibrant hub of activity for the event.",
+          "type": "Park",
+          "chapter": "Chapter 4",
+          "chapter_number": 4,
+          "original_id": "location_1",
+          "unique_id": "chapter_4_location_1_4"
+        }
+      }
+    ],
+    "relationships": [
+      {
+        "from_id": "person_1",
+        "to_id": "event_1",
+        "type": "PARTICIPATED_IN",
+        "properties": {
+          "chapter": "Chapter 4",
+          "chapter_number": 4
+        }
+      },
+      {
+        "from_id": "person_2",
+        "to_id": "event_1",
+        "type": "ATTENDED",
+        "properties": {
+          "chapter": "Chapter 4",
+          "chapter_number": 4
+        }
+      },
+      {
+        "from_id": "person_3",
+        "to_id": "event_1",
+        "type": "OBSERVED",
+        "properties": {
+          "chapter": "Chapter 4",
+          "chapter_number": 4
+        }
+      },
+      {
+        "from_id": "event_1",
+        "to_id": "location_1",
+        "type": "OCCURRED_AT",
+        "properties": {
+          "chapter": "Chapter 4",
+          "chapter_number": 4
+        }
+      }
+    ]
+  }
+}

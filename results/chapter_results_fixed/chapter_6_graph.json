@@ -1,0 +1,136 @@
+{
+  "chapter": "Chapter 6",
+  "chapter_number": 6,
+  "processed_at": "2025-09-09T14:17:10.934469",
+  "nodes_count": 5,
+  "relationships_count": 6,
+  "actual_nodes_created": 5,
+  "actual_relationships_created": 6,
+  "graph_data": {
+    "nodes": [
+      {
+        "id": "event_hackathon_2024",
+        "label": "Event",
+        "properties": {
+          "name": "Hackathon 2024",
+          "event_type": "Tech Event",
+          "date": "May 31, 2024",
+          "location": "Woolworth Building",
+          "description": "A tech event focused on innovation, featuring coders, designers, and entrepreneurs working on quantum algorithms and neural interfaces.",
+          "chapter": "Chapter 6",
+          "chapter_number": 6,
+          "original_id": "event_hackathon_2024",
+          "unique_id": "chapter_6_event_hackathon_2024_0"
+        }
+      },
+      {
+        "id": "person_julian_ross",
+        "label": "Person",
+        "properties": {
+          "name": "Julian Ross",
+          "description": "An experienced mentor and participant in the hackathon, involved in digital forensics and providing guidance.",
+          "role": "Mentor/Participant",
+          "chapter": "Chapter 6",
+          "chapter_number": 6,
+          "original_id": "person_julian_ross",
+          "unique_id": "chapter_6_person_julian_ross_1"
+        }
+      },
+      {
+        "id": "person_hezekiah_bean",
+        "label": "Person",
+        "properties": {
+          "name": "Hezekiah Bean",
+          "description": "Approached Julian with a security concern during the hackathon.",
+          "role": "Participant",
+          "chapter": "Chapter 6",
+          "chapter_number": 6,
+          "original_id": "person_hezekiah_bean",
+          "unique_id": "chapter_6_person_hezekiah_bean_2"
+        }
+      },
+      {
+        "id": "person_sienna_lyles",
+        "label": "Person",
+        "properties": {
+          "name": "Sienna Lyles",
+          "description": "Head of security at the hackathon, dealing with a firewall breach.",
+          "role": "Head of Security",
+          "chapter": "Chapter 6",
+          "chapter_number": 6,
+          "original_id": "person_sienna_lyles",
+          "unique_id": "chapter_6_person_sienna_lyles_3"
+        }
+      },
+      {
+        "id": "location_woolworth_building",
+        "label": "Location",
+        "properties": {
+          "name": "Woolworth Building",
+          "description": "Historic building transformed into a futuristic tech hub for the hackathon.",
+          "type": "Building",
+          "chapter": "Chapter 6",
+          "chapter_number": 6,
+          "original_id": "location_woolworth_building",
+          "unique_id": "chapter_6_location_woolworth_building_4"
+        }
+      }
+    ],
+    "relationships": [
+      {
+        "from_id": "person_julian_ross",
+        "to_id": "event_hackathon_2024",
+        "type": "PARTICIPATED_IN",
+        "properties": {
+          "chapter": "Chapter 6",
+          "chapter_number": 6
+        }
+      },
+      {
+        "from_id": "person_julian_ross",
+        "to_id": "location_woolworth_building",
+        "type": "OCCURRED_AT",
+        "properties": {
+          "chapter": "Chapter 6",
+          "chapter_number": 6
+        }
+      },
+      {
+        "from_id": "person_hezekiah_bean",
+        "to_id": "event_hackathon_2024",
+        "type": "PARTICIPATED_IN",
+        "properties": {
+          "chapter": "Chapter 6",
+          "chapter_number": 6
+        }
+      },
+      {
+        "from_id": "person_sienna_lyles",
+        "to_id": "event_hackathon_2024",
+        "type": "PARTICIPATED_IN",
+        "properties": {
+          "chapter": "Chapter 6",
+          "chapter_number": 6
+        }
+      },
+      {
+        "from_id": "person_sienna_lyles",
+        "to_id": "location_woolworth_building",
+        "type": "OCCURRED_AT",
+        "properties": {
+          "chapter": "Chapter 6",
+          "chapter_number": 6
+        }
+      },
+      {
+        "from_id": "event_hackathon_2024",
+        "to_id": "location_woolworth_building",
+        "type": "OCCURRED_AT",
+        "properties": {
+          "chapter": "Chapter 6",
+          "chapter_number": 6
+        }
+      }
+    ]
+  }
+}

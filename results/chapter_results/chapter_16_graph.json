@@ -1,0 +1,76 @@
+{
+  "chapter": "Chapter 16",
+  "processed_at": "2025-09-09T14:01:00.451535",
+  "nodes_count": 4,
+  "relationships_count": 4,
+  "graph_data": {
+    "nodes": [
+      {
+        "id": "event_1",
+        "label": "Event",
+        "properties": {
+          "name": "Tech Hackathon",
+          "event_type": "Hackathon",
+          "date": "March 23, 2024",
+          "location": "Port Jefferson",
+          "description": "A tech hackathon filled with innovation and possibility, where participants work on technological projects."
+        }
+      },
+      {
+        "id": "person_1",
+        "label": "Person",
+        "properties": {
+          "name": "Zoe Brown",
+          "description": "A participant in the hackathon, focused on user experience and innovation.",
+          "role": "Participant"
+        }
+      },
+      {
+        "id": "person_2",
+        "label": "Person",
+        "properties": {
+          "name": "Remy Waterman",
+          "description": "A participant in the hackathon, known for explaining concepts with infectious enthusiasm.",
+          "role": "Participant"
+        }
+      },
+      {
+        "id": "location_1",
+        "label": "Location",
+        "properties": {
+          "name": "Port Jefferson",
+          "description": "The location of the tech hackathon, characterized by sunlight streaming through tall windows.",
+          "type": "Conference Center"
+        }
+      }
+    ],
+    "relationships": [
+      {
+        "from_id": "person_1",
+        "to_id": "event_1",
+        "type": "PARTICIPATED_IN",
+        "properties": {}
+      },
+      {
+        "from_id": "person_2",
+        "to_id": "event_1",
+        "type": "PARTICIPATED_IN",
+        "properties": {}
+      },
+      {
+        "from_id": "event_1",
+        "to_id": "location_1",
+        "type": "OCCURRED_AT",
+        "properties": {}
+      },
+      {
+        "from_id": "person_1",
+        "to_id": "person_2",
+        "type": "INTERACTED_WITH",
+        "properties": {
+          "description": "Zoe Brown and Remy Waterman exchanged glances and smiles, indicating a potential personal connection."
+        }
+      }
+    ]
+  }
+}

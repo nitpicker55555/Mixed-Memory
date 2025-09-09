@@ -1,0 +1,128 @@
+{
+  "chapter": "Chapter 16",
+  "chapter_number": 16,
+  "processed_at": "2025-09-09T14:18:53.531883",
+  "nodes_count": 5,
+  "relationships_count": 5,
+  "actual_nodes_created": 5,
+  "actual_relationships_created": 5,
+  "graph_data": {
+    "nodes": [
+      {
+        "id": "event_1",
+        "label": "Event",
+        "properties": {
+          "name": "Tech Hackathon",
+          "event_type": "Hackathon",
+          "date": "March 23, 2024",
+          "location": "Port Jefferson",
+          "description": "A tech hackathon with participants discussing algorithms and user interfaces.",
+          "chapter": "Chapter 16",
+          "chapter_number": 16,
+          "original_id": "event_1",
+          "unique_id": "chapter_16_event_1_0"
+        }
+      },
+      {
+        "id": "person_1",
+        "label": "Person",
+        "properties": {
+          "name": "Zoe Brown",
+          "description": "Participant focused on user experience and innovation.",
+          "role": "Participant",
+          "chapter": "Chapter 16",
+          "chapter_number": 16,
+          "original_id": "person_1",
+          "unique_id": "chapter_16_person_1_1"
+        }
+      },
+      {
+        "id": "person_2",
+        "label": "Person",
+        "properties": {
+          "name": "Remy Waterman",
+          "description": "Enthusiastic participant explaining concepts with infectious enthusiasm.",
+          "role": "Participant",
+          "chapter": "Chapter 16",
+          "chapter_number": 16,
+          "original_id": "person_2",
+          "unique_id": "chapter_16_person_2_2"
+        }
+      },
+      {
+        "id": "location_1",
+        "label": "Location",
+        "properties": {
+          "name": "Conference Center",
+          "description": "A bustling venue filled with laptops, cords, and the scent of coffee.",
+          "type": "Venue",
+          "chapter": "Chapter 16",
+          "chapter_number": 16,
+          "original_id": "location_1",
+          "unique_id": "chapter_16_location_1_3"
+        }
+      },
+      {
+        "id": "location_2",
+        "label": "Location",
+        "properties": {
+          "name": "Port Jefferson",
+          "description": "Location of the tech hackathon.",
+          "type": "City",
+          "chapter": "Chapter 16",
+          "chapter_number": 16,
+          "original_id": "location_2",
+          "unique_id": "chapter_16_location_2_4"
+        }
+      }
+    ],
+    "relationships": [
+      {
+        "from_id": "person_1",
+        "to_id": "event_1",
+        "type": "PARTICIPATED_IN",
+        "properties": {
+          "chapter": "Chapter 16",
+          "chapter_number": 16
+        }
+      },
+      {
+        "from_id": "person_2",
+        "to_id": "event_1",
+        "type": "PARTICIPATED_IN",
+        "properties": {
+          "chapter": "Chapter 16",
+          "chapter_number": 16
+        }
+      },
+      {
+        "from_id": "event_1",
+        "to_id": "location_2",
+        "type": "OCCURRED_AT",
+        "properties": {
+          "chapter": "Chapter 16",
+          "chapter_number": 16
+        }
+      },
+      {
+        "from_id": "event_1",
+        "to_id": "location_1",
+        "type": "OCCURRED_AT",
+        "properties": {
+          "chapter": "Chapter 16",
+          "chapter_number": 16
+        }
+      },
+      {
+        "from_id": "person_1",
+        "to_id": "person_2",
+        "type": "INTERACTED_WITH",
+        "properties": {
+          "description": "Zoe Brown and Remy Waterman shared smiles and a spark of connection.",
+          "chapter": "Chapter 16",
+          "chapter_number": 16
+        }
+      }
+    ]
+  }
+}

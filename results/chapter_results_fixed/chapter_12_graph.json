@@ -1,0 +1,120 @@
+{
+  "chapter": "Chapter 12",
+  "chapter_number": 12,
+  "processed_at": "2025-09-09T14:18:10.015405",
+  "nodes_count": 5,
+  "relationships_count": 4,
+  "actual_nodes_created": 5,
+  "actual_relationships_created": 4,
+  "graph_data": {
+    "nodes": [
+      {
+        "id": "event_1",
+        "label": "Event",
+        "properties": {
+          "name": "Parkour Workshop",
+          "event_type": "Workshop",
+          "date": "May 11, 2026",
+          "location": "High Line",
+          "description": "A parkour workshop that turned into a nightmare as the park's features came to life.",
+          "chapter": "Chapter 12",
+          "chapter_number": 12,
+          "original_id": "event_1",
+          "unique_id": "chapter_12_event_1_0"
+        }
+      },
+      {
+        "id": "event_2",
+        "label": "Event",
+        "properties": {
+          "name": "Parkour Film Screening",
+          "event_type": "Film Screening",
+          "date": "May 10, 2026",
+          "location": "Unknown",
+          "description": "A film screening hosted by Chloe Castillo the night before the workshop.",
+          "chapter": "Chapter 12",
+          "chapter_number": 12,
+          "original_id": "event_2",
+          "unique_id": "chapter_12_event_2_1"
+        }
+      },
+      {
+        "id": "person_1",
+        "label": "Person",
+        "properties": {
+          "name": "Chloe Castillo",
+          "description": "Host of the parkour workshop and film screening.",
+          "role": "Host",
+          "chapter": "Chapter 12",
+          "chapter_number": 12,
+          "original_id": "person_1",
+          "unique_id": "chapter_12_person_1_2"
+        }
+      },
+      {
+        "id": "person_2",
+        "label": "Person",
+        "properties": {
+          "name": "Luka Shaffer",
+          "description": "Participant in the parkour workshop who screamed upon seeing the sculpture move.",
+          "role": "Participant",
+          "chapter": "Chapter 12",
+          "chapter_number": 12,
+          "original_id": "person_2",
+          "unique_id": "chapter_12_person_2_3"
+        }
+      },
+      {
+        "id": "location_1",
+        "label": "Location",
+        "properties": {
+          "name": "High Line",
+          "description": "An abandoned railway turned urban park where the parkour workshop took place.",
+          "type": "Urban Park",
+          "chapter": "Chapter 12",
+          "chapter_number": 12,
+          "original_id": "location_1",
+          "unique_id": "chapter_12_location_1_4"
+        }
+      }
+    ],
+    "relationships": [
+      {
+        "from_id": "person_1",
+        "to_id": "event_1",
+        "type": "HOSTED",
+        "properties": {
+          "chapter": "Chapter 12",
+          "chapter_number": 12
+        }
+      },
+      {
+        "from_id": "person_1",
+        "to_id": "event_2",
+        "type": "HOSTED",
+        "properties": {
+          "chapter": "Chapter 12",
+          "chapter_number": 12
+        }
+      },
+      {
+        "from_id": "person_2",
+        "to_id": "event_1",
+        "type": "PARTICIPATED_IN",
+        "properties": {
+          "chapter": "Chapter 12",
+          "chapter_number": 12
+        }
+      },
+      {
+        "from_id": "event_1",
+        "to_id": "location_1",
+        "type": "OCCURRED_AT",
+        "properties": {
+          "chapter": "Chapter 12",
+          "chapter_number": 12
+        }
+      }
+    ]
+  }
+}

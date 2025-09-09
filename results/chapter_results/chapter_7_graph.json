@@ -1,0 +1,83 @@
+{
+  "chapter": "Chapter 7",
+  "processed_at": "2025-09-09T13:59:36.000707",
+  "nodes_count": 5,
+  "relationships_count": 4,
+  "graph_data": {
+    "nodes": [
+      {
+        "id": "event_1",
+        "label": "Event",
+        "properties": {
+          "name": "Ice Sculpture Exhibition",
+          "event_type": "Exhibition",
+          "date": "February 27, 2026",
+          "location": "Washington Square Park",
+          "description": "An exhibition featuring various ice sculptures, attracting visitors from far and wide."
+        }
+      },
+      {
+        "id": "person_1",
+        "label": "Person",
+        "properties": {
+          "name": "Benjamin Green",
+          "description": "A man who once conducted ice preservation talks and is now reflecting on his past career.",
+          "role": "Former ice preservation expert"
+        }
+      },
+      {
+        "id": "person_2",
+        "label": "Person",
+        "properties": {
+          "name": "Dakari Liebert",
+          "description": "The event organizer, concerned about the rising temperature.",
+          "role": "Event Organizer"
+        }
+      },
+      {
+        "id": "person_3",
+        "label": "Person",
+        "properties": {
+          "name": "Creed Berlin",
+          "description": "An observer at the exhibition, commenting on the sculptures.",
+          "role": "Visitor"
+        }
+      },
+      {
+        "id": "location_1",
+        "label": "Location",
+        "properties": {
+          "name": "Washington Square Park",
+          "description": "The venue for the ice sculpture exhibition.",
+          "type": "Park"
+        }
+      }
+    ],
+    "relationships": [
+      {
+        "from_id": "person_1",
+        "to_id": "event_1",
+        "type": "PARTICIPATED_IN",
+        "properties": {}
+      },
+      {
+        "from_id": "person_2",
+        "to_id": "event_1",
+        "type": "ORGANIZED",
+        "properties": {}
+      },
+      {
+        "from_id": "person_3",
+        "to_id": "event_1",
+        "type": "ATTENDED",
+        "properties": {}
+      },
+      {
+        "from_id": "event_1",
+        "to_id": "location_1",
+        "type": "OCCURRED_AT",
+        "properties": {}
+      }
+    ]
+  }
+}

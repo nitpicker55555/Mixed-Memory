@@ -1,0 +1,83 @@
+{
+  "chapter": "Chapter 19",
+  "processed_at": "2025-09-09T14:01:25.645659",
+  "nodes_count": 5,
+  "relationships_count": 4,
+  "graph_data": {
+    "nodes": [
+      {
+        "id": "event_1",
+        "label": "Event",
+        "properties": {
+          "name": "Historical Fashion Reenactment",
+          "event_type": "Reenactment",
+          "date": "September 03, 2026",
+          "location": "Brooklyn Bridge",
+          "description": "A historical fashion show that turned into a temporal chaos event."
+        }
+      },
+      {
+        "id": "person_1",
+        "label": "Person",
+        "properties": {
+          "name": "Hazel Lewis",
+          "description": "Organizer of historical fashion shows, experienced a terrifying event.",
+          "role": "Organizer"
+        }
+      },
+      {
+        "id": "person_2",
+        "label": "Person",
+        "properties": {
+          "name": "Sol Schiller",
+          "description": "Participant in the reenactment, appeared in a Victorian-era dress with hollow eyes.",
+          "role": "Participant"
+        }
+      },
+      {
+        "id": "person_3",
+        "label": "Person",
+        "properties": {
+          "name": "Octavia Talley",
+          "description": "Found motionless on the planks, clothes shifting through historical periods.",
+          "role": "Victim"
+        }
+      },
+      {
+        "id": "location_1",
+        "label": "Location",
+        "properties": {
+          "name": "Brooklyn Bridge",
+          "description": "Site of the reenactment, became a nexus of temporal chaos.",
+          "type": "Bridge"
+        }
+      }
+    ],
+    "relationships": [
+      {
+        "from_id": "person_1",
+        "to_id": "event_1",
+        "type": "PARTICIPATED_IN",
+        "properties": {}
+      },
+      {
+        "from_id": "person_2",
+        "to_id": "event_1",
+        "type": "PARTICIPATED_IN",
+        "properties": {}
+      },
+      {
+        "from_id": "person_3",
+        "to_id": "event_1",
+        "type": "VICTIM_OF",
+        "properties": {}
+      },
+      {
+        "from_id": "event_1",
+        "to_id": "location_1",
+        "type": "OCCURRED_AT",
+        "properties": {}
+      }
+    ]
+  }
+}

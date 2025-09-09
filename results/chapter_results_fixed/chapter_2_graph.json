@@ -1,0 +1,118 @@
+{
+  "chapter": "Chapter 2",
+  "chapter_number": 2,
+  "processed_at": "2025-09-09T14:16:31.748451",
+  "nodes_count": 5,
+  "relationships_count": 4,
+  "actual_nodes_created": 5,
+  "actual_relationships_created": 4,
+  "graph_data": {
+    "nodes": [
+      {
+        "id": "event_1",
+        "label": "Event",
+        "properties": {
+          "name": "Fashion Show",
+          "event_type": "Fashion Event",
+          "date": "September 22, 2026",
+          "location": "American Museum of Natural History",
+          "description": "A fantastical fashion show where Chloe Castillo showcased her magical creations, transforming the venue into a realm of fashion and fantasy.",
+          "chapter": "Chapter 2",
+          "chapter_number": 2,
+          "original_id": "event_1",
+          "unique_id": "chapter_2_event_1_0"
+        }
+      },
+      {
+        "id": "person_1",
+        "label": "Person",
+        "properties": {
+          "name": "Chloe Castillo",
+          "description": "A designer who conjured magical creations during the fashion show.",
+          "role": "Designer",
+          "chapter": "Chapter 2",
+          "chapter_number": 2,
+          "original_id": "person_1",
+          "unique_id": "chapter_2_person_1_1"
+        }
+      },
+      {
+        "id": "person_2",
+        "label": "Person",
+        "properties": {
+          "name": "Sienna Hamrick",
+          "description": "An attendee at the fashion show, seated in the front row.",
+          "role": "Audience Member",
+          "chapter": "Chapter 2",
+          "chapter_number": 2,
+          "original_id": "person_2",
+          "unique_id": "chapter_2_person_2_2"
+        }
+      },
+      {
+        "id": "person_3",
+        "label": "Person",
+        "properties": {
+          "name": "Reid Blunt",
+          "description": "An attendee who experienced a magical transformation of their clothing during the show.",
+          "role": "Audience Member",
+          "chapter": "Chapter 2",
+          "chapter_number": 2,
+          "original_id": "person_3",
+          "unique_id": "chapter_2_person_3_3"
+        }
+      },
+      {
+        "id": "location_1",
+        "label": "Location",
+        "properties": {
+          "name": "American Museum of Natural History",
+          "description": "Venue transformed into a realm where fashion and fantasy collided.",
+          "type": "Museum",
+          "chapter": "Chapter 2",
+          "chapter_number": 2,
+          "original_id": "location_1",
+          "unique_id": "chapter_2_location_1_4"
+        }
+      }
+    ],
+    "relationships": [
+      {
+        "from_id": "person_1",
+        "to_id": "event_1",
+        "type": "ORGANIZED",
+        "properties": {
+          "chapter": "Chapter 2",
+          "chapter_number": 2
+        }
+      },
+      {
+        "from_id": "event_1",
+        "to_id": "location_1",
+        "type": "OCCURRED_AT",
+        "properties": {
+          "chapter": "Chapter 2",
+          "chapter_number": 2
+        }
+      },
+      {
+        "from_id": "person_2",
+        "to_id": "event_1",
+        "type": "ATTENDED",
+        "properties": {
+          "chapter": "Chapter 2",
+          "chapter_number": 2
+        }
+      },
+      {
+        "from_id": "person_3",
+        "to_id": "event_1",
+        "type": "ATTENDED",
+        "properties": {
+          "chapter": "Chapter 2",
+          "chapter_number": 2
+        }
+      }
+    ]
+  }
+}

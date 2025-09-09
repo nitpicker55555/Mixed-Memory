@@ -1,0 +1,53 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-09 12:00:16
+Question Range: 1-5
+Total Questions Processed: 5
+Successful Searches: 5 (100.0%)
+Questions with Answers: 5 (100.0%)
+Average Iterations per Question: 1.0
+
+DETAILED RESULTS:
+------------------------------
+
+Question 1:
+  Text: Consider all events involving Archery Tournament. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Queensboro Bridge']
+  Predicted: Queensboro Bridge
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 2:
+  Text: Consider all events involving Astronomy Night. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Port Jefferson']
+  Predicted: Port Jefferson
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 3:
+  Text: Consider all events involving Carnival. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Snug Harbor Cultural Center']
+  Predicted: Snug Harbor Cultural Center
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 4:
+  Text: Consider all events involving Environmental Summit. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Bethpage Black Course']
+  Predicted: Bethpage Black Course
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 5:
+  Text: Consider all events involving Farmers Market. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Grand Central Terminal']
+  Predicted: Grand Central Terminal
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+

@@ -1,0 +1,106 @@
+{
+  "chapter": "Chapter 14",
+  "chapter_number": 14,
+  "processed_at": "2025-09-09T14:18:33.653074",
+  "nodes_count": 4,
+  "relationships_count": 4,
+  "actual_nodes_created": 4,
+  "actual_relationships_created": 4,
+  "graph_data": {
+    "nodes": [
+      {
+        "id": "event_1",
+        "label": "Event",
+        "properties": {
+          "name": "Hackathon Challenge",
+          "event_type": "Hackathon",
+          "date": "April 09, 2026",
+          "location": "Snug Harbor Cultural Center",
+          "description": "A day of creativity and collaboration among developers, culminating in project presentations and awards.",
+          "chapter": "Chapter 14",
+          "chapter_number": 14,
+          "original_id": "event_1",
+          "unique_id": "chapter_14_event_1_0"
+        }
+      },
+      {
+        "id": "person_1",
+        "label": "Person",
+        "properties": {
+          "name": "Benjamin Green",
+          "description": "A charismatic developer who formed teams and presented a project at the hackathon.",
+          "role": "Participant",
+          "chapter": "Chapter 14",
+          "chapter_number": 14,
+          "original_id": "person_1",
+          "unique_id": "chapter_14_person_1_1"
+        }
+      },
+      {
+        "id": "person_2",
+        "label": "Person",
+        "properties": {
+          "name": "Genevieve Burgin",
+          "description": "A determined coder who worked alongside Benjamin Green during the hackathon.",
+          "role": "Participant",
+          "chapter": "Chapter 14",
+          "chapter_number": 14,
+          "original_id": "person_2",
+          "unique_id": "chapter_14_person_2_2"
+        }
+      },
+      {
+        "id": "location_1",
+        "label": "Location",
+        "properties": {
+          "name": "Snug Harbor Cultural Center",
+          "description": "A venue with ornate windows where the hackathon took place.",
+          "type": "Cultural Center",
+          "chapter": "Chapter 14",
+          "chapter_number": 14,
+          "original_id": "location_1",
+          "unique_id": "chapter_14_location_1_3"
+        }
+      }
+    ],
+    "relationships": [
+      {
+        "from_id": "person_1",
+        "to_id": "event_1",
+        "type": "PARTICIPATED_IN",
+        "properties": {
+          "chapter": "Chapter 14",
+          "chapter_number": 14
+        }
+      },
+      {
+        "from_id": "person_2",
+        "to_id": "event_1",
+        "type": "PARTICIPATED_IN",
+        "properties": {
+          "chapter": "Chapter 14",
+          "chapter_number": 14
+        }
+      },
+      {
+        "from_id": "event_1",
+        "to_id": "location_1",
+        "type": "OCCURRED_AT",
+        "properties": {
+          "chapter": "Chapter 14",
+          "chapter_number": 14
+        }
+      },
+      {
+        "from_id": "person_1",
+        "to_id": "person_2",
+        "type": "COLLABORATED_WITH",
+        "properties": {
+          "description": "Worked together during the hackathon, forming a deep connection.",
+          "chapter": "Chapter 14",
+          "chapter_number": 14
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "chapter": "Chapter 5",
+  "processed_at": "2025-09-09T13:59:20.842606",
+  "nodes_count": 5,
+  "relationships_count": 6,
+  "graph_data": {
+    "nodes": [
+      {
+        "id": "event_1",
+        "label": "Event",
+        "properties": {
+          "name": "Networking Event",
+          "event_type": "Professional",
+          "date": "March 23, 2024",
+          "location": "High Line",
+          "description": "A professional networking event held at the High Line, featuring industry leaders discussing current trends."
+        }
+      },
+      {
+        "id": "person_1",
+        "label": "Person",
+        "properties": {
+          "name": "Meredith Gardner",
+          "description": "A captivating individual with a dazzling smile and piercing gaze.",
+          "role": "Attendee"
+        }
+      },
+      {
+        "id": "person_2",
+        "label": "Person",
+        "properties": {
+          "name": "Uri Wemple",
+          "description": "A person with a gentle smile who offers a business card and engages in meaningful conversation.",
+          "role": "Attendee"
+        }
+      },
+      {
+        "id": "person_3",
+        "label": "Person",
+        "properties": {
+          "name": "Logan Diaz",
+          "description": "An individual who exchanges industry insights with professionals and feels invigorated by the event.",
+          "role": "Attendee"
+        }
+      },
+      {
+        "id": "location_1",
+        "label": "Location",
+        "properties": {
+          "name": "High Line",
+          "description": "A converted railway-turned-park with lush greenery and urban chic design.",
+          "type": "Venue"
+        }
+      }
+    ],
+    "relationships": [
+      {
+        "from_id": "person_1",
+        "to_id": "event_1",
+        "type": "PARTICIPATED_IN",
+        "properties": {}
+      },
+      {
+        "from_id": "person_2",
+        "to_id": "event_1",
+        "type": "PARTICIPATED_IN",
+        "properties": {}
+      },
+      {
+        "from_id": "person_3",
+        "to_id": "event_1",
+        "type": "PARTICIPATED_IN",
+        "properties": {}
+      },
+      {
+        "from_id": "event_1",
+        "to_id": "location_1",
+        "type": "OCCURRED_AT",
+        "properties": {}
+      },
+      {
+        "from_id": "person_3",
+        "to_id": "person_1",
+        "type": "INTERACTED_WITH",
+        "properties": {}
+      },
+      {
+        "from_id": "person_3",
+        "to_id": "person_2",
+        "type": "INTERACTED_WITH",
+        "properties": {}
+      }
+    ]
+  }
+}

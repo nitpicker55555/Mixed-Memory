@@ -1,0 +1,70 @@
+{
+  "chapter": "Chapter 18",
+  "processed_at": "2025-09-09T14:01:16.132207",
+  "nodes_count": 4,
+  "relationships_count": 3,
+  "graph_data": {
+    "nodes": [
+      {
+        "id": "event_1",
+        "label": "Event",
+        "properties": {
+          "name": "Theater Performance",
+          "event_type": "Performance",
+          "date": "February 27, 2026",
+          "location": "High Line",
+          "description": "A theater performance that left a profound emotional impact on the audience."
+        }
+      },
+      {
+        "id": "person_1",
+        "label": "Person",
+        "properties": {
+          "name": "Jackson Ramos",
+          "description": "An audience member deeply moved by the theater performance.",
+          "role": "Audience Member"
+        }
+      },
+      {
+        "id": "person_2",
+        "label": "Person",
+        "properties": {
+          "name": "Israel Gallo",
+          "description": "Discussed theater funding with Jackson Ramos earlier in the day.",
+          "role": "Theater Funding Discussant"
+        }
+      },
+      {
+        "id": "location_1",
+        "label": "Location",
+        "properties": {
+          "name": "High Line",
+          "description": "The theater where the performance took place.",
+          "type": "Theater"
+        }
+      }
+    ],
+    "relationships": [
+      {
+        "from_id": "person_1",
+        "to_id": "event_1",
+        "type": "PARTICIPATED_IN",
+        "properties": {}
+      },
+      {
+        "from_id": "event_1",
+        "to_id": "location_1",
+        "type": "OCCURRED_AT",
+        "properties": {}
+      },
+      {
+        "from_id": "person_1",
+        "to_id": "person_2",
+        "type": "DISCUSSED_WITH",
+        "properties": {
+          "topic": "theater funding"
+        }
+      }
+    ]
+  }
+}

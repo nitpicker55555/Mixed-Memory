@@ -1,0 +1,37 @@
+{
+  "processing_completed_at": "2025-09-09T14:19:21.385460",
+  "database": "test10",
+  "total_chapters_processed": 19,
+  "initial_stats": {
+    "nodes": 0,
+    "relationships": 0
+  },
+  "final_stats": {
+    "nodes": 106,
+    "relationships": 99
+  },
+  "total_unique_nodes_created": 106,
+  "total_relationships_created": 99,
+  "chapters": [
+    "Chapter 1",
+    "Chapter 2",
+    "Chapter 3",
+    "Chapter 4",
+    "Chapter 5",
+    "Chapter 6",
+    "Chapter 7",
+    "Chapter 8",
+    "Chapter 9",
+    "Chapter 10",
+    "Chapter 11",
+    "Chapter 12",
+    "Chapter 13",
+    "Chapter 14",
+    "Chapter 15",
+    "Chapter 16",
+    "Chapter 17",
+    "Chapter 18",
+    "Chapter 19"
+  ],
+  "processing_method": "NO_MERGING_CUMULATIVE_ADDING"
+}

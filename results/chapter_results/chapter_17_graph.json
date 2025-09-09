@@ -1,0 +1,119 @@
+{
+  "chapter": "Chapter 17",
+  "processed_at": "2025-09-09T14:01:08.983441",
+  "nodes_count": 7,
+  "relationships_count": 7,
+  "graph_data": {
+    "nodes": [
+      {
+        "id": "event_1",
+        "label": "Event",
+        "properties": {
+          "name": "Theater Performance",
+          "event_type": "Performance",
+          "date": "January 03, 2026",
+          "location": "St. Patrick's Cathedral",
+          "description": "A gripping theater performance with a sinister undertone, involving audience interaction and a climactic revelation."
+        }
+      },
+      {
+        "id": "person_1",
+        "label": "Person",
+        "properties": {
+          "name": "Kylee Beard",
+          "description": "Lead actor with a commanding and magnetic presence.",
+          "role": "Lead Actor"
+        }
+      },
+      {
+        "id": "person_2",
+        "label": "Person",
+        "properties": {
+          "name": "Josephine Gaither",
+          "description": "Audience member who shared a moment of unease.",
+          "role": "Audience Member"
+        }
+      },
+      {
+        "id": "person_3",
+        "label": "Person",
+        "properties": {
+          "name": "Mila Gonzalez",
+          "description": "Engaged in an intense conversation during intermission.",
+          "role": "Audience Member"
+        }
+      },
+      {
+        "id": "person_4",
+        "label": "Person",
+        "properties": {
+          "name": "Nash Ensign",
+          "description": "Engaged in an intense conversation with Mila Gonzalez.",
+          "role": "Audience Member"
+        }
+      },
+      {
+        "id": "person_5",
+        "label": "Person",
+        "properties": {
+          "name": "Nylah Zavala",
+          "description": "Actor who broke the fourth wall, addressing the audience directly.",
+          "role": "Actor"
+        }
+      },
+      {
+        "id": "location_1",
+        "label": "Location",
+        "properties": {
+          "name": "St. Patrick's Cathedral",
+          "description": "A grand cathedral with an ornate ceiling and a vast, cavernous space.",
+          "type": "Theater"
+        }
+      }
+    ],
+    "relationships": [
+      {
+        "from_id": "person_1",
+        "to_id": "event_1",
+        "type": "PARTICIPATED_IN",
+        "properties": {}
+      },
+      {
+        "from_id": "person_2",
+        "to_id": "event_1",
+        "type": "ATTENDED",
+        "properties": {}
+      },
+      {
+        "from_id": "person_3",
+        "to_id": "event_1",
+        "type": "ATTENDED",
+        "properties": {}
+      },
+      {
+        "from_id": "person_4",
+        "to_id": "event_1",
+        "type": "ATTENDED",
+        "properties": {}
+      },
+      {
+        "from_id": "person_5",
+        "to_id": "event_1",
+        "type": "PARTICIPATED_IN",
+        "properties": {}
+      },
+      {
+        "from_id": "event_1",
+        "to_id": "location_1",
+        "type": "OCCURRED_AT",
+        "properties": {}
+      },
+      {
+        "from_id": "person_3",
+        "to_id": "person_4",
+        "type": "INTERACTED_WITH",
+        "properties": {}
+      }
+    ]
+  }
+}

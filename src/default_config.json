@@ -1,0 +1,28 @@
+{
+    "neo4j": {
+        "uri": "bolt://localhost:7687",
+        "user": "neo4j",
+        "password": "${NEO4J_PASSWORD}",
+        "database": "test9"
+    },
+    "openai": {
+        "api_key": "${OPENAI_API_KEY}",
+        "base_url": "https://api.openai-hub.com/v1",
+        "model": "gpt-4o"
+    },
+    "processing": {
+        "chunk_size": 3000,
+        "extraction_repeats": 3,
+        "max_embeddings_batch": 100,
+        "similarity_threshold": 0.7
+    },
+    "output": {
+        "graph_file": "episodic_graph.json",
+        "embeddings_file": "node_embeddings.json",
+        "results_folder": "results"
+    },
+    "logging": {
+        "level": "INFO",
+        "format": "%(asctime)s - %(levelname)s - %(message)s"
+    }
+}

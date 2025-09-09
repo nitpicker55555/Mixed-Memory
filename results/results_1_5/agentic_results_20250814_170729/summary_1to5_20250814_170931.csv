@@ -1,6 +1,0 @@
-question_num,question,predicted_answer,search_success,confidence,iterations
-1,"Consider all events involving Archery Tournament. List all the locations where these events took place, without mentioning the events themselves.","Queensboro Bridge",True,1.0,1
-2,"Consider all events involving Astronomy Night. List all the locations where these events took place, without mentioning the events themselves.","Port Jefferson",True,1.0,1
-3,"Consider all events involving Carnival. List all the locations where these events took place, without mentioning the events themselves.","Snug Harbor Cultural Center",True,1.0,2
-4,"Consider all events involving Environmental Summit. List all the locations where these events took place, without mentioning the events themselves.","The Environmental Summit took place at Bethpage Black Course.",True,1.0,3
-5,"Consider all events involving Farmers Market. List all the locations where these events took place, without mentioning the events themselves.","Farmers Market events took place at Grand Central Terminal.",True,1.0,1

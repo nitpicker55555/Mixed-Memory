@@ -1,0 +1,116 @@
+{
+  "chapter": "Chapter 3",
+  "processed_at": "2025-09-09T13:59:05.733388",
+  "nodes_count": 6,
+  "relationships_count": 8,
+  "graph_data": {
+    "nodes": [
+      {
+        "id": "event_1",
+        "label": "Event",
+        "properties": {
+          "name": "Port Jefferson's Annual Photography Exhibition",
+          "event_type": "Exhibition",
+          "date": "September 22, 2026",
+          "location": "Port Jefferson",
+          "description": "An annual photography exhibition featuring striking images and attended by various individuals."
+        }
+      },
+      {
+        "id": "person_1",
+        "label": "Person",
+        "properties": {
+          "name": "Henry Reed",
+          "description": "A detective-turned-photographer with keen observational skills.",
+          "role": "Photographer and Investigator"
+        }
+      },
+      {
+        "id": "person_2",
+        "label": "Person",
+        "properties": {
+          "name": "Ronan Guevara",
+          "description": "An individual engaged in a hushed conversation with Miles Pritchett.",
+          "role": "Exhibition Attendee"
+        }
+      },
+      {
+        "id": "person_3",
+        "label": "Person",
+        "properties": {
+          "name": "Miles Pritchett",
+          "description": "An individual engaged in a hushed conversation with Ronan Guevara.",
+          "role": "Exhibition Attendee"
+        }
+      },
+      {
+        "id": "person_4",
+        "label": "Person",
+        "properties": {
+          "name": "Amira Hayes",
+          "description": "An individual studying a photograph with unusual intensity and taking notes.",
+          "role": "Exhibition Attendee"
+        }
+      },
+      {
+        "id": "location_1",
+        "label": "Location",
+        "properties": {
+          "name": "Gallery",
+          "description": "A dimly lit space hosting the photography exhibition.",
+          "type": "Exhibition Venue"
+        }
+      }
+    ],
+    "relationships": [
+      {
+        "from_id": "person_1",
+        "to_id": "event_1",
+        "type": "PARTICIPATED_IN",
+        "properties": {}
+      },
+      {
+        "from_id": "person_2",
+        "to_id": "event_1",
+        "type": "PARTICIPATED_IN",
+        "properties": {}
+      },
+      {
+        "from_id": "person_3",
+        "to_id": "event_1",
+        "type": "PARTICIPATED_IN",
+        "properties": {}
+      },
+      {
+        "from_id": "person_4",
+        "to_id": "event_1",
+        "type": "PARTICIPATED_IN",
+        "properties": {}
+      },
+      {
+        "from_id": "event_1",
+        "to_id": "location_1",
+        "type": "OCCURRED_AT",
+        "properties": {}
+      },
+      {
+        "from_id": "person_1",
+        "to_id": "person_2",
+        "type": "OBSERVED",
+        "properties": {}
+      },
+      {
+        "from_id": "person_1",
+        "to_id": "person_3",
+        "type": "OBSERVED",
+        "properties": {}
+      },
+      {
+        "from_id": "person_1",
+        "to_id": "person_4",
+        "type": "OBSERVED",
+        "properties": {}
+      }
+    ]
+  }
+}
