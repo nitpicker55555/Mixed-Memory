@@ -1,9 +1,9 @@
 # AgenticSearch - 知识图谱问答系统
 
-> 🚀 **端到端的知识图谱问答解决方案**  
+> **端到端的知识图谱问答解决方案**  
 > 从书籍文本到智能问答，完整的AI驱动流程
 
-## 📁 项目结构
+## 项目结构
 
 ```
 AgenticSearch/
@@ -33,22 +33,20 @@ AgenticSearch/
 └── README.md                              # 本文件
 ```
 
-## 🎯 核心功能
+## 核心功能
 
-### 1. 📊 图谱生成 (Graph Generation)
+### 1. 图谱生成 (Graph Generation)
 - **书籍解析**: 将JSON格式的书籍内容转换为结构化知识图谱
 - **按章节处理** 🆕: 逐章解析并实时更新数据库，避免数据覆盖
 - **实体抽取**: 使用GPT-4o提取事件、人物、地点等实体
 - **关系建立**: 创建实体间的语义关系
 - **嵌入生成**: 为所有节点生成768维向量嵌入
 
-### 2. 🤖 智能问答 (Question Answering)
+### 2. 智能问答 (Question Answering)
 - **自然语言查询**: 接受自然语言问题输入
 - **动态查询生成**: 基于问题内容动态生成Cypher查询
 - **迭代搜索**: OTAR循环 (观察-思考-行动-反思)
 - **结果评估**: 智能评估答案质量和置信度
-
-## 🚀 快速开始
 
 ### 环境设置
 
@@ -79,7 +77,7 @@ AgenticSearch/
 
 #### 步骤1: 生成知识图谱 (首次使用)
 
-**方法1: 按章节处理 (推荐)** 🆕
+**方法1: 按章节处理 (推荐)** 
 ```bash
 # 按章节逐步生成图谱，实时保存，数据更完整
 python src/graph_generation/neo4j_book2graph_chapter_by_chapter_fixed.py
@@ -122,7 +120,7 @@ python src/question_answering/run_agentic_batch.py \
     --output results/
 ```
 
-## 📊 系统架构
+## 系统架构
 
 ### 核心流程
 ```
@@ -138,14 +136,14 @@ book.json → 实体抽取 → test9数据库 → 向量缓存 → 智能回答
    "问题文本"   → 实体识别 → 动态查询 → Neo4j执行 → 置信度评分 → JSON输出
 ```
 
-## 🔧 配置说明
+## 配置说明
 
 ### 数据库配置
 - **数据库**: Neo4j test10 (最新) / test9 (传统)
 - **节点类型**: Event (事件), Person (人物), Location (地点)
 - **关系类型**: PARTICIPATED_IN, OCCURRED_AT
 - **数据规模**:
-  - **按章节处理** 🆕: 106个节点, 99个关系 (test10)
+  - **按章节处理** : 106个节点, 99个关系 (test10)
   - **整体处理**: 114个节点, 多种关系 (test9)
 
 ### 缓存系统
@@ -162,11 +160,11 @@ book.json → 实体抽取 → test9数据库 → 向量缓存 → 智能回答
 ## 🔄 按章节处理功能 🆕
 
 ### 核心优势
-- **✅ 数据完整性**: 避免MERGE操作导致的数据覆盖
-- **✅ 实时更新**: 每章处理完立即写入数据库
-- **✅ 进度可见**: 实时显示处理进度和数据库变化
-- **✅ 错误隔离**: 单章失败不影响其他章节
-- **✅ 可中断恢复**: 随时中断，已处理数据保留
+- **数据完整性**: 避免MERGE操作导致的数据覆盖
+- **实时更新**: 每章处理完立即写入数据库
+- **进度可见**: 实时显示处理进度和数据库变化
+- **错误隔离**: 单章失败不影响其他章节
+- **可中断恢复**: 随时中断，已处理数据保留
 
 ### 工作流程
 ```
@@ -193,13 +191,13 @@ python src/graph_generation/neo4j_book2graph_chapter_by_chapter_fixed.py
 🗑️ Clear existing data in database 'test10'? (y/N): y
 
 # 处理过程中会显示每章进度
-📝 Processing Chapter 1 (1/19)...
-✅ Created 5 unique nodes from Chapter 1
-✅ Created 4 relationships from Chapter 1
-📊 Database now has 5 nodes (+5) and 4 relationships (+4)
+Processing Chapter 1 (1/19)...
+Created 5 unique nodes from Chapter 1
+Created 4 relationships from Chapter 1
+Database now has 5 nodes (+5) and 4 relationships (+4)
 ```
 
-## 📈 性能指标
+## 性能指标
 
 ### 处理能力
 - **图谱规模**: 106个节点 (test10) / 114个节点 (test9)
@@ -241,7 +239,7 @@ python src/graph_generation/neo4j_book2graph_chapter_by_chapter_fixed.py
    解决: 充值OpenAI账户或更换API密钥
    ```
 
-5. **按章节处理相关问题** 🆕
+5. **按章节处理相关问题** 
    ```bash
    # 数据库认证错误
    错误: unauthorized due to authentication failure
@@ -261,7 +259,7 @@ python src/graph_generation/neo4j_book2graph_chapter_by_chapter_fixed.py
 - 结果保存在 `results/agentic_results_*/` 目录
 - 包含JSON、TXT、CSV三种格式的输出
 
-## 📋 输出格式
+## 输出格式
 
 ### 结果文件
 ```
@@ -285,17 +283,17 @@ results/agentic_results_YYYYMMDD_HHMMSS/
 }
 ```
 
-## 🎯 核心特性
+## 核心特性
 
-- ✅ **零预设架构**: 无硬编码查询模板，完全动态生成
-- ✅ **按章节处理** 🆕: 逐章解析，数据完整性保障，避免覆盖
-- ✅ **智能迭代**: 自适应搜索策略，最多5轮优化
-- ✅ **缓存优化**: 秒级响应，避免重复计算
-- ✅ **模块化设计**: 图谱生成与问答系统分离
-- ✅ **多格式输出**: JSON/TXT/CSV多种结果格式
-- ✅ **完整日志**: 全程追踪，便于调试和优化
+- **零预设架构**: 无硬编码查询模板，完全动态生成
+- **按章节处理**: 逐章解析，数据完整性保障，避免覆盖
+- **智能迭代**: 自适应搜索策略，最多5轮优化
+- **缓存优化**: 秒级响应，避免重复计算
+- **模块化设计**: 图谱生成与问答系统分离
+- **多格式输出**: JSON/TXT/CSV多种结果格式
+- **完整日志**: 全程追踪，便于调试和优化
 
-## 📚 使用示例
+## 使用示例
 
 ### 单题测试
 ```bash
