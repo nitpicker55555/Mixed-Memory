@@ -8,15 +8,15 @@
 ```
 AgenticSearch/
 ├── src/                                    # 源代码
-│   ├── graph_generation/                   # 📊 图谱生成模块
-│   │   ├── neo4j_book2graph_improved.py    # 书籍转知识图谱 ⭐
-│   │   ├── neo4j_book2graph_chapter_by_chapter_fixed.py # 按章节处理 🆕 ⭐
-│   │   ├── create_node_embeddings.py       # 节点嵌入生成 ⭐
-│   │   └── database_preparation.py         # 数据库准备工具 ⭐
-│   ├── question_answering/                 # 🤖 问答系统模块
-│   │   ├── run_agentic_batch.py           # 批处理脚本 (主要入口) ⭐
-│   │   ├── agentic_qa_interface.py        # QA接口 ⭐
-│   │   ├── agentic_search_engine.py       # 核心搜索引擎 ⭐
+│   ├── graph_generation/                   # 图谱生成模块
+│   │   ├── neo4j_book2graph_improved.py    # 书籍转知识图谱
+│   │   ├── neo4j_book2graph_chapter_by_chapter_fixed.py # 按章节处理 
+│   │   ├── create_node_embeddings.py       # 节点嵌入生成 
+│   │   └── database_preparation.py         # 数据库准备工具    
+│   ├── question_answering/                 # 问答系统模块
+│   │   ├── run_agentic_batch.py           # 批处理脚本 (主要入口) 
+│   │   ├── agentic_qa_interface.py        # QA接口 
+│   │   ├── agentic_search_engine.py       # 核心搜索引擎 
 │   │   ├── enhanced_agentic_engine.py     # 增强搜索引擎 (可选)
 │   │   ├── entity_linker.py               # 实体链接器 (可选)
 │   │   ├── multi_candidate_scorer.py      # 多候选评分器 (可选)
@@ -24,11 +24,11 @@ AgenticSearch/
 │   │   └── query_dsl.py                   # 查询DSL (可选)
 │   └── default_config.json                # 配置文件
 ├── data/                                   # 数据文件
-│   ├── book.json                          # 源书籍数据 (51KB) ⭐
-│   └── questions_new_book.json            # 问题数据集 (438题) ⭐
+│   ├── book.json                          # 源书籍数据 (51KB) 
+│   └── questions_new_book.json            # 问题数据集 (438题) 
 ├── cache/                                  # 缓存文件
-│   ├── embedding_test9.json               # 节点嵌入缓存 (4.9MB) ⭐
-│   └── propertykey_test9.json             # 属性键缓存 ⭐
+│   ├── embedding_test9.json               # 节点嵌入缓存 (4.9MB) 
+│   └── propertykey_test9.json             # 属性键缓存 
 ├── results/                               # 结果输出
 └── README.md                              # 本文件
 ```
@@ -37,7 +37,7 @@ AgenticSearch/
 
 ### 1. 图谱生成 (Graph Generation)
 - **书籍解析**: 将JSON格式的书籍内容转换为结构化知识图谱
-- **按章节处理** 🆕: 逐章解析并实时更新数据库，避免数据覆盖
+- **按章节处理**: 逐章解析并实时更新数据库，避免数据覆盖
 - **实体抽取**: 使用GPT-4o提取事件、人物、地点等实体
 - **关系建立**: 创建实体间的语义关系
 - **嵌入生成**: 为所有节点生成768维向量嵌入
