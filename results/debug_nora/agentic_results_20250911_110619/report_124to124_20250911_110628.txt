@@ -1,0 +1,21 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-11 11:06:28
+Question Range: 124-124
+Total Questions Processed: 1
+Successful Searches: 1 (100.0%)
+Questions with Answers: 1 (100.0%)
+Average Iterations per Question: 1.0
+
+DETAILED RESULTS:
+------------------------------
+
+Question 124:
+  Text: Reflect on all events involving Nora Ramos. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['July 13, 2024']
+  Predicted: ['July 13, 2024']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+

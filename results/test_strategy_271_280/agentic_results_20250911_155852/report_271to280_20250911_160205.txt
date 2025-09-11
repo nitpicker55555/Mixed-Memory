@@ -1,0 +1,93 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-11 16:02:05
+Question Range: 271-280
+Total Questions Processed: 10
+Successful Searches: 5 (50.0%)
+Questions with Answers: 5 (50.0%)
+Average Iterations per Question: 3.3
+
+DETAILED RESULTS:
+------------------------------
+
+Question 271:
+  Text: Consider all events involving both Thomas Ramos and Laser Tag Tournament at City Island. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 272:
+  Text: Consider all events involving both Ellie Garcia and Boat Show at Fort Tryon Park. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 273:
+  Text: Consider all events involving both Chloe Castillo and Farmers Market at Guggenheim Museum. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 274:
+  Text: Consider all events involving both Lucy Carter and Farmers Market at Guggenheim Museum. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 275:
+  Text: Consider the location Metropolitan Museum of Art. List all protagonists that have been involved in any events at this location, without mentioning the events themselves.
+  Expected: ['Julian Ross', 'Maya Smith', 'Lucy Carter']
+  Predicted: ['Julian Ross', 'Lucy Carter', 'Maya Smith']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 276:
+  Text: Think about all events that have occurred at Metropolitan Museum of Art. Provide a list of all dates when these events took place, without describing the events.
+  Expected: ['November 13, 2026', 'February 27, 2026', 'May 11, 2026']
+  Predicted: ['February 27, 2026', 'May 11, 2026', 'November 13, 2026']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 277:
+  Text: Recall the various events that have taken place at Metropolitan Museum of Art. Describe what happened during these events, focusing on the actions or occurrences rather than the timing or people involved.
+  Expected: ['Fashion Show', 'Parkour Workshop', 'Job Fair']
+  Predicted: ['Job Fair', 'Exploration', 'Brochure Distribution', 'Atmospheric Shift', 'Exit', 'Fashion Show', 'Fitness Class']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 3
+
+Question 278:
+  Text: Consider the location Port Jefferson. List all protagonists that have been involved in any events at this location, without mentioning the events themselves.
+  Expected: ['Lucy Carter', 'Zoe Brown']
+  Predicted: ['Zoe Brown']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 2
+
+Question 279:
+  Text: Consider the location Trinity Church. List all protagonists that have been involved in any events at this location, without mentioning the events themselves.
+  Expected: ['Chloe Castillo', 'Samuel Parker']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 280:
+  Text: Recall the various events that have taken place at Port Jefferson. Describe what happened during these events, focusing on the actions or occurrences rather than the timing or people involved.
+  Expected: ['Astronomy Night', 'Theater Performance']
+  Predicted: ['Astronomy Event', 'Lecture']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+

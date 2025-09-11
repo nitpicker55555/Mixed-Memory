@@ -1,0 +1,93 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-11 10:55:03
+Question Range: 131-140
+Total Questions Processed: 10
+Successful Searches: 10 (100.0%)
+Questions with Answers: 10 (100.0%)
+Average Iterations per Question: 1.0
+
+DETAILED RESULTS:
+------------------------------
+
+Question 131:
+  Text: Think about Chloe Castillo's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.
+  Expected: ['TED Talk']
+  Predicted: ['February 27, 2026']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 132:
+  Text: Think about Hazel Lewis's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.
+  Expected: ['Archery Tournament']
+  Predicted: ['May 14, 2025']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 133:
+  Text: Think about Julian Ross's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.
+  Expected: ['Job Fair']
+  Predicted: ['February 27, 2026']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 134:
+  Text: Think about Nora Ramos's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.
+  Expected: ['Farmers Market']
+  Predicted: ['July 13, 2024']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 135:
+  Text: Think about Samuel Parker's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.
+  Expected: ['Photography Exhibition']
+  Predicted: ['September 03, 2026']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 136:
+  Text: Provide a chronological list of all dates when Chloe Castillo was observed, from earliest to latest in the story's timeline.
+  Expected: ['February 27, 2026']
+  Predicted: ['Trinity Church']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 137:
+  Text: Provide a chronological list of all dates when Hazel Lewis was observed, from earliest to latest in the story's timeline.
+  Expected: ['May 14, 2025']
+  Predicted: ['Queensboro Bridge']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 138:
+  Text: Provide a chronological list of all dates when Julian Ross was observed, from earliest to latest in the story's timeline.
+  Expected: ['February 27, 2026']
+  Predicted: ['Metropolitan Museum of Art']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 139:
+  Text: Provide a chronological list of all dates when Nora Ramos was observed, from earliest to latest in the story's timeline.
+  Expected: ['July 13, 2024']
+  Predicted: ['Grand Central Terminal']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 140:
+  Text: Provide a chronological list of all dates when Samuel Parker was observed, from earliest to latest in the story's timeline.
+  Expected: ['September 03, 2026']
+  Predicted: ['Trinity Church']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+

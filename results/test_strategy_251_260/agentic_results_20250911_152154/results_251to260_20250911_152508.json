@@ -1,0 +1,309 @@
+[
+  {
+    "question": "Recall all events related to Laser Tag Tournament that occurred at City Island. Provide a list of all dates when these events took place, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "230bcf11-be21-4250-858f-6ef72f3a2829",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) AND ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) AND toLower(e.location) = 'city island' RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower('City Island') AND (toLower(e.name) CONTAINS toLower('Laser Tag Tournament that occurred at City Island') OR toLower(e.description) CONTAINS toLower('Laser Tag Tournament that occurred at City Island')) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower('City Island') AND (toLower(e.name) CONTAINS toLower('Laser Tag Tournament') OR toLower(e.description) CONTAINS toLower('Laser Tag Tournament')) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS 'city island' AND (toLower(e.event_type) CONTAINS 'laser tag tournament' OR toLower(e.name) CONTAINS 'laser tag tournament' OR toLower(e.description) CONTAINS 'laser tag tournament') RETURN e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 251,
+    "expected_answer": [],
+    "processing_order": 1
+  },
+  {
+    "question": "Recall all events related to Boat Show that occurred at Fort Tryon Park. Provide a list of all dates when these events took place, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "30bdbddb-c841-4d23-8616-50f53174201b",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) AND toLower(e.location) = 'fort tryon park' RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) AND toLower(e.location) = 'fort tryon park' RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower('Fort Tryon Park') AND (toLower(e.event_type) CONTAINS toLower('Boat Show that occurred at Fort Tryon Park') OR toLower(e.name) CONTAINS toLower('Boat Show that occurred at Fort Tryon Park') OR toLower(e.description) CONTAINS toLower('Boat Show that occurred at Fort Tryon Park')) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower('Fort Tryon Park') AND (toLower(e.event_type) CONTAINS toLower('Boat Show') OR toLower(e.name) CONTAINS toLower('Boat Show') OR toLower(e.description) CONTAINS toLower('Boat Show')) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS 'fort tryon park' AND (toLower(e.event_type) CONTAINS 'boat show' OR toLower(e.name) CONTAINS 'boat show' OR toLower(e.description) CONTAINS 'boat show') RETURN e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 252,
+    "expected_answer": [],
+    "processing_order": 2
+  },
+  {
+    "question": "Recall all events related to Farmers Market that occurred at Guggenheim Museum. Provide a list of all dates when these events took place, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "d8094741-df86-4076-90a5-ced3c895a453",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) AND ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) AND toLower(e.location) = toLower('Guggenheim Museum') RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower('Guggenheim Museum') AND (toLower(e.name) CONTAINS toLower('Farmers Market') OR toLower(e.description) CONTAINS toLower('Farmers Market')) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower('Guggenheim Museum') AND (toLower(e.event_type) CONTAINS toLower('Farmers Market') OR toLower(e.name) CONTAINS toLower('Farmers Market') OR toLower(e.description) CONTAINS toLower('Farmers Market')) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS 'guggenheim museum' AND (toLower(e.event_type) CONTAINS 'farmers market that occurred at guggenheim museum' OR toLower(e.name) CONTAINS 'farmers market that occurred at guggenheim museum' OR toLower(e.description) CONTAINS 'farmers market that occurred at guggenheim museum') RETURN e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 253,
+    "expected_answer": [],
+    "processing_order": 3
+  },
+  {
+    "question": "Recall all events related to Ice Sculpture Exhibition that occurred at High Line. Provide a list of all dates when these events took place, without describing the events.",
+    "predicted_answer": [
+      "June 08, 2026"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "June 08, 2026"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "2df58d49-6003-4d30-aade-a2756b2fa448",
+      "total_iterations": 2,
+      "query_history": [
+        "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) AND toLower(e.location) = 'high line' RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) OR toLower(e.name) CONTAINS toLower($person) OR toLower(e.description) CONTAINS toLower($person) RETURN e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 254,
+    "expected_answer": [],
+    "processing_order": 4
+  },
+  {
+    "question": "Think about the events involving Roller Disco Night at Brooklyn Museum. List all protagonists involved in these events, without mentioning the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "2e329c83-2f8a-4192-8c9d-19658dba8723",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND toLower(trim(e.event_type)) = toLower(trim($kw)) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE toLower(trim(e.location)) = toLower(trim('Brooklyn Museum')) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS 'brooklyn museum' RETURN e.participants AS participants"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 255,
+    "expected_answer": [],
+    "processing_order": 5
+  },
+  {
+    "question": "Think about the events involving Laser Tag Tournament at City Island. List all protagonists involved in these events, without mentioning the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "f850ac50-0f40-4042-8001-34274e7d13ad",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND toLower(trim(e.event_type)) = toLower(trim($kw)) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND toLower(trim(e.event_type)) = toLower(trim($kw)) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE toLower(trim(e.location)) = toLower(trim('City Island')) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS 'city island' RETURN e.participants AS participants"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 256,
+    "expected_answer": [],
+    "processing_order": 6
+  },
+  {
+    "question": "Think about the events involving Boat Show at Fort Tryon Park. List all protagonists involved in these events, without mentioning the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "79dbb2e9-6f5e-4e2c-bb8e-21672a4df7d9",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND toLower(trim(e.event_type)) = toLower(trim($kw)) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND toLower(trim(e.event_type)) CONTAINS toLower(trim($kw)) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE toLower(trim(e.location)) = toLower(trim('Fort Tryon Park')) RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS 'fort tryon park' AND ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.participants AS participants"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 257,
+    "expected_answer": [],
+    "processing_order": 7
+  },
+  {
+    "question": "Think about the events involving Farmers Market at Guggenheim Museum. List all protagonists involved in these events, without mentioning the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "Missing columns ['protagonist'], ask LLM to include them next round.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "Missing columns ['protagonist'], ask LLM to include them next round."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "504ed787-47a3-46be-91a2-bafb195c9992",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND toLower(trim(e.event_type)) = toLower(trim($kw)) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS 'guggenheim museum' RETURN e.participants AS participants"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 258,
+    "expected_answer": [],
+    "processing_order": 8
+  },
+  {
+    "question": "Think about the events involving Ice Sculpture Exhibition at High Line. List all protagonists involved in these events, without mentioning the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "085b482a-6702-4d6c-96cf-9d4a47aa5f07",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND toLower(trim(e.event_type)) = toLower(trim($kw)) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND (toLower(e.event_type) = toLower(trim($kw)) OR toLower(e.name) CONTAINS toLower(trim($kw)) OR toLower(e.description) CONTAINS toLower(trim($kw))) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS 'ice sculpture exhibition' RETURN e.participants AS protagonist"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 259,
+    "expected_answer": [],
+    "processing_order": 9
+  },
+  {
+    "question": "Consider all events involving Hazel Lewis at Brooklyn Museum. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "08be1470-28a8-4303-adf8-e57e9c5bf792",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND toLower(trim(e.location)) = 'brooklyn museum' RETURN e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND toLower(trim(e.location)) = 'brooklyn museum' RETURN e.date AS date",
+        "MATCH (e:Event) WHERE e.location = 'Brooklyn Museum' AND (ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person)))) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower('Brooklyn Museum') RETURN e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND toLower(e.location) CONTAINS 'brooklyn museum' RETURN e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 260,
+    "expected_answer": [],
+    "processing_order": 10
+  }
+]

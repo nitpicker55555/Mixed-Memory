@@ -1,0 +1,312 @@
+[
+  {
+    "question": "What is the most recent location where David Turner was observed in the story's chronological timeline?",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "1681083a-e256-4fc8-9fb8-c7e90e304301",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.location AS location, e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.location AS location, e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.location AS location, e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.location AS location, e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.location AS location, e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 141,
+    "expected_answer": [],
+    "processing_order": 1
+  },
+  {
+    "question": "What is the most recent location where Ellie Garcia was observed in the story's chronological timeline?",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "224d6875-1378-4503-bee5-f412a241e337",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.location AS location, e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.location AS location, e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.location AS location, e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.location AS location, e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.location AS location, e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 142,
+    "expected_answer": [],
+    "processing_order": 2
+  },
+  {
+    "question": "What is the most recent location where Jackson Hall was observed in the story's chronological timeline?",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "eaf34d24-8f41-46cd-aaf5-f9ad2884947a",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.location AS location, e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.location AS location, e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.location AS location, e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.location AS location, e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.location AS location, e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 143,
+    "expected_answer": [],
+    "processing_order": 3
+  },
+  {
+    "question": "What is the most recent location where Julian Cook was observed in the story's chronological timeline?",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "5f9a6d82-77f5-4c4d-8662-a554a6e1c454",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.location AS location, e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.location, e.date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.location AS location, e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.location AS location, e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.location AS location, e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 144,
+    "expected_answer": [],
+    "processing_order": 4
+  },
+  {
+    "question": "What is the most recent location where Nathan Lopez was observed in the story's chronological timeline?",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "b14b7df6-fe89-4c86-aae3-1d59b4c30958",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.location AS location, e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.location AS location, e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.location AS location, e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.location AS location, e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.location AS location, e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 145,
+    "expected_answer": [],
+    "processing_order": 5
+  },
+  {
+    "question": "Enumerate all activities that David Turner has been involved in, ordered from earliest to latest in the story's chronology.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "43cacac2-806e-4063-b937-9fab928112dc",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS activity, e.date AS date, e.location AS location",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS activity, e.date AS date, e.location AS location",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS activity, e.date AS date, e.location AS location",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS activity, e.date AS date, e.location AS location",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS activity, e.date AS date, e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 146,
+    "expected_answer": [],
+    "processing_order": 6
+  },
+  {
+    "question": "Enumerate all activities that Ellie Garcia has been involved in, ordered from earliest to latest in the story's chronology.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "2e1f053d-1d14-4c03-a150-27cf399f9530",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS activity, e.date AS date, e.location AS location",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS activity, e.date AS date, e.location AS location",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS activity, e.date AS date, e.location AS location",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS activity, e.date AS date, e.location AS location",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS activity, e.date AS date, e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 147,
+    "expected_answer": [],
+    "processing_order": 7
+  },
+  {
+    "question": "Enumerate all activities that Jackson Hall has been involved in, ordered from earliest to latest in the story's chronology.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "7eef1ff7-a78e-4088-8d67-d47903486c86",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS activity, e.date AS date, e.location AS location",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS activity, e.date AS date, e.location AS location",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS activity, e.date AS date, e.location AS location",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS activity, e.date AS date, e.location AS location",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS activity, e.date AS date, e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 148,
+    "expected_answer": [],
+    "processing_order": 8
+  },
+  {
+    "question": "Enumerate all activities that Julian Cook has been involved in, ordered from earliest to latest in the story's chronology.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "53a22868-4aa0-4a40-a03f-fb93d374cd44",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS activity, e.date AS date, e.location AS location",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS activity, e.date AS date, e.location AS location",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS activity, e.date AS date, e.location AS location",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS activity, e.date AS date, e.location AS location",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS activity, e.date AS date, e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 149,
+    "expected_answer": [],
+    "processing_order": 9
+  },
+  {
+    "question": "Enumerate all activities that Nathan Lopez has been involved in, ordered from earliest to latest in the story's chronology.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "b53d185e-5848-4238-94ea-9aafc38a3a2b",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS activity, e.date AS date, e.location AS location",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS activity, e.date AS date, e.location AS location",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS activity, e.date AS date, e.location AS location",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS activity, e.date AS date, e.location AS location",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS activity, e.date AS date, e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 150,
+    "expected_answer": [],
+    "processing_order": 10
+  }
+]

@@ -1,0 +1,93 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-11 15:18:08
+Question Range: 241-250
+Total Questions Processed: 10
+Successful Searches: 0 (0.0%)
+Questions with Answers: 0 (0.0%)
+Average Iterations per Question: 5.0
+
+DETAILED RESULTS:
+------------------------------
+
+Question 241:
+  Text: Consider the location City Island. List all protagonists that have been involved in any events at this location, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 242:
+  Text: Consider the location Fort Tryon Park. List all protagonists that have been involved in any events at this location, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 243:
+  Text: Consider the location Madison Square Garden. List all protagonists that have been involved in any events at this location, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 244:
+  Text: Consider the location Prospect Park. List all protagonists that have been involved in any events at this location, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 245:
+  Text: Think about all events that have occurred at Brooklyn Museum. Provide a list of all dates when these events took place, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 246:
+  Text: Think about all events that have occurred at City Island. Provide a list of all dates when these events took place, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 247:
+  Text: Think about all events that have occurred at Fort Tryon Park. Provide a list of all dates when these events took place, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 248:
+  Text: Think about all events that have occurred at Madison Square Garden. Provide a list of all dates when these events took place, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 249:
+  Text: Think about all events that have occurred at Prospect Park. Provide a list of all dates when these events took place, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 250:
+  Text: Recall all events related to Roller Disco Night that occurred at Brooklyn Museum. Provide a list of all dates when these events took place, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+

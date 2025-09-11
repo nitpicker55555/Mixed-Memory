@@ -1,0 +1,93 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-11 00:20:41
+Question Range: 101-110
+Total Questions Processed: 10
+Successful Searches: 10 (100.0%)
+Questions with Answers: 10 (100.0%)
+Average Iterations per Question: 1.0
+
+DETAILED RESULTS:
+------------------------------
+
+Question 101:
+  Text: What is the most recent location where Chloe Castillo was observed in the story's chronological timeline?
+  Expected: ['Trinity Church']
+  Predicted: 
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 102:
+  Text: What is the most recent location where Hazel Lewis was observed in the story's chronological timeline?
+  Expected: ['Queensboro Bridge']
+  Predicted: 
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 103:
+  Text: What is the most recent location where Julian Ross was observed in the story's chronological timeline?
+  Expected: ['Metropolitan Museum of Art']
+  Predicted: 
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 104:
+  Text: What is the most recent location where Nora Ramos was observed in the story's chronological timeline?
+  Expected: ['Grand Central Terminal']
+  Predicted: 
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 105:
+  Text: What is the most recent location where Samuel Parker was observed in the story's chronological timeline?
+  Expected: ['Trinity Church']
+  Predicted: 
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 106:
+  Text: What was Chloe Castillo doing the last time they were observed in the story's timeline?
+  Expected: ['TED Talk']
+  Predicted: Chloe Castillo presents her research findings at a TEDx event, blending humor with her academic insights.
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 107:
+  Text: What was Hazel Lewis doing the last time they were observed in the story's timeline?
+  Expected: ['Archery Tournament']
+  Predicted: Archers gathered at Queensboro Bridge for a tournament amidst morning mist.
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 108:
+  Text: What was Julian Ross doing the last time they were observed in the story's timeline?
+  Expected: ['Job Fair']
+  Predicted: A job fair held at the Metropolitan Museum of Art, filled with booths and banners promoting universities.
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 109:
+  Text: What was Nora Ramos doing the last time they were observed in the story's timeline?
+  Expected: ['Farmers Market']
+  Predicted: A farmers market held at Grand Central Terminal featuring various stands and activities.
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 110:
+  Text: What was Samuel Parker doing the last time they were observed in the story's timeline?
+  Expected: ['Photography Exhibition']
+  Predicted: An art exhibition showcasing Samuel Parker's landscape photographs at Trinity Church.
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+

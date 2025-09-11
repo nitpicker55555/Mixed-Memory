@@ -1,0 +1,29 @@
+[
+  {
+    "question": "Reflect on all events involving Chloe Castillo. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": [
+      "February 27, 2026"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "February 27, 2026"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "f34d38a3-f979-4b97-8bda-48b57fb5ac0e",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 121,
+    "expected_answer": [
+      "February 27, 2026"
+    ],
+    "processing_order": 1
+  }
+]

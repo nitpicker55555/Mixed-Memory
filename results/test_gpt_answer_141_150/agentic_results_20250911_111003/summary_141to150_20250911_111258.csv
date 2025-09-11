@@ -1,0 +1,11 @@
+question_num,question,predicted_answer,search_success,confidence,iterations
+141,"What is the most recent location where David Turner was observed in the story's chronological timeline?","None",False,0.0,5
+142,"What is the most recent location where Ellie Garcia was observed in the story's chronological timeline?","None",False,0.0,5
+143,"What is the most recent location where Jackson Hall was observed in the story's chronological timeline?","None",False,0.0,5
+144,"What is the most recent location where Julian Cook was observed in the story's chronological timeline?","None",False,0.0,5
+145,"What is the most recent location where Nathan Lopez was observed in the story's chronological timeline?","None",False,0.0,5
+146,"Enumerate all activities that David Turner has been involved in, ordered from earliest to latest in the story's chronology.","None",False,0.0,5
+147,"Enumerate all activities that Ellie Garcia has been involved in, ordered from earliest to latest in the story's chronology.","None",False,0.0,5
+148,"Enumerate all activities that Jackson Hall has been involved in, ordered from earliest to latest in the story's chronology.","None",False,0.0,5
+149,"Enumerate all activities that Julian Cook has been involved in, ordered from earliest to latest in the story's chronology.","None",False,0.0,5
+150,"Enumerate all activities that Nathan Lopez has been involved in, ordered from earliest to latest in the story's chronology.","None",False,0.0,5

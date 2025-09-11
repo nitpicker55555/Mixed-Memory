@@ -1,0 +1,11 @@
+question_num,question,predicted_answer,search_success,confidence,iterations
+111,"Consider all events that Chloe Castillo has been involved in. List all the locations where these events took place, without mentioning the events themselves.","['Trinity Church']",True,0.0,1
+112,"Consider all events that Hazel Lewis has been involved in. List all the locations where these events took place, without mentioning the events themselves.","['Queensboro Bridge']",True,0.0,1
+113,"Consider all events that Julian Ross has been involved in. List all the locations where these events took place, without mentioning the events themselves.","['Metropolitan Museum of Art']",True,0.0,1
+114,"Consider all events that Nora Ramos has been involved in. List all the locations where these events took place, without mentioning the events themselves.","['Grand Central Terminal']",True,0.0,1
+115,"Consider all events that Samuel Parker has been involved in. List all the locations where these events took place, without mentioning the events themselves.","['Trinity Church']",True,0.0,1
+116,"Enumerate all activities that Chloe Castillo has been involved in, ordered from earliest to latest in the story's chronology.","Chloe's TEDx Presentation",True,0.0,1
+117,"Enumerate all activities that Hazel Lewis has been involved in, ordered from earliest to latest in the story's chronology.","['Queensboro Bridge']",True,0.0,1
+118,"Enumerate all activities that Julian Ross has been involved in, ordered from earliest to latest in the story's chronology.","Job Fair at the Museum",True,0.0,1
+119,"Enumerate all activities that Nora Ramos has been involved in, ordered from earliest to latest in the story's chronology.","Grand Central Terminal Farmers Market",True,0.0,1
+120,"Enumerate all activities that Samuel Parker has been involved in, ordered from earliest to latest in the story's chronology.","Art Exhibition at Trinity Church",True,0.0,1

@@ -1,0 +1,11 @@
+question_num,question,predicted_answer,search_success,confidence,iterations
+71,"Reflect on all events involving Zoe Brown. Provide a list of all dates when these events occurred, without describing the events.","['March 23, 2024', 'October 13, 2024', 'June 08, 2026', 'December 25, 2026', 'December 26, 2026']",True,0.0,1
+72,"What was Carter Stewart doing the last time they were observed in the story's timeline?","Environmental Summit at Bethpage Black Course",True,0.0,1
+73,"What was Lucy Carter doing the last time they were observed in the story's timeline?","11th Annual Fashion Display",True,0.0,1
+74,"What was Scarlett Thomas doing the last time they were observed in the story's timeline?","Scarlett Thomas Exhibition Debut",True,0.0,1
+75,"What was Zoe Brown doing the last time they were observed in the story's timeline?","Theater Performance at Bethpage State Park",True,0.0,1
+76,"Consider all events involving both Carter Stewart and Carnival. Provide a list of all dates when these events occurred, without describing the events.","['October 13, 2024']",True,0.0,1
+77,"Consider all events involving both Carter Stewart and Environmental Summit. Provide a list of all dates when these events occurred, without describing the events.","['September 03, 2026']",True,0.0,2
+78,"Consider all events involving both Carter Stewart and Storytelling Festival. Provide a list of all dates when these events occurred, without describing the events.","['March 23, 2024']",True,0.0,1
+79,"Consider all events involving both Chloe Castillo and TED Talk. Provide a list of all dates when these events occurred, without describing the events.","None",False,0.0,5
+80,"Consider all events involving both Hazel Lewis and Archery Tournament. Provide a list of all dates when these events occurred, without describing the events.","['May 14, 2025']",True,0.0,1

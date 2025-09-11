@@ -1,0 +1,266 @@
+[
+  {
+    "question": "Reflect on events related to Parkour Workshop. Provide a list of all protagonists involved in these events, without describing the events.",
+    "predicted_answer": "[\"Lucy Carter\"]",
+    "gpt_answer_result": {
+      "final_answer": "[\"Lucy Carter\"]",
+      "confidence_score": 0.0,
+      "reasoning": [
+        "The query results indicate that Lucy Carter is the only participant listed for events related to the Parkour Workshop. The search context confirms her involvement in multiple events, including a workshop, discussion, and film screening, all related to parkour."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "bcce67ac-cb03-497c-aa80-83b1126d3c64",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Parkour Workshop' RETURN DISTINCT e.participants AS protagonists"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 31,
+    "expected_answer": [
+      "Maya Smith",
+      "Lucy Carter"
+    ],
+    "processing_order": 1
+  },
+  {
+    "question": "Reflect on events related to Photography Exhibition. Provide a list of all protagonists involved in these events, without describing the events.",
+    "predicted_answer": "[\"Samuel Parker\", \"Scarlett Thomas\"]",
+    "gpt_answer_result": {
+      "final_answer": "[\"Samuel Parker\", \"Scarlett Thomas\"]",
+      "confidence_score": 0.0,
+      "reasoning": [
+        "The query results and relevant nodes indicate that Samuel Parker and Scarlett Thomas are participants in photography-related art exhibitions. These individuals are directly involved in the events described as art exhibitions featuring photography."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "de2af678-6ef7-4adc-bd95-0a9f3cccbd99",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.event_type = 'Art Exhibition' AND e.description CONTAINS 'photograph' UNWIND e.participants AS participant RETURN DISTINCT participant"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 32,
+    "expected_answer": [
+      "Scarlett Thomas",
+      "Samuel Parker"
+    ],
+    "processing_order": 2
+  },
+  {
+    "question": "Recall all events related to Parkour Workshop. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": "[\"March 23, 2024\"]",
+    "gpt_answer_result": {
+      "final_answer": "[\"March 23, 2024\"]",
+      "confidence_score": 0.0,
+      "reasoning": [
+        "The query returned a single distinct date for events related to 'Parkour Workshop', which is March 23, 2024. This matches the search focus of identifying and listing all dates associated with Parkour Workshop events."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "989a5f7b-a881-4462-a3a0-30284bf75f2c",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Parkour Workshop' RETURN DISTINCT e.date ORDER BY e.date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 33,
+    "expected_answer": [
+      "March 23, 2024",
+      "May 11, 2026"
+    ],
+    "processing_order": 3
+  },
+  {
+    "question": "Recall all events related to Photography Exhibition. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": "[\"September 03, 2026\"]",
+    "gpt_answer_result": {
+      "final_answer": "[\"September 03, 2026\"]",
+      "confidence_score": 0.0,
+      "reasoning": [
+        "The query specifically searched for events related to photography exhibitions by filtering for 'Art Exhibition' events with descriptions containing 'photograph'. The result returned one date, 'September 03, 2026', which matches the criteria."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "5508d606-2d75-421c-8b80-36a2acc3dd31",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.event_type = 'Art Exhibition' AND e.description CONTAINS 'photograph' RETURN DISTINCT e.date ORDER BY e.date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 34,
+    "expected_answer": [
+      "September 03, 2026",
+      "November 13, 2026"
+    ],
+    "processing_order": 4
+  },
+  {
+    "question": "Consider all events involving Parkour Workshop. List all the locations where these events took place, without mentioning the events themselves.",
+    "predicted_answer": "[\"Guggenheim Museum\"]",
+    "gpt_answer_result": {
+      "final_answer": "[\"Guggenheim Museum\"]",
+      "confidence_score": 0.0,
+      "reasoning": [
+        "The query results indicate that all events involving 'Parkour Workshop' took place at the Guggenheim Museum. The search context confirms this location across multiple events related to parkour."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "85a883b7-21d0-49af-972b-4a3f290cc100",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Parkour Workshop' RETURN DISTINCT e.location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 35,
+    "expected_answer": [
+      "Guggenheim Museum",
+      "Metropolitan Museum of Art"
+    ],
+    "processing_order": 5
+  },
+  {
+    "question": "Consider all events involving Photography Exhibition. List all the locations where these events took place, without mentioning the events themselves.",
+    "predicted_answer": "[\"Trinity Church\"]",
+    "gpt_answer_result": {
+      "final_answer": "[\"Trinity Church\"]",
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "The query specifically filtered events that are categorized as 'Art Exhibition' and contain 'photograph' in their description. The only location that matched these criteria was 'Trinity Church'."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "d93bea0b-25d2-4aaa-a08a-be2b607df57e",
+      "total_iterations": 2,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.event_type = 'Art Exhibition' AND e.description CONTAINS 'Photography' RETURN DISTINCT e.location AS location",
+        "MATCH (e:Event) WHERE e.event_type = 'Art Exhibition' AND e.description CONTAINS 'photograph' RETURN DISTINCT e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 36,
+    "expected_answer": [
+      "Trinity Church",
+      "High Line"
+    ],
+    "processing_order": 6
+  },
+  {
+    "question": "Consider all events involving Theater Performance. List all the locations where these events took place, without mentioning the events themselves.",
+    "predicted_answer": "[\"Bethpage State Park\", \"Port Jefferson's historic theater\"]",
+    "gpt_answer_result": {
+      "final_answer": "[\"Bethpage State Park\", \"Port Jefferson's historic theater\"]",
+      "confidence_score": 0.0,
+      "reasoning": [
+        "The query correctly identified distinct locations associated with theater performances by filtering events with the 'Theater Performance' type and returning their locations. The results show two unique locations."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "75f09ca3-00e1-4dc8-bddf-0f9f6d043cc1",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.event_type = 'Theater Performance' RETURN DISTINCT e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 37,
+    "expected_answer": [
+      "Bethpage State Park",
+      "Lincoln Center",
+      "Port Jefferson"
+    ],
+    "processing_order": 7
+  },
+  {
+    "question": "Reflect on events related to Theater Performance. Provide a list of all protagonists involved in these events, without describing the events.",
+    "predicted_answer": "[\"Zoe Brown\", \"Lucy Carter\"]",
+    "gpt_answer_result": {
+      "final_answer": "[\"Zoe Brown\", \"Lucy Carter\"]",
+      "confidence_score": 0.0,
+      "reasoning": [
+        "The query results indicate that the protagonists involved in theater performances are Zoe Brown and Lucy Carter. These names were extracted from the 'participants' field of the relevant events."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "26ff79d4-5477-4b9f-9b96-749105782969",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.event_type CONTAINS 'Theater Performance' OR e.event_type CONTAINS 'Performance' RETURN DISTINCT e.participants AS protagonists"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 38,
+    "expected_answer": [
+      "Scarlett Thomas",
+      "Lucy Carter",
+      "Zoe Brown"
+    ],
+    "processing_order": 8
+  },
+  {
+    "question": "Recall all events related to Theater Performance. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": "[\"September 22, 2026\", \"December 26, 2026\"]",
+    "gpt_answer_result": {
+      "final_answer": "[\"September 22, 2026\", \"December 26, 2026\"]",
+      "confidence_score": 0.0,
+      "reasoning": [
+        "The query successfully retrieved distinct dates associated with theater performances, as evidenced by the sample results and relevant nodes. The two dates found are September 22, 2026, and December 26, 2026."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "96553a29-b7b5-4df1-85a0-0183a851a1bd",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE (e.event_type = 'Theater Performance' OR e.name = 'Theater Performance') AND e.date <> '' RETURN DISTINCT e.date ORDER BY e.date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 39,
+    "expected_answer": [
+      "December 26, 2026",
+      "March 23, 2024",
+      "September 22, 2026"
+    ],
+    "processing_order": 9
+  },
+  {
+    "question": "What is the most recent location where Carter Stewart was observed in the story's chronological timeline?",
+    "predicted_answer": "Bethpage Black Course",
+    "gpt_answer_result": {
+      "final_answer": "Bethpage Black Course",
+      "confidence_score": 0.0,
+      "reasoning": [
+        "The query returned the most recent location where Carter Stewart was observed in the story's chronological timeline, which is 'Bethpage Black Course'. The result is based on ordering events by date in descending order and selecting the top result."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "7f6189b8-8bc7-43c9-af71-108822f1630b",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE \"Carter Stewart\" IN e.participants RETURN e.location AS most_recent_location ORDER BY e.date DESC LIMIT 1"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 40,
+    "expected_answer": [
+      "Bethpage Black Course"
+    ],
+    "processing_order": 10
+  }
+]

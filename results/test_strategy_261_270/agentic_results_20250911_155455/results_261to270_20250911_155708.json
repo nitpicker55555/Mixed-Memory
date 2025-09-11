@@ -1,0 +1,294 @@
+[
+  {
+    "question": "Consider all events involving Thomas Ramos at City Island. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "b735c0a4-eb55-448f-b7b5-a8c81347031e",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND toLower(trim(e.location)) = 'city island' RETURN e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND toLower(trim(e.location)) = 'city island' RETURN e.date AS date",
+        "MATCH (e:Event) WHERE (ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person)))) AND (toLower(e.location) = 'city island') RETURN e.date AS date",
+        "MATCH (e:Event) WHERE e.location = 'City Island' RETURN e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND toLower(e.location) CONTAINS 'city island' RETURN e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 261,
+    "expected_answer": [],
+    "processing_order": 1
+  },
+  {
+    "question": "Consider all events involving Ellie Garcia at Fort Tryon Park. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "d3a180c4-d312-4228-b84a-d91f00a9cc8f",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND e.location = 'Fort Tryon Park' RETURN e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND toLower(trim(e.location)) = toLower(trim('Fort Tryon Park')) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE e.location = 'Fort Tryon Park' AND (ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person)))) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower('Fort Tryon Park') RETURN e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND toLower(e.location) CONTAINS 'fort tryon park' RETURN e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 262,
+    "expected_answer": [],
+    "processing_order": 2
+  },
+  {
+    "question": "Consider all events involving Chloe Castillo at Guggenheim Museum. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": [
+      "March 23, 2024"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "March 23, 2024"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "df25b068-4a21-4aef-b585-0f1cab12b1ca",
+      "total_iterations": 4,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND toLower(trim(e.location)) = toLower(trim('Guggenheim Museum')) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND toLower(trim(e.location)) = toLower(trim('Guggenheim Museum')) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE e.location = 'Guggenheim Museum' AND (ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person)))) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(trim(e.location)) = toLower(trim('Guggenheim Museum')) RETURN e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 263,
+    "expected_answer": [],
+    "processing_order": 3
+  },
+  {
+    "question": "Consider all events involving Chloe Castillo at High Line. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": [
+      "February 27, 2026"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "February 27, 2026"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "34e2ac50-1219-4613-848e-624f6a9d9a0e",
+      "total_iterations": 2,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND toLower(trim(e.location)) = 'high line' RETURN e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 264,
+    "expected_answer": [],
+    "processing_order": 4
+  },
+  {
+    "question": "Reflect on Hazel Lewis's experiences at Brooklyn Museum. Describe all the key events they've been involved in at this location, focusing on what happened rather than when it occurred.",
+    "predicted_answer": "{\"events\":[{\"name\":\"Archery Tournament Morning Session\",\"description\":\"Archers gathered at Queensboro Bridge for a tournament amidst morning mist.\"},{\"name\":\"Hazel's Archery Demonstration\",\"description\":\"Hazel demonstrated different draw techniques to observers.\"},{\"name\":\"Archery Tournament Noon Session\",\"description\":\"Hazel Lewis's precise shots captivated the audience.\"}]}",
+    "gpt_answer_result": {
+      "final_answer": "{\"events\":[{\"name\":\"Archery Tournament Morning Session\",\"description\":\"Archers gathered at Queensboro Bridge for a tournament amidst morning mist.\"},{\"name\":\"Hazel's Archery Demonstration\",\"description\":\"Hazel demonstrated different draw techniques to observers.\"},{\"name\":\"Archery Tournament Noon Session\",\"description\":\"Hazel Lewis's precise shots captivated the audience.\"}]}",
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "6385656a-7cac-41ea-beb9-d109ec46137b",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e AS event"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 265,
+    "expected_answer": [],
+    "processing_order": 5
+  },
+  {
+    "question": "Reflect on Thomas Ramos's experiences at City Island. Describe all the key events they've been involved in at this location, focusing on what happened rather than when it occurred.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "2ff78d74-c5a7-46ef-82f3-b6c48bcb954c",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e AS event",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e AS event",
+        "MATCH (e:Event) WHERE (e.location = 'City Island') AND (toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) RETURN e AS event",
+        "MATCH (e:Event) WHERE e.location = 'City Island' RETURN e AS event",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS 'city island' RETURN e AS event"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 266,
+    "expected_answer": [],
+    "processing_order": 6
+  },
+  {
+    "question": "Reflect on Ellie Garcia's experiences at Fort Tryon Park. Describe all the key events they've been involved in at this location, focusing on what happened rather than when it occurred.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "8a605c64-447e-498f-a6bd-77461af1d124",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e AS event",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e AS event",
+        "MATCH (e:Event) WHERE e.location = 'Fort Tryon Park' AND (toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) RETURN e AS event",
+        "MATCH (e:Event) WHERE e.location = 'Fort Tryon Park' RETURN e AS event",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS 'fort tryon park' RETURN e AS event"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 267,
+    "expected_answer": [],
+    "processing_order": 7
+  },
+  {
+    "question": "Reflect on Chloe Castillo's experiences at Guggenheim Museum. Describe all the key events they've been involved in at this location, focusing on what happened rather than when it occurred.",
+    "predicted_answer": "{\"events\":[{\"name\":\"Chloe's Presentation Preparation\",\"description\":\"Chloe prepares for her TEDx presentation, feeling nervous and fumbling with her index cards.\"},{\"name\":\"Chloe's Presentation Start\",\"description\":\"Chloe Castillo begins her presentation at the TEDx event, feeling nervous but determined.\"},{\"name\":\"Chloe's Research Presentation\",\"description\":\"Chloe Castillo presents her research findings with humor at the TEDx event.\"},{\"name\":\"Chloe's Presentation Error\",\"description\":\"Chloe Castillo accidentally displays a pun-heavy slide, leading to laughter at the TEDx event.\"},{\"name\":\"Chloe's Presentation Conclusion\",\"description\":\"Chloe Castillo concludes her presentation at the TEDx event, reflecting on the balance between knowledge and humor.\"}]}",
+    "gpt_answer_result": {
+      "final_answer": "{\"events\":[{\"name\":\"Chloe's Presentation Preparation\",\"description\":\"Chloe prepares for her TEDx presentation, feeling nervous and fumbling with her index cards.\"},{\"name\":\"Chloe's Presentation Start\",\"description\":\"Chloe Castillo begins her presentation at the TEDx event, feeling nervous but determined.\"},{\"name\":\"Chloe's Research Presentation\",\"description\":\"Chloe Castillo presents her research findings with humor at the TEDx event.\"},{\"name\":\"Chloe's Presentation Error\",\"description\":\"Chloe Castillo accidentally displays a pun-heavy slide, leading to laughter at the TEDx event.\"},{\"name\":\"Chloe's Presentation Conclusion\",\"description\":\"Chloe Castillo concludes her presentation at the TEDx event, reflecting on the balance between knowledge and humor.\"}]}",
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "debf3228-cf43-4e89-a245-aea181db8719",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e AS event"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 268,
+    "expected_answer": [],
+    "processing_order": 8
+  },
+  {
+    "question": "Reflect on Chloe Castillo's experiences at High Line. Describe all the key events they've been involved in at this location, focusing on what happened rather than when it occurred.",
+    "predicted_answer": [
+      "Chloe's TEDx Presentation",
+      "Chloe's Presentation Preparation",
+      "Chloe's Presentation Start",
+      "Chloe's Research Presentation",
+      "Chloe's Presentation Error",
+      "Chloe's Presentation Conclusion"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "Chloe's TEDx Presentation",
+        "Chloe's Presentation Preparation",
+        "Chloe's Presentation Start",
+        "Chloe's Research Presentation",
+        "Chloe's Presentation Error",
+        "Chloe's Presentation Conclusion"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "8883fc69-75b2-49c0-8c50-179284c3316d",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e AS event"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 269,
+    "expected_answer": [],
+    "processing_order": 9
+  },
+  {
+    "question": "Consider all events involving both Hazel Lewis and Roller Disco Night at Brooklyn Museum. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "810ecf31-7fce-4443-a326-0c63d6ce77f4",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND toLower(e.event_type) = toLower($kw) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND (toLower(e.event_type) = toLower(trim($kw)) OR toLower(e.name) CONTAINS toLower(trim($kw)) OR toLower(e.description) CONTAINS toLower(trim($kw))) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS toLower($location) AND (toLower(e.event_type) CONTAINS toLower($kw) OR toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 270,
+    "expected_answer": [],
+    "processing_order": 10
+  }
+]

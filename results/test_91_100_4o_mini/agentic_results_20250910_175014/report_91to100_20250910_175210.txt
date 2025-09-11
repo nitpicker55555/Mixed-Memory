@@ -1,0 +1,93 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-10 17:52:10
+Question Range: 91-100
+Total Questions Processed: 10
+Successful Searches: 5 (50.0%)
+Questions with Answers: 5 (50.0%)
+Average Iterations per Question: 3.0
+
+DETAILED RESULTS:
+------------------------------
+
+Question 91:
+  Text: Consider all events involving both Carter Stewart and Scientific Conference. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 92:
+  Text: Consider all events involving both Chloe Castillo and Carnival. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 93:
+  Text: Consider all events involving both Chloe Castillo and Farmers Market. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 94:
+  Text: Consider all events involving both Chloe Castillo and Parkour Workshop. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 95:
+  Text: Consider all events involving both David Turner and Robotics Competition. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 96:
+  Text: What is the most recent date Chloe Castillo was observed or mentioned in the story's chronology?
+  Expected: ['February 27, 2026']
+  Predicted: 
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 97:
+  Text: What is the most recent date Hazel Lewis was observed or mentioned in the story's chronology?
+  Expected: ['May 14, 2025']
+  Predicted: Archery Tournament Morning Session
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 98:
+  Text: What is the most recent date Julian Ross was observed or mentioned in the story's chronology?
+  Expected: ['February 27, 2026']
+  Predicted: 
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 99:
+  Text: What is the most recent date Nora Ramos was observed or mentioned in the story's chronology?
+  Expected: ['July 13, 2024']
+  Predicted: 
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 100:
+  Text: What is the most recent date Samuel Parker was observed or mentioned in the story's chronology?
+  Expected: ['September 03, 2026']
+  Predicted: Art Exhibition at Trinity Church
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+

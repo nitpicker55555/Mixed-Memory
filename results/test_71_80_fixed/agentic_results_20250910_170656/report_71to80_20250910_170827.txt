@@ -1,0 +1,93 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-10 17:08:27
+Question Range: 71-80
+Total Questions Processed: 10
+Successful Searches: 9 (90.0%)
+Questions with Answers: 9 (90.0%)
+Average Iterations per Question: 1.5
+
+DETAILED RESULTS:
+------------------------------
+
+Question 71:
+  Text: Reflect on all events involving Zoe Brown. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['October 13, 2024', 'December 26, 2026', 'March 23, 2024', 'June 08, 2026']
+  Predicted: ['March 23, 2024', 'October 13, 2024', 'June 08, 2026', 'December 25, 2026', 'December 26, 2026']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 72:
+  Text: What was Carter Stewart doing the last time they were observed in the story's timeline?
+  Expected: ['Environmental Summit']
+  Predicted: Environmental Summit at Bethpage Black Course
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 73:
+  Text: What was Lucy Carter doing the last time they were observed in the story's timeline?
+  Expected: ['Fashion Show']
+  Predicted: 11th Annual Fashion Display
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 74:
+  Text: What was Scarlett Thomas doing the last time they were observed in the story's timeline?
+  Expected: ['Photography Exhibition']
+  Predicted: Scarlett Thomas Exhibition Debut
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 75:
+  Text: What was Zoe Brown doing the last time they were observed in the story's timeline?
+  Expected: ['Theater Performance']
+  Predicted: Theater Performance at Bethpage State Park
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 76:
+  Text: Consider all events involving both Carter Stewart and Carnival. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['October 13, 2024']
+  Predicted: ['October 13, 2024']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 77:
+  Text: Consider all events involving both Carter Stewart and Environmental Summit. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['September 03, 2026']
+  Predicted: ['September 03, 2026']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 2
+
+Question 78:
+  Text: Consider all events involving both Carter Stewart and Storytelling Festival. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['March 23, 2024']
+  Predicted: ['March 23, 2024']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 79:
+  Text: Consider all events involving both Chloe Castillo and TED Talk. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['February 27, 2026']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 80:
+  Text: Consider all events involving both Hazel Lewis and Archery Tournament. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['May 14, 2025']
+  Predicted: ['May 14, 2025']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+

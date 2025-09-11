@@ -1,1604 +1,1257 @@
+# #!/usr/bin/env python3
+# # -*- coding: utf-8 -*-
+
 # """
-# Agentic Search Engine for Knowledge Graph Question Answering
+# Agentic Search Engine (No Templates, with self-correction)
 
-# This module implements a React-style agentic search system that:
-# 1. Observes the question and current state
-# 2. Thinks about the best approach 
-# 3. Acts by generating and executing Cypher queries dynamically
-# 4. Reflects on results and decides whether to continue or output answer
-
-# No hardcoded queries - everything is generated dynamically based on analysis.
+# - 不提供任何预置 Cypher 模版/样例/片段
+# - 仅向 LLM 提供 schema 与约束；LLM 每轮即时生成查询
+# - 查询若空/报错或缺列，把问题、上次查询、缺失列、已返回列、行数与错误原样反馈，要求其自修正
+# - 参与者匹配、事件关键词匹配等仅通过“需求描述约束”，具体写法由 LLM 自主决定
+# - 排序/去重在 Python 后处理（无任何 Cypher 日期转换片段）
 # """
 
+# import os
+# import re
 # import json
 # import uuid
-# import os
 # from datetime import datetime
-# from typing import Dict, List, Optional, Tuple, Any
-# from openai import OpenAI
+# from typing import Any, Dict, List, Optional, Tuple
+
 # from neo4j import GraphDatabase
+# from openai import OpenAI
 
-# # Constants for date conversion
-# MONTH_CONVERSION_CASE = """CASE 
-#     WHEN e.date CONTAINS 'January' THEN '01'
-#     WHEN e.date CONTAINS 'February' THEN '02'
-#     WHEN e.date CONTAINS 'March' THEN '03'
-#     WHEN e.date CONTAINS 'April' THEN '04'
-#     WHEN e.date CONTAINS 'May' THEN '05'
-#     WHEN e.date CONTAINS 'June' THEN '06'
-#     WHEN e.date CONTAINS 'July' THEN '07'
-#     WHEN e.date CONTAINS 'August' THEN '08'
-#     WHEN e.date CONTAINS 'September' THEN '09'
-#     WHEN e.date CONTAINS 'October' THEN '10'
-#     WHEN e.date CONTAINS 'November' THEN '11'
-#     WHEN e.date CONTAINS 'December' THEN '12'
-#     ELSE '00'
-# END"""
 
-# DATE_CONVERSION_TEMPLATE = """WITH e, 
-#      {month_case} as month_num,
-#      split(e.date, ' ')[1] as day,
-#      split(e.date, ' ')[2] as year
-# WITH e{additional_fields}, year + '-' + month_num + '-' + 
-#      CASE WHEN size(day) = 3 THEN substring(day, 0, 2) ELSE day END as sort_date"""
+# # ------------------------- 工具函数 -------------------------
 
-# # Load environment variables from .env file if it exists
-# try:
-#     from dotenv import load_dotenv
-#     load_dotenv()
-#     print("✅ Loaded environment variables from .env file")
-# except ImportError:
-#     print("⚠️ python-dotenv not installed, trying to load .env manually...")
-#     # Manual .env loading as fallback
-#     env_file = os.path.join(os.path.dirname(__file__), '.env')
-#     if os.path.exists(env_file):
-#         with open(env_file, 'r') as f:
-#             for line in f:
-#                 line = line.strip()
-#                 if line and not line.startswith('#') and '=' in line:
-#                     key, value = line.split('=', 1)
-#                     os.environ[key.strip()] = value.strip()
-#         print("✅ Manually loaded environment variables from .env file")
+# _ORDINAL_RE = re.compile(r'(\d+)(st|nd|rd|th)$', re.IGNORECASE)
 
+# def _strip_ordinal(day_str: str) -> str:
+#     """把 '23rd' -> '23'。"""
+#     m = _ORDINAL_RE.match(day_str.strip())
+#     return m.group(1) if m else day_str.strip()
+
+# def _parse_date_safe(s: str) -> Optional[datetime]:
+#     """把 'March 23, 2024' / 'Mar 23, 2024' / 'March 23rd, 2024' 等解析为 datetime；失败返回 None。"""
+#     if not s:
+#         return None
+#     txt = s.strip().replace(",", " ")
+#     parts = [p for p in txt.split() if p]
+#     if len(parts) >= 3:
+#         # 规范化 day 去掉序数词尾
+#         parts[1] = _strip_ordinal(parts[1])
+#         txt = " ".join(parts[:3])
+#     # 尝试若干格式
+#     for fmt in ("%B %d %Y", "%b %d %Y"):
+#         try:
+#             return datetime.strptime(txt, fmt)
+#         except Exception:
+#             continue
+#     return None
+
+# def _unique_in_order(seq: List[Any]) -> List[Any]:
+#     seen = set()
+#     out = []
+#     for x in seq:
+#         if x not in seen:
+#             seen.add(x)
+#             out.append(x)
+#     return out
+
+# def _extract_person_and_event(question: str) -> Tuple[Optional[str], Optional[str]]:
+#     """先用 regex 粗提人名/事件词（不影响“无模版”生成，仅用于参数传递）。"""
+#     person = None
+#     evt = None
+#     # 人名：两个或三个首字母大写单词
+#     m = re.search(r"\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+){1,2})\b", question)
+#     if m:
+#         person = m.group(1).strip()
+#     # 事件关键词：引号内/related to X/involving both A and X
+#     pats = [r'“([^”]+)”', r'"([^"]+)"',
+#             r'related to ([A-Z][A-Za-z]+(?:\s+[A-Z][A-Za-z]+)*)',
+#             r'involving both .* and ([A-Z][A-Za-z]+(?:\s+[A-Z][A-Za-z]+)*)']
+#     for p in pats:
+#         m2 = re.search(p, question, flags=re.IGNORECASE)
+#         if m2:
+#             evt = m2.group(1).strip()
+#             break
+#     return person, evt
+
+
+# # ------------------------- 引擎状态 -------------------------
 
 # class SearchState:
-#     """Maintains the current state of an agentic search session"""
-    
-#     def __init__(self, question: str, session_id: str = None):
-#         self.session_id = session_id or str(uuid.uuid4())
+#     def __init__(self, question: str):
+#         self.session_id = str(uuid.uuid4())
 #         self.question = question
-#         self.iteration_count = 0
+#         self.iteration = 0
 #         self.max_iterations = 5
-#         self.attempted_strategies = []
-#         self.query_history = []
-#         self.result_history = []
-#         self.confidence_score = 0.0
-#         self.final_answer = None
-#         self.reasoning_chain = []
-#         self.current_hypothesis = None
-#         self.search_context = {}
-#         self.previous_attempts = []
-        
-#     def add_iteration(self, strategy: str, query: str, results: List[Dict], 
-#                      confidence: float, reasoning: str):
-#         """Add a new iteration to the search history"""
-#         iteration = {
-#             "iteration": self.iteration_count,
-#             "timestamp": datetime.now().isoformat(),
-#             "strategy": strategy,
-#             "query": query,
-#             "results": results,
-#             "confidence": confidence,
-#             "reasoning": reasoning
-#         }
-        
-#         self.attempted_strategies.append(strategy)
-#         self.query_history.append(query)
-#         self.result_history.append(results)
-#         self.reasoning_chain.append(reasoning)
-#         self.confidence_score = confidence
-#         self.iteration_count += 1
-        
-#         return iteration
+
+#         self.query_history: List[str] = []
+#         self.reasoning: List[str] = []
+
+#         self.final_answer: Optional[Any] = None
+#         self.last_error: Optional[str] = None
+#         self.last_result_rows: int = 0
+
+#         # 新增：用于指导 LLM 修正返回列
+#         self.last_missing_cols: List[str] = []
+#         self.last_row_keys: List[str] = []
 
 
-# class CypherQueryGenerator:
-#     """Dynamically generates Cypher queries based on analysis and context"""
-    
-#     def __init__(self, gpt_client: OpenAI, property_keys_data: Dict = None):
-#         self.gpt_client = gpt_client
-#         self.property_keys_data = property_keys_data
-    
-#     def _get_temporal_patterns(self) -> str:
-#         """Generate temporal query patterns using templates"""
-#         base_pattern = "MATCH (p:Person)-[:PARTICIPATED_IN]->(e:Event) WHERE p.name = 'Name' AND e.date <> ''"
-#         date_conv = DATE_CONVERSION_TEMPLATE.format(
-#             month_case=MONTH_CONVERSION_CASE, 
-#             additional_fields=""
-#         )
-#         date_conv_with_original = DATE_CONVERSION_TEMPLATE.format(
-#             month_case=MONTH_CONVERSION_CASE, 
-#             additional_fields=".date as original_date"
-#         )
-        
-#         return f"""
-# 1. Most recent location: 
-# {base_pattern}
-# {date_conv}
-# RETURN e.location ORDER BY sort_date DESC LIMIT 1
-
-# 2. Chronological location list:
-# {base_pattern}
-# {date_conv}
-# ORDER BY sort_date ASC
-# WITH COLLECT(DISTINCT e.location) as locations
-# UNWIND locations as location
-# RETURN location
-
-# 3. Chronological date list:
-# {base_pattern}
-# {date_conv_with_original}
-# ORDER BY sort_date ASC
-# WITH COLLECT(DISTINCT original_date) as unique_dates
-# UNWIND unique_dates as date
-# RETURN date"""
-    
-#     def get_available_properties(self, node_label: str) -> List[str]:
-#         """Get available properties for a specific node label"""
-#         if not self.property_keys_data:
-#             return []
-        
-#         property_keys = self.property_keys_data.get('property_keys', {})
-#         return property_keys.get(node_label, [])
-    
-#     def get_all_labels(self) -> List[str]:
-#         """Get all available node labels"""
-#         if not self.property_keys_data:
-#             return ['Event', 'Person', 'Location']  # fallback
-        
-#         property_keys = self.property_keys_data.get('property_keys', {})
-#         return [label for label in property_keys.keys() if label != '_relationships']
-    
-#     def get_relationship_types(self) -> List[str]:
-#         """Get all available relationship types"""
-#         if not self.property_keys_data:
-#             return ['OCCURRED_AT', 'PARTICIPATED_IN']  # fallback
-        
-#         property_keys = self.property_keys_data.get('property_keys', {})
-#         relationships = property_keys.get('_relationships', {})
-#         return list(relationships.keys())
-    
-#     def _build_context_info(self, context: Dict) -> str:
-#         """Build context information string"""
-#         return f"Additional context: {json.dumps(context, indent=2)}" if context else ""
-    
-#     def _build_vector_info(self, vector_search_results: List[Dict]) -> str:
-#         """Build vector search results string"""
-#         if not vector_search_results:
-#             return ""
-        
-#         vector_info = "Vector search found these relevant nodes:\n"
-#         for i, result in enumerate(vector_search_results[:5]):
-#             vector_info += f"- Node {result['node_id']} (similarity: {result['similarity']:.3f})\n"
-#         return vector_info
-    
-#     def _build_previous_info(self, previous_attempts: List[str]) -> str:
-#         """Build previous attempts learning string"""
-#         if not previous_attempts:
-#             return ""
-        
-#         available_relationships = self.get_relationship_types()
-#         return f"""
-# LEARNING FROM PREVIOUS FAILURES:
-# {chr(10).join(previous_attempts)}
-
-# IMPORTANT: Analyze why previous queries failed and avoid the same mistakes:
-# - If a relationship type caused errors, use only verified relationships: {', '.join(available_relationships)}
-# - If queries returned 0 results, the schema might be wrong - try simpler patterns first
-# - If dates are duplicated, use DISTINCT properly in collection operations
-# """
-    
-#     def _build_property_info(self) -> str:
-#         """Build property information string"""
-#         available_labels = self.get_all_labels()
-#         property_info = "Available properties by node type:\n"
-#         for label in available_labels:
-#             props = self.get_available_properties(label)
-#             property_info += f"- {label}: {', '.join(props)}\n"
-#         return property_info
-    
-#     def _is_temporal_query(self, question: str) -> bool:
-#         """Check if question is asking for chronological/temporal information"""
-#         temporal_keywords = ['chronological', 'chronologically', 'timeline', 'earliest', 'latest', 'recent', 'dates', 'order', 'sequence', 'first', 'last']
-#         return any(keyword in question.lower() for keyword in temporal_keywords)
-    
-#     def _build_temporal_guidance(self) -> str:
-#         """Build temporal query guidance"""
-#         return f"""
-
-# SPECIAL GUIDANCE FOR CHRONOLOGICAL/TEMPORAL QUERIES:
-# - Event nodes have 'date' property in format "Month DD, YYYY" 
-# - Filter empty dates: WHERE e.date <> ''
-# - Use e.location property (NO LOCATED_AT relationship exists!)
-# - Manual date conversion required for proper sorting
-
-# COMMON TEMPORAL QUERY PATTERNS:
-# {self._get_temporal_patterns()}
-
-# IMPORTANT: Use COLLECT(DISTINCT ...) for list queries to remove duplicates.
-# """
-    
-#     def generate_query(self, question: str, strategy: str, context: Dict = None, 
-#                       previous_attempts: List[str] = None, vector_search_results: List[Dict] = None) -> Tuple[str, str]:
-#         """
-#         Generate a Cypher query dynamically based on question analysis
-        
-#         Returns:
-#             Tuple[str, str]: (cypher_query, reasoning)
-#         """
-        
-#         # Build all context information
-#         context_info = self._build_context_info(context)
-#         vector_info = self._build_vector_info(vector_search_results)
-#         previous_info = self._build_previous_info(previous_attempts)
-#         property_info = self._build_property_info()
-        
-#         # Get schema information
-#         available_labels = self.get_all_labels()
-#         available_relationships = self.get_relationship_types()
-        
-#         # Add temporal guidance if needed
-#         temporal_guidance = self._build_temporal_guidance() if self._is_temporal_query(question) else ""
-        
-#         prompt = f"""
-# You are an expert in generating Cypher queries for Neo4j knowledge graphs. 
-# Your task is to create a precise Cypher query to answer the given question.
-
-# Question: {question}
-# Strategy: {strategy}
-# {context_info}
-# {previous_info}
-# {vector_info}
-
-# ACTUAL Knowledge Graph Schema (from database analysis):
-# - Available Node Labels: {', '.join(available_labels)}
-# - Available Relationships: {', '.join(available_relationships)}
-
-# {property_info}{temporal_guidance}
-
-# IMPORTANT: You MUST only use the node labels, relationships, and properties listed above. 
-# Do NOT use labels like 'Organization' or 'Topic' or relationships like 'RELATES_TO' if they are not in the available lists.
-
-# Generate a Cypher query that will help answer this question. Consider:
-# 1. What entities are mentioned in the question?
-# 2. What relationships are implied?
-# 3. What information needs to be retrieved?
-# 4. How to structure the query for optimal results?
-# 5. Use only the available schema elements listed above
-# 6. If this is a temporal/chronological query, pay special attention to the date property and sorting
-
-# Provide your response in this JSON format:
-# {{
-#     "cypher_query": "MATCH ... RETURN ...",
-#     "reasoning": "Explanation of why this query should work",
-#     "expected_results": "Description of what kind of results this should return"
-# }}
-
-# Make sure the query is syntactically correct and follows Neo4j Cypher syntax.
-# Use only the available node labels, relationships and properties shown above.
-# """
-
-#         try:
-#             response = self.gpt_client.chat.completions.create(
-#                 model="gpt-4",
-#                 messages=[{"role": "user", "content": prompt}],
-#                 temperature=0.7
-#             )
-            
-#             result = json.loads(response.choices[0].message.content)
-#             return result["cypher_query"], result["reasoning"]
-            
-#         except Exception as e:
-#             # Fallback to a basic query structure
-#             basic_query = f"""
-#             MATCH (n)
-#             WHERE n.name CONTAINS '{question.split()[0] if question.split() else 'unknown'}'
-#             RETURN n.name, labels(n), properties(n)
-#             LIMIT 10
-#             """
-#             return basic_query, f"Fallback query due to error: {str(e)}"
-
-
-# class ResultEvaluator:
-#     """Evaluates query results and decides whether they answer the question"""
-    
-#     def __init__(self, gpt_client: OpenAI):
-#         self.gpt_client = gpt_client
-    
-#     def evaluate_results(self, question: str, query: str, results: List[Dict], 
-#                         iteration_context: Dict = None) -> Tuple[float, str, bool, Optional[str], Optional[str]]:
-#         """
-#         Evaluate whether the results adequately answer the question
-        
-#         Returns:
-#             Tuple[float, str, bool, Optional[str], Optional[str]]: 
-#             (confidence_score, reasoning, should_continue, suggested_answer, improvement_suggestions)
-#         """
-        
-#         if not results:
-#             return 0.0, "No results returned from query", True, None, "Check relationship types and schema - query might use non-existent relationships"
-        
-#         # Prepare results for analysis
-#         results_summary = self._summarize_results(results)
-        
-#         context_info = ""
-#         if iteration_context:
-#             context_info = f"Search context: {json.dumps(iteration_context, indent=2)}"
-        
-#         prompt = f"""
-# You are evaluating whether query results adequately answer a question.
-
-# Question: {question}
-# Cypher Query Used: {query}
-# Results Summary: {results_summary}
-# {context_info}
-
-# Analyze the results and determine:
-# 1. Do these results contain information that answers the question?
-# 2. How confident are you that this is a complete/correct answer? (0-100%)
-# 3. Should we continue searching or is this sufficient?
-# 4. If sufficient, what is the final answer?
-
-# CRITICAL ERROR DETECTION:
-# - If query returned 0 results, analyze the query for common issues:
-#   * Wrong relationship types (e.g., using LOCATED_AT which doesn't exist)
-#   * Incorrect node labels or property names
-#   * Overly restrictive WHERE clauses
-# - If query had relationship warnings, suggest using actual relationship types
-# - If results seem incomplete, suggest alternative query approaches
-
-# Provide your evaluation in this JSON format:
-# {{
-#     "confidence_score": 85,
-#     "reasoning": "Detailed explanation of your evaluation",
-#     "should_continue": false,
-#     "suggested_answer": "The final answer based on the results",
-#     "improvement_suggestions": "If continuing, what should be tried next? Be specific about query fixes needed."
-# }}
-
-# Be thorough in your analysis. Consider completeness, relevance, and accuracy.
-# """
-
-#         try:
-#             response = self.gpt_client.chat.completions.create(
-#                 model="gpt-4",
-#                 messages=[{"role": "user", "content": prompt}],
-#                 temperature=0.3
-#             )
-            
-#             evaluation = json.loads(response.choices[0].message.content)
-            
-#             confidence = evaluation.get("confidence_score", 0) / 100.0
-#             reasoning = evaluation.get("reasoning", "No reasoning provided")
-#             should_continue = evaluation.get("should_continue", True)
-#             suggested_answer = evaluation.get("suggested_answer")
-#             improvement_suggestions = evaluation.get("improvement_suggestions", "")
-            
-#             return confidence, reasoning, should_continue, suggested_answer, improvement_suggestions
-            
-#         except Exception as e:
-#             # Fallback evaluation
-#             if results and len(results) > 0:
-#                 return 0.5, f"Basic evaluation - found {len(results)} results", True, None, ""
-#             else:
-#                 return 0.0, f"Evaluation error: {str(e)}", True, None, "Evaluation error - try simpler query patterns"
-    
-#     def _summarize_results(self, results: List[Dict]) -> str:
-#         """Create a concise summary of results for analysis"""
-#         if not results:
-#             return "No results"
-        
-#         summary = f"Found {len(results)} results:\n"
-#         for i, result in enumerate(results[:5]):  # Limit to first 5 for summary
-#             summary += f"{i+1}. {json.dumps(result, indent=2)}\n"
-        
-#         if len(results) > 5:
-#             summary += f"... and {len(results) - 5} more results"
-        
-#         return summary
-
-
-# class StrategySelector:
-#     """Selects the best search strategy based on question analysis"""
-    
-#     def __init__(self, gpt_client: OpenAI):
-#         self.gpt_client = gpt_client
-    
-#     def select_strategy(self, question: str, previous_strategies: List[str] = None,
-#                        search_context: Dict = None) -> Tuple[str, str, Dict]:
-#         """
-#         Analyze question and select the best search strategy
-        
-#         Returns:
-#             Tuple[str, str, Dict]: (strategy_name, reasoning, context_updates)
-#         """
-        
-#         previous_info = ""
-#         if previous_strategies:
-#             previous_info = f"Already tried strategies: {', '.join(previous_strategies)}"
-        
-#         context_info = ""
-#         if search_context:
-#             context_info = f"Current context: {json.dumps(search_context, indent=2)}"
-        
-#         prompt = f"""
-# Analyze this question and determine the best search strategy for a knowledge graph.
-
-# Question: {question}
-# {previous_info}
-# {context_info}
-
-# Available strategy types:
-# 1. entity_focused - Find specific entities mentioned in the question
-# 2. relationship_focused - Explore relationships between entities
-# 3. temporal_focused - Search based on time/sequence constraints  
-# 4. location_focused - Search based on location/place constraints
-# 5. broad_exploration - Cast a wide net to find relevant information
-# 6. constraint_refinement - Add specific constraints to narrow results
-# 7. pattern_matching - Look for specific patterns or structures
-
-# Choose the most appropriate strategy and provide context updates.
-
-# Respond in this JSON format:
-# {{
-#     "strategy": "entity_focused",
-#     "reasoning": "Why this strategy is best for this question",
-#     "context_updates": {{
-#         "target_entities": ["entity1", "entity2"],
-#         "key_constraints": ["constraint1"],
-#         "search_focus": "what to focus on"
-#     }}
-# }}
-# """
-
-#         try:
-#             response = self.gpt_client.chat.completions.create(
-#                 model="gpt-4",
-#                 messages=[{"role": "user", "content": prompt}],
-#                 temperature=0.7
-#             )
-            
-#             result = json.loads(response.choices[0].message.content)
-            
-#             strategy = result.get("strategy", "broad_exploration")
-#             reasoning = result.get("reasoning", "Default strategy selection")
-#             context_updates = result.get("context_updates", {})
-            
-#             return strategy, reasoning, context_updates
-            
-#         except Exception as e:
-#             # Fallback strategy selection
-#             if not previous_strategies:
-#                 return "entity_focused", f"Fallback to entity_focused due to error: {str(e)}", {}
-#             else:
-#                 # Try a different strategy if previous ones failed
-#                 all_strategies = ["entity_focused", "relationship_focused", "temporal_focused", 
-#                                 "location_focused", "broad_exploration", "constraint_refinement"]
-#                 remaining = [s for s in all_strategies if s not in previous_strategies]
-#                 if remaining:
-#                     return remaining[0], f"Trying alternative strategy due to error: {str(e)}", {}
-#                 else:
-#                     return "broad_exploration", "All strategies attempted, using broad exploration", {}
-
+# # ------------------------- 主引擎（无模版） -------------------------
 
 # class AgenticSearchEngine:
 #     """
-#     Main agentic search engine implementing React-style search loop:
-#     Observe -> Think -> Act -> Reflect
+#     仅提供 schema 与返回列要求，所有 Cypher 由 LLM 即时生成。
+#     排序/去重在 Python 完成；如果缺列（如没返回 date），会触发“请补列并重写查询”的反馈迭代。
 #     """
-    
-#     def __init__(self, neo4j_uri: str, neo4j_user: str, neo4j_password: str, 
-#                  openai_api_key: str = None, neo4j_database: str = None):
-#         # Store database connection info
-#         self.neo4j_database = neo4j_database or os.getenv("NEO4J_DATABASE", "neo4j")
-        
-#         # Initialize connections
-#         self.driver = GraphDatabase.driver(neo4j_uri, auth=(neo4j_user, neo4j_password))
-        
-#         if openai_api_key:
-#             self.gpt_client = OpenAI(api_key=openai_api_key)
-#         else:
-#             self.gpt_client = OpenAI()  # Uses environment variable
-        
-#         # Initialize database preparator
-#         import sys
-#         # Add the graph_generation directory to the path
-#         current_dir = os.path.dirname(os.path.abspath(__file__))
-#         graph_generation_dir = os.path.join(os.path.dirname(current_dir), 'graph_generation')
-#         if graph_generation_dir not in sys.path:
-#             sys.path.insert(0, graph_generation_dir)
-        
-#         from database_preparation import DatabasePreparator
-#         self.db_preparator = DatabasePreparator(
-#             neo4j_uri=neo4j_uri,
-#             neo4j_user=neo4j_user,
-#             neo4j_password=neo4j_password,
-#             neo4j_database=self.neo4j_database,
-#             openai_api_key=openai_api_key
+
+#     def __init__(
+#         self,
+#         neo4j_uri: Optional[str] = None,
+#         neo4j_user: Optional[str] = None,
+#         neo4j_password: Optional[str] = None,
+#         openai_api_key: Optional[str] = None,
+#         neo4j_database: Optional[str] = None,
+#     ):
+#         self.database = neo4j_database or os.getenv("NEO4J_DATABASE", "neo4j")
+#         self.driver = GraphDatabase.driver(
+#             neo4j_uri or os.getenv("NEO4J_URI", "bolt://localhost:7687"),
+#             auth=(neo4j_user or os.getenv("NEO4J_USER", "neo4j"),
+#                   neo4j_password or os.getenv("NEO4J_PASSWORD", "password"))
 #         )
+#         api_key = openai_api_key or os.getenv("OPENAI_API_KEY")
+#         if not api_key:
+#             raise ValueError("OPENAI_API_KEY not set")
+#         self.client = OpenAI(api_key=api_key)
+
+#         # 仅描述 schema，不给任何查询模版
+#         self.schema_hint = (
+#             "There is a single label `Event` you must use. "
+#             "`Event` has properties: `name` (string), `date` (string like 'March 23, 2024'), "
+#             "`location` (string), `event_type` (string), `description` (string), "
+#             "`participants` (array of strings). "
+#             "Do NOT use any relationships. Only query `Event` nodes and their properties. "
+#             "Participants are stored as an array of names on the `Event` node."
+#         )
+
+#     # ---------- LLM 兜底实体抽取（避免 regex 漏检） ----------
+#     def _extract_entities_llm(self, question: str) -> Tuple[Optional[str], Optional[str]]:
+#         prompt = f"""
+# Extract two optional fields (strict JSON):
+# {{
+#   "person": "<full name if clearly a single person is referenced, else null>",
+#   "event": "<event keyword if clearly referenced (e.g., 'Photography Exhibition'), else null>"
+# }}
+# Question: {question}
+# """
+#         try:
+#             resp = self.client.chat.completions.create(
+#                 model="gpt-4o-mini",
+#                 messages=[{"role": "user", "content": prompt}],
+#                 temperature=0.0
+#             )
+#             data = json.loads(resp.choices[0].message.content.strip())
+#             p = data.get("person")
+#             e = data.get("event")
+#             return (p if isinstance(p, str) and p.strip() else None,
+#                     e if isinstance(e, str) and e.strip() else None)
+#         except Exception:
+#             return (None, None)
+
+#     # ---------- LLM 问题类型分类（无模版） ----------
+#     def _classify_llm(self, question: str) -> Dict[str, Any]:
+#         type_defs = {
+#             "latest_activity_of_person": {
+#                 "desc": "What was PERSON doing the last time they were observed? Return the most recent event for a person.",
+#                 "need": ["event_type", "name", "event", "activity", "date", "timestamp"]
+#             },
+#             "most_recent_date_of_person": {
+#                 "desc": "What is the most recent date PERSON was observed or mentioned? Return the latest date only.",
+#                 "need": ["date", "timestamp"]
+#             },
+#             "chrono_locations_by_person": {
+#                 "desc": "List all locations visited by PERSON in chronological order according to the story's timeline.",
+#                 "need": ["location", "date"]
+#             },
+#             "dates_by_filters": {
+#                 "desc": "List all dates for events that involve both a PERSON and an EVENT KEYWORD.",
+#                 "need": ["date"]
+#             },
+#             "protagonists_by_event": {
+#                 "desc": "List all protagonists of events related to an EVENT KEYWORD.",
+#                 "need": ["protagonist"]
+#             },
+#             "dates_by_event": {
+#                 "desc": "List all dates of events related to an EVENT KEYWORD.",
+#                 "need": ["date"]
+#             },
+#             "locations_by_event": {
+#                 "desc": "List all locations of events related to an EVENT KEYWORD.",
+#                 "need": ["location"]
+#             },
+#             "generic": {
+#                 "desc": "If none fits well, choose generic.",
+#                 "need": ["date", "location", "name", "event_type"]
+#             }
+#         }
         
-#         # Prepare database (load embeddings and property keys)
-#         self.preparation_result = self.db_preparator.prepare_database()
-#         self.property_keys_data = self.db_preparator.load_property_keys()
-        
-#         # Initialize components with property key data
-#         self.query_generator = CypherQueryGenerator(self.gpt_client, self.property_keys_data)
-#         self.result_evaluator = ResultEvaluator(self.gpt_client)
-#         self.strategy_selector = StrategySelector(self.gpt_client)
-        
-#         # Session storage
-#         self.session_storage = {}
-    
-#     def search(self, question: str, session_id: str = None) -> Dict[str, Any]:
+#         prompt = f"""
+# You are a task classifier for a knowledge-graph QA system (NO query templates).
+# Given a question, choose the SINGLE closest task type from this set and list the columns we need from rows:
+
+# TYPES:
+# {json.dumps({k: v["desc"] for k, v in type_defs.items()}, indent=2)}
+
+# Return STRICT JSON:
+# {{
+#   "type": "<one of: {', '.join(type_defs.keys())}>",
+#   "need": ["<column names we must return from Cypher rows>"]
+# }}
+
+# Rules:
+# - Pick the closest type even if phrasing differs.
+# - If unsure, pick "generic".
+# - The 'need' list should usually match the default for that type (you may add/remove columns if obviously necessary).
+# - Do NOT include any explanation text outside the JSON.
+
+# Question: {question}
+# """
+
+#         try:
+#             resp = self.client.chat.completions.create(
+#                 model="gpt-4o-mini",
+#                 messages=[{"role": "user", "content": prompt}],
+#                 temperature=0.0
+#             )
+#             data = json.loads(resp.choices[0].message.content.strip())
+#             t = data.get("type", "generic")
+#             need = data.get("need") or type_defs.get(t, type_defs["generic"])["need"]
+#             if t not in type_defs:
+#                 t = "generic"
+#             if not isinstance(need, list) or not all(isinstance(x, str) for x in need):
+#                 need = type_defs[t]["need"]
+#             return {"type": t, "need": need}
+#         except Exception:
+#             return {"type": "generic", "need": type_defs["generic"]["need"]}
+
+#     # ---------- 任务类型兜底 ----------
+#     def _classify(self, question: str) -> Dict[str, Any]:
+#         result = self._classify_llm(question)
+#         if result and result.get("type"):
+#             return result
+#         # 兜底关键词（极少命中）
+#         q = question.lower()
+#         if "what was" in q and "doing the last time" in q:
+#             return {"type": "latest_activity_of_person", "need": ["event_type", "name", "date"]}
+#         if "list all locations visited by" in q and "chronological" in q:
+#             return {"type": "chrono_locations_by_person", "need": ["location", "date"]}
+#         if ("related to" in q or "involving both" in q or "involving" in q) and "date" in q:
+#             return {"type": "dates_by_filters", "need": ["date"]}
+#         if ("reflect on events related to" in q or "related to" in q) and "protagonists" in q:
+#             return {"type": "protagonists_by_event", "need": ["protagonist"]}
+#         if ("recall all events related to" in q or "reflect on events related to" in q) and "date" in q:
+#             return {"type": "dates_by_event", "need": ["date"]}
+#         if ("consider all events" in q and "locations" in q and ("involving" in q or "related to" in q)):
+#             return {"type": "locations_by_event", "need": ["location"]}
+#         return {"type": "generic", "need": ["date", "location", "name", "event_type"]}
+
+#     # ---------- 生成查询（无模版） ----------
+#     def _gen_query_json(
+#         self,
+#         question: str,
+#         need_columns: List[str],
+#         person: Optional[str],
+#         keyword: Optional[str],
+#         prev_query: Optional[str] = None,
+#         last_error: Optional[str] = None,
+#         last_rows: Optional[int] = None,
+#         missing_cols: Optional[List[str]] = None,
+#         last_keys: Optional[List[str]] = None,
+#     ) -> Tuple[str, Dict[str, Any]]:
 #         """
-#         Main search method implementing the agentic React loop
-        
-#         Returns:
-#             Dict containing the final answer and search metadata
+#         让 LLM 生成只含 `query` 与 `params` 的 JSON。不给任何样例/片段。
+#         如果有上一次错误/0 行/缺列，会附带诊断信息要求自修复。
 #         """
+#         constraints = [
+#             "Use only (e:Event) and its properties; do NOT use relationships.",
+#             "If you need to filter by a person, treat `participants` as an array of strings.",
+#             "For person matching, use: ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person)))",
+#             "NEVER use trim() directly on e.participants array - only on individual elements within ANY().",
+#             "If you need to filter by an event keyword, match it against `event_type` (preferred), or `name`/`description`.",
+#             "Return ONLY the minimal columns requested, using EXACT aliases from the required list.",
+#             "Do NOT add ORDER BY; raw rows are fine. Sorting/dedup happens outside Cypher.",
+#             "If previous result had 0 rows, you MUST adjust filters (e.g., relax keyword to name/description, or normalize participants with ANY + toLower(trim(...))).",
+#             "Aliases in RETURN must EXACTLY match the required output columns."
+#         ]
+
+#         diagnose = ""
+#         if prev_query is not None:
+#             diagnose = f"\nPrevious query returned {last_rows} rows. Last error: {last_error or 'none'}.\n"
+#             if missing_cols:
+#                 diagnose += f"Missing required columns last time: {missing_cols}. Include them EXACTLY with these aliases.\n"
+#             if last_keys:
+#                 diagnose += f"Last returned columns were: {last_keys}. Adjust RETURN aliases accordingly.\n"
+#             # 关键词“先等值后放宽”
+#             if keyword:
+#                 if (last_rows is None) or (last_rows > 0):
+#                     diagnose += "For the event keyword: prefer case-insensitive EQUALITY on e.event_type to $kw.\n"
+#                 else:
+#                     diagnose += "Last attempt returned 0 rows. You MAY broaden keyword filtering to case-insensitive CONTAINS over e.name or e.description.\n"
         
-#         # Initialize search state
-#         state = SearchState(question, session_id)
-#         self.session_storage[state.session_id] = state
+#         prompt = f"""
+# You are a Cypher generator. Do not use any templates or examples.
+# Database schema hint: {self.schema_hint}
+
+# Question: {question}
+
+# Required output columns (exact aliases): {need_columns}
+# Rules:
+# - {chr(10) + '- '.join(constraints)}
+
+# {('Parameters to expect: ' + json.dumps({'person': person, 'kw': keyword})) if (person or keyword) else 'No external parameters are required.'}
+# {diagnose}
+
+# Return ONLY a valid JSON object with fields:
+# - "query": string
+# - "params": object (may be empty if no params)
+# """
+
+#         # 最多两次生成尝试（解析失败则重试）
+#         for _ in range(2):
+#             resp = self.client.chat.completions.create(
+#                 model="gpt-4o-mini",
+#                 messages=[{"role": "user", "content": prompt}],
+#                 temperature=0.0,
+#             )
+#             text = resp.choices[0].message.content.strip()
+#             try:
+#                 data = json.loads(text)
+#                 q = data.get("query", "")
+#                 params = data.get("params", {}) or {}
+#                 if not isinstance(q, str):
+#                     raise ValueError("`query` must be a string")
+#                 if not isinstance(params, dict):
+#                     raise ValueError("`params` must be an object")
+#                 # 填充参数默认值（仅在未提供时）
+#                 if person and "person" not in params:
+#                     params["person"] = person
+#                 if keyword and "kw" not in params:
+#                     params["kw"] = keyword
+#                 return q, params
+#             except Exception as e:
+#                 # 下一轮要求严格 JSON
+#                 prompt += f"\nYour previous JSON was invalid: {e}. Return a strict JSON next time.\n"
+#                 continue
+
+#         raise RuntimeError("LLM failed to return a valid JSON {query, params}.")
+
+#     # ---------- 执行查询 ----------
+#     def _run(self, query: str, params: Dict[str, Any]) -> Tuple[List[Dict], Optional[str]]:
+#         try:
+#             with self.driver.session(database=self.database) as sess:
+#                 res = sess.run(query, **params)
+#                 rows = [dict(r) for r in res]
+#                 return rows, None
+#         except Exception as e:
+#             return [], str(e)
+
+#     # ---------- 结果标准化 ----------
+#     def _standardize(self, question: str, qtype: str, rows: List[Dict]) -> Any:
+#         if not rows:
+#             return None
+
+#         if qtype == "latest_activity_of_person":
+#             # 选择日期最晚的一条，返回 event_type 或 name
+#             best = None
+#             best_dt = None
+#             for r in rows:
+#                 # 尝试多个可能的日期字段名
+#                 date_str = str(r.get("date", "") or r.get("timestamp", "") or "")
+#                 d = _parse_date_safe(date_str)
+#                 if d is None:
+#                     continue
+#                 if best_dt is None or d > best_dt:
+#                     best_dt = d
+#                     best = r
+#             if best is None:
+#                 best = rows[0]
+#             # 尝试多个可能的事件名称字段
+#             return (best.get("event_type") or 
+#                     best.get("name") or 
+#                     best.get("event") or 
+#                     best.get("activity") or "")
+
+#         if qtype == "most_recent_date_of_person":
+#             # 选择日期最晚的一条，返回日期
+#             best = None
+#             best_dt = None
+#             for r in rows:
+#                 # 尝试多个可能的日期字段名
+#                 date_str = str(r.get("date", "") or r.get("timestamp", "") or "")
+#                 d = _parse_date_safe(date_str)
+#                 if d is None:
+#                     continue
+#                 if best_dt is None or d > best_dt:
+#                     best_dt = d
+#                     best = r
+#             if best is None:
+#                 best = rows[0]
+#             # 返回日期字符串
+#             return (best.get("date") or best.get("timestamp") or "")
+
+#         if qtype == "chrono_locations_by_person":
+#             # 用最早日期排序地点，唯一化
+#             bucket: Dict[str, datetime] = {}
+#             for r in rows:
+#                 loc = r.get("location")
+#                 d = _parse_date_safe(str(r.get("date", "")))
+#                 if not loc or d is None:
+#                     continue
+#                 bucket[loc] = min(bucket.get(loc, d), d) if loc in bucket else d
+#             if not bucket:
+#                 # 若没拿到 date，只能保序去重
+#                 return _unique_in_order([r.get("location") for r in rows if r.get("location")])
+#             ordered = sorted(bucket.items(), key=lambda x: x[1])
+#             return [loc for loc, _ in ordered]
+
+#         if qtype in ("dates_by_filters", "dates_by_event"):
+#             ds = []
+#             for r in rows:
+#                 d = r.get("date")
+#                 if isinstance(d, str) and d.strip():
+#                     ds.append(d.strip())
+#             # 解析排序
+#             ds_parsed = [(s, _parse_date_safe(s)) for s in ds]
+#             ds_parsed = [x for x in ds_parsed if x[1] is not None]
+#             ds_parsed.sort(key=lambda x: x[1])
+#             return _unique_in_order([s for s, _ in ds_parsed])
+
+#         if qtype == "protagonists_by_event":
+#             people = [r.get("protagonist") for r in rows if r.get("protagonist")]
+#             return sorted(_unique_in_order(people))
+
+#         if qtype == "locations_by_event":
+#             locs = [r.get("location") for r in rows if r.get("location")]
+#             return sorted(_unique_in_order(locs))
+
+#         # 通用：优先 date/location/name/event_type
+#         if len(rows) == 1 and len(rows[0]) == 1:
+#             return list(rows[0].values())[0]
+#         for key in ("date", "location", "name", "event_type"):
+#             if key in rows[0] and all(key in r for r in rows):
+#                 vals = [r.get(key) for r in rows if r.get(key)]
+#                 return _unique_in_order(vals)
+#         return rows[0]
+
+#     # ---------- 主流程 ----------
+#     def search(self, question: str, max_iterations: int = 5) -> Dict[str, Any]:
+#         state = SearchState(question)
+#         state.max_iterations = max_iterations
         
 #         print(f"Starting agentic search for: {question}")
-#         print(f"Session ID: {state.session_id}")
-        
-#         while state.iteration_count < state.max_iterations:
-#             print(f"\n--- Iteration {state.iteration_count + 1} ---")
+#         print(f"Session: {state.session_id}")
+
+#         # 轻量抽取作为参数传递（不改变“无模版”本质）
+#         person, evt = _extract_person_and_event(question)
+#         # regex 漏检时 LLM 兜底
+#         if not person or (("involving" in question.lower() or "related to" in question.lower()) and not evt):
+#             p2, e2 = self._extract_entities_llm(question)
+#             person = person or p2
+#             evt = evt or e2
+
+#         cls = self._classify(question)
+#         need_cols: List[str] = cls["need"]
+
+#         while state.iteration < state.max_iterations and state.final_answer is None:
+#             state.iteration += 1
+#             print(f"\n-- Iteration {state.iteration} --")
+
+#             # 让 LLM 生成查询（无任何模板/样例）
+#             try:
+#                 query, params = self._gen_query_json(
+#                     question=question,
+#                     need_columns=need_cols,
+#                     person=person,
+#                     keyword=evt,
+#                     prev_query=state.query_history[-1] if state.query_history else None,
+#                     last_error=state.last_error,
+#                     last_rows=state.last_result_rows,
+#                     missing_cols=state.last_missing_cols,
+#                     last_keys=state.last_row_keys,
+#                 )
+#             except Exception as e:
+#                 state.reasoning.append(f"Query generation error: {e}")
+#                 break
+
+#             state.query_history.append(query)
+#             print("Generated query:", query)
+#             print("Params:", params)
+
+#             # 执行
+#             rows, err = self._run(query, params)
+#             state.last_error = err
+#             state.last_result_rows = len(rows)
+#             state.last_row_keys = list(rows[0].keys()) if rows else []
+#             if err:
+#                 print("Execution error:", err)
+#                 state.reasoning.append(f"Execution error: {err}")
+#                 continue
+
+#             print(f"Rows: {len(rows)}")
+
+#             # 如果缺关键列（例如需要 date 却没返回），触发一次修正
+#             # 但对于某些类型，有部分字段就足够了
+#             missing = [c for c in need_cols if rows and c not in rows[0]]
+#             state.last_missing_cols = missing
             
-#             # OBSERVE: Analyze current situation
-#             observation = self._observe(state)
-#             print(f"Observation: {observation}")
+#             # 对于latest_activity_of_person，只需要至少有日期字段和事件字段之一
+#             if cls["type"] == "latest_activity_of_person" and rows:
+#                 has_date = any(field in rows[0] for field in ["date", "timestamp"])
+#                 has_event = any(field in rows[0] for field in ["event_type", "name", "event", "activity"])
+#                 if has_date or has_event:
+#                     missing = []  # 有足够的字段可以处理
             
-#             # THINK: Select strategy based on analysis
-#             strategy, strategy_reasoning, context_updates = self._think(state)
-#             print(f"Strategy: {strategy}")
-#             print(f"Reasoning: {strategy_reasoning}")
-            
-#             # Update search context
-#             state.search_context.update(context_updates)
-            
-#             # ACT: Generate and execute query
-#             query, query_reasoning = self._act(state, strategy)
-#             print(f"Generated Query: {query}")
-#             print(f"Query Reasoning: {query_reasoning}")
-            
-#             # Execute query
-#             results = self._execute_query(query)
-#             print(f"Results: Found {len(results)} items")
-            
-#             # REFLECT: Evaluate results and decide next action
-#             confidence, eval_reasoning, should_continue, suggested_answer = self._reflect(
-#                 state, query, results
-#             )
-#             print(f"Confidence: {confidence:.2f}")
-#             print(f"Evaluation: {eval_reasoning}")
-            
-#             # Record iteration
-#             iteration_data = state.add_iteration(
-#                 strategy, query, results, confidence, eval_reasoning
-#             )
-            
-#             # Save iteration to temporary storage
-#             self._save_iteration(state.session_id, iteration_data)
-            
-#             # Decision point
-#             if not should_continue or confidence >= 0.8:
-#                 state.final_answer = suggested_answer
-#                 print(f"Search completed with answer: {suggested_answer}")
+#             if rows and missing:
+#                 msg = f"Missing columns {missing}, ask LLM to include them next round."
+#                 print(msg)
+#                 state.reasoning.append(msg)
+#                 continue
+
+#             if rows:
+#                 state.final_answer = self._standardize(question, cls["type"], rows)
 #                 break
             
-#             print("Continuing search with new strategy...")
+#             state.reasoning.append("0 rows; ask LLM to self-correct and widen/adjust filters.")
         
-#         # Prepare final result
-#         final_result = {
+#         result = {
 #             "session_id": state.session_id,
 #             "question": question,
 #             "final_answer": state.final_answer,
-#             "confidence_score": state.confidence_score,
-#             "total_iterations": state.iteration_count,
+#             "standardized_answer": self._to_list(state.final_answer),
+#             "total_iterations": state.iteration,
 #             "search_successful": state.final_answer is not None,
-#             "reasoning_chain": state.reasoning_chain,
-#             "query_history": state.query_history
+#             "reasoning_chain": state.reasoning,
+#             "query_history": state.query_history,
 #         }
-        
-#         print(f"\nFinal Result: {final_result}")
-#         return final_result
-    
-#     def _observe(self, state: SearchState) -> str:
-#         """Observe current state and question characteristics"""
-#         observations = []
-        
-#         if state.iteration_count == 0:
-#             observations.append("Starting fresh search")
-#         else:
-#             observations.append(f"Previous attempts: {len(state.attempted_strategies)}")
-            
-#         if state.result_history:
-#             total_results = sum(len(results) for results in state.result_history)
-#             observations.append(f"Previous results found: {total_results}")
-        
-#         observations.append(f"Current confidence: {state.confidence_score:.2f}")
-        
-#         return "; ".join(observations)
-    
-#     def _think(self, state: SearchState) -> Tuple[str, str, Dict]:
-#         """Think about the best strategy for current iteration"""
-#         return self.strategy_selector.select_strategy(
-#             state.question, 
-#             state.attempted_strategies,
-#             state.search_context
-#         )
-    
-#     def _act(self, state: SearchState, strategy: str) -> Tuple[str, str]:
-#         """Generate and return a Cypher query based on strategy"""
-#         # Perform vector search first
-#         vector_results = self.db_preparator.vector_search(state.question, top_k=10)
-        
-#         if vector_results:
-#             print(f"   Vector search found {len(vector_results)} similar nodes")
-#             # Get details for top results
-#             top_node_ids = [result['node_id'] for result in vector_results[:3]]
-#             node_details = self.db_preparator.get_node_details(top_node_ids)
-            
-#             # Add vector search context to state
-#             state.search_context['vector_results'] = vector_results[:5]
-#             state.search_context['relevant_nodes'] = node_details
-        
-#         return self.query_generator.generate_query(
-#             state.question,
-#             strategy,
-#             state.search_context,
-#             state.previous_attempts,
-#             vector_results
-#         )
-    
-#     def _execute_query(self, query: str) -> List[Dict]:
-#         """Execute Cypher query against Neo4j database"""
-#         try:
-#             # Use the database specified in environment variables
-#             database = os.getenv("NEO4J_DATABASE", "neo4j")
-#             with self.driver.session(database=database) as session:
-#                 result = session.run(query)
-#                 return [record.data() for record in result]
-#         except Exception as e:
-#             print(f"Query execution error: {str(e)}")
+#         print("Final:", result)
+#         return result
+
+#     def close(self):
+#         """Close database connection"""
+#         if hasattr(self, 'driver') and self.driver:
+#             self.driver.close()
+
+#     @staticmethod
+#     def _to_list(ans: Any) -> List[str]:
+#         if ans is None:
 #             return []
-    
-#     def _reflect(self, state: SearchState, query: str, results: List[Dict]) -> Tuple[float, str, bool, Optional[str]]:
-#         """Reflect on results and decide whether to continue"""
-#         confidence, reasoning, should_continue, suggested_answer, improvement_suggestions = self.result_evaluator.evaluate_results(
-#             state.question,
-#             query, 
-#             results,
-#             state.search_context
-#         )
-        
-#         # Store improvement suggestions for next iteration
-#         if improvement_suggestions and should_continue:
-#             state.previous_attempts.append(f"Failed query: {query}\nReason: {reasoning}\nImprovement needed: {improvement_suggestions}")
-        
-#         return confidence, reasoning, should_continue, suggested_answer
-    
-#     def _save_iteration(self, session_id: str, iteration_data: Dict):
-#         """Save iteration data to temporary JSON storage"""
-#         storage_dir = "/tmp/agentic_search_sessions"
-#         os.makedirs(storage_dir, exist_ok=True)
-        
-#         session_file = f"{storage_dir}/{session_id}.json"
-        
-#         # Load existing data or create new
-#         if os.path.exists(session_file):
-#             with open(session_file, 'r') as f:
-#                 session_data = json.load(f)
-#         else:
-#             session_data = {"session_id": session_id, "iterations": []}
-        
-#         # Add new iteration
-#         session_data["iterations"].append(iteration_data)
-        
-#         # Save back to file
-#         with open(session_file, 'w') as f:
-#             json.dump(session_data, f, indent=2)
-    
-#     def get_session_history(self, session_id: str) -> Optional[Dict]:
-#         """Retrieve session history from storage"""
-#         storage_dir = "/tmp/agentic_search_sessions"
-#         session_file = f"{storage_dir}/{session_id}.json"
-        
-#         if os.path.exists(session_file):
-#             with open(session_file, 'r') as f:
-#                 return json.load(f)
-#         return None
+#         if isinstance(ans, list):
+#             return [str(x).strip() for x in ans if str(x).strip()]
+#         return [str(ans).strip()]
     
 #     def close(self):
-#         """Clean up resources"""
 #         if self.driver:
 #             self.driver.close()
-#         if hasattr(self, 'db_preparator') and self.db_preparator:
-#             self.db_preparator.close()
 
+
+# # ------------------------- 自测 -------------------------
 
 # if __name__ == "__main__":
-#     # Example usage
 #     engine = AgenticSearchEngine(
-#         neo4j_uri="bolt://localhost:7687",
-#         neo4j_user="neo4j", 
-#         neo4j_password="password"
+#         neo4j_uri=os.getenv("NEO4J_URI", "bolt://localhost:7687"),
+#         neo4j_user=os.getenv("NEO4J_USER", "neo4j"),
+#         neo4j_password=os.getenv("NEO4J_PASSWORD", "password"),
+#         openai_api_key=os.getenv("OPENAI_API_KEY"),
+#         neo4j_database=os.getenv("NEO4J_DATABASE", "test9"),
 #     )
-    
 #     try:
-#         result = engine.search("What events did John participate in?")
-#         print("Search completed:", result)
+#         q = "List all locations visited by Carter Stewart in chronological order according to the story's timeline."
+#         print(engine.search(q))
 #     finally:
 #         engine.close() 
 
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 """
-Agentic Search Engine for Knowledge Graph Question Answering
+Agentic Search Engine (No Templates, with self-correction)
 
-This module implements a React-style agentic search system that:
-1. Observes the question and current state
-2. Thinks about the best approach 
-3. Acts by generating and executing Cypher queries dynamically
-4. Reflects on results and decides whether to continue or output answer
-
-No hardcoded queries - everything is generated dynamically based on analysis.
+- 不提供任何预置 Cypher 模版/样例/片段
+- 仅向 LLM 提供 schema 与约束；LLM 每轮即时生成查询
+- 查询若空/报错或缺列，把问题、上次查询、缺失列、已返回列、行数与错误原样反馈，要求其自修正
+- 参与者匹配、事件关键词匹配等仅通过“需求描述约束”，具体写法由 LLM 自主决定
+- 排序/去重在 Python 后处理（无任何 Cypher 日期转换片段）
 """
 
+import os
+import re
 import json
 import uuid
-import os
 from datetime import datetime
-from typing import Dict, List, Optional, Tuple, Any
-from openai import OpenAI
+from typing import Any, Dict, List, Optional, Tuple
+
 from neo4j import GraphDatabase
+from openai import OpenAI
 
-# Constants for date conversion
-MONTH_CONVERSION_CASE = """CASE 
-    WHEN e.date CONTAINS 'January' THEN '01'
-    WHEN e.date CONTAINS 'February' THEN '02'
-    WHEN e.date CONTAINS 'March' THEN '03'
-    WHEN e.date CONTAINS 'April' THEN '04'
-    WHEN e.date CONTAINS 'May' THEN '05'
-    WHEN e.date CONTAINS 'June' THEN '06'
-    WHEN e.date CONTAINS 'July' THEN '07'
-    WHEN e.date CONTAINS 'August' THEN '08'
-    WHEN e.date CONTAINS 'September' THEN '09'
-    WHEN e.date CONTAINS 'October' THEN '10'
-    WHEN e.date CONTAINS 'November' THEN '11'
-    WHEN e.date CONTAINS 'December' THEN '12'
-    ELSE '00'
-END"""
 
-DATE_CONVERSION_TEMPLATE = """WITH e, 
-     {month_case} as month_num,
-     split(e.date, ' ')[1] as day,
-     split(e.date, ' ')[2] as year
-WITH e{additional_fields}, year + '-' + month_num + '-' + 
-     CASE WHEN size(day) = 3 THEN substring(day, 0, 2) ELSE day END as sort_date"""
+# ------------------------- 工具函数 -------------------------
 
-# Load environment variables from .env file if it exists
-try:
-    from dotenv import load_dotenv
-    load_dotenv()
-    print("✅ Loaded environment variables from .env file")
-except ImportError:
-    print("⚠️ python-dotenv not installed, trying to load .env manually...")
-    # Manual .env loading as fallback
-    env_file = os.path.join(os.path.dirname(__file__), '.env')
-    if os.path.exists(env_file):
-        with open(env_file, 'r') as f:
-            for line in f:
-                line = line.strip()
-                if line and not line.startswith('#') and '=' in line:
-                    key, value = line.split('=', 1)
-                    os.environ[key.strip()] = value.strip()
-        print("✅ Manually loaded environment variables from .env file")
+_ORDINAL_RE = re.compile(r'(\d+)(st|nd|rd|th)$', re.IGNORECASE)
 
+def _strip_ordinal(day_str: str) -> str:
+    """把 '23rd' -> '23'。"""
+    m = _ORDINAL_RE.match(day_str.strip())
+    return m.group(1) if m else day_str.strip()
+
+def _parse_date_safe(s: str) -> Optional[datetime]:
+    """把 'March 23, 2024' / 'Mar 23, 2024' / 'March 23rd, 2024' 等解析为 datetime；失败返回 None。"""
+    if not s:
+        return None
+    txt = s.strip().replace(",", " ")
+    parts = [p for p in txt.split() if p]
+    if len(parts) >= 3:
+        # 规范化 day 去掉序数词尾
+        parts[1] = _strip_ordinal(parts[1])
+        txt = " ".join(parts[:3])
+    # 尝试若干格式
+    for fmt in ("%B %d %Y", "%b %d %Y"):
+        try:
+            return datetime.strptime(txt, fmt)
+        except Exception:
+            continue
+    return None
+
+def _unique_in_order(seq: List[Any]) -> List[Any]:
+    seen = set()
+    out = []
+    for x in seq:
+        if x not in seen:
+            seen.add(x)
+            out.append(x)
+    return out
+
+def _extract_person_and_event(question: str) -> Tuple[Optional[str], Optional[str]]:
+    """先用 regex 粗提人名/事件词（不影响“无模版”生成，仅用于参数传递）。"""
+    person = None
+    evt = None
+    # 人名：两个或三个首字母大写单词
+    m = re.search(r"\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+){1,2})\b", question)
+    if m:
+        person = m.group(1).strip()
+    # 事件关键词：引号内/related to X/involving both A and X
+    pats = [r'“([^”]+)”', r'"([^"]+)"',
+            r'related to ([A-Z][A-Za-z]+(?:\s+[A-Z][A-Za-z]+)*)',
+            r'involving both .* and ([A-Z][A-Za-z]+(?:\s+[A-Z][A-Za-z]+)*)']
+    for p in pats:
+        m2 = re.search(p, question, flags=re.IGNORECASE)
+        if m2:
+            evt = m2.group(1).strip()
+            break
+    return person, evt
+
+
+# ------------------------- 引擎状态 -------------------------
 
 class SearchState:
-    """Maintains the current state of an agentic search session"""
-    
-    def __init__(self, question: str, session_id: str = None):
-        self.session_id = session_id or str(uuid.uuid4())
+    def __init__(self, question: str):
+        self.session_id = str(uuid.uuid4())
         self.question = question
-        self.iteration_count = 0
+        self.iteration = 0
         self.max_iterations = 5
-        self.attempted_strategies = []
-        self.query_history = []
-        self.result_history = []
-        self.final_answer = None
-        self.reasoning_chain = []
-        self.current_hypothesis = None
-        self.search_context = {}
-        self.previous_attempts = []
-        
-    def add_iteration(self, strategy: str, query: str, results: List[Dict], reasoning: str):
-        """Add a new iteration to the search history"""
-        iteration = {
-            "iteration": self.iteration_count,
-            "timestamp": datetime.now().isoformat(),
-            "strategy": strategy,
-            "query": query,
-            "results": results,
-            "reasoning": reasoning
-        }
-        
-        self.attempted_strategies.append(strategy)
-        self.query_history.append(query)
-        self.result_history.append(results)
-        self.reasoning_chain.append(reasoning)
-        self.iteration_count += 1
-        
-        return iteration
+
+        self.query_history: List[str] = []
+        self.reasoning: List[str] = []
+
+        self.final_answer: Optional[Any] = None
+        self.last_error: Optional[str] = None
+        self.last_result_rows: int = 0
+
+        # 新增：用于指导 LLM 修正返回列
+        self.last_missing_cols: List[str] = []
+        self.last_row_keys: List[str] = []
 
 
-class CypherQueryGenerator:
-    """Dynamically generates Cypher queries based on analysis and context"""
-    
-    def __init__(self, gpt_client: OpenAI, property_keys_data: Dict = None):
-        self.gpt_client = gpt_client
-        self.property_keys_data = property_keys_data
-    
-    def _get_temporal_patterns(self) -> str:
-        """Generate temporal query patterns using templates"""
-        base_pattern = "MATCH (p:Person)-[:PARTICIPATED_IN]->(e:Event) WHERE p.name = 'Name' AND e.date <> ''"
-        date_conv = DATE_CONVERSION_TEMPLATE.format(
-            month_case=MONTH_CONVERSION_CASE, 
-            additional_fields=""
-        )
-        date_conv_with_original = DATE_CONVERSION_TEMPLATE.format(
-            month_case=MONTH_CONVERSION_CASE, 
-            additional_fields=".date as original_date"
-        )
-        
-        return f"""
-1. Most recent location: 
-{base_pattern}
-{date_conv}
-RETURN e.location ORDER BY sort_date DESC LIMIT 1
-
-2. Chronological location list:
-{base_pattern}
-{date_conv}
-ORDER BY sort_date ASC
-WITH COLLECT(DISTINCT e.location) as locations
-UNWIND locations as location
-RETURN location
-
-3. Chronological date list:
-{base_pattern}
-{date_conv_with_original}
-ORDER BY sort_date ASC
-WITH COLLECT(DISTINCT original_date) as unique_dates
-UNWIND unique_dates as date
-RETURN date"""
-    
-    def get_available_properties(self, node_label: str) -> List[str]:
-        """Get available properties for a specific node label"""
-        if not self.property_keys_data:
-            return []
-        
-        property_keys = self.property_keys_data.get('property_keys', {})
-        return property_keys.get(node_label, [])
-    
-    def get_all_labels(self) -> List[str]:
-        """Get all available node labels"""
-        if not self.property_keys_data:
-            return ['Event', 'Person', 'Location']  # fallback
-        
-        property_keys = self.property_keys_data.get('property_keys', {})
-        return [label for label in property_keys.keys() if label != '_relationships']
-    
-    def get_relationship_types(self) -> List[str]:
-        """Get all available relationship types"""
-        if not self.property_keys_data:
-            return ['OCCURRED_AT', 'PARTICIPATED_IN']  # fallback
-        
-        property_keys = self.property_keys_data.get('property_keys', {})
-        relationships = property_keys.get('_relationships', {})
-        return list(relationships.keys())
-    
-    def _build_context_info(self, context: Dict) -> str:
-        """Build context information string"""
-        return f"Additional context: {json.dumps(context, indent=2)}" if context else ""
-    
-    def _build_vector_info(self, vector_search_results: List[Dict]) -> str:
-        """Build vector search results string"""
-        if not vector_search_results:
-            return ""
-        
-        vector_info = "Vector search found these relevant nodes:\n"
-        for i, result in enumerate(vector_search_results[:5]):
-            vector_info += f"- Node {result['node_id']} (similarity: {result['similarity']:.3f})\n"
-        return vector_info
-    
-    def _build_previous_info(self, previous_attempts: List[str]) -> str:
-        """Build previous attempts learning string"""
-        if not previous_attempts:
-            return ""
-        
-        available_relationships = self.get_relationship_types()
-        return f"""
-LEARNING FROM PREVIOUS FAILURES:
-{chr(10).join(previous_attempts)}
-
-IMPORTANT: Analyze why previous queries failed and avoid the same mistakes:
-- If a relationship type caused errors, use only verified relationships: {', '.join(available_relationships)}
-- If queries returned 0 results, the schema might be wrong - try simpler patterns first
-- If dates are duplicated, use DISTINCT properly in collection operations
-"""
-    
-    def _build_property_info(self) -> str:
-        """Build property information string"""
-        available_labels = self.get_all_labels()
-        property_info = "Available properties by node type:\n"
-        for label in available_labels:
-            props = self.get_available_properties(label)
-            property_info += f"- {label}: {', '.join(props)}\n"
-        return property_info
-    
-    def _is_temporal_query(self, question: str) -> bool:
-        """Check if question is asking for chronological/temporal information"""
-        temporal_keywords = ['chronological', 'chronologically', 'timeline', 'earliest', 'latest', 'recent', 'dates', 'order', 'sequence', 'first', 'last']
-        return any(keyword in question.lower() for keyword in temporal_keywords)
-    
-    def _build_temporal_guidance(self) -> str:
-        """Build temporal query guidance"""
-        return f"""
-
-SPECIAL GUIDANCE FOR CHRONOLOGICAL/TEMPORAL QUERIES:
-- Event nodes have 'date' property in format "Month DD, YYYY" 
-- Filter empty dates: WHERE e.date <> ''
-- Use e.location property (NO LOCATED_AT relationship exists!)
-- Manual date conversion required for proper sorting
-
-COMMON TEMPORAL QUERY PATTERNS:
-{self._get_temporal_patterns()}
-
-IMPORTANT: Use COLLECT(DISTINCT ...) for list queries to remove duplicates.
-"""
-    
-    def generate_query(self, question: str, strategy: str, context: Dict = None, 
-                      previous_attempts: List[str] = None, vector_search_results: List[Dict] = None) -> Tuple[str, str]:
-        """
-        Generate a Cypher query dynamically based on question analysis
-        
-        Returns:
-            Tuple[str, str]: (cypher_query, reasoning)
-        """
-        
-        # Build all context information
-        context_info = self._build_context_info(context)
-        vector_info = self._build_vector_info(vector_search_results)
-        previous_info = self._build_previous_info(previous_attempts)
-        property_info = self._build_property_info()
-        
-        # Get schema information
-        available_labels = self.get_all_labels()
-        available_relationships = self.get_relationship_types()
-        
-        # Add temporal guidance if needed
-        temporal_guidance = self._build_temporal_guidance() if self._is_temporal_query(question) else ""
-        
-        prompt = f"""
-You are an expert in generating Cypher queries for Neo4j knowledge graphs. 
-Your task is to create a precise Cypher query to answer the given question.
-
-Question: {question}
-Strategy: {strategy}
-{context_info}
-{previous_info}
-{vector_info}
-
-ACTUAL Knowledge Graph Schema (from database analysis):
-- Available Node Labels: {', '.join(available_labels)}
-- Available Relationships: {', '.join(available_relationships)}
-
-{property_info}{temporal_guidance}
-
-IMPORTANT: You MUST only use the node labels, relationships, and properties listed above. 
-Do NOT use labels like 'Organization' or 'Topic' or relationships like 'RELATES_TO' if they are not in the available lists.
-
-Generate a Cypher query that will help answer this question. Consider:
-1. What entities are mentioned in the question?
-2. What relationships are implied?
-3. What information needs to be retrieved?
-4. How to structure the query for optimal results?
-5. Use only the available schema elements listed above
-6. If this is a temporal/chronological query, pay special attention to the date property and sorting
-
-Provide your response in this JSON format:
-{{
-    "cypher_query": "MATCH ... RETURN ...",
-    "reasoning": "Explanation of why this query should work",
-    "expected_results": "Description of what kind of results this should return"
-}}
-
-Make sure the query is syntactically correct and follows Neo4j Cypher syntax.
-Use only the available node labels, relationships and properties shown above.
-"""
-
-        try:
-            response = self.gpt_client.chat.completions.create(
-                model="gpt-4",
-                messages=[{"role": "user", "content": prompt}],
-                temperature=0.7
-            )
-            
-            result = json.loads(response.choices[0].message.content)
-            return result["cypher_query"], result["reasoning"]
-            
-        except Exception as e:
-            # Fallback to a basic query structure
-            basic_query = f"""
-            MATCH (n)
-            WHERE n.name CONTAINS '{question.split()[0] if question.split() else 'unknown'}'
-            RETURN n.name, labels(n), properties(n)
-            LIMIT 10
-            """
-            return basic_query, f"Fallback query due to error: {str(e)}"
-
-
-class ResultEvaluator:
-    """Evaluates query results and decides whether they answer the question"""
-    
-    def __init__(self, gpt_client: OpenAI):
-        self.gpt_client = gpt_client
-    
-    def evaluate_results(self, question: str, query: str, results: List[Dict], 
-                        iteration_context: Dict = None) -> Tuple[float, str, bool, Optional[str], Optional[str]]:
-        """
-        Evaluate whether the results adequately answer the question
-        
-        Returns:
-            Tuple[float, str, bool, Optional[str], Optional[str]]: 
-            (confidence_score, reasoning, should_continue, suggested_answer, improvement_suggestions)
-        """
-        
-        if not results:
-            return 0.0, "No results returned from query", True, None, "Check relationship types and schema - query might use non-existent relationships"
-        
-        # Prepare results for analysis
-        results_summary = self._summarize_results(results)
-        
-        context_info = ""
-        if iteration_context:
-            context_info = f"Search context: {json.dumps(iteration_context, indent=2)}"
-        
-        prompt = f"""
-You are evaluating whether query results adequately answer a question.
-
-Question: {question}
-Cypher Query Used: {query}
-Results Summary: {results_summary}
-{context_info}
-
-Analyze the results and determine:
-1. Do these results contain information that answers the question?
-2. How confident are you that this is a complete/correct answer? (0-100%)
-3. Should we continue searching or is this sufficient?
-4. If sufficient, what is the final answer?
-
-CRITICAL ERROR DETECTION:
-- If query returned 0 results, analyze the query for common issues:
-  * Wrong relationship types (e.g., using LOCATED_AT which doesn't exist)
-  * Incorrect node labels or property names
-  * Overly restrictive WHERE clauses
-- If query had relationship warnings, suggest using actual relationship types
-- If results seem incomplete, suggest alternative query approaches
-
-Provide your evaluation in this JSON format:
-{{
-    "confidence_score": 85,
-    "reasoning": "Detailed explanation of your evaluation",
-    "should_continue": false,
-    "suggested_answer": "The final answer based on the results",
-    "improvement_suggestions": "If continuing, what should be tried next? Be specific about query fixes needed."
-}}
-
-Be thorough in your analysis. Consider completeness, relevance, and accuracy.
-"""
-
-        try:
-            response = self.gpt_client.chat.completions.create(
-                model="gpt-4",
-                messages=[{"role": "user", "content": prompt}],
-                temperature=0.3
-            )
-            
-            evaluation = json.loads(response.choices[0].message.content)
-            
-            confidence = evaluation.get("confidence_score", 0) / 100.0
-            reasoning = evaluation.get("reasoning", "No reasoning provided")
-            should_continue = evaluation.get("should_continue", True)
-            suggested_answer = evaluation.get("suggested_answer")
-            improvement_suggestions = evaluation.get("improvement_suggestions", "")
-            
-            return confidence, reasoning, should_continue, suggested_answer, improvement_suggestions
-            
-        except Exception as e:
-            # Fallback evaluation
-            if results and len(results) > 0:
-                return 0.5, f"Basic evaluation - found {len(results)} results", True, None, ""
-            else:
-                return 0.0, f"Evaluation error: {str(e)}", True, None, "Evaluation error - try simpler query patterns"
-    
-    def _summarize_results(self, results: List[Dict]) -> str:
-        """Create a concise summary of results for analysis"""
-        if not results:
-            return "No results"
-        
-        summary = f"Found {len(results)} results:\n"
-        for i, result in enumerate(results[:5]):  # Limit to first 5 for summary
-            summary += f"{i+1}. {json.dumps(result, indent=2)}\n"
-        
-        if len(results) > 5:
-            summary += f"... and {len(results) - 5} more results"
-        
-        return summary
-
-
-class StrategySelector:
-    """Selects the best search strategy based on question analysis"""
-    
-    def __init__(self, gpt_client: OpenAI):
-        self.gpt_client = gpt_client
-    
-    def select_strategy(self, question: str, previous_strategies: List[str] = None,
-                       search_context: Dict = None) -> Tuple[str, str, Dict]:
-        """
-        Analyze question and determine the best search strategy
-        
-        Returns:
-            Tuple[str, str, Dict]: (strategy_name, reasoning, context_updates)
-        """
-        
-        previous_info = ""
-        if previous_strategies:
-            previous_info = f"Already tried strategies: {', '.join(previous_strategies)}"
-        
-        context_info = ""
-        if search_context:
-            context_info = f"Current context: {json.dumps(search_context, indent=2)}"
-        
-        prompt = f"""
-Analyze this question and determine the best search strategy for a knowledge graph.
-
-Question: {question}
-{previous_info}
-{context_info}
-
-Available strategy types:
-1. entity_focused - Find specific entities mentioned in the question
-2. relationship_focused - Explore relationships between entities
-3. temporal_focused - Search based on time/sequence constraints  
-4. location_focused - Search based on location/place constraints
-5. broad_exploration - Cast a wide net to find relevant information
-6. constraint_refinement - Add specific constraints to narrow results
-7. pattern_matching - Look for specific patterns or structures
-
-Choose the most appropriate strategy and provide context updates.
-
-Respond in this JSON format:
-{{
-    "strategy": "entity_focused",
-    "reasoning": "Why this strategy is best for this question",
-    "context_updates": {{
-        "target_entities": ["entity1", "entity2"],
-        "key_constraints": ["constraint1"],
-        "search_focus": "what to focus on"
-    }}
-}}
-"""
-
-        try:
-            response = self.gpt_client.chat.completions.create(
-                model="gpt-4",
-                messages=[{"role": "user", "content": prompt}],
-                temperature=0.7
-            )
-            
-            result = json.loads(response.choices[0].message.content)
-            
-            strategy = result.get("strategy", "broad_exploration")
-            reasoning = result.get("reasoning", "Default strategy selection")
-            context_updates = result.get("context_updates", {})
-            
-            return strategy, reasoning, context_updates
-            
-        except Exception as e:
-            # Fallback strategy selection
-            if not previous_strategies:
-                return "entity_focused", f"Fallback to entity_focused due to error: {str(e)}", {}
-            else:
-                # Try a different strategy if previous ones failed
-                all_strategies = ["entity_focused", "relationship_focused", "temporal_focused", 
-                                "location_focused", "broad_exploration", "constraint_refinement"]
-                remaining = [s for s in all_strategies if s not in previous_strategies]
-                if remaining:
-                    return remaining[0], f"Trying alternative strategy due to error: {str(e)}", {}
-                else:
-                    return "broad_exploration", "All strategies attempted, using broad exploration", {}
-
+# ------------------------- 主引擎（无模版） -------------------------
 
 class AgenticSearchEngine:
     """
-    Main agentic search engine implementing React-style search loop:
-    Observe -> Think -> Act -> Reflect
+    仅提供 schema 与返回列要求，所有 Cypher 由 LLM 即时生成。
+    排序/去重在 Python 完成；如果缺列（如没返回 date），会触发“请补列并重写查询”的反馈迭代。
     """
-    
-    def __init__(self, neo4j_uri: str, neo4j_user: str, neo4j_password: str, 
-                 openai_api_key: str = None, neo4j_database: str = None):
-        # Store database connection info
-        self.neo4j_database = neo4j_database or os.getenv("NEO4J_DATABASE", "neo4j")
-        
-        # Initialize connections
-        self.driver = GraphDatabase.driver(neo4j_uri, auth=(neo4j_user, neo4j_password))
-        
-        # Initialize OpenAI client with explicit HTTP client to avoid proxies issue
+
+    def __init__(
+        self,
+        neo4j_uri: Optional[str] = None,
+        neo4j_user: Optional[str] = None,
+        neo4j_password: Optional[str] = None,
+        openai_api_key: Optional[str] = None,
+        neo4j_database: Optional[str] = None,
+    ):
+        self.database = neo4j_database or os.getenv("NEO4J_DATABASE", "neo4j")
+        self.driver = GraphDatabase.driver(
+            neo4j_uri or os.getenv("NEO4J_URI", "bolt://localhost:7687"),
+            auth=(neo4j_user or os.getenv("NEO4J_USER", "neo4j"),
+                  neo4j_password or os.getenv("NEO4J_PASSWORD", "password"))
+        )
         api_key = openai_api_key or os.getenv("OPENAI_API_KEY")
-        base_url = os.getenv("OPENAI_BASE_URL", None)
-        
         if not api_key:
-            raise ValueError("OpenAI API key not found. Please set OPENAI_API_KEY environment variable.")
-        
-        # Create HTTP client without proxy settings
-        import httpx
-        http_client = httpx.Client()
-        
-        # Initialize with explicit HTTP client
-        client_kwargs = {
-            "api_key": api_key,
-            "http_client": http_client
-        }
-        if base_url:
-            client_kwargs["base_url"] = base_url
-        
-        self.gpt_client = OpenAI(**client_kwargs)
-        
-        # Initialize database preparator
-        import sys
-        # Add the graph_generation directory to the path
-        current_dir = os.path.dirname(os.path.abspath(__file__))
-        graph_generation_dir = os.path.join(os.path.dirname(current_dir), 'graph_generation')
-        if graph_generation_dir not in sys.path:
-            sys.path.insert(0, graph_generation_dir)
-        
-        from database_preparation import DatabasePreparator
-        self.db_preparator = DatabasePreparator(
-            neo4j_uri=neo4j_uri,
-            neo4j_user=neo4j_user,
-            neo4j_password=neo4j_password,
-            neo4j_database=self.neo4j_database,
-            openai_api_key=openai_api_key
-        )
-        
-        # Prepare database (load embeddings and property keys)
-        self.preparation_result = self.db_preparator.prepare_database()
-        self.property_keys_data = self.db_preparator.load_property_keys()
-        
-        # Initialize components with property key data
-        self.query_generator = CypherQueryGenerator(self.gpt_client, self.property_keys_data)
-        self.result_evaluator = ResultEvaluator(self.gpt_client)
-        self.strategy_selector = StrategySelector(self.gpt_client)
-        
-        # Session storage
-        self.session_storage = {}
-    
-    def search(self, question: str, session_id: str = None) -> Dict[str, Any]:
-        """
-        Main search method implementing the agentic React loop
-        
-        Returns:
-            Dict containing the final answer and search metadata
-        """
-        
-        # Initialize search state
-        state = SearchState(question, session_id)
-        self.session_storage[state.session_id] = state
-        
-        print(f"Starting agentic search for: {question}")
-        print(f"Session ID: {state.session_id}")
-        
-        while state.iteration_count < state.max_iterations:
-            print(f"\n--- Iteration {state.iteration_count + 1} ---")
-            
-            # OBSERVE: Analyze current situation
-            observation = self._observe(state)
-            print(f"Observation: {observation}")
-            
-            # THINK: Select strategy based on analysis
-            strategy, strategy_reasoning, context_updates = self._think(state)
-            print(f"Strategy: {strategy}")
-            print(f"Reasoning: {strategy_reasoning}")
-            
-            # Update search context
-            state.search_context.update(context_updates)
-            
-            # ACT: Generate and execute query
-            query, query_reasoning = self._act(state, strategy)
-            print(f"Generated Query: {query}")
-            print(f"Query Reasoning: {query_reasoning}")
-            
-            # Execute query
-            results = self._execute_query(query)
-            print(f"Results: Found {len(results)} items")
-            
-            # REFLECT: Evaluate results (ignore confidence/should_continue; decide based on results emptiness)
-            _, eval_reasoning, _, suggested_answer = self._reflect(
-                state, query, results
-            )
-            print(f"Evaluation: {eval_reasoning}")
-            
-            # Record iteration (no confidence stored)
-            iteration_data = state.add_iteration(
-                strategy, query, results, eval_reasoning
-            )
-            
-            # Save iteration to temporary storage
-            self._save_iteration(state.session_id, iteration_data)
-            
-            # Decision point: continue only if results are empty
-            should_continue = (len(results) == 0)
-            if not should_continue:
-                state.final_answer = suggested_answer
-                print(f"Search completed with answer: {suggested_answer}")
-                break
-            
-            print("Continuing search with new strategy...")
-        
-        # Format the answer for standardized output
-        formatted_answer = self._format_standardized_answer(state.final_answer, question)
-        
-        # Prepare final result
-        final_result = {
-            "session_id": state.session_id,
-            "question": question,
-            "final_answer": state.final_answer,  # Keep original answer for debugging
-            "standardized_answer": formatted_answer,  # New standardized format
-            "total_iterations": state.iteration_count,
-            "search_successful": state.final_answer is not None,
-            "reasoning_chain": state.reasoning_chain,
-            "query_history": state.query_history
-        }
-        
-        print(f"\nFinal Result: {final_result}")
-        return final_result
-    
-    def _observe(self, state: SearchState) -> str:
-        """Observe current state and question characteristics"""
-        observations = []
-        
-        if state.iteration_count == 0:
-            observations.append("Starting fresh search")
-        else:
-            observations.append(f"Previous attempts: {len(state.attempted_strategies)}")
-            
-        if state.result_history:
-            total_results = sum(len(results) for results in state.result_history)
-            observations.append(f"Previous results found: {total_results}")
-        
-        return "; ".join(observations)
-    
-    def _think(self, state: SearchState) -> Tuple[str, str, Dict]:
-        """Think about the best strategy for current iteration"""
-        return self.strategy_selector.select_strategy(
-            state.question, 
-            state.attempted_strategies,
-            state.search_context
-        )
-    
-    def _act(self, state: SearchState, strategy: str) -> Tuple[str, str]:
-        """Generate and return a Cypher query based on strategy"""
-        # Perform vector search first
-        vector_results = self.db_preparator.vector_search(state.question, top_k=10)
-        
-        if vector_results:
-            print(f"   Vector search found {len(vector_results)} similar nodes")
-            # Get details for top results
-            top_node_ids = [result['node_id'] for result in vector_results[:3]]
-            node_details = self.db_preparator.get_node_details(top_node_ids)
-            
-            # Add vector search context to state
-            state.search_context['vector_results'] = vector_results[:5]
-            state.search_context['relevant_nodes'] = node_details
-        
-        return self.query_generator.generate_query(
-            state.question,
-            strategy,
-            state.search_context,
-            state.previous_attempts,
-            vector_results
-        )
-    
-    def _execute_query(self, query: str) -> List[Dict]:
-        """Execute Cypher query against Neo4j database"""
-        try:
-            # Use the database specified in environment variables
-            database = os.getenv("NEO4J_DATABASE", "neo4j")
-            with self.driver.session(database=database) as session:
-                result = session.run(query)
-                return [record.data() for record in result]
-        except Exception as e:
-            print(f"Query execution error: {str(e)}")
-            return []
-    
-    def _reflect(self, state: SearchState, query: str, results: List[Dict]) -> Tuple[float, str, bool, Optional[str]]:
-        """Reflect on results and decide whether to continue"""
-        confidence, reasoning, should_continue, suggested_answer, improvement_suggestions = self.result_evaluator.evaluate_results(
-            state.question,
-            query, 
-            results,
-            state.search_context
-        )
-        
-        # Store improvement suggestions for next iteration
-        if improvement_suggestions and should_continue:
-            state.previous_attempts.append(f"Failed query: {query}\nReason: {reasoning}\nImprovement needed: {improvement_suggestions}")
-        
-        return confidence, reasoning, should_continue, suggested_answer
-    
-    def _save_iteration(self, session_id: str, iteration_data: Dict):
-        """Save iteration data to temporary JSON storage"""
-        storage_dir = "/tmp/agentic_search_sessions"
-        os.makedirs(storage_dir, exist_ok=True)
-        
-        session_file = f"{storage_dir}/{session_id}.json"
-        
-        # Load existing data or create new
-        if os.path.exists(session_file):
-            with open(session_file, 'r') as f:
-                session_data = json.load(f)
-        else:
-            session_data = {"session_id": session_id, "iterations": []}
-        
-        # Add new iteration
-        session_data["iterations"].append(iteration_data)
-        
-        # Save back to file
-        with open(session_file, 'w') as f:
-            json.dump(session_data, f, indent=2)
-    
-    def get_session_history(self, session_id: str) -> Optional[Dict]:
-        """Retrieve session history from storage"""
-        storage_dir = "/tmp/agentic_search_sessions"
-        session_file = f"{storage_dir}/{session_id}.json"
-        
-        if os.path.exists(session_file):
-            with open(session_file, 'r') as f:
-                return json.load(f)
-        return None
-    
-    def _format_standardized_answer(self, final_answer: Optional[str], question: str) -> List[str]:
-        """
-        Format the final answer into standardized list format for evaluation.
-        
-        Args:
-            final_answer: The original answer from the search engine (may be str or list)
-            question: The original question for context
-            
-        Returns:
-            List[str]: Standardized answer format - list of answers or empty list if no answer
-        """
-        # --- robust typing: accept list or string, avoid .lower on list ---
-        if final_answer is None:
-            return []
+            raise ValueError("OPENAI_API_KEY not set")
+        self.client = OpenAI(api_key=api_key)
 
-        if isinstance(final_answer, list):
-            cleaned_list = [str(x).strip() for x in final_answer if str(x).strip()]
-            return cleaned_list
+        # 仅描述 schema，不给任何查询模版
+        self.schema_hint = (
+            "There is a single label `Event` you must use. "
+            "`Event` has properties: `name` (string), `date` (string like 'March 23, 2024'), "
+            "`location` (string), `event_type` (string), `description` (string), "
+            "`participants` (array of strings). "
+            "Do NOT use any relationships. Only query `Event` nodes and their properties. "
+            "Participants are stored as an array of names on the `Event` node."
+        )
 
-        if not isinstance(final_answer, str):
-            final_answer = str(final_answer)
-
-        text = final_answer.strip()
-        if not text or text.lower() in ['none', 'no answer', 'no results found']:
-            return []
-        
-        # Use GPT to extract the core answer from the descriptive text
+    # ---------- LLM 兜底实体抽取（避免 regex 漏检） ----------
+    def _extract_entities_llm(self, question: str) -> Tuple[Optional[str], Optional[str]]:
         prompt = f"""
-You are a precise answer extractor. Given a question and a detailed answer, extract ONLY the core factual answer(s) in the simplest possible format.
-
+Extract two optional fields (strict JSON):
+{{
+  "person": "<full name if clearly a single person is referenced, else null>",
+  "event": "<event keyword if clearly referenced (e.g., 'Photography Exhibition'), else null>"
+}}
 Question: {question}
-Detailed Answer: {text}
+"""
+        try:
+            resp = self.client.chat.completions.create(
+                model="gpt-4o-mini",
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0.0
+            )
+            data = json.loads(resp.choices[0].message.content.strip())
+            p = data.get("person")
+            e = data.get("event")
+            return (p if isinstance(p, str) and p.strip() else None,
+                    e if isinstance(e, str) and e.strip() else None)
+        except Exception:
+            return (None, None)
+
+    # ---------- LLM 问题类型分类（无模版，强兜底） ----------
+    def _classify_llm(self, question: str) -> Dict[str, Any]:
+        type_defs = {
+            "latest_activity_of_person": {
+                "desc": "What was PERSON doing the last time they were observed? Return the most recent event for a person.",
+                "need": ["event_type", "name", "event", "activity", "date", "timestamp"]
+            },
+            "most_recent_date_of_person": {
+                "desc": "What is the most recent date PERSON was observed or mentioned? Return the latest date only.",
+                "need": ["date", "timestamp"]
+            },
+            "chrono_locations_by_person": {
+                "desc": "List all locations visited by PERSON in chronological order according to the story's timeline.",
+                "need": ["location", "date"]
+            },
+            "dates_by_filters": {
+                "desc": "List all dates for events that involve both a PERSON and an EVENT KEYWORD.",
+                "need": ["date"]
+            },
+            "protagonists_by_event": {
+                "desc": "List all protagonists of events related to an EVENT KEYWORD.",
+                "need": ["protagonist"]
+            },
+            "dates_by_event": {
+                "desc": "List all dates of events related to an EVENT KEYWORD.",
+                "need": ["date"]
+            },
+            "locations_by_event": {
+                "desc": "List all locations of events related to an EVENT KEYWORD.",
+                "need": ["location"]
+            },
+            "generic": {
+                "desc": "If none fits well, choose generic.",
+                "need": ["date", "location", "name", "event_type"]
+            }
+        }
+
+        valid_types = set(type_defs.keys())
+        allowed_cols = {
+            "date", "timestamp", "location", "name", "event_type",
+            "protagonist", "participants", "event", "activity"
+        }
+
+        prompt = f"""
+You are a task classifier for a knowledge-graph QA system (NO query templates).
+You MUST choose ONE type from this fixed set ONLY (no new types):
+{', '.join(sorted(valid_types))}
+
+Return STRICT JSON ONLY (no prose):
+{{
+  "type": "<one of: {', '.join(sorted(valid_types))}>",
+  "need": ["<columns to return from Cypher rows>"]
+}}
 
 Rules:
-1. If the answer contains dates, extract them in the exact format they appear (e.g., "September 03, 2026")
-2. If the answer contains locations, extract just the location names
-3. If the answer contains names, extract just the names
-4. If the answer contains a list of items, return each item separately
-5. If there are multiple answers, return all of them
-6. If there is genuinely no answer or the answer is "None", return an empty list
-7. Return ONLY the factual content, no explanatory text
-8. Preserve the exact formatting of dates, names, and locations as they appear
+- If none fits well, RETURN "generic" (do NOT invent a new type).
+- The 'need' list should usually match the default for that type; you may add/remove columns if obviously necessary.
+- Columns must be simple strings. No duplicates. Prefer lowercase.
+- No extra fields, no explanations.
 
-Examples:
-- "The most recent date is September 03, 2026" → ["September 03, 2026"]
-- "The locations are Grand Hall, Lincoln Center" → ["Grand Hall", "Lincoln Center"]
-- "No events found" → []
-- "The person is John Smith and the date is May 15, 2024" → ["John Smith", "May 15, 2024"]
+Question: {question}
+""".strip()
 
-Return your answer as a JSON list of strings:
+        try:
+            resp = self.client.chat.completions.create(
+                model="gpt-4o-mini",
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0.0
+            )
+            raw = resp.choices[0].message.content.strip()
+            data = json.loads(raw)
+        except Exception:
+            return {"type": "generic", "need": type_defs["generic"]["need"]}
+
+        # 规范化与兜底
+        t = str(data.get("type", "")).strip()
+        if t not in valid_types:
+            t = "generic"
+
+        need = data.get("need")
+        if not isinstance(need, list):
+            need = type_defs[t]["need"]
+        else:
+            cleaned = []
+            seen = set()
+            for col in need:
+                if not isinstance(col, str):
+                    continue
+                col_norm = col.strip().lower()
+                if not col_norm:
+                    continue
+                if col_norm in allowed_cols and col_norm not in seen:
+                    seen.add(col_norm)
+                    cleaned.append(col_norm)
+            need = cleaned or type_defs[t]["need"]
+
+        return {"type": t, "need": need}
+
+    # ---------- 任务类型兜底 ----------
+    def _classify(self, question: str) -> Dict[str, Any]:
+        result = self._classify_llm(question)
+        if result and result.get("type"):
+            return result
+        # 兜底关键词（极少命中）
+        q = question.lower()
+        if "what was" in q and "doing the last time" in q:
+            return {"type": "latest_activity_of_person", "need": ["event_type", "name", "date"]}
+        if "list all locations visited by" in q and "chronological" in q:
+            return {"type": "chrono_locations_by_person", "need": ["location", "date"]}
+        if ("related to" in q or "involving both" in q or "involving" in q) and "date" in q:
+            return {"type": "dates_by_filters", "need": ["date"]}
+        if ("reflect on events related to" in q or "related to" in q) and "protagonists" in q:
+            return {"type": "protagonists_by_event", "need": ["protagonist"]}
+        if ("recall all events related to" in q or "reflect on events related to" in q) and "date" in q:
+            return {"type": "dates_by_event", "need": ["date"]}
+        if ("consider all events" in q and "locations" in q and ("involving" in q or "related to" in q)):
+            return {"type": "locations_by_event", "need": ["location"]}
+        return {"type": "generic", "need": ["date", "location", "name", "event_type"]}
+
+    # ---------- 生成查询（无模版） ----------
+    def _gen_query_json(
+        self,
+        question: str,
+        need_columns: List[str],
+        person: Optional[str],
+        keyword: Optional[str],
+        prev_query: Optional[str] = None,
+        last_error: Optional[str] = None,
+        last_rows: Optional[int] = None,
+        missing_cols: Optional[List[str]] = None,
+        last_keys: Optional[List[str]] = None,
+        query_history: Optional[List[str]] = None,
+    ) -> Tuple[str, Dict[str, Any]]:
+        """
+        让 LLM 生成只含 `query` 与 `params` 的 JSON。不给任何样例/片段。
+        如果有上一次错误/0 行/缺列，会附带诊断信息要求自修复。
+        """
+        constraints = [
+            "Use only (e:Event) and its properties; do NOT use relationships.",
+            "If you need to filter by a person, treat `participants` as an array of strings.",
+            "For person matching, use: ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person)))",
+            "NEVER use trim() directly on e.participants array - only on individual elements within ANY().",
+            "CRITICAL: Variables defined inside ANY() are NOT accessible in RETURN clause. To return participants, use 'e.participants'.",
+            "WRONG: RETURN p (where p is from ANY clause). CORRECT: RETURN e.participants AS participants",
+            "If you need to filter by an event keyword, first try case-insensitive equality on e.event_type to $kw.",
+            "If both a person and a keyword are present, you MUST apply BOTH filters (logical AND).",
+            "If previous attempt returned 0 rows, you MAY broaden keyword filtering to case-insensitive CONTAINS over e.name or e.description.",
+            "Return ONLY the minimal columns requested, using EXACT aliases from the required list.",
+            "Do NOT add ORDER BY; raw rows are fine. Sorting/dedup happens outside Cypher.",
+            "Aliases in RETURN must EXACTLY match the required output columns."
+        ]
+
+        diagnose = ""
+        if prev_query is not None:
+            iteration_num = len(query_history) if query_history else 1
+            diagnose = f"\nIteration {iteration_num}: Previous query returned {last_rows} rows. Last error: {last_error or 'none'}.\n"
+            
+            # 检测常见的Cypher语法错误并提供具体指导
+            if last_error and "Variable" in last_error and "not defined" in last_error:
+                if "ANY(" in prev_query and "RETURN" in prev_query:
+                    diagnose += "ERROR DETECTED: You're trying to use a variable from ANY() clause in RETURN. This is invalid Cypher syntax.\n"
+                    diagnose += "FIX: Use 'e.participants' instead of the ANY() variable in RETURN clause.\n"
+            
+            # 智能策略反思机制 - 避免重复相同查询
+            if last_rows == 0 and query_history:
+                diagnose += self._generate_strategy_reflection(iteration_num, question, keyword, person, query_history)
+            
+            if missing_cols:
+                diagnose += f"Missing required columns last time: {missing_cols}. Include them EXACTLY with these aliases.\n"
+            if last_keys:
+                diagnose += f"Last returned columns were: {last_keys}. Adjust RETURN aliases accordingly.\n"
+            if keyword:
+                if (last_rows is None) or (last_rows > 0):
+                    diagnose += "For the event keyword: prefer case-insensitive EQUALITY on e.event_type to $kw.\n"
+                else:
+                    diagnose += "Last attempt returned 0 rows. You MAY broaden keyword filtering to case-insensitive CONTAINS over e.name or e.description.\n"
+
+        prompt = f"""
+You are a Cypher generator. Do not use any templates or examples.
+Database schema hint: {self.schema_hint}
+
+Question: {question}
+
+Required output columns (exact aliases): {need_columns}
+Rules:
+- {chr(10) + '- '.join(constraints)}
+
+{('Parameters to expect: ' + json.dumps({'person': person, 'kw': keyword})) if (person or keyword) else 'No external parameters are required.'}
+{diagnose}
+
+Return ONLY a valid JSON object with fields:
+- "query": string
+- "params": object (may be empty if no params)
+"""
+
+        # 最多两次生成尝试（解析失败则重试）
+        for _ in range(2):
+            resp = self.client.chat.completions.create(
+                model="gpt-4o-mini",
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0.0,
+            )
+            text = resp.choices[0].message.content.strip()
+            try:
+                data = json.loads(text)
+                q = data.get("query", "")
+                params = data.get("params", {}) or {}
+                if not isinstance(q, str):
+                    raise ValueError("`query` must be a string")
+                if not isinstance(params, dict):
+                    raise ValueError("`params` must be an object")
+                # 填充参数默认值（仅在未提供时）
+                if person and "person" not in params:
+                    params["person"] = person
+                if keyword and "kw" not in params:
+                    params["kw"] = keyword
+                return q, params
+            except Exception as e:
+                # 下一轮要求严格 JSON
+                prompt += f"\nYour previous JSON was invalid: {e}. Return a strict JSON next time.\n"
+                continue
+
+        raise RuntimeError("LLM failed to return a valid JSON {query, params}.")
+
+    # ---------- 执行查询 ----------
+    def _run(self, query: str, params: Dict[str, Any]) -> Tuple[List[Dict], Optional[str]]:
+        try:
+            with self.driver.session(database=self.database) as sess:
+                res = sess.run(query, **params)
+                rows = [dict(r) for r in res]
+                return rows, None
+        except Exception as e:
+            return [], str(e)
+
+    # ---------- 结果标准化 ----------
+    def _standardize(self, question: str, qtype: str, rows: List[Dict]) -> Any:
+        if not rows:
+            return None
+
+        # 让GPT根据问题和查询结果智能决定返回什么答案
+        return self._ask_gpt_for_answer(question, rows)
+
+    def _generate_strategy_reflection(self, iteration_num: int, question: str, keyword: str, person: str, query_history: List[str]) -> str:
+        """生成智能策略反思，避免重复相同查询"""
+        
+        if iteration_num <= 1:
+            return ""
+        
+        # 检查是否重复了相同的查询
+        if len(query_history) >= 2 and query_history[-1] == query_history[-2]:
+            reflection = "\n🚨 CRITICAL: You just repeated the EXACT same query! This is ineffective.\n"
+        else:
+            reflection = "\n💭 STRATEGY REFLECTION: The previous approach failed. "
+        
+        # 根据迭代次数提供不同的策略建议
+        if iteration_num == 2:
+            reflection += """
+🔄 TRY DIFFERENT APPROACH:
+- If you used exact matching on event_type, try CONTAINS matching on name/description
+- If you filtered by both person AND keyword, try removing person filter first
+- If you used location filter, double-check the location name spelling
+"""
+        elif iteration_num == 3:
+            reflection += """
+🔄 BROADEN YOUR SEARCH STRATEGY:
+- Remove ALL person filters and search by keyword/location only
+- Try searching without keyword filter - just by location
+- Consider that the event might be stored with different terminology
+"""
+        elif iteration_num == 4:
+            reflection += """
+🔄 GLOBAL SEARCH STRATEGY:
+- Try a global search: MATCH (e:Event) WHERE toLower(e.location) CONTAINS 'part_of_location_name'
+- Search by partial matches: use CONTAINS instead of exact equality
+- Maybe the data doesn't exist - try searching all events at this location first
+"""
+        else:  # iteration_num >= 5
+            reflection += """
+🔄 EXHAUSTIVE FINAL ATTEMPT:
+- Search ALL events at the location: MATCH (e:Event) WHERE toLower(e.location) = toLower('location_name')
+- If still 0 rows, the data likely doesn't exist in the database
+- As last resort, try different location name variations
+"""
+        
+        # 提供具体的查询变化建议
+        if keyword and person:
+            reflection += f"\n💡 SPECIFIC SUGGESTION: Try removing person filter '{person}' and search only by keyword '{keyword}' and location.\n"
+        elif keyword:
+            reflection += f"\n💡 SPECIFIC SUGGESTION: Try broader keyword matching - use CONTAINS instead of exact match for '{keyword}'.\n"
+        
+        return reflection
+
+    def _ask_gpt_for_answer(self, question: str, rows: List[Dict]) -> Any:
+        """让GPT根据问题和查询结果智能生成最终答案"""
+        
+        # 为列表型问题发送更多数据
+        question_lower = question.lower()
+        is_list_question = any(keyword in question_lower for keyword in [
+            "all dates", "all events", "all locations", "list of", "provide a list", 
+            "chronological list", "describe all", "reflect on all"
+        ])
+        
+        if is_list_question and len(rows) > 10:
+            # 对于列表问题，发送更多数据以确保完整性
+            sample_rows = rows[:25]  # 增加到25行
+            data_info = f"Total {len(rows)} rows, showing first 25 for analysis"
+            
+            # 如果还有更多数据，提供统计信息
+            if len(rows) > 25:
+                # 统计所有唯一值
+                all_values = {}
+                for key in rows[0].keys():
+                    values = [str(row.get(key, "")) for row in rows if row.get(key)]
+                    all_values[key] = list(set(values))
+                
+                data_info += f"\nComplete unique values across all {len(rows)} rows:"
+                for key, values in all_values.items():
+                    data_info += f"\n{key}: {len(values)} unique values: {values[:10]}{'...' if len(values) > 10 else ''}"
+        else:
+            # 普通问题处理
+            if len(rows) > 10:
+                sample_rows = rows[:10]
+                data_info = f"Total {len(rows)} rows, showing first 10 as sample"
+            else:
+                sample_rows = rows
+                data_info = f"All {len(rows)} rows"
+        
+        # 构建数据摘要
+        data_summary = []
+        for i, row in enumerate(sample_rows):
+            data_summary.append(f"Row {i+1}: {dict(row)}")
+        
+        prompt = f"""
+You are analyzing query results to answer a specific question. Based on the question and the data returned from the database, provide the most appropriate answer.
+
+Question: {question}
+
+Data returned ({data_info}):
+{chr(10).join(data_summary)}
+
+Instructions:
+1. Read the question carefully to understand what is being asked
+2. Analyze the data to extract the relevant information
+3. Return the answer in the most appropriate format:
+   - For single item questions: return the item directly (string/number)
+   - For list questions: return a JSON array ["item1", "item2", ...]
+   - For chronological questions: sort by date and return appropriately
+   - For "most recent" questions: find the latest date and return the requested field
+4. If the question asks for dates, return ALL dates from the data
+5. If the question asks for locations, return ALL locations from the data
+6. If the question asks for activities/events, return ALL activity/event names from the data
+7. If the question asks for descriptions, return ALL descriptions from the data
+8. Remove duplicates appropriately
+9. Sort chronologically if requested
+10. IMPORTANT: If the question asks for "all" or "list of" something, make sure to include ALL items from the data, not just one
+
+Return ONLY the final answer (no explanation, no extra text):
 """
 
         try:
-            response = self.gpt_client.chat.completions.create(
-                model="gpt-4",
+            response = self.client.chat.completions.create(
+                model="gpt-4o-mini",
                 messages=[{"role": "user", "content": prompt}],
-                temperature=0.1  # Very low temperature for consistent extraction
+                temperature=0.1
             )
             
-            content = response.choices[0].message.content.strip()
+            answer_text = response.choices[0].message.content.strip()
             
-            # Try to parse as JSON
-            import re
-            json_match = re.search(r'\[.*\]', content, re.DOTALL)
-            if json_match:
+            # 尝试解析JSON数组
+            if answer_text.startswith('[') and answer_text.endswith(']'):
                 try:
-                    extracted_answers = json.loads(json_match.group())
-                    if isinstance(extracted_answers, list):
-                        # Filter out empty strings and ensure all items are strings
-                        return [str(item).strip() for item in extracted_answers if str(item).strip()]
-                except json.JSONDecodeError:
-                    pass
+                    return json.loads(answer_text)
+                except:
+                    # 如果JSON解析失败，按逗号分割
+                    items = answer_text[1:-1].split(',')
+                    return [item.strip().strip('"') for item in items if item.strip()]
             
-            # Fallback: if JSON parsing fails, try simple extraction
-            # Look for common patterns
-            if "no" in text.lower() and any(word in text.lower() for word in ["found", "results", "answer", "events"]):
-                return []
+            # 清理引号
+            answer_text = answer_text.strip('"').strip("'")
             
-            # Simple fallback extraction for dates
-            date_pattern = r'\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},?\s+\d{4}\b'
-            import re as _re
-            dates = _re.findall(date_pattern, text)
-            if dates:
-                return dates
-            
-            # If all else fails, return the cleaned original answer
-            cleaned = text
-            if cleaned and not any(word in cleaned.lower() for word in ["no answer", "none", "not found"]):
-                return [cleaned]
-            
-            return []
+            return answer_text
             
         except Exception as e:
-            print(f"Warning: Answer formatting failed: {e}")
-            # Fallback to simple cleanup
-            if text and text.strip():
-                return [text.strip()]
-            return []
-    
-    def close(self):
-        """Clean up resources"""
-        if self.driver:
-            self.driver.close()
-        if hasattr(self, 'db_preparator') and self.db_preparator:
-            self.db_preparator.close()
+            print(f"ERROR in _ask_gpt_for_answer: {e}")
+            # 失败时的简单回退逻辑
+            if len(rows) == 1:
+                # 单行数据，返回第一个非空值
+                for value in rows[0].values():
+                    if value:
+                        return str(value)
+            else:
+                # 多行数据，返回第一列的所有值
+                first_key = list(rows[0].keys())[0]
+                return [str(row.get(first_key, "")) for row in rows if row.get(first_key)]
+            
+            return "No answer found"
 
+    # ---------- 主流程 ----------
+    def search(self, question: str, max_iterations: int = 5) -> Dict[str, Any]:
+        state = SearchState(question)
+        state.max_iterations = max_iterations
+
+        print(f"Starting agentic search for: {question}")
+        print(f"Session: {state.session_id}")
+
+        # 轻量抽取作为参数传递（不改变“无模版”本质）
+        person, evt = _extract_person_and_event(question)
+        # regex 漏检时 LLM 兜底
+        if not person or (("involving" in question.lower() or "related to" in question.lower()) and not evt):
+            p2, e2 = self._extract_entities_llm(question)
+            person = person or p2
+            evt = evt or e2
+
+        cls = self._classify(question)
+        need_cols: List[str] = cls["need"]
+
+        while state.iteration < state.max_iterations and state.final_answer is None:
+            state.iteration += 1
+            print(f"\n-- Iteration {state.iteration} --")
+
+            # 让 LLM 生成查询（无任何模板/样例）
+            try:
+                query, params = self._gen_query_json(
+                    question=question,
+                    need_columns=need_cols,
+                    person=person,
+                    keyword=evt,
+                    prev_query=state.query_history[-1] if state.query_history else None,
+                    last_error=state.last_error,
+                    last_rows=state.last_result_rows,
+                    missing_cols=state.last_missing_cols,
+                    last_keys=state.last_row_keys,
+                    query_history=state.query_history,
+                )
+            except Exception as e:
+                state.reasoning.append(f"Query generation error: {e}")
+                break
+
+            state.query_history.append(query)
+            print("Generated query:", query)
+            print("Params:", params)
+
+            # 执行
+            rows, err = self._run(query, params)
+            state.last_error = err
+            state.last_result_rows = len(rows)
+            state.last_row_keys = list(rows[0].keys()) if rows else []
+            if err:
+                print("Execution error:", err)
+                state.reasoning.append(f"Execution error: {err}")
+                continue
+
+            print(f"Rows: {len(rows)}")
+            if rows:
+                print("First row keys:", list(rows[0].keys()))
+
+            # 如果缺关键列（例如需要 date 却没返回），触发一次修正
+            missing = [c for c in need_cols if rows and c not in rows[0]]
+            state.last_missing_cols = missing
+
+            # latest_activity_of_person：至少需要日期字段或事件字段之一
+            if cls["type"] == "latest_activity_of_person" and rows:
+                has_date = any(field in rows[0] for field in ["date", "timestamp"])
+                has_event = any(field in rows[0] for field in ["event_type", "name", "event", "activity"])
+                if has_date or has_event:
+                    missing = []
+
+            if rows and missing:
+                msg = f"Missing columns {missing}, ask LLM to include them next round."
+                print(msg)
+                state.reasoning.append(msg)
+                continue
+
+            if rows:
+                state.final_answer = self._standardize(question, cls["type"], rows)
+                break
+
+            state.reasoning.append("0 rows; ask LLM to self-correct and widen/adjust filters.")
+
+        result = {
+            "session_id": state.session_id,
+            "question": question,
+            "final_answer": state.final_answer,
+            "standardized_answer": self._to_list(state.final_answer),
+            "total_iterations": state.iteration,
+            "search_successful": state.final_answer is not None,
+            "reasoning_chain": state.reasoning,
+            "query_history": state.query_history,
+        }
+        print("Final:", result)
+        return result
+
+    @staticmethod
+    def _to_list(ans: Any) -> List[str]:
+        if ans is None:
+            return []
+        if isinstance(ans, list):
+            return [str(x).strip() for x in ans if str(x).strip()]
+        return [str(ans).strip()]
+
+    def close(self):
+        """Close database connection"""
+        if hasattr(self, 'driver') and self.driver:
+            self.driver.close()
+
+
+# ------------------------- 自测 -------------------------
 
 if __name__ == "__main__":
-    # Example usage
     engine = AgenticSearchEngine(
-        neo4j_uri="bolt://localhost:7687",
-        neo4j_user="neo4j", 
-        neo4j_password="password"
+        neo4j_uri=os.getenv("NEO4J_URI", "bolt://localhost:7687"),
+        neo4j_user=os.getenv("NEO4J_USER", "neo4j"),
+        neo4j_password=os.getenv("NEO4J_PASSWORD", "password"),
+        openai_api_key=os.getenv("OPENAI_API_KEY"),
+        neo4j_database=os.getenv("NEO4J_DATABASE", "test9"),
     )
-    
     try:
-        result = engine.search("What events did John participate in?")
-        print("Search completed:", result)
+        q = "List all locations visited by Carter Stewart in chronological order according to the story's timeline."
+        print(engine.search(q))
     finally:
         engine.close()

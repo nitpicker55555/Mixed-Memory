@@ -1,0 +1,11 @@
+question_num,question,predicted_answer,search_success,confidence,iterations
+191,"Provide a chronological list of all dates when Maya Smith was observed, from earliest to latest in the story's timeline.","['February 27, 2026', 'May 11, 2026']",True,0.0,1
+192,"Consider all events that Maya Smith has been involved in. List all the locations where these events took place, without mentioning the events themselves.","['One World Trade Center', 'Metropolitan Museum of Art']",True,0.0,1
+193,"List all locations visited by Maya Smith in chronological order according to the story's timeline.","['One World Trade Center', 'Metropolitan Museum of Art']",True,0.0,1
+194,"Enumerate all activities that Maya Smith has been involved in, ordered from earliest to latest in the story's chronology.","['Hackathon Day 1', 'Hackathon Mentoring', 'Hackathon Day 2', 'Hackathon Presentation', 'Parkour Fitness Class at Metropolitan Museum of Art']",True,0.0,1
+195,"Think about all events that have occurred at Bethpage Black Course. Provide a list of all dates when these events took place, without describing the events.","['September 03, 2026']",True,0.0,1
+196,"Think about all events that have occurred at Bethpage State Park. Provide a list of all dates when these events took place, without describing the events.","['December 25, 2026', 'December 26, 2026']",True,0.0,1
+197,"Think about all events that have occurred at Grand Central Terminal. Provide a list of all dates when these events took place, without describing the events.","['July 13, 2024']",True,0.0,1
+198,"Think about all events that have occurred at Guggenheim Museum. Provide a list of all dates when these events took place, without describing the events.","['March 23, 2024']",True,0.0,1
+199,"Think about all events that have occurred at High Line. Provide a list of all dates when these events took place, without describing the events.","['November 13, 2026']",True,0.0,1
+200,"Consider the location Bethpage Black Course. List all protagonists that have been involved in any events at this location, without mentioning the events themselves.","['Carter Stewart']",True,0.0,1

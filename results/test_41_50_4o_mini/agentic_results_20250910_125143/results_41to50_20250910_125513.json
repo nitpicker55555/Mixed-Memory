@@ -1,0 +1,299 @@
+[
+  {
+    "question": "What is the most recent location where Lucy Carter was observed in the story's chronological timeline?",
+    "predicted_answer": "Port Jefferson's historic theater",
+    "gpt_answer_result": {
+      "final_answer": "Port Jefferson's historic theater",
+      "confidence_score": 0.0,
+      "reasoning": [
+        "The query returned the most recent location where Lucy Carter was observed, which is 'Port Jefferson's historic theater'. The query correctly ordered events involving Lucy Carter by date in descending order and limited the result to the most recent one."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "795dba01-284f-4e3d-9843-50721330d6f7",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE 'Lucy Carter' IN e.participants RETURN e.location ORDER BY e.date DESC LIMIT 1"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 41,
+    "expected_answer": [
+      "Metropolitan Museum of Art"
+    ],
+    "processing_order": 1
+  },
+  {
+    "question": "What is the most recent location where Scarlett Thomas was observed in the story's chronological timeline?",
+    "predicted_answer": "High Line",
+    "gpt_answer_result": {
+      "final_answer": "High Line",
+      "confidence_score": 0.0,
+      "reasoning": [
+        "The query returned 'High Line' as the most recent location where Scarlett Thomas was observed, based on the chronological order of events involving her."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "f100c2f6-26f0-42a1-8bb3-63b061f7853e",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE 'Scarlett Thomas' IN e.participants RETURN e.location AS most_recent_location ORDER BY e.date DESC LIMIT 1"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 42,
+    "expected_answer": [
+      "High Line"
+    ],
+    "processing_order": 2
+  },
+  {
+    "question": "What is the most recent location where Zoe Brown was observed in the story's chronological timeline?",
+    "predicted_answer": "Long Beach Boardwalk",
+    "gpt_answer_result": {
+      "final_answer": "Long Beach Boardwalk",
+      "confidence_score": 0.0,
+      "reasoning": [
+        "The Cypher query successfully identified the most recent location where Zoe Brown was observed in the story's chronological timeline, as indicated by the ordered result based on the event date."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "81aaf242-24f1-4e21-9f57-14682094d9ff",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE 'Zoe Brown' IN e.participants RETURN e.location ORDER BY e.date DESC LIMIT 1"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 43,
+    "expected_answer": [
+      "Bethpage State Park"
+    ],
+    "processing_order": 3
+  },
+  {
+    "question": "List all locations visited by Carter Stewart in chronological order according to the story's timeline.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "90b07bb6-3a91-4db9-84ac-b0ae6fdba6dd",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE 'Carter Stewart' IN e.participants RETURN DISTINCT e.location ORDER BY e.date",
+        "MATCH (e:Event) WHERE 'Carter Stewart' IN e.participants RETURN DISTINCT e.location ORDER BY e.date",
+        "MATCH (e:Event) WHERE 'Carter Stewart' IN e.participants RETURN DISTINCT e.location ORDER BY e.date",
+        "MATCH (e:Event) WHERE 'Carter Stewart' IN e.participants RETURN DISTINCT e.location ORDER BY e.date",
+        "MATCH (e:Event) WHERE 'Carter Stewart' IN e.participants RETURN DISTINCT e.location ORDER BY e.date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 44,
+    "expected_answer": [
+      "Yankee Stadium",
+      "Snug Harbor Cultural Center",
+      "Bethpage Black Course"
+    ],
+    "processing_order": 4
+  },
+  {
+    "question": "List all locations visited by Lucy Carter in chronological order according to the story's timeline.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "70498469-1b37-4fd1-bc23-83d665db6f07",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE 'Lucy Carter' IN e.participants RETURN DISTINCT e.location ORDER BY e.date",
+        "MATCH (e:Event) WHERE 'Lucy Carter' IN e.participants RETURN DISTINCT e.location ORDER BY e.date",
+        "MATCH (e:Event) WHERE 'Lucy Carter' IN e.participants RETURN DISTINCT e.location ORDER BY e.date",
+        "MATCH (e:Event) WHERE 'Lucy Carter' IN e.participants RETURN DISTINCT e.location ORDER BY e.date",
+        "MATCH (e:Event) WHERE 'Lucy Carter' IN e.participants RETURN DISTINCT e.location ORDER BY e.date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 45,
+    "expected_answer": [
+      "Guggenheim Museum",
+      "Port Jefferson",
+      "Metropolitan Museum of Art"
+    ],
+    "processing_order": 5
+  },
+  {
+    "question": "List all locations visited by Scarlett Thomas in chronological order according to the story's timeline.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "3ee4b9e3-bc4e-40cf-93f7-0fbd7ab22f5b",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE 'Scarlett Thomas' IN e.participants RETURN DISTINCT e.location AS location ORDER BY e.date",
+        "MATCH (e:Event) WHERE 'Scarlett Thomas' IN e.participants RETURN DISTINCT e.location AS location ORDER BY e.date",
+        "MATCH (e:Event) WHERE 'Scarlett Thomas' IN e.participants RETURN DISTINCT e.location AS location ORDER BY e.date",
+        "MATCH (e:Event) WHERE 'Scarlett Thomas' IN e.participants RETURN DISTINCT e.location AS location ORDER BY e.date",
+        "MATCH (e:Event) WHERE 'Scarlett Thomas' IN e.participants RETURN DISTINCT e.location AS location ORDER BY e.date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 46,
+    "expected_answer": [
+      "Lincoln Center",
+      "Statue of Liberty",
+      "High Line"
+    ],
+    "processing_order": 6
+  },
+  {
+    "question": "List all locations visited by Zoe Brown in chronological order according to the story's timeline.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "1e6ee719-a531-4826-87d6-3dff7ee6f20c",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE 'Zoe Brown' IN e.participants RETURN DISTINCT e.location ORDER BY e.date",
+        "MATCH (e:Event) WHERE 'Zoe Brown' IN e.participants RETURN DISTINCT e.location ORDER BY e.date",
+        "MATCH (e:Event) WHERE 'Zoe Brown' IN e.participants RETURN DISTINCT e.location ORDER BY e.date",
+        "MATCH (e:Event) WHERE 'Zoe Brown' IN e.participants RETURN DISTINCT e.location ORDER BY e.date",
+        "MATCH (e:Event) WHERE 'Zoe Brown' IN e.participants RETURN DISTINCT e.location ORDER BY e.date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 47,
+    "expected_answer": [
+      "Port Jefferson",
+      "Long Beach Boardwalk",
+      "Woolworth Building",
+      "Bethpage State Park"
+    ],
+    "processing_order": 7
+  },
+  {
+    "question": "Provide a chronological list of all dates when Carter Stewart was observed, from earliest to latest in the story's timeline.",
+    "predicted_answer": "[\"March 23, 2024\", \"October 13, 2024\", \"September 03, 2026\"]",
+    "gpt_answer_result": {
+      "final_answer": "[\"March 23, 2024\", \"October 13, 2024\", \"September 03, 2026\"]",
+      "confidence_score": 0.0,
+      "reasoning": [
+        "The query results provide a list of dates when Carter Stewart was observed, ordered chronologically as requested. The sample data confirms the presence of these dates in the timeline."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "354b2e63-4b22-4670-9811-4fdbf6c8838f",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE 'Carter Stewart' IN e.participants RETURN DISTINCT e.date AS date ORDER BY e.date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 48,
+    "expected_answer": [
+      "March 23, 2024",
+      "October 13, 2024",
+      "September 03, 2026"
+    ],
+    "processing_order": 8
+  },
+  {
+    "question": "Provide a chronological list of all dates when Lucy Carter was observed, from earliest to latest in the story's timeline.",
+    "predicted_answer": "[\"March 23, 2024\", \"September 22, 2026\", \"November 13, 2026\"]",
+    "gpt_answer_result": {
+      "final_answer": "[\"March 23, 2024\", \"September 22, 2026\", \"November 13, 2026\"]",
+      "confidence_score": 0.0,
+      "reasoning": [
+        "The query results provided three distinct dates when Lucy Carter was observed. These dates are already in chronological order as per the query's ORDER BY clause."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "cf087d9d-dcf1-43c6-b6b4-ff00215459f4",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE 'Lucy Carter' IN e.participants RETURN DISTINCT e.date ORDER BY e.date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 49,
+    "expected_answer": [
+      "March 23, 2024",
+      "September 22, 2026",
+      "November 13, 2026"
+    ],
+    "processing_order": 9
+  },
+  {
+    "question": "Provide a chronological list of all dates when Scarlett Thomas was observed, from earliest to latest in the story's timeline.",
+    "predicted_answer": "[\"March 23, 2024\", \"June 14, 2025\", \"November 13, 2026\"]",
+    "gpt_answer_result": {
+      "final_answer": "[\"March 23, 2024\", \"June 14, 2025\", \"November 13, 2026\"]",
+      "confidence_score": 0.0,
+      "reasoning": [
+        "The query results provided three distinct dates when Scarlett Thomas was observed. These dates were ordered chronologically as requested, from earliest to latest."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "24cc80bb-18ab-4829-8636-ad3de3c90438",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE 'Scarlett Thomas' IN e.participants RETURN DISTINCT e.date AS date ORDER BY e.date ASC"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 50,
+    "expected_answer": [
+      "March 23, 2024",
+      "June 14, 2025",
+      "November 13, 2026"
+    ],
+    "processing_order": 10
+  }
+]

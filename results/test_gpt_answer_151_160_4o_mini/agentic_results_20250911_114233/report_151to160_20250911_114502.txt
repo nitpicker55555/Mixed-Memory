@@ -1,0 +1,93 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-11 11:45:02
+Question Range: 151-160
+Total Questions Processed: 10
+Successful Searches: 0 (0.0%)
+Questions with Answers: 0 (0.0%)
+Average Iterations per Question: 5.0
+
+DETAILED RESULTS:
+------------------------------
+
+Question 151:
+  Text: Provide a chronological list of all dates when David Turner was observed, from earliest to latest in the story's timeline.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 152:
+  Text: Provide a chronological list of all dates when Ellie Garcia was observed, from earliest to latest in the story's timeline.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 153:
+  Text: Provide a chronological list of all dates when Jackson Hall was observed, from earliest to latest in the story's timeline.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 154:
+  Text: Provide a chronological list of all dates when Julian Cook was observed, from earliest to latest in the story's timeline.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 155:
+  Text: Provide a chronological list of all dates when Nathan Lopez was observed, from earliest to latest in the story's timeline.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 156:
+  Text: Think about David Turner's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 157:
+  Text: Think about Ellie Garcia's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 158:
+  Text: Think about Jackson Hall's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 159:
+  Text: Think about Julian Cook's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 160:
+  Text: Think about Nathan Lopez's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+

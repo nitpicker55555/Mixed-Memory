@@ -1,0 +1,93 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-10 12:46:19
+Question Range: 21-30
+Total Questions Processed: 10
+Successful Searches: 0 (0.0%)
+Questions with Answers: 0 (0.0%)
+Average Iterations per Question: 5.0
+
+DETAILED RESULTS:
+------------------------------
+
+Question 21:
+  Text: Consider all events involving Boat Show. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 22:
+  Text: Consider all events involving Book Signing Event. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 23:
+  Text: Consider all events involving Charity Gala. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 24:
+  Text: Consider all events involving Laser Tag Tournament. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 25:
+  Text: Consider all events involving Robotics Competition. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 26:
+  Text: Reflect on events related to Boat Show. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 27:
+  Text: Reflect on events related to Book Signing Event. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 28:
+  Text: Reflect on events related to Charity Gala. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 29:
+  Text: Reflect on events related to Laser Tag Tournament. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 30:
+  Text: Reflect on events related to Robotics Competition. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+

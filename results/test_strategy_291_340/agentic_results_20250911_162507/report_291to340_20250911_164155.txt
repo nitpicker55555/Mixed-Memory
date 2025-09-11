@@ -1,0 +1,413 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-11 16:41:55
+Question Range: 291-340
+Total Questions Processed: 50
+Successful Searches: 7 (14.0%)
+Questions with Answers: 7 (14.0%)
+Average Iterations per Question: 4.6
+
+DETAILED RESULTS:
+------------------------------
+
+Question 291:
+  Text: Recall all the events that occurred on January 01, 2026. Without describing the events, list all the unique locations where these events took place.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 292:
+  Text: Recall all the events that occurred on January 24, 2025. Without describing the events, list all the unique locations where these events took place.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 293:
+  Text: Recall all the events that occurred on July 02, 2024. Without describing the events, list all the unique locations where these events took place.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 294:
+  Text: Consider all events that happened on August 12, 2025. Provide a list of all protagonists involved in any of these events, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 295:
+  Text: Consider all events that happened on December 04, 2026. Provide a list of all protagonists involved in any of these events, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 296:
+  Text: Consider all events that happened on January 01, 2026. Provide a list of all protagonists involved in any of these events, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 297:
+  Text: Consider all events that happened on January 24, 2025. Provide a list of all protagonists involved in any of these events, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 298:
+  Text: Consider all events that happened on July 02, 2024. Provide a list of all protagonists involved in any of these events, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 299:
+  Text: Think about the events involving Trivia Contest on August 12, 2025. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 300:
+  Text: Think about the events involving Charity Gala on December 04, 2026. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 301:
+  Text: Think about the events involving Farmers Market on December 26, 2026. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: []
+  Predicted: ['Nora Ramos']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 3
+
+Question 302:
+  Text: Think about the events involving Roller Disco Night on January 01, 2026. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 303:
+  Text: Think about the events involving Boat Show on January 24, 2025. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 304:
+  Text: Recall the events related to Trivia Contest that occurred on August 12, 2025. List all the locations where these events took place, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 305:
+  Text: Recall the events related to Charity Gala that occurred on December 04, 2026. List all the locations where these events took place, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 306:
+  Text: Recall the events related to Farmers Market that occurred on December 26, 2026. List all the locations where these events took place, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 307:
+  Text: Recall the events related to Roller Disco Night that occurred on January 01, 2026. List all the locations where these events took place, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 308:
+  Text: Recall the events related to Boat Show that occurred on January 24, 2025. List all the locations where these events took place, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 309:
+  Text: Reflect on what Nova Rogers experienced on August 12, 2025. Describe all the key events they were involved in, focusing on what happened rather than where it occurred.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 310:
+  Text: Reflect on what Nathan Lopez experienced on December 04, 2026. Describe all the key events they were involved in, focusing on what happened rather than where it occurred.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 311:
+  Text: Reflect on what Chloe Castillo experienced on December 26, 2026. Describe all the key events they were involved in, focusing on what happened rather than where it occurred.
+  Expected: []
+  Predicted: []
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 2
+
+Question 312:
+  Text: Reflect on what Julian Cook experienced on February 27, 2026. Describe all the key events they were involved in, focusing on what happened rather than where it occurred.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 313:
+  Text: Reflect on what Hazel Lewis experienced on January 01, 2026. Describe all the key events they were involved in, focusing on what happened rather than where it occurred.
+  Expected: []
+  Predicted: []
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 314:
+  Text: Consider the events involving Nova Rogers on August 12, 2025. List all the locations where these events took place, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 315:
+  Text: Consider the events involving Nathan Lopez on December 04, 2026. List all the locations where these events took place, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 316:
+  Text: Consider the events involving Chloe Castillo on December 26, 2026. List all the locations where these events took place, without describing the events themselves.
+  Expected: []
+  Predicted: ['Trinity Church']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 3
+
+Question 317:
+  Text: Consider the events involving Julian Cook on February 27, 2026. List all the locations where these events took place, without describing the events themselves.
+  Expected: []
+  Predicted: ['Trinity Church', 'One World Trade Center']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 4
+
+Question 318:
+  Text: Consider the events involving Hazel Lewis on January 01, 2026. List all the locations where these events took place, without describing the events themselves.
+  Expected: []
+  Predicted: ['Queensboro Bridge']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 3
+
+Question 319:
+  Text: Consider the events involving both Nova Rogers and Trivia Contest on August 12, 2025. List all the locations where these events took place, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 320:
+  Text: Consider the events involving both Nathan Lopez and Charity Gala on December 04, 2026. List all the locations where these events took place, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 321:
+  Text: Consider the events involving both Chloe Castillo and Farmers Market on December 26, 2026. List all the locations where these events took place, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 322:
+  Text: Consider the events involving both Julian Cook and TED Talk on February 27, 2026. List all the locations where these events took place, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 323:
+  Text: Consider the events involving both Hazel Lewis and Roller Disco Night on January 01, 2026. List all the locations where these events took place, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 324:
+  Text: Think about what happened at Roosevelt Island on August 12, 2025. List all protagonists involved in any events at this time and place, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 325:
+  Text: Think about what happened at Vanderbilt Museum and Planetarium on December 04, 2026. List all protagonists involved in any events at this time and place, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 326:
+  Text: Think about what happened at Guggenheim Museum on December 26, 2026. List all protagonists involved in any events at this time and place, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 327:
+  Text: Think about what happened at Brooklyn Museum on January 01, 2026. List all protagonists involved in any events at this time and place, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 328:
+  Text: Think about what happened at Fort Tryon Park on January 24, 2025. List all protagonists involved in any events at this time and place, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 329:
+  Text: Recall the key events that occurred at Roosevelt Island on August 12, 2025. Describe what happened, focusing on the actions or occurrences rather than who was involved.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 330:
+  Text: Recall the key events that occurred at Vanderbilt Museum and Planetarium on December 04, 2026. Describe what happened, focusing on the actions or occurrences rather than who was involved.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 331:
+  Text: Recall the key events that occurred at Guggenheim Museum on December 26, 2026. Describe what happened, focusing on the actions or occurrences rather than who was involved.
+  Expected: []
+  Predicted: []
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 332:
+  Text: Recall the key events that occurred at Brooklyn Museum on January 01, 2026. Describe what happened, focusing on the actions or occurrences rather than who was involved.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 333:
+  Text: Recall the key events that occurred at Fort Tryon Park on January 24, 2025. Describe what happened, focusing on the actions or occurrences rather than who was involved.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 334:
+  Text: Think about the events related to Trivia Contest that occurred at Roosevelt Island on August 12, 2025. List all protagonists involved in these events, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 335:
+  Text: Think about the events related to Charity Gala that occurred at Vanderbilt Museum and Planetarium on December 04, 2026. List all protagonists involved in these events, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 336:
+  Text: Think about the events related to Farmers Market that occurred at Guggenheim Museum on December 26, 2026. List all protagonists involved in these events, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 337:
+  Text: Think about the events related to Roller Disco Night that occurred at Brooklyn Museum on January 01, 2026. List all protagonists involved in these events, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 338:
+  Text: Think about the events related to Boat Show that occurred at Fort Tryon Park on January 24, 2025. List all protagonists involved in these events, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 339:
+  Text: Recall what happened involving Nova Rogers at Roosevelt Island on August 12, 2025. Describe the key events or activities that occurred, focusing on what happened.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 3
+
+Question 340:
+  Text: Recall what happened involving Nathan Lopez at Vanderbilt Museum and Planetarium on December 04, 2026. Describe the key events or activities that occurred, focusing on what happened.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+

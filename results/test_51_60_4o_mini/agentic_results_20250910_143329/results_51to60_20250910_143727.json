@@ -1,0 +1,473 @@
+[
+  {
+    "question": "Provide a chronological list of all dates when Zoe Brown was observed, from earliest to latest in the story's timeline.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "The dates provided are not in chronological order, which is essential for answering the question accurately. Additionally, there is a date (June 08, 2026) that appears to be out of sequence with the others. This indicates that the results may not fully satisfy the question's requirements.",
+        "The dates provided are not in chronological order, which is essential for answering the question accurately. Additionally, there is a date (June 08, 2026) that appears to be out of sequence with the others. This indicates that the results may not fully address the question as intended.",
+        "The dates provided are not in chronological order, which is essential for answering the question accurately. Additionally, there is a date from 2026 that appears before dates from 2024, which is incorrect. This indicates that the results do not fully answer the question as required.",
+        "The dates provided are not in chronological order, which is crucial for the question asked. Additionally, there is a date (June 08, 2026) that appears to be out of sequence compared to the others. This indicates that the results may not fully answer the question as intended. Therefore, further searching may be necessary to ensure accuracy.",
+        "The dates provided are not in chronological order, which is essential for answering the question accurately. Additionally, there is a date (June 08, 2026) that appears to be out of sequence with the others. This indicates that the results may not fully answer the question as intended. Further searching may be necessary to ensure all dates are correctly ordered and accounted for."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "02415fdc-52bb-4249-b25a-508f0e3c331b",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE 'Zoe Brown' IN e.participants WITH e.date AS date RETURN DISTINCT date ORDER BY date",
+        "MATCH (e:Event) WHERE 'Zoe Brown' IN e.participants WITH e.date AS date RETURN DISTINCT date ORDER BY date",
+        "MATCH (e:Event) WHERE 'Zoe Brown' IN e.participants WITH e.date AS date RETURN DISTINCT date ORDER BY date",
+        "MATCH (e:Event) WHERE 'Zoe Brown' IN e.participants WITH e.date AS date RETURN DISTINCT date ORDER BY date",
+        "MATCH (e:Event) WHERE 'Zoe Brown' IN e.participants WITH e.date AS date RETURN DISTINCT date ORDER BY date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 51,
+    "expected_answer": [
+      "March 23, 2024",
+      "October 13, 2024",
+      "June 08, 2026",
+      "December 26, 2026"
+    ],
+    "processing_order": 1
+  },
+  {
+    "question": "Think about Carter Stewart's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+    "predicted_answer": "Carter Stewart participated in various storytelling events, including a storytelling festival and a storytelling duel, showcasing his skills in humor and creative storytelling. He also engaged in social interactions and reflections, contributing to discussions at an environmental summit.",
+    "gpt_answer_result": {
+      "final_answer": "Carter Stewart participated in various storytelling events, including a storytelling festival and a storytelling duel, showcasing his skills in humor and creative storytelling. He also engaged in social interactions and reflections, contributing to discussions at an environmental summit.",
+      "confidence_score": 0.0,
+      "reasoning": [
+        "Query failed: {code: Neo.ClientError.Statement.SyntaxError} {message: In a WITH/RETURN with DISTINCT or an aggregation, it is not possible to access variables declared before the WITH/RETURN: eventDate (line 1, column 177 (offset: 176))\n\"MATCH (e:Event) WHERE 'Carter Stewart' IN e.participants WITH e.name AS eventName, e.event_type AS eventType, e.date AS eventDate RETURN DISTINCT eventName, eventType ORDER BY eventDate\"\n                                                                                                                                                                                 ^}",
+        "The results provide a list of key events that Carter Stewart has been involved in, focusing on the nature of the events rather than specific dates or locations. However, the details of each event are somewhat limited, lacking deeper context about what happened during these events. This means while the answer is partially sufficient, it could benefit from additional details about the significance or outcomes of each event."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "02471fe4-f28a-416f-9249-f3ec528b502a",
+      "total_iterations": 2,
+      "query_history": [
+        "MATCH (e:Event) WHERE 'Carter Stewart' IN e.participants WITH e.name AS eventName, e.event_type AS eventType, e.date AS eventDate RETURN DISTINCT eventName, eventType ORDER BY eventDate",
+        "MATCH (e:Event) WHERE 'Carter Stewart' IN e.participants WITH e.name AS eventName, e.event_type AS eventType, e.date AS eventDate RETURN eventName, eventType"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 52,
+    "expected_answer": [
+      "Storytelling Festival",
+      "Environmental Summit",
+      "Carnival"
+    ],
+    "processing_order": 2
+  },
+  {
+    "question": "Think about Lucy Carter's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "The results only provide locations associated with Lucy Carter's experiences but do not describe the key events or what happened during those experiences. Therefore, they do not adequately answer the question.",
+        "The results only provide locations associated with Lucy Carter's experiences but do not describe the key events or what happened during those experiences. Therefore, they do not adequately answer the question.",
+        "The results only provide locations associated with Lucy Carter's experiences but do not describe the key events or what happened during those experiences. Therefore, they do not adequately answer the question.",
+        "The results provide a list of locations and dates related to Lucy Carter's experiences, but they lack detailed descriptions of the key events that occurred at those locations. The focus should be on what happened during those experiences rather than just where and when they took place. Therefore, the information is insufficient to fully answer the question.",
+        "The results only provide locations associated with Lucy Carter's experiences but do not describe the key events or what happened during those experiences. Therefore, they do not adequately answer the question."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "7de1239d-b42a-4253-94d8-a02919860c1b",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE 'Lucy Carter' IN e.participants WITH e.location AS location, e.date AS date RETURN location",
+        "MATCH (e:Event) WHERE 'Lucy Carter' IN e.participants WITH e.location AS location, e.date AS date RETURN location",
+        "MATCH (e:Event) WHERE 'Lucy Carter' IN e.participants WITH e.location as location, e.date as date RETURN location",
+        "MATCH (e:Event) WHERE 'Lucy Carter' IN e.participants WITH e.location AS location, e.date AS date RETURN location, date",
+        "MATCH (e:Event) WHERE 'Lucy Carter' IN e.participants WITH e.location AS location, e.date AS date RETURN location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 53,
+    "expected_answer": [
+      "Fashion Show",
+      "Theater Performance",
+      "Parkour Workshop"
+    ],
+    "processing_order": 3
+  },
+  {
+    "question": "Think about Scarlett Thomas's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+    "predicted_answer": "Scarlett Thomas has participated in various key events including a musical performance at the Grand Hall, a backstage exploration at Lincoln Center, and her art exhibition debut at the High Line. During the exhibition, she had interactions that led to significant revelations. Additionally, she was involved in the New York Harbor Festival, where she enjoyed culinary experiences, including a quiet moment with tapas and reflections on the festival.",
+    "gpt_answer_result": {
+      "final_answer": "Scarlett Thomas has participated in various key events including a musical performance at the Grand Hall, a backstage exploration at Lincoln Center, and her art exhibition debut at the High Line. During the exhibition, she had interactions that led to significant revelations. Additionally, she was involved in the New York Harbor Festival, where she enjoyed culinary experiences, including a quiet moment with tapas and reflections on the festival.",
+      "confidence_score": 0.0,
+      "reasoning": [
+        "The results provide a comprehensive list of key events that Scarlett Thomas has been involved in, focusing on the nature of the events rather than their timing or location. However, the details of her experiences during these events are not elaborated upon, which could enhance the understanding of her involvement. Therefore, while the information is sufficient to outline her key events, it lacks depth regarding her personal experiences and insights during these events."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "1cb67de3-1861-489e-a4ef-c8e8de9d1102",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE 'Scarlett Thomas' IN e.participants WITH e.name as eventName, e.event_type as eventType, e.location as location, e.date as date RETURN eventName, eventType, location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 54,
+    "expected_answer": [
+      "Theater Performance",
+      "Street Food Festival",
+      "Photography Exhibition"
+    ],
+    "processing_order": 4
+  },
+  {
+    "question": "Think about Zoe Brown's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+    "predicted_answer": "Zoe Brown participated in various events including theater performances, discussions, and film festivals at locations such as Bethpage State Park and Long Beach Boardwalk. Key events include a theater performance, discussions with various entities, performance observations, a film festival opening, pop-up theater screenings, a student film showcase, and an ice sculpture exhibition.",
+    "gpt_answer_result": {
+      "final_answer": "Zoe Brown participated in various events including theater performances, discussions, and film festivals at locations such as Bethpage State Park and Long Beach Boardwalk. Key events include a theater performance, discussions with various entities, performance observations, a film festival opening, pop-up theater screenings, a student film showcase, and an ice sculpture exhibition.",
+      "confidence_score": 0.0,
+      "reasoning": [
+        "The results provide a comprehensive list of key events that Zoe Brown has been involved in, focusing on the nature of the events rather than their timing or location. However, the details about her specific experiences or roles in these events are not included, which could enhance the understanding of her involvement."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "2a23f853-1d1f-4fe8-a257-5167c39f6e94",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE 'Zoe Brown' IN e.participants WITH e.name AS eventName, e.event_type AS eventType, e.location AS location RETURN eventName, eventType, location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 55,
+    "expected_answer": [
+      "Astronomy Night",
+      "Theater Performance",
+      "Film Festival",
+      "Ice Sculpture Exhibition"
+    ],
+    "processing_order": 5
+  },
+  {
+    "question": "Enumerate all activities that Carter Stewart has been involved in, ordered from earliest to latest in the story's chronology.",
+    "predicted_answer": "[{\"activity\": \"Storytelling Festival at Yankee Stadium\", \"date\": \"March 23, 2024\"}, {\"activity\": \"Storytelling at Yankee Stadium\", \"date\": \"March 23, 2024\"}, {\"activity\": \"Humor and Storytelling\", \"date\": \"March 23, 2024\"}, {\"activity\": \"Storytelling Duel\", \"date\": \"March 23, 2024\"}, {\"activity\": \"Carter's Interaction\", \"date\": \"March 23, 2024\"}, {\"activity\": \"Carter's Reflection\", \"date\": \"March 23, 2024\"}, {\"activity\": \"Carter's Engagement\", \"date\": \"March 23, 2024\"}, {\"activity\": \"Creative Storytelling\", \"date\": \"March 23, 2024\"}, {\"activity\": \"Festival Conclusion\", \"date\": \"March 23, 2024\"}, {\"activity\": \"Carnival at Snug Harbor\", \"date\": \"October 13, 2024\"}]",
+    "gpt_answer_result": {
+      "final_answer": "[{\"activity\": \"Storytelling Festival at Yankee Stadium\", \"date\": \"March 23, 2024\"}, {\"activity\": \"Storytelling at Yankee Stadium\", \"date\": \"March 23, 2024\"}, {\"activity\": \"Humor and Storytelling\", \"date\": \"March 23, 2024\"}, {\"activity\": \"Storytelling Duel\", \"date\": \"March 23, 2024\"}, {\"activity\": \"Carter's Interaction\", \"date\": \"March 23, 2024\"}, {\"activity\": \"Carter's Reflection\", \"date\": \"March 23, 2024\"}, {\"activity\": \"Carter's Engagement\", \"date\": \"March 23, 2024\"}, {\"activity\": \"Creative Storytelling\", \"date\": \"March 23, 2024\"}, {\"activity\": \"Festival Conclusion\", \"date\": \"March 23, 2024\"}, {\"activity\": \"Carnival at Snug Harbor\", \"date\": \"October 13, 2024\"}]",
+      "confidence_score": 0.0,
+      "reasoning": [
+        "Query failed: {code: Neo.ClientError.Statement.SyntaxError} {message: Variable `e` not defined (line 1, column 105 (offset: 104))\n\"MATCH (e:Event) WHERE 'Carter Stewart' IN e.participants WITH e.date AS date, e.name AS activity RETURN e.name, e.date ORDER BY e.date\"\n                                                                                                         ^}",
+        "The results enumerate all activities that Carter Stewart has been involved in, ordered chronologically from the earliest to the latest. All activities are dated and listed correctly, providing a clear timeline of events. However, since all activities occur on the same date, they are listed in the order they were mentioned, which is acceptable for this context. The final activity, 'Carnival at Snug Harbor,' is correctly placed after the events of March 23, 2024."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "65705064-d663-4907-adc9-ccb1677c21e3",
+      "total_iterations": 2,
+      "query_history": [
+        "MATCH (e:Event) WHERE 'Carter Stewart' IN e.participants WITH e.date AS date, e.name AS activity RETURN e.name, e.date ORDER BY e.date",
+        "MATCH (e:Event) WHERE 'Carter Stewart' IN e.participants WITH e.name AS activity, e.date AS date RETURN activity, date ORDER BY date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 56,
+    "expected_answer": [
+      "Storytelling Festival",
+      "Carnival",
+      "Environmental Summit"
+    ],
+    "processing_order": 6
+  },
+  {
+    "question": "Enumerate all activities that Lucy Carter has been involved in, ordered from earliest to latest in the story's chronology.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "The results provide a list of locations and dates where Lucy Carter has been involved in activities, but they are not clearly ordered chronologically due to the presence of multiple entries for the same location without specific dates. Additionally, some entries lack dates, making it difficult to establish a complete chronological order. Therefore, while the information is relevant, it is not fully sufficient to answer the question accurately.",
+        "The results provide a list of locations and dates where Lucy Carter has been involved in activities, but they are not clearly enumerated in chronological order, and some entries lack specific dates. Additionally, there are multiple entries for the same location on the same date, which may indicate repeated activities but does not clarify the sequence of events. Therefore, while there is some relevant information, it is not fully sufficient to answer the question comprehensively.",
+        "The results provide a list of locations and dates where Lucy Carter has been involved in activities, but they are not clearly ordered chronologically due to the presence of multiple entries for the same location without specific dates. Additionally, some entries lack dates, making it difficult to establish a complete chronological order. Therefore, while there is some relevant information, it is not fully sufficient to answer the question accurately.",
+        "The results provide a list of locations and dates where Lucy Carter has been involved in activities, but they are not clearly ordered chronologically due to the lack of specific dates for some entries. Additionally, the repeated entries for 'Port Jefferson's historic theater' without dates do not provide clarity on the timeline. More information or clarification on the activities would be needed for a complete answer.",
+        "The results provide a list of activities Lucy Carter has been involved in, but they lack specific dates for several entries, making it difficult to establish a clear chronological order. Additionally, there are multiple entries for the same location without differentiation in activities. This suggests that further clarification or additional data may be needed to fully answer the question."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "e8d45824-1dd4-4e30-8e45-11f049d55b37",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE 'Lucy Carter' IN e.participants WITH e.date AS date, e.location AS location RETURN location, date ORDER BY date",
+        "MATCH (e:Event) WHERE 'Lucy Carter' IN e.participants WITH e.date AS date, e.location AS location RETURN location, date ORDER BY date",
+        "MATCH (e:Event) WHERE 'Lucy Carter' IN e.participants WITH e.date AS date, e.location AS location RETURN location, date ORDER BY date",
+        "MATCH (e:Event) WHERE 'Lucy Carter' IN e.participants WITH e.location AS location, e.date AS date RETURN location, date ORDER BY date",
+        "MATCH (e:Event) WHERE 'Lucy Carter' IN e.participants WITH e.date AS date, e.location AS location RETURN location, date ORDER BY date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 57,
+    "expected_answer": [
+      "Parkour Workshop",
+      "Theater Performance",
+      "Fashion Show"
+    ],
+    "processing_order": 7
+  },
+  {
+    "question": "Enumerate all activities that Scarlett Thomas has been involved in, ordered from earliest to latest in the story's chronology.",
+    "predicted_answer": [
+      {
+        "activity": "Evening Performance",
+        "date": "March 23, 2024"
+      },
+      {
+        "activity": "Backstage Exploration",
+        "date": "March 23, 2024"
+      },
+      {
+        "activity": "New York Harbor Festival",
+        "date": "June 14, 2025"
+      },
+      {
+        "activity": "Culinary Experience at Festival",
+        "date": "June 14, 2025"
+      },
+      {
+        "activity": "Quiet Moment with Tapas",
+        "date": "June 14, 2025"
+      },
+      {
+        "activity": "Evening Reflection at Festival",
+        "date": "June 14, 2025"
+      },
+      {
+        "activity": "Scarlett Thomas Exhibition Debut",
+        "date": "November 13, 2026"
+      },
+      {
+        "activity": "Scarlett's Interaction with $entity_1",
+        "date": "November 13, 2026"
+      },
+      {
+        "activity": "Scarlett's Revelation",
+        "date": "November 13, 2026"
+      }
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        {
+          "activity": "Evening Performance",
+          "date": "March 23, 2024"
+        },
+        {
+          "activity": "Backstage Exploration",
+          "date": "March 23, 2024"
+        },
+        {
+          "activity": "New York Harbor Festival",
+          "date": "June 14, 2025"
+        },
+        {
+          "activity": "Culinary Experience at Festival",
+          "date": "June 14, 2025"
+        },
+        {
+          "activity": "Quiet Moment with Tapas",
+          "date": "June 14, 2025"
+        },
+        {
+          "activity": "Evening Reflection at Festival",
+          "date": "June 14, 2025"
+        },
+        {
+          "activity": "Scarlett Thomas Exhibition Debut",
+          "date": "November 13, 2026"
+        },
+        {
+          "activity": "Scarlett's Interaction with $entity_1",
+          "date": "November 13, 2026"
+        },
+        {
+          "activity": "Scarlett's Revelation",
+          "date": "November 13, 2026"
+        }
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [
+        "The results provide a chronological list of activities that Scarlett Thomas has been involved in, ordered by date from earliest to latest. The activities are clearly dated and relevant to the question asked. However, there is a slight inconsistency with the date order, as the activities on June 14, 2025, should come after those on March 23, 2024. Despite this, the overall structure and content are sufficient to answer the question."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "32fb28d4-e7ef-4d78-9f83-19efbafc1974",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE 'Scarlett Thomas' IN e.participants WITH e.name AS activity, e.date AS date RETURN activity, date ORDER BY date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 58,
+    "expected_answer": [
+      "Theater Performance",
+      "Street Food Festival",
+      "Photography Exhibition"
+    ],
+    "processing_order": 8
+  },
+  {
+    "question": "Enumerate all activities that Zoe Brown has been involved in, ordered from earliest to latest in the story's chronology.",
+    "predicted_answer": [
+      {
+        "activity": "Astronomy Night",
+        "date": "March 23, 2024"
+      },
+      {
+        "activity": "Ice Sculpture Exhibition",
+        "date": "June 08, 2026"
+      },
+      {
+        "activity": "Discussion of Ice Sculptures",
+        "date": "June 08, 2026"
+      },
+      {
+        "activity": "Zoe's Reflection on Ice Preservation",
+        "date": "June 08, 2026"
+      },
+      {
+        "activity": "Discussion with $entity_3",
+        "date": "December 25, 2026"
+      },
+      {
+        "activity": "Theater Performance at Bethpage State Park",
+        "date": "December 26, 2026"
+      },
+      {
+        "activity": "Discussion with $entity_1",
+        "date": "December 26, 2026"
+      },
+      {
+        "activity": "Performance Observation",
+        "date": "December 26, 2026"
+      },
+      {
+        "activity": "Final Act and Audience Reaction",
+        "date": "December 26, 2026"
+      },
+      {
+        "activity": "Performance Conclusion",
+        "date": "December 26, 2026"
+      }
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        {
+          "activity": "Astronomy Night",
+          "date": "March 23, 2024"
+        },
+        {
+          "activity": "Ice Sculpture Exhibition",
+          "date": "June 08, 2026"
+        },
+        {
+          "activity": "Discussion of Ice Sculptures",
+          "date": "June 08, 2026"
+        },
+        {
+          "activity": "Zoe's Reflection on Ice Preservation",
+          "date": "June 08, 2026"
+        },
+        {
+          "activity": "Discussion with $entity_3",
+          "date": "December 25, 2026"
+        },
+        {
+          "activity": "Theater Performance at Bethpage State Park",
+          "date": "December 26, 2026"
+        },
+        {
+          "activity": "Discussion with $entity_1",
+          "date": "December 26, 2026"
+        },
+        {
+          "activity": "Performance Observation",
+          "date": "December 26, 2026"
+        },
+        {
+          "activity": "Final Act and Audience Reaction",
+          "date": "December 26, 2026"
+        },
+        {
+          "activity": "Performance Conclusion",
+          "date": "December 26, 2026"
+        }
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [
+        "Query failed: {code: Neo.ClientError.Statement.SyntaxError} {message: Variable `e` not defined (line 1, column 100 (offset: 99))\n\"MATCH (e:Event) WHERE 'Zoe Brown' IN e.participants WITH e.date AS date, e.name AS activity RETURN e.name, e.date ORDER BY date\"\n                                                                                                    ^}",
+        "Query failed: {code: Neo.ClientError.Statement.SyntaxError} {message: Variable `e` not defined (line 1, column 100 (offset: 99))\n\"MATCH (e:Event) WHERE 'Zoe Brown' IN e.participants WITH e.date AS date, e.name AS activity RETURN e.name, e.date ORDER BY date\"\n                                                                                                    ^}",
+        "Query failed: {code: Neo.ClientError.Statement.SyntaxError} {message: Variable `e` not defined (line 1, column 100 (offset: 99))\n\"MATCH (e:Event) WHERE 'Zoe Brown' IN e.participants WITH e.date AS date, e.name AS activity RETURN e.name, e.date ORDER BY e.date\"\n                                                                                                    ^}",
+        "The results provide a chronological list of activities that Zoe Brown has been involved in, but the dates are not in the correct chronological order. The activities from June 2026 should precede those from December 2026. However, the activities themselves are relevant and cover a range of events. Therefore, while the answer is mostly complete, the ordering needs correction for full accuracy."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "e26e558d-013f-4ec8-aab1-941c7c5c7820",
+      "total_iterations": 4,
+      "query_history": [
+        "MATCH (e:Event) WHERE 'Zoe Brown' IN e.participants WITH e.date AS date, e.name AS activity RETURN e.name, e.date ORDER BY date",
+        "MATCH (e:Event) WHERE 'Zoe Brown' IN e.participants WITH e.date AS date, e.name AS activity RETURN e.name, e.date ORDER BY date",
+        "MATCH (e:Event) WHERE 'Zoe Brown' IN e.participants WITH e.date AS date, e.name AS activity RETURN e.name, e.date ORDER BY e.date",
+        "MATCH (e:Event) WHERE 'Zoe Brown' IN e.participants WITH e.name AS activity, e.date AS date RETURN activity, date ORDER BY date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 59,
+    "expected_answer": [
+      "Astronomy Night",
+      "Film Festival",
+      "Ice Sculpture Exhibition",
+      "Theater Performance"
+    ],
+    "processing_order": 9
+  },
+  {
+    "question": "Consider all events that Carter Stewart has been involved in. List all the locations where these events took place, without mentioning the events themselves.",
+    "predicted_answer": [
+      "Bethpage Black Course",
+      "Yankee Stadium"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "Bethpage Black Course",
+        "Yankee Stadium"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [
+        "Query failed: {code: Neo.ClientError.Statement.SyntaxError} {message: Variable `e` not defined (line 1, column 93 (offset: 92))\n\"MATCH (e:Event) WHERE 'Carter Stewart' IN e.participants WITH e.location AS location RETURN e.location\"\n                                                                                             ^}",
+        "The results provide a list of locations where events involving Carter Stewart took place, specifically mentioning the 'Bethpage Black Course' and multiple instances of 'Yankee Stadium'. While there are repeated mentions of Yankee Stadium, the inclusion of Bethpage Black Course indicates a variety of locations. Therefore, the answer is mostly sufficient."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "841880ee-0d13-4e89-a353-57e7847266be",
+      "total_iterations": 2,
+      "query_history": [
+        "MATCH (e:Event) WHERE 'Carter Stewart' IN e.participants WITH e.location AS location RETURN e.location",
+        "MATCH (e:Event) WHERE 'Carter Stewart' IN e.participants WITH e.location AS location, e.date AS date RETURN location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 60,
+    "expected_answer": [
+      "Snug Harbor Cultural Center",
+      "Bethpage Black Course",
+      "Yankee Stadium"
+    ],
+    "processing_order": 10
+  }
+]

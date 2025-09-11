@@ -1,0 +1,11 @@
+question_num,question,predicted_answer,search_success,confidence,iterations
+41,"What is the most recent location where Lucy Carter was observed in the story's chronological timeline?","Port Jefferson's historic theater",True,0.0,1
+42,"What is the most recent location where Scarlett Thomas was observed in the story's chronological timeline?","High Line",True,0.0,1
+43,"What is the most recent location where Zoe Brown was observed in the story's chronological timeline?","Long Beach Boardwalk",True,0.0,1
+44,"List all locations visited by Carter Stewart in chronological order according to the story's timeline.","None",False,0.0,5
+45,"List all locations visited by Lucy Carter in chronological order according to the story's timeline.","None",False,0.0,5
+46,"List all locations visited by Scarlett Thomas in chronological order according to the story's timeline.","None",False,0.0,5
+47,"List all locations visited by Zoe Brown in chronological order according to the story's timeline.","None",False,0.0,5
+48,"Provide a chronological list of all dates when Carter Stewart was observed, from earliest to latest in the story's timeline.","[""March 23, 2024"", ""October 13, 2024"", ""September 03, 2026""]",True,0.0,1
+49,"Provide a chronological list of all dates when Lucy Carter was observed, from earliest to latest in the story's timeline.","[""March 23, 2024"", ""September 22, 2026"", ""November 13, 2026""]",True,0.0,1
+50,"Provide a chronological list of all dates when Scarlett Thomas was observed, from earliest to latest in the story's timeline.","[""March 23, 2024"", ""June 14, 2025"", ""November 13, 2026""]",True,0.0,1

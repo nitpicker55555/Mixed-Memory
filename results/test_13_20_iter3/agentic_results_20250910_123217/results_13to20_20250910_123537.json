@@ -1,0 +1,232 @@
+[
+  {
+    "question": "Recall all events related to Carnival. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": "[\"October 13, 2024\"]",
+    "gpt_answer_result": {
+      "final_answer": "[\"October 13, 2024\"]",
+      "confidence_score": 0.0,
+      "reasoning": [
+        "The query specifically searched for events with the type 'Carnival' and returned one distinct date, which matches the sample provided."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "a876890f-f2e5-44df-ac7b-cb069bbeea67",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.event_type = 'Carnival' RETURN DISTINCT e.date ORDER BY e.date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 13,
+    "expected_answer": [
+      "October 13, 2024"
+    ],
+    "processing_order": 1
+  },
+  {
+    "question": "Recall all events related to Environmental Summit. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": "[\"September 03, 2026\"]",
+    "gpt_answer_result": {
+      "final_answer": "[\"September 03, 2026\"]",
+      "confidence_score": 0.0,
+      "reasoning": [
+        "The query results indicate that there is only one event related to the 'Environmental Summit', which occurred on September 03, 2026. The search context and relevant nodes confirm this date as the only one associated with the Environmental Summit."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "bf701700-5fcb-4d4c-8b39-c043cf756a38",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Environmental Summit' RETURN DISTINCT e.date ORDER BY e.date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 14,
+    "expected_answer": [
+      "September 03, 2026"
+    ],
+    "processing_order": 2
+  },
+  {
+    "question": "Recall all events related to Farmers Market. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": "[\"July 13, 2024\"]",
+    "gpt_answer_result": {
+      "final_answer": "[\"July 13, 2024\"]",
+      "confidence_score": 0.0,
+      "reasoning": [
+        "The query successfully retrieved the date associated with the Farmers Market event, which is July 13, 2024. The result is consistent with the provided data, where multiple events related to the Farmers Market occurred on this date."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "6e929609-ee5a-462f-8d66-74bdbb03741d",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.event_type = 'Farmers Market' RETURN DISTINCT e.date ORDER BY e.date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 15,
+    "expected_answer": [
+      "July 13, 2024"
+    ],
+    "processing_order": 3
+  },
+  {
+    "question": "Recall all events related to Boat Show. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "cc5592a3-6c93-4534-a1c5-eb7701679c83",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Boat Show' RETURN DISTINCT e.date ORDER BY e.date",
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Boat Show' RETURN DISTINCT e.date ORDER BY e.date",
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Boat Show' RETURN DISTINCT e.date ORDER BY e.date",
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Boat Show' OR e.description CONTAINS 'Boat Show' RETURN DISTINCT e.date ORDER BY e.date",
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Boat Show' OR e.description CONTAINS 'Boat Show' RETURN DISTINCT e.date ORDER BY e.date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 16,
+    "expected_answer": [],
+    "processing_order": 4
+  },
+  {
+    "question": "Recall all events related to Book Signing Event. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "83cfc8e3-76cb-4bf1-bb93-d3cb98c27170",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.event_type = 'Book Signing Event' RETURN DISTINCT e.date ORDER BY e.date",
+        "MATCH (e:Event) WHERE e.event_type = 'Book Signing Event' RETURN DISTINCT e.date ORDER BY e.date",
+        "MATCH (e:Event) WHERE e.event_type = 'Book Signing Event' RETURN DISTINCT e.date ORDER BY e.date",
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Book Signing Event' RETURN DISTINCT e.date ORDER BY e.date",
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Book Signing' RETURN DISTINCT e.date ORDER BY e.date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 17,
+    "expected_answer": [],
+    "processing_order": 5
+  },
+  {
+    "question": "Recall all events related to Charity Gala. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "1618b9ca-cc1c-4639-ab8d-ed6bbd35eee6",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.name = 'Charity Gala' RETURN DISTINCT e.date ORDER BY e.date",
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Charity Gala' RETURN DISTINCT e.date ORDER BY e.date",
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Charity Gala' OR e.description CONTAINS 'Charity Gala' RETURN DISTINCT e.date ORDER BY e.date",
+        "MATCH (e:Event) WHERE e.name = 'Charity Gala' RETURN DISTINCT e.date ORDER BY e.date",
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Charity Gala' RETURN DISTINCT e.date ORDER BY e.date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 18,
+    "expected_answer": [],
+    "processing_order": 6
+  },
+  {
+    "question": "Recall all events related to Laser Tag Tournament. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "af4ac562-d93b-4929-9748-80290f71c0e0",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.name = 'Laser Tag Tournament' RETURN DISTINCT e.date",
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Laser Tag Tournament' RETURN DISTINCT e.date",
+        "MATCH (e:Event) WHERE e.name = 'Laser Tag Tournament' RETURN DISTINCT e.date",
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Laser Tag Tournament' RETURN DISTINCT e.date",
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Laser Tag Tournament' RETURN DISTINCT e.date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 19,
+    "expected_answer": [],
+    "processing_order": 7
+  },
+  {
+    "question": "Recall all events related to Robotics Competition. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query",
+        "No results returned from query"
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "a695c0aa-dedc-42e6-98b9-588aae5c84c8",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.name = 'Robotics Competition' RETURN DISTINCT e.date ORDER BY e.date",
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Robotics Competition' RETURN DISTINCT e.date ORDER BY e.date",
+        "MATCH (e:Event) WHERE e.event_type = 'Robotics Competition' RETURN DISTINCT e.date ORDER BY e.date",
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Robotics Competition' OR e.event_type = 'Robotics Competition' RETURN DISTINCT e.date ORDER BY e.date",
+        "MATCH (e:Event) WHERE e.name CONTAINS 'Robotics Competition' OR e.event_type CONTAINS 'Robotics Competition' RETURN DISTINCT e.date ORDER BY e.date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 20,
+    "expected_answer": [],
+    "processing_order": 8
+  }
+]

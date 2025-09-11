@@ -1,0 +1,53 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-09 22:41:27
+Question Range: 6-10
+Total Questions Processed: 5
+Successful Searches: 5 (100.0%)
+Questions with Answers: 5 (100.0%)
+Average Iterations per Question: 1.0
+
+DETAILED RESULTS:
+------------------------------
+
+Question 6:
+  Text: Reflect on events related to Archery Tournament. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Hazel Lewis']
+  Predicted: Hazel Lewis
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 7:
+  Text: Reflect on events related to Astronomy Night. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Zoe Brown']
+  Predicted: Zoe Brown
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 8:
+  Text: Reflect on events related to Carnival. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Carter Stewart']
+  Predicted: Carter Stewart
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 9:
+  Text: Reflect on events related to Environmental Summit. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Carter Stewart']
+  Predicted: Carter Stewart
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 10:
+  Text: Reflect on events related to Farmers Market. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Nora Ramos']
+  Predicted: The final answer based on the results is: ['Nora Ramos']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+

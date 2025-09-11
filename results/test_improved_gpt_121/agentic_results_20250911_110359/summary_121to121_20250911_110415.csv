@@ -1,0 +1,2 @@
+question_num,question,predicted_answer,search_success,confidence,iterations
+121,"Reflect on all events involving Chloe Castillo. Provide a list of all dates when these events occurred, without describing the events.","['February 27, 2026']",True,0.0,1

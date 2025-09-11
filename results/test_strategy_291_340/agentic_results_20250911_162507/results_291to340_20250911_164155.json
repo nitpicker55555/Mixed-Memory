@@ -1,0 +1,1518 @@
+[
+  {
+    "question": "Recall all the events that occurred on January 01, 2026. Without describing the events, list all the unique locations where these events took place.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "ffb764cf-33c9-4f22-8708-4dbc85b7cb67",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.date = 'January 01, 2026' RETURN DISTINCT e.location AS location",
+        "MATCH (e:Event) WHERE e.date = 'January 01, 2026' RETURN DISTINCT e.location AS location",
+        "MATCH (e:Event) WHERE e.date = 'January 01, 2026' RETURN DISTINCT e.location AS location",
+        "MATCH (e:Event) WHERE e.date = 'January 01, 2026' RETURN DISTINCT e.location AS location",
+        "MATCH (e:Event) WHERE e.date = 'January 01, 2026' RETURN DISTINCT e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 291,
+    "expected_answer": [],
+    "processing_order": 1
+  },
+  {
+    "question": "Recall all the events that occurred on January 24, 2025. Without describing the events, list all the unique locations where these events took place.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "b4c4a5f0-039a-4ebb-bffe-3aa99d603433",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.date = 'January 24, 2025' RETURN DISTINCT e.location AS location",
+        "MATCH (e:Event) WHERE e.date = 'January 24, 2025' RETURN DISTINCT e.location AS location",
+        "MATCH (e:Event) WHERE e.date = 'January 24, 2025' RETURN DISTINCT e.location AS location",
+        "MATCH (e:Event) WHERE e.date = 'January 24, 2025' RETURN DISTINCT e.location AS location",
+        "MATCH (e:Event) WHERE e.date = 'January 24, 2025' RETURN DISTINCT e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 292,
+    "expected_answer": [],
+    "processing_order": 2
+  },
+  {
+    "question": "Recall all the events that occurred on July 02, 2024. Without describing the events, list all the unique locations where these events took place.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "9f88c616-6b40-4820-a4e0-31c679169cd3",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.date = 'July 02, 2024' RETURN DISTINCT e.location AS location",
+        "MATCH (e:Event) WHERE e.date = 'July 02, 2024' RETURN DISTINCT e.location AS location",
+        "MATCH (e:Event) WHERE e.date = 'July 02, 2024' RETURN DISTINCT e.location AS location",
+        "MATCH (e:Event) WHERE e.date = 'July 02, 2024' RETURN DISTINCT e.location AS location",
+        "MATCH (e:Event) WHERE e.date = 'July 02, 2024' RETURN DISTINCT e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 293,
+    "expected_answer": [],
+    "processing_order": 3
+  },
+  {
+    "question": "Consider all events that happened on August 12, 2025. Provide a list of all protagonists involved in any of these events, without describing the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "2f86220e-e124-4908-97b7-e85753da9aa1",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.date = 'August 12, 2025' RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE e.date = 'August 12, 2025' RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE e.date = 'August 12, 2025' RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE e.date = 'August 12, 2025' RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE e.date = 'August 12, 2025' RETURN e.participants AS participants"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 294,
+    "expected_answer": [],
+    "processing_order": 4
+  },
+  {
+    "question": "Consider all events that happened on December 04, 2026. Provide a list of all protagonists involved in any of these events, without describing the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "1dcd23ba-9998-418c-8e49-924d898da7ad",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.date = 'December 04, 2026' RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE e.date = 'December 04, 2026' RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE e.date = 'December 04, 2026' RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE e.date = 'December 04, 2026' RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE e.date = 'December 04, 2026' RETURN e.participants AS participants"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 295,
+    "expected_answer": [],
+    "processing_order": 5
+  },
+  {
+    "question": "Consider all events that happened on January 01, 2026. Provide a list of all protagonists involved in any of these events, without describing the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "c9c3ccca-9321-4d9b-b412-fe8ab62627b9",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.date = 'January 01, 2026' RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE e.date = 'January 01, 2026' RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE e.date = 'January 01, 2026' RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE e.date = 'January 01, 2026' RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE e.date = 'January 01, 2026' RETURN e.participants AS participants"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 296,
+    "expected_answer": [],
+    "processing_order": 6
+  },
+  {
+    "question": "Consider all events that happened on January 24, 2025. Provide a list of all protagonists involved in any of these events, without describing the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "aa9aa03a-84ee-4078-ac7f-930384563ed0",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.date = 'January 24, 2025' RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE e.date = 'January 24, 2025' RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE e.date = 'January 24, 2025' RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE e.date = 'January 24, 2025' RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE e.date = 'January 24, 2025' RETURN e.participants AS participants"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 297,
+    "expected_answer": [],
+    "processing_order": 7
+  },
+  {
+    "question": "Consider all events that happened on July 02, 2024. Provide a list of all protagonists involved in any of these events, without describing the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "bdf63937-14c7-4eb8-8601-538f1cb888c7",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.date = 'July 02, 2024' RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE e.date = 'July 02, 2024' RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE e.date = 'July 02, 2024' RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE e.date = 'July 02, 2024' RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE e.date = 'July 02, 2024' RETURN e.participants AS protagonist"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 298,
+    "expected_answer": [],
+    "processing_order": 8
+  },
+  {
+    "question": "Think about the events involving Trivia Contest on August 12, 2025. Provide a list of all protagonists involved in these events, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "1e798039-cd1e-4e89-9979-45529ab61551",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.date = 'August 12, 2025' AND toLower(e.event_type) = toLower($kw) RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND (toLower(e.event_type) = toLower(trim($kw)) OR toLower(e.name) CONTAINS toLower(trim($kw)) OR toLower(e.description) CONTAINS toLower(trim($kw))) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN e.participants AS protagonist"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 299,
+    "expected_answer": [],
+    "processing_order": 9
+  },
+  {
+    "question": "Think about the events involving Charity Gala on December 04, 2026. Provide a list of all protagonists involved in these events, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "29b9b263-c331-492f-948b-97a154cde3f1",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.event_type = $kw AND ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE e.date = 'December 04, 2026' AND (toLower(e.event_type) = toLower($kw) OR toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) AND e.date = 'December 04, 2026' RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN e.participants AS protagonist"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 300,
+    "expected_answer": [],
+    "processing_order": 10
+  },
+  {
+    "question": "Think about the events involving Farmers Market on December 26, 2026. Provide a list of all protagonists involved in these events, without describing the events.",
+    "predicted_answer": [
+      "Nora Ramos"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "Nora Ramos"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "7da4527c-c9f9-484d-8978-b8a302f7564d",
+      "total_iterations": 3,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.date = 'December 26, 2026' AND toLower(trim(e.event_type)) = toLower(trim($kw)) RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE e.date = 'December 26, 2026' AND (toLower(e.event_type) = toLower($kw) OR toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE e.event_type CONTAINS toLower($kw) OR e.name CONTAINS toLower($kw) OR e.description CONTAINS toLower($kw) RETURN e.participants AS protagonist"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 301,
+    "expected_answer": [],
+    "processing_order": 11
+  },
+  {
+    "question": "Think about the events involving Roller Disco Night on January 01, 2026. Provide a list of all protagonists involved in these events, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "b65cfd37-b5f6-4217-9586-6ca1643093dd",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.date = 'January 01, 2026' AND toLower(e.event_type) = toLower($kw) RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE e.date = 'January 01, 2026' AND (toLower(e.event_type) = toLower($kw) OR toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS 'roller disco night' RETURN e.participants AS protagonist"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 302,
+    "expected_answer": [],
+    "processing_order": 12
+  },
+  {
+    "question": "Think about the events involving Boat Show on January 24, 2025. Provide a list of all protagonists involved in these events, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "81489c89-6b9d-4b8e-803b-b04124480bc3",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.date = 'January 24, 2025' AND toLower(trim(e.event_type)) = toLower(trim($kw)) RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE e.date = 'January 24, 2025' AND (toLower(e.event_type) = toLower($kw) OR toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE e.date = 'January 24, 2025' AND (toLower(e.event_type) = toLower($kw) OR toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS 'boat show' OR toLower(e.name) CONTAINS 'boat show' OR toLower(e.description) CONTAINS 'boat show' RETURN e.participants AS protagonist"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 303,
+    "expected_answer": [],
+    "processing_order": 13
+  },
+  {
+    "question": "Recall the events related to Trivia Contest that occurred on August 12, 2025. List all the locations where these events took place, without describing the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "c373e3d5-fbd3-4d31-acee-ddc2cf134090",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) AND e.date = 'August 12, 2025' RETURN e.location AS location",
+        "MATCH (e:Event) WHERE e.date = 'August 12, 2025' AND (toLower(e.event_type) = toLower($kw) OR toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) RETURN e.location AS location",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN e.location AS location",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN e.location AS location",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS 'trivia contest that occurred on august' RETURN e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 304,
+    "expected_answer": [],
+    "processing_order": 14
+  },
+  {
+    "question": "Recall the events related to Charity Gala that occurred on December 04, 2026. List all the locations where these events took place, without describing the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "e9ff42fb-a4cc-47f8-bb02-fc44de0e0d9a",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.event_type = $kw AND e.date = 'December 04, 2026' RETURN e.location AS location",
+        "MATCH (e:Event) WHERE e.date = 'December 04, 2026' AND (toLower(e.event_type) = toLower($kw) OR toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) RETURN e.location AS location",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN e.location AS location",
+        "MATCH (e:Event) WHERE toLower(e.date) = toLower('December 04, 2026') AND (toLower(e.name) CONTAINS toLower('Charity Gala') OR toLower(e.description) CONTAINS toLower('Charity Gala')) RETURN e.location AS location",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS 'charity gala that occurred on december' RETURN e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 305,
+    "expected_answer": [],
+    "processing_order": 15
+  },
+  {
+    "question": "Recall the events related to Farmers Market that occurred on December 26, 2026. List all the locations where these events took place, without describing the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "0429b800-8116-4c1e-8bb0-ccff75b1c0c9",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.date = 'December 26, 2026' AND toLower(trim(e.event_type)) = toLower(trim($kw)) RETURN e.location AS location",
+        "MATCH (e:Event) WHERE e.date = 'December 26, 2026' AND (toLower(e.event_type) = toLower($kw) OR toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) RETURN e.location AS location",
+        "MATCH (e:Event) WHERE e.date = 'December 26, 2026' AND (toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) RETURN e.location AS location",
+        "MATCH (e:Event) WHERE e.date = 'December 26, 2026' AND (toLower(e.event_type) CONTAINS toLower($kw) OR toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) RETURN e.location AS location",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS 'farmers market that occurred on december' RETURN e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 306,
+    "expected_answer": [],
+    "processing_order": 16
+  },
+  {
+    "question": "Recall the events related to Roller Disco Night that occurred on January 01, 2026. List all the locations where these events took place, without describing the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "50d0a4e7-7366-4681-9543-bccd5d3e908c",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.date = 'January 01, 2026' AND toLower(e.event_type) = toLower($kw) RETURN e.location AS location",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND (toLower(e.event_type) = toLower(trim($kw)) OR toLower(e.name) CONTAINS toLower(trim($kw)) OR toLower(e.description) CONTAINS toLower(trim($kw))) RETURN e.location AS location",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN e.location AS location",
+        "MATCH (e:Event) WHERE toLower(e.date) = toLower('January 01, 2026') AND (toLower(e.event_type) CONTAINS toLower('Roller Disco Night that occurred on January') OR toLower(e.name) CONTAINS toLower('Roller Disco Night that occurred on January') OR toLower(e.description) CONTAINS toLower('Roller Disco Night that occurred on January')) RETURN e.location AS location",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 307,
+    "expected_answer": [],
+    "processing_order": 17
+  },
+  {
+    "question": "Recall the events related to Boat Show that occurred on January 24, 2025. List all the locations where these events took place, without describing the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "Query generation error: LLM failed to return a valid JSON {query, params}."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "e19ba79f-24b8-488b-ab7d-b665a64abadb",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.date = 'January 24, 2025' AND toLower(e.event_type) = toLower($kw) RETURN e.name AS event, e.location AS location",
+        "MATCH (e:Event) WHERE e.date = 'January 24, 2025' AND (toLower(e.event_type) = toLower($kw) OR toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) RETURN e.name AS event, e.location AS location",
+        "MATCH (e:Event) WHERE toLower(e.date) = toLower('January 24, 2025') AND (toLower(e.name) CONTAINS toLower('Boat Show') OR toLower(e.description) CONTAINS toLower('Boat Show')) RETURN e.name AS event, e.location AS location",
+        "MATCH (e:Event) WHERE toLower(e.date) = toLower('January 24, 2025') AND (toLower(e.name) CONTAINS toLower('Boat Show') OR toLower(e.description) CONTAINS toLower('Boat Show')) RETURN e.name AS event, e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 308,
+    "expected_answer": [],
+    "processing_order": 18
+  },
+  {
+    "question": "Reflect on what Nova Rogers experienced on August 12, 2025. Describe all the key events they were involved in, focusing on what happened rather than where it occurred.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "082c3e73-6592-4266-8bae-d7a67079a5f8",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE e.date = 'August 12, 2025' RETURN e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 309,
+    "expected_answer": [],
+    "processing_order": 19
+  },
+  {
+    "question": "Reflect on what Nathan Lopez experienced on December 04, 2026. Describe all the key events they were involved in, focusing on what happened rather than where it occurred.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "b28819d4-7781-49d5-81c1-dd5e8c66f0e5",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS event, e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS event, e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS event, e.date AS date",
+        "MATCH (e:Event) WHERE e.date = 'December 04, 2026' RETURN e.name AS event, e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS event, e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 310,
+    "expected_answer": [],
+    "processing_order": 20
+  },
+  {
+    "question": "Reflect on what Chloe Castillo experienced on December 26, 2026. Describe all the key events they were involved in, focusing on what happened rather than where it occurred.",
+    "predicted_answer": [],
+    "gpt_answer_result": {
+      "final_answer": [],
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "dffe3b98-10b4-440d-be24-e4552eb7c539",
+      "total_iterations": 2,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND e.date = 'December 26, 2026' RETURN e.name AS event, e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS event, e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 311,
+    "expected_answer": [],
+    "processing_order": 21
+  },
+  {
+    "question": "Reflect on what Julian Cook experienced on February 27, 2026. Describe all the key events they were involved in, focusing on what happened rather than where it occurred.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "cf8d14df-0220-46fe-b3f2-8966d527568f",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS event, e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS event, e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS event, e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS event, e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS event, e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 312,
+    "expected_answer": [],
+    "processing_order": 22
+  },
+  {
+    "question": "Reflect on what Hazel Lewis experienced on January 01, 2026. Describe all the key events they were involved in, focusing on what happened rather than where it occurred.",
+    "predicted_answer": [],
+    "gpt_answer_result": {
+      "final_answer": [],
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "01e55c3c-e799-4856-9927-d572d77a375a",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS event, e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 313,
+    "expected_answer": [],
+    "processing_order": 23
+  },
+  {
+    "question": "Consider the events involving Nova Rogers on August 12, 2025. List all the locations where these events took place, without describing the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "7c47be55-cdb9-465c-bada-e778765b98e2",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND e.date = 'August 12, 2025' RETURN e.location AS location",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND e.date = 'August 12, 2025' RETURN e.location AS location",
+        "MATCH (e:Event) WHERE (e.event_type IS NULL OR e.event_type CONTAINS 'event') AND (ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person)))) RETURN e.location AS location",
+        "MATCH (e:Event) WHERE e.date = 'August 12, 2025' RETURN e.location AS location",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND e.date = 'August 12, 2025' RETURN e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 314,
+    "expected_answer": [],
+    "processing_order": 24
+  },
+  {
+    "question": "Consider the events involving Nathan Lopez on December 04, 2026. List all the locations where these events took place, without describing the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "709fa293-ddc5-43a2-a3a5-73d2a0ee7fee",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND e.date = 'December 04, 2026' RETURN e.location AS location",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND toLower(trim(e.date)) = toLower(trim('December 04, 2026')) RETURN e.location AS location",
+        "MATCH (e:Event) WHERE (e.event_type IS NULL) AND (toLower(e.date) = toLower('December 04, 2026')) AND (e.participants IS NOT NULL AND ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person)))) RETURN e.location AS location",
+        "MATCH (e:Event) WHERE e.date = 'December 04, 2026' RETURN e.location AS location",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND e.date = 'December 04, 2026' RETURN e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 315,
+    "expected_answer": [],
+    "processing_order": 25
+  },
+  {
+    "question": "Consider the events involving Chloe Castillo on December 26, 2026. List all the locations where these events took place, without describing the events themselves.",
+    "predicted_answer": [
+      "Trinity Church"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "Trinity Church"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "0ffa8dce-7b7c-4fa1-88d1-967235dd795e",
+      "total_iterations": 3,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND e.date = 'December 26, 2026' RETURN e.location AS location",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND e.date = 'December 26, 2026' RETURN e.location AS location",
+        "MATCH (e:Event) WHERE (ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person)))) OR (e.event_type CONTAINS 'Chloe Castillo') RETURN e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 316,
+    "expected_answer": [],
+    "processing_order": 26
+  },
+  {
+    "question": "Consider the events involving Julian Cook on February 27, 2026. List all the locations where these events took place, without describing the events themselves.",
+    "predicted_answer": [
+      "Trinity Church",
+      "One World Trade Center"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "Trinity Church",
+        "One World Trade Center"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "28026e8a-616c-4fc6-be44-df6e022a6bc2",
+      "total_iterations": 4,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND e.date = 'February 27, 2026' RETURN e.location AS location",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND e.date = 'February 27, 2026' RETURN e.location AS location",
+        "MATCH (e:Event) WHERE (e.event_type IS NULL OR e.event_type <> '') AND (ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person)))) RETURN e.location AS location",
+        "MATCH (e:Event) WHERE e.date = 'February 27, 2026' RETURN e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 317,
+    "expected_answer": [],
+    "processing_order": 27
+  },
+  {
+    "question": "Consider the events involving Hazel Lewis on January 01, 2026. List all the locations where these events took place, without describing the events themselves.",
+    "predicted_answer": [
+      "Queensboro Bridge"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "Queensboro Bridge"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "ba77030b-70f5-4574-be10-5bc2f42d3455",
+      "total_iterations": 3,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND e.date = 'January 01, 2026' RETURN e.location AS location",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND e.date = 'January 01, 2026' RETURN e.location AS location",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND (toLower(e.name) CONTAINS 'hazel' OR toLower(e.description) CONTAINS 'hazel') RETURN e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 318,
+    "expected_answer": [],
+    "processing_order": 28
+  },
+  {
+    "question": "Consider the events involving both Nova Rogers and Trivia Contest on August 12, 2025. List all the locations where these events took place, without describing the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "94e0c242-b701-46a5-a23a-fec7674be29e",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND toLower(trim(e.event_type)) = toLower(trim($kw)) RETURN e.location AS location",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND (toLower(e.event_type) CONTAINS toLower($kw) OR toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) RETURN e.location AS location",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN e.location AS location",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN DISTINCT e.location AS location",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN DISTINCT e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 319,
+    "expected_answer": [],
+    "processing_order": 29
+  },
+  {
+    "question": "Consider the events involving both Nathan Lopez and Charity Gala on December 04, 2026. List all the locations where these events took place, without describing the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "Query generation error: LLM failed to return a valid JSON {query, params}."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "a94b9513-d178-4c28-aed0-af55f19bce5a",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND toLower(e.event_type) = toLower(trim($kw)) RETURN e.location AS location",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND (toLower(e.event_type) = toLower($kw) OR toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) RETURN e.location AS location",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN e.location AS location",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 320,
+    "expected_answer": [],
+    "processing_order": 30
+  },
+  {
+    "question": "Consider the events involving both Chloe Castillo and Farmers Market on December 26, 2026. List all the locations where these events took place, without describing the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "72ec809a-82c5-4667-ae2d-d14b6c60e66c",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.date = 'December 26, 2026' AND ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND toLower(trim(e.event_type)) = toLower(trim($kw)) RETURN e.location AS location",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND (toLower(e.event_type) = toLower(trim($kw)) OR toLower(e.name) CONTAINS toLower(trim($kw)) OR toLower(e.description) CONTAINS toLower(trim($kw))) RETURN e.location AS location",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN e.location AS location",
+        "MATCH (e:Event) WHERE toLower(e.date) = toLower('December 26, 2026') AND (toLower(e.event_type) CONTAINS toLower('Farmers Market') OR toLower(e.name) CONTAINS toLower('Farmers Market') OR toLower(e.description) CONTAINS toLower('Farmers Market')) RETURN e.location AS location",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS 'farmers market on december' RETURN e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 321,
+    "expected_answer": [],
+    "processing_order": 31
+  },
+  {
+    "question": "Consider the events involving both Julian Cook and TED Talk on February 27, 2026. List all the locations where these events took place, without describing the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "58627fa8-7b91-474b-9d29-b57c6e1f11cd",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND toLower(e.event_type) = toLower(trim($kw)) RETURN e.location AS location",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND (toLower(e.event_type) = toLower(trim($kw)) OR toLower(e.name) CONTAINS toLower(trim($kw)) OR toLower(e.description) CONTAINS toLower(trim($kw))) RETURN e.location AS location",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN e.location AS location",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN DISTINCT e.location AS location",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 322,
+    "expected_answer": [],
+    "processing_order": 32
+  },
+  {
+    "question": "Consider the events involving both Hazel Lewis and Roller Disco Night on January 01, 2026. List all the locations where these events took place, without describing the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "f5a2c29c-b3a8-43a8-ba55-6a2c8a3eb39a",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND toLower(trim(e.event_type)) = toLower(trim($kw)) RETURN e.location AS location",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND (toLower(e.event_type) = toLower($kw) OR toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) RETURN e.location AS location",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN e.location AS location",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN e.location AS location",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 323,
+    "expected_answer": [],
+    "processing_order": 33
+  },
+  {
+    "question": "Think about what happened at Roosevelt Island on August 12, 2025. List all protagonists involved in any events at this time and place, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "3dea81ef-12da-4da9-9953-e576a7d4168b",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.date = 'August 12, 2025' AND ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE e.date = 'August 12, 2025' AND ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE e.location = 'Roosevelt Island' AND e.date = 'August 12, 2025' RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE e.location = 'Roosevelt Island' AND e.date = 'August 12, 2025' RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS 'roosevelt island' AND e.date = 'August 12, 2025' RETURN e.participants AS protagonist"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 324,
+    "expected_answer": [],
+    "processing_order": 34
+  },
+  {
+    "question": "Think about what happened at Vanderbilt Museum and Planetarium on December 04, 2026. List all protagonists involved in any events at this time and place, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "e0c5722a-5765-4187-ad96-22a275a15985",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.date = 'December 04, 2026' AND ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE e.location = $person AND e.date = 'December 04, 2026' RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE e.location = 'Vanderbilt Museum and Planetarium' AND e.date = 'December 04, 2026' RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE e.location = 'Vanderbilt Museum and Planetarium' AND e.date = 'December 04, 2026' RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS 'vanderbilt museum' AND e.date = 'December 04, 2026' RETURN e.participants AS protagonist"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 325,
+    "expected_answer": [],
+    "processing_order": 35
+  },
+  {
+    "question": "Think about what happened at Guggenheim Museum on December 26, 2026. List all protagonists involved in any events at this time and place, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "73ce0ec1-9204-4902-bd4e-3113ef5e7cce",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.location = $person AND e.date = 'December 26, 2026' RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE e.location = $person AND e.date = 'December 26, 2026' RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE e.location = 'Guggenheim Museum' AND e.date = 'December 26, 2026' RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE e.location = 'Guggenheim Museum' AND e.date = 'December 26, 2026' RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS 'guggenheim museum' AND toLower(e.date) = 'december 26, 2026' RETURN e.participants AS protagonist"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 326,
+    "expected_answer": [],
+    "processing_order": 36
+  },
+  {
+    "question": "Think about what happened at Brooklyn Museum on January 01, 2026. List all protagonists involved in any events at this time and place, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "86b457e1-9102-4172-a6a8-8b195c694b41",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.location = $person AND e.date = 'January 01, 2026' RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE e.location = $person AND e.date = 'January 01, 2026' RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE e.location = 'Brooklyn Museum' AND (toLower(e.date) = 'january 01, 2026') RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE e.location = $location AND e.date = 'January 01, 2026' RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS 'brooklyn museum' AND e.date = 'January 01, 2026' RETURN e.participants AS protagonist"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 327,
+    "expected_answer": [],
+    "processing_order": 37
+  },
+  {
+    "question": "Think about what happened at Fort Tryon Park on January 24, 2025. List all protagonists involved in any events at this time and place, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "bb54c51b-4c68-4bf2-9a0a-8de5b6f3e43b",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.date = 'January 24, 2025' AND e.location = 'Fort Tryon Park' RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE e.location = $person AND e.date = 'January 24, 2025' RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS toLower($person) AND (toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) AND e.date = 'January 24, 2025' RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE e.location = $location RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS 'fort tryon park' AND e.date = 'January 24, 2025' RETURN e.participants AS protagonist"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 328,
+    "expected_answer": [],
+    "processing_order": 38
+  },
+  {
+    "question": "Recall the key events that occurred at Roosevelt Island on August 12, 2025. Describe what happened, focusing on the actions or occurrences rather than who was involved.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "4038674d-a40d-4c01-be7e-05f3cd99972c",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.location = 'Roosevelt Island' AND e.date = 'August 12, 2025' RETURN e.date AS date, e.location AS location",
+        "MATCH (e:Event) WHERE e.location = $person RETURN e.date AS date, e.location AS location",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower($location) AND (toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) RETURN e.date AS date, e.location AS location",
+        "MATCH (e:Event) WHERE toLower(trim(e.location)) = toLower(trim('Roosevelt Island')) AND e.date = 'August 12, 2025' RETURN e.date AS date, e.location AS location",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS 'roosevelt island' RETURN e.date AS date, e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 329,
+    "expected_answer": [],
+    "processing_order": 39
+  },
+  {
+    "question": "Recall the key events that occurred at Vanderbilt Museum and Planetarium on December 04, 2026. Describe what happened, focusing on the actions or occurrences rather than who was involved.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "8418bf58-cd30-4fb2-82de-9a8a6a8212d9",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.location = $person RETURN e.name AS event, e.date AS date",
+        "MATCH (e:Event) WHERE e.location = 'Vanderbilt Museum and Planetarium' AND e.date = 'December 04, 2026' RETURN e.name AS event, e.date AS date",
+        "MATCH (e:Event) WHERE toLower(trim(e.location)) = toLower(trim($person)) AND (toLower(trim(e.name)) CONTAINS 'Vanderbilt' OR toLower(trim(e.description)) CONTAINS 'Vanderbilt') RETURN e.name AS event, e.date AS date",
+        "MATCH (e:Event) WHERE toLower(trim(e.location)) = toLower(trim('Vanderbilt Museum and Planetarium')) RETURN e.name AS event, e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS 'vanderbilt museum' RETURN e.name AS event, e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 330,
+    "expected_answer": [],
+    "processing_order": 40
+  },
+  {
+    "question": "Recall the key events that occurred at Guggenheim Museum on December 26, 2026. Describe what happened, focusing on the actions or occurrences rather than who was involved.",
+    "predicted_answer": [],
+    "gpt_answer_result": {
+      "final_answer": [],
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "949b938b-d1b1-4807-a9d4-baef6a11768c",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.location = $person RETURN e.name AS event, e.date AS date, e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 331,
+    "expected_answer": [],
+    "processing_order": 41
+  },
+  {
+    "question": "Recall the key events that occurred at Brooklyn Museum on January 01, 2026. Describe what happened, focusing on the actions or occurrences rather than who was involved.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "b901502f-e609-486b-b47a-3f4f4bbe8b68",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.location = $person AND e.date = 'January 01, 2026' RETURN e.name AS event, e.date AS date",
+        "MATCH (e:Event) WHERE e.location = $person RETURN e.name AS event, e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS toLower($person) RETURN e.name AS event, e.date AS date",
+        "MATCH (e:Event) WHERE toLower(trim(e.location)) = toLower(trim($location)) RETURN e.name AS event, e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS 'brooklyn museum' AND e.date = 'January 01, 2026' RETURN e.name AS event, e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 332,
+    "expected_answer": [],
+    "processing_order": 42
+  },
+  {
+    "question": "Recall the key events that occurred at Fort Tryon Park on January 24, 2025. Describe what happened, focusing on the actions or occurrences rather than who was involved.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "329a1c23-6f1f-4752-9eeb-e895071a15a9",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.location = $person RETURN e.date AS date",
+        "MATCH (e:Event) WHERE e.location = $person RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower($location) AND (toLower(e.name) CONTAINS 'fort tryon park' OR toLower(e.description) CONTAINS 'fort tryon park') RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower($location) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS 'fort tryon park' RETURN e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 333,
+    "expected_answer": [],
+    "processing_order": 43
+  },
+  {
+    "question": "Think about the events related to Trivia Contest that occurred at Roosevelt Island on August 12, 2025. List all protagonists involved in these events, without describing the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "fa293054-3a93-45bf-b450-38d3b94808ba",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND toLower(trim(e.event_type)) = toLower(trim($kw)) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND (toLower(e.event_type) = toLower($kw) OR toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower('Roosevelt Island') AND (toLower(e.name) CONTAINS toLower('Trivia Contest that occurred at Roosevelt Island on August') OR toLower(e.description) CONTAINS toLower('Trivia Contest that occurred at Roosevelt Island on August')) RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower('Roosevelt Island') AND (toLower(e.event_type) CONTAINS toLower('Trivia Contest') OR toLower(e.name) CONTAINS toLower('Trivia Contest') OR toLower(e.description) CONTAINS toLower('Trivia Contest')) RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS 'roosevelt island' AND (toLower(e.event_type) CONTAINS 'trivia contest that occurred at roosevelt island on august' OR toLower(e.name) CONTAINS 'trivia contest that occurred at roosevelt island on august' OR toLower(e.description) CONTAINS 'trivia contest that occurred at roosevelt island on august') RETURN e.participants AS protagonist"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 334,
+    "expected_answer": [],
+    "processing_order": 44
+  },
+  {
+    "question": "Think about the events related to Charity Gala that occurred at Vanderbilt Museum and Planetarium on December 04, 2026. List all protagonists involved in these events, without describing the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "142f4a76-9b14-4e18-84fa-01de05becb1c",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND toLower(e.event_type) = toLower(trim($kw)) RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND (toLower(e.event_type) = toLower($kw) OR toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower('Vanderbilt Museum and Planetarium') AND toLower(e.date) = toLower('December 04, 2026') AND (toLower(e.name) CONTAINS toLower('Charity Gala that occurred at Vanderbilt Museum and Planetarium on December') OR toLower(e.description) CONTAINS toLower('Charity Gala that occurred at Vanderbilt Museum and Planetarium on December')) RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower($location) AND (toLower(e.event_type) CONTAINS toLower($kw) OR toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS 'vanderbilt museum and planetarium' AND toLower(e.event_type) CONTAINS 'charity gala that occurred at vanderbilt museum and planetarium on december' RETURN e.participants AS participants"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 335,
+    "expected_answer": [],
+    "processing_order": 45
+  },
+  {
+    "question": "Think about the events related to Farmers Market that occurred at Guggenheim Museum on December 26, 2026. List all protagonists involved in these events, without describing the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "a22f2193-4274-4a5a-9d94-9b142b78745a",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.date = 'December 26, 2026' AND toLower(trim(e.event_type)) = toLower(trim($kw)) AND ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND (toLower(e.event_type) = toLower(trim($kw))) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower('Guggenheim Museum') AND toLower(e.date) = toLower('December 26, 2026') AND (toLower(e.name) CONTAINS toLower('Farmers Market that occurred at Guggenheim Museum on December') OR toLower(e.description) CONTAINS toLower('Farmers Market that occurred at Guggenheim Museum on December')) RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower('Guggenheim Museum') AND (toLower(e.name) CONTAINS toLower('Farmers Market') OR toLower(e.description) CONTAINS toLower('Farmers Market')) RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS 'guggenheim museum' AND (toLower(e.event_type) CONTAINS 'farmers market that occurred at guggenheim museum on december' OR toLower(e.name) CONTAINS 'farmers market that occurred at guggenheim museum on december' OR toLower(e.description) CONTAINS 'farmers market that occurred at guggenheim museum on december') RETURN e.participants AS protagonist"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 336,
+    "expected_answer": [],
+    "processing_order": 46
+  },
+  {
+    "question": "Think about the events related to Roller Disco Night that occurred at Brooklyn Museum on January 01, 2026. List all protagonists involved in these events, without describing the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "a89a1962-84ad-444c-afc9-5cbbffaec11c",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.date = 'January 01, 2026' AND toLower(e.event_type) = toLower($kw) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND (toLower(e.event_type) = toLower($kw) OR toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower('Brooklyn Museum') AND toLower(e.date) = toLower('January 01, 2026') AND (toLower(e.name) CONTAINS toLower('Roller Disco Night that occurred at Brooklyn Museum on January') OR toLower(e.description) CONTAINS toLower('Roller Disco Night that occurred at Brooklyn Museum on January')) RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower('Brooklyn Museum') AND (toLower(e.event_type) CONTAINS toLower('Roller Disco Night that occurred at Brooklyn Museum on January') OR toLower(e.name) CONTAINS toLower('Roller Disco Night that occurred at Brooklyn Museum on January') OR toLower(e.description) CONTAINS toLower('Roller Disco Night that occurred at Brooklyn Museum on January')) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS 'brooklyn museum' AND (toLower(e.event_type) CONTAINS 'roller disco night that occurred at brooklyn museum on january' OR toLower(e.name) CONTAINS 'roller disco night that occurred at brooklyn museum on january' OR toLower(e.description) CONTAINS 'roller disco night that occurred at brooklyn museum on january') RETURN e.participants AS protagonist"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 337,
+    "expected_answer": [],
+    "processing_order": 47
+  },
+  {
+    "question": "Think about the events related to Boat Show that occurred at Fort Tryon Park on January 24, 2025. List all protagonists involved in these events, without describing the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "893b78ac-e1ec-47d3-8366-b6c5a585b43f",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.date = 'January 24, 2025' AND toLower(e.location) = toLower('Fort Tryon Park') AND toLower(e.event_type) = toLower($kw) AND ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE e.date = 'January 24, 2025' AND toLower(e.event_type) CONTAINS toLower($kw) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower('Fort Tryon Park') AND (toLower(e.name) CONTAINS toLower('Boat Show that occurred at Fort Tryon Park on January') OR toLower(e.description) CONTAINS toLower('Boat Show that occurred at Fort Tryon Park on January')) RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower('Fort Tryon Park') AND (toLower(e.name) CONTAINS toLower('Boat Show') OR toLower(e.description) CONTAINS toLower('Boat Show')) RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS 'fort tryon park' AND (toLower(e.event_type) CONTAINS 'boat show that occurred at fort tryon park on january' OR toLower(e.name) CONTAINS 'boat show that occurred at fort tryon park on january' OR toLower(e.description) CONTAINS 'boat show that occurred at fort tryon park on january') RETURN e.participants AS protagonist"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 338,
+    "expected_answer": [],
+    "processing_order": 48
+  },
+  {
+    "question": "Recall what happened involving Nova Rogers at Roosevelt Island on August 12, 2025. Describe the key events or activities that occurred, focusing on what happened.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "Query generation error: LLM failed to return a valid JSON {query, params}."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "edc65058-b524-4bf6-9b1b-9ee56c52f136",
+      "total_iterations": 3,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS event, e.date AS date, e.location AS location",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS event, e.date AS date, e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 339,
+    "expected_answer": [],
+    "processing_order": 49
+  },
+  {
+    "question": "Recall what happened involving Nathan Lopez at Vanderbilt Museum and Planetarium on December 04, 2026. Describe the key events or activities that occurred, focusing on what happened.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "7ff2eaa5-767f-49df-ae15-fb3f241c4fa4",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS event, e.date AS date, e.location AS location",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS event, e.date AS date, e.location AS location",
+        "MATCH (e:Event) WHERE e.location = 'Vanderbilt Museum and Planetarium' AND (toLower(e.name) CONTAINS toLower('Nathan Lopez') OR toLower(e.description) CONTAINS toLower('Nathan Lopez')) RETURN e.name AS event, e.date AS date, e.location AS location",
+        "MATCH (e:Event) WHERE e.location = 'Vanderbilt Museum and Planetarium' RETURN e.name AS event, e.date AS date, e.location AS location",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS 'vanderbilt museum and planetarium' RETURN e.name AS event, e.date AS date, e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 340,
+    "expected_answer": [],
+    "processing_order": 50
+  }
+]

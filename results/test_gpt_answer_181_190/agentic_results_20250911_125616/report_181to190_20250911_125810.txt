@@ -1,0 +1,93 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-11 12:58:10
+Question Range: 181-190
+Total Questions Processed: 10
+Successful Searches: 5 (50.0%)
+Questions with Answers: 5 (50.0%)
+Average Iterations per Question: 3.0
+
+DETAILED RESULTS:
+------------------------------
+
+Question 181:
+  Text: Reflect on all events involving David Turner. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 182:
+  Text: Reflect on all events involving Ellie Garcia. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 183:
+  Text: Reflect on all events involving Jackson Hall. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 184:
+  Text: Reflect on all events involving Julian Cook. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 185:
+  Text: Reflect on all events involving Nathan Lopez. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 186:
+  Text: Think about Maya Smith's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.
+  Expected: ['Parkour Workshop', 'Tech Hackathon']
+  Predicted: ['Hackathon Day 1', 'Hackathon Mentoring', 'Hackathon Day 2', 'Hackathon Presentation', 'Parkour Fitness Class at Metropolitan Museum of Art']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 187:
+  Text: What is the most recent date Maya Smith was observed or mentioned in the story's chronology?
+  Expected: ['May 11, 2026']
+  Predicted: May 11, 2026
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 188:
+  Text: What was Maya Smith doing the last time they were observed in the story's timeline?
+  Expected: ['Parkour Workshop']
+  Predicted: Maya Smith organized a parkour fitness class at the Metropolitan Museum of Art, blending urban movement with art and history.
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 189:
+  Text: What is the most recent location where Maya Smith was observed in the story's chronological timeline?
+  Expected: ['Metropolitan Museum of Art']
+  Predicted: Metropolitan Museum of Art
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 190:
+  Text: Reflect on all events involving Maya Smith. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['February 27, 2026', 'May 11, 2026']
+  Predicted: ['February 27, 2026', 'May 11, 2026']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+

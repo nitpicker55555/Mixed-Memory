@@ -1,0 +1,93 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-11 13:46:08
+Question Range: 201-210
+Total Questions Processed: 10
+Successful Searches: 7 (70.0%)
+Questions with Answers: 7 (70.0%)
+Average Iterations per Question: 2.3
+
+DETAILED RESULTS:
+------------------------------
+
+Question 201:
+  Text: Consider the location Bethpage State Park. List all protagonists that have been involved in any events at this location, without mentioning the events themselves.
+  Expected: ['Zoe Brown']
+  Predicted: ['Zoe Brown']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 202:
+  Text: Consider the location Grand Central Terminal. List all protagonists that have been involved in any events at this location, without mentioning the events themselves.
+  Expected: ['Nora Ramos']
+  Predicted: ['Nora Ramos']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 203:
+  Text: Consider the location Guggenheim Museum. List all protagonists that have been involved in any events at this location, without mentioning the events themselves.
+  Expected: ['Lucy Carter']
+  Predicted: ['Lucy Carter']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 204:
+  Text: Consider the location High Line. List all protagonists that have been involved in any events at this location, without mentioning the events themselves.
+  Expected: ['Scarlett Thomas']
+  Predicted: ['Scarlett Thomas']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 205:
+  Text: Recall the various events that have taken place at Bethpage Black Course. Describe what happened during these events, focusing on the actions or occurrences rather than the timing or people involved.
+  Expected: ['Environmental Summit']
+  Predicted: ['Environmental Summit at Bethpage Black Course']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 206:
+  Text: Recall the various events that have taken place at Bethpage State Park. Describe what happened during these events, focusing on the actions or occurrences rather than the timing or people involved.
+  Expected: ['Theater Performance']
+  Predicted: ['Theater Performance', 'Discussion', 'Performance', 'Discussion', 'Performance', 'Performance']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 2
+
+Question 207:
+  Text: Recall the various events that have taken place at Grand Central Terminal. Describe what happened during these events, focusing on the actions or occurrences rather than the timing or people involved.
+  Expected: ['Farmers Market']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 208:
+  Text: Recall the various events that have taken place at Guggenheim Museum. Describe what happened during these events, focusing on the actions or occurrences rather than the timing or people involved.
+  Expected: ['Parkour Workshop']
+  Predicted: ['Workshop', 'Film Screening', 'Discussion']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 209:
+  Text: Recall the various events that have taken place at High Line. Describe what happened during these events, focusing on the actions or occurrences rather than the timing or people involved.
+  Expected: ['Photography Exhibition']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 210:
+  Text: Recall all events related to Environmental Summit that occurred at Bethpage Black Course. Provide a list of all dates when these events took place, without describing the events.
+  Expected: ['September 03, 2026']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+

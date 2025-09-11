@@ -1,0 +1,35 @@
+[
+  {
+    "question": "Think about the events involving Theater Performance at Bethpage State Park. List all protagonists involved in these events, without mentioning the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "44abb3c6-b1fc-4744-8508-9b291c4c86b1",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND toLower(e.event_type) = toLower(trim($kw)) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND (toLower(e.event_type) CONTAINS toLower($kw) OR toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND (toLower(e.event_type) CONTAINS toLower($kw) OR toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND (toLower(e.event_type) CONTAINS toLower($kw) OR toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND (toLower(e.event_type) CONTAINS toLower($kw) OR toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) RETURN e.participants AS participants"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 216,
+    "expected_answer": [
+      "Zoe Brown"
+    ],
+    "processing_order": 1
+  }
+]

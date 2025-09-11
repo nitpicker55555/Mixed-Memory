@@ -1,0 +1,93 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-10 17:36:40
+Question Range: 81-90
+Total Questions Processed: 10
+Successful Searches: 4 (40.0%)
+Questions with Answers: 4 (40.0%)
+Average Iterations per Question: 3.5
+
+DETAILED RESULTS:
+------------------------------
+
+Question 81:
+  Text: Reflect on the experiences of Carter Stewart related to Carnival. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: ['Snug Harbor Cultural Center']
+  Predicted: ['Snug Harbor Cultural Center']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 82:
+  Text: Reflect on the experiences of Carter Stewart related to Environmental Summit. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: ['Bethpage Black Course']
+  Predicted: ['Bethpage Black Course']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 2
+
+Question 83:
+  Text: Reflect on the experiences of Carter Stewart related to Storytelling Festival. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: ['Yankee Stadium']
+  Predicted: ['Yankee Stadium']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 84:
+  Text: Reflect on the experiences of Chloe Castillo related to TED Talk. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: ['Trinity Church']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 85:
+  Text: Reflect on the experiences of Hazel Lewis related to Archery Tournament. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: ['Queensboro Bridge']
+  Predicted: ['Queensboro Bridge']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 86:
+  Text: Reflect on the experiences of Carter Stewart related to Scientific Conference. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 87:
+  Text: Reflect on the experiences of Chloe Castillo related to Carnival. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 88:
+  Text: Reflect on the experiences of Chloe Castillo related to Farmers Market. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 89:
+  Text: Reflect on the experiences of Chloe Castillo related to Parkour Workshop. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 90:
+  Text: Reflect on the experiences of David Turner related to Robotics Competition. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+

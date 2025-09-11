@@ -1,0 +1,93 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-10 12:49:43
+Question Range: 31-40
+Total Questions Processed: 10
+Successful Searches: 10 (100.0%)
+Questions with Answers: 10 (100.0%)
+Average Iterations per Question: 1.1
+
+DETAILED RESULTS:
+------------------------------
+
+Question 31:
+  Text: Reflect on events related to Parkour Workshop. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Maya Smith', 'Lucy Carter']
+  Predicted: ["Lucy Carter"]
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 32:
+  Text: Reflect on events related to Photography Exhibition. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Scarlett Thomas', 'Samuel Parker']
+  Predicted: ["Samuel Parker", "Scarlett Thomas"]
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 33:
+  Text: Recall all events related to Parkour Workshop. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['March 23, 2024', 'May 11, 2026']
+  Predicted: ["March 23, 2024"]
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 34:
+  Text: Recall all events related to Photography Exhibition. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['September 03, 2026', 'November 13, 2026']
+  Predicted: ["September 03, 2026"]
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 35:
+  Text: Consider all events involving Parkour Workshop. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Guggenheim Museum', 'Metropolitan Museum of Art']
+  Predicted: ["Guggenheim Museum"]
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 36:
+  Text: Consider all events involving Photography Exhibition. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Trinity Church', 'High Line']
+  Predicted: ["Trinity Church"]
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 2
+
+Question 37:
+  Text: Consider all events involving Theater Performance. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Bethpage State Park', 'Lincoln Center', 'Port Jefferson']
+  Predicted: ["Bethpage State Park", "Port Jefferson's historic theater"]
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 38:
+  Text: Reflect on events related to Theater Performance. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Scarlett Thomas', 'Lucy Carter', 'Zoe Brown']
+  Predicted: ["Zoe Brown", "Lucy Carter"]
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 39:
+  Text: Recall all events related to Theater Performance. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['December 26, 2026', 'March 23, 2024', 'September 22, 2026']
+  Predicted: ["September 22, 2026", "December 26, 2026"]
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 40:
+  Text: What is the most recent location where Carter Stewart was observed in the story's chronological timeline?
+  Expected: ['Bethpage Black Course']
+  Predicted: Bethpage Black Course
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+

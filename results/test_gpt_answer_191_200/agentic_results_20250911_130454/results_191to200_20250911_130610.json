@@ -1,0 +1,292 @@
+[
+  {
+    "question": "Provide a chronological list of all dates when Maya Smith was observed, from earliest to latest in the story's timeline.",
+    "predicted_answer": [
+      "February 27, 2026",
+      "May 11, 2026"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "February 27, 2026",
+        "May 11, 2026"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "a3bba2b9-7f9f-4816-a642-0be1993290ad",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.date AS date, e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 191,
+    "expected_answer": [
+      "February 27, 2026",
+      "May 11, 2026"
+    ],
+    "processing_order": 1
+  },
+  {
+    "question": "Consider all events that Maya Smith has been involved in. List all the locations where these events took place, without mentioning the events themselves.",
+    "predicted_answer": [
+      "One World Trade Center",
+      "Metropolitan Museum of Art"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "One World Trade Center",
+        "Metropolitan Museum of Art"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "074f5ec4-60a5-470c-a8f0-712fd8d3f159",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 192,
+    "expected_answer": [
+      "One World Trade Center",
+      "Metropolitan Museum of Art"
+    ],
+    "processing_order": 2
+  },
+  {
+    "question": "List all locations visited by Maya Smith in chronological order according to the story's timeline.",
+    "predicted_answer": [
+      "One World Trade Center",
+      "Metropolitan Museum of Art"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "One World Trade Center",
+        "Metropolitan Museum of Art"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "e0e45fac-8066-48d0-a3a1-a131592a36fe",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.location AS location, e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 193,
+    "expected_answer": [
+      "One World Trade Center",
+      "Metropolitan Museum of Art"
+    ],
+    "processing_order": 3
+  },
+  {
+    "question": "Enumerate all activities that Maya Smith has been involved in, ordered from earliest to latest in the story's chronology.",
+    "predicted_answer": [
+      "Hackathon Day 1",
+      "Hackathon Mentoring",
+      "Hackathon Day 2",
+      "Hackathon Presentation",
+      "Parkour Fitness Class at Metropolitan Museum of Art"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "Hackathon Day 1",
+        "Hackathon Mentoring",
+        "Hackathon Day 2",
+        "Hackathon Presentation",
+        "Parkour Fitness Class at Metropolitan Museum of Art"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "0652d5b1-5322-437f-ac5f-650b5121357b",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS activity, e.date AS date, e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 194,
+    "expected_answer": [
+      "Tech Hackathon",
+      "Parkour Workshop"
+    ],
+    "processing_order": 4
+  },
+  {
+    "question": "Think about all events that have occurred at Bethpage Black Course. Provide a list of all dates when these events took place, without describing the events.",
+    "predicted_answer": [
+      "September 03, 2026"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "September 03, 2026"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "60e89f50-99f6-419f-b470-b7316ba8ce5d",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.location = $person RETURN e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 195,
+    "expected_answer": [
+      "September 03, 2026"
+    ],
+    "processing_order": 5
+  },
+  {
+    "question": "Think about all events that have occurred at Bethpage State Park. Provide a list of all dates when these events took place, without describing the events.",
+    "predicted_answer": [
+      "December 25, 2026",
+      "December 26, 2026"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "December 25, 2026",
+        "December 26, 2026"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "aee2a950-84a0-4969-acb3-aa946f581bc4",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.location = $person RETURN e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 196,
+    "expected_answer": [
+      "December 26, 2026"
+    ],
+    "processing_order": 6
+  },
+  {
+    "question": "Think about all events that have occurred at Grand Central Terminal. Provide a list of all dates when these events took place, without describing the events.",
+    "predicted_answer": [
+      "July 13, 2024"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "July 13, 2024"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "973db69e-ab84-4a5c-b16f-14a6194026dc",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.location = $person RETURN e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 197,
+    "expected_answer": [
+      "July 13, 2024"
+    ],
+    "processing_order": 7
+  },
+  {
+    "question": "Think about all events that have occurred at Guggenheim Museum. Provide a list of all dates when these events took place, without describing the events.",
+    "predicted_answer": [
+      "March 23, 2024"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "March 23, 2024"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "45c73642-8da2-4b0b-adbf-617430f11a68",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.location = $person RETURN e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 198,
+    "expected_answer": [
+      "March 23, 2024"
+    ],
+    "processing_order": 8
+  },
+  {
+    "question": "Think about all events that have occurred at High Line. Provide a list of all dates when these events took place, without describing the events.",
+    "predicted_answer": [
+      "November 13, 2026"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "November 13, 2026"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "a94416da-a803-4f88-a873-9172a8c3d4f4",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.location = $person RETURN e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 199,
+    "expected_answer": [
+      "November 13, 2026"
+    ],
+    "processing_order": 9
+  },
+  {
+    "question": "Consider the location Bethpage Black Course. List all protagonists that have been involved in any events at this location, without mentioning the events themselves.",
+    "predicted_answer": [
+      "Carter Stewart"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "Carter Stewart"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "8061b35b-c8ea-4cd4-b794-a57f2b8dea45",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.location = $location RETURN DISTINCT e.participants AS protagonist"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 200,
+    "expected_answer": [
+      "Carter Stewart"
+    ],
+    "processing_order": 10
+  }
+]

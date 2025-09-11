@@ -1,0 +1,307 @@
+[
+  {
+    "question": "Consider the location Bethpage State Park. List all protagonists that have been involved in any events at this location, without mentioning the events themselves.",
+    "predicted_answer": [
+      "Zoe Brown"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "Zoe Brown"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "46f145a2-f34a-4fe4-b4f9-c06c461ef85d",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.location = $person RETURN DISTINCT e.participants AS protagonist"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 201,
+    "expected_answer": [
+      "Zoe Brown"
+    ],
+    "processing_order": 1
+  },
+  {
+    "question": "Consider the location Grand Central Terminal. List all protagonists that have been involved in any events at this location, without mentioning the events themselves.",
+    "predicted_answer": [
+      "Nora Ramos"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "Nora Ramos"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "733d89e0-9eb9-436a-af9d-345d380296c1",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.location = $location RETURN DISTINCT e.participants AS protagonist"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 202,
+    "expected_answer": [
+      "Nora Ramos"
+    ],
+    "processing_order": 2
+  },
+  {
+    "question": "Consider the location Guggenheim Museum. List all protagonists that have been involved in any events at this location, without mentioning the events themselves.",
+    "predicted_answer": [
+      "Lucy Carter"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "Lucy Carter"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "685cb9c1-ebea-4ead-928d-51689aaef282",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.location = $location RETURN DISTINCT e.participants AS protagonist"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 203,
+    "expected_answer": [
+      "Lucy Carter"
+    ],
+    "processing_order": 3
+  },
+  {
+    "question": "Consider the location High Line. List all protagonists that have been involved in any events at this location, without mentioning the events themselves.",
+    "predicted_answer": [
+      "Scarlett Thomas"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "Scarlett Thomas"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "0c265e87-a68a-41ba-917a-e00b12ad187f",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.location = $location RETURN DISTINCT e.participants AS protagonist"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 204,
+    "expected_answer": [
+      "Scarlett Thomas"
+    ],
+    "processing_order": 4
+  },
+  {
+    "question": "Recall the various events that have taken place at Bethpage Black Course. Describe what happened during these events, focusing on the actions or occurrences rather than the timing or people involved.",
+    "predicted_answer": [
+      "Environmental Summit at Bethpage Black Course"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "Environmental Summit at Bethpage Black Course"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "b82cc7a1-3e63-48d5-860b-5ca5928fa0b7",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.location = 'Bethpage Black Course' RETURN e.date AS date, e.location AS location, e.name AS name, e.event_type AS event_type"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 205,
+    "expected_answer": [
+      "Environmental Summit"
+    ],
+    "processing_order": 5
+  },
+  {
+    "question": "Recall the various events that have taken place at Bethpage State Park. Describe what happened during these events, focusing on the actions or occurrences rather than the timing or people involved.",
+    "predicted_answer": [
+      "Theater Performance",
+      "Discussion",
+      "Performance",
+      "Discussion",
+      "Performance",
+      "Performance"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "Theater Performance",
+        "Discussion",
+        "Performance",
+        "Discussion",
+        "Performance",
+        "Performance"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [
+        "Missing columns ['event_type', 'location'], ask LLM to include them next round."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "0ca11b9b-910c-4e1c-9a97-ffddd3dae8ff",
+      "total_iterations": 2,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.location = $person RETURN e.event_type, e.location",
+        "MATCH (e:Event) WHERE e.location = $person RETURN e.event_type AS event_type, e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 206,
+    "expected_answer": [
+      "Theater Performance"
+    ],
+    "processing_order": 6
+  },
+  {
+    "question": "Recall the various events that have taken place at Grand Central Terminal. Describe what happened during these events, focusing on the actions or occurrences rather than the timing or people involved.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "11671b8e-59c5-4946-8fbb-f44e3e4a6e93",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.date AS date, e.location AS location, e.name AS name, e.event_type AS event_type",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.date AS date, e.location AS location, e.name AS name, e.event_type AS event_type",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.date AS date, e.location AS location, e.name AS name, e.event_type AS event_type",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.date AS date, e.location AS location, e.name AS name, e.event_type AS event_type",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.date AS date, e.location AS location, e.name AS name, e.event_type AS event_type"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 207,
+    "expected_answer": [
+      "Farmers Market"
+    ],
+    "processing_order": 7
+  },
+  {
+    "question": "Recall the various events that have taken place at Guggenheim Museum. Describe what happened during these events, focusing on the actions or occurrences rather than the timing or people involved.",
+    "predicted_answer": [
+      "Workshop",
+      "Film Screening",
+      "Discussion"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "Workshop",
+        "Film Screening",
+        "Discussion"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "13cf9b4d-e93b-489d-8ea9-336076b60806",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.location = 'Guggenheim Museum' RETURN e.event_type AS event_type"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 208,
+    "expected_answer": [
+      "Parkour Workshop"
+    ],
+    "processing_order": 8
+  },
+  {
+    "question": "Recall the various events that have taken place at High Line. Describe what happened during these events, focusing on the actions or occurrences rather than the timing or people involved.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "28c0fe75-8cdb-47ed-9083-43262b3179b5",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.event_type AS event_type",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.event_type AS event_type",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.event_type AS event_type",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.event_type AS event_type",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.event_type AS event_type"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 209,
+    "expected_answer": [
+      "Photography Exhibition"
+    ],
+    "processing_order": 9
+  },
+  {
+    "question": "Recall all events related to Environmental Summit that occurred at Bethpage Black Course. Provide a list of all dates when these events took place, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "7e7a08dd-56f1-4714-8eb7-e7f0c5153988",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.event_type = $kw AND ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE (toLower(e.event_type) CONTAINS toLower($kw) OR toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) AND ANY(p IN e.participants WHERE toLower(p) = toLower(trim($person))) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE (toLower(e.event_type) = toLower($kw) OR toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) AND ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE (toLower(e.event_type) CONTAINS toLower($kw) OR toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE (toLower(e.event_type) = toLower($kw) OR toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) AND ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 210,
+    "expected_answer": [
+      "September 03, 2026"
+    ],
+    "processing_order": 10
+  }
+]

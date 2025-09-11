@@ -1,0 +1,312 @@
+[
+  {
+    "question": "Consider the location City Island. List all protagonists that have been involved in any events at this location, without mentioning the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "c339d87b-c8f8-465d-8578-8252e6609f5d",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND toLower(trim(e.location)) = toLower(trim('City Island')) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND toLower(trim(e.location)) = toLower(trim($location)) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower($location) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower($location) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS 'city island' RETURN e.participants AS participants"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 241,
+    "expected_answer": [],
+    "processing_order": 1
+  },
+  {
+    "question": "Consider the location Fort Tryon Park. List all protagonists that have been involved in any events at this location, without mentioning the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "ef258046-fdea-4be2-a930-a323a98e71cc",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.location = $person RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE e.location = $location RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower($location) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower($location) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS 'fort tryon park' RETURN e.participants AS protagonist"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 242,
+    "expected_answer": [],
+    "processing_order": 2
+  },
+  {
+    "question": "Consider the location Madison Square Garden. List all protagonists that have been involved in any events at this location, without mentioning the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "3c09450f-26fb-4448-ab2e-99225b1959a9",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.location = $person RETURN e.participants AS protagonist",
+        "MATCH (e:Event) WHERE toLower(trim(e.location)) = toLower(trim($person)) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower($location) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower($location) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS 'madison square garden' RETURN e.participants AS participants"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 243,
+    "expected_answer": [],
+    "processing_order": 3
+  },
+  {
+    "question": "Consider the location Prospect Park. List all protagonists that have been involved in any events at this location, without mentioning the events themselves.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "a934fb32-56f6-4208-8062-873d43d3c223",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND toLower(trim(e.location)) = toLower(trim('Prospect Park')) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND toLower(trim(e.location)) = toLower(trim('Prospect Park')) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower($location) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower($location) RETURN e.participants AS participants",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS 'prospect park' RETURN e.participants AS protagonist"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 244,
+    "expected_answer": [],
+    "processing_order": 4
+  },
+  {
+    "question": "Think about all events that have occurred at Brooklyn Museum. Provide a list of all dates when these events took place, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "d46c7a8b-c02c-4f58-b693-81b4dfea77e1",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE toLower(trim(e.location)) = toLower(trim($person)) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(trim(e.location)) = toLower(trim($person)) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS toLower($location) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower($location) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS 'brooklyn museum' RETURN e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 245,
+    "expected_answer": [],
+    "processing_order": 5
+  },
+  {
+    "question": "Think about all events that have occurred at City Island. Provide a list of all dates when these events took place, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "5b6cf3b4-fdca-41e4-af05-85821a92cbee",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.location = 'City Island' RETURN e.date AS date",
+        "MATCH (e:Event) WHERE e.location = 'City Island' RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS toLower($kw) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower($location) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS 'city island' RETURN e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 246,
+    "expected_answer": [],
+    "processing_order": 6
+  },
+  {
+    "question": "Think about all events that have occurred at Fort Tryon Park. Provide a list of all dates when these events took place, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "dda47ff9-c274-430b-acd8-4be40f109d9d",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.location = $person RETURN e.date AS date",
+        "MATCH (e:Event) WHERE e.location = $person RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS toLower($kw) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower($location) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS 'fort tryon park' RETURN e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 247,
+    "expected_answer": [],
+    "processing_order": 7
+  },
+  {
+    "question": "Think about all events that have occurred at Madison Square Garden. Provide a list of all dates when these events took place, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "4271798f-5c01-4141-8de3-21ce03f6e372",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.location = $person RETURN e.date AS date",
+        "MATCH (e:Event) WHERE e.location = $person RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower($person) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower($location) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS 'madison square garden' RETURN e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 248,
+    "expected_answer": [],
+    "processing_order": 8
+  },
+  {
+    "question": "Think about all events that have occurred at Prospect Park. Provide a list of all dates when these events took place, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "3f9ff902-81bd-42b5-9dce-760e616cbd04",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.location = 'Prospect Park' RETURN e.date AS date",
+        "MATCH (e:Event) WHERE e.location = 'Prospect Park' RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS toLower($location) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower($location) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS 'prospect park' RETURN e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 249,
+    "expected_answer": [],
+    "processing_order": 9
+  },
+  {
+    "question": "Recall all events related to Roller Disco Night that occurred at Brooklyn Museum. Provide a list of all dates when these events took place, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "7945b84e-61d7-4d32-a69a-d84838d4df6a",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) AND ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) AND toLower(e.location) = 'brooklyn museum' RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower('Brooklyn Museum') AND (toLower(e.name) CONTAINS toLower('Roller Disco Night') OR toLower(e.description) CONTAINS toLower('Roller Disco Night that occurred at Brooklyn Museum')) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower('Brooklyn Museum') AND (toLower(e.event_type) CONTAINS toLower('Roller Disco Night that occurred at Brooklyn Museum') OR toLower(e.name) CONTAINS toLower('Roller Disco Night that occurred at Brooklyn Museum') OR toLower(e.description) CONTAINS toLower('Roller Disco Night that occurred at Brooklyn Museum')) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS 'brooklyn museum' AND (toLower(e.event_type) CONTAINS 'roller disco night that occurred at brooklyn museum' OR toLower(e.name) CONTAINS 'roller disco night that occurred at brooklyn museum' OR toLower(e.description) CONTAINS 'roller disco night that occurred at brooklyn museum') RETURN e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 250,
+    "expected_answer": [],
+    "processing_order": 10
+  }
+]

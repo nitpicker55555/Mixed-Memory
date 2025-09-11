@@ -1,0 +1,317 @@
+[
+  {
+    "question": "Consider all events that Lucy Carter has been involved in. List all the locations where these events took place, without mentioning the events themselves.",
+    "predicted_answer": [
+      "Port Jefferson's historic theater",
+      "Guggenheim Museum",
+      "Metropolitan Museum of Art"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "Port Jefferson's historic theater",
+        "Guggenheim Museum",
+        "Metropolitan Museum of Art"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [
+        "The results provide a list of locations where events involving Lucy Carter took place, although some locations are repeated. The unique locations can be inferred from the results, which sufficiently answers the question."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "d731991c-de27-495b-8780-83cfe7b92dde",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE 'Lucy Carter' IN e.participants WITH e.location AS location, e.date AS date RETURN location ORDER BY date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 61,
+    "expected_answer": [
+      "Guggenheim Museum",
+      "Port Jefferson",
+      "Metropolitan Museum of Art"
+    ],
+    "processing_order": 1
+  },
+  {
+    "question": "Consider all events that Scarlett Thomas has been involved in. List all the locations where these events took place, without mentioning the events themselves.",
+    "predicted_answer": [
+      "Grand Hall",
+      "Lincoln Center",
+      "High Line",
+      "New York Harbor"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "Grand Hall",
+        "Lincoln Center",
+        "High Line",
+        "New York Harbor"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [
+        "The results provide a list of locations where events involving Scarlett Thomas took place, which directly answers the question. The repetition of locations indicates multiple events occurred at the same places, but this does not detract from the completeness of the answer."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "d2c49b2e-272c-483b-b2a2-bc2ed17baf53",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE 'Scarlett Thomas' IN e.participants WITH e.location AS location, e.date AS date RETURN location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 62,
+    "expected_answer": [
+      "Statue of Liberty",
+      "Lincoln Center",
+      "High Line"
+    ],
+    "processing_order": 2
+  },
+  {
+    "question": "Consider all events that Zoe Brown has been involved in. List all the locations where these events took place, without mentioning the events themselves.",
+    "predicted_answer": [
+      "Bethpage State Park",
+      "Long Beach Boardwalk",
+      "Woolworth Building"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "Bethpage State Park",
+        "Long Beach Boardwalk",
+        "Woolworth Building"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [
+        "The results provide a list of locations where Zoe Brown has been involved in events, which directly answers the question. The locations are repeated for Bethpage State Park and listed for Long Beach Boardwalk and Woolworth Building, indicating multiple events at these locations. The information is sufficient as it covers all mentioned locations without referencing the events themselves."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "7dea64b1-edbe-4141-a635-50b85b1fe2e3",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE 'Zoe Brown' IN e.participants WITH e.location AS location, e.date AS date RETURN location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 63,
+    "expected_answer": [
+      "Bethpage State Park",
+      "Woolworth Building",
+      "Port Jefferson",
+      "Long Beach Boardwalk"
+    ],
+    "processing_order": 3
+  },
+  {
+    "question": "What is the most recent date Carter Stewart was observed or mentioned in the story's chronology?",
+    "predicted_answer": "September 03, 2026",
+    "gpt_answer_result": {
+      "final_answer": "September 03, 2026",
+      "confidence_score": 0.0,
+      "reasoning": [
+        "The query results provide a specific date, September 03, 2026, which directly answers the question about the most recent date Carter Stewart was observed or mentioned in the story's chronology. The information appears to be clear and relevant."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "40344ad3-2822-4200-924f-dd7584e85a18",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE 'Carter Stewart' IN e.participants AND e.date IS NOT NULL WITH e.date AS date RETURN DISTINCT date ORDER BY date DESC LIMIT 1"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 64,
+    "expected_answer": [
+      "September 03, 2026"
+    ],
+    "processing_order": 4
+  },
+  {
+    "question": "What is the most recent date Lucy Carter was observed or mentioned in the story's chronology?",
+    "predicted_answer": "September 22, 2026",
+    "gpt_answer_result": {
+      "final_answer": "September 22, 2026",
+      "confidence_score": 0.0,
+      "reasoning": [
+        "The query results only provide a location where Lucy Carter was observed or mentioned, but do not specify a date. Therefore, they do not adequately answer the question regarding the most recent date.",
+        "The query results provide a specific date, September 22, 2026, which directly answers the question regarding the most recent date Lucy Carter was observed or mentioned in the story's chronology. The information appears to be clear and relevant."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "9fba77a8-5d55-4248-a211-e961c53d9678",
+      "total_iterations": 2,
+      "query_history": [
+        "MATCH (e:Event) WHERE 'Lucy Carter' IN e.participants AND e.date IS NOT NULL WITH e.date AS date, e.location AS location RETURN location ORDER BY date DESC LIMIT 1",
+        "MATCH (e:Event) WHERE 'Lucy Carter' IN e.participants WITH e.date AS date RETURN DISTINCT date ORDER BY date DESC LIMIT 1"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 65,
+    "expected_answer": [
+      "November 13, 2026"
+    ],
+    "processing_order": 5
+  },
+  {
+    "question": "What is the most recent date Scarlett Thomas was observed or mentioned in the story's chronology?",
+    "predicted_answer": "November 13, 2026",
+    "gpt_answer_result": {
+      "final_answer": "November 13, 2026",
+      "confidence_score": 0.0,
+      "reasoning": [
+        "The query results provide a specific date, November 13, 2026, which directly answers the question regarding the most recent date Scarlett Thomas was observed or mentioned in the story's chronology. The information appears to be clear and relevant."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "ee600ec6-89ff-4ef9-ba6c-3495752e4787",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE 'Scarlett Thomas' IN e.participants AND e.date IS NOT NULL WITH e.date AS date RETURN DISTINCT date ORDER BY date DESC LIMIT 1"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 66,
+    "expected_answer": [
+      "November 13, 2026"
+    ],
+    "processing_order": 6
+  },
+  {
+    "question": "What is the most recent date Zoe Brown was observed or mentioned in the story's chronology?",
+    "predicted_answer": "October 13, 2024",
+    "gpt_answer_result": {
+      "final_answer": "October 13, 2024",
+      "confidence_score": 0.0,
+      "reasoning": [
+        "The query results provide a specific date, October 13, 2024, which directly answers the question about the most recent date Zoe Brown was observed or mentioned in the story's chronology. The information appears to be clear and relevant."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "4175b772-81b0-4451-9cfb-6f0d39276aa0",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE 'Zoe Brown' IN e.participants AND e.date IS NOT NULL WITH e.date AS date RETURN DISTINCT date ORDER BY date DESC LIMIT 1"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 67,
+    "expected_answer": [
+      "December 26, 2026"
+    ],
+    "processing_order": 7
+  },
+  {
+    "question": "Reflect on all events involving Carter Stewart. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": [
+      "March 23, 2024",
+      "October 13, 2024",
+      "September 03, 2026"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "March 23, 2024",
+        "October 13, 2024",
+        "September 03, 2026"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [
+        "The results provide a clear list of dates associated with events involving Carter Stewart, which directly answers the question without additional context or description. The dates are formatted correctly and are relevant to the inquiry."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "2af34caf-1b80-48ea-9a0d-94538870970f",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE 'Carter Stewart' IN e.participants WITH e.date AS eventDate RETURN DISTINCT eventDate ORDER BY eventDate"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 68,
+    "expected_answer": [
+      "September 03, 2026",
+      "March 23, 2024",
+      "October 13, 2024"
+    ],
+    "processing_order": 8
+  },
+  {
+    "question": "Reflect on all events involving Lucy Carter. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": [
+      "March 23, 2024",
+      "November 13, 2026",
+      "September 22, 2026"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "March 23, 2024",
+        "November 13, 2026",
+        "September 22, 2026"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [
+        "The results provide a list of dates related to events involving Lucy Carter, which aligns with the request. However, one entry has an empty date, which slightly reduces confidence. The other dates are clearly listed and relevant."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "b7428ebc-8078-429a-aba0-646349ed93f9",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE 'Lucy Carter' IN e.participants WITH e.date AS date RETURN DISTINCT date ORDER BY date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 69,
+    "expected_answer": [
+      "March 23, 2024",
+      "November 13, 2026",
+      "September 22, 2026"
+    ],
+    "processing_order": 9
+  },
+  {
+    "question": "Reflect on all events involving Scarlett Thomas. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": [
+      "June 14, 2025",
+      "March 23, 2024",
+      "November 13, 2026"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "June 14, 2025",
+        "March 23, 2024",
+        "November 13, 2026"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [
+        "The results provide a clear list of dates associated with events involving Scarlett Thomas, which directly answers the question without additional descriptions. The dates are formatted correctly and are relevant to the inquiry."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "3497e40f-49af-475f-94a6-d2e018bf9acb",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE 'Scarlett Thomas' IN e.participants WITH e.date AS eventDate RETURN DISTINCT eventDate ORDER BY eventDate"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 70,
+    "expected_answer": [
+      "March 23, 2024",
+      "November 13, 2026",
+      "June 14, 2025"
+    ],
+    "processing_order": 10
+  }
+]

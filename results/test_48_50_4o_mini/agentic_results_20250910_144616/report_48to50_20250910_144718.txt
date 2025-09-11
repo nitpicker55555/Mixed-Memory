@@ -1,0 +1,37 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-10 14:47:18
+Question Range: 48-50
+Total Questions Processed: 3
+Successful Searches: 2 (66.7%)
+Questions with Answers: 2 (66.7%)
+Average Iterations per Question: 2.3
+
+DETAILED RESULTS:
+------------------------------
+
+Question 48:
+  Text: Provide a chronological list of all dates when Carter Stewart was observed, from earliest to latest in the story's timeline.
+  Expected: ['March 23, 2024', 'October 13, 2024', 'September 03, 2026']
+  Predicted: ['March 23, 2024', 'October 13, 2024', 'September 03, 2026']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 49:
+  Text: Provide a chronological list of all dates when Lucy Carter was observed, from earliest to latest in the story's timeline.
+  Expected: ['March 23, 2024', 'September 22, 2026', 'November 13, 2026']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 50:
+  Text: Provide a chronological list of all dates when Scarlett Thomas was observed, from earliest to latest in the story's timeline.
+  Expected: ['March 23, 2024', 'June 14, 2025', 'November 13, 2026']
+  Predicted: ['March 23, 2024', 'June 14, 2025', 'November 13, 2026']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+

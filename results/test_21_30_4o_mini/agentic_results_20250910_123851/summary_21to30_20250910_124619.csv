@@ -1,0 +1,11 @@
+question_num,question,predicted_answer,search_success,confidence,iterations
+21,"Consider all events involving Boat Show. List all the locations where these events took place, without mentioning the events themselves.","None",False,0.0,5
+22,"Consider all events involving Book Signing Event. List all the locations where these events took place, without mentioning the events themselves.","None",False,0.0,5
+23,"Consider all events involving Charity Gala. List all the locations where these events took place, without mentioning the events themselves.","None",False,0.0,5
+24,"Consider all events involving Laser Tag Tournament. List all the locations where these events took place, without mentioning the events themselves.","None",False,0.0,5
+25,"Consider all events involving Robotics Competition. List all the locations where these events took place, without mentioning the events themselves.","None",False,0.0,5
+26,"Reflect on events related to Boat Show. Provide a list of all protagonists involved in these events, without describing the events.","None",False,0.0,5
+27,"Reflect on events related to Book Signing Event. Provide a list of all protagonists involved in these events, without describing the events.","None",False,0.0,5
+28,"Reflect on events related to Charity Gala. Provide a list of all protagonists involved in these events, without describing the events.","None",False,0.0,5
+29,"Reflect on events related to Laser Tag Tournament. Provide a list of all protagonists involved in these events, without describing the events.","None",False,0.0,5
+30,"Reflect on events related to Robotics Competition. Provide a list of all protagonists involved in these events, without describing the events.","None",False,0.0,5

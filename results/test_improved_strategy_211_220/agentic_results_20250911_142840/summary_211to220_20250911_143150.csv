@@ -1,0 +1,11 @@
+question_num,question,predicted_answer,search_success,confidence,iterations
+211,"Recall all events related to Theater Performance that occurred at Bethpage State Park. Provide a list of all dates when these events took place, without describing the events.","['December 26, 2026']",True,0.0,1
+212,"Recall all events related to Farmers Market that occurred at Grand Central Terminal. Provide a list of all dates when these events took place, without describing the events.","['July 13, 2024']",True,0.0,2
+213,"Recall all events related to Parkour Workshop that occurred at Guggenheim Museum. Provide a list of all dates when these events took place, without describing the events.","['March 23, 2024']",True,0.0,3
+214,"Recall all events related to Photography Exhibition that occurred at High Line. Provide a list of all dates when these events took place, without describing the events.","None",False,0.0,5
+215,"Think about the events involving Environmental Summit at Bethpage Black Course. List all protagonists involved in these events, without mentioning the events themselves.","None",False,0.0,5
+216,"Think about the events involving Theater Performance at Bethpage State Park. List all protagonists involved in these events, without mentioning the events themselves.","['Zoe Brown', 'Lucy Carter']",True,0.0,4
+217,"Think about the events involving Farmers Market at Grand Central Terminal. List all protagonists involved in these events, without mentioning the events themselves.","['Nora Ramos']",True,0.0,3
+218,"Think about the events involving Parkour Workshop at Guggenheim Museum. List all protagonists involved in these events, without mentioning the events themselves.","['Lucy Carter']",True,0.0,4
+219,"Think about the events involving Photography Exhibition at High Line. List all protagonists involved in these events, without mentioning the events themselves.","None",False,0.0,5
+220,"Consider all events involving Carter Stewart at Bethpage Black Course. Provide a list of all dates when these events occurred, without describing the events.","['September 03, 2026']",True,0.0,1

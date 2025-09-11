@@ -1,0 +1,276 @@
+[
+  {
+    "question": "Reflect on all events involving Zoe Brown. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": [
+      "March 23, 2024",
+      "October 13, 2024",
+      "June 08, 2026",
+      "December 25, 2026",
+      "December 26, 2026"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "March 23, 2024",
+        "October 13, 2024",
+        "June 08, 2026",
+        "December 25, 2026",
+        "December 26, 2026"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "c70a5c2f-91cb-45e9-ac58-64a3ece78348",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 71,
+    "expected_answer": [
+      "October 13, 2024",
+      "December 26, 2026",
+      "March 23, 2024",
+      "June 08, 2026"
+    ],
+    "processing_order": 1
+  },
+  {
+    "question": "What was Carter Stewart doing the last time they were observed in the story's timeline?",
+    "predicted_answer": "Environmental Summit at Bethpage Black Course",
+    "gpt_answer_result": {
+      "final_answer": "Environmental Summit at Bethpage Black Course",
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "787877e7-8dca-44d3-af09-7df303dd45f7",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS event, e.date AS timestamp"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 72,
+    "expected_answer": [
+      "Environmental Summit"
+    ],
+    "processing_order": 2
+  },
+  {
+    "question": "What was Lucy Carter doing the last time they were observed in the story's timeline?",
+    "predicted_answer": "11th Annual Fashion Display",
+    "gpt_answer_result": {
+      "final_answer": "11th Annual Fashion Display",
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "fd557780-d871-4fca-a10c-4fbac8003ebb",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS event, e.date AS timestamp"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 73,
+    "expected_answer": [
+      "Fashion Show"
+    ],
+    "processing_order": 3
+  },
+  {
+    "question": "What was Scarlett Thomas doing the last time they were observed in the story's timeline?",
+    "predicted_answer": "Scarlett Thomas Exhibition Debut",
+    "gpt_answer_result": {
+      "final_answer": "Scarlett Thomas Exhibition Debut",
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "de84571c-e419-4d82-9c62-41203cf8d292",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS event, e.date AS timestamp"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 74,
+    "expected_answer": [
+      "Photography Exhibition"
+    ],
+    "processing_order": 4
+  },
+  {
+    "question": "What was Zoe Brown doing the last time they were observed in the story's timeline?",
+    "predicted_answer": "Theater Performance at Bethpage State Park",
+    "gpt_answer_result": {
+      "final_answer": "Theater Performance at Bethpage State Park",
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "4cd59c18-f599-4b40-806a-0c732fec4aae",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.name AS event, e.date AS timestamp"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 75,
+    "expected_answer": [
+      "Theater Performance"
+    ],
+    "processing_order": 5
+  },
+  {
+    "question": "Consider all events involving both Carter Stewart and Carnival. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": [
+      "October 13, 2024"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "October 13, 2024"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "ec18524a-347c-433d-8709-9804cf7e94bf",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND toLower(trim(e.event_type)) CONTAINS toLower(trim($kw)) RETURN e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 76,
+    "expected_answer": [
+      "October 13, 2024"
+    ],
+    "processing_order": 6
+  },
+  {
+    "question": "Consider all events involving both Carter Stewart and Environmental Summit. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": [
+      "September 03, 2026"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "September 03, 2026"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "6f5aa57e-4b9d-453b-b4a6-4d6ff58cce63",
+      "total_iterations": 2,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND toLower(trim(e.event_type)) CONTAINS toLower(trim($kw)) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND (toLower(trim(e.name)) CONTAINS toLower(trim($kw)) OR toLower(trim(e.description)) CONTAINS toLower(trim($kw))) RETURN e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 77,
+    "expected_answer": [
+      "September 03, 2026"
+    ],
+    "processing_order": 7
+  },
+  {
+    "question": "Consider all events involving both Carter Stewart and Storytelling Festival. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": [
+      "March 23, 2024"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "March 23, 2024"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "2dbb7182-509f-4fa3-9021-2b7d27c02296",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND toLower(trim(e.event_type)) CONTAINS toLower(trim($kw)) RETURN e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 78,
+    "expected_answer": [
+      "March 23, 2024"
+    ],
+    "processing_order": 8
+  },
+  {
+    "question": "Consider all events involving both Chloe Castillo and TED Talk. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "a1f437f6-a13b-4cf8-8ac2-6f66204d4cb0",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND toLower(trim(e.event_type)) CONTAINS toLower(trim($kw)) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND (toLower(e.event_type) CONTAINS toLower($kw) OR toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND (toLower(e.event_type) CONTAINS toLower($kw) OR toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND (toLower(e.event_type) CONTAINS toLower($kw) OR toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) RETURN e.date AS date",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND (toLower(e.event_type) CONTAINS toLower($kw) OR toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) RETURN e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 79,
+    "expected_answer": [
+      "February 27, 2026"
+    ],
+    "processing_order": 9
+  },
+  {
+    "question": "Consider all events involving both Hazel Lewis and Archery Tournament. Provide a list of all dates when these events occurred, without describing the events.",
+    "predicted_answer": [
+      "May 14, 2025"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "May 14, 2025"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "cdf9e7dd-67c4-4952-bf62-e6f3147200e7",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) AND toLower(trim(e.event_type)) CONTAINS toLower(trim($kw)) RETURN e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 80,
+    "expected_answer": [
+      "May 14, 2025"
+    ],
+    "processing_order": 10
+  }
+]

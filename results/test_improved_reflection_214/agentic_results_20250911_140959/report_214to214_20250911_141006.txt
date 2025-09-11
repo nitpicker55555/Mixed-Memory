@@ -1,0 +1,21 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-11 14:10:06
+Question Range: 214-214
+Total Questions Processed: 1
+Successful Searches: 0 (0.0%)
+Questions with Answers: 0 (0.0%)
+Average Iterations per Question: 2.0
+
+DETAILED RESULTS:
+------------------------------
+
+Question 214:
+  Text: Recall all events related to Photography Exhibition that occurred at High Line. Provide a list of all dates when these events took place, without describing the events.
+  Expected: ['November 13, 2026']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 2
+

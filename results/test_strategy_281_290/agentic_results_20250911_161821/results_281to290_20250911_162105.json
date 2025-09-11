@@ -1,0 +1,316 @@
+[
+  {
+    "question": "Recall the various events that have taken place at Trinity Church. Describe what happened during these events, focusing on the actions or occurrences rather than the timing or people involved.",
+    "predicted_answer": [
+      "TEDx Talk",
+      "Preparation",
+      "Performance",
+      "Presentation",
+      "Art Exhibition",
+      "Social Interaction"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "TEDx Talk",
+        "Preparation",
+        "Performance",
+        "Presentation",
+        "Art Exhibition",
+        "Social Interaction"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "Missing columns ['event_type'], ask LLM to include them next round.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "d0763a07-a5bf-4bd6-86e5-a941d42b9585",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.event_type AS event_type",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.event_type AS event_type",
+        "MATCH (e:Event) WHERE toLower(e.location) = toLower($location) RETURN e.event_type",
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.event_type AS event_type",
+        "MATCH (e:Event) WHERE toLower(e.location) CONTAINS 'trinity church' RETURN e.event_type AS event_type"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 281,
+    "expected_answer": [
+      "TED Talk",
+      "Photography Exhibition"
+    ],
+    "processing_order": 1
+  },
+  {
+    "question": "Think about all events that have occurred at Port Jefferson. Provide a list of all dates when these events took place, without describing the events.",
+    "predicted_answer": [
+      "March 23, 2024"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "March 23, 2024"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "d770d726-a33a-4860-b37c-9018aee14f26",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.location = $person RETURN e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 282,
+    "expected_answer": [
+      "March 23, 2024",
+      "September 22, 2026"
+    ],
+    "processing_order": 2
+  },
+  {
+    "question": "Think about all events that have occurred at Trinity Church. Provide a list of all dates when these events took place, without describing the events.",
+    "predicted_answer": [
+      "February 27, 2026",
+      "September 03, 2026"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "February 27, 2026",
+        "September 03, 2026"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "354358d3-cd27-45b8-b851-f3dd6df0351b",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.location = $person RETURN e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 283,
+    "expected_answer": [
+      "September 03, 2026",
+      "February 27, 2026"
+    ],
+    "processing_order": 3
+  },
+  {
+    "question": "Reflect on August 12, 2025. Describe all the key events that occurred on this date, focusing on what happened rather than who was involved or where it took place.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "Query generation error: LLM failed to return a valid JSON {query, params}."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "38bf82e2-ebdf-46f3-8a08-248083b2253c",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.date = 'August 12, 2025' RETURN e.event_type AS event_type",
+        "MATCH (e:Event) WHERE e.date = 'August 12, 2025' RETURN e.event_type AS event_type",
+        "MATCH (e:Event) WHERE e.date = 'August 12, 2025' RETURN e.event_type AS event_type",
+        "MATCH (e:Event) WHERE e.date = 'August 12, 2025' RETURN e.event_type AS event_type"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 284,
+    "expected_answer": [],
+    "processing_order": 4
+  },
+  {
+    "question": "Reflect on December 04, 2026. Describe all the key events that occurred on this date, focusing on what happened rather than who was involved or where it took place.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "1f557801-b2af-4704-82f8-d8e5fff74c27",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.date = 'December 04, 2026' RETURN e.date AS date",
+        "MATCH (e:Event) WHERE e.date = 'December 04, 2026' RETURN e.date AS date",
+        "MATCH (e:Event) WHERE e.date = 'December 04, 2026' RETURN e.date AS date",
+        "MATCH (e:Event) WHERE e.date = 'December 04, 2026' RETURN e.date AS date",
+        "MATCH (e:Event) WHERE toLower(e.date) = 'december 04, 2026' RETURN e.date AS date"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 285,
+    "expected_answer": [],
+    "processing_order": 5
+  },
+  {
+    "question": "Reflect on January 01, 2026. Describe all the key events that occurred on this date, focusing on what happened rather than who was involved or where it took place.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "Query generation error: LLM failed to return a valid JSON {query, params}."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "cc2eba43-8ba9-47c7-aeeb-0c9f09457b36",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.date = 'January 01, 2026' RETURN e.event_type AS event_type",
+        "MATCH (e:Event) WHERE e.date = 'January 01, 2026' RETURN e.event_type AS event_type",
+        "MATCH (e:Event) WHERE e.date = 'January 01, 2026' RETURN e.event_type AS event_type",
+        "MATCH (e:Event) WHERE e.date = 'January 01, 2026' RETURN e.event_type AS event_type"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 286,
+    "expected_answer": [],
+    "processing_order": 6
+  },
+  {
+    "question": "Reflect on January 24, 2025. Describe all the key events that occurred on this date, focusing on what happened rather than who was involved or where it took place.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "058ab154-7d08-4bbf-96c0-ac1267a0872d",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.date = 'January 24, 2025' RETURN e.event_type AS event_type",
+        "MATCH (e:Event) WHERE e.date = 'January 24, 2025' RETURN e.event_type AS event_type",
+        "MATCH (e:Event) WHERE e.date = 'January 24, 2025' RETURN e.event_type AS event_type",
+        "MATCH (e:Event) WHERE e.date = 'January 24, 2025' RETURN e.event_type AS event_type",
+        "MATCH (e:Event) WHERE toLower(e.date) = 'january 24, 2025' RETURN e.event_type AS event_type"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 287,
+    "expected_answer": [],
+    "processing_order": 7
+  },
+  {
+    "question": "Reflect on July 02, 2024. Describe all the key events that occurred on this date, focusing on what happened rather than who was involved or where it took place.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "Query generation error: LLM failed to return a valid JSON {query, params}."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "8853a8c4-3f68-46a7-9ca8-8f05303a9c73",
+      "total_iterations": 4,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.date = 'July 02, 2024' RETURN e.event_type AS event_type",
+        "MATCH (e:Event) WHERE e.date = 'July 02, 2024' RETURN e.event_type AS event_type",
+        "MATCH (e:Event) WHERE e.date = 'July 02, 2024' RETURN e.event_type AS event_type"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 288,
+    "expected_answer": [],
+    "processing_order": 8
+  },
+  {
+    "question": "Recall all the events that occurred on August 12, 2025. Without describing the events, list all the unique locations where these events took place.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "830b0c55-22bf-4e41-b09b-595733434b20",
+      "total_iterations": 5,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.date = 'August 12, 2025' RETURN DISTINCT e.location AS location",
+        "MATCH (e:Event) WHERE e.date = 'August 12, 2025' RETURN DISTINCT e.location AS location",
+        "MATCH (e:Event) WHERE e.date = 'August 12, 2025' RETURN DISTINCT e.location AS location",
+        "MATCH (e:Event) WHERE e.date = 'August 12, 2025' RETURN DISTINCT e.location AS location",
+        "MATCH (e:Event) WHERE e.date = 'August 12, 2025' RETURN DISTINCT e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 289,
+    "expected_answer": [],
+    "processing_order": 9
+  },
+  {
+    "question": "Recall all the events that occurred on December 04, 2026. Without describing the events, list all the unique locations where these events took place.",
+    "predicted_answer": null,
+    "gpt_answer_result": {
+      "final_answer": null,
+      "confidence_score": 0.0,
+      "reasoning": [
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "0 rows; ask LLM to self-correct and widen/adjust filters.",
+        "Query generation error: LLM failed to return a valid JSON {query, params}."
+      ],
+      "search_successful": false
+    },
+    "agentic_metadata": {
+      "session_id": "40209dbe-4523-40d2-9db2-5bc94119db57",
+      "total_iterations": 4,
+      "query_history": [
+        "MATCH (e:Event) WHERE e.date = 'December 04, 2026' RETURN DISTINCT e.location AS location",
+        "MATCH (e:Event) WHERE e.date = 'December 04, 2026' RETURN DISTINCT e.location AS location",
+        "MATCH (e:Event) WHERE e.date = 'December 04, 2026' RETURN DISTINCT e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 290,
+    "expected_answer": [],
+    "processing_order": 10
+  }
+]

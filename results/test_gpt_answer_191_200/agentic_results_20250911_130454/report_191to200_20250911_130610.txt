@@ -1,0 +1,93 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-11 13:06:10
+Question Range: 191-200
+Total Questions Processed: 10
+Successful Searches: 10 (100.0%)
+Questions with Answers: 10 (100.0%)
+Average Iterations per Question: 1.0
+
+DETAILED RESULTS:
+------------------------------
+
+Question 191:
+  Text: Provide a chronological list of all dates when Maya Smith was observed, from earliest to latest in the story's timeline.
+  Expected: ['February 27, 2026', 'May 11, 2026']
+  Predicted: ['February 27, 2026', 'May 11, 2026']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 192:
+  Text: Consider all events that Maya Smith has been involved in. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['One World Trade Center', 'Metropolitan Museum of Art']
+  Predicted: ['One World Trade Center', 'Metropolitan Museum of Art']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 193:
+  Text: List all locations visited by Maya Smith in chronological order according to the story's timeline.
+  Expected: ['One World Trade Center', 'Metropolitan Museum of Art']
+  Predicted: ['One World Trade Center', 'Metropolitan Museum of Art']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 194:
+  Text: Enumerate all activities that Maya Smith has been involved in, ordered from earliest to latest in the story's chronology.
+  Expected: ['Tech Hackathon', 'Parkour Workshop']
+  Predicted: ['Hackathon Day 1', 'Hackathon Mentoring', 'Hackathon Day 2', 'Hackathon Presentation', 'Parkour Fitness Class at Metropolitan Museum of Art']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 195:
+  Text: Think about all events that have occurred at Bethpage Black Course. Provide a list of all dates when these events took place, without describing the events.
+  Expected: ['September 03, 2026']
+  Predicted: ['September 03, 2026']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 196:
+  Text: Think about all events that have occurred at Bethpage State Park. Provide a list of all dates when these events took place, without describing the events.
+  Expected: ['December 26, 2026']
+  Predicted: ['December 25, 2026', 'December 26, 2026']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 197:
+  Text: Think about all events that have occurred at Grand Central Terminal. Provide a list of all dates when these events took place, without describing the events.
+  Expected: ['July 13, 2024']
+  Predicted: ['July 13, 2024']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 198:
+  Text: Think about all events that have occurred at Guggenheim Museum. Provide a list of all dates when these events took place, without describing the events.
+  Expected: ['March 23, 2024']
+  Predicted: ['March 23, 2024']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 199:
+  Text: Think about all events that have occurred at High Line. Provide a list of all dates when these events took place, without describing the events.
+  Expected: ['November 13, 2026']
+  Predicted: ['November 13, 2026']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 200:
+  Text: Consider the location Bethpage Black Course. List all protagonists that have been involved in any events at this location, without mentioning the events themselves.
+  Expected: ['Carter Stewart']
+  Predicted: ['Carter Stewart']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+

@@ -1,0 +1,21 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-11 14:04:32
+Question Range: 216-216
+Total Questions Processed: 1
+Successful Searches: 0 (0.0%)
+Questions with Answers: 0 (0.0%)
+Average Iterations per Question: 5.0
+
+DETAILED RESULTS:
+------------------------------
+
+Question 216:
+  Text: Think about the events involving Theater Performance at Bethpage State Park. List all protagonists involved in these events, without mentioning the events themselves.
+  Expected: ['Zoe Brown']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+

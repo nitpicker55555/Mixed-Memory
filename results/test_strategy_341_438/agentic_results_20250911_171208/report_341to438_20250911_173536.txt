@@ -1,0 +1,797 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-11 17:35:36
+Question Range: 341-438
+Total Questions Processed: 98
+Successful Searches: 74 (75.5%)
+Questions with Answers: 74 (75.5%)
+Average Iterations per Question: 2.2
+
+DETAILED RESULTS:
+------------------------------
+
+Question 341:
+  Text: Recall what happened involving Chloe Castillo at Guggenheim Museum on December 26, 2026. Describe the key events or activities that occurred, focusing on what happened.
+  Expected: []
+  Predicted: []
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 342:
+  Text: Recall what happened involving Julian Cook at Trinity Church on February 27, 2026. Describe the key events or activities that occurred, focusing on what happened.
+  Expected: []
+  Predicted: ["Chloe's TEDx Presentation", "Chloe's Presentation Preparation", 'Interpretive Dance by $entity_2', 'Pun Presentation by $entity_3', "Chloe's Presentation Start", "Chloe's Research Presentation", "Chloe's Presentation Error", "Chloe's Presentation Conclusion"]
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 4
+
+Question 343:
+  Text: Recall what happened involving Hazel Lewis at Brooklyn Museum on January 01, 2026. Describe the key events or activities that occurred, focusing on what happened.
+  Expected: []
+  Predicted: []
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 344:
+  Text: Provide a comprehensive account of what happened involving Nova Rogers and Trivia Contest at Roosevelt Island on August 12, 2025. Include all relevant details about the event(s), including what occurred and any other pertinent information.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 345:
+  Text: Provide a comprehensive account of what happened involving Nathan Lopez and Charity Gala at Vanderbilt Museum and Planetarium on December 04, 2026. Include all relevant details about the event(s), including what occurred and any other pertinent information.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 346:
+  Text: Provide a comprehensive account of what happened involving Chloe Castillo and Farmers Market at Guggenheim Museum on December 26, 2026. Include all relevant details about the event(s), including what occurred and any other pertinent information.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 347:
+  Text: Provide a comprehensive account of what happened involving Julian Cook and TED Talk at Trinity Church on February 27, 2026. Include all relevant details about the event(s), including what occurred and any other pertinent information.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 348:
+  Text: Provide a comprehensive account of what happened involving Hazel Lewis and Roller Disco Night at Brooklyn Museum on January 01, 2026. Include all relevant details about the event(s), including what occurred and any other pertinent information.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 349:
+  Text: Recall what happened involving Nova Rogers and Trivia Contest at Roosevelt Island on August 12, 2025 and list only who else was involved (if anyone).
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 350:
+  Text: Recall what happened involving Nathan Lopez and Charity Gala at Vanderbilt Museum and Planetarium on December 04, 2026 and list only who else was involved (if anyone).
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 351:
+  Text: Recall what happened involving Chloe Castillo and Farmers Market at Guggenheim Museum on December 26, 2026 and list only who else was involved (if anyone).
+  Expected: []
+  Predicted: ['Nora Ramos']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 3
+
+Question 352:
+  Text: Recall what happened involving Julian Cook and TED Talk at Trinity Church on February 27, 2026 and list only who else was involved (if anyone).
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 353:
+  Text: Recall what happened involving Hazel Lewis and Roller Disco Night at Brooklyn Museum on January 01, 2026 and list only who else was involved (if anyone).
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 354:
+  Text: Recall all the events that occurred on December 26, 2026. Without describing the events, list all the unique locations where these events took place.
+  Expected: ['Bethpage State Park']
+  Predicted: ['Bethpage State Park']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 355:
+  Text: Recall all the events that occurred on July 13, 2024. Without describing the events, list all the unique locations where these events took place.
+  Expected: ['Grand Central Terminal']
+  Predicted: ['Grand Central Terminal']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 356:
+  Text: Recall all the events that occurred on June 08, 2026. Without describing the events, list all the unique locations where these events took place.
+  Expected: ['Woolworth Building']
+  Predicted: ['Woolworth Building']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 357:
+  Text: Recall all the events that occurred on June 14, 2025. Without describing the events, list all the unique locations where these events took place.
+  Expected: ['Statue of Liberty']
+  Predicted: ['New York Harbor']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 358:
+  Text: Recall all the events that occurred on May 11, 2026. Without describing the events, list all the unique locations where these events took place.
+  Expected: ['Metropolitan Museum of Art']
+  Predicted: ['Metropolitan Museum of Art']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 359:
+  Text: Consider all events that happened on December 26, 2026. Provide a list of all protagonists involved in any of these events, without describing the events themselves.
+  Expected: ['Zoe Brown']
+  Predicted: ['Zoe Brown']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 360:
+  Text: Consider all events that happened on July 13, 2024. Provide a list of all protagonists involved in any of these events, without describing the events themselves.
+  Expected: ['Nora Ramos']
+  Predicted: ['Nora Ramos']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 361:
+  Text: Consider all events that happened on June 08, 2026. Provide a list of all protagonists involved in any of these events, without describing the events themselves.
+  Expected: ['Zoe Brown']
+  Predicted: ['Zoe Brown']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 362:
+  Text: Consider all events that happened on June 14, 2025. Provide a list of all protagonists involved in any of these events, without describing the events themselves.
+  Expected: ['Scarlett Thomas']
+  Predicted: ['Scarlett Thomas']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 363:
+  Text: Consider all events that happened on May 11, 2026. Provide a list of all protagonists involved in any of these events, without describing the events themselves.
+  Expected: ['Maya Smith']
+  Predicted: ['Maya Smith']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 364:
+  Text: Reflect on December 26, 2026. Describe all the key events that occurred on this date, focusing on what happened rather than who was involved or where it took place.
+  Expected: ['Theater Performance']
+  Predicted: []
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 365:
+  Text: Reflect on July 13, 2024. Describe all the key events that occurred on this date, focusing on what happened rather than who was involved or where it took place.
+  Expected: ['Farmers Market']
+  Predicted: ['Farmers Market', 'Culinary Display', 'Musical Performance', 'Discussion', 'Barter', 'Farewell']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 366:
+  Text: Reflect on June 08, 2026. Describe all the key events that occurred on this date, focusing on what happened rather than who was involved or where it took place.
+  Expected: ['Ice Sculpture Exhibition']
+  Predicted: []
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 367:
+  Text: Reflect on June 14, 2025. Describe all the key events that occurred on this date, focusing on what happened rather than who was involved or where it took place.
+  Expected: ['Street Food Festival']
+  Predicted: ['Festival', 'Culinary Experience', 'Culinary Experience', 'Reflection']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 368:
+  Text: Reflect on May 11, 2026. Describe all the key events that occurred on this date, focusing on what happened rather than who was involved or where it took place.
+  Expected: ['Parkour Workshop']
+  Predicted: ['Fitness Class']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 369:
+  Text: Think about the events involving Theater Performance on December 26, 2026. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Zoe Brown']
+  Predicted: ['Zoe Brown']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 370:
+  Text: Think about the events involving Job Fair on February 27, 2026. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Julian Ross']
+  Predicted: ['Julian Ross']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 371:
+  Text: Think about the events involving TED Talk on February 27, 2026. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Chloe Castillo']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 372:
+  Text: Think about the events involving Tech Hackathon on February 27, 2026. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Maya Smith']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 373:
+  Text: Think about the events involving Farmers Market on July 13, 2024. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Nora Ramos']
+  Predicted: ['Nora Ramos']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 374:
+  Text: Recall the events related to Theater Performance that occurred on December 26, 2026. List all the locations where these events took place, without describing the events themselves.
+  Expected: ['Bethpage State Park']
+  Predicted: ['Bethpage State Park']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 375:
+  Text: Recall the events related to Job Fair that occurred on February 27, 2026. List all the locations where these events took place, without describing the events themselves.
+  Expected: ['Metropolitan Museum of Art']
+  Predicted: ['Metropolitan Museum of Art']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 376:
+  Text: Recall the events related to TED Talk that occurred on February 27, 2026. List all the locations where these events took place, without describing the events themselves.
+  Expected: ['Trinity Church']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 377:
+  Text: Recall the events related to Tech Hackathon that occurred on February 27, 2026. List all the locations where these events took place, without describing the events themselves.
+  Expected: ['One World Trade Center']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 378:
+  Text: Recall the events related to Farmers Market that occurred on July 13, 2024. List all the locations where these events took place, without describing the events themselves.
+  Expected: ['Grand Central Terminal']
+  Predicted: ['Grand Central Terminal']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 379:
+  Text: Reflect on what Zoe Brown experienced on December 26, 2026. Describe all the key events they were involved in, focusing on what happened rather than where it occurred.
+  Expected: ['Theater Performance']
+  Predicted: ['Theater Performance at Bethpage State Park', 'Discussion with $entity_1', 'Performance Observation', 'Final Act and Audience Reaction', 'Performance Conclusion']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 380:
+  Text: Reflect on what Chloe Castillo experienced on February 27, 2026. Describe all the key events they were involved in, focusing on what happened rather than where it occurred.
+  Expected: ['TED Talk']
+  Predicted: ["Chloe's Presentation Preparation", "Chloe's Presentation Start", "Chloe's TEDx Presentation", "Chloe's Research Presentation", "Chloe's Presentation Error", "Chloe's Presentation Conclusion"]
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 381:
+  Text: Reflect on what Julian Ross experienced on February 27, 2026. Describe all the key events they were involved in, focusing on what happened rather than where it occurred.
+  Expected: ['Job Fair']
+  Predicted: ['Job Fair at the Museum', 'Exploration of Graduate Programs', 'Brochure Distribution', 'Atmospheric Shift', 'Exit from the Museum']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 382:
+  Text: Reflect on what Maya Smith experienced on February 27, 2026. Describe all the key events they were involved in, focusing on what happened rather than where it occurred.
+  Expected: ['Tech Hackathon']
+  Predicted: ['Hackathon Day 1', 'Hackathon Mentoring', 'Hackathon Day 2', 'Hackathon Presentation']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 383:
+  Text: Reflect on what Nora Ramos experienced on July 13, 2024. Describe all the key events they were involved in, focusing on what happened rather than where it occurred.
+  Expected: ['Farmers Market']
+  Predicted: ['Grand Central Terminal Farmers Market', 'Artisanal Jam Booth', 'Live Acoustic Set', 'Farm-to-Table Discussion', 'Herb Barter', 'Farewell to Farmers Market']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 384:
+  Text: Consider the events involving Zoe Brown on December 26, 2026. List all the locations where these events took place, without describing the events themselves.
+  Expected: ['Bethpage State Park']
+  Predicted: ['Bethpage State Park']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 385:
+  Text: Consider the events involving Chloe Castillo on February 27, 2026. List all the locations where these events took place, without describing the events themselves.
+  Expected: ['Trinity Church']
+  Predicted: ['Trinity Church']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 386:
+  Text: Consider the events involving Julian Ross on February 27, 2026. List all the locations where these events took place, without describing the events themselves.
+  Expected: ['Metropolitan Museum of Art']
+  Predicted: ['Metropolitan Museum of Art']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 387:
+  Text: Consider the events involving Maya Smith on February 27, 2026. List all the locations where these events took place, without describing the events themselves.
+  Expected: ['One World Trade Center']
+  Predicted: ['One World Trade Center']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 388:
+  Text: Consider the events involving Nora Ramos on July 13, 2024. List all the locations where these events took place, without describing the events themselves.
+  Expected: ['Grand Central Terminal']
+  Predicted: ['Grand Central Terminal']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 389:
+  Text: Consider the events involving both Zoe Brown and Theater Performance on December 26, 2026. List all the locations where these events took place, without describing the events themselves.
+  Expected: ['Bethpage State Park']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 390:
+  Text: Consider the events involving both Chloe Castillo and TED Talk on February 27, 2026. List all the locations where these events took place, without describing the events themselves.
+  Expected: ['Trinity Church']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 391:
+  Text: Consider the events involving both Julian Ross and Job Fair on February 27, 2026. List all the locations where these events took place, without describing the events themselves.
+  Expected: ['Metropolitan Museum of Art']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 392:
+  Text: Consider the events involving both Maya Smith and Tech Hackathon on February 27, 2026. List all the locations where these events took place, without describing the events themselves.
+  Expected: ['One World Trade Center']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 393:
+  Text: Consider the events involving both Nora Ramos and Farmers Market on July 13, 2024. List all the locations where these events took place, without describing the events themselves.
+  Expected: ['Grand Central Terminal']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 394:
+  Text: Think about what happened at Bethpage State Park on December 26, 2026. List all protagonists involved in any events at this time and place, without describing the events.
+  Expected: ['Zoe Brown']
+  Predicted: ['Zoe Brown']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 395:
+  Text: Think about what happened at Metropolitan Museum of Art on February 27, 2026. List all protagonists involved in any events at this time and place, without describing the events.
+  Expected: ['Julian Ross']
+  Predicted: ['Julian Ross']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 396:
+  Text: Think about what happened at One World Trade Center on February 27, 2026. List all protagonists involved in any events at this time and place, without describing the events.
+  Expected: ['Maya Smith']
+  Predicted: ['Maya Smith']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 5
+
+Question 397:
+  Text: Think about what happened at Trinity Church on February 27, 2026. List all protagonists involved in any events at this time and place, without describing the events.
+  Expected: ['Chloe Castillo']
+  Predicted: ['Chloe Castillo']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 398:
+  Text: Think about what happened at Grand Central Terminal on July 13, 2024. List all protagonists involved in any events at this time and place, without describing the events.
+  Expected: ['Nora Ramos']
+  Predicted: ['Nora Ramos']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 399:
+  Text: Recall the key events that occurred at Bethpage State Park on December 26, 2026. Describe what happened, focusing on the actions or occurrences rather than who was involved.
+  Expected: ['Theater Performance']
+  Predicted: ['Theater Performance at Bethpage State Park', 'Discussion with $entity_1', 'Performance Observation', 'Final Act and Audience Reaction', 'Performance Conclusion']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 400:
+  Text: Recall the key events that occurred at Metropolitan Museum of Art on February 27, 2026. Describe what happened, focusing on the actions or occurrences rather than who was involved.
+  Expected: ['Job Fair']
+  Predicted: []
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 4
+
+Question 401:
+  Text: Recall the key events that occurred at One World Trade Center on February 27, 2026. Describe what happened, focusing on the actions or occurrences rather than who was involved.
+  Expected: ['Tech Hackathon']
+  Predicted: []
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 3
+
+Question 402:
+  Text: Recall the key events that occurred at Trinity Church on February 27, 2026. Describe what happened, focusing on the actions or occurrences rather than who was involved.
+  Expected: ['TED Talk']
+  Predicted: []
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 403:
+  Text: Recall the key events that occurred at Grand Central Terminal on July 13, 2024. Describe what happened, focusing on the actions or occurrences rather than who was involved.
+  Expected: ['Farmers Market']
+  Predicted: []
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 404:
+  Text: Think about the events related to Theater Performance that occurred at Bethpage State Park on December 26, 2026. List all protagonists involved in these events, without describing the events themselves.
+  Expected: ['Zoe Brown']
+  Predicted: ['Zoe Brown']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 405:
+  Text: Think about the events related to Job Fair that occurred at Metropolitan Museum of Art on February 27, 2026. List all protagonists involved in these events, without describing the events themselves.
+  Expected: ['Julian Ross']
+  Predicted: ['Julian Ross']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 4
+
+Question 406:
+  Text: Think about the events related to Tech Hackathon that occurred at One World Trade Center on February 27, 2026. List all protagonists involved in these events, without describing the events themselves.
+  Expected: ['Maya Smith']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 407:
+  Text: Think about the events related to TED Talk that occurred at Trinity Church on February 27, 2026. List all protagonists involved in these events, without describing the events themselves.
+  Expected: ['Chloe Castillo']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 408:
+  Text: Think about the events related to Farmers Market that occurred at Grand Central Terminal on July 13, 2024. List all protagonists involved in these events, without describing the events themselves.
+  Expected: ['Nora Ramos']
+  Predicted: ['Nora Ramos']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 2
+
+Question 409:
+  Text: Recall what happened involving Zoe Brown at Bethpage State Park on December 26, 2026. Describe the key events or activities that occurred, focusing on what happened.
+  Expected: ['Theater Performance']
+  Predicted: ['Theater Performance at Bethpage State Park', 'Discussion with $entity_1', 'Performance Observation', 'Final Act and Audience Reaction', 'Performance Conclusion']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 410:
+  Text: Recall what happened involving Julian Ross at Metropolitan Museum of Art on February 27, 2026. Describe the key events or activities that occurred, focusing on what happened.
+  Expected: ['Job Fair']
+  Predicted: ['Job Fair at the Museum', 'Exploration of Graduate Programs', 'Brochure Distribution', 'Atmospheric Shift', 'Exit from the Museum']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 411:
+  Text: Recall what happened involving Maya Smith at One World Trade Center on February 27, 2026. Describe the key events or activities that occurred, focusing on what happened.
+  Expected: ['Tech Hackathon']
+  Predicted: ['Hackathon Day 1', 'Hackathon Mentoring', 'Hackathon Day 2', 'Hackathon Presentation']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 412:
+  Text: Recall what happened involving Chloe Castillo at Trinity Church on February 27, 2026. Describe the key events or activities that occurred, focusing on what happened.
+  Expected: ['TED Talk']
+  Predicted: ["Chloe's TEDx Presentation", "Chloe's Presentation Preparation", "Chloe's Presentation Start", "Chloe's Research Presentation", "Chloe's Presentation Error", "Chloe's Presentation Conclusion"]
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 413:
+  Text: Recall what happened involving Nora Ramos at Grand Central Terminal on July 13, 2024. Describe the key events or activities that occurred, focusing on what happened.
+  Expected: ['Farmers Market']
+  Predicted: ['Grand Central Terminal Farmers Market', 'Artisanal Jam Booth', 'Live Acoustic Set', 'Farm-to-Table Discussion', 'Herb Barter', 'Farewell to Farmers Market']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 414:
+  Text: Provide a comprehensive account of what happened involving Zoe Brown and Theater Performance at Bethpage State Park on December 26, 2026. Include all relevant details about the event(s), including what occurred and any other pertinent information.
+  Expected: ['Full chapter 1']
+  Predicted: {"date": "December 26, 2026", "location": "Bethpage State Park"}
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 415:
+  Text: Provide a comprehensive account of what happened involving Julian Ross and Job Fair at Metropolitan Museum of Art on February 27, 2026. Include all relevant details about the event(s), including what occurred and any other pertinent information.
+  Expected: ['Full chapter 12']
+  Predicted: {"date": "February 27, 2026", "location": "Metropolitan Museum of Art", "participants": ["Julian Ross"]}
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 416:
+  Text: Provide a comprehensive account of what happened involving Maya Smith and Tech Hackathon at One World Trade Center on February 27, 2026. Include all relevant details about the event(s), including what occurred and any other pertinent information.
+  Expected: ['Full chapter 9']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 3
+
+Question 417:
+  Text: Provide a comprehensive account of what happened involving Chloe Castillo and TED Talk at Trinity Church on February 27, 2026. Include all relevant details about the event(s), including what occurred and any other pertinent information.
+  Expected: ['Full chapter 3']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 418:
+  Text: Provide a comprehensive account of what happened involving Nora Ramos and Farmers Market at Grand Central Terminal on July 13, 2024. Include all relevant details about the event(s), including what occurred and any other pertinent information.
+  Expected: ['Full chapter 8']
+  Predicted: {"date": "July 13, 2024", "location": "Grand Central Terminal"}
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 2
+
+Question 419:
+  Text: Recall what happened involving Zoe Brown and Theater Performance at Bethpage State Park on December 26, 2026 and list only who else was involved (if anyone).
+  Expected: []
+  Predicted: []
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 420:
+  Text: Recall what happened involving Julian Ross and Job Fair at Metropolitan Museum of Art on February 27, 2026 and list only who else was involved (if anyone).
+  Expected: []
+  Predicted: []
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 421:
+  Text: Recall what happened involving Maya Smith and Tech Hackathon at One World Trade Center on February 27, 2026 and list only who else was involved (if anyone).
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 422:
+  Text: Recall what happened involving Chloe Castillo and TED Talk at Trinity Church on February 27, 2026 and list only who else was involved (if anyone).
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 423:
+  Text: Recall what happened involving Nora Ramos and Farmers Market at Grand Central Terminal on July 13, 2024 and list only who else was involved (if anyone).
+  Expected: []
+  Predicted: []
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 424:
+  Text: Reflect on February 27, 2026. Describe all the key events that occurred on this date, focusing on what happened rather than who was involved or where it took place.
+  Expected: ['TED Talk', 'Tech Hackathon', 'Job Fair']
+  Predicted: ['TEDx Talk', 'Preparation', 'Performance', 'Presentation', 'Hackathon', 'Mentoring Session', 'Job Fair', 'Exploration', 'Brochure Distribution', 'Atmospheric Shift', 'Exit']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 425:
+  Text: Reflect on March 23, 2024. Describe all the key events that occurred on this date, focusing on what happened rather than who was involved or where it took place.
+  Expected: ['Astronomy Night', 'Theater Performance', 'Parkour Workshop', 'Storytelling Festival']
+  Predicted: ['Scarlett attends a musical performance in the grand hall, experiencing a crescendo of emotions.', 'Scarlett explores backstage at Lincoln Center, explaining operations with enthusiasm.', 'A parkour workshop held at the Guggenheim Museum, where participants engaged in various activities related to the art of movement.', 'Lucy Carter hosted a parkour film screening, showcasing creativity and dreamscapes.', 'Discussion on the philosophy underlying parkour, merging physical prowess and spiritual freedom.', 'A storytelling festival held at Yankee Stadium, featuring a colorful crowd and humorous tales.', 'Carter Stewart marvels at the incongruity of Yankee Stadium hosting a storytelling event.', 'Carter Stewart reflects on the art of humor during the storytelling festival.', 'Carter Stewart eavesdrops on a debate that threatens to turn into a storytelling duel.', 'Carter Stewart interacts with other storytellers at the festival.', 'Carter Stewart reflects on his experience at the storytelling festival.', 'Carter Stewart engages with grandparents and children at the festival.', 'Carter Stewart listens to creative storytelling at the festival.', 'Carter Stewart reflects on the conclusion of the storytelling festival.', 'An astronomy night event where attendees gathered to explore the mysteries of the universe through telescopes and discussions.', 'Attendees used telescopes to explore the night sky, engaging in conversations about theories and possibilities.', 'Zoe hosted astrobiology lectures, discussing the potential of life beyond Earth.']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 426:
+  Text: Consider all events that happened on February 27, 2026. Provide a list of all protagonists involved in any of these events, without describing the events themselves.
+  Expected: ['Julian Ross', 'Chloe Castillo', 'Maya Smith']
+  Predicted: ['Chloe Castillo', 'Maya Smith', 'Julian Ross']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 427:
+  Text: Consider all events that happened on March 23, 2024. Provide a list of all protagonists involved in any of these events, without describing the events themselves.
+  Expected: ['Carter Stewart', 'Scarlett Thomas', 'Lucy Carter', 'Zoe Brown']
+  Predicted: ['Scarlett Thomas', 'Lucy Carter', 'Carter Stewart', 'Zoe Brown']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 428:
+  Text: Recall all the events that occurred on February 27, 2026. Without describing the events, list all the unique locations where these events took place.
+  Expected: ['One World Trade Center', 'Trinity Church', 'Metropolitan Museum of Art']
+  Predicted: ['Trinity Church', 'One World Trade Center', 'Metropolitan Museum of Art']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 429:
+  Text: Recall all the events that occurred on March 23, 2024. Without describing the events, list all the unique locations where these events took place.
+  Expected: ['Guggenheim Museum', 'Lincoln Center', 'Port Jefferson', 'Yankee Stadium']
+  Predicted: ['Grand Hall', 'Lincoln Center', 'Guggenheim Museum', 'Yankee Stadium', 'Port Jefferson']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 430:
+  Text: Reflect on November 13, 2026. Describe all the key events that occurred on this date, focusing on what happened rather than who was involved or where it took place.
+  Expected: ['Fashion Show', 'Photography Exhibition']
+  Predicted: ['Fashion Show', 'Art Exhibition', 'Art Exhibition Interaction', 'Art Exhibition Revelation']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 431:
+  Text: Reflect on October 13, 2024. Describe all the key events that occurred on this date, focusing on what happened rather than who was involved or where it took place.
+  Expected: ['Film Festival', 'Carnival']
+  Predicted: ['Film Festival', 'Film Screening', 'Film Showcase', 'Carnival']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 432:
+  Text: Reflect on September 03, 2026. Describe all the key events that occurred on this date, focusing on what happened rather than who was involved or where it took place.
+  Expected: ['Environmental Summit', 'Photography Exhibition']
+  Predicted: ['Carter Stewart navigates the fairways during an environmental summit discussing water conservation.', "An art exhibition showcasing Samuel Parker's landscape photographs at Trinity Church.", 'Samuel Parker interacts with patrons during his art exhibition.', "A flute's mournful note adds to the ambiance of the art exhibition."]
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 433:
+  Text: Recall all the events that occurred on November 13, 2026. Without describing the events, list all the unique locations where these events took place.
+  Expected: ['Metropolitan Museum of Art', 'High Line']
+  Predicted: ['Metropolitan Museum of Art', 'High Line']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 434:
+  Text: Recall all the events that occurred on October 13, 2024. Without describing the events, list all the unique locations where these events took place.
+  Expected: ['Snug Harbor Cultural Center', 'Long Beach Boardwalk']
+  Predicted: ['Long Beach Boardwalk', 'Snug Harbor Cultural Center']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 435:
+  Text: Recall all the events that occurred on September 03, 2026. Without describing the events, list all the unique locations where these events took place.
+  Expected: ['Bethpage Black Course', 'Trinity Church']
+  Predicted: ['Bethpage Black Course', 'Trinity Church']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 436:
+  Text: Consider all events that happened on November 13, 2026. Provide a list of all protagonists involved in any of these events, without describing the events themselves.
+  Expected: ['Scarlett Thomas', 'Lucy Carter']
+  Predicted: ['Lucy Carter', 'Scarlett Thomas']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 437:
+  Text: Consider all events that happened on October 13, 2024. Provide a list of all protagonists involved in any of these events, without describing the events themselves.
+  Expected: ['Carter Stewart', 'Zoe Brown']
+  Predicted: ['Zoe Brown', 'Carter Stewart']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 438:
+  Text: Consider all events that happened on September 03, 2026. Provide a list of all protagonists involved in any of these events, without describing the events themselves.
+  Expected: ['Samuel Parker', 'Carter Stewart']
+  Predicted: ['Carter Stewart', 'Samuel Parker']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+

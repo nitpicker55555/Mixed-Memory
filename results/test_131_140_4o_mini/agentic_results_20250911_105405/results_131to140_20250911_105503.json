@@ -1,0 +1,272 @@
+[
+  {
+    "question": "Think about Chloe Castillo's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+    "predicted_answer": [
+      "February 27, 2026"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "February 27, 2026"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "dcd726a5-29aa-49f3-b290-1f4c94e54096",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.date AS date, e.location AS location, e.name AS name, e.event_type AS event_type"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 131,
+    "expected_answer": [
+      "TED Talk"
+    ],
+    "processing_order": 1
+  },
+  {
+    "question": "Think about Hazel Lewis's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+    "predicted_answer": [
+      "May 14, 2025"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "May 14, 2025"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "a0d2ada9-d0a6-4ae2-b885-581b6764f6ac",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.date AS date, e.location AS location, e.name AS name, e.event_type AS event_type"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 132,
+    "expected_answer": [
+      "Archery Tournament"
+    ],
+    "processing_order": 2
+  },
+  {
+    "question": "Think about Julian Ross's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+    "predicted_answer": [
+      "February 27, 2026"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "February 27, 2026"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "a92bf515-f6b4-45c5-9878-89761ea00d2a",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.date AS date, e.location AS location, e.name AS name, e.event_type AS event_type"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 133,
+    "expected_answer": [
+      "Job Fair"
+    ],
+    "processing_order": 3
+  },
+  {
+    "question": "Think about Nora Ramos's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+    "predicted_answer": [
+      "July 13, 2024"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "July 13, 2024"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "614bd264-4e54-4f2f-9413-cdab1fc4b77b",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.date AS date, e.location AS location, e.name AS name, e.event_type AS event_type"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 134,
+    "expected_answer": [
+      "Farmers Market"
+    ],
+    "processing_order": 4
+  },
+  {
+    "question": "Think about Samuel Parker's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+    "predicted_answer": [
+      "September 03, 2026"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "September 03, 2026"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "3537c2d9-f4e5-44a4-8b83-c2d1f9fac548",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.date AS date, e.location AS location, e.name AS name, e.event_type AS event_type"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 135,
+    "expected_answer": [
+      "Photography Exhibition"
+    ],
+    "processing_order": 5
+  },
+  {
+    "question": "Provide a chronological list of all dates when Chloe Castillo was observed, from earliest to latest in the story's timeline.",
+    "predicted_answer": [
+      "Trinity Church"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "Trinity Church"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "9e8f83e7-4821-439b-9e40-08f784d3ae6b",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.date AS date, e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 136,
+    "expected_answer": [
+      "February 27, 2026"
+    ],
+    "processing_order": 6
+  },
+  {
+    "question": "Provide a chronological list of all dates when Hazel Lewis was observed, from earliest to latest in the story's timeline.",
+    "predicted_answer": [
+      "Queensboro Bridge"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "Queensboro Bridge"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "c5f922a0-4a52-44d9-b8ef-867912f920d6",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.date AS date, e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 137,
+    "expected_answer": [
+      "May 14, 2025"
+    ],
+    "processing_order": 7
+  },
+  {
+    "question": "Provide a chronological list of all dates when Julian Ross was observed, from earliest to latest in the story's timeline.",
+    "predicted_answer": [
+      "Metropolitan Museum of Art"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "Metropolitan Museum of Art"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "8b5c4906-16b7-4fab-8a9c-1e2f043cf991",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.date AS date, e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 138,
+    "expected_answer": [
+      "February 27, 2026"
+    ],
+    "processing_order": 8
+  },
+  {
+    "question": "Provide a chronological list of all dates when Nora Ramos was observed, from earliest to latest in the story's timeline.",
+    "predicted_answer": [
+      "Grand Central Terminal"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "Grand Central Terminal"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "22a2d271-b78d-4ff8-894f-f130de5c30ce",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.date AS date, e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 139,
+    "expected_answer": [
+      "July 13, 2024"
+    ],
+    "processing_order": 9
+  },
+  {
+    "question": "Provide a chronological list of all dates when Samuel Parker was observed, from earliest to latest in the story's timeline.",
+    "predicted_answer": [
+      "Trinity Church"
+    ],
+    "gpt_answer_result": {
+      "final_answer": [
+        "Trinity Church"
+      ],
+      "confidence_score": 0.0,
+      "reasoning": [],
+      "search_successful": true
+    },
+    "agentic_metadata": {
+      "session_id": "b9392d5b-3a99-4ce5-9d1b-9036521e9ef8",
+      "total_iterations": 1,
+      "query_history": [
+        "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(trim(p)) = toLower(trim($person))) RETURN e.date AS date, e.location AS location"
+      ],
+      "search_strategy_used": "agentic_react_loop"
+    },
+    "original_question_number": 140,
+    "expected_answer": [
+      "September 03, 2026"
+    ],
+    "processing_order": 10
+  }
+]

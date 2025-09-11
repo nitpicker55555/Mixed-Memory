@@ -1,0 +1,93 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-11 14:31:50
+Question Range: 211-220
+Total Questions Processed: 10
+Successful Searches: 7 (70.0%)
+Questions with Answers: 7 (70.0%)
+Average Iterations per Question: 3.3
+
+DETAILED RESULTS:
+------------------------------
+
+Question 211:
+  Text: Recall all events related to Theater Performance that occurred at Bethpage State Park. Provide a list of all dates when these events took place, without describing the events.
+  Expected: ['December 26, 2026']
+  Predicted: ['December 26, 2026']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+
+Question 212:
+  Text: Recall all events related to Farmers Market that occurred at Grand Central Terminal. Provide a list of all dates when these events took place, without describing the events.
+  Expected: ['July 13, 2024']
+  Predicted: ['July 13, 2024']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 2
+
+Question 213:
+  Text: Recall all events related to Parkour Workshop that occurred at Guggenheim Museum. Provide a list of all dates when these events took place, without describing the events.
+  Expected: ['March 23, 2024']
+  Predicted: ['March 23, 2024']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 3
+
+Question 214:
+  Text: Recall all events related to Photography Exhibition that occurred at High Line. Provide a list of all dates when these events took place, without describing the events.
+  Expected: ['November 13, 2026']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 215:
+  Text: Think about the events involving Environmental Summit at Bethpage Black Course. List all protagonists involved in these events, without mentioning the events themselves.
+  Expected: ['Carter Stewart']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 216:
+  Text: Think about the events involving Theater Performance at Bethpage State Park. List all protagonists involved in these events, without mentioning the events themselves.
+  Expected: ['Zoe Brown']
+  Predicted: ['Zoe Brown', 'Lucy Carter']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 4
+
+Question 217:
+  Text: Think about the events involving Farmers Market at Grand Central Terminal. List all protagonists involved in these events, without mentioning the events themselves.
+  Expected: ['Nora Ramos']
+  Predicted: ['Nora Ramos']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 3
+
+Question 218:
+  Text: Think about the events involving Parkour Workshop at Guggenheim Museum. List all protagonists involved in these events, without mentioning the events themselves.
+  Expected: ['Lucy Carter']
+  Predicted: ['Lucy Carter']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 4
+
+Question 219:
+  Text: Think about the events involving Photography Exhibition at High Line. List all protagonists involved in these events, without mentioning the events themselves.
+  Expected: ['Scarlett Thomas']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 220:
+  Text: Consider all events involving Carter Stewart at Bethpage Black Course. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['September 03, 2026']
+  Predicted: ['September 03, 2026']
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+

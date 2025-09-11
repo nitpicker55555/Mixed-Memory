@@ -1,0 +1,11 @@
+question_num,question,predicted_answer,search_success,confidence,iterations
+271,"Consider all events involving both Thomas Ramos and Laser Tag Tournament at City Island. Provide a list of all dates when these events occurred, without describing the events.","None",False,0.0,5
+272,"Consider all events involving both Ellie Garcia and Boat Show at Fort Tryon Park. Provide a list of all dates when these events occurred, without describing the events.","None",False,0.0,5
+273,"Consider all events involving both Chloe Castillo and Farmers Market at Guggenheim Museum. Provide a list of all dates when these events occurred, without describing the events.","None",False,0.0,5
+274,"Consider all events involving both Lucy Carter and Farmers Market at Guggenheim Museum. Provide a list of all dates when these events occurred, without describing the events.","None",False,0.0,5
+275,"Consider the location Metropolitan Museum of Art. List all protagonists that have been involved in any events at this location, without mentioning the events themselves.","['Julian Ross', 'Lucy Carter', 'Maya Smith']",True,0.0,1
+276,"Think about all events that have occurred at Metropolitan Museum of Art. Provide a list of all dates when these events took place, without describing the events.","['February 27, 2026', 'May 11, 2026', 'November 13, 2026']",True,0.0,1
+277,"Recall the various events that have taken place at Metropolitan Museum of Art. Describe what happened during these events, focusing on the actions or occurrences rather than the timing or people involved.","['Job Fair', 'Exploration', 'Brochure Distribution', 'Atmospheric Shift', 'Exit', 'Fashion Show', 'Fitness Class']",True,0.0,3
+278,"Consider the location Port Jefferson. List all protagonists that have been involved in any events at this location, without mentioning the events themselves.","['Zoe Brown']",True,0.0,2
+279,"Consider the location Trinity Church. List all protagonists that have been involved in any events at this location, without mentioning the events themselves.","None",False,0.0,5
+280,"Recall the various events that have taken place at Port Jefferson. Describe what happened during these events, focusing on the actions or occurrences rather than the timing or people involved.","['Astronomy Event', 'Lecture']",True,0.0,1
