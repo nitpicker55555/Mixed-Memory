@@ -1,0 +1,103 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-25 11:53:24
+Question Range: 241-250
+Total Questions Processed: 10
+Successful Searches: 10 (100.0%)
+Questions with Answers: 10 (100.0%)
+Average Iterations per Question: 1.0
+
+DETAILED RESULTS:
+------------------------------
+
+Question 241:
+  Text: Enumerate all activities that Chloe Castillo has been involved in, ordered from earliest to latest in the story's chronology.
+  Expected: ['Parkour Workshop', 'Fashion Show', 'Tech Hackathon', 'Theater Performance', 'Educational Workshop', 'Parkour Workshop', 'Fashion Show', 'Film Festival']
+  Predicted: [{'name': 'Parkour Fitness Workshop', 'event_type': 'Workshop', 'date': '2024-05-07', 'chapter_number': 128}, {'name': 'Fashion Show', 'event_type': 'Performance', 'date': 'February 22, 2025', 'chapter_number': 105}, {'name': 'Presentation on Fashion Technology', 'event_type': 'Presentation', 'date': 'February 22, 2025', 'chapter_number': 105}, {'name': 'Audience Panic', 'event_type': 'Incident', 'date': 'February 22, 2025', 'chapter_number': 105}, {'name': 'Transformation of Final Model', 'event_type': 'Performance', 'date': 'February 22, 2025', 'chapter_number': 105}, {'name': 'Hackathon at Van Cortlandt Park', 'event_type': 'Event', 'date': '2025-05-28', 'chapter_number': 176}, {'name': 'Discussion on Data Privacy', 'event_type': 'Discussion', 'date': '2025-05-28', 'chapter_number': 176}, {'name': 'Theater Performance at Grand Central Terminal', 'event_type': 'Performance', 'date': '2025-06-14', 'chapter_number': 169}, {'name': 'Discussion on Theater Funding', 'event_type': 'Conversation', 'date': '2025-06-14', 'chapter_number': 169}, {'name': 'Scream During Performance', 'event_type': 'Accident', 'date': '2025-06-14', 'chapter_number': 169}]
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 192 total (175 prompt + 17 completion, 1 calls)
+
+Question 242:
+  Text: Enumerate all activities that Ezra Edwards has been involved in, ordered from earliest to latest in the story's chronology.
+  Expected: ['Photography Exhibition', 'Tech Hackathon', 'Astronomy Night', 'Tattoo Convention', 'Parkour Workshop', 'Fire Dancing Performance', 'Fashion Show', 'Educational Workshop']
+  Predicted: [{'name': 'Photography Exhibition Opening', 'date': '2024-07-21', 'event_type': 'Exhibition', 'chapter_number': 191, 'description': 'Ezra Edwards opened his photography exhibition at One World Trade Center, showcasing his work to a gathered crowd. The atmosphere was filled with anticipation and mixed emotions as he faced the scrutiny of his art.'}, {'name': 'Praise from Theo Gillen', 'date': '2024-07-21', 'event_type': 'Conversation', 'chapter_number': 191, 'description': 'Theo Gillen approached Ezra Edwards to compliment his work, expressing excitement about a particular photograph. Ezra felt conflicted about the praise, reflecting on the cost of his art.'}, {'name': 'Technical Discussion', 'date': '2024-07-21', 'event_type': 'Conversation', 'chapter_number': 191, 'description': 'Ezra engaged in a technical discussion about photography equipment choices with a small group of enthusiasts, feeling a sense of betrayal as he revealed details about his art.'}, {'name': 'Introduction by Kellan Sanborn', 'date': '2024-07-21', 'event_type': 'Speech', 'chapter_number': 191, 'description': 'Kellan Sanborn introduced Ezra Edwards to the audience, prompting a loud applause that filled the room. Ezra felt overwhelmed by the expectations placed upon him.'}, {'name': 'Tech Hackathon', 'date': '2024-10-13', 'event_type': 'Workshop', 'chapter_number': 138, 'description': 'The tech hackathon was in full swing with participants working on their projects, creating an atmosphere of anticipation and tension.'}, {'name': 'Discussion on Open-Source Development', 'date': '2024-10-13', 'event_type': 'Conversation', 'chapter_number': 138, 'description': 'Ezra discussed open-source development with a group of eager listeners while feeling an unsettling presence nearby.'}, {'name': 'Odd Request for USB Drive', 'date': '2024-10-13', 'event_type': 'Conversation', 'chapter_number': 138, 'description': 'Rey approached Ezra with an odd request involving a mysterious USB drive, hinting at deeper issues within the hackathon.'}, {'name': 'Stargazing Event at Yankee Stadium', 'date': '2025-05-28', 'event_type': 'Performance', 'chapter_number': 167, 'description': 'A stargazing event transformed Yankee Stadium into a celestial paradise, featuring a massive projection system that displayed constellations and shooting stars, captivating the audience.'}, {'name': 'Constellation Projection', 'date': '2025-05-28', 'event_type': 'Performance', 'chapter_number': 167, 'description': 'Ezra Edwards operated a projection system that created constellations and shooting stars, enchanting the gathered crowd with a cosmic display.'}, {'name': 'Storytelling Session', 'date': '2025-05-28', 'event_type': 'Performance', 'chapter_number': 167, 'description': 'Ezra Edwards shared tales of ancient myths and scientific discoveries, engaging the audience and enhancing their stargazing experience.'}]
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 192 total (175 prompt + 17 completion, 1 calls)
+
+Question 243:
+  Text: What was Benjamin Green doing the last time they were observed in the story's timeline?
+  Expected: ['Fire Dancing Performance']
+  Predicted: Ice Preservation Talks
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 185 total (169 prompt + 16 completion, 1 calls)
+
+Question 244:
+  Text: What was Brooklyn Ross doing the last time they were observed in the story's timeline?
+  Expected: ['Tech Hackathon']
+  Predicted: Brooklyn Ross and Avah Dunning engaged in a conversation about the historical accuracy of the time period relevant to the mystery, highlighting its importance in solving the case.
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 186 total (169 prompt + 17 completion, 1 calls)
+
+Question 245:
+  Text: What was Carter Stewart doing the last time they were observed in the story's timeline?
+  Expected: ['Scientific Conference']
+  Predicted: Carter discussed musical notation with Vaughn Rigby, tracing invisible patterns in the air.
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 186 total (169 prompt + 17 completion, 1 calls)
+
+Question 246:
+  Text: What was Chloe Castillo doing the last time they were observed in the story's timeline?
+  Expected: ['Film Festival']
+  Predicted: Chloe hosted a parkour film screening the previous night, where she recognized some participants from the event.
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 186 total (169 prompt + 17 completion, 1 calls)
+
+Question 247:
+  Text: What was Ezra Edwards doing the last time they were observed in the story's timeline?
+  Expected: ['Educational Workshop']
+  Predicted: Ezra Edwards was participating in a fashion show on the Brooklyn Bridge on September 22, 2026.
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 186 total (169 prompt + 17 completion, 1 calls)
+
+Question 248:
+  Text: Consider all events that Benjamin Green has been involved in. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Snug Harbor Cultural Center', 'Madison Square Garden', 'Washington Square Park', 'One World Trade Center', 'Bethpage State Park']
+  Predicted: ['Washington Square Park', 'Unknown', 'Snug Harbor Cultural Center', 'Bethpage State Park', 'Madison Square Garden', 'One World Trade Center']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 195 total (179 prompt + 16 completion, 1 calls)
+
+Question 249:
+  Text: Consider all events that Brooklyn Ross has been involved in. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['High Line', 'Guggenheim Museum', 'Yankee Stadium', 'Fire Island National Seashore', 'One World Trade Center', 'Queensboro Bridge', 'Brooklyn Museum']
+  Predicted: ['High Line, Brooklyn', 'Brooklyn Museum', 'Queensboro Bridge', 'Fire Island National Seashore', 'One World Trade Center', 'Guggenheim Museum', 'Yankee Stadium', 'Unknown']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 196 total (179 prompt + 17 completion, 1 calls)
+
+Question 250:
+  Text: Consider all events that Carter Stewart has been involved in. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Trinity Church', 'Port Jefferson', 'Yankee Stadium', 'American Museum of Natural History', 'Washington Square Park', 'Woolworth Building', 'Bethpage Black Course', 'Metropolitan Museum of Art']
+  Predicted: ['Yankee Stadium', 'Port Jefferson', 'Metropolitan Museum of Art', 'Buffet Area', 'American Museum of Natural History', 'Woolworth Building', 'Trinity Church', 'Washington Square Park', 'Carnival Fairgrounds', 'Unknown', 'Bethpage Black Course']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 196 total (179 prompt + 17 completion, 1 calls)
+

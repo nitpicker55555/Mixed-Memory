@@ -1,0 +1,254 @@
+{
+  "metadata": {
+    "start_time": "2025-09-19T01:19:17.101424",
+    "database": "database13questions",
+    "question_range": "51-60",
+    "total_questions": 10,
+    "end_time": "2025-09-19T01:21:30.627771",
+    "total_duration": 133.514581
+  },
+  "results": [
+    {
+      "question_idx": 32,
+      "question": "What was Ezra Edwards doing the last time they were observed in the story's timeline?",
+      "answer": {
+        "session_id": "b10eca2d-f70e-484d-afb5-b6d3a20ef8f9",
+        "question": "What was Ezra Edwards doing the last time they were observed in the story's timeline?",
+        "final_answer": "Ezra Edwards was leading a parkour workshop at Bethpage Black Course on September 13, 2025.",
+        "standardized_answer": [
+          "Ezra Edwards was leading a parkour workshop at Bethpage Black Course on September 13, 2025."
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Ezra Edwards' IN e.participants ORDER BY e.date DESC RETURN e.date AS date, e.name AS name, e.event_type AS event_type, e.description AS description, e.location AS location LIMIT 1"
+        ]
+      },
+      "duration_seconds": 15.183704,
+      "status": "success",
+      "timestamp": "2025-09-19T01:19:17.101470",
+      "expected_answer": [
+        "Parkour Workshop"
+      ]
+    },
+    {
+      "question_idx": 32,
+      "question": "What was Jackson Ramos doing the last time they were observed in the story's timeline?",
+      "answer": {
+        "session_id": "50be2760-21cb-4006-ba32-677708e41072",
+        "question": "What was Jackson Ramos doing the last time they were observed in the story's timeline?",
+        "final_answer": "Jackson Ramos was performing in the \"High Line Tragedy Play,\" confronting personal and artistic challenges.",
+        "standardized_answer": [
+          "Jackson Ramos was performing in the \"High Line Tragedy Play,\" confronting personal and artistic challenges."
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Jackson Ramos' IN e.participants ORDER BY e.date DESC LIMIT 1 RETURN e.date AS date, e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants"
+        ]
+      },
+      "duration_seconds": 15.440492,
+      "status": "success",
+      "timestamp": "2025-09-19T01:19:32.285708",
+      "expected_answer": [
+        "Theater Performance"
+      ]
+    },
+    {
+      "question_idx": 32,
+      "question": "What was Julian Ross doing the last time they were observed in the story's timeline?",
+      "answer": {
+        "session_id": "7fd16b79-442d-496d-a1c1-25f6e5d1888d",
+        "question": "What was Julian Ross doing the last time they were observed in the story's timeline?",
+        "final_answer": "Julian Ross was participating in the Woolworth Building Hackathon.",
+        "standardized_answer": [
+          "Julian Ross was participating in the Woolworth Building Hackathon."
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Julian Ross' IN e.participants ORDER BY e.date DESC RETURN e.date AS date, e.name AS name, e.event_type AS event_type, e.participants AS participants LIMIT 1"
+        ]
+      },
+      "duration_seconds": 12.665102,
+      "status": "success",
+      "timestamp": "2025-09-19T01:19:47.726315",
+      "expected_answer": [
+        "Tech Hackathon"
+      ]
+    },
+    {
+      "question_idx": 32,
+      "question": "What was Levi Rodriguez doing the last time they were observed in the story's timeline?",
+      "answer": {
+        "session_id": "abf37200-5ac1-4cd2-999f-2de0d952f47b",
+        "question": "What was Levi Rodriguez doing the last time they were observed in the story's timeline?",
+        "final_answer": "Levi Rodriguez hosts an astronomy trivia contest, engaging participants in a night of cosmic questions and camaraderie.",
+        "standardized_answer": [
+          "Levi Rodriguez hosts an astronomy trivia contest, engaging participants in a night of cosmic questions and camaraderie."
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Levi Rodriguez' IN e.participants ORDER BY e.date DESC LIMIT 1 RETURN e.date AS date, e.name AS name, e.event_type AS event_type, e.location AS location, e.description AS description"
+        ]
+      },
+      "duration_seconds": 12.962454,
+      "status": "success",
+      "timestamp": "2025-09-19T01:20:00.391634",
+      "expected_answer": [
+        "Astronomy Night"
+      ]
+    },
+    {
+      "question_idx": 30,
+      "question": "What is the most recent date Chloe Castillo was observed or mentioned in the story's chronology?",
+      "answer": {
+        "session_id": "f1768253-a781-4046-9207-7ea4281b4f7e",
+        "question": "What is the most recent date Chloe Castillo was observed or mentioned in the story's chronology?",
+        "final_answer": "September 22, 2026",
+        "standardized_answer": [
+          "September 22, 2026"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Chloe Castillo' IN e.participants RETURN e.date AS date, e.participants AS participants ORDER BY e.date DESC LIMIT 1"
+        ]
+      },
+      "duration_seconds": 13.10121,
+      "status": "success",
+      "timestamp": "2025-09-19T01:20:13.354225",
+      "expected_answer": [
+        "September 22, 2026"
+      ]
+    },
+    {
+      "question_idx": 30,
+      "question": "What is the most recent date Ezra Edwards was observed or mentioned in the story's chronology?",
+      "answer": {
+        "session_id": "e24fec41-f889-45ab-9a3f-ce6a72bc5d5c",
+        "question": "What is the most recent date Ezra Edwards was observed or mentioned in the story's chronology?",
+        "final_answer": "September 13, 2025",
+        "standardized_answer": [
+          "September 13, 2025"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Ezra Edwards' IN e.participants RETURN e.date AS date, e.participants AS participants ORDER BY e.date DESC LIMIT 1"
+        ]
+      },
+      "duration_seconds": 13.86156,
+      "status": "success",
+      "timestamp": "2025-09-19T01:20:26.455568",
+      "expected_answer": [
+        "September 13, 2025"
+      ]
+    },
+    {
+      "question_idx": 30,
+      "question": "What is the most recent date Jackson Ramos was observed or mentioned in the story's chronology?",
+      "answer": {
+        "session_id": "36ac932f-083e-491a-a645-374727399c18",
+        "question": "What is the most recent date Jackson Ramos was observed or mentioned in the story's chronology?",
+        "final_answer": "February 27, 2026",
+        "standardized_answer": [
+          "February 27, 2026"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Jackson Ramos' IN e.participants RETURN e.date AS date, e.participants AS participants ORDER BY e.date DESC LIMIT 1"
+        ]
+      },
+      "duration_seconds": 12.982901,
+      "status": "success",
+      "timestamp": "2025-09-19T01:20:40.317219",
+      "expected_answer": [
+        "February 27, 2026"
+      ]
+    },
+    {
+      "question_idx": 30,
+      "question": "What is the most recent date Julian Ross was observed or mentioned in the story's chronology?",
+      "answer": {
+        "session_id": "3616521a-136e-4c16-bf14-3211ad2e0b5f",
+        "question": "What is the most recent date Julian Ross was observed or mentioned in the story's chronology?",
+        "final_answer": "May 31, 2024",
+        "standardized_answer": [
+          "May 31, 2024"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Julian Ross' IN e.participants RETURN e.date AS date, e.participants AS participants ORDER BY e.date DESC LIMIT 1"
+        ]
+      },
+      "duration_seconds": 12.990721,
+      "status": "success",
+      "timestamp": "2025-09-19T01:20:53.300216",
+      "expected_answer": [
+        "May 31, 2024"
+      ]
+    },
+    {
+      "question_idx": 30,
+      "question": "What is the most recent date Levi Rodriguez was observed or mentioned in the story's chronology?",
+      "answer": {
+        "session_id": "ab6245b4-07c2-4d82-a43c-eea8c6034c45",
+        "question": "What is the most recent date Levi Rodriguez was observed or mentioned in the story's chronology?",
+        "final_answer": "December 26, 2026",
+        "standardized_answer": [
+          "December 26, 2026"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Levi Rodriguez' IN e.participants RETURN e.date AS date, e.participants AS participants ORDER BY e.date DESC LIMIT 1"
+        ]
+      },
+      "duration_seconds": 10.776476,
+      "status": "success",
+      "timestamp": "2025-09-19T01:21:06.291055",
+      "expected_answer": [
+        "December 26, 2026"
+      ]
+    },
+    {
+      "question_idx": 33,
+      "question": "Provide a chronological list of all dates when Chloe Castillo was observed, from earliest to latest in the story's timeline.",
+      "answer": {
+        "session_id": "b7acb6c7-89da-484a-974f-344119747883",
+        "question": "Provide a chronological list of all dates when Chloe Castillo was observed, from earliest to latest in the story's timeline.",
+        "final_answer": [
+          "September 22, 2026"
+        ],
+        "standardized_answer": [
+          "September 22, 2026"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Chloe Castillo' IN e.participants RETURN e.date AS date, e.participants AS participants ORDER BY e.date ASC"
+        ]
+      },
+      "duration_seconds": 13.549961,
+      "status": "success",
+      "timestamp": "2025-09-19T01:21:17.067741",
+      "expected_answer": [
+        "September 22, 2026"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,553 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-25 19:50:25
+Question Range: 241-300
+Total Questions Processed: 60
+Successful Searches: 3 (5.0%)
+Questions with Answers: 3 (5.0%)
+Average Iterations per Question: 4.8
+
+DETAILED RESULTS:
+------------------------------
+
+Question 241:
+  Text: Consider the location Camp Hero State Park. List all protagonists that have been involved in any events at this location, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2947 total (2015 prompt + 932 completion, 6 calls)
+
+Question 242:
+  Text: Consider the location Captree State Park. List all protagonists that have been involved in any events at this location, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2873 total (2002 prompt + 871 completion, 6 calls)
+
+Question 243:
+  Text: Consider the location Coney Island. List all protagonists that have been involved in any events at this location, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2837 total (1932 prompt + 905 completion, 6 calls)
+
+Question 244:
+  Text: Consider all events that happened on December 03, 2026. Provide a list of all protagonists involved in any of these events, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3028 total (2110 prompt + 918 completion, 6 calls)
+
+Question 245:
+  Text: Consider all events that happened on February 03, 2024. Provide a list of all protagonists involved in any of these events, without describing the events themselves.
+  Expected: []
+  Predicted: ['Mila Gonzalez', 'Diem Nix', 'Eli Groth', 'Rey Pierre', 'Audience', 'Jackson Ramos', 'Remy Waterman', 'Kylee Beard', 'Other actors', 'Zoe Brown', 'Nyla Bower', 'Delphi Parent', 'Genevieve Burgin', 'Quill Womack', 'Other participants']
+  Search Success: True
+  Confidence: 0.60
+  Iterations: 3
+  Token Usage: 1241 total (860 prompt + 381 completion, 3 calls)
+
+Question 246:
+  Text: Consider all events that happened on July 02, 2024. Provide a list of all protagonists involved in any of these events, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2957 total (2125 prompt + 832 completion, 6 calls)
+
+Question 247:
+  Text: Consider all events that happened on July 05, 2024. Provide a list of all protagonists involved in any of these events, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3041 total (2124 prompt + 917 completion, 6 calls)
+
+Question 248:
+  Text: Consider all events that happened on November 02, 2024. Provide a list of all protagonists involved in any of these events, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2974 total (2125 prompt + 849 completion, 6 calls)
+
+Question 249:
+  Text: Reflect on December 03, 2026. Describe all the key events that occurred on this date, focusing on what happened rather than who was involved or where it took place.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3396 total (2528 prompt + 868 completion, 6 calls)
+
+Question 250:
+  Text: Reflect on February 03, 2024. Describe all the key events that occurred on this date, focusing on what happened rather than who was involved or where it took place.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3510 total (2621 prompt + 889 completion, 6 calls)
+
+Question 251:
+  Text: Reflect on July 02, 2024. Describe all the key events that occurred on this date, focusing on what happened rather than who was involved or where it took place.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3635 total (2715 prompt + 920 completion, 6 calls)
+
+Question 252:
+  Text: Reflect on July 05, 2024. Describe all the key events that occurred on this date, focusing on what happened rather than who was involved or where it took place.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3443 total (2532 prompt + 911 completion, 6 calls)
+
+Question 253:
+  Text: Reflect on November 02, 2024. Describe all the key events that occurred on this date, focusing on what happened rather than who was involved or where it took place.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3369 total (2528 prompt + 841 completion, 6 calls)
+
+Question 254:
+  Text: Recall all the events that occurred on December 03, 2026. Without describing the events, list all the unique locations where these events took place.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2902 total (2020 prompt + 882 completion, 6 calls)
+
+Question 255:
+  Text: Recall all the events that occurred on February 03, 2024. Without describing the events, list all the unique locations where these events took place.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3031 total (2154 prompt + 877 completion, 6 calls)
+
+Question 256:
+  Text: Recall all the events that occurred on July 02, 2024. Without describing the events, list all the unique locations where these events took place.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2944 total (2041 prompt + 903 completion, 6 calls)
+
+Question 257:
+  Text: Recall all the events that occurred on July 05, 2024. Without describing the events, list all the unique locations where these events took place.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2978 total (2050 prompt + 928 completion, 6 calls)
+
+Question 258:
+  Text: Recall all the events that occurred on November 02, 2024. Without describing the events, list all the unique locations where these events took place.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2880 total (2014 prompt + 866 completion, 6 calls)
+
+Question 259:
+  Text: Recall the events related to Parkour Workshop that occurred on December 03, 2026. List all the locations where these events took place, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3165 total (2283 prompt + 882 completion, 6 calls)
+
+Question 260:
+  Text: Recall the events related to Theater Performance that occurred on December 26, 2026. List all the locations where these events took place, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3328 total (2476 prompt + 852 completion, 6 calls)
+
+Question 261:
+  Text: Recall the events related to Science Fair that occurred on February 03, 2024. List all the locations where these events took place, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3440 total (2563 prompt + 877 completion, 6 calls)
+
+Question 262:
+  Text: Recall the events related to Drum Circle that occurred on July 02, 2024. List all the locations where these events took place, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3136 total (2321 prompt + 815 completion, 6 calls)
+
+Question 263:
+  Text: Recall the events related to Escape Room Challenge that occurred on July 05, 2024. List all the locations where these events took place, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3529 total (2617 prompt + 912 completion, 6 calls)
+
+Question 264:
+  Text: Think about the events involving Parkour Workshop on December 03, 2026. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3141 total (2356 prompt + 785 completion, 6 calls)
+
+Question 265:
+  Text: Think about the events involving Theater Performance on December 26, 2026. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3265 total (2412 prompt + 853 completion, 6 calls)
+
+Question 266:
+  Text: Think about the events involving Science Fair on February 03, 2024. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3357 total (2445 prompt + 912 completion, 6 calls)
+
+Question 267:
+  Text: Think about the events involving Drum Circle on July 02, 2024. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3161 total (2255 prompt + 906 completion, 6 calls)
+
+Question 268:
+  Text: Think about the events involving Escape Room Challenge on July 05, 2024. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: []
+  Predicted: []
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+  Token Usage: 206 total (185 prompt + 21 completion, 1 calls)
+
+Question 269:
+  Text: Consider the events involving Ezra Edwards on December 03, 2026. List all the locations where these events took place, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3252 total (2340 prompt + 912 completion, 6 calls)
+
+Question 270:
+  Text: Consider the events involving Owen Thomas on December 26, 2026. List all the locations where these events took place, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3286 total (2440 prompt + 846 completion, 6 calls)
+
+Question 271:
+  Text: Consider the events involving Mateo Gomez on February 03, 2024. List all the locations where these events took place, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3146 total (2320 prompt + 826 completion, 6 calls)
+
+Question 272:
+  Text: Consider the events involving Harper Gutierrez on July 02, 2024. List all the locations where these events took place, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3311 total (2406 prompt + 905 completion, 6 calls)
+
+Question 273:
+  Text: Consider the events involving Jackson Ramos on July 05, 2024. List all the locations where these events took place, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3051 total (2198 prompt + 853 completion, 6 calls)
+
+Question 274:
+  Text: Reflect on what Ezra Edwards experienced on December 03, 2026. Describe all the key events they were involved in, focusing on what happened rather than where it occurred.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3769 total (2872 prompt + 897 completion, 6 calls)
+
+Question 275:
+  Text: Reflect on what Owen Thomas experienced on December 26, 2026. Describe all the key events they were involved in, focusing on what happened rather than where it occurred.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3009 total (2338 prompt + 671 completion, 5 calls)
+
+Question 276:
+  Text: Reflect on what Mateo Gomez experienced on February 03, 2024. Describe all the key events they were involved in, focusing on what happened rather than where it occurred.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2969 total (2287 prompt + 682 completion, 5 calls)
+
+Question 277:
+  Text: Reflect on what Harper Gutierrez experienced on July 02, 2024. Describe all the key events they were involved in, focusing on what happened rather than where it occurred.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3659 total (2766 prompt + 893 completion, 6 calls)
+
+Question 278:
+  Text: Reflect on what Jackson Ramos experienced on July 05, 2024. Describe all the key events they were involved in, focusing on what happened rather than where it occurred.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3479 total (2655 prompt + 824 completion, 6 calls)
+
+Question 279:
+  Text: Consider the events involving both Ezra Edwards and Parkour Workshop on December 03, 2026. List all the locations where these events took place, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3349 total (2454 prompt + 895 completion, 6 calls)
+
+Question 280:
+  Text: Consider the events involving both Owen Thomas and Theater Performance on December 26, 2026. List all the locations where these events took place, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3599 total (2639 prompt + 960 completion, 6 calls)
+
+Question 281:
+  Text: Consider the events involving both Mateo Gomez and Science Fair on February 03, 2024. List all the locations where these events took place, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3449 total (2457 prompt + 992 completion, 6 calls)
+
+Question 282:
+  Text: Consider the events involving both Harper Gutierrez and Drum Circle on July 02, 2024. List all the locations where these events took place, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3448 total (2524 prompt + 924 completion, 6 calls)
+
+Question 283:
+  Text: Consider the events involving both Jackson Ramos and Escape Room Challenge on July 05, 2024. List all the locations where these events took place, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3394 total (2446 prompt + 948 completion, 6 calls)
+
+Question 284:
+  Text: Recall the key events that occurred at Bethpage Black Course on December 03, 2026. Describe what happened, focusing on the actions or occurrences rather than who was involved.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3798 total (2956 prompt + 842 completion, 6 calls)
+
+Question 285:
+  Text: Recall the key events that occurred at Bethpage Black Course on December 26, 2026. Describe what happened, focusing on the actions or occurrences rather than who was involved.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3756 total (2896 prompt + 860 completion, 6 calls)
+
+Question 286:
+  Text: Recall the key events that occurred at Coney Island on February 03, 2024. Describe what happened, focusing on the actions or occurrences rather than who was involved.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3578 total (2695 prompt + 883 completion, 6 calls)
+
+Question 287:
+  Text: Recall the key events that occurred at Camp Hero State Park on July 02, 2024. Describe what happened, focusing on the actions or occurrences rather than who was involved.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3961 total (3035 prompt + 926 completion, 6 calls)
+
+Question 288:
+  Text: Recall the key events that occurred at High Line on July 05, 2024. Describe what happened, focusing on the actions or occurrences rather than who was involved.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3555 total (2671 prompt + 884 completion, 6 calls)
+
+Question 289:
+  Text: Think about what happened at Bethpage Black Course on December 03, 2026. List all protagonists involved in any events at this time and place, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3559 total (2671 prompt + 888 completion, 6 calls)
+
+Question 290:
+  Text: Think about what happened at Bethpage Black Course on December 26, 2026. List all protagonists involved in any events at this time and place, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3212 total (2359 prompt + 853 completion, 6 calls)
+
+Question 291:
+  Text: Think about what happened at Coney Island on February 03, 2024. List all protagonists involved in any events at this time and place, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3526 total (2638 prompt + 888 completion, 6 calls)
+
+Question 292:
+  Text: Think about what happened at Camp Hero State Park on July 02, 2024. List all protagonists involved in any events at this time and place, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 4107 total (3021 prompt + 1086 completion, 6 calls)
+
+Question 293:
+  Text: Think about what happened at High Line on July 05, 2024. List all protagonists involved in any events at this time and place, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3997 total (2965 prompt + 1032 completion, 6 calls)
+
+Question 294:
+  Text: Think about the events related to Parkour Workshop that occurred at Bethpage Black Course on December 03, 2026. List all protagonists involved in these events, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3436 total (2572 prompt + 864 completion, 6 calls)
+
+Question 295:
+  Text: Think about the events related to Theater Performance that occurred at Bethpage Black Course on December 26, 2026. List all protagonists involved in these events, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3536 total (2614 prompt + 922 completion, 6 calls)
+
+Question 296:
+  Text: Think about the events related to Science Fair that occurred at Coney Island on February 03, 2024. List all protagonists involved in these events, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3891 total (2961 prompt + 930 completion, 6 calls)
+
+Question 297:
+  Text: Think about the events related to Drum Circle that occurred at Camp Hero State Park on July 02, 2024. List all protagonists involved in these events, without describing the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3577 total (2609 prompt + 968 completion, 6 calls)
+
+Question 298:
+  Text: Think about the events related to Escape Room Challenge that occurred at High Line on July 05, 2024. List all protagonists involved in these events, without describing the events themselves.
+  Expected: []
+  Predicted: []
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+  Token Usage: 210 total (189 prompt + 21 completion, 1 calls)
+
+Question 299:
+  Text: Recall what happened involving Ezra Edwards at Bethpage Black Course on December 03, 2026. Describe the key events or activities that occurred, focusing on what happened.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 4046 total (3119 prompt + 927 completion, 6 calls)
+
+Question 300:
+  Text: Recall what happened involving Owen Thomas at Bethpage Black Course on December 26, 2026. Describe the key events or activities that occurred, focusing on what happened.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3948 total (3004 prompt + 944 completion, 6 calls)
+

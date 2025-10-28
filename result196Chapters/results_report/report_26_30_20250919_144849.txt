@@ -1,0 +1,53 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-19 14:48:49
+Question Range: 26-30
+Total Questions Processed: 5
+Successful Searches: 3 (60.0%)
+Questions with Answers: 3 (60.0%)
+Average Iterations per Question: 2.8
+
+DETAILED RESULTS:
+------------------------------
+
+Question 26:
+  Text: Reflect on events related to Archery Tournament. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Julian Ross', 'Maya Smith', 'Carter Stewart', 'Mila Gonzalez']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 27:
+  Text: Reflect on events related to Burlesque Performance. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Isaiah Bennett', 'Sofia Ramos', 'Julian Ross']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 28:
+  Text: Reflect on events related to Carnival. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Brooklyn Ross', 'Jackson Ramos', 'Carter Stewart', 'Henry Reed']
+  Predicted: ['Jackson Ramos', 'Zion Mcmahon', 'Osvaldo Rowell', 'Gus Stutzman', 'Calla Peoples', 'Xander Fortin']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+
+Question 29:
+  Text: Reflect on events related to Classical Music Concert. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Carter Stewart', 'Elizabeth Hill', 'Levi Rodriguez']
+  Predicted: ['Bella Brown', 'Urijah Parham', 'Cora Leavitt', 'Sol Hutchison', 'Lucy Carter', 'Jamal Berlin', 'Oakley Emery', 'Julian Ross', 'Kieran Poindexter', 'Vada Blaine', 'Zephyr Carver', 'Levi Rodriguez', 'Shawn Dowdy', 'Roland Matthews', 'Selah Gardner', 'Elizabeth Hill', 'Adan Dunham', 'Bruno Bourne', 'Samir Chang', 'Thea Merchant', 'Matthew Wolf', 'Millie Steadman', 'Henry Reed', 'Alma Kirkland', 'Mila Gonzalez', 'Diem Nix', 'Eli Groth', 'Rey Pierre', 'Samuel Parker', 'Ainsley Wilcox', 'Daisy Whittington', 'Mabel Navarro', 'Carter Stewart', 'Vivian Hendricks', 'Sullivan Means', 'Kellan Richards', 'Zoe Brown', 'Alondra Wilkinson', 'Alma Aultman', 'Kylee Beard', 'Nylah Zavala', 'Lily Nguyen', 'Evelynn Donohue', 'Amir Woo', 'Alistair Rudd', 'Azriel Humphrey', 'Meredith Strand', 'Harleigh Reno', 'Adonis Stark', 'Colter Jordan', 'Seth Johnston', 'Lillian Mendoza', 'Noah Williams', 'Ryleigh Russell', 'Natalia Tennant', 'Hazel Lewis', 'Colter Wiseman', 'Roland Dempsey', 'Alexa Dunham', 'Braden Desai', 'Ada Baumgartner', 'Scarlett Thomas', 'Finnegan Cartwright', 'Jagger Matthews', 'Yosef Nesbitt', 'Arden Hood', 'Sullivan Schreiber', 'Zander Slaughter', 'Jackson Ramos', 'Evangeline Pardo', 'River Sturgill', 'Mabel Obrien']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+
+Question 30:
+  Text: Reflect on events related to Ice Sculpture Exhibition. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Scarlett Thomas', 'Noah Wood', 'Noah Williams', 'Henry Reed', 'Benjamin Green']
+  Predicted: ['Noah Wood', 'Dakari Liebert', 'Benjamin Green', 'Creed Berlin', 'Henry Reed', 'Jonah Kramer', 'Karsyn Schaeffer', 'Scarlett Thomas', 'Timothy Garner', 'Mabel Hobson', 'Zechariah Mccloskey', 'Noah Williams', 'Ellery Johns', 'Jair Tran', 'Lina Pryor', 'Brielle Kinney', 'Madeleine Landers']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+

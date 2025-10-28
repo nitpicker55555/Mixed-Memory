@@ -1,0 +1,1760 @@
+{
+  "database_name": "database13questions",
+  "export_timestamp": "2025-10-28T12:21:29.462221",
+  "statistics": {
+    "total_nodes": 88,
+    "total_relationships": 60,
+    "nodes_by_label": [
+      {
+        "labels": [
+          "Person"
+        ],
+        "count": 53
+      },
+      {
+        "labels": [
+          "Location"
+        ],
+        "count": 22
+      },
+      {
+        "labels": [
+          "Event"
+        ],
+        "count": 13
+      }
+    ],
+    "relationships_by_type": [
+      {
+        "type": "PARTICIPATED_IN",
+        "count": 49
+      },
+      {
+        "type": "OCCURRED_AT",
+        "count": 11
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "date": "September 13, 2025",
+      "event_type": "Parkour Workshop",
+      "confidence_score": 0.95,
+      "name": "Bethpage Black Parkour Workshop",
+      "chapter_number": 1,
+      "description": "A group of participants, led by Ezra Edwards, attend a parkour workshop involving demonstrations, challenges, and camaraderie on a golf course.",
+      "location": "Bethpage Black Course",
+      "participants": [
+        "Ezra Edwards",
+        "Noa Middleton",
+        "Mara Ledbetter",
+        "Sienna Hamrick",
+        "Reid Blunt",
+        "Ronan Guevara",
+        "Other participants"
+      ],
+      "_labels": [
+        "Event"
+      ],
+      "_id": 0
+    },
+    {
+      "date": "September 22, 2026",
+      "event_type": "Fashion Show",
+      "confidence_score": 0.95,
+      "name": "Chloe Castillo's Fashion Show",
+      "chapter_number": 1,
+      "description": "Chloe Castillo unveils her new fashion collection inspired by nature and the cosmos, with models showcasing her designs to an enchanted audience.",
+      "location": "American Museum of Natural History",
+      "participants": [
+        "Chloe Castillo",
+        "Miles Pritchett",
+        "Amira Hayes",
+        "Other models",
+        "Audience"
+      ],
+      "_labels": [
+        "Event"
+      ],
+      "_id": 1
+    },
+    {
+      "date": "September 22, 2026",
+      "event_type": "Photography Exhibition",
+      "confidence_score": 0.9,
+      "name": "Port Jefferson Photography Exhibition",
+      "chapter_number": 1,
+      "description": "Henry Reed and other photographers display their works, discuss techniques, and interact with visitors at a photography exhibition.",
+      "location": "Port Jefferson",
+      "participants": [
+        "Henry Reed",
+        "Alma Aultman",
+        "Alondra Wilkinson",
+        "Meredith Gardner",
+        "Audience"
+      ],
+      "_labels": [
+        "Event"
+      ],
+      "_id": 2
+    },
+    {
+      "date": "May 07, 2024",
+      "event_type": "Karaoke Night",
+      "confidence_score": 0.9,
+      "name": "Hither Hills Karaoke Night",
+      "chapter_number": 1,
+      "description": "A lively karaoke night with live band accompaniment, where Zoe Brown performs and the event becomes a catalyst for hidden truths and connections.",
+      "location": "Hither Hills State Park",
+      "participants": [
+        "Zoe Brown",
+        "Uri Wemple",
+        "Hezekiah Bean",
+        "Live band",
+        "Audience"
+      ],
+      "_labels": [
+        "Event"
+      ],
+      "_id": 3
+    },
+    {
+      "date": "May 31, 2024",
+      "event_type": "Hackathon",
+      "confidence_score": 0.95,
+      "name": "Woolworth Building Hackathon",
+      "chapter_number": 1,
+      "description": "A technology and innovation hackathon where teams compete, collaborate, and are mentored by Julian Ross amid a charged atmosphere of rivalry and creativity.",
+      "location": "Woolworth Building",
+      "participants": [
+        "Julian Ross",
+        "Sienna Lyles",
+        "Dakari Liebert",
+        "Creed Berlin",
+        "Other participants"
+      ],
+      "_labels": [
+        "Event"
+      ],
+      "_id": 4
+    },
+    {
+      "date": "September 27, 2025",
+      "event_type": "Parkour Workshop",
+      "confidence_score": 0.9,
+      "name": "Snug Harbor Parkour Workshop",
+      "chapter_number": 1,
+      "description": "Owen Thomas and others participate in a humorous and challenging parkour workshop led by instructor Glide, featuring spatial awareness exercises and vault practice.",
+      "location": "Snug Harbor Cultural Center",
+      "participants": [
+        "Owen Thomas",
+        "Lilah Hamilton (Glide)",
+        "Rocco Cormier",
+        "Axl Mims",
+        "Other participants"
+      ],
+      "_labels": [
+        "Event"
+      ],
+      "_id": 5
+    },
+    {
+      "date": "February 27, 2026",
+      "event_type": "Theatrical Performance",
+      "confidence_score": 0.9,
+      "name": "Mila Gonzalez's Dramatic Performance",
+      "chapter_number": 1,
+      "description": "Mila Gonzalez delivers a dramatic, magical scene on stage, deeply connecting with the audience and fellow performers.",
+      "location": "Statue of Liberty (outdoor stage)",
+      "participants": [
+        "Mila Gonzalez",
+        "Diem Nix",
+        "Eli Groth",
+        "Rey Pierre",
+        "Audience"
+      ],
+      "_labels": [
+        "Event"
+      ],
+      "_id": 6
+    },
+    {
+      "date": "October 13, 2024",
+      "event_type": "Film Poster Exhibition",
+      "confidence_score": 0.9,
+      "name": "Queensboro Bridge Film Poster Festival",
+      "chapter_number": 1,
+      "description": "A festival featuring film poster exhibitions, animated discussions, and an undercurrent of mystery and tension among attendees.",
+      "location": "Queensboro Bridge",
+      "participants": [
+        "Henry Reed",
+        "Zander Davenport",
+        "Oakley Goetz",
+        "Jonah Kramer",
+        "Karsyn Schaeffer",
+        "Attendees"
+      ],
+      "_labels": [
+        "Event"
+      ],
+      "_id": 7
+    },
+    {
+      "date": "May 11, 2026",
+      "event_type": "Ice Sculpture Exhibition",
+      "confidence_score": 0.9,
+      "name": "Washington Square Park Ice Sculpture Exhibition",
+      "chapter_number": 1,
+      "description": "An exhibition of intricate ice sculptures, live music performances, and interactive moments between artists and visitors.",
+      "location": "Washington Square Park",
+      "participants": [
+        "Henry Reed",
+        "Luka Shaffer",
+        "Meredith Lester",
+        "Families",
+        "Audience"
+      ],
+      "_labels": [
+        "Event"
+      ],
+      "_id": 8
+    },
+    {
+      "date": "December 26, 2026",
+      "event_type": "Astronomy Trivia Contest",
+      "confidence_score": 0.95,
+      "name": "Astronomy Trivia Night at the Museum",
+      "chapter_number": 1,
+      "description": "Levi Rodriguez hosts an astronomy trivia contest, engaging participants in a night of cosmic questions and camaraderie.",
+      "location": "American Museum of Natural History",
+      "participants": [
+        "Levi Rodriguez",
+        "Presley Lunt",
+        "Kali Newcomb",
+        "Ronan Francois",
+        "Families",
+        "Audience"
+      ],
+      "_labels": [
+        "Event"
+      ],
+      "_id": 9
+    },
+    {
+      "date": "March 23, 2024",
+      "event_type": "Hackathon",
+      "confidence_score": 0.9,
+      "name": "Port Jefferson Hackathon",
+      "chapter_number": 1,
+      "description": "A local hackathon where Zoe Brown tests user experience for new applications, fostering innovation and personal connections.",
+      "location": "Port Jefferson",
+      "participants": [
+        "Zoe Brown",
+        "Cora Xiong",
+        "Other participants"
+      ],
+      "_labels": [
+        "Event"
+      ],
+      "_id": 10
+    },
+    {
+      "date": "June 14, 2025",
+      "event_type": "Project Presentation",
+      "confidence_score": 0.9,
+      "name": "High Line Final Project Presentations",
+      "chapter_number": 1,
+      "description": "Zoe Brown presents final projects at a tech event, with an atmosphere of tension and unease as participants showcase their innovations.",
+      "location": "High Line",
+      "participants": [
+        "Zoe Brown",
+        "Nyla Bower",
+        "Delphi Parent",
+        "Genevieve Burgin",
+        "Quill Womack",
+        "Other participants"
+      ],
+      "_labels": [
+        "Event"
+      ],
+      "_id": 11
+    },
+    {
+      "date": "February 27, 2026",
+      "event_type": "Theatrical Performance",
+      "confidence_score": 0.9,
+      "name": "High Line Tragedy Play",
+      "chapter_number": 1,
+      "description": "A tragic play is performed, reflecting the struggles and despair of the characters and audience, with Jackson Ramos confronting personal and artistic challenges.",
+      "location": "High Line Theater",
+      "participants": [
+        "Jackson Ramos",
+        "Remy Waterman",
+        "Kylee Beard",
+        "Other actors",
+        "Audience"
+      ],
+      "_labels": [
+        "Event"
+      ],
+      "_id": 12
+    },
+    {
+      "name": "Ezra Edwards",
+      "description": "Main participant and instructor in the parkour workshop",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 13
+    },
+    {
+      "name": "Noa Middleton",
+      "description": "Participant known for boisterous laughter",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 14
+    },
+    {
+      "name": "Mara Ledbetter",
+      "description": "Participant known for sharp critiques",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 15
+    },
+    {
+      "name": "Sienna Hamrick",
+      "description": "Participant who encourages Ezra",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 16
+    },
+    {
+      "name": "Reid Blunt",
+      "description": "Participant who watches critically, a specter of doubt",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 17
+    },
+    {
+      "name": "Ronan Guevara",
+      "description": "Participant who captures photos of the event",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 18
+    },
+    {
+      "name": "Chloe Castillo",
+      "description": "Designer and main character, creator of the showcased fashion collection",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 19
+    },
+    {
+      "name": "Miles Pritchett",
+      "description": "Model, showcased Chloe's designs on stage",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 20
+    },
+    {
+      "name": "Amira Hayes",
+      "description": "Audience member, inspiration and supporter of Chloe",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 21
+    },
+    {
+      "name": "Chloe",
+      "description": "Show participant, possibly a designer or organizer, who stepped forward at the show's crescendo.",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 22
+    },
+    {
+      "name": "Henry Reed",
+      "description": "Photographer explaining post-processing techniques at the exhibition.",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 23
+    },
+    {
+      "name": "Alma Aultman",
+      "description": "Exhibition attendee, noted for her thoughtful appraisal of a photograph.",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 24
+    },
+    {
+      "name": "Alondra Wilkinson",
+      "description": "Exhibition attendee, exchanged furtive glances with Meredith Gardner.",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 25
+    },
+    {
+      "name": "Meredith Gardner",
+      "description": "Exhibition attendee, exchanged furtive glances with Alondra Wilkinson.",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 26
+    },
+    {
+      "name": "Zoe",
+      "description": "Participant at the Hither Hills karaoke night, facing a significant decision.",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 27
+    },
+    {
+      "name": "Uri Wemple",
+      "description": "Attendee at the Hither Hills event, seen with Hezekiah Bean.",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 28
+    },
+    {
+      "name": "Hezekiah Bean",
+      "description": "Attendee at the Hither Hills event, with Uri Wemple.",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 29
+    },
+    {
+      "name": "Zoe Brown",
+      "description": "Performer at Hither Hills State Park event",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 30
+    },
+    {
+      "name": "Julian Ross",
+      "description": "Mentor and observer at a technology and creativity event",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 31
+    },
+    {
+      "name": "Sienna Lyles",
+      "description": "Participant with a whiteboard full of diagrams at the event",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 32
+    },
+    {
+      "name": "Julian",
+      "description": "Participant offering encouragement and observing group dynamics",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 33
+    },
+    {
+      "name": "Dakari Liebert",
+      "description": "Participant leading a lively, competitive table",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 34
+    },
+    {
+      "name": "Creed Berlin",
+      "description": "Participant sketching ideas, showing frustration",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 35
+    },
+    {
+      "name": "Owen Thomas",
+      "description": "Parkour workshop participant, described as hapless hero",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 36
+    },
+    {
+      "name": "Owen",
+      "description": "Participant in the workshop, aspiring performer",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 37
+    },
+    {
+      "name": "Lilah Hamilton",
+      "description": "Lead instructor with the nickname 'Glide'",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 38
+    },
+    {
+      "name": "Rocco Cormier",
+      "description": "Workshop participant, performed a perfect flip",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 39
+    },
+    {
+      "name": "Axl Mims",
+      "description": "Workshop participant, commented on Owen's spatial awareness",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 40
+    },
+    {
+      "name": "Mila",
+      "description": "Performer delivering a dramatic scene",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 41
+    },
+    {
+      "name": "Diem Nix",
+      "description": "Audience member, described as having a spirit of adventure",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 42
+    },
+    {
+      "name": "Eli Groth",
+      "description": "A wizened sorceress who had been watching Mila's journey since the inception of her craft.",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 43
+    },
+    {
+      "name": "Rey Pierre",
+      "description": "An oracle wrapped in layers of misty fabric, absorbing Mila's performance.",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 44
+    },
+    {
+      "name": "Mila Gonzalez",
+      "description": "Performer who found her voice beneath the Statue of Liberty; likely the same as Mila.",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 45
+    },
+    {
+      "name": "Henry",
+      "description": "Person standing at the threshold of a dream, involved in the festival.",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 46
+    },
+    {
+      "name": "Zander Davenport",
+      "description": "Person hanging film posters at the festival.",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 47
+    },
+    {
+      "name": "Oakley Goetz",
+      "description": "Person hanging film posters at the festival.",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 48
+    },
+    {
+      "name": "Jonah Kramer",
+      "description": "Festival attendee, observed examining posters",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 49
+    },
+    {
+      "name": "Karsyn Schaeffer",
+      "description": "Festival attendee, appeared distracted",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 50
+    },
+    {
+      "name": "Luka Shaffer",
+      "description": "Sculptor; carving ice sculptures at the exhibition",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 51
+    },
+    {
+      "name": "Meredith Lester",
+      "description": "Musician; serenading onlookers with guitar music in the park",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 52
+    },
+    {
+      "name": "Levi",
+      "description": "Participant at the museum event, later referred to as Levi Rodriguez, host of astronomy trivia contests",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 53
+    },
+    {
+      "name": "Presley Lunt",
+      "description": "Enthusiastic attendee at the museum event, pointed towards the planetarium",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 54
+    },
+    {
+      "name": "Kali Newcomb",
+      "description": "Attendee at the museum event, preparing for trivia contests",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 55
+    },
+    {
+      "name": "Levi Rodriguez",
+      "description": "Host of astronomy trivia contests at the museum event",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 56
+    },
+    {
+      "name": "Ronan Francois",
+      "description": "Participant at the museum event, rallying their group’s spirits",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 57
+    },
+    {
+      "name": "Cora Xiong",
+      "description": "Earnest coder whose laughter affected Zoe Brown.",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 58
+    },
+    {
+      "name": "Nyla Bower",
+      "description": "Obsessed over an unresponsive algorithm.",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 59
+    },
+    {
+      "name": "Delphi Parent",
+      "description": "Laughed nervously while clutching a coffee cup.",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 60
+    },
+    {
+      "name": "Genevieve Burgin",
+      "description": "Paced with eyes wild with the fear of failure.",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 61
+    },
+    {
+      "name": "Quill Womack",
+      "description": "Had an unfocused stare, reflecting inscrutable depths of dread.",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 62
+    },
+    {
+      "name": "Jackson Ramos",
+      "description": "Central figure in the narrative, poised in quiet apprehension, struggling with doubt and despair during a theater performance.",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 63
+    },
+    {
+      "name": "Remy Waterman",
+      "description": "Audience member who wept openly during the performance.",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 64
+    },
+    {
+      "name": "Kylee Beard",
+      "description": "Audience member who sat rigid, paralyzed by fear.",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Person"
+      ],
+      "_id": 65
+    },
+    {
+      "name": "Bethpage Black Course",
+      "description": "Golf course and setting for the parkour workshop",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Location"
+      ],
+      "_id": 66
+    },
+    {
+      "name": "city",
+      "description": "Distant urban area referenced in the environment",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Location"
+      ],
+      "_id": 67
+    },
+    {
+      "name": "American Museum of Natural History",
+      "description": "Museum and venue for the fashion show",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Location"
+      ],
+      "_id": 68
+    },
+    {
+      "name": "Port Jefferson",
+      "description": "Town where the photography exhibition took place.",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Location"
+      ],
+      "_id": 69
+    },
+    {
+      "name": "Hither Hills",
+      "description": "Park or outdoor area with a gazebo, site of the karaoke night.",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Location"
+      ],
+      "_id": 70
+    },
+    {
+      "name": "Hither Hills State Park",
+      "description": "State park and event venue",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Location"
+      ],
+      "_id": 71
+    },
+    {
+      "name": "Woolworth Building",
+      "description": "Iconic building hosting the event",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Location"
+      ],
+      "_id": 72
+    },
+    {
+      "name": "Snug Harbor Cultural Center",
+      "description": "Cultural center, location of the workshop",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Location"
+      ],
+      "_id": 73
+    },
+    {
+      "name": "Statue of Liberty",
+      "description": "Famous monument; location where Mila Gonzalez found her voice.",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Location"
+      ],
+      "_id": 74
+    },
+    {
+      "name": "East River",
+      "description": "River in New York City; mist danced above it in the scene.",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Location"
+      ],
+      "_id": 75
+    },
+    {
+      "name": "Manhattan",
+      "description": "City; location of the festival and exhibition",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Location"
+      ],
+      "_id": 76
+    },
+    {
+      "name": "Queensboro Bridge",
+      "description": "Bridge; prominent structure near the festival",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Location"
+      ],
+      "_id": 77
+    },
+    {
+      "name": "park",
+      "description": "Public park; location of the ice sculpture exhibition",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Location"
+      ],
+      "_id": 78
+    },
+    {
+      "name": "café",
+      "description": "Café; nearby location providing background melodies",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Location"
+      ],
+      "_id": 79
+    },
+    {
+      "name": "Washington Square Park",
+      "description": "Public park; location of the ice sculpture exhibition",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Location"
+      ],
+      "_id": 80
+    },
+    {
+      "name": "museum",
+      "description": "Venue transformed into a theater for the universe, hosting the astronomy event",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Location"
+      ],
+      "_id": 81
+    },
+    {
+      "name": "planetarium",
+      "description": "Part of the museum, referenced during the event",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Location"
+      ],
+      "_id": 82
+    },
+    {
+      "name": "community center",
+      "description": "Town’s community center, venue for the hackathon",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Location"
+      ],
+      "_id": 83
+    },
+    {
+      "name": "harbor",
+      "description": "Nearby body of water, providing a salty breeze",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Location"
+      ],
+      "_id": 84
+    },
+    {
+      "name": "High Line",
+      "description": "Tech hub and theater; location of the event and presentations.",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Location"
+      ],
+      "_id": 85
+    },
+    {
+      "name": "theater",
+      "description": "Venue where the performance takes place; described as a sanctuary and later as a somber monument.",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Location"
+      ],
+      "_id": 86
+    },
+    {
+      "name": "stage",
+      "description": "The area within the theater where the performance occurs.",
+      "first_appearance_chapter": 1,
+      "_labels": [
+        "Location"
+      ],
+      "_id": 87
+    }
+  ],
+  "relationships": [
+    {
+      "_id": 1152922604118474752,
+      "_type": "OCCURRED_AT",
+      "properties": {},
+      "start_node_id": 0,
+      "end_node_id": 66,
+      "start_labels": [
+        "Event"
+      ],
+      "end_labels": [
+        "Location"
+      ]
+    },
+    {
+      "_id": 1152922604118474753,
+      "_type": "OCCURRED_AT",
+      "properties": {},
+      "start_node_id": 1,
+      "end_node_id": 68,
+      "start_labels": [
+        "Event"
+      ],
+      "end_labels": [
+        "Location"
+      ]
+    },
+    {
+      "_id": 1152922604118474754,
+      "_type": "OCCURRED_AT",
+      "properties": {},
+      "start_node_id": 2,
+      "end_node_id": 69,
+      "start_labels": [
+        "Event"
+      ],
+      "end_labels": [
+        "Location"
+      ]
+    },
+    {
+      "_id": 1152922604118474755,
+      "_type": "OCCURRED_AT",
+      "properties": {},
+      "start_node_id": 3,
+      "end_node_id": 71,
+      "start_labels": [
+        "Event"
+      ],
+      "end_labels": [
+        "Location"
+      ]
+    },
+    {
+      "_id": 1152922604118474756,
+      "_type": "OCCURRED_AT",
+      "properties": {},
+      "start_node_id": 4,
+      "end_node_id": 72,
+      "start_labels": [
+        "Event"
+      ],
+      "end_labels": [
+        "Location"
+      ]
+    },
+    {
+      "_id": 1152922604118474757,
+      "_type": "OCCURRED_AT",
+      "properties": {},
+      "start_node_id": 5,
+      "end_node_id": 73,
+      "start_labels": [
+        "Event"
+      ],
+      "end_labels": [
+        "Location"
+      ]
+    },
+    {
+      "_id": 1152922604118474759,
+      "_type": "OCCURRED_AT",
+      "properties": {},
+      "start_node_id": 7,
+      "end_node_id": 77,
+      "start_labels": [
+        "Event"
+      ],
+      "end_labels": [
+        "Location"
+      ]
+    },
+    {
+      "_id": 1152922604118474760,
+      "_type": "OCCURRED_AT",
+      "properties": {},
+      "start_node_id": 8,
+      "end_node_id": 80,
+      "start_labels": [
+        "Event"
+      ],
+      "end_labels": [
+        "Location"
+      ]
+    },
+    {
+      "_id": 1152922604118474761,
+      "_type": "OCCURRED_AT",
+      "properties": {},
+      "start_node_id": 9,
+      "end_node_id": 68,
+      "start_labels": [
+        "Event"
+      ],
+      "end_labels": [
+        "Location"
+      ]
+    },
+    {
+      "_id": 1152922604118474762,
+      "_type": "OCCURRED_AT",
+      "properties": {},
+      "start_node_id": 10,
+      "end_node_id": 69,
+      "start_labels": [
+        "Event"
+      ],
+      "end_labels": [
+        "Location"
+      ]
+    },
+    {
+      "_id": 1152922604118474763,
+      "_type": "OCCURRED_AT",
+      "properties": {},
+      "start_node_id": 11,
+      "end_node_id": 85,
+      "start_labels": [
+        "Event"
+      ],
+      "end_labels": [
+        "Location"
+      ]
+    },
+    {
+      "_id": 1152921504606846989,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 13,
+      "end_node_id": 0,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606846990,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 14,
+      "end_node_id": 0,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606846991,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 15,
+      "end_node_id": 0,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606846992,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 16,
+      "end_node_id": 0,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606846993,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 17,
+      "end_node_id": 0,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606846994,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 18,
+      "end_node_id": 0,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606846995,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 19,
+      "end_node_id": 1,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606846996,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 20,
+      "end_node_id": 1,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606846997,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 21,
+      "end_node_id": 1,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606846999,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 23,
+      "end_node_id": 2,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1155173304420532247,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 23,
+      "end_node_id": 7,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1157425104234217495,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 23,
+      "end_node_id": 8,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606847000,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 24,
+      "end_node_id": 2,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606847001,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 25,
+      "end_node_id": 2,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606847002,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 26,
+      "end_node_id": 2,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606847004,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 28,
+      "end_node_id": 3,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606847005,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 29,
+      "end_node_id": 3,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606847006,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 30,
+      "end_node_id": 3,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1155173304420532254,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 30,
+      "end_node_id": 10,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1157425104234217502,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 30,
+      "end_node_id": 11,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606847007,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 31,
+      "end_node_id": 4,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606847008,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 32,
+      "end_node_id": 4,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606847010,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 34,
+      "end_node_id": 4,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606847011,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 35,
+      "end_node_id": 4,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606847012,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 36,
+      "end_node_id": 5,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606847015,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 39,
+      "end_node_id": 5,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606847016,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 40,
+      "end_node_id": 5,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606847018,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 42,
+      "end_node_id": 6,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606847019,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 43,
+      "end_node_id": 6,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606847020,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 44,
+      "end_node_id": 6,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606847021,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 45,
+      "end_node_id": 6,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606847023,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 47,
+      "end_node_id": 7,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606847024,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 48,
+      "end_node_id": 7,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606847025,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 49,
+      "end_node_id": 7,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606847026,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 50,
+      "end_node_id": 7,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606847027,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 51,
+      "end_node_id": 8,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606847028,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 52,
+      "end_node_id": 8,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606847030,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 54,
+      "end_node_id": 9,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606847031,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 55,
+      "end_node_id": 9,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606847032,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 56,
+      "end_node_id": 9,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606847033,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 57,
+      "end_node_id": 9,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606847034,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 58,
+      "end_node_id": 10,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606847035,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 59,
+      "end_node_id": 11,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606847036,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 60,
+      "end_node_id": 11,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606847037,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 61,
+      "end_node_id": 11,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606847038,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 62,
+      "end_node_id": 11,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606847039,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 63,
+      "end_node_id": 12,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606847040,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 64,
+      "end_node_id": 12,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    },
+    {
+      "_id": 1152921504606847041,
+      "_type": "PARTICIPATED_IN",
+      "properties": {},
+      "start_node_id": 65,
+      "end_node_id": 12,
+      "start_labels": [
+        "Person"
+      ],
+      "end_labels": [
+        "Event"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-18 23:55:41
+Question Range: 11-20
+Total Questions Processed: 10
+Successful Searches: 4 (40.0%)
+Questions with Answers: 4 (40.0%)
+Average Iterations per Question: 3.9
+
+DETAILED RESULTS:
+------------------------------
+
+Question 11:
+  Text: Recall all events related to Astronomy Night. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['December 26, 2026']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 12:
+  Text: Recall all events related to Fashion Show. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['September 22, 2026']
+  Predicted: ['September 22, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+
+Question 13:
+  Text: Recall all events related to Film Festival. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['October 13, 2024']
+  Predicted: ['October 13, 2024']
+  Search Success: True
+  Confidence: 0.20
+  Iterations: 5
+
+Question 14:
+  Text: Recall all events related to Ice Sculpture Exhibition. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['May 11, 2026']
+  Predicted: ['May 11, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+
+Question 15:
+  Text: Recall all events related to Karaoke Night. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['May 07, 2024']
+  Predicted: ['May 07, 2024']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+
+Question 16:
+  Text: Recall all events related to Charity Gala. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 17:
+  Text: Recall all events related to Drum Circle. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 18:
+  Text: Recall all events related to Escape Room Challenge. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 19:
+  Text: Recall all events related to Political Rally. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 20:
+  Text: Recall all events related to Science Fair. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+

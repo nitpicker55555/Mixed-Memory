@@ -1,0 +1,103 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-22 14:47:16
+Question Range: 121-130
+Total Questions Processed: 10
+Successful Searches: 3 (30.0%)
+Questions with Answers: 3 (30.0%)
+Average Iterations per Question: 3.8
+
+DETAILED RESULTS:
+------------------------------
+
+Question 121:
+  Text: Reflect on the experiences of Aurora Chavez related to Fashion Show. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3167 total (2250 prompt + 917 completion, 6 calls)
+
+Question 122:
+  Text: Reflect on the experiences of Aurora Chavez related to Graduation Ceremony. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3776 total (2876 prompt + 900 completion, 6 calls)
+
+Question 123:
+  Text: Consider all events involving both Andrew Gomez and Fashion Show. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3476 total (2490 prompt + 986 completion, 6 calls)
+
+Question 124:
+  Text: Consider all events involving both Andrew Gomez and Indoor Skydiving Event. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 4063 total (2825 prompt + 1238 completion, 6 calls)
+
+Question 125:
+  Text: Consider all events involving both Andrew Gomez and Stand-up Comedy Night. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3113 total (2251 prompt + 862 completion, 6 calls)
+
+Question 126:
+  Text: Consider all events involving both Aurora Chavez and Fashion Show. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3259 total (2340 prompt + 919 completion, 6 calls)
+
+Question 127:
+  Text: Consider all events involving both Aurora Chavez and Graduation Ceremony. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3181 total (2265 prompt + 916 completion, 6 calls)
+
+Question 128:
+  Text: What was Aurora Chavez doing the last time they were observed in the story's timeline?
+  Expected: ['Tech Hackathon']
+  Predicted: Aurora Chavez was participating in a hackathon at the Water Mill Museum on March 23, 2025.
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 186 total (169 prompt + 17 completion, 1 calls)
+
+Question 129:
+  Text: What was Bella Alvarez doing the last time they were observed in the story's timeline?
+  Expected: ['Astronomy Night']
+  Predicted: Bella Alvarez organized an astronomy night that turned into a nightmare as attendees witnessed a vast, writhing mass of darkness in the sky.
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 185 total (169 prompt + 16 completion, 1 calls)
+
+Question 130:
+  Text: What was Elizabeth Hill doing the last time they were observed in the story's timeline?
+  Expected: ['Classical Music Concert']
+  Predicted: Elizabeth Hill was performing at a Classical Music Concert.
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 185 total (169 prompt + 16 completion, 1 calls)
+

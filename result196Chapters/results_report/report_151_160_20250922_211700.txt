@@ -1,0 +1,103 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-22 21:17:00
+Question Range: 151-160
+Total Questions Processed: 10
+Successful Searches: 10 (100.0%)
+Questions with Answers: 10 (100.0%)
+Average Iterations per Question: 1.1
+
+DETAILED RESULTS:
+------------------------------
+
+Question 151:
+  Text: Consider all events that Ella Ross has been involved in. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Trinity Church']
+  Predicted: ['Trinity Church']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 195 total (179 prompt + 16 completion, 1 calls)
+
+Question 152:
+  Text: Consider all events that Isaiah Bennett has been involved in. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Bethpage State Park']
+  Predicted: ['Bethpage State Park']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 196 total (179 prompt + 17 completion, 1 calls)
+
+Question 153:
+  Text: List all locations visited by Aurora Chavez in chronological order according to the story's timeline.
+  Expected: ['Water Mill Museum']
+  Predicted: ['Water Mill Museum', 'Water Mill Museum', 'Water Mill Museum']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 186 total (169 prompt + 17 completion, 1 calls)
+
+Question 154:
+  Text: List all locations visited by Bella Alvarez in chronological order according to the story's timeline.
+  Expected: ['Williamsburg Bridge']
+  Predicted: ['Williamsburg Bridge']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 185 total (169 prompt + 16 completion, 1 calls)
+
+Question 155:
+  Text: List all locations visited by Elizabeth Hill in chronological order according to the story's timeline.
+  Expected: ['Washington Square Park']
+  Predicted: ['Washington Square Park']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 185 total (169 prompt + 16 completion, 1 calls)
+
+Question 156:
+  Text: List all locations visited by Ella Ross in chronological order according to the story's timeline.
+  Expected: ['Trinity Church']
+  Predicted: ['Trinity Church']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 185 total (169 prompt + 16 completion, 1 calls)
+
+Question 157:
+  Text: List all locations visited by Isaiah Bennett in chronological order according to the story's timeline.
+  Expected: ['Bethpage State Park']
+  Predicted: ['Bethpage State Park']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 186 total (169 prompt + 17 completion, 1 calls)
+
+Question 158:
+  Text: Reflect on all events involving Aurora Chavez. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['March 23, 2025']
+  Predicted: ['March 23, 2025']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 193 total (176 prompt + 17 completion, 1 calls)
+
+Question 159:
+  Text: Reflect on all events involving Bella Alvarez. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['May 11, 2026']
+  Predicted: ['May 11, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 192 total (176 prompt + 16 completion, 1 calls)
+
+Question 160:
+  Text: Reflect on all events involving Elizabeth Hill. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['July 25, 2024']
+  Predicted: ['2024-07-25']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+  Token Usage: 192 total (176 prompt + 16 completion, 1 calls)
+

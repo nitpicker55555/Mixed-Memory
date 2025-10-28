@@ -1,0 +1,58 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-21 22:08:44
+Question Range: 51-55
+Total Questions Processed: 5
+Successful Searches: 4 (80.0%)
+Questions with Answers: 4 (80.0%)
+Average Iterations per Question: 2.0
+
+DETAILED RESULTS:
+------------------------------
+
+Question 51:
+  Text: Consider all events involving Ballet Performance. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Port Jefferson']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2387 total (1700 prompt + 687 completion, 5 calls)
+
+Question 52:
+  Text: Consider all events involving Craft Beer Festival. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Woolworth Building']
+  Predicted: ['Woolworth Building']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 193 total (176 prompt + 17 completion, 1 calls)
+
+Question 53:
+  Text: Consider all events involving Drone Racing Event. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Guggenheim Museum']
+  Predicted: ['Guggenheim Museum']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 193 total (176 prompt + 17 completion, 1 calls)
+
+Question 54:
+  Text: Consider all events involving Farmers Market. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Queensboro Bridge']
+  Predicted: ['Queensboro Bridge']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 192 total (175 prompt + 17 completion, 1 calls)
+
+Question 55:
+  Text: Consider all events involving Flower Show. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Williamsburg Bridge']
+  Predicted: ['Williamsburg Bridge']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+  Token Usage: 191 total (175 prompt + 16 completion, 1 calls)
+

@@ -1,0 +1,53 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-19 14:18:54
+Question Range: 16-20
+Total Questions Processed: 5
+Successful Searches: 4 (80.0%)
+Questions with Answers: 4 (80.0%)
+Average Iterations per Question: 2.6
+
+DETAILED RESULTS:
+------------------------------
+
+Question 16:
+  Text: Consider all events involving Archery Tournament. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['High Line', 'American Museum of Natural History', 'Statue of Liberty', 'Washington Square Park']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 17:
+  Text: Consider all events involving Burlesque Performance. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Trinity Church', 'Washington Square Park', 'Bethpage State Park']
+  Predicted: ['Port Jefferson', 'Brooklyn Museum', 'Williamsburg Bridge', 'Trinity Church', 'Statue of Liberty', "St. Patrick's Cathedral", 'Washington Square Park', 'High Line, New York', 'Ellis Island', 'American Museum of Natural History', 'Port Jefferson Waterfront', 'Snug Harbor Cultural Center', 'Coney Island', 'One World Trade Center', 'Van Cortlandt Park', 'Woolworth Building', 'Queensboro Bridge', 'Grand Central Terminal', 'Beach', 'Lavishly decorated hall', 'Yankee Stadium']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+
+Question 18:
+  Text: Consider all events involving Carnival. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Central Park', 'Washington Square Park', 'One World Trade Center', 'Queensboro Bridge', "St. Patrick's Cathedral"]
+  Predicted: ['One World Trade Center']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+
+Question 19:
+  Text: Consider all events involving Classical Music Concert. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Trinity Church', 'Washington Square Park', 'One World Trade Center', 'Metropolitan Museum of Art']
+  Predicted: ['Fire Island National Seashore', 'High Line', 'The High Line, New York City', 'Makeshift stage on the island', 'High Line, New York', 'Museum of Modern Art', 'Washington Square Park', 'Trinity Church', 'Lincoln Center', 'Woolworth Building', 'One World Trade Center', 'Hither Hills State Park', "St. Patrick's Cathedral", 'High Line Theater', 'Brooklyn Museum', 'Yankee Stadium', 'Port Jefferson', 'Chelsea Market', 'Woolworth Building Theater', 'Near the Statue of Liberty', 'American Museum of Natural History', 'Queensboro Bridge', 'Van Cortlandt Park', 'Bethpage State Park', 'Gothic-inspired venue', 'Snug Harbor Cultural Center', 'Unknown']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+
+Question 20:
+  Text: Consider all events involving Ice Sculpture Exhibition. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Snug Harbor Cultural Center', 'Washington Square Park', 'One World Trade Center', 'Queensboro Bridge']
+  Predicted: ['Washington Square Park', 'Snug Harbor Cultural Center', 'Queensboro Bridge', 'One World Trade Center']
+  Search Success: True
+  Confidence: 0.60
+  Iterations: 3
+

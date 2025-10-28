@@ -1,0 +1,310 @@
+{
+  "metadata": {
+    "start_time": "2025-09-18T23:39:57.571619",
+    "database": "database13questions",
+    "question_range": "11-20",
+    "total_questions": 10,
+    "end_time": "2025-09-18T23:55:41.446743",
+    "total_duration": 943.870412
+  },
+  "results": [
+    {
+      "question_idx": 9,
+      "question": "Recall all events related to Astronomy Night. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "c864847c-2225-46d4-ad7d-51c2a797a9a8",
+        "question": "Recall all events related to Astronomy Night. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": null,
+        "standardized_answer": [],
+        "total_iterations": 5,
+        "search_successful": false,
+        "reasoning_chain": [
+          "By broadening the search to include any event that contains 'Astronomy', it increases the chances of capturing relevant events related to 'Astronomy Night', even if the exact phrasing differs. (Enhanced with semantic search: Astronomy Trivia Night in field name)",
+          "By broadening the search to include any events that contain 'Astronomy', we increase the chances of capturing relevant events that may not use the exact phrase 'Astronomy Night'. This approach allows for more flexibility in matching event names. (Enhanced with semantic search: Astronomy Trivia Night in field name)",
+          "By using an exact match and considering variations of the event name, the search can capture all relevant events related to 'Astronomy Night'. This approach increases the likelihood of retrieving the correct dates. (Enhanced with semantic search: Astronomy Trivia Night in field name)",
+          "By searching for a broader term like 'Astronomy', it may capture all related events, including 'Astronomy Night', allowing for a more comprehensive retrieval of relevant dates. (Enhanced with semantic search: Astronomy Trivia Night in field name)",
+          "By using a broader keyword like 'Astronomy', the search can capture a wider range of events that may include 'Astronomy Night' as part of their description or type, increasing the chances of retrieving relevant dates. (Enhanced with semantic search: Astronomy Trivia Night in field name)"
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.name) = toLower($kw) RETURN e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.name) = toLower($kw) RETURN e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) RETURN e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) RETURN e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) RETURN e.date AS date"
+        ]
+      },
+      "duration_seconds": 227.850466,
+      "status": "success",
+      "timestamp": "2025-09-18T23:39:57.571670",
+      "expected_answer": [
+        "December 26, 2026"
+      ]
+    },
+    {
+      "question_idx": 9,
+      "question": "Recall all events related to Fashion Show. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "4422ef77-fe05-4d02-b99f-0bb092f8656a",
+        "question": "Recall all events related to Fashion Show. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": [
+          "September 22, 2026"
+        ],
+        "standardized_answer": [
+          "September 22, 2026"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE e.event_type CONTAINS 'Fashion Show' RETURN DISTINCT e.date AS date"
+        ]
+      },
+      "duration_seconds": 12.579676,
+      "status": "success",
+      "timestamp": "2025-09-18T23:43:45.422634",
+      "expected_answer": [
+        "September 22, 2026"
+      ]
+    },
+    {
+      "question_idx": 9,
+      "question": "Recall all events related to Film Festival. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "a0e89981-606d-4595-954d-81c7b8e89a87",
+        "question": "Recall all events related to Film Festival. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": [
+          "October 13, 2024"
+        ],
+        "standardized_answer": [
+          "October 13, 2024"
+        ],
+        "total_iterations": 5,
+        "search_successful": true,
+        "reasoning_chain": [
+          "By using an exact match (e.g., 'MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw)'), we can ensure that we are looking for the specific event type without missing variations in naming.",
+          "By using a broader keyword like 'Film', the search may capture events that are related to film festivals but are categorized differently, thus increasing the chances of retrieving relevant dates.",
+          "By using a broader term like 'Film Festivals', the search can capture a wider range of related events, potentially including those that may not match the exact phrase 'Film Festival'. This approach increases the likelihood of retrieving relevant dates.",
+          "By using a broader keyword like 'Film', the search may capture a wider range of relevant events that include film festivals, thus increasing the chances of retrieving the desired dates."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE e.event_type IS NOT NULL AND toLower(e.event_type) CONTAINS toLower($kw) RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE e.event_type IS NOT NULL AND toLower(e.event_type) CONTAINS toLower($kw) RETURN DISTINCT e.date AS date"
+        ]
+      },
+      "duration_seconds": 103.513679,
+      "status": "success",
+      "timestamp": "2025-09-18T23:43:58.004775",
+      "expected_answer": [
+        "October 13, 2024"
+      ]
+    },
+    {
+      "question_idx": 9,
+      "question": "Recall all events related to Ice Sculpture Exhibition. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "4c5b88a1-8564-4995-b0c9-66024c948e73",
+        "question": "Recall all events related to Ice Sculpture Exhibition. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": [
+          "May 11, 2026"
+        ],
+        "standardized_answer": [
+          "May 11, 2026"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) RETURN DISTINCT e.date AS date"
+        ]
+      },
+      "duration_seconds": 15.392053,
+      "status": "success",
+      "timestamp": "2025-09-18T23:45:41.518669",
+      "expected_answer": [
+        "May 11, 2026"
+      ]
+    },
+    {
+      "question_idx": 9,
+      "question": "Recall all events related to Karaoke Night. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "b7a3d024-d78f-4c0d-b796-03918de5fa1f",
+        "question": "Recall all events related to Karaoke Night. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": [
+          "May 07, 2024"
+        ],
+        "standardized_answer": [
+          "May 07, 2024"
+        ],
+        "total_iterations": 2,
+        "search_successful": true,
+        "reasoning_chain": [
+          "By broadening the search to include any events that contain 'Karaoke', we increase the chances of retrieving relevant events, even if they are not labeled exactly as 'Karaoke Night'. (Enhanced with semantic search: Karaoke Night in field event_type)"
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.name) = toLower($kw) RETURN e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN e.date AS date"
+        ]
+      },
+      "duration_seconds": 34.615686,
+      "status": "success",
+      "timestamp": "2025-09-18T23:45:56.910823",
+      "expected_answer": [
+        "May 07, 2024"
+      ]
+    },
+    {
+      "question_idx": 9,
+      "question": "Recall all events related to Charity Gala. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "b75d98d6-51c6-4e70-bac8-a99f3fab214e",
+        "question": "Recall all events related to Charity Gala. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": null,
+        "standardized_answer": [],
+        "total_iterations": 5,
+        "search_successful": false,
+        "reasoning_chain": [
+          "Using an exact match will ensure that only events with the exact name 'Charity Gala' are retrieved, which may yield better results if the naming is consistent.",
+          "By searching for a broader keyword like 'Charity', we can capture all events related to charity, including those that may not have 'Gala' in their name but are still relevant.",
+          "By focusing on the event type rather than just the name, the search can capture a wider range of relevant events that may not explicitly include 'Charity' in their titles but are still related to charitable activities.",
+          "By using a broader keyword like 'charity event', the search can capture a wider range of relevant events that may include the 'Charity Gala' as well as similar events, increasing the chances of retrieving the desired dates.",
+          "By using broader keywords, the search can capture variations of the event name and related events, increasing the chances of retrieving relevant dates."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower(\"Charity Gala\") RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.name) = toLower(\"Charity Gala\") RETURN DISTINCT e.date AS date"
+        ]
+      },
+      "duration_seconds": 120.683647,
+      "status": "success",
+      "timestamp": "2025-09-18T23:46:31.526663",
+      "expected_answer": []
+    },
+    {
+      "question_idx": 9,
+      "question": "Recall all events related to Drum Circle. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "0e318349-7235-488f-aeef-74b8f55a2144",
+        "question": "Recall all events related to Drum Circle. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": null,
+        "standardized_answer": [],
+        "total_iterations": 5,
+        "search_successful": false,
+        "reasoning_chain": [
+          "By using a broader keyword like 'drumming', the search can capture a wider range of related events that may not explicitly use the term 'Drum Circle', thus increasing the chances of retrieving relevant dates.",
+          "By focusing specifically on the term 'Drum Circle', the search will directly target relevant events, increasing the likelihood of retrieving the correct dates.",
+          "By using a 'CONTAINS' approach, the search can capture any events that include 'Drum Circle' in their name, accommodating variations and ensuring a broader search scope.",
+          "By using broader terms related to drum circles, such as 'drumming' or 'percussion', the search may capture events that are not explicitly named 'Drum Circle' but are still relevant.",
+          "By broadening the search to include partial matches and synonyms, it increases the likelihood of retrieving relevant events related to the concept of a Drum Circle."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE e.name CONTAINS 'Drum Circle' RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) OR toLower(e.event_type) CONTAINS toLower($kw) RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.name) = toLower($kw) RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) OR toLower(e.event_type) CONTAINS toLower($kw) RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.name) = toLower('Drum Circle') RETURN DISTINCT e.date AS date"
+        ]
+      },
+      "duration_seconds": 109.708104,
+      "status": "success",
+      "timestamp": "2025-09-18T23:48:32.210509",
+      "expected_answer": []
+    },
+    {
+      "question_idx": 9,
+      "question": "Recall all events related to Escape Room Challenge. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "867bcfa9-1525-4201-8ffa-0040893efcb3",
+        "question": "Recall all events related to Escape Room Challenge. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": null,
+        "standardized_answer": [],
+        "total_iterations": 5,
+        "search_successful": false,
+        "reasoning_chain": [
+          "By using a broader keyword, we increase the chances of matching various event names that may include 'Escape Room' or similar terms, thus retrieving relevant dates more effectively.",
+          "By using a broader keyword like 'Escape', the search may capture more relevant events that include the term in their names or descriptions, increasing the chances of retrieving the desired dates.",
+          "By using a broader term like 'Escape Room', it increases the chances of matching events that are related to the desired challenge, even if the exact phrase is not used in the database.",
+          "By using a broader term like 'Challenge', the search may capture more relevant events that are related to the Escape Room Challenge, increasing the chances of retrieving the desired dates.",
+          "By broadening the search to include 'Escape Room' as a keyword, it increases the likelihood of capturing all relevant events associated with the Escape Room Challenge, regardless of how they are categorized in the database."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) OR toLower(e.event_type) CONTAINS toLower($kw) RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN DISTINCT e.date AS date"
+        ]
+      },
+      "duration_seconds": 109.711138,
+      "status": "success",
+      "timestamp": "2025-09-18T23:50:21.918938",
+      "expected_answer": []
+    },
+    {
+      "question_idx": 9,
+      "question": "Recall all events related to Political Rally. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "16763dee-1975-485a-93f1-4276880a5bb9",
+        "question": "Recall all events related to Political Rally. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": null,
+        "standardized_answer": [],
+        "total_iterations": 5,
+        "search_successful": false,
+        "reasoning_chain": [
+          "By using a broader keyword like 'Rally', we increase the chances of capturing related events that may not be explicitly labeled as 'Political Rally'. This approach allows for a more inclusive search that could yield relevant results.",
+          "By searching for a broader term like 'Political', we may capture a wider range of events that include rallies, thus increasing the chances of retrieving relevant dates.",
+          "By using a broader keyword like 'rally', the search can capture more variations of political events, increasing the likelihood of retrieving relevant dates.",
+          "By broadening the search to include 'political event', it may capture a wider range of relevant events that include rallies, thus increasing the chances of retrieving the desired dates.",
+          "By using a broader keyword like 'political event', the search can capture a wider range of events that may include political rallies, thus increasing the chances of retrieving relevant dates."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) RETURN e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.event_type) =~ '.*political rally.*' AND e.event_type IS NOT NULL RETURN e.date AS date",
+          "MATCH (e:Event) WHERE e.event_type IS NOT NULL AND (toLower(e.event_type) CONTAINS 'political' OR toLower(e.event_type) CONTAINS 'rally') RETURN e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.event_type) = 'political rally' RETURN e.date AS date"
+        ]
+      },
+      "duration_seconds": 107.744541,
+      "status": "success",
+      "timestamp": "2025-09-18T23:52:11.630244",
+      "expected_answer": []
+    },
+    {
+      "question_idx": 9,
+      "question": "Recall all events related to Science Fair. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "e945b2ba-78a0-480b-9c9c-f7ad65de9e41",
+        "question": "Recall all events related to Science Fair. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": null,
+        "standardized_answer": [],
+        "total_iterations": 5,
+        "search_successful": false,
+        "reasoning_chain": [
+          "By focusing on a broader keyword like 'Science', the search may capture more relevant events that are associated with science fairs, even if they are not explicitly named as such.",
+          "Focusing on the name field allows for a more precise search for events specifically labeled as 'Science Fair', which is likely how the events are categorized in the database.",
+          "By using a broader keyword like 'Science', the search may capture related events that include the Science Fair, allowing for a more comprehensive retrieval of dates.",
+          "Focusing on the 'name' field with the exact phrase 'Science Fair' will likely yield more accurate results, as it directly targets the specific event of interest.",
+          "By using a broader term like 'Science Exhibition', the search may capture more relevant events that are related to the concept of a science fair, thus increasing the chances of retrieving the desired dates."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE e.name CONTAINS 'Science Fair' RETURN e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) RETURN e.date AS date",
+          "MATCH (e:Event) WHERE e.event_type =~ '(?i).*Science.*' RETURN e.date AS date",
+          "MATCH (e:Event) WHERE e.name =~ '(?i)Science Fair' RETURN e.date AS date"
+        ]
+      },
+      "duration_seconds": 102.071422,
+      "status": "success",
+      "timestamp": "2025-09-18T23:53:59.375102",
+      "expected_answer": []
+    }
+  ]
+}

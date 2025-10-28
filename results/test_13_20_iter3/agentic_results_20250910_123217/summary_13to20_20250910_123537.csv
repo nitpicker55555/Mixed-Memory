@@ -1,9 +1,0 @@
-question_num,question,predicted_answer,search_success,confidence,iterations
-13,"Recall all events related to Carnival. Provide a list of all dates when these events occurred, without describing the events.","[""October 13, 2024""]",True,0.0,1
-14,"Recall all events related to Environmental Summit. Provide a list of all dates when these events occurred, without describing the events.","[""September 03, 2026""]",True,0.0,1
-15,"Recall all events related to Farmers Market. Provide a list of all dates when these events occurred, without describing the events.","[""July 13, 2024""]",True,0.0,1
-16,"Recall all events related to Boat Show. Provide a list of all dates when these events occurred, without describing the events.","None",False,0.0,5
-17,"Recall all events related to Book Signing Event. Provide a list of all dates when these events occurred, without describing the events.","None",False,0.0,5
-18,"Recall all events related to Charity Gala. Provide a list of all dates when these events occurred, without describing the events.","None",False,0.0,5
-19,"Recall all events related to Laser Tag Tournament. Provide a list of all dates when these events occurred, without describing the events.","None",False,0.0,5
-20,"Recall all events related to Robotics Competition. Provide a list of all dates when these events occurred, without describing the events.","None",False,0.0,5

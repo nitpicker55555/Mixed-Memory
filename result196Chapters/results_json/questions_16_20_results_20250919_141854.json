@@ -1,0 +1,272 @@
+{
+  "metadata": {
+    "start_time": "2025-09-19T14:14:22.059768",
+    "database": "196chapters",
+    "question_range": "16-20",
+    "total_questions": 5,
+    "end_time": "2025-09-19T14:18:54.383298",
+    "total_duration": 272.321699
+  },
+  "results": [
+    {
+      "question_idx": 10,
+      "question": "Consider all events involving Archery Tournament. List all the locations where these events took place, without mentioning the events themselves.",
+      "answer": {
+        "session_id": "2a17a13c-41a4-410c-963f-5ed281ba7245",
+        "question": "Consider all events involving Archery Tournament. List all the locations where these events took place, without mentioning the events themselves.",
+        "final_answer": null,
+        "standardized_answer": [],
+        "total_iterations": 5,
+        "search_successful": false,
+        "reasoning_chain": [
+          "By using a broader keyword like 'Archery', the search can capture a wider range of events that may include tournaments, practices, or exhibitions, thus increasing the chances of finding relevant locations. (Enhanced with semantic search: Archery Tournament in field event_type)",
+          "By focusing on a broader keyword like 'Archery', it may capture related events that include 'Archery Tournament' in their type, thus increasing the chances of retrieving relevant locations. (Enhanced with semantic search: Archery Tournament in field event_type)",
+          "By using a broader keyword like 'Archery', the search can capture all related events, including tournaments, competitions, and other archery-related activities, thus increasing the likelihood of retrieving relevant locations. (Enhanced with semantic search: Archery Tournament in field event_type)",
+          "By broadening the search to include any event type that contains 'Archery', we increase the chances of capturing relevant events that may not be specifically labeled as 'Archery Tournament'. (Enhanced with semantic search: Archery Tournament in field event_type)",
+          "By broadening the search to include related terms, it increases the chances of capturing relevant events that may not be explicitly labeled as 'Archery Tournament'. This approach allows for a more inclusive search that could yield results from various related events. (Enhanced with semantic search: Archery Tournament in field event_type)"
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) AND e.location IS NOT NULL RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) AND e.location IS NOT NULL RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) AND e.location IS NOT NULL RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) AND e.location IS NOT NULL RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) AND e.location IS NOT NULL RETURN DISTINCT e.location AS location"
+        ]
+      },
+      "duration_seconds": 119.69158,
+      "status": "success",
+      "timestamp": "2025-09-19T14:14:22.059833",
+      "expected_answer": [
+        "High Line",
+        "American Museum of Natural History",
+        "Statue of Liberty",
+        "Washington Square Park"
+      ]
+    },
+    {
+      "question_idx": 10,
+      "question": "Consider all events involving Burlesque Performance. List all the locations where these events took place, without mentioning the events themselves.",
+      "answer": {
+        "session_id": "d70cc97d-711a-4152-9e32-b5a57eca2944",
+        "question": "Consider all events involving Burlesque Performance. List all the locations where these events took place, without mentioning the events themselves.",
+        "final_answer": [
+          "Port Jefferson",
+          "Brooklyn Museum",
+          "Williamsburg Bridge",
+          "Trinity Church",
+          "Statue of Liberty",
+          "St. Patrick's Cathedral",
+          "Washington Square Park",
+          "High Line, New York",
+          "Ellis Island",
+          "American Museum of Natural History",
+          "Port Jefferson Waterfront",
+          "Snug Harbor Cultural Center",
+          "Coney Island",
+          "One World Trade Center",
+          "Van Cortlandt Park",
+          "Woolworth Building",
+          "Queensboro Bridge",
+          "Grand Central Terminal",
+          "Beach",
+          "Lavishly decorated hall",
+          "Yankee Stadium"
+        ],
+        "standardized_answer": [
+          "Port Jefferson",
+          "Brooklyn Museum",
+          "Williamsburg Bridge",
+          "Trinity Church",
+          "Statue of Liberty",
+          "St. Patrick's Cathedral",
+          "Washington Square Park",
+          "High Line, New York",
+          "Ellis Island",
+          "American Museum of Natural History",
+          "Port Jefferson Waterfront",
+          "Snug Harbor Cultural Center",
+          "Coney Island",
+          "One World Trade Center",
+          "Van Cortlandt Park",
+          "Woolworth Building",
+          "Queensboro Bridge",
+          "Grand Central Terminal",
+          "Beach",
+          "Lavishly decorated hall",
+          "Yankee Stadium"
+        ],
+        "total_iterations": 2,
+        "search_successful": true,
+        "reasoning_chain": [
+          "By using a broader keyword like 'Performance', the search may capture a wider range of events that include Burlesque performances, thus increasing the likelihood of retrieving relevant locations."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN DISTINCT e.location AS location"
+        ]
+      },
+      "duration_seconds": 34.381628,
+      "status": "success",
+      "timestamp": "2025-09-19T14:16:21.751809",
+      "expected_answer": [
+        "Trinity Church",
+        "Washington Square Park",
+        "Bethpage State Park"
+      ]
+    },
+    {
+      "question_idx": 10,
+      "question": "Consider all events involving Carnival. List all the locations where these events took place, without mentioning the events themselves.",
+      "answer": {
+        "session_id": "8ef1a82e-ea72-4a6f-b9d6-4bb7d811ab7e",
+        "question": "Consider all events involving Carnival. List all the locations where these events took place, without mentioning the events themselves.",
+        "final_answer": [
+          "One World Trade Center"
+        ],
+        "standardized_answer": [
+          "One World Trade Center"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) AND e.location IS NOT NULL RETURN DISTINCT e.location AS location"
+        ]
+      },
+      "duration_seconds": 12.108537,
+      "status": "success",
+      "timestamp": "2025-09-19T14:16:56.133663",
+      "expected_answer": [
+        "Central Park",
+        "Washington Square Park",
+        "One World Trade Center",
+        "Queensboro Bridge",
+        "St. Patrick's Cathedral"
+      ]
+    },
+    {
+      "question_idx": 10,
+      "question": "Consider all events involving Classical Music Concert. List all the locations where these events took place, without mentioning the events themselves.",
+      "answer": {
+        "session_id": "842d5d3b-e0a7-4724-a812-d997541bfcb8",
+        "question": "Consider all events involving Classical Music Concert. List all the locations where these events took place, without mentioning the events themselves.",
+        "final_answer": [
+          "Fire Island National Seashore",
+          "High Line",
+          "The High Line, New York City",
+          "Makeshift stage on the island",
+          "High Line, New York",
+          "Museum of Modern Art",
+          "Washington Square Park",
+          "Trinity Church",
+          "Lincoln Center",
+          "Woolworth Building",
+          "One World Trade Center",
+          "Hither Hills State Park",
+          "St. Patrick's Cathedral",
+          "High Line Theater",
+          "Brooklyn Museum",
+          "Yankee Stadium",
+          "Port Jefferson",
+          "Chelsea Market",
+          "Woolworth Building Theater",
+          "Near the Statue of Liberty",
+          "American Museum of Natural History",
+          "Queensboro Bridge",
+          "Van Cortlandt Park",
+          "Bethpage State Park",
+          "Gothic-inspired venue",
+          "Snug Harbor Cultural Center",
+          "Unknown"
+        ],
+        "standardized_answer": [
+          "Fire Island National Seashore",
+          "High Line",
+          "The High Line, New York City",
+          "Makeshift stage on the island",
+          "High Line, New York",
+          "Museum of Modern Art",
+          "Washington Square Park",
+          "Trinity Church",
+          "Lincoln Center",
+          "Woolworth Building",
+          "One World Trade Center",
+          "Hither Hills State Park",
+          "St. Patrick's Cathedral",
+          "High Line Theater",
+          "Brooklyn Museum",
+          "Yankee Stadium",
+          "Port Jefferson",
+          "Chelsea Market",
+          "Woolworth Building Theater",
+          "Near the Statue of Liberty",
+          "American Museum of Natural History",
+          "Queensboro Bridge",
+          "Van Cortlandt Park",
+          "Bethpage State Park",
+          "Gothic-inspired venue",
+          "Snug Harbor Cultural Center",
+          "Unknown"
+        ],
+        "total_iterations": 2,
+        "search_successful": true,
+        "reasoning_chain": [
+          "By using a broader keyword like 'Concert', the search may capture a wider range of events that include classical music performances, thus increasing the chances of retrieving relevant locations."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) AND e.location IS NOT NULL AND e.location <> '' RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) AND e.location IS NOT NULL AND e.location <> \"\" RETURN DISTINCT e.location AS location"
+        ]
+      },
+      "duration_seconds": 42.778686,
+      "status": "success",
+      "timestamp": "2025-09-19T14:17:08.242777",
+      "expected_answer": [
+        "Trinity Church",
+        "Washington Square Park",
+        "One World Trade Center",
+        "Metropolitan Museum of Art"
+      ]
+    },
+    {
+      "question_idx": 10,
+      "question": "Consider all events involving Ice Sculpture Exhibition. List all the locations where these events took place, without mentioning the events themselves.",
+      "answer": {
+        "session_id": "1dc898aa-dbf6-43b0-9d4d-8e47318250c0",
+        "question": "Consider all events involving Ice Sculpture Exhibition. List all the locations where these events took place, without mentioning the events themselves.",
+        "final_answer": [
+          "Washington Square Park",
+          "Snug Harbor Cultural Center",
+          "Queensboro Bridge",
+          "One World Trade Center"
+        ],
+        "standardized_answer": [
+          "Washington Square Park",
+          "Snug Harbor Cultural Center",
+          "Queensboro Bridge",
+          "One World Trade Center"
+        ],
+        "total_iterations": 3,
+        "search_successful": true,
+        "reasoning_chain": [
+          "By using a broader keyword like 'Ice Sculpture', the search may capture related events that include the term, thus increasing the chances of retrieving relevant locations. (Enhanced with semantic search: Ice Sculptures in field event_type)",
+          "By using a broader keyword like 'Ice Sculpture', the search may capture more relevant events that include variations of the term, thus increasing the chances of retrieving locations associated with those events. (Enhanced with semantic search: Ice Sculptures in field event_type)"
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE (toLower(e.event_type) CONTAINS toLower($kw) OR toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) RETURN DISTINCT e.location AS location"
+        ]
+      },
+      "duration_seconds": 63.361268,
+      "status": "success",
+      "timestamp": "2025-09-19T14:17:51.021896",
+      "expected_answer": [
+        "Snug Harbor Cultural Center",
+        "Washington Square Park",
+        "One World Trade Center",
+        "Queensboro Bridge"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "metadata": {
+    "start_time": "2025-09-19T13:48:32.413835",
+    "database": "196chapters",
+    "question_range": "10-15",
+    "total_questions": 6,
+    "end_time": "2025-09-19T13:58:20.938829",
+    "total_duration": 588.52289
+  },
+  "results": [
+    {
+      "question_idx": 10,
+      "question": "Consider all events involving Bubble Tea Festival. List all the locations where these events took place, without mentioning the events themselves.",
+      "answer": {
+        "session_id": "4e78f741-15b9-47bc-bf05-81a9447a1d80",
+        "question": "Consider all events involving Bubble Tea Festival. List all the locations where these events took place, without mentioning the events themselves.",
+        "final_answer": null,
+        "standardized_answer": [],
+        "total_iterations": 5,
+        "search_successful": false,
+        "reasoning_chain": [
+          "By using broader keywords and focusing on fields like event_type or description, the search can capture a wider range of relevant events that may not explicitly mention 'Bubble Tea Festival' in their names but are still related to bubble tea.",
+          "By broadening the search to include related terms or categories, we increase the chances of capturing relevant events that may not explicitly mention 'bubble tea' but are still associated with it. (Enhanced with semantic search: Craft Beer Festival in field name)",
+          "By broadening the search to include partial matches and synonyms, it increases the chances of finding relevant events related to the Bubble Tea Festival, thus yielding a list of locations.",
+          "By searching specifically for the name of the event, we can directly target the relevant events without relying on potentially missing or misclassified descriptions or types. (Enhanced with semantic search: Craft Beer Festival in field name)",
+          "By using a broader keyword like 'bubble tea', the search can capture a wider range of events that may not explicitly use the term 'Bubble Tea Festival' in their names but are still relevant. Focusing on fields like event_type or description may yield more results."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) AND e.location IS NOT NULL AND e.location <> \"\" RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE (toLower(e.event_type) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) AND e.location IS NOT NULL AND e.location <> \"\" RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE e.name = $kw AND e.location IS NOT NULL AND e.location <> \"\" RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE (toLower(e.event_type) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) AND e.location IS NOT NULL AND e.location <> \"\" RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) AND e.location IS NOT NULL AND e.location <> \"\" RETURN DISTINCT e.location AS location"
+        ]
+      },
+      "duration_seconds": 102.463883,
+      "status": "success",
+      "timestamp": "2025-09-19T13:48:32.413884",
+      "expected_answer": []
+    },
+    {
+      "question_idx": 9,
+      "question": "Recall all events related to 3D Printing Workshop. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "c782f83b-22d1-45af-b7be-c4fb208abc60",
+        "question": "Recall all events related to 3D Printing Workshop. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": null,
+        "standardized_answer": [],
+        "total_iterations": 5,
+        "search_successful": false,
+        "reasoning_chain": [
+          "Focusing on broader keywords like '3D Printing' may yield more results, and searching in fields like 'event_type' or 'description' could capture events that are related but not explicitly named '3D Printing Workshop'.",
+          "Focusing on the exact name of the event will increase the chances of retrieving the correct dates associated with the 3D Printing Workshop, as it is a more precise search criterion. (Enhanced with semantic search: Making Workshop in field event_type)",
+          "By using a broader keyword like '3D Printing', the search can capture more relevant events that may not use the exact phrase '3D Printing Workshop'. Focusing on both the name and description fields can also help in retrieving more comprehensive results.",
+          "Focusing on the 'event_type' field may yield better results, as it could encompass a wider range of related events that include workshops or sessions on 3D printing. (Enhanced with semantic search: Making Workshop in field event_type)",
+          "By searching for a broader term like '3D Printing', the query can capture more relevant events that may not be labeled exactly as '3D Printing Workshop'. This approach increases the chances of retrieving related events."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE e.name CONTAINS '3D Printing Workshop' RETURN DISTINCT e.date AS date ORDER BY e.date ASC",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw) RETURN DISTINCT e.date AS date ORDER BY e.date ASC",
+          "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) RETURN DISTINCT e.date AS date ORDER BY e.date ASC",
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw) RETURN DISTINCT e.date AS date ORDER BY e.date ASC",
+          "MATCH (e:Event) WHERE toLower(e.event_type) = toLower('3D Printing Workshop') RETURN DISTINCT e.date AS date ORDER BY e.date ASC"
+        ]
+      },
+      "duration_seconds": 100.193495,
+      "status": "success",
+      "timestamp": "2025-09-19T13:50:14.878726",
+      "expected_answer": []
+    },
+    {
+      "question_idx": 9,
+      "question": "Recall all events related to Anime Marathon. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "280bf57f-0f37-4ab2-bbe2-85f7950f1827",
+        "question": "Recall all events related to Anime Marathon. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": null,
+        "standardized_answer": [],
+        "total_iterations": 5,
+        "search_successful": false,
+        "reasoning_chain": [
+          "By using a broader keyword like 'Anime', the search can capture a wider range of events that may include the Anime Marathon, thus increasing the chances of retrieving relevant dates.",
+          "Focusing on the 'name' field with an exact match for 'Anime Marathon' will likely yield more accurate results. Additionally, using a broader keyword like 'Anime' may help capture related events that are not explicitly named 'Anime Marathon'.",
+          "By broadening the search to include both 'Anime' and 'Marathon' in different fields, we increase the chances of capturing relevant events that may not be explicitly named 'Anime Marathon' but are still related.",
+          "By searching for events that contain either 'anime' or 'marathon', the query will capture a wider range of relevant events, increasing the likelihood of retrieving dates associated with Anime Marathon events.",
+          "Focusing on the 'name' field with an exact match for 'Anime Marathon' could yield more accurate results, as it directly targets the specific event rather than relying on broader keywords."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE e.name CONTAINS 'Anime Marathon' RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE e.event_type CONTAINS $kw OR e.description CONTAINS $kw AND e.date IS NOT NULL RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE e.name CONTAINS $kw AND e.date IS NOT NULL RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE (toLower(e.event_type) CONTAINS 'anime marathon' OR (toLower(e.description) CONTAINS 'anime' AND toLower(e.description) CONTAINS 'marathon')) AND e.date IS NOT NULL RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE (toLower(e.event_type) CONTAINS 'anime' OR toLower(e.description) CONTAINS 'marathon') AND e.date IS NOT NULL RETURN DISTINCT e.date AS date"
+        ]
+      },
+      "duration_seconds": 113.859208,
+      "status": "success",
+      "timestamp": "2025-09-19T13:51:55.072406",
+      "expected_answer": []
+    },
+    {
+      "question_idx": 9,
+      "question": "Recall all events related to Board Game Night. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "429bb68f-e8e9-4ef7-bb04-0206683f9ead",
+        "question": "Recall all events related to Board Game Night. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": null,
+        "standardized_answer": [],
+        "total_iterations": 5,
+        "search_successful": false,
+        "reasoning_chain": [
+          "By using a broader term like 'Game Night', the search can capture any events that might be related to board games, even if they are not explicitly labeled as 'Board Game Night'. This increases the chances of retrieving relevant dates.",
+          "By focusing on the 'event_type' field and using a broader keyword like 'Board Games', the search may capture more relevant events that are categorized under different names or descriptions.",
+          "By expanding the search to include variations of the keyword and checking multiple fields, it increases the likelihood of capturing relevant events related to Board Game Night. (Enhanced with semantic search: Ball Game in field event_type)",
+          "By focusing on the name field and using a broader keyword like 'Board Game', the search may capture more relevant events that include 'Board Game Night' or similar variations. (Enhanced with semantic search: Ball Game in field event_type)",
+          "By using a broader keyword like 'Game Night', the search may capture more relevant events that are related to Board Game Night, even if they are not explicitly labeled as such."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE e.name CONTAINS 'Board Game Night' RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE e.name CONTAINS $kw OR e.event_type CONTAINS $kw RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE e.event_type = $kw RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE e.event_type = $kw RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE e.event_type CONTAINS 'Board Game' AND e.date IS NOT NULL RETURN DISTINCT e.date AS date"
+        ]
+      },
+      "duration_seconds": 106.577301,
+      "status": "success",
+      "timestamp": "2025-09-19T13:53:48.931913",
+      "expected_answer": []
+    },
+    {
+      "question_idx": 9,
+      "question": "Recall all events related to Boat Show. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "c3ae6b89-64f1-4ad1-8ff0-4900581d24cd",
+        "question": "Recall all events related to Boat Show. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": null,
+        "standardized_answer": [],
+        "total_iterations": 5,
+        "search_successful": false,
+        "reasoning_chain": [
+          "Using an exact match may yield results if the event is named precisely as 'Boat Show'. If that still fails, exploring related event types or categories could uncover similar events that might not have 'Boat Show' in their title but are relevant.",
+          "By using a broader keyword like 'Boat', the search can capture more relevant events that may include 'Boat Show' in their names or descriptions, increasing the chances of retrieving the desired dates.",
+          "By using an exact match or broader terms, the search can capture all relevant events that may not strictly contain the phrase 'Boat Show' but are related to it.",
+          "By breaking down the keyword into individual components, we can increase the chances of finding related events that may not explicitly use the phrase 'Boat Show' but are still relevant.",
+          "By expanding the search to include both 'Boat' and 'Show' in the event name or type, or by using related terms, the query may yield more relevant results. This approach increases the chances of capturing all related events."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) OR toLower(e.event_type) CONTAINS toLower($kw) RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN DISTINCT e.date AS date"
+        ]
+      },
+      "duration_seconds": 104.655046,
+      "status": "success",
+      "timestamp": "2025-09-19T13:55:35.509411",
+      "expected_answer": []
+    },
+    {
+      "question_idx": 9,
+      "question": "Recall all events related to Bubble Tea Festival. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "51740150-9d40-4cab-ab21-945c27277045",
+        "question": "Recall all events related to Bubble Tea Festival. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": [
+          "March 23, 2025",
+          "July 31, 2025",
+          "September 22, 2026",
+          "September 03, 2026",
+          "October 13, 2024",
+          "October 27, 2024",
+          "November 13, 2026",
+          "December 25, 2025",
+          "December 26, 2026",
+          "May 11, 2026",
+          "September 27, 2025"
+        ],
+        "standardized_answer": [
+          "March 23, 2025",
+          "July 31, 2025",
+          "September 22, 2026",
+          "September 03, 2026",
+          "October 13, 2024",
+          "October 27, 2024",
+          "November 13, 2026",
+          "December 25, 2025",
+          "December 26, 2026",
+          "May 11, 2026",
+          "September 27, 2025"
+        ],
+        "total_iterations": 3,
+        "search_successful": true,
+        "reasoning_chain": [
+          "By broadening the search to include partial matches or related terms, we increase the chances of retrieving relevant events associated with the Bubble Tea Festival.",
+          "By using a broader keyword like 'Tea Festival', the search may capture events that are related to bubble tea but do not explicitly use the term 'Bubble Tea'. This increases the chances of retrieving relevant events. (Enhanced with semantic search: Festival in field event_type)"
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.name) = toLower($kw) RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw) RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN DISTINCT e.date AS date"
+        ]
+      },
+      "duration_seconds": 60.773957,
+      "status": "success",
+      "timestamp": "2025-09-19T13:57:20.164642",
+      "expected_answer": []
+    }
+  ]
+}

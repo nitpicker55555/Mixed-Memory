@@ -1,0 +1,103 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-22 15:01:22
+Question Range: 131-140
+Total Questions Processed: 10
+Successful Searches: 10 (100.0%)
+Questions with Answers: 10 (100.0%)
+Average Iterations per Question: 1.0
+
+DETAILED RESULTS:
+------------------------------
+
+Question 131:
+  Text: What was Ella Ross doing the last time they were observed in the story's timeline?
+  Expected: ['Photography Exhibition']
+  Predicted: Ella Ross was showcasing her portrait series at the photography exhibition opening.
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 185 total (169 prompt + 16 completion, 1 calls)
+
+Question 132:
+  Text: What was Isaiah Bennett doing the last time they were observed in the story's timeline?
+  Expected: ['Burlesque Performance']
+  Predicted: Isaiah Bennett was performing in a Burlesque Show at Bethpage State Park.
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 186 total (169 prompt + 17 completion, 1 calls)
+
+Question 133:
+  Text: Provide a chronological list of all dates when Aurora Chavez was observed, from earliest to latest in the story's timeline.
+  Expected: ['March 23, 2025']
+  Predicted: ['March 23, 2025']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 192 total (175 prompt + 17 completion, 1 calls)
+
+Question 134:
+  Text: Provide a chronological list of all dates when Bella Alvarez was observed, from earliest to latest in the story's timeline.
+  Expected: ['May 11, 2026']
+  Predicted: ['May 11, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 191 total (175 prompt + 16 completion, 1 calls)
+
+Question 135:
+  Text: Provide a chronological list of all dates when Elizabeth Hill was observed, from earliest to latest in the story's timeline.
+  Expected: ['July 25, 2024']
+  Predicted: ['2024-07-25']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 191 total (175 prompt + 16 completion, 1 calls)
+
+Question 136:
+  Text: Provide a chronological list of all dates when Ella Ross was observed, from earliest to latest in the story's timeline.
+  Expected: ['April 09, 2026']
+  Predicted: ['April 09, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 191 total (175 prompt + 16 completion, 1 calls)
+
+Question 137:
+  Text: Provide a chronological list of all dates when Isaiah Bennett was observed, from earliest to latest in the story's timeline.
+  Expected: ['July 21, 2024']
+  Predicted: ['2024-07-21']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 192 total (175 prompt + 17 completion, 1 calls)
+
+Question 138:
+  Text: What is the most recent date Aurora Chavez was observed or mentioned in the story's chronology?
+  Expected: ['March 23, 2025']
+  Predicted: March 23, 2025
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 304 total (285 prompt + 19 completion, 1 calls)
+
+Question 139:
+  Text: What is the most recent date Bella Alvarez was observed or mentioned in the story's chronology?
+  Expected: ['May 11, 2026']
+  Predicted: May 11, 2026
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 186 total (170 prompt + 16 completion, 1 calls)
+
+Question 140:
+  Text: What is the most recent date Elizabeth Hill was observed or mentioned in the story's chronology?
+  Expected: ['July 25, 2024']
+  Predicted: 2024-07-25
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 186 total (170 prompt + 16 completion, 1 calls)
+

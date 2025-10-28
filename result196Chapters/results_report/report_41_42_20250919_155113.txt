@@ -1,0 +1,31 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-19 15:51:13
+Question Range: 41-42
+Total Questions Processed: 2
+Successful Searches: 2 (100.0%)
+Questions with Answers: 2 (100.0%)
+Average Iterations per Question: 1.5
+
+DETAILED RESULTS:
+------------------------------
+
+Question 41:
+  Text: Reflect on events related to Astronomy Night. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Maya Smith', 'Scarlett Thomas', 'Levi Rodriguez', 'Zoe Brown', 'Noah Wood', 'Carter Stewart', 'Ezra Edwards', 'Bella Alvarez']
+  Predicted: ['Levi Rodriguez', 'Quill Womack', 'Sincere Albertson', 'Zoe Brown', 'Bella Alvarez', 'Messiah Funderburk', 'Scarlett Thomas', 'Dariel Emery', 'Alicia Peoples']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 197 total (176 prompt + 21 completion, 1 calls)
+
+Question 42:
+  Text: Reflect on events related to Debate Tournament. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Scarlett Thomas', 'Jackson Hall', 'Henry Reed', 'Julian Ross', 'Olivia Turner']
+  Predicted: ['Henry Reed', 'Mae Garza', 'Olivia Turner', 'Unknown Opposing Team', 'Eithan Blount', 'Noah Williams', 'Vaughn Hancock', 'Remy Soto']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+  Token Usage: 683 total (492 prompt + 191 completion, 2 calls)
+

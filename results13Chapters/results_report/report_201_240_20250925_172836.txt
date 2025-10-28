@@ -1,0 +1,373 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-25 17:28:36
+Question Range: 201-240
+Total Questions Processed: 40
+Successful Searches: 18 (45.0%)
+Questions with Answers: 18 (45.0%)
+Average Iterations per Question: 3.4
+
+DETAILED RESULTS:
+------------------------------
+
+Question 201:
+  Text: Reflect on Owen Thomas's experiences at Bethpage Black Course. Describe all the key events they've been involved in at this location, focusing on what happened rather than when it occurred.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3036 total (2283 prompt + 753 completion, 5 calls)
+
+Question 202:
+  Text: Reflect on Harper Gutierrez's experiences at Camp Hero State Park. Describe all the key events they've been involved in at this location, focusing on what happened rather than when it occurred.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 4295 total (3168 prompt + 1127 completion, 6 calls)
+
+Question 203:
+  Text: Reflect on Mila Gonzalez's experiences at Captree State Park. Describe all the key events they've been involved in at this location, focusing on what happened rather than when it occurred.
+  Expected: []
+  Predicted: {"event_name":"Mila Gonzalez's Dramatic Performance","event_type":"Theatrical Performance","description":"Mila Gonzalez delivers a dramatic, magical scene on stage, deeply connecting with the audience and fellow performers.","participants":["Mila Gonzalez","Diem Nix","Eli Groth","Rey Pierre","Audience"],"location":"Statue of Liberty (outdoor stage)"}
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 204 total (187 prompt + 17 completion, 1 calls)
+
+Question 204:
+  Text: Reflect on Mateo Gomez's experiences at Coney Island. Describe all the key events they've been involved in at this location, focusing on what happened rather than when it occurred.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 5119 total (3731 prompt + 1388 completion, 6 calls)
+
+Question 205:
+  Text: Consider all events involving both Violet Johnson and Fashion Show at American Museum of Natural History. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3555 total (2580 prompt + 975 completion, 6 calls)
+
+Question 206:
+  Text: Consider all events involving both Owen Thomas and Theater Performance at Bethpage Black Course. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3490 total (2516 prompt + 974 completion, 6 calls)
+
+Question 207:
+  Text: Consider all events involving both Harper Gutierrez and Drum Circle at Camp Hero State Park. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3255 total (2429 prompt + 826 completion, 6 calls)
+
+Question 208:
+  Text: Consider all events involving both Mila Gonzalez and Charity Gala at Captree State Park. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3563 total (2660 prompt + 903 completion, 6 calls)
+
+Question 209:
+  Text: Consider all events involving both Mateo Gomez and Science Fair at Coney Island. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3281 total (2344 prompt + 937 completion, 6 calls)
+
+Question 210:
+  Text: Consider the location Bethpage Black Course. List all protagonists that have been involved in any events at this location, without mentioning the events themselves.
+  Expected: ['Ezra Edwards']
+  Predicted: ['Ezra Edwards', 'Noa Middleton', 'Mara Ledbetter', 'Sienna Hamrick', 'Reid Blunt', 'Ronan Guevara', 'Other participants']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 198 total (180 prompt + 18 completion, 1 calls)
+
+Question 211:
+  Text: Consider the location Hither Hills State Park. List all protagonists that have been involved in any events at this location, without mentioning the events themselves.
+  Expected: ['Zoe Brown']
+  Predicted: ['Zoe Brown', 'Uri Wemple', 'Hezekiah Bean', 'Live band', 'Audience']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 199 total (181 prompt + 18 completion, 1 calls)
+
+Question 212:
+  Text: Consider the location Queensboro Bridge. List all protagonists that have been involved in any events at this location, without mentioning the events themselves.
+  Expected: ['Henry Reed']
+  Predicted: ['Henry Reed', 'Zander Davenport', 'Oakley Goetz', 'Jonah Kramer', 'Karsyn Schaeffer', 'Attendees']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 197 total (179 prompt + 18 completion, 1 calls)
+
+Question 213:
+  Text: Consider the location Snug Harbor Cultural Center. List all protagonists that have been involved in any events at this location, without mentioning the events themselves.
+  Expected: ['Owen Thomas']
+  Predicted: ['Owen Thomas', 'Lilah Hamilton (Glide)', 'Rocco Cormier', 'Axl Mims', 'Other participants']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 199 total (181 prompt + 18 completion, 1 calls)
+
+Question 214:
+  Text: Consider the location Statue of Liberty. List all protagonists that have been involved in any events at this location, without mentioning the events themselves.
+  Expected: ['Mila Gonzalez']
+  Predicted: []
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+  Token Usage: 197 total (179 prompt + 18 completion, 1 calls)
+
+Question 215:
+  Text: Think about all events that have occurred at Bethpage Black Course. Provide a list of all dates when these events took place, without describing the events.
+  Expected: ['September 13, 2025']
+  Predicted: ['September 13, 2025']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 202 total (182 prompt + 20 completion, 1 calls)
+
+Question 216:
+  Text: Think about all events that have occurred at Hither Hills State Park. Provide a list of all dates when these events took place, without describing the events.
+  Expected: ['May 07, 2024']
+  Predicted: ['May 07, 2024']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 197 total (183 prompt + 14 completion, 1 calls)
+
+Question 217:
+  Text: Think about all events that have occurred at Queensboro Bridge. Provide a list of all dates when these events took place, without describing the events.
+  Expected: ['October 13, 2024']
+  Predicted: ['October 13, 2024']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 200 total (181 prompt + 19 completion, 1 calls)
+
+Question 218:
+  Text: Think about all events that have occurred at Snug Harbor Cultural Center. Provide a list of all dates when these events took place, without describing the events.
+  Expected: ['September 27, 2025']
+  Predicted: ['September 27, 2025']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 197 total (183 prompt + 14 completion, 1 calls)
+
+Question 219:
+  Text: Think about all events that have occurred at Statue of Liberty. Provide a list of all dates when these events took place, without describing the events.
+  Expected: ['February 27, 2026']
+  Predicted: ['February 27, 2026']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+  Token Usage: 666 total (492 prompt + 174 completion, 2 calls)
+
+Question 220:
+  Text: Recall the various events that have taken place at Bethpage Black Course. Describe what happened during these events, focusing on the actions or occurrences rather than the timing or people involved.
+  Expected: ['Parkour Workshop']
+  Predicted: ['Bethpage Black Parkour Workshop']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 207 total (187 prompt + 20 completion, 1 calls)
+
+Question 221:
+  Text: Recall the various events that have taken place at Hither Hills State Park. Describe what happened during these events, focusing on the actions or occurrences rather than the timing or people involved.
+  Expected: ['Karaoke Night']
+  Predicted: ['A lively karaoke night with live band accompaniment, where Zoe Brown performs and the event becomes a catalyst for hidden truths and connections.']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 209 total (188 prompt + 21 completion, 1 calls)
+
+Question 222:
+  Text: Recall the various events that have taken place at Queensboro Bridge. Describe what happened during these events, focusing on the actions or occurrences rather than the timing or people involved.
+  Expected: ['Film Festival']
+  Predicted: ['Queensboro Bridge Film Poster Festival']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 205 total (186 prompt + 19 completion, 1 calls)
+
+Question 223:
+  Text: Recall the various events that have taken place at Snug Harbor Cultural Center. Describe what happened during these events, focusing on the actions or occurrences rather than the timing or people involved.
+  Expected: ['Parkour Workshop']
+  Predicted: ['Owen Thomas and others participate in a humorous and challenging parkour workshop led by instructor Glide, featuring spatial awareness exercises and vault practice.']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 209 total (188 prompt + 21 completion, 1 calls)
+
+Question 224:
+  Text: Recall the various events that have taken place at Statue of Liberty. Describe what happened during these events, focusing on the actions or occurrences rather than the timing or people involved.
+  Expected: ['Theater Performance']
+  Predicted: ["Mila Gonzalez's Dramatic Performance"]
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+  Token Usage: 750 total (538 prompt + 212 completion, 2 calls)
+
+Question 225:
+  Text: Think about the events involving Theater Performance at Bethpage Black Course. List all protagonists involved in these events, without mentioning the events themselves.
+  Expected: []
+  Predicted: ['Mila Gonzalez', 'Diem Nix', 'Eli Groth', 'Rey Pierre', 'Audience', 'Jackson Ramos', 'Remy Waterman', 'Kylee Beard', 'Other actors']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+  Token Usage: 672 total (482 prompt + 190 completion, 2 calls)
+
+Question 226:
+  Text: Think about the events involving Drum Circle at Camp Hero State Park. List all protagonists involved in these events, without mentioning the events themselves.
+  Expected: []
+  Predicted: ['Henry Reed', 'Luka Shaffer', 'Meredith Lester', 'Families', 'Audience']
+  Search Success: True
+  Confidence: 0.40
+  Iterations: 4
+  Token Usage: 1818 total (1274 prompt + 544 completion, 4 calls)
+
+Question 227:
+  Text: Think about the events involving Charity Gala at Captree State Park. List all protagonists involved in these events, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3236 total (2368 prompt + 868 completion, 6 calls)
+
+Question 228:
+  Text: Think about the events involving Science Fair at Coney Island. List all protagonists involved in these events, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3301 total (2400 prompt + 901 completion, 6 calls)
+
+Question 229:
+  Text: Think about the events involving Escape Room Challenge at High Line. List all protagonists involved in these events, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2986 total (2145 prompt + 841 completion, 6 calls)
+
+Question 230:
+  Text: Recall all events related to Theater Performance that occurred at Bethpage Black Course. Provide a list of all dates when these events took place, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3114 total (2273 prompt + 841 completion, 6 calls)
+
+Question 231:
+  Text: Recall all events related to Drum Circle that occurred at Camp Hero State Park. Provide a list of all dates when these events took place, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3474 total (2566 prompt + 908 completion, 6 calls)
+
+Question 232:
+  Text: Recall all events related to Charity Gala that occurred at Captree State Park. Provide a list of all dates when these events took place, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3443 total (2509 prompt + 934 completion, 6 calls)
+
+Question 233:
+  Text: Recall all events related to Science Fair that occurred at Coney Island. Provide a list of all dates when these events took place, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3082 total (2244 prompt + 838 completion, 6 calls)
+
+Question 234:
+  Text: Recall all events related to Escape Room Challenge that occurred at High Line. Provide a list of all dates when these events took place, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3015 total (2233 prompt + 782 completion, 6 calls)
+
+Question 235:
+  Text: Think about all events that have occurred at Camp Hero State Park. Provide a list of all dates when these events took place, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2822 total (2003 prompt + 819 completion, 6 calls)
+
+Question 236:
+  Text: Think about all events that have occurred at Captree State Park. Provide a list of all dates when these events took place, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2868 total (2015 prompt + 853 completion, 6 calls)
+
+Question 237:
+  Text: Think about all events that have occurred at Coney Island. Provide a list of all dates when these events took place, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2817 total (1979 prompt + 838 completion, 6 calls)
+
+Question 238:
+  Text: Recall the various events that have taken place at Camp Hero State Park. Describe what happened during these events, focusing on the actions or occurrences rather than the timing or people involved.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3356 total (2449 prompt + 907 completion, 6 calls)
+
+Question 239:
+  Text: Recall the various events that have taken place at Captree State Park. Describe what happened during these events, focusing on the actions or occurrences rather than the timing or people involved.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3238 total (2401 prompt + 837 completion, 6 calls)
+
+Question 240:
+  Text: Recall the various events that have taken place at Coney Island. Describe what happened during these events, focusing on the actions or occurrences rather than the timing or people involved.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3323 total (2426 prompt + 897 completion, 6 calls)
+

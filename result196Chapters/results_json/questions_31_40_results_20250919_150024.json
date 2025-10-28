@@ -1,0 +1,531 @@
+{
+  "metadata": {
+    "start_time": "2025-09-19T14:53:01.903100",
+    "database": "196chapters",
+    "question_range": "31-40",
+    "total_questions": 10,
+    "end_time": "2025-09-19T15:00:24.236935",
+    "total_duration": 442.331024
+  },
+  "results": [
+    {
+      "question_idx": 9,
+      "question": "Recall all events related to Astronomy Night. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "efb0c35d-072a-4379-bb95-0af3b4344e6f",
+        "question": "Recall all events related to Astronomy Night. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": [
+          "October 12, 2024",
+          "May 11, 2026",
+          "December 26, 2026",
+          "October 30, 2026"
+        ],
+        "standardized_answer": [
+          "October 12, 2024",
+          "May 11, 2026",
+          "December 26, 2026",
+          "October 30, 2026"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE e.name CONTAINS 'Astronomy Night' RETURN DISTINCT e.date AS date"
+        ]
+      },
+      "duration_seconds": 15.165625,
+      "status": "success",
+      "timestamp": "2025-09-19T14:53:01.903151",
+      "expected_answer": [
+        "May 11, 2026",
+        "December 26, 2026",
+        "May 28, 2025",
+        "October 30, 2026",
+        "April 09, 2026",
+        "September 22, 2026",
+        "October 12, 2024"
+      ]
+    },
+    {
+      "question_idx": 9,
+      "question": "Recall all events related to Debate Tournament. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "faec1e65-48c6-49e5-bb59-f2b793672aba",
+        "question": "Recall all events related to Debate Tournament. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": [
+          "January 03, 2026",
+          "July 13, 2024",
+          "May 28, 2025",
+          "October 13, 2024"
+        ],
+        "standardized_answer": [
+          "January 03, 2026",
+          "July 13, 2024",
+          "May 28, 2025",
+          "October 13, 2024"
+        ],
+        "total_iterations": 2,
+        "search_successful": true,
+        "reasoning_chain": [
+          "By broadening the search to include related terms like 'Debate' or 'Tournament', we can potentially retrieve events that are relevant but not explicitly labeled as 'Debate Tournament'. This approach increases the chances of finding related events and their dates."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN DISTINCT e.date AS date ORDER BY e.date ASC",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN DISTINCT e.date AS date ORDER BY e.date ASC"
+        ]
+      },
+      "duration_seconds": 34.254363,
+      "status": "success",
+      "timestamp": "2025-09-19T14:53:17.069558",
+      "expected_answer": [
+        "May 28, 2025",
+        "July 13, 2024",
+        "January 03, 2026",
+        "March 23, 2025",
+        "July 31, 2025"
+      ]
+    },
+    {
+      "question_idx": 9,
+      "question": "Recall all events related to Educational Workshop. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "8a9fb943-9ce4-4258-a833-8daa770cd834",
+        "question": "Recall all events related to Educational Workshop. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": [
+          "January 26, 2025",
+          "March 23, 2024",
+          "March 24, 2024",
+          "May 07, 2024",
+          "May 31, 2024",
+          "July 25, 2024",
+          "July 13, 2024",
+          "October 09, 2025",
+          "November 07, 2025",
+          "September 13, 2025",
+          "September 27, 2025",
+          "June 14, 2025",
+          "July 31, 2025",
+          "May 14, 2025",
+          "October 13, 2024",
+          "February 27, 2026",
+          "April 09, 2026",
+          "May 11, 2026",
+          "November 13, 2026",
+          "December 03, 2026",
+          "December 26, 2026",
+          "October 30, 2026",
+          "September 03, 2026",
+          "2026-06-08T00:00:00",
+          "June 17, 2025"
+        ],
+        "standardized_answer": [
+          "January 26, 2025",
+          "March 23, 2024",
+          "March 24, 2024",
+          "May 07, 2024",
+          "May 31, 2024",
+          "July 25, 2024",
+          "July 13, 2024",
+          "October 09, 2025",
+          "November 07, 2025",
+          "September 13, 2025",
+          "September 27, 2025",
+          "June 14, 2025",
+          "July 31, 2025",
+          "May 14, 2025",
+          "October 13, 2024",
+          "February 27, 2026",
+          "April 09, 2026",
+          "May 11, 2026",
+          "November 13, 2026",
+          "December 03, 2026",
+          "December 26, 2026",
+          "October 30, 2026",
+          "September 03, 2026",
+          "2026-06-08T00:00:00",
+          "June 17, 2025"
+        ],
+        "total_iterations": 2,
+        "search_successful": true,
+        "reasoning_chain": [
+          "By using a broader keyword like 'Workshop', the search can capture more relevant events that may not exactly match 'Educational Workshop' but are still related."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) AND e.date IS NOT NULL RETURN DISTINCT e.date AS date"
+        ]
+      },
+      "duration_seconds": 37.540132,
+      "status": "success",
+      "timestamp": "2025-09-19T14:53:51.324087",
+      "expected_answer": [
+        "May 11, 2026",
+        "April 09, 2026",
+        "December 03, 2026",
+        "July 13, 2024",
+        "September 13, 2025",
+        "February 27, 2026",
+        "May 14, 2025",
+        "September 03, 2026",
+        "June 14, 2025"
+      ]
+    },
+    {
+      "question_idx": 9,
+      "question": "Recall all events related to Fashion Show. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "a81e72c4-a940-4b6e-8f4b-802e4f4e5ddd",
+        "question": "Recall all events related to Fashion Show. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": [
+          "February 22, 2025",
+          "March 23, 2024",
+          "September 22, 2026",
+          "October 30, 2026",
+          "November 13, 2026"
+        ],
+        "standardized_answer": [
+          "February 22, 2025",
+          "March 23, 2024",
+          "September 22, 2026",
+          "October 30, 2026",
+          "November 13, 2026"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE e.event_type CONTAINS 'Fashion Show' RETURN DISTINCT e.date AS date"
+        ]
+      },
+      "duration_seconds": 13.926127,
+      "status": "success",
+      "timestamp": "2025-09-19T14:54:28.864475",
+      "expected_answer": [
+        "May 11, 2026",
+        "February 22, 2025",
+        "December 26, 2026",
+        "March 23, 2024",
+        "October 30, 2026",
+        "April 09, 2026",
+        "October 13, 2024",
+        "May 31, 2024",
+        "September 22, 2026",
+        "February 27, 2026",
+        "September 13, 2025",
+        "January 03, 2026",
+        "November 13, 2026",
+        "July 31, 2025"
+      ]
+    },
+    {
+      "question_idx": 9,
+      "question": "Recall all events related to Film Festival. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "682dc39b-8910-4319-9ed3-2eb7ebd2f647",
+        "question": "Recall all events related to Film Festival. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": [
+          "March 23, 2025",
+          "July 31, 2025",
+          "September 27, 2025",
+          "December 25, 2025",
+          "May 11, 2026",
+          "September 03, 2026",
+          "September 22, 2026",
+          "November 13, 2026",
+          "December 26, 2026",
+          "October 13, 2024",
+          "October 27, 2024"
+        ],
+        "standardized_answer": [
+          "March 23, 2025",
+          "July 31, 2025",
+          "September 27, 2025",
+          "December 25, 2025",
+          "May 11, 2026",
+          "September 03, 2026",
+          "September 22, 2026",
+          "November 13, 2026",
+          "December 26, 2026",
+          "October 13, 2024",
+          "October 27, 2024"
+        ],
+        "total_iterations": 5,
+        "search_successful": true,
+        "reasoning_chain": [
+          "By using exact matches and considering variations of the term 'Film Festival', the search can capture all relevant events more effectively. (Enhanced with semantic search: Film Festival in field event_type)",
+          "By using a broader search approach with the CONTAINS operator, we can capture variations in naming and ensure that we include all relevant events related to 'Film Festival'.",
+          "By using broader or synonymous terms, the search may capture more relevant events that are categorized differently but still pertain to film festivals. (Enhanced with semantic search: Film Festival in field event_type)",
+          "By searching for just 'Film', it allows for a wider range of events that may be related to film festivals, capturing events that might not explicitly use the term 'festival' in their event_type."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE e.event_type CONTAINS 'Film Festival' AND e.date IS NOT NULL RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) AND e.date IS NOT NULL RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.event_type) =~ '.*film festival.*' AND e.date IS NOT NULL RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS 'film' AND toLower(e.event_type) CONTAINS 'festival' AND e.date IS NOT NULL RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE (toLower(e.event_type) CONTAINS 'film' OR toLower(e.event_type) CONTAINS 'festival') AND e.date IS NOT NULL RETURN DISTINCT e.date AS date"
+        ]
+      },
+      "duration_seconds": 101.189395,
+      "status": "success",
+      "timestamp": "2025-09-19T14:54:42.790721",
+      "expected_answer": [
+        "December 26, 2026",
+        "March 23, 2024",
+        "October 13, 2024",
+        "October 27, 2024",
+        "November 13, 2026",
+        "September 27, 2025",
+        "September 03, 2026"
+      ]
+    },
+    {
+      "question_idx": 10,
+      "question": "Consider all events involving Astronomy Night. List all the locations where these events took place, without mentioning the events themselves.",
+      "answer": {
+        "session_id": "8188bded-2ca5-4eb4-81ef-4fbbb0d73b9a",
+        "question": "Consider all events involving Astronomy Night. List all the locations where these events took place, without mentioning the events themselves.",
+        "final_answer": null,
+        "standardized_answer": [],
+        "total_iterations": 5,
+        "search_successful": false,
+        "reasoning_chain": [
+          "By using a broader keyword like 'Astronomy', the search may capture more relevant events that include 'Astronomy Night' as a subset, thus increasing the chances of retrieving the desired locations. (Enhanced with semantic search: Astronomy Night in field event_type)",
+          "By searching for a broader term like 'Astronomy', it increases the chances of capturing all events related to astronomy, including those that may not explicitly use the phrase 'Astronomy Night'. (Enhanced with semantic search: Astronomy Night in field event_type)",
+          "By broadening the search to include any event type that contains 'Astronomy', we increase the chances of retrieving relevant locations associated with similar events, even if they are not labeled exactly as 'Astronomy Night'. (Enhanced with semantic search: Astronomy Night in field event_type)",
+          "By broadening the search term to include related keywords like 'Astronomy Events', it may capture more variations of the event type, increasing the chances of retrieving relevant locations. (Enhanced with semantic search: Astronomical Event in field event_type)",
+          "By searching for a broader term like 'Stargazing' in the description field, it may capture more relevant events related to Astronomy Night, even if they are not explicitly labeled as such in the event_type. (Enhanced with semantic search: Stargazing Event in field event_type)"
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE e.event_type = $kw RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE toLower(trim(e.event_type)) CONTAINS toLower(trim($kw)) RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE toLower(trim(e.event_type)) CONTAINS toLower(trim($kw)) RETURN DISTINCT e.location AS location"
+        ]
+      },
+      "duration_seconds": 109.830496,
+      "status": "success",
+      "timestamp": "2025-09-19T14:56:23.980387",
+      "expected_answer": [
+        "High Line",
+        "Williamsburg Bridge",
+        "Port Jefferson",
+        "American Museum of Natural History",
+        "Yankee Stadium",
+        "Washington Square Park",
+        "Metropolitan Museum of Art",
+        "Planting Fields Arboretum State Historic Park",
+        "Lincoln Center"
+      ]
+    },
+    {
+      "question_idx": 10,
+      "question": "Consider all events involving Debate Tournament. List all the locations where these events took place, without mentioning the events themselves.",
+      "answer": {
+        "session_id": "543d2110-e654-4680-9eff-d0c75acc2ea6",
+        "question": "Consider all events involving Debate Tournament. List all the locations where these events took place, without mentioning the events themselves.",
+        "final_answer": [
+          "Floating platform in the twilight sky",
+          "Trinity Church",
+          "Port Jefferson",
+          "Museum of Modern Art"
+        ],
+        "standardized_answer": [
+          "Floating platform in the twilight sky",
+          "Trinity Church",
+          "Port Jefferson",
+          "Museum of Modern Art"
+        ],
+        "total_iterations": 2,
+        "search_successful": true,
+        "reasoning_chain": [
+          "By broadening the search to include related terms, we increase the chances of retrieving relevant events that may not be explicitly labeled as 'Debate Tournament'. This approach allows for a more inclusive search that could yield useful results."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN DISTINCT e.location AS location"
+        ]
+      },
+      "duration_seconds": 32.204049,
+      "status": "success",
+      "timestamp": "2025-09-19T14:58:13.811071",
+      "expected_answer": [
+        "High Line",
+        "Trinity Church",
+        "Port Jefferson",
+        "American Museum of Natural History",
+        "Woolworth Building",
+        "One World Trade Center",
+        "Metropolitan Museum of Art"
+      ]
+    },
+    {
+      "question_idx": 10,
+      "question": "Consider all events involving Educational Workshop. List all the locations where these events took place, without mentioning the events themselves.",
+      "answer": {
+        "session_id": "85bd6e77-576d-4aae-a8fe-077105343949",
+        "question": "Consider all events involving Educational Workshop. List all the locations where these events took place, without mentioning the events themselves.",
+        "final_answer": [
+          "Planting Fields Arboretum State Historic Park",
+          "Art Deco interior of the Woolworth Building",
+          "High Line",
+          "Woolworth Building",
+          "Port Jefferson",
+          "Williamsburg Bridge",
+          "New York Botanical Garden",
+          "One World Trade Center",
+          "The High Line",
+          "Fire Island National Seashore",
+          "Statue of Liberty, New York",
+          "Trinity Church",
+          "Water Mill Museum",
+          "Van Cortlandt Park",
+          "Elevated Park",
+          "Statue of Liberty"
+        ],
+        "standardized_answer": [
+          "Planting Fields Arboretum State Historic Park",
+          "Art Deco interior of the Woolworth Building",
+          "High Line",
+          "Woolworth Building",
+          "Port Jefferson",
+          "Williamsburg Bridge",
+          "New York Botanical Garden",
+          "One World Trade Center",
+          "The High Line",
+          "Fire Island National Seashore",
+          "Statue of Liberty, New York",
+          "Trinity Church",
+          "Water Mill Museum",
+          "Van Cortlandt Park",
+          "Elevated Park",
+          "Statue of Liberty"
+        ],
+        "total_iterations": 2,
+        "search_successful": true,
+        "reasoning_chain": [
+          "By using a broader keyword like 'Workshop', the search may capture more relevant events that include educational components, thus increasing the chances of retrieving locations."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN DISTINCT e.location AS location"
+        ]
+      },
+      "duration_seconds": 30.928957,
+      "status": "success",
+      "timestamp": "2025-09-19T14:58:46.015439",
+      "expected_answer": [
+        "Van Cortlandt Park",
+        "High Line",
+        "Yankee Stadium",
+        "New York Botanical Garden",
+        "Woolworth Building",
+        "One World Trade Center",
+        "Metropolitan Museum of Art",
+        "Long Beach Boardwalk"
+      ]
+    },
+    {
+      "question_idx": 10,
+      "question": "Consider all events involving Fashion Show. List all the locations where these events took place, without mentioning the events themselves.",
+      "answer": {
+        "session_id": "c901a977-b48d-4938-a5f6-d68ec97478d5",
+        "question": "Consider all events involving Fashion Show. List all the locations where these events took place, without mentioning the events themselves.",
+        "final_answer": [
+          "American Museum of Natural History",
+          "Washington Square Park",
+          "Long Beach Boardwalk",
+          "Bethpage State Park",
+          "Brooklyn Bridge"
+        ],
+        "standardized_answer": [
+          "American Museum of Natural History",
+          "Washington Square Park",
+          "Long Beach Boardwalk",
+          "Bethpage State Park",
+          "Brooklyn Bridge"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) RETURN DISTINCT e.location AS location"
+        ]
+      },
+      "duration_seconds": 11.497883,
+      "status": "success",
+      "timestamp": "2025-09-19T14:59:16.944664",
+      "expected_answer": [
+        "High Line",
+        "Trinity Church",
+        "Museum of Modern Art",
+        "American Museum of Natural History",
+        "Yankee Stadium",
+        "Washington Square Park",
+        "Brooklyn Bridge",
+        "One World Trade Center",
+        "Bethpage State Park",
+        "Brooklyn Museum",
+        "Long Beach Boardwalk",
+        "Lincoln Center"
+      ]
+    },
+    {
+      "question_idx": 10,
+      "question": "Consider all events involving Film Festival. List all the locations where these events took place, without mentioning the events themselves.",
+      "answer": {
+        "session_id": "6cd63e66-2d41-499f-b024-0375fb3cdb3d",
+        "question": "Consider all events involving Film Festival. List all the locations where these events took place, without mentioning the events themselves.",
+        "final_answer": [
+          "Queensboro Bridge",
+          "Woolworth Building",
+          "American Museum of Natural History",
+          "Washington Square Park",
+          "High Line, New York",
+          "Bethpage Black Course",
+          "Madison Square Garden",
+          "Yankee Stadium",
+          "Port Jefferson",
+          "Unknown",
+          "Central Park"
+        ],
+        "standardized_answer": [
+          "Queensboro Bridge",
+          "Woolworth Building",
+          "American Museum of Natural History",
+          "Washington Square Park",
+          "High Line, New York",
+          "Bethpage Black Course",
+          "Madison Square Garden",
+          "Yankee Stadium",
+          "Port Jefferson",
+          "Unknown",
+          "Central Park"
+        ],
+        "total_iterations": 3,
+        "search_successful": true,
+        "reasoning_chain": [
+          "By broadening the search to include related terms, it increases the chances of capturing relevant events that may not be explicitly labeled as 'Film Festival' but still pertain to the film industry.",
+          "By using a broader term like 'Festival', the search may capture more relevant events that include film festivals, thus increasing the chances of retrieving locations associated with those events."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE toLower(e.event_type) =~ '.*festival.*' RETURN DISTINCT e.location AS location"
+        ]
+      },
+      "duration_seconds": 55.793997,
+      "status": "success",
+      "timestamp": "2025-09-19T14:59:28.442688",
+      "expected_answer": [
+        "High Line",
+        "Port Jefferson",
+        "Madison Square Garden",
+        "American Museum of Natural History",
+        "Washington Square Park",
+        "Metropolitan Museum of Art",
+        "Queensboro Bridge"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-26 11:33:35
+Question Range: 43-43
+Total Questions Processed: 1
+Successful Searches: 1 (100.0%)
+Questions with Answers: 1 (100.0%)
+Average Iterations per Question: 3.0
+
+DETAILED RESULTS:
+------------------------------
+
+Question 43:
+  Text: Reflect on events related to Educational Workshop. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Brooklyn Ross', 'Scarlett Thomas', 'Chloe Castillo', 'Carter Stewart', 'Ezra Edwards', 'Mila Gonzalez', 'Samuel Parker', 'Julian Ross', 'Lucy Carter']
+  Predicted: ['Ezra Edwards', 'Noa Middleton', 'Mara Ledbetter', 'Henry Reed', 'Julian Ross', 'Owen Thomas', 'Lilah Hamilton', 'Rocco Cormier', 'Axl Mims', 'Karsyn Schaeffer', 'Chloe Castillo', 'Luka Shaffer', 'Nyla Bower', 'Levi Rodriguez', 'Zoe Brown', 'Remy Waterman', 'Mara Spencer', 'Pax Talley', 'Kai Lipscomb', 'Jace Waddell', 'Emersyn Emerson', 'Alec Simonson', 'Samuel Parker', 'Calvin Schaub', 'Alvaro Westbrook']
+  Search Success: True
+  Confidence: 0.60
+  Iterations: 3
+  Token Usage: 1111 total (801 prompt + 310 completion, 3 calls)
+

@@ -1,0 +1,283 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-23 14:46:40
+Question Range: 201-230
+Total Questions Processed: 30
+Successful Searches: 28 (93.3%)
+Questions with Answers: 28 (93.3%)
+Average Iterations per Question: 1.4
+
+DETAILED RESULTS:
+------------------------------
+
+Question 201:
+  Text: Provide a chronological list of all dates when Julian Peterson was observed, from earliest to latest in the story's timeline.
+  Expected: ['March 23, 2024', 'October 11, 2025', 'April 09, 2026']
+  Predicted: ['March 23, 2024', 'April 9, 2026', 'October 11, 2025']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 192 total (175 prompt + 17 completion, 1 calls)
+
+Question 202:
+  Text: Provide a chronological list of all dates when Levi Cruz was observed, from earliest to latest in the story's timeline.
+  Expected: ['March 23, 2024', 'March 23, 2025', 'November 13, 2026']
+  Predicted: ['March 23, 2024', 'March 23, 2025', 'November 13, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 192 total (175 prompt + 17 completion, 1 calls)
+
+Question 203:
+  Text: List all locations visited by Bella Brown in chronological order according to the story's timeline.
+  Expected: ['Lincoln Center', 'Bethpage Black Course', 'High Line']
+  Predicted: ['Lincoln Center', 'Unknown', 'Bethpage Black Course', 'Makeshift stage at Bethpage Black Course', 'The High Line']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 185 total (169 prompt + 16 completion, 1 calls)
+
+Question 204:
+  Text: List all locations visited by Hazel Lewis in chronological order according to the story's timeline.
+  Expected: ["St. Patrick's Cathedral", 'One World Trade Center', 'Bethpage Black Course', 'Brooklyn Bridge']
+  Predicted: ["St. Patrick's Cathedral", 'February 28, 2025', 'One World Trade Center', 'February 27, 2026', 'Bethpage Black Course', 'May 11, 2026', 'Brooklyn Bridge', 'September 03, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 186 total (169 prompt + 17 completion, 1 calls)
+
+Question 205:
+  Text: List all locations visited by Jackson Ramos in chronological order according to the story's timeline.
+  Expected: ['Snug Harbor Cultural Center', 'High Line', 'Ellis Island', 'One World Trade Center', 'Central Park']
+  Predicted: ['Snug Harbor Cultural Center', 'Unknown', 'High Line', 'Ellis Island', 'Ellis Island', 'One World Trade Center', 'One World Trade Center', 'One World Trade Center', 'One World Trade Center', 'Central Park', 'Central Park', "Fortune Teller's Tent, Central Park", 'Central Park', 'Central Park']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 185 total (169 prompt + 16 completion, 1 calls)
+
+Question 206:
+  Text: List all locations visited by Julian Peterson in chronological order according to the story's timeline.
+  Expected: ['American Museum of Natural History', 'Metropolitan Museum of Art', 'Van Cortlandt Park']
+  Predicted: ['American Museum of Natural History', 'Van Cortlandt Park', 'Exhibition Space', 'Grand Hall']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 186 total (169 prompt + 17 completion, 1 calls)
+
+Question 207:
+  Text: List all locations visited by Levi Cruz in chronological order according to the story's timeline.
+  Expected: ['Woolworth Building', 'Yankee Stadium', 'Woolworth Building']
+  Predicted: ['Woolworth Building', 'Yankee Stadium', 'Woolworth Building']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 186 total (169 prompt + 17 completion, 1 calls)
+
+Question 208:
+  Text: Reflect on all events involving Bella Brown. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['March 23, 2025', 'March 23, 2024', 'January 03, 2026']
+  Predicted: ['2024-03-23', 'March 23, 2025', 'January 03, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 192 total (176 prompt + 16 completion, 1 calls)
+
+Question 209:
+  Text: Reflect on all events involving Hazel Lewis. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['May 11, 2026', 'February 27, 2026', 'September 03, 2026', 'May 28, 2025']
+  Predicted: ['February 27, 2026', 'May 11, 2026', 'May 28, 2025', 'September 03, 2026', 'Unknown']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 193 total (176 prompt + 17 completion, 1 calls)
+
+Question 210:
+  Text: Reflect on all events involving Jackson Ramos. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['April 09, 2026', 'August 24, 2026', 'September 22, 2026', 'February 27, 2026', 'June 14, 2025']
+  Predicted: ['June 14, 2025', 'February 27, 2026', 'April 09, 2026', 'August 24, 2026', 'September 22, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 192 total (176 prompt + 16 completion, 1 calls)
+
+Question 211:
+  Text: Reflect on all events involving Julian Peterson. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['October 11, 2025', 'April 09, 2026', 'March 23, 2024']
+  Predicted: ['March 23, 2024', '2026-04-09', 'October 11, 2025', 'Unknown']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 193 total (176 prompt + 17 completion, 1 calls)
+
+Question 212:
+  Text: Reflect on all events involving Levi Cruz. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['March 23, 2025', 'November 13, 2026', 'March 23, 2024']
+  Predicted: ['March 23, 2024', 'March 23, 2025', 'November 13, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 193 total (176 prompt + 17 completion, 1 calls)
+
+Question 213:
+  Text: What was Bella Brown doing the last time they were observed in the story's timeline?
+  Expected: ['Fashion Show']
+  Predicted: Bella Brown was participating in a historical reenactment at Bethpage Black Course.
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 185 total (169 prompt + 16 completion, 1 calls)
+
+Question 214:
+  Text: What was Hazel Lewis doing the last time they were observed in the story's timeline?
+  Expected: ['Historical Reenactment']
+  Predicted: Hazel Lewis was participating in a historical fashion show reenactment on the Brooklyn Bridge.
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 186 total (169 prompt + 17 completion, 1 calls)
+
+Question 215:
+  Text: What was Jackson Ramos doing the last time they were observed in the story's timeline?
+  Expected: ['Carnival']
+  Predicted: Jackson visited a magical carnival in Central Park, experiencing various rides and attractions, including roller coasters and a fortune teller's tent.
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 185 total (169 prompt + 16 completion, 1 calls)
+
+Question 216:
+  Text: What was Julian Peterson doing the last time they were observed in the story's timeline?
+  Expected: ['Fire Dancing Performance']
+  Predicted: Julian Peterson was participating in the Hackathon Winners Announcement event.
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 186 total (169 prompt + 17 completion, 1 calls)
+
+Question 217:
+  Text: What was Levi Cruz doing the last time they were observed in the story's timeline?
+  Expected: ['Tech Hackathon']
+  Predicted: Levi Cruz was participating in a tech hackathon at the Woolworth Building on November 13, 2026.
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 186 total (169 prompt + 17 completion, 1 calls)
+
+Question 218:
+  Text: What is the most recent location where Bella Brown was observed in the story's chronological timeline?
+  Expected: ['High Line']
+  Predicted: Bethpage Black Course
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 186 total (170 prompt + 16 completion, 1 calls)
+
+Question 219:
+  Text: What is the most recent location where Hazel Lewis was observed in the story's chronological timeline?
+  Expected: ['Brooklyn Bridge']
+  Predicted: Brooklyn Bridge
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 187 total (170 prompt + 17 completion, 1 calls)
+
+Question 220:
+  Text: What is the most recent location where Jackson Ramos was observed in the story's chronological timeline?
+  Expected: ['Central Park']
+  Predicted: Central Park
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 186 total (170 prompt + 16 completion, 1 calls)
+
+Question 221:
+  Text: What is the most recent location where Julian Peterson was observed in the story's chronological timeline?
+  Expected: ['Van Cortlandt Park']
+  Predicted: Grand Hall
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 187 total (170 prompt + 17 completion, 1 calls)
+
+Question 222:
+  Text: What is the most recent location where Levi Cruz was observed in the story's chronological timeline?
+  Expected: ['Woolworth Building']
+  Predicted: Woolworth Building
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 187 total (170 prompt + 17 completion, 1 calls)
+
+Question 223:
+  Text: Enumerate all activities that Bella Brown has been involved in, ordered from earliest to latest in the story's chronology.
+  Expected: ['Fashion Show', 'Historical Reenactment', 'Fashion Show']
+  Predicted: ['Fashion Show at Lincoln Center', 'Urgent Conversation', 'Historical Reenactment at Bethpage Black Course', 'Historical Trivia Contest', 'Fashion Show Preparation', "Bella's Artistic Betrayal", 'Conversation with a Critic']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 191 total (175 prompt + 16 completion, 1 calls)
+
+Question 224:
+  Text: Enumerate all activities that Hazel Lewis has been involved in, ordered from earliest to latest in the story's chronology.
+  Expected: ['Photography Exhibition', 'Fashion Show', 'Book Signing Event', 'Historical Reenactment']
+  Predicted: ['Hazel Lewis Exhibition Opening', 'Interview Attempt by Brianna Beach', 'Caden Spivey Approaches Artwork', 'Fashion Show Reveal', 'Show Halt', 'Aftermath Reflection', "Discussion on Writer's Block", 'Book Signing', 'Temporal Chaos Realization', 'Historical Fashion Show Reenactment']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 196 total (175 prompt + 21 completion, 1 calls)
+
+Question 225:
+  Text: Enumerate all activities that Jackson Ramos has been involved in, ordered from earliest to latest in the story's chronology.
+  Expected: ['Karaoke Night', 'Theater Performance', 'Flash Mob', 'Carnival', 'Carnival']
+  Predicted: [{'name': 'Performance at Snug Harbor Cultural Center', 'date': 'June 14, 2025', 'event_type': 'Performance', 'chapter_number': 112}, {'name': 'Theatrical Performance', 'date': 'February 27, 2026', 'event_type': 'Performance', 'chapter_number': 18}, {'name': 'Discussion on Theater Funding', 'date': 'February 27, 2026', 'event_type': 'Conversation', 'chapter_number': 18}, {'name': 'Flash Mob Performance', 'date': 'April 09, 2026', 'event_type': 'Performance', 'chapter_number': 96}, {'name': 'Crowd Surge', 'date': 'April 09, 2026', 'event_type': 'Accident', 'chapter_number': 96}, {'name': 'Carnival at One World Trade Center', 'date': 'August 24, 2026', 'event_type': 'Festival', 'chapter_number': 183}, {'name': 'Ring Toss Game', 'date': 'August 24, 2026', 'event_type': 'Game', 'chapter_number': 183}, {'name': 'Skee-Ball Game', 'date': 'August 24, 2026', 'event_type': 'Game', 'chapter_number': 183}, {'name': 'Ferris Wheel Ride', 'date': 'August 24, 2026', 'event_type': 'Ride', 'chapter_number': 183}, {'name': 'Carnival Visit', 'date': 'September 22, 2026', 'event_type': 'Experience', 'chapter_number': 163}]
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 191 total (175 prompt + 16 completion, 1 calls)
+
+Question 226:
+  Text: Enumerate all activities that Julian Peterson has been involved in, ordered from earliest to latest in the story's chronology.
+  Expected: ['Tech Hackathon', 'Tech Hackathon', 'Fire Dancing Performance']
+  Predicted: ['Hackathon at American Museum of Natural History', 'Scream during Hackathon', 'Lights Flickering', "Julian's UI Design Nightmare", 'Networking and Collaboration', 'Fire Dancing Performance', 'Conversation with Julian Peterson', 'Hackathon Winners Announcement']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 192 total (175 prompt + 17 completion, 1 calls)
+
+Question 227:
+  Text: Enumerate all activities that Levi Cruz has been involved in, ordered from earliest to latest in the story's chronology.
+  Expected: ['Job Fair', 'Tech Hackathon', 'Tech Hackathon']
+  Predicted: ['Job Fair', 'Conversation with Milani Wheaton', 'Discussion on Diversity in Workplace', 'Exchange of Contact Information', 'Data Visualization Creation', 'Techno-Wizards Gathering', 'Creative Surge', 'Transformation of Yankee Stadium', 'Final Countdown', 'Tech Hackathon']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 196 total (175 prompt + 21 completion, 1 calls)
+
+Question 228:
+  Text: Reflect on the experiences of Bella Brown related to Fashion Show. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: ['High Line', 'Lincoln Center']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3253 total (2416 prompt + 837 completion, 6 calls)
+
+Question 229:
+  Text: Reflect on the experiences of Carter Stewart related to Scientific Conference. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: ['Bethpage Black Course', 'Metropolitan Museum of Art']
+  Predicted: ['Metropolitan Museum of Art']
+  Search Success: True
+  Confidence: 0.40
+  Iterations: 4
+  Token Usage: 1917 total (1388 prompt + 529 completion, 4 calls)
+
+Question 230:
+  Text: Reflect on the experiences of Chloe Castillo related to Fashion Show. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: ['American Museum of Natural History']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3341 total (2464 prompt + 877 completion, 6 calls)
+

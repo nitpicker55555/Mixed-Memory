@@ -1,0 +1,132 @@
+{
+  "metadata": {
+    "start_time": "2025-09-19T15:50:22.260412",
+    "database": "196chapters",
+    "question_range": "41-42",
+    "total_questions": 2,
+    "end_time": "2025-09-19T15:51:13.711425",
+    "total_duration": 51.449814
+  },
+  "results": [
+    {
+      "question_idx": 11,
+      "question": "Reflect on events related to Astronomy Night. Provide a list of all protagonists involved in these events, without describing the events.",
+      "answer": {
+        "session_id": "cca374d0-598b-4f36-8fab-8fb3df23ae6c",
+        "question": "Reflect on events related to Astronomy Night. Provide a list of all protagonists involved in these events, without describing the events.",
+        "final_answer": [
+          "Levi Rodriguez",
+          "Quill Womack",
+          "Sincere Albertson",
+          "Zoe Brown",
+          "Bella Alvarez",
+          "Messiah Funderburk",
+          "Scarlett Thomas",
+          "Dariel Emery",
+          "Alicia Peoples"
+        ],
+        "standardized_answer": [
+          "Levi Rodriguez",
+          "Quill Womack",
+          "Sincere Albertson",
+          "Zoe Brown",
+          "Bella Alvarez",
+          "Messiah Funderburk",
+          "Scarlett Thomas",
+          "Dariel Emery",
+          "Alicia Peoples"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) RETURN DISTINCT e.participants AS participants"
+        ],
+        "token_usage": {
+          "prompt_tokens": 176,
+          "completion_tokens": 21,
+          "total_tokens": 197,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 17.242359,
+      "status": "success",
+      "timestamp": "2025-09-19T15:50:22.260487",
+      "token_usage": {
+        "prompt_tokens": 176,
+        "completion_tokens": 21,
+        "total_tokens": 197,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "Maya Smith",
+        "Scarlett Thomas",
+        "Levi Rodriguez",
+        "Zoe Brown",
+        "Noah Wood",
+        "Carter Stewart",
+        "Ezra Edwards",
+        "Bella Alvarez"
+      ]
+    },
+    {
+      "question_idx": 11,
+      "question": "Reflect on events related to Debate Tournament. Provide a list of all protagonists involved in these events, without describing the events.",
+      "answer": {
+        "session_id": "3067d4ee-85e6-45d7-be6e-a005e12e4107",
+        "question": "Reflect on events related to Debate Tournament. Provide a list of all protagonists involved in these events, without describing the events.",
+        "final_answer": [
+          "Henry Reed",
+          "Mae Garza",
+          "Olivia Turner",
+          "Unknown Opposing Team",
+          "Eithan Blount",
+          "Noah Williams",
+          "Vaughn Hancock",
+          "Remy Soto"
+        ],
+        "standardized_answer": [
+          "Henry Reed",
+          "Mae Garza",
+          "Olivia Turner",
+          "Unknown Opposing Team",
+          "Eithan Blount",
+          "Noah Williams",
+          "Vaughn Hancock",
+          "Remy Soto"
+        ],
+        "total_iterations": 2,
+        "search_successful": true,
+        "reasoning_chain": [
+          "By broadening the search to include related terms, it increases the likelihood of capturing relevant events that may not be explicitly labeled as 'Debate Tournament' but still involve similar participants."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) AND e.participants IS NOT NULL RETURN DISTINCT e.participants AS participants",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) AND e.participants IS NOT NULL RETURN DISTINCT e.participants AS participants"
+        ],
+        "token_usage": {
+          "prompt_tokens": 492,
+          "completion_tokens": 191,
+          "total_tokens": 683,
+          "calls_count": 2
+        }
+      },
+      "duration_seconds": 34.207455,
+      "status": "success",
+      "timestamp": "2025-09-19T15:50:39.503776",
+      "token_usage": {
+        "prompt_tokens": 492,
+        "completion_tokens": 191,
+        "total_tokens": 683,
+        "calls_count": 2
+      },
+      "expected_answer": [
+        "Scarlett Thomas",
+        "Jackson Hall",
+        "Henry Reed",
+        "Julian Ross",
+        "Olivia Turner"
+      ]
+    }
+  ]
+}

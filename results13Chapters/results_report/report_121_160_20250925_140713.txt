@@ -1,0 +1,373 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-25 14:07:13
+Question Range: 121-160
+Total Questions Processed: 40
+Successful Searches: 21 (52.5%)
+Questions with Answers: 21 (52.5%)
+Average Iterations per Question: 3.0
+
+DETAILED RESULTS:
+------------------------------
+
+Question 121:
+  Text: Enumerate all activities that Mateo Gomez has been involved in, ordered from earliest to latest in the story's chronology.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3238 total (2346 prompt + 892 completion, 6 calls)
+
+Question 122:
+  Text: Enumerate all activities that Violet Johnson has been involved in, ordered from earliest to latest in the story's chronology.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3287 total (2349 prompt + 938 completion, 6 calls)
+
+Question 123:
+  Text: List all locations visited by David Turner in chronological order according to the story's timeline.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2896 total (2026 prompt + 870 completion, 6 calls)
+
+Question 124:
+  Text: List all locations visited by Harper Gutierrez in chronological order according to the story's timeline.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3053 total (2116 prompt + 937 completion, 6 calls)
+
+Question 125:
+  Text: List all locations visited by Mateo Gomez in chronological order according to the story's timeline.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3247 total (2346 prompt + 901 completion, 6 calls)
+
+Question 126:
+  Text: List all locations visited by Violet Johnson in chronological order according to the story's timeline.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2937 total (2054 prompt + 883 completion, 6 calls)
+
+Question 127:
+  Text: What was David Turner doing the last time they were observed in the story's timeline?
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3504 total (2615 prompt + 889 completion, 6 calls)
+
+Question 128:
+  Text: What was Harper Gutierrez doing the last time they were observed in the story's timeline?
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3719 total (2793 prompt + 926 completion, 6 calls)
+
+Question 129:
+  Text: What was Mateo Gomez doing the last time they were observed in the story's timeline?
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3395 total (2507 prompt + 888 completion, 6 calls)
+
+Question 130:
+  Text: What was Violet Johnson doing the last time they were observed in the story's timeline?
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3616 total (2715 prompt + 901 completion, 6 calls)
+
+Question 131:
+  Text: Reflect on the experiences of David Turner related to Political Rally. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 1875 total (1339 prompt + 536 completion, 4 calls)
+
+Question 132:
+  Text: Reflect on the experiences of Harper Gutierrez related to Drum Circle. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3219 total (2310 prompt + 909 completion, 6 calls)
+
+Question 133:
+  Text: Reflect on the experiences of Jackson Ramos related to Escape Room Challenge. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3076 total (2229 prompt + 847 completion, 6 calls)
+
+Question 134:
+  Text: Reflect on the experiences of Mateo Gomez related to Science Fair. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3159 total (2244 prompt + 915 completion, 6 calls)
+
+Question 135:
+  Text: Reflect on the experiences of Mila Gonzalez related to Charity Gala. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: []
+  Predicted: ['Statue of Liberty (outdoor stage)']
+  Search Success: True
+  Confidence: 0.60
+  Iterations: 3
+  Token Usage: 1235 total (864 prompt + 371 completion, 3 calls)
+
+Question 136:
+  Text: Consider all events involving both David Turner and Political Rally. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3014 total (2138 prompt + 876 completion, 6 calls)
+
+Question 137:
+  Text: Consider all events involving both Harper Gutierrez and Drum Circle. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3278 total (2318 prompt + 960 completion, 6 calls)
+
+Question 138:
+  Text: Consider all events involving both Jackson Ramos and Escape Room Challenge. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3077 total (2202 prompt + 875 completion, 6 calls)
+
+Question 139:
+  Text: Consider all events involving both Mateo Gomez and Science Fair. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3134 total (2264 prompt + 870 completion, 6 calls)
+
+Question 140:
+  Text: Consider all events involving both Mila Gonzalez and Charity Gala. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3083 total (2194 prompt + 889 completion, 6 calls)
+
+Question 141:
+  Text: List all locations visited by Henry Reed in chronological order according to the story's timeline.
+  Expected: ['Queensboro Bridge', 'Washington Square Park', 'Port Jefferson']
+  Predicted: ['Queensboro Bridge', 'Washington Square Park', 'Port Jefferson']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 185 total (169 prompt + 16 completion, 1 calls)
+
+Question 142:
+  Text: List all locations visited by Zoe Brown in chronological order according to the story's timeline.
+  Expected: ['Port Jefferson', 'Hither Hills State Park', 'High Line']
+  Predicted: ['Port Jefferson', 'Hither Hills State Park', 'High Line']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 186 total (169 prompt + 17 completion, 1 calls)
+
+Question 143:
+  Text: Reflect on all events involving Henry Reed. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['May 11, 2026', 'September 22, 2026', 'October 13, 2024']
+  Predicted: ['October 13, 2024', 'May 11, 2026', 'September 22, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 192 total (176 prompt + 16 completion, 1 calls)
+
+Question 144:
+  Text: Reflect on all events involving Zoe Brown. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['May 07, 2024', 'March 23, 2024', 'June 14, 2025']
+  Predicted: ['March 23, 2024', 'May 07, 2024', 'June 14, 2025']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 193 total (176 prompt + 17 completion, 1 calls)
+
+Question 145:
+  Text: What is the most recent location where Henry Reed was observed in the story's chronological timeline?
+  Expected: ['Port Jefferson']
+  Predicted: Port Jefferson
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 186 total (170 prompt + 16 completion, 1 calls)
+
+Question 146:
+  Text: What is the most recent location where Zoe Brown was observed in the story's chronological timeline?
+  Expected: ['High Line']
+  Predicted: Hither Hills State Park
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 187 total (170 prompt + 17 completion, 1 calls)
+
+Question 147:
+  Text: Think about Henry Reed's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.
+  Expected: ['Film Festival', 'Photography Exhibition', 'Ice Sculpture Exhibition']
+  Predicted: ['Henry Reed and other photographers display their works, discuss techniques, and interact with visitors at a photography exhibition.', 'A festival featuring film poster exhibitions, animated discussions, and an undercurrent of mystery and tension among attendees.', 'An exhibition of intricate ice sculptures, live music performances, and interactive moments between artists and visitors.']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+  Token Usage: 197 total (181 prompt + 16 completion, 1 calls)
+
+Question 148:
+  Text: Think about Zoe Brown's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.
+  Expected: ['Tech Hackathon', 'Karaoke Night']
+  Predicted: ['A lively karaoke night with live band accompaniment, where Zoe Brown performs and the event becomes a catalyst for hidden truths and connections.', 'A local hackathon where Zoe Brown tests user experience for new applications, fostering innovation and personal connections.', 'Zoe Brown presents final projects at a tech event, with an atmosphere of tension and unease as participants showcase their innovations.']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+  Token Usage: 198 total (181 prompt + 17 completion, 1 calls)
+
+Question 149:
+  Text: Consider all events that Henry Reed has been involved in. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Washington Square Park', 'Port Jefferson', 'Queensboro Bridge']
+  Predicted: ['Port Jefferson', 'Queensboro Bridge', 'Washington Square Park']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 195 total (179 prompt + 16 completion, 1 calls)
+
+Question 150:
+  Text: Consider all events that Zoe Brown has been involved in. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Hither Hills State Park', 'High Line', 'Port Jefferson']
+  Predicted: ['Hither Hills State Park', 'Port Jefferson', 'High Line']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 196 total (179 prompt + 17 completion, 1 calls)
+
+Question 151:
+  Text: Enumerate all activities that Henry Reed has been involved in, ordered from earliest to latest in the story's chronology.
+  Expected: ['Film Festival', 'Ice Sculpture Exhibition', 'Photography Exhibition']
+  Predicted: ['Queensboro Bridge Film Poster Festival', 'Washington Square Park Ice Sculpture Exhibition', 'Port Jefferson Photography Exhibition']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 195 total (175 prompt + 20 completion, 1 calls)
+
+Question 152:
+  Text: Enumerate all activities that Zoe Brown has been involved in, ordered from earliest to latest in the story's chronology.
+  Expected: ['Tech Hackathon', 'Karaoke Night', 'Tech Hackathon']
+  Predicted: ['Port Jefferson Hackathon', 'Hither Hills Karaoke Night', 'High Line Final Project Presentations']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 192 total (175 prompt + 17 completion, 1 calls)
+
+Question 153:
+  Text: What is the most recent date Henry Reed was observed or mentioned in the story's chronology?
+  Expected: ['September 22, 2026']
+  Predicted: September 22, 2026
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 186 total (170 prompt + 16 completion, 1 calls)
+
+Question 154:
+  Text: What is the most recent date Zoe Brown was observed or mentioned in the story's chronology?
+  Expected: ['June 14, 2025']
+  Predicted: May 07, 2024
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 187 total (170 prompt + 17 completion, 1 calls)
+
+Question 155:
+  Text: What was Henry Reed doing the last time they were observed in the story's timeline?
+  Expected: ['Photography Exhibition']
+  Predicted: Henry Reed was participating in the Port Jefferson Photography Exhibition.
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 185 total (169 prompt + 16 completion, 1 calls)
+
+Question 156:
+  Text: What was Zoe Brown doing the last time they were observed in the story's timeline?
+  Expected: ['Tech Hackathon']
+  Predicted: Zoe Brown was performing at the Hither Hills Karaoke Night.
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 186 total (169 prompt + 17 completion, 1 calls)
+
+Question 157:
+  Text: Provide a chronological list of all dates when Henry Reed was observed, from earliest to latest in the story's timeline.
+  Expected: ['October 13, 2024', 'May 11, 2026', 'September 22, 2026']
+  Predicted: ['October 13, 2024', 'May 11, 2026', 'September 22, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 191 total (175 prompt + 16 completion, 1 calls)
+
+Question 158:
+  Text: Provide a chronological list of all dates when Zoe Brown was observed, from earliest to latest in the story's timeline.
+  Expected: ['March 23, 2024', 'May 07, 2024', 'June 14, 2025']
+  Predicted: ['March 23, 2024', 'May 07, 2024', 'June 14, 2025']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 192 total (175 prompt + 17 completion, 1 calls)
+
+Question 159:
+  Text: Reflect on the experiences of Zoe Brown related to Tech Hackathon. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: ['High Line', 'Port Jefferson']
+  Predicted: ['Port Jefferson']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+  Token Usage: 708 total (524 prompt + 184 completion, 2 calls)
+
+Question 160:
+  Text: Consider all events involving both Zoe Brown and Tech Hackathon. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['March 23, 2024', 'June 14, 2025']
+  Predicted: ['March 23, 2024']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+  Token Usage: 703 total (496 prompt + 207 completion, 2 calls)
+

@@ -1,0 +1,382 @@
+{
+  "metadata": {
+    "start_time": "2025-09-22T14:56:43.047797",
+    "database": "197chapters2",
+    "question_range": "131-140",
+    "total_questions": 10,
+    "end_time": "2025-09-22T15:01:22.646966",
+    "total_duration": 279.594418
+  },
+  "results": [
+    {
+      "question_idx": 32,
+      "question": "What was Ella Ross doing the last time they were observed in the story's timeline?",
+      "answer": {
+        "session_id": "5421a5c1-7239-40db-b5cd-eb652095dcb5",
+        "question": "What was Ella Ross doing the last time they were observed in the story's timeline?",
+        "final_answer": "Ella Ross was showcasing her portrait series at the photography exhibition opening.",
+        "standardized_answer": [
+          "Ella Ross was showcasing her portrait series at the photography exhibition opening."
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Ella Ross' IN e.participants RETURN e.date AS date, e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants ORDER BY e.date DESC LIMIT 1"
+        ],
+        "token_usage": {
+          "prompt_tokens": 169,
+          "completion_tokens": 16,
+          "total_tokens": 185,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 18.348575,
+      "status": "success",
+      "timestamp": "2025-09-22T14:56:43.047846",
+      "token_usage": {
+        "prompt_tokens": 169,
+        "completion_tokens": 16,
+        "total_tokens": 185,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "Photography Exhibition"
+      ]
+    },
+    {
+      "question_idx": 32,
+      "question": "What was Isaiah Bennett doing the last time they were observed in the story's timeline?",
+      "answer": {
+        "session_id": "d33f933b-49ff-42f2-b411-8b192e0a9f30",
+        "question": "What was Isaiah Bennett doing the last time they were observed in the story's timeline?",
+        "final_answer": "Isaiah Bennett was performing in a Burlesque Show at Bethpage State Park.",
+        "standardized_answer": [
+          "Isaiah Bennett was performing in a Burlesque Show at Bethpage State Park."
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Isaiah Bennett' IN e.participants ORDER BY e.date DESC LIMIT 1 RETURN e.date AS date, e.name AS name, e.event_type AS event_type, e.description AS description, e.location AS location, e.participants AS participants"
+        ],
+        "token_usage": {
+          "prompt_tokens": 169,
+          "completion_tokens": 17,
+          "total_tokens": 186,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 30.727973,
+      "status": "success",
+      "timestamp": "2025-09-22T14:57:01.396934",
+      "token_usage": {
+        "prompt_tokens": 169,
+        "completion_tokens": 17,
+        "total_tokens": 186,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "Burlesque Performance"
+      ]
+    },
+    {
+      "question_idx": 33,
+      "question": "Provide a chronological list of all dates when Aurora Chavez was observed, from earliest to latest in the story's timeline.",
+      "answer": {
+        "session_id": "b7c7710d-3d92-42e6-bd5d-24d84c2c5f9f",
+        "question": "Provide a chronological list of all dates when Aurora Chavez was observed, from earliest to latest in the story's timeline.",
+        "final_answer": [
+          "March 23, 2025"
+        ],
+        "standardized_answer": [
+          "March 23, 2025"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Aurora Chavez' IN e.participants AND e.date IS NOT NULL RETURN e.date AS date, e.participants AS participants ORDER BY e.date ASC"
+        ],
+        "token_usage": {
+          "prompt_tokens": 175,
+          "completion_tokens": 17,
+          "total_tokens": 192,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 22.171974,
+      "status": "success",
+      "timestamp": "2025-09-22T14:57:32.126420",
+      "token_usage": {
+        "prompt_tokens": 175,
+        "completion_tokens": 17,
+        "total_tokens": 192,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "March 23, 2025"
+      ]
+    },
+    {
+      "question_idx": 33,
+      "question": "Provide a chronological list of all dates when Bella Alvarez was observed, from earliest to latest in the story's timeline.",
+      "answer": {
+        "session_id": "d712cf6f-53fa-430b-b731-2d3cb0bd6c0e",
+        "question": "Provide a chronological list of all dates when Bella Alvarez was observed, from earliest to latest in the story's timeline.",
+        "final_answer": [
+          "May 11, 2026"
+        ],
+        "standardized_answer": [
+          "May 11, 2026"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Bella Alvarez' IN e.participants AND e.date IS NOT NULL RETURN e.date AS date, e.participants AS participants ORDER BY e.date ASC"
+        ],
+        "token_usage": {
+          "prompt_tokens": 175,
+          "completion_tokens": 16,
+          "total_tokens": 191,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 16.889161,
+      "status": "success",
+      "timestamp": "2025-09-22T14:57:54.299738",
+      "token_usage": {
+        "prompt_tokens": 175,
+        "completion_tokens": 16,
+        "total_tokens": 191,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "May 11, 2026"
+      ]
+    },
+    {
+      "question_idx": 33,
+      "question": "Provide a chronological list of all dates when Elizabeth Hill was observed, from earliest to latest in the story's timeline.",
+      "answer": {
+        "session_id": "51157421-1736-4dc9-8139-872632c672e2",
+        "question": "Provide a chronological list of all dates when Elizabeth Hill was observed, from earliest to latest in the story's timeline.",
+        "final_answer": [
+          "2024-07-25"
+        ],
+        "standardized_answer": [
+          "2024-07-25"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Elizabeth Hill' IN e.participants AND e.date IS NOT NULL RETURN e.date AS date, e.participants AS participants ORDER BY e.date ASC"
+        ],
+        "token_usage": {
+          "prompt_tokens": 175,
+          "completion_tokens": 16,
+          "total_tokens": 191,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 16.854889,
+      "status": "success",
+      "timestamp": "2025-09-22T14:58:11.189072",
+      "token_usage": {
+        "prompt_tokens": 175,
+        "completion_tokens": 16,
+        "total_tokens": 191,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "July 25, 2024"
+      ]
+    },
+    {
+      "question_idx": 33,
+      "question": "Provide a chronological list of all dates when Ella Ross was observed, from earliest to latest in the story's timeline.",
+      "answer": {
+        "session_id": "7efab91d-798c-43ff-a5b8-c5e760286071",
+        "question": "Provide a chronological list of all dates when Ella Ross was observed, from earliest to latest in the story's timeline.",
+        "final_answer": [
+          "April 09, 2026"
+        ],
+        "standardized_answer": [
+          "April 09, 2026"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Ella Ross' IN e.participants AND e.date IS NOT NULL RETURN e.date AS date, e.participants AS participants ORDER BY e.date ASC"
+        ],
+        "token_usage": {
+          "prompt_tokens": 175,
+          "completion_tokens": 16,
+          "total_tokens": 191,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 33.966953,
+      "status": "success",
+      "timestamp": "2025-09-22T14:58:28.044087",
+      "token_usage": {
+        "prompt_tokens": 175,
+        "completion_tokens": 16,
+        "total_tokens": 191,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "April 09, 2026"
+      ]
+    },
+    {
+      "question_idx": 33,
+      "question": "Provide a chronological list of all dates when Isaiah Bennett was observed, from earliest to latest in the story's timeline.",
+      "answer": {
+        "session_id": "3be06258-88c2-4bec-8736-4571be763cf5",
+        "question": "Provide a chronological list of all dates when Isaiah Bennett was observed, from earliest to latest in the story's timeline.",
+        "final_answer": [
+          "2024-07-21"
+        ],
+        "standardized_answer": [
+          "2024-07-21"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Isaiah Bennett' IN e.participants AND e.date IS NOT NULL RETURN e.date AS date, e.participants AS participants ORDER BY e.date ASC"
+        ],
+        "token_usage": {
+          "prompt_tokens": 175,
+          "completion_tokens": 17,
+          "total_tokens": 192,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 65.186733,
+      "status": "success",
+      "timestamp": "2025-09-22T14:59:02.011179",
+      "token_usage": {
+        "prompt_tokens": 175,
+        "completion_tokens": 17,
+        "total_tokens": 192,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "July 21, 2024"
+      ]
+    },
+    {
+      "question_idx": 30,
+      "question": "What is the most recent date Aurora Chavez was observed or mentioned in the story's chronology?",
+      "answer": {
+        "session_id": "3488a3d2-d775-40ff-86cd-e1662cefb7d9",
+        "question": "What is the most recent date Aurora Chavez was observed or mentioned in the story's chronology?",
+        "final_answer": "March 23, 2025",
+        "standardized_answer": [
+          "March 23, 2025"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Aurora Chavez' IN e.participants RETURN e.date AS date, e.participants AS participants, e.event_type AS event_type ORDER BY e.date DESC LIMIT 1"
+        ],
+        "token_usage": {
+          "prompt_tokens": 285,
+          "completion_tokens": 19,
+          "total_tokens": 304,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 19.008664,
+      "status": "success",
+      "timestamp": "2025-09-22T15:00:07.198307",
+      "token_usage": {
+        "prompt_tokens": 285,
+        "completion_tokens": 19,
+        "total_tokens": 304,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "March 23, 2025"
+      ]
+    },
+    {
+      "question_idx": 30,
+      "question": "What is the most recent date Bella Alvarez was observed or mentioned in the story's chronology?",
+      "answer": {
+        "session_id": "a11bb972-21e9-45f8-b273-f422fb42e479",
+        "question": "What is the most recent date Bella Alvarez was observed or mentioned in the story's chronology?",
+        "final_answer": "May 11, 2026",
+        "standardized_answer": [
+          "May 11, 2026"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Bella Alvarez' IN e.participants RETURN e.date AS date, e.participants AS participants, e.event_type AS event_type ORDER BY e.date DESC LIMIT 1"
+        ],
+        "token_usage": {
+          "prompt_tokens": 170,
+          "completion_tokens": 16,
+          "total_tokens": 186,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 39.483433,
+      "status": "success",
+      "timestamp": "2025-09-22T15:00:26.207194",
+      "token_usage": {
+        "prompt_tokens": 170,
+        "completion_tokens": 16,
+        "total_tokens": 186,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "May 11, 2026"
+      ]
+    },
+    {
+      "question_idx": 30,
+      "question": "What is the most recent date Elizabeth Hill was observed or mentioned in the story's chronology?",
+      "answer": {
+        "session_id": "8a0c24d8-9bb1-4266-b503-57cccf341869",
+        "question": "What is the most recent date Elizabeth Hill was observed or mentioned in the story's chronology?",
+        "final_answer": "2024-07-25",
+        "standardized_answer": [
+          "2024-07-25"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Elizabeth Hill' IN e.participants ORDER BY e.date DESC LIMIT 1 RETURN e.date AS date, e.participants AS participants, e.event_type AS event_type"
+        ],
+        "token_usage": {
+          "prompt_tokens": 170,
+          "completion_tokens": 16,
+          "total_tokens": 186,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 16.956063,
+      "status": "success",
+      "timestamp": "2025-09-22T15:01:05.690810",
+      "token_usage": {
+        "prompt_tokens": 170,
+        "completion_tokens": 16,
+        "total_tokens": 186,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "July 25, 2024"
+      ]
+    }
+  ]
+}

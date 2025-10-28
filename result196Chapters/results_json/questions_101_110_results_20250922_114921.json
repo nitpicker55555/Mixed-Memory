@@ -1,0 +1,478 @@
+{
+  "metadata": {
+    "start_time": "2025-09-22T11:21:49.233726",
+    "database": "197chapters2",
+    "question_range": "101-110",
+    "total_questions": 10,
+    "end_time": "2025-09-22T11:49:21.254907",
+    "total_duration": 1652.0112560000002
+  },
+  "results": [
+    {
+      "question_idx": 31,
+      "question": "What is the most recent location where Caleb Perez was observed in the story's chronological timeline?",
+      "answer": {
+        "session_id": "ea76d338-7445-49dc-8f89-621dcd2973ef",
+        "question": "What is the most recent location where Caleb Perez was observed in the story's chronological timeline?",
+        "final_answer": null,
+        "standardized_answer": [],
+        "total_iterations": 5,
+        "search_successful": false,
+        "reasoning_chain": [
+          "By removing the quotes around 'Caleb Perez' and ensuring the query is structured to properly access the participants field, the search should yield the most recent event involving Caleb Perez.",
+          "By simplifying the query to focus on the presence of 'Caleb Perez' in the participants field and removing unnecessary constraints, it may yield results even if some fields are null.",
+          "By focusing on just the participants field and removing unnecessary conditions, the search may yield results that include the most recent event involving Caleb Perez, thus providing the desired location.",
+          "By removing the constraints on location and date, the search can capture a broader range of events involving Caleb Perez, which may help identify the most recent observation.",
+          "By focusing on a simpler query that directly checks for the presence of 'Caleb' in the participants field, we can potentially capture more relevant events without filtering out valid results due to strict conditions."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Caleb Perez' IN e.participants ORDER BY e.date DESC LIMIT 1 RETURN e.location AS location, e.date AS date, e.participants AS participants",
+          "MATCH (e:Event) WHERE e.participants CONTAINS $person AND e.location IS NOT NULL AND e.date IS NOT NULL AND e.participants IS NOT NULL RETURN e.location AS location, e.date AS date, e.participants AS participants ORDER BY e.date DESC LIMIT 1",
+          "MATCH (e:Event) WHERE $person IN e.participants AND e.location IS NOT NULL AND e.date IS NOT NULL AND e.participants IS NOT NULL RETURN e.location AS location, e.date AS date, e.participants AS participants ORDER BY e.date DESC LIMIT 1",
+          "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE p = $person) AND e.location IS NOT NULL AND e.date IS NOT NULL AND e.participants IS NOT NULL RETURN e.location AS location, e.date AS date, e.participants AS participants ORDER BY e.date DESC LIMIT 1",
+          "MATCH (e:Event) WHERE $person IN e.participants AND e.location IS NOT NULL AND e.date IS NOT NULL RETURN e.location AS location, e.date AS date, e.participants AS participants ORDER BY e.date DESC LIMIT 1"
+        ],
+        "token_usage": {
+          "prompt_tokens": 2476,
+          "completion_tokens": 810,
+          "total_tokens": 3286,
+          "calls_count": 6
+        }
+      },
+      "duration_seconds": 157.659354,
+      "status": "success",
+      "timestamp": "2025-09-22T11:21:49.233806",
+      "token_usage": {
+        "prompt_tokens": 2476,
+        "completion_tokens": 810,
+        "total_tokens": 3286,
+        "calls_count": 6
+      },
+      "expected_answer": []
+    },
+    {
+      "question_idx": 31,
+      "question": "What is the most recent location where Charlotte White was observed in the story's chronological timeline?",
+      "answer": {
+        "session_id": "d912c850-abbb-4870-a8a6-7fc2dde15bfc",
+        "question": "What is the most recent location where Charlotte White was observed in the story's chronological timeline?",
+        "final_answer": null,
+        "standardized_answer": [],
+        "total_iterations": 5,
+        "search_successful": false,
+        "reasoning_chain": [
+          "By using a parameterized query and expanding the search fields to include descriptions or related events, we increase the chances of finding relevant information about Charlotte White's most recent location.",
+          "By broadening the search to include all events involving 'Charlotte' without strict conditions on location and date, we can capture more relevant events that may provide the needed information.",
+          "By using a parameterized query and focusing on the participants field, the search can be more flexible and potentially capture events where 'Charlotte White' is mentioned in a different context or with slight variations in naming.",
+          "By focusing on the exact name 'Charlotte White' and ensuring the query checks for full matches in the participants field, the search is more likely to yield accurate results regarding the most recent location of the character.",
+          "By simplifying the search to just 'Charlotte', it increases the chances of matching events that may refer to her in a different context or format. Additionally, focusing on the participants field allows for a more targeted search for events involving her."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Charlotte White' IN e.participants ORDER BY e.date DESC LIMIT 1 RETURN e.location AS location, e.date AS date, e.participants AS participants",
+          "MATCH (e:Event) WHERE 'Charlotte White' IN e.participants AND e.location IS NOT NULL AND e.date IS NOT NULL AND e.participants IS NOT NULL RETURN e.location AS location, e.date AS date, e.participants AS participants ORDER BY e.date DESC LIMIT 1",
+          "MATCH (e:Event) WHERE 'Charlotte White' IN e.participants RETURN e.location AS location, e.date AS date, e.participants AS participants ORDER BY e.date DESC LIMIT 1",
+          "MATCH (e:Event) WHERE 'Charlotte' IN e.participants RETURN e.location AS location, e.date AS date, e.participants AS participants ORDER BY e.date DESC LIMIT 1",
+          "MATCH (e:Event) WHERE 'Charlotte' IN e.participants AND e.location IS NOT NULL AND e.date IS NOT NULL RETURN e.location AS location, e.date AS date, e.participants AS participants ORDER BY e.date DESC LIMIT 1"
+        ],
+        "token_usage": {
+          "prompt_tokens": 2325,
+          "completion_tokens": 890,
+          "total_tokens": 3215,
+          "calls_count": 6
+        }
+      },
+      "duration_seconds": 320.417575,
+      "status": "success",
+      "timestamp": "2025-09-22T11:24:26.896312",
+      "token_usage": {
+        "prompt_tokens": 2325,
+        "completion_tokens": 890,
+        "total_tokens": 3215,
+        "calls_count": 6
+      },
+      "expected_answer": []
+    },
+    {
+      "question_idx": 8,
+      "question": "Think about Andrew Gomez's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+      "answer": {
+        "session_id": "6cb6b4d7-a558-4ed0-af6a-b2311a070cef",
+        "question": "Think about Andrew Gomez's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+        "final_answer": null,
+        "standardized_answer": [],
+        "total_iterations": 5,
+        "search_successful": false,
+        "reasoning_chain": [
+          "By focusing on the relationships and experiences associated with Andrew Gomez, rather than strictly filtering by participants, the search may yield broader results that include relevant events he was involved in.",
+          "Focusing on the description field may yield results where Andrew Gomez is referenced indirectly, allowing for a broader understanding of his experiences beyond just participant roles.",
+          "By focusing on broader keywords related to Andrew Gomez's experiences and involvement, the search may yield results that describe events he was associated with, even if he is not explicitly listed as a participant.",
+          "By broadening the search terms and focusing on the descriptions or types of events, it may yield results that are related to Andrew Gomez's experiences even if his name is not explicitly listed as a participant.",
+          "By using broader keywords and focusing on different fields, the search may yield relevant results even if the exact name does not match perfectly. This approach allows for capturing related events that may not explicitly mention 'Andrew Gomez' but are still relevant to his experiences."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE e.participants CONTAINS 'Andrew Gomez' RETURN DISTINCT e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants",
+          "MATCH (e:Event) WHERE e.participants CONTAINS 'Andrew Gomez' RETURN DISTINCT e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants",
+          "MATCH (e:Event) WHERE e.participants CONTAINS $person RETURN DISTINCT e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants",
+          "MATCH (e:Event) WHERE 'Andrew Gomez' IN e.participants RETURN DISTINCT e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants",
+          "MATCH (e:Event) WHERE 'Andrew Gomez' IN e.participants RETURN DISTINCT e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants"
+        ],
+        "token_usage": {
+          "prompt_tokens": 2319,
+          "completion_tokens": 901,
+          "total_tokens": 3220,
+          "calls_count": 6
+        }
+      },
+      "duration_seconds": 123.055598,
+      "status": "success",
+      "timestamp": "2025-09-22T11:29:47.315734",
+      "token_usage": {
+        "prompt_tokens": 2319,
+        "completion_tokens": 901,
+        "total_tokens": 3220,
+        "calls_count": 6
+      },
+      "expected_answer": []
+    },
+    {
+      "question_idx": 8,
+      "question": "Think about Ava Morris's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+      "answer": {
+        "session_id": "7cc01d06-9f63-4d1f-9abc-b92b58df5e60",
+        "question": "Think about Ava Morris's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+        "final_answer": null,
+        "standardized_answer": [],
+        "total_iterations": 5,
+        "search_successful": false,
+        "reasoning_chain": [
+          "Execution error: {code: Neo.ClientError.Statement.TypeError} {message: Expected a string value for `toLower`, but got: StringArray[Chloe Castillo, Sienna Hamrick, Reid Blunt]; consider converting it to a string with toString().}",
+          "By searching for a substring like 'Ava', it may capture more events related to Ava Morris, especially if there are variations in how her name is recorded in the database. Focusing on the participants field allows for broader matching.",
+          "By breaking down the name into individual components, the search may yield results that include either 'Ava' or 'Morris' as participants, thus increasing the chances of finding relevant events.",
+          "By breaking down the name into components and searching for each part separately, we increase the chances of matching the participant names as they may be stored in different formats. Focusing on the participants field allows for a more targeted search.",
+          "By breaking down the name into individual components, the search may yield results that include either 'Ava' or 'Morris' as participants, which could help in retrieving relevant events associated with her."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.participants) CONTAINS toLower('Ava Morris') RETURN DISTINCT e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants",
+          "MATCH (e:Event) WHERE 'Ava Morris' IN e.participants RETURN DISTINCT e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants",
+          "MATCH (e:Event) WHERE ANY(participant IN e.participants WHERE toLower(participant) = toLower($kw)) RETURN DISTINCT e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants",
+          "MATCH (e:Event) WHERE e.participants IS NOT NULL AND ANY(participant IN e.participants WHERE participant = $person) RETURN DISTINCT e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants",
+          "MATCH (e:Event) WHERE ANY(participant IN e.participants WHERE toLower(participant) CONTAINS toLower($person)) RETURN DISTINCT e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants"
+        ],
+        "token_usage": {
+          "prompt_tokens": 2089,
+          "completion_tokens": 733,
+          "total_tokens": 2822,
+          "calls_count": 5
+        }
+      },
+      "duration_seconds": 153.876432,
+      "status": "success",
+      "timestamp": "2025-09-22T11:31:50.371711",
+      "token_usage": {
+        "prompt_tokens": 2089,
+        "completion_tokens": 733,
+        "total_tokens": 2822,
+        "calls_count": 5
+      },
+      "expected_answer": []
+    },
+    {
+      "question_idx": 8,
+      "question": "Think about Brooklyn Sanders's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+      "answer": {
+        "session_id": "89dbcec2-b323-44a4-9d1a-7de9a342b3ab",
+        "question": "Think about Brooklyn Sanders's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+        "final_answer": [
+          "Brooklyn Ross hosted the film award ceremonies, blending cinema with magic, as she prepared to take center stage amidst a transformed park filled with floating lanterns and an excited crowd.",
+          "Easton Perdue approached Brooklyn with a scroll containing the nominees' names, written in shimmering ink, as the ceremony was about to begin.",
+          "Brooklyn conjured a shower of golden sparks that rained down on the assembly, signaling the start of the ceremony.",
+          "A theater performance took place at the Brooklyn Museum, drawing the attention of Brooklyn Ross, who observed the events closely due to her detective instincts.",
+          "During the intermission of the performance, Brooklyn Ross engaged in a discussion with Gemma Ayers about the playwright's intent, which left her intrigued.",
+          "Brooklyn Ross observed unusual behavior from usher Athena Aguilera, who seemed particularly interested in a section of the audience during the performance.",
+          "A sudden commotion erupted near the back of the theater, prompting Kira Pierre to stand abruptly and rush towards the exit, leaving behind a small package.",
+          "After the performance, Brooklyn Ross discovered an abandoned package left by Kira Pierre, which contained cryptic notes related to the play.",
+          "Guests gathered on the Queensboro Bridge for a murder mystery dinner hosted by Colton Cyphers, where they were tasked with unraveling a fictional crime.",
+          "Colton Cyphers announced the start of the murder mystery game, inviting guests to uncover the truth behind a heinous crime.",
+          "Brooklyn Ross and Avah Dunning engaged in a conversation about the historical accuracy of the time period relevant to the mystery, highlighting its importance in solving the case.",
+          "A unique hackathon where participants explored the fusion of technology and magic, exchanging groundbreaking ideas and innovations.",
+          "Brooklyn Ross networked with tech professionals, discussing the integration of nature's wisdom into AI and future innovations.",
+          "Brooklyn Ross engaged in creating new ideas by melding ancient spells with neural networks at a floating workstation.",
+          "A pivotal workshop focused on peer review in the professional field, where participants engaged in multiple peer reviews, leading to a realization of lost creativity.",
+          "A drone racing event took place featuring sleek drones navigating an intricate obstacle course, with spectators and pilots engaged in the excitement.",
+          "Demonstrations of anti-drone technology were held in a quieter corner of the museum, contrasting with the ongoing drone racing event.",
+          "The final race concluded with a burst of applause from the crowd as they surged towards the winner's podium.",
+          "A young woman performed on an enchanted stage at Yankee Stadium, captivating thousands of spectators with her magical singing and dancing, which caused flowers to bloom and illusions to appear.",
+          "Brooklyn Ross participated in a karaoke dance-off, mesmerizing the audience with her synchronized movements and magical voice that created harmonies and illusions.",
+          "Brooklyn Ross participated in a pie-eating contest at the carnival, where she faced off against other competitors as the carnival barker announced the start of the competition.",
+          "During the pie-eating contest, Brooklyn experienced a sharp pain in her abdomen, leading to a medical emergency as she struggled to breathe and Frey Hood shouted for help.",
+          "Brooklyn Ross performed a fire hula hoop dance, but struggled to maintain control of the flaming hoop, leading to a tragic incident.",
+          "During Brooklyn's performance, the flaming hoop slipped from her grasp and flew into the crowd, causing chaos and panic as fire spread through the stands."
+        ],
+        "standardized_answer": [
+          "Brooklyn Ross hosted the film award ceremonies, blending cinema with magic, as she prepared to take center stage amidst a transformed park filled with floating lanterns and an excited crowd.",
+          "Easton Perdue approached Brooklyn with a scroll containing the nominees' names, written in shimmering ink, as the ceremony was about to begin.",
+          "Brooklyn conjured a shower of golden sparks that rained down on the assembly, signaling the start of the ceremony.",
+          "A theater performance took place at the Brooklyn Museum, drawing the attention of Brooklyn Ross, who observed the events closely due to her detective instincts.",
+          "During the intermission of the performance, Brooklyn Ross engaged in a discussion with Gemma Ayers about the playwright's intent, which left her intrigued.",
+          "Brooklyn Ross observed unusual behavior from usher Athena Aguilera, who seemed particularly interested in a section of the audience during the performance.",
+          "A sudden commotion erupted near the back of the theater, prompting Kira Pierre to stand abruptly and rush towards the exit, leaving behind a small package.",
+          "After the performance, Brooklyn Ross discovered an abandoned package left by Kira Pierre, which contained cryptic notes related to the play.",
+          "Guests gathered on the Queensboro Bridge for a murder mystery dinner hosted by Colton Cyphers, where they were tasked with unraveling a fictional crime.",
+          "Colton Cyphers announced the start of the murder mystery game, inviting guests to uncover the truth behind a heinous crime.",
+          "Brooklyn Ross and Avah Dunning engaged in a conversation about the historical accuracy of the time period relevant to the mystery, highlighting its importance in solving the case.",
+          "A unique hackathon where participants explored the fusion of technology and magic, exchanging groundbreaking ideas and innovations.",
+          "Brooklyn Ross networked with tech professionals, discussing the integration of nature's wisdom into AI and future innovations.",
+          "Brooklyn Ross engaged in creating new ideas by melding ancient spells with neural networks at a floating workstation.",
+          "A pivotal workshop focused on peer review in the professional field, where participants engaged in multiple peer reviews, leading to a realization of lost creativity.",
+          "A drone racing event took place featuring sleek drones navigating an intricate obstacle course, with spectators and pilots engaged in the excitement.",
+          "Demonstrations of anti-drone technology were held in a quieter corner of the museum, contrasting with the ongoing drone racing event.",
+          "The final race concluded with a burst of applause from the crowd as they surged towards the winner's podium.",
+          "A young woman performed on an enchanted stage at Yankee Stadium, captivating thousands of spectators with her magical singing and dancing, which caused flowers to bloom and illusions to appear.",
+          "Brooklyn Ross participated in a karaoke dance-off, mesmerizing the audience with her synchronized movements and magical voice that created harmonies and illusions.",
+          "Brooklyn Ross participated in a pie-eating contest at the carnival, where she faced off against other competitors as the carnival barker announced the start of the competition.",
+          "During the pie-eating contest, Brooklyn experienced a sharp pain in her abdomen, leading to a medical emergency as she struggled to breathe and Frey Hood shouted for help.",
+          "Brooklyn Ross performed a fire hula hoop dance, but struggled to maintain control of the flaming hoop, leading to a tragic incident.",
+          "During Brooklyn's performance, the flaming hoop slipped from her grasp and flew into the crowd, causing chaos and panic as fire spread through the stands."
+        ],
+        "total_iterations": 3,
+        "search_successful": true,
+        "reasoning_chain": [
+          "Execution error: {code: Neo.ClientError.Statement.TypeError} {message: Expected a string value for `toLower`, but got: StringArray[Chloe Castillo, Sienna Hamrick, Reid Blunt]; consider converting it to a string with toString().}",
+          "By focusing on the participants field and using a broader search method, we can capture any events that mention Brooklyn Sanders, regardless of the exact format or case sensitivity. (Enhanced with semantic search: Brooklyn Ross in field event_type)"
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.participants) CONTAINS toLower('Brooklyn Sanders') RETURN DISTINCT e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants",
+          "MATCH (e:Event) WHERE ANY(participant IN e.participants WHERE toLower(participant) = toLower('Brooklyn Sanders')) RETURN e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants",
+          "MATCH (e:Event) WHERE 'Brooklyn Sanders' IN e.participants OR 'Brooklyn Ross' IN e.participants RETURN DISTINCT e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants"
+        ],
+        "token_usage": {
+          "prompt_tokens": 587,
+          "completion_tokens": 181,
+          "total_tokens": 768,
+          "calls_count": 2
+        }
+      },
+      "duration_seconds": 79.670527,
+      "status": "success",
+      "timestamp": "2025-09-22T11:34:24.249070",
+      "token_usage": {
+        "prompt_tokens": 587,
+        "completion_tokens": 181,
+        "total_tokens": 768,
+        "calls_count": 2
+      },
+      "expected_answer": []
+    },
+    {
+      "question_idx": 8,
+      "question": "Think about Caleb Perez's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+      "answer": {
+        "session_id": "209669b2-ed58-4fa1-9603-f9a0b88b1172",
+        "question": "Think about Caleb Perez's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+        "final_answer": null,
+        "standardized_answer": [],
+        "total_iterations": 5,
+        "search_successful": false,
+        "reasoning_chain": [
+          "Execution error: {code: Neo.ClientError.Statement.TypeError} {message: Expected a string value for `toLower`, but got: StringArray[Chloe Castillo, Sienna Hamrick, Reid Blunt]; consider converting it to a string with toString().}",
+          "Execution error: {code: Neo.ClientError.Statement.TypeError} {message: Invalid input for function 'toString()': Expected a String, Float, Integer, Boolean, Temporal or Duration, got: StringArray[Chloe Castillo, Sienna Hamrick, Reid Blunt]}",
+          "By using a broader keyword like 'Caleb', the search may capture events where he is referenced in a less direct manner, such as in descriptions or related participant lists. This could help uncover relevant events that were missed in the original search.",
+          "By breaking down the name into individual components and searching for partial matches, the search can capture more relevant events that may not have the full name formatted exactly as 'Caleb Perez'. This approach increases the chances of retrieving related events.",
+          "By searching for just 'Caleb' or 'Perez', the query can capture events where either name appears, potentially yielding more results. This approach allows for partial matches and may uncover relevant events that were missed in the original search."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.participants) CONTAINS toLower('Caleb Perez') RETURN DISTINCT e.name AS name, e.event_type AS event_type, e.participants AS participants, e.description AS description",
+          "MATCH (e:Event) WHERE toLower(toString(e.participants)) CONTAINS toLower($person) RETURN DISTINCT e.name AS name, e.event_type AS event_type, e.participants AS participants, e.description AS description",
+          "MATCH (e:Event) WHERE $person IN e.participants RETURN DISTINCT e.name AS name, e.event_type AS event_type, e.participants AS participants, e.description AS description",
+          "MATCH (e:Event) WHERE $person IN e.participants RETURN DISTINCT e.name AS name, e.event_type AS event_type, e.participants AS participants, e.description AS description",
+          "MATCH (e:Event) WHERE ANY(participant IN e.participants WHERE toLower(participant) = toLower($person)) RETURN DISTINCT e.name AS name, e.event_type AS event_type, e.participants AS participants, e.description AS description"
+        ],
+        "token_usage": {
+          "prompt_tokens": 1621,
+          "completion_tokens": 575,
+          "total_tokens": 2196,
+          "calls_count": 4
+        }
+      },
+      "duration_seconds": 121.25638,
+      "status": "success",
+      "timestamp": "2025-09-22T11:35:43.920262",
+      "token_usage": {
+        "prompt_tokens": 1621,
+        "completion_tokens": 575,
+        "total_tokens": 2196,
+        "calls_count": 4
+      },
+      "expected_answer": []
+    },
+    {
+      "question_idx": 8,
+      "question": "Think about Charlotte White's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+      "answer": {
+        "session_id": "c87c6d47-c1f9-4659-82b1-42fa96395f69",
+        "question": "Think about Charlotte White's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+        "final_answer": null,
+        "standardized_answer": [],
+        "total_iterations": 5,
+        "search_successful": false,
+        "reasoning_chain": [
+          "Execution error: {code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input 'FOR': expected an expression, ',' or ']' (line 1, column 136 (offset: 135))\n\"MATCH (e:Event) WHERE 'Charlotte White' IN e.participants AND e.participants IS NOT NULL AND toLower('Charlotte White') IN [toLower(p) FOR p IN e.participants] RETURN DISTINCT e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants\"\n                                                                                                                                        ^}",
+          "By broadening the search to include variations of the name and focusing on the description field, it may uncover relevant events that mention Charlotte White indirectly or in a different context.",
+          "By focusing on an exact match for 'Charlotte White' in the participants field, the search can be simplified and made more effective, potentially yielding better results.",
+          "By breaking down the name into its components and searching for each part separately, the likelihood of finding relevant events increases. This approach also allows for potential variations in how names are recorded in the database.",
+          "By searching for each part of the name separately, we increase the chances of capturing relevant events that involve Charlotte White, even if her full name is not explicitly listed in the database."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Charlotte White' IN e.participants AND e.participants IS NOT NULL AND toLower('Charlotte White') IN [toLower(p) FOR p IN e.participants] RETURN DISTINCT e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants",
+          "MATCH (e:Event) WHERE 'Charlotte White' IN e.participants AND e.participants IS NOT NULL RETURN DISTINCT e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants",
+          "MATCH (e:Event) WHERE any(p IN e.participants WHERE toLower(p) CONTAINS 'charlotte') RETURN DISTINCT e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants",
+          "MATCH (e:Event) WHERE any(p IN e.participants WHERE toLower(p) CONTAINS 'charlotte') OR any(p IN e.participants WHERE toLower(p) CONTAINS 'white') RETURN DISTINCT e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants",
+          "MATCH (e:Event) WHERE any(p IN e.participants WHERE toLower(p) CONTAINS 'charlotte' AND toLower(p) CONTAINS 'white') RETURN DISTINCT e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants"
+        ],
+        "token_usage": {
+          "prompt_tokens": 2254,
+          "completion_tokens": 733,
+          "total_tokens": 2987,
+          "calls_count": 5
+        }
+      },
+      "duration_seconds": 118.995157,
+      "status": "success",
+      "timestamp": "2025-09-22T11:37:45.177434",
+      "token_usage": {
+        "prompt_tokens": 2254,
+        "completion_tokens": 733,
+        "total_tokens": 2987,
+        "calls_count": 5
+      },
+      "expected_answer": []
+    },
+    {
+      "question_idx": 30,
+      "question": "What is the most recent date Andrew Gomez was observed or mentioned in the story's chronology?",
+      "answer": {
+        "session_id": "dfd968c2-165d-4d18-9a01-56186ee74c35",
+        "question": "What is the most recent date Andrew Gomez was observed or mentioned in the story's chronology?",
+        "final_answer": null,
+        "standardized_answer": [],
+        "total_iterations": 5,
+        "search_successful": false,
+        "reasoning_chain": [
+          "By expanding the search to include descriptions or notes, we may capture mentions of Andrew Gomez that are not strictly tied to the participants field, increasing the chances of finding relevant events.",
+          "By simplifying the search to focus solely on the participants field, we can capture all events involving Andrew Gomez without excluding potentially relevant entries based on the description or date conditions.",
+          "By broadening the search criteria and focusing on both the participants and description fields separately, it increases the chances of capturing all relevant events involving Andrew Gomez, regardless of how he is referenced in the text.",
+          "By simplifying the search to just the participant's name and focusing on the 'participants' field, we increase the chances of capturing all relevant events involving Andrew Gomez, regardless of how he is referenced in the description.",
+          "By expanding the search to include the description field, we can capture mentions of Andrew Gomez that may not be listed as participants but are still relevant to the events. This approach increases the likelihood of finding the most recent mention."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Andrew Gomez' IN e.participants RETURN e.date AS date, e.participants AS participants, e.event_type AS event_type ORDER BY e.date DESC LIMIT 1",
+          "MATCH (e:Event) WHERE 'Andrew Gomez' IN e.participants AND e.description CONTAINS 'Andrew' AND e.date IS NOT NULL RETURN e.date AS date, e.participants AS participants, e.event_type AS event_type ORDER BY e.date DESC LIMIT 1",
+          "MATCH (e:Event) WHERE 'Andrew Gomez' IN e.participants AND e.description CONTAINS 'Gomez' AND e.date IS NOT NULL RETURN e.date AS date, e.participants AS participants, e.event_type AS event_type ORDER BY e.date DESC LIMIT 1",
+          "MATCH (e:Event) WHERE 'Andrew Gomez' IN e.participants AND e.description CONTAINS 'Gomez' AND e.date IS NOT NULL RETURN e.date AS date, e.participants AS participants, e.event_type AS event_type ORDER BY e.date DESC LIMIT 1",
+          "MATCH (e:Event) WHERE (e.participants CONTAINS 'Andrew' OR e.participants CONTAINS 'Gomez') AND e.date IS NOT NULL RETURN e.date AS date, e.participants AS participants, e.event_type AS event_type ORDER BY e.date DESC LIMIT 1"
+        ],
+        "token_usage": {
+          "prompt_tokens": 2475,
+          "completion_tokens": 908,
+          "total_tokens": 3383,
+          "calls_count": 6
+        }
+      },
+      "duration_seconds": 189.367205,
+      "status": "success",
+      "timestamp": "2025-09-22T11:39:44.173468",
+      "token_usage": {
+        "prompt_tokens": 2475,
+        "completion_tokens": 908,
+        "total_tokens": 3383,
+        "calls_count": 6
+      },
+      "expected_answer": []
+    },
+    {
+      "question_idx": 30,
+      "question": "What is the most recent date Ava Morris was observed or mentioned in the story's chronology?",
+      "answer": {
+        "session_id": "61c792f1-6e20-40d6-a663-a8114b510bb1",
+        "question": "What is the most recent date Ava Morris was observed or mentioned in the story's chronology?",
+        "final_answer": null,
+        "standardized_answer": [],
+        "total_iterations": 5,
+        "search_successful": false,
+        "reasoning_chain": [
+          "By simplifying the search to just 'Ava' or ensuring the query checks for 'Ava Morris' correctly, it may yield results if the name is stored differently or if there are variations in how participants are recorded.",
+          "By directly searching for 'Ava Morris' as a string in the participants field, we can ensure that the query accurately targets the relevant events without relying on potentially faulty parameterization.",
+          "By using a direct equality check for 'Ava Morris' in the participants field, the search can more accurately retrieve events where she is mentioned, avoiding potential issues with data structure mismatches.",
+          "By expanding the search to include descriptions or related event types, we may capture mentions of Ava Morris that are not strictly tied to her being a participant in an event, thus increasing the chances of finding relevant data.",
+          "By expanding the search to include descriptions or notes, we can capture mentions of 'Ava Morris' that may not be tied directly to the participants list, increasing the chances of finding relevant events."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Ava Morris' IN e.participants RETURN e.date AS date, e.participants AS participants, e.event_type AS event_type ORDER BY e.date DESC LIMIT 1",
+          "MATCH (e:Event) WHERE $person IN e.participants RETURN e.date AS date, e.participants AS participants, e.event_type AS event_type ORDER BY e.date DESC LIMIT 1",
+          "MATCH (e:Event) WHERE e.participants CONTAINS $kw AND e.participants IS NOT NULL AND size(e.participants) > 0 RETURN e.date AS date, e.participants AS participants, e.event_type AS event_type ORDER BY e.date DESC LIMIT 1",
+          "MATCH (e:Event) WHERE $person IN e.participants AND e.date IS NOT NULL AND size(e.participants) > 0 RETURN e.date AS date, e.participants AS participants, e.event_type AS event_type ORDER BY e.date DESC LIMIT 1",
+          "MATCH (e:Event) WHERE $person IN e.participants AND e.date IS NOT NULL AND size(e.participants) > 0 RETURN e.date AS date, e.participants AS participants, e.event_type AS event_type ORDER BY e.date DESC LIMIT 1"
+        ],
+        "token_usage": {
+          "prompt_tokens": 2384,
+          "completion_tokens": 910,
+          "total_tokens": 3294,
+          "calls_count": 6
+        }
+      },
+      "duration_seconds": 226.689521,
+      "status": "success",
+      "timestamp": "2025-09-22T11:42:53.541253",
+      "token_usage": {
+        "prompt_tokens": 2384,
+        "completion_tokens": 910,
+        "total_tokens": 3294,
+        "calls_count": 6
+      },
+      "expected_answer": []
+    },
+    {
+      "question_idx": 30,
+      "question": "What is the most recent date Brooklyn Sanders was observed or mentioned in the story's chronology?",
+      "answer": {
+        "session_id": "2f9878a0-ee31-472f-bef6-e127e6785f53",
+        "question": "What is the most recent date Brooklyn Sanders was observed or mentioned in the story's chronology?",
+        "final_answer": "Unknown",
+        "standardized_answer": [
+          "Unknown"
+        ],
+        "total_iterations": 5,
+        "search_successful": true,
+        "reasoning_chain": [
+          "By using a parameterized query and focusing on a broader keyword like 'Brooklyn', we may capture more relevant events that mention Brooklyn Sanders, even if the exact name is not used in the participants list.",
+          "By simplifying the query to directly check for 'Brooklyn Sanders' in the participants field and ensuring that the query accommodates different data structures, it increases the likelihood of retrieving relevant events. Additionally, using a partial match with 'Brooklyn' may help capture any variations in naming.",
+          "Focusing on the full name in the participants field should yield more accurate results, as it eliminates the possibility of missing entries due to partial name matching. (Enhanced with semantic search: Brooklyn Ross in field event_type)",
+          "By broadening the search to just 'Brooklyn', it increases the chances of capturing relevant events that may include variations of the name or related entries. This approach also allows for the possibility of capturing events where Brooklyn Sanders is mentioned in a context that does not strictly use the full name."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Brooklyn Sanders' IN e.participants RETURN e.date AS date, e.participants AS participants, e.event_type AS event_type ORDER BY e.date DESC LIMIT 1",
+          "MATCH (e:Event) WHERE 'Brooklyn Sanders' IN e.participants AND e.participants IS NOT NULL RETURN e.date AS date, e.participants AS participants, e.event_type AS event_type ORDER BY e.date DESC LIMIT 1",
+          "MATCH (e:Event) WHERE 'Brooklyn' IN e.participants AND e.participants IS NOT NULL RETURN e.date AS date, e.participants AS participants, e.event_type AS event_type ORDER BY e.date DESC LIMIT 1",
+          "MATCH (e:Event) WHERE (e.participants CONTAINS 'Brooklyn Sanders' OR e.participants CONTAINS 'Brooklyn Ross') AND e.participants IS NOT NULL RETURN e.date AS date, e.participants AS participants, e.event_type AS event_type ORDER BY e.date DESC LIMIT 1",
+          "MATCH (e:Event) WHERE (e.participants CONTAINS $kw OR e.description CONTAINS $kw) AND e.participants IS NOT NULL RETURN e.date AS date, e.participants AS participants, e.event_type AS event_type ORDER BY e.date DESC LIMIT 1"
+        ],
+        "token_usage": {
+          "prompt_tokens": 1858,
+          "completion_tokens": 796,
+          "total_tokens": 2654,
+          "calls_count": 5
+        }
+      },
+      "duration_seconds": 161.023507,
+      "status": "success",
+      "timestamp": "2025-09-22T11:46:40.231093",
+      "token_usage": {
+        "prompt_tokens": 1858,
+        "completion_tokens": 796,
+        "total_tokens": 2654,
+        "calls_count": 5
+      },
+      "expected_answer": []
+    }
+  ]
+}

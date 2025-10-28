@@ -1,0 +1,103 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-22 23:30:42
+Question Range: 171-180
+Total Questions Processed: 10
+Successful Searches: 7 (70.0%)
+Questions with Answers: 7 (70.0%)
+Average Iterations per Question: 2.8
+
+DETAILED RESULTS:
+------------------------------
+
+Question 171:
+  Text: Enumerate all activities that Ella Ross has been involved in, ordered from earliest to latest in the story's chronology.
+  Expected: ['Photography Exhibition']
+  Predicted: ['Photography Exhibition Opening', 'Conversation about Portraits', 'Discussion about the Seventh Portrait']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 191 total (175 prompt + 16 completion, 1 calls)
+
+Question 172:
+  Text: Enumerate all activities that Isaiah Bennett has been involved in, ordered from earliest to latest in the story's chronology.
+  Expected: ['Burlesque Performance']
+  Predicted: ['Burlesque Show Performance', 'Interrogation of Performers', 'Return of Stolen Necklace', 'Grand Finale Preparation']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 196 total (175 prompt + 21 completion, 1 calls)
+
+Question 173:
+  Text: Reflect on the experiences of Aurora Chavez related to Tech Hackathon. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: ['Water Mill Museum']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3344 total (2388 prompt + 956 completion, 6 calls)
+
+Question 174:
+  Text: Reflect on the experiences of Bella Alvarez related to Astronomy Night. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: ['Williamsburg Bridge']
+  Predicted: ['Williamsburg Bridge']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 200 total (181 prompt + 19 completion, 1 calls)
+
+Question 175:
+  Text: Reflect on the experiences of Bella Brown related to Historical Reenactment. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: ['Bethpage Black Course']
+  Predicted: ['Bethpage Black Course', 'Makeshift stage at Bethpage Black Course', 'The High Line', 'Lincoln Center', 'Unknown']
+  Search Success: True
+  Confidence: 0.40
+  Iterations: 4
+  Token Usage: 1875 total (1329 prompt + 546 completion, 4 calls)
+
+Question 176:
+  Text: Reflect on the experiences of Benjamin Green related to Fashion Show. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: ['Bethpage State Park']
+  Predicted: ['Washington Square Park', 'Unknown', 'Snug Harbor Cultural Center', 'Bethpage State Park', 'Madison Square Garden', 'One World Trade Center']
+  Search Success: True
+  Confidence: 0.60
+  Iterations: 3
+  Token Usage: 1244 total (907 prompt + 337 completion, 3 calls)
+
+Question 177:
+  Text: Reflect on the experiences of Benjamin Green related to Film Festival. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: ['Madison Square Garden']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3196 total (2297 prompt + 899 completion, 6 calls)
+
+Question 178:
+  Text: Consider all events involving both Aurora Chavez and Tech Hackathon. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['March 23, 2025']
+  Predicted: ['March 23, 2025']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+  Token Usage: 717 total (514 prompt + 203 completion, 2 calls)
+
+Question 179:
+  Text: Consider all events involving both Bella Alvarez and Astronomy Night. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['May 11, 2026']
+  Predicted: ['May 11, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 198 total (179 prompt + 19 completion, 1 calls)
+
+Question 180:
+  Text: Consider all events involving both Bella Brown and Historical Reenactment. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['March 23, 2025']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3207 total (2276 prompt + 931 completion, 6 calls)
+

@@ -1,0 +1,103 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-23 15:25:11
+Question Range: 231-240
+Total Questions Processed: 10
+Successful Searches: 7 (70.0%)
+Questions with Answers: 7 (70.0%)
+Average Iterations per Question: 2.2
+
+DETAILED RESULTS:
+------------------------------
+
+Question 231:
+  Text: Reflect on the experiences of Chloe Castillo related to Parkour Workshop. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: ['High Line', 'Bethpage Black Course']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2769 total (2000 prompt + 769 completion, 5 calls)
+
+Question 232:
+  Text: Reflect on the experiences of Henry Reed related to Tech Hackathon. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: ['Yankee Stadium', 'Port Jefferson']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3312 total (2437 prompt + 875 completion, 6 calls)
+
+Question 233:
+  Text: Consider all events involving both Bella Brown and Fashion Show. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['March 23, 2024', 'January 03, 2026']
+  Predicted: ['2024-03-23', 'January 03, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 197 total (179 prompt + 18 completion, 1 calls)
+
+Question 234:
+  Text: Consider all events involving both Carter Stewart and Scientific Conference. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['September 22, 2026', 'March 23, 2024']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3241 total (2320 prompt + 921 completion, 6 calls)
+
+Question 235:
+  Text: Consider all events involving both Chloe Castillo and Fashion Show. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['February 22, 2025', 'September 22, 2026']
+  Predicted: ['February 22, 2025', 'September 22, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 198 total (179 prompt + 19 completion, 1 calls)
+
+Question 236:
+  Text: Consider all events involving both Chloe Castillo and Parkour Workshop. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['May 11, 2026', 'May 07, 2024']
+  Predicted: ['May 11, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 200 total (180 prompt + 20 completion, 1 calls)
+
+Question 237:
+  Text: Consider all events involving both Henry Reed and Tech Hackathon. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['March 23, 2024', 'June 14, 2025']
+  Predicted: ['March 23, 2024', '2025-06-14']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 199 total (180 prompt + 19 completion, 1 calls)
+
+Question 238:
+  Text: Enumerate all activities that Benjamin Green has been involved in, ordered from earliest to latest in the story's chronology.
+  Expected: ['Fashion Show', 'Scientific Conference', 'Film Festival', 'Ice Sculpture Exhibition', 'Tech Hackathon', 'Fire Dancing Performance']
+  Predicted: ['Fashion Show at Bethpage State Park', 'Finale of the Fashion Show', 'Audience Applause', 'Film Festival Red Carpet Appearance', 'Actor Meet-and-Greet', 'Health Incident at Film Festival', 'Ice Sculpture Exhibition', 'Hackathon at Snug Harbor Cultural Center', 'Project Presentation', 'Awards Announcement']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 195 total (175 prompt + 20 completion, 1 calls)
+
+Question 239:
+  Text: Enumerate all activities that Brooklyn Ross has been involved in, ordered from earliest to latest in the story's chronology.
+  Expected: ['Karaoke Night', 'Film Festival', 'Drone Racing Event', 'Murder Mystery Dinner', 'Educational Workshop', 'Carnival', 'Fire Dancing Performance', 'Theater Performance', 'Tech Hackathon']
+  Predicted: [{'name': 'Murder Mystery Dinner', 'date': 'June 14, 2025', 'event_type': 'Dinner', 'participants': ['Colton Cyphers', 'Brooklyn Ross', 'Corey Goetz', 'Avah Dunning'], 'chapter_number': 69}, {'name': 'Introduction of the Game', 'date': 'June 14, 2025', 'event_type': 'Announcement', 'participants': ['Colton Cyphers', 'Brooklyn Ross'], 'chapter_number': 69}, {'name': 'Career Development Workshop', 'date': 'April 09, 2026', 'event_type': 'Workshop', 'participants': ['Brooklyn Ross', 'Maci Fennell', 'Lila Wilkerson'], 'chapter_number': 102}, {'name': 'Fire Hula Hoop Dance by Brooklyn Ross', 'date': '2026-06-08', 'event_type': 'Performance', 'participants': ['Brooklyn Ross', 'Maison Corbin'], 'chapter_number': 193}, {'name': 'Fire Incident in the Stands', 'date': '2026-06-08', 'event_type': 'Accident', 'participants': ['Brooklyn Ross', 'Maison Corbin'], 'chapter_number': 193}, {'name': 'Theater Performance', 'date': 'August 24, 2026', 'event_type': 'Performance', 'participants': ['Brooklyn Ross', 'Gemma Ayers', 'Athena Aguilera', 'Kira Pierre'], 'chapter_number': 65}, {'name': "Discussion on Playwright's Intent", 'date': 'August 24, 2026', 'event_type': 'Conversation', 'participants': ['Brooklyn Ross', 'Gemma Ayers'], 'chapter_number': 65}, {'name': 'Suspicious Behavior of Usher', 'date': 'August 24, 2026', 'event_type': 'Observation', 'participants': ['Brooklyn Ross', 'Athena Aguilera'], 'chapter_number': 65}, {'name': 'Commotion in Theater', 'date': 'August 24, 2026', 'event_type': 'Incident', 'participants': ['Brooklyn Ross', 'Kira Pierre'], 'chapter_number': 65}, {'name': 'Discovery of Abandoned Package', 'date': 'August 24, 2026', 'event_type': 'Investigation', 'participants': ['Brooklyn Ross'], 'chapter_number': 65}]
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 192 total (175 prompt + 17 completion, 1 calls)
+
+Question 240:
+  Text: Enumerate all activities that Carter Stewart has been involved in, ordered from earliest to latest in the story's chronology.
+  Expected: ['Scientific Conference', 'Karaoke Night', 'Ballet Performance', 'Classical Music Concert', 'Carnival', 'Parkour Workshop', 'Literary Festival', 'Theater Performance', 'Astronomy Night', 'Educational Workshop', 'Tech Hackathon', 'Archery Tournament', 'Scientific Conference']
+  Predicted: [{'name': 'Impromptu Karaoke Extravaganza', 'date': '2024-05-31', 'event_type': 'Performance', 'chapter_number': 141}, {'name': "Carter's Karaoke Performance", 'date': '2024-05-31', 'event_type': 'Performance', 'chapter_number': 141}, {'name': 'Symphony Performance', 'date': '2025-06-14', 'event_type': 'Performance', 'chapter_number': 145}, {'name': 'Literary Festival', 'date': '2025-12-25', 'event_type': 'Festival', 'chapter_number': 134}, {'name': 'Art Exhibition', 'date': '2025-12-25', 'event_type': 'Exhibition', 'chapter_number': 134}, {'name': "Carter Stewart's Performance", 'date': '2026-01-03', 'event_type': 'Performance', 'chapter_number': 29}, {'name': 'Midnight Hackathon', 'date': '2026-06-08', 'event_type': 'Hackathon', 'chapter_number': 111}, {'name': 'Unnatural Encounter', 'date': '2026-06-08', 'event_type': 'Confrontation', 'chapter_number': 111}, {'name': 'Digital Apocalypse Whisper', 'date': '2026-06-08', 'event_type': 'Supernatural Event', 'chapter_number': 111}, {'name': 'Stargazing Meditation Session', 'date': '2026-04-09', 'event_type': 'Workshop', 'chapter_number': 136}]
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 196 total (175 prompt + 21 completion, 1 calls)
+

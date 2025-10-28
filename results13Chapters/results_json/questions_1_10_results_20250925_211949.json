@@ -1,0 +1,454 @@
+{
+  "metadata": {
+    "start_time": "2025-09-25T21:14:41.335729",
+    "database": "database13questions",
+    "question_range": "1-10",
+    "total_questions": 10,
+    "end_time": "2025-09-25T21:19:49.475542",
+    "total_duration": 308.13764100000003
+  },
+  "results": [
+    {
+      "question_idx": 10,
+      "question": "Consider all events involving Astronomy Night. List all the locations where these events took place, without mentioning the events themselves.",
+      "answer": {
+        "session_id": "d9034ea7-29dc-4fa0-a5da-0ba83e5b7f07",
+        "question": "Consider all events involving Astronomy Night. List all the locations where these events took place, without mentioning the events themselves.",
+        "final_answer": [
+          "American Museum of Natural History"
+        ],
+        "standardized_answer": [
+          "American Museum of Natural History"
+        ],
+        "total_iterations": 2,
+        "search_successful": true,
+        "reasoning_chain": [
+          "By using a broader keyword like 'Astronomy', the search may capture related events that include 'Astronomy Night' as part of their description or categorization, thus increasing the chances of retrieving relevant locations. (Enhanced with semantic search: Astronomy Trivia Night in field name)"
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) RETURN DISTINCT e.location AS location"
+        ],
+        "token_usage": {
+          "prompt_tokens": 474,
+          "completion_tokens": 164,
+          "total_tokens": 638,
+          "calls_count": 2
+        }
+      },
+      "duration_seconds": 63.293131,
+      "status": "success",
+      "timestamp": "2025-09-25T21:14:41.335796",
+      "token_usage": {
+        "prompt_tokens": 474,
+        "completion_tokens": 164,
+        "total_tokens": 638,
+        "calls_count": 2
+      },
+      "expected_answer": [
+        "American Museum of Natural History"
+      ]
+    },
+    {
+      "question_idx": 10,
+      "question": "Consider all events involving Fashion Show. List all the locations where these events took place, without mentioning the events themselves.",
+      "answer": {
+        "session_id": "c49044f1-553a-44d2-b5a1-405916671ae5",
+        "question": "Consider all events involving Fashion Show. List all the locations where these events took place, without mentioning the events themselves.",
+        "final_answer": [
+          "American Museum of Natural History"
+        ],
+        "standardized_answer": [
+          "American Museum of Natural History"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) RETURN DISTINCT e.location AS location"
+        ],
+        "token_usage": {
+          "prompt_tokens": 175,
+          "completion_tokens": 16,
+          "total_tokens": 191,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 12.714749,
+      "status": "success",
+      "timestamp": "2025-09-25T21:15:44.629099",
+      "token_usage": {
+        "prompt_tokens": 175,
+        "completion_tokens": 16,
+        "total_tokens": 191,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "American Museum of Natural History"
+      ]
+    },
+    {
+      "question_idx": 10,
+      "question": "Consider all events involving Film Festival. List all the locations where these events took place, without mentioning the events themselves.",
+      "answer": {
+        "session_id": "020b433e-f066-466f-a339-4a0ce6e2e559",
+        "question": "Consider all events involving Film Festival. List all the locations where these events took place, without mentioning the events themselves.",
+        "final_answer": [
+          "Queensboro Bridge"
+        ],
+        "standardized_answer": [
+          "Queensboro Bridge"
+        ],
+        "total_iterations": 2,
+        "search_successful": true,
+        "reasoning_chain": [
+          "By using a broader keyword like 'Film', the search may capture a wider range of events that include film festivals, thus increasing the chances of retrieving relevant locations."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN DISTINCT e.location AS location"
+        ],
+        "token_usage": {
+          "prompt_tokens": 473,
+          "completion_tokens": 169,
+          "total_tokens": 642,
+          "calls_count": 2
+        }
+      },
+      "duration_seconds": 32.907755,
+      "status": "success",
+      "timestamp": "2025-09-25T21:15:57.343980",
+      "token_usage": {
+        "prompt_tokens": 473,
+        "completion_tokens": 169,
+        "total_tokens": 642,
+        "calls_count": 2
+      },
+      "expected_answer": [
+        "Queensboro Bridge"
+      ]
+    },
+    {
+      "question_idx": 10,
+      "question": "Consider all events involving Ice Sculpture Exhibition. List all the locations where these events took place, without mentioning the events themselves.",
+      "answer": {
+        "session_id": "3f60f176-c25c-4b05-91d6-f1daaa898a3b",
+        "question": "Consider all events involving Ice Sculpture Exhibition. List all the locations where these events took place, without mentioning the events themselves.",
+        "final_answer": [
+          "Washington Square Park"
+        ],
+        "standardized_answer": [
+          "Washington Square Park"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) RETURN DISTINCT e.location AS location"
+        ],
+        "token_usage": {
+          "prompt_tokens": 176,
+          "completion_tokens": 17,
+          "total_tokens": 193,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 11.211099,
+      "status": "success",
+      "timestamp": "2025-09-25T21:16:30.251901",
+      "token_usage": {
+        "prompt_tokens": 176,
+        "completion_tokens": 17,
+        "total_tokens": 193,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "Washington Square Park"
+      ]
+    },
+    {
+      "question_idx": 10,
+      "question": "Consider all events involving Karaoke Night. List all the locations where these events took place, without mentioning the events themselves.",
+      "answer": {
+        "session_id": "e0f5e299-2064-4c4d-8e98-26c1dc0e8281",
+        "question": "Consider all events involving Karaoke Night. List all the locations where these events took place, without mentioning the events themselves.",
+        "final_answer": [
+          "Hither Hills State Park"
+        ],
+        "standardized_answer": [
+          "Hither Hills State Park"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) RETURN DISTINCT e.location AS location"
+        ],
+        "token_usage": {
+          "prompt_tokens": 175,
+          "completion_tokens": 18,
+          "total_tokens": 193,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 19.595288,
+      "status": "success",
+      "timestamp": "2025-09-25T21:16:41.463094",
+      "token_usage": {
+        "prompt_tokens": 175,
+        "completion_tokens": 18,
+        "total_tokens": 193,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "Hither Hills State Park"
+      ]
+    },
+    {
+      "question_idx": 11,
+      "question": "Reflect on events related to Astronomy Night. Provide a list of all protagonists involved in these events, without describing the events.",
+      "answer": {
+        "session_id": "c812f0f6-7b89-484e-8911-635aa78a943a",
+        "question": "Reflect on events related to Astronomy Night. Provide a list of all protagonists involved in these events, without describing the events.",
+        "final_answer": [
+          "Levi Rodriguez",
+          "Presley Lunt",
+          "Kali Newcomb",
+          "Ronan Francois",
+          "Families",
+          "Audience"
+        ],
+        "standardized_answer": [
+          "Levi Rodriguez",
+          "Presley Lunt",
+          "Kali Newcomb",
+          "Ronan Francois",
+          "Families",
+          "Audience"
+        ],
+        "total_iterations": 2,
+        "search_successful": true,
+        "reasoning_chain": [
+          "By broadening the search to include related terms like 'Astronomy', we can capture a wider range of events that may include 'Astronomy Night' as a part of their description or type, thus increasing the chances of finding relevant participants. (Enhanced with semantic search: Astronomy Trivia Night in field name)"
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) RETURN DISTINCT e.participants AS participants",
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) RETURN DISTINCT e.participants AS participants"
+        ],
+        "token_usage": {
+          "prompt_tokens": 480,
+          "completion_tokens": 185,
+          "total_tokens": 665,
+          "calls_count": 2
+        }
+      },
+      "duration_seconds": 28.425641,
+      "status": "success",
+      "timestamp": "2025-09-25T21:17:01.058602",
+      "token_usage": {
+        "prompt_tokens": 480,
+        "completion_tokens": 185,
+        "total_tokens": 665,
+        "calls_count": 2
+      },
+      "expected_answer": [
+        "Levi Rodriguez"
+      ]
+    },
+    {
+      "question_idx": 11,
+      "question": "Reflect on events related to Fashion Show. Provide a list of all protagonists involved in these events, without describing the events.",
+      "answer": {
+        "session_id": "2e6b56ec-e0df-4526-b3b7-46b05e61d0d6",
+        "question": "Reflect on events related to Fashion Show. Provide a list of all protagonists involved in these events, without describing the events.",
+        "final_answer": [
+          "Chloe Castillo",
+          "Miles Pritchett",
+          "Amira Hayes",
+          "Other models",
+          "Audience"
+        ],
+        "standardized_answer": [
+          "Chloe Castillo",
+          "Miles Pritchett",
+          "Amira Hayes",
+          "Other models",
+          "Audience"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) AND e.participants IS NOT NULL AND size(e.participants) > 0 UNWIND e.participants AS participant RETURN DISTINCT participant AS participants"
+        ],
+        "token_usage": {
+          "prompt_tokens": 176,
+          "completion_tokens": 20,
+          "total_tokens": 196,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 13.809089,
+      "status": "success",
+      "timestamp": "2025-09-25T21:17:29.484637",
+      "token_usage": {
+        "prompt_tokens": 176,
+        "completion_tokens": 20,
+        "total_tokens": 196,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "Chloe Castillo"
+      ]
+    },
+    {
+      "question_idx": 11,
+      "question": "Reflect on events related to Film Festival. Provide a list of all protagonists involved in these events, without describing the events.",
+      "answer": {
+        "session_id": "2d4e2ceb-906a-45e1-bb65-acc0869323dc",
+        "question": "Reflect on events related to Film Festival. Provide a list of all protagonists involved in these events, without describing the events.",
+        "final_answer": [
+          "Henry Reed",
+          "Zander Davenport",
+          "Oakley Goetz",
+          "Jonah Kramer",
+          "Karsyn Schaeffer",
+          "Attendees"
+        ],
+        "standardized_answer": [
+          "Henry Reed",
+          "Zander Davenport",
+          "Oakley Goetz",
+          "Jonah Kramer",
+          "Karsyn Schaeffer",
+          "Attendees"
+        ],
+        "total_iterations": 5,
+        "search_successful": true,
+        "reasoning_chain": [
+          "By broadening the search to include all events of the type 'Film Festival' without the participant filter, we can first identify relevant events and then analyze their participants, which may yield results even if some events do not have participants listed.",
+          "By using a broader keyword like 'Film', the search can capture a wider range of events that may include film festivals, thus increasing the chances of retrieving relevant participants.",
+          "By using a broader search that looks for any events containing 'Film' in the event_type and ensuring to retrieve all participants, it increases the chances of capturing relevant events and their protagonists.",
+          "By using a broader keyword like 'Film', the search may capture a wider range of events that include film festivals and other related activities, potentially yielding participants involved in those events."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE e.event_type CONTAINS $kw AND e.participants IS NOT NULL AND size(e.participants) > 0 RETURN DISTINCT e.participants AS participants",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) AND e.participants IS NOT NULL AND size(e.participants) > 0 RETURN DISTINCT e.participants AS participants",
+          "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) AND e.participants IS NOT NULL AND size(e.participants) > 0 UNWIND e.participants AS participant RETURN DISTINCT participant AS participants",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) AND e.participants IS NOT NULL AND size(e.participants) > 0 UNWIND e.participants AS participant RETURN DISTINCT participant AS participants",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) AND e.participants IS NOT NULL AND size(e.participants) > 0 UNWIND e.participants AS participant RETURN DISTINCT participant AS participants"
+        ],
+        "token_usage": {
+          "prompt_tokens": 1793,
+          "completion_tokens": 682,
+          "total_tokens": 2475,
+          "calls_count": 5
+        }
+      },
+      "duration_seconds": 101.762846,
+      "status": "success",
+      "timestamp": "2025-09-25T21:17:43.293939",
+      "token_usage": {
+        "prompt_tokens": 1793,
+        "completion_tokens": 682,
+        "total_tokens": 2475,
+        "calls_count": 5
+      },
+      "expected_answer": [
+        "Henry Reed"
+      ]
+    },
+    {
+      "question_idx": 11,
+      "question": "Reflect on events related to Ice Sculpture Exhibition. Provide a list of all protagonists involved in these events, without describing the events.",
+      "answer": {
+        "session_id": "926cd0b5-5feb-46c5-bfaa-e6fbcc64fe37",
+        "question": "Reflect on events related to Ice Sculpture Exhibition. Provide a list of all protagonists involved in these events, without describing the events.",
+        "final_answer": [
+          "Henry Reed",
+          "Luka Shaffer",
+          "Meredith Lester",
+          "Families",
+          "Audience"
+        ],
+        "standardized_answer": [
+          "Henry Reed",
+          "Luka Shaffer",
+          "Meredith Lester",
+          "Families",
+          "Audience"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) RETURN DISTINCT e.participants AS participants"
+        ],
+        "token_usage": {
+          "prompt_tokens": 177,
+          "completion_tokens": 21,
+          "total_tokens": 198,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 12.351313,
+      "status": "success",
+      "timestamp": "2025-09-25T21:19:25.057164",
+      "token_usage": {
+        "prompt_tokens": 177,
+        "completion_tokens": 21,
+        "total_tokens": 198,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "Henry Reed"
+      ]
+    },
+    {
+      "question_idx": 11,
+      "question": "Reflect on events related to Karaoke Night. Provide a list of all protagonists involved in these events, without describing the events.",
+      "answer": {
+        "session_id": "983a4980-1a25-4ac8-ba47-b8dfe4be487a",
+        "question": "Reflect on events related to Karaoke Night. Provide a list of all protagonists involved in these events, without describing the events.",
+        "final_answer": [
+          "Zoe Brown",
+          "Uri Wemple",
+          "Hezekiah Bean",
+          "Live band",
+          "Audience"
+        ],
+        "standardized_answer": [
+          "Zoe Brown",
+          "Uri Wemple",
+          "Hezekiah Bean",
+          "Live band",
+          "Audience"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN DISTINCT e.participants AS participants"
+        ],
+        "token_usage": {
+          "prompt_tokens": 176,
+          "completion_tokens": 22,
+          "total_tokens": 198,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 12.06673,
+      "status": "success",
+      "timestamp": "2025-09-25T21:19:37.408656",
+      "token_usage": {
+        "prompt_tokens": 176,
+        "completion_tokens": 22,
+        "total_tokens": 198,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "Zoe Brown"
+      ]
+    }
+  ]
+}

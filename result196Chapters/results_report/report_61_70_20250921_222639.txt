@@ -1,0 +1,103 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-21 22:26:39
+Question Range: 61-70
+Total Questions Processed: 10
+Successful Searches: 9 (90.0%)
+Questions with Answers: 9 (90.0%)
+Average Iterations per Question: 2.5
+
+DETAILED RESULTS:
+------------------------------
+
+Question 61:
+  Text: Recall all events related to Book Signing Event. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['May 11, 2026', 'June 14, 2025']
+  Predicted: ['2025-06-14']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 194 total (177 prompt + 17 completion, 1 calls)
+
+Question 62:
+  Text: Recall all events related to Business Networking Event. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['November 13, 2026', 'March 23, 2024']
+  Predicted: ['2024-03-23', 'July 25, 2024', 'March 23, 2024', 'July 31, 2025']
+  Search Success: True
+  Confidence: 0.20
+  Iterations: 5
+  Token Usage: 1758 total (1242 prompt + 516 completion, 4 calls)
+
+Question 63:
+  Text: Recall all events related to Flash Mob. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['May 11, 2026', 'April 09, 2026']
+  Predicted: ['April 09, 2026', '2026-05-11']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 192 total (176 prompt + 16 completion, 1 calls)
+
+Question 64:
+  Text: Recall all events related to Tech Product Launch. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['February 27, 2026', 'July 31, 2025']
+  Predicted: ['February 27, 2026']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+  Token Usage: 194 total (177 prompt + 17 completion, 1 calls)
+
+Question 65:
+  Text: Consider all events involving Book Signing Event. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['The Vessel at Hudson Yards', 'Bethpage Black Course']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2805 total (1962 prompt + 843 completion, 6 calls)
+
+Question 66:
+  Text: Consider all events involving Business Networking Event. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['High Line', 'Ellis Island']
+  Predicted: ['High Line', 'Snug Harbor Cultural Center', 'Bethpage Black Course', 'Woolworth Building']
+  Search Success: True
+  Confidence: 0.40
+  Iterations: 4
+  Token Usage: 1189 total (862 prompt + 327 completion, 3 calls)
+
+Question 67:
+  Text: Consider all events involving Flash Mob. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Ellis Island', 'American Museum of Natural History']
+  Predicted: ['Ellis Island', 'American Museum of Natural History']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 191 total (175 prompt + 16 completion, 1 calls)
+
+Question 68:
+  Text: Consider all events involving Tech Product Launch. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Museum of Modern Art', 'Port Jefferson']
+  Predicted: ['Museum of Modern Art']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+  Token Usage: 193 total (176 prompt + 17 completion, 1 calls)
+
+Question 69:
+  Text: Reflect on events related to Book Signing Event. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Hazel Lewis', 'Scarlett Thomas']
+  Predicted: ['Scarlett Thomas', 'Urijah Vazquez', 'Genevieve Oliveira']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 198 total (177 prompt + 21 completion, 1 calls)
+
+Question 70:
+  Text: Reflect on events related to Business Networking Event. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Logan Diaz', 'Julian Ross']
+  Predicted: ['Meredith Gardner', 'Uri Wemple', 'Logan Diaz', 'Benjamin Green', 'Genevieve Burgin', 'Una Bray', 'Carter Stewart', 'Leighton Fisher', 'Henry Reed', 'Weston Hensley', 'Jamal Callahan', 'Daisy Chen']
+  Search Success: True
+  Confidence: 0.60
+  Iterations: 3
+  Token Usage: 681 total (523 prompt + 158 completion, 2 calls)
+

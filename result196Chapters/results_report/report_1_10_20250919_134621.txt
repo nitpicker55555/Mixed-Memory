@@ -1,0 +1,53 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-19 13:46:21
+Question Range: 1-5
+Total Questions Processed: 5
+Successful Searches: 0 (0.0%)
+Questions with Answers: 0 (0.0%)
+Average Iterations per Question: 5.0
+
+DETAILED RESULTS:
+------------------------------
+
+Question 1:
+  Text: Reflect on events related to 3D Printing Workshop. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 2:
+  Text: Reflect on events related to Anime Marathon. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 3:
+  Text: Reflect on events related to Board Game Night. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 4:
+  Text: Reflect on events related to Boat Show. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 5:
+  Text: Reflect on events related to Bubble Tea Festival. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+

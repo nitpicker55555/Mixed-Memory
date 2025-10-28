@@ -1,0 +1,93 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-19 01:15:20
+Question Range: 41-50
+Total Questions Processed: 10
+Successful Searches: 10 (100.0%)
+Questions with Answers: 10 (100.0%)
+Average Iterations per Question: 1.5
+
+DETAILED RESULTS:
+------------------------------
+
+Question 41:
+  Text: Think about Ezra Edwards's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.
+  Expected: ['Parkour Workshop']
+  Predicted: {"name":"Bethpage Black Parkour Workshop","event_type":"Parkour Workshop","description":"A group of participants, led by Ezra Edwards, attend a parkour workshop involving demonstrations, challenges, and camaraderie on a golf course."}
+  Search Success: True
+  Confidence: 0.60
+  Iterations: 3
+
+Question 42:
+  Text: Think about Jackson Ramos's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.
+  Expected: ['Theater Performance']
+  Predicted: {"name": "High Line Tragedy Play", "event_type": "Theatrical Performance", "description": "A tragic play is performed, reflecting the struggles and despair of the characters and audience, with Jackson Ramos confronting personal and artistic challenges.", "participants": ["Jackson Ramos", "Remy Waterman", "Kylee Beard", "Other actors", "Audience"]}
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+
+Question 43:
+  Text: Think about Julian Ross's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.
+  Expected: ['Tech Hackathon']
+  Predicted: ['Woolworth Building Hackathon']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+
+Question 44:
+  Text: Think about Levi Rodriguez's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.
+  Expected: ['Astronomy Night']
+  Predicted: ['Levi Rodriguez hosts an astronomy trivia contest, engaging participants in a night of cosmic questions and camaraderie.']
+  Search Success: True
+  Confidence: 0.60
+  Iterations: 3
+
+Question 45:
+  Text: What is the most recent location where Chloe Castillo was observed in the story's chronological timeline?
+  Expected: ['American Museum of Natural History']
+  Predicted: American Museum of Natural History
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+
+Question 46:
+  Text: What is the most recent location where Ezra Edwards was observed in the story's chronological timeline?
+  Expected: ['Bethpage Black Course']
+  Predicted: Bethpage Black Course
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+
+Question 47:
+  Text: What is the most recent location where Jackson Ramos was observed in the story's chronological timeline?
+  Expected: ['High Line']
+  Predicted: High Line Theater
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+
+Question 48:
+  Text: What is the most recent location where Julian Ross was observed in the story's chronological timeline?
+  Expected: ['Woolworth Building']
+  Predicted: Woolworth Building
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+
+Question 49:
+  Text: What is the most recent location where Levi Rodriguez was observed in the story's chronological timeline?
+  Expected: ['American Museum of Natural History']
+  Predicted: American Museum of Natural History
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+
+Question 50:
+  Text: What was Chloe Castillo doing the last time they were observed in the story's timeline?
+  Expected: ['Fashion Show']
+  Predicted: Chloe Castillo was unveiling her new fashion collection inspired by nature and the cosmos at her fashion show.
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+

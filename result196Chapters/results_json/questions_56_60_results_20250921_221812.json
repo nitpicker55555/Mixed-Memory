@@ -1,0 +1,208 @@
+{
+  "metadata": {
+    "start_time": "2025-09-21T22:15:13.663207",
+    "database": "197chapters2",
+    "question_range": "56-60",
+    "total_questions": 5,
+    "end_time": "2025-09-21T22:18:12.454926",
+    "total_duration": 178.790684
+  },
+  "results": [
+    {
+      "question_idx": 9,
+      "question": "Recall all events related to Ballet Performance. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "10708ada-971e-4ff6-9202-8587bab5dfbe",
+        "question": "Recall all events related to Ballet Performance. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": null,
+        "standardized_answer": [],
+        "total_iterations": 5,
+        "search_successful": false,
+        "reasoning_chain": [
+          "Enhanced with semantic search: Dance Performance in field event_type",
+          "Focusing on a more specific keyword related to the type of performance will likely yield better results, as it aligns more closely with the intended query. (Enhanced with semantic search: Dance Performance in field event_type)",
+          "By using a broader keyword like 'Dance Performance', the search can capture a wider range of events that may include ballet performances, even if they are not explicitly labeled as such.",
+          "By broadening the search to include any mention of 'Ballet' in the event_type, it increases the chances of capturing relevant events that may not be explicitly labeled as 'Ballet Performance'. (Enhanced with semantic search: Ballroom in field event_type)",
+          "By using a broader keyword like 'Ballet', the search can include various events related to ballet performances, increasing the chances of retrieving relevant dates. (Enhanced with semantic search: Ballroom in field event_type)"
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) OR toLower(e.event_type) CONTAINS toLower($kw) RETURN e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.event_type) = toLower(\"Ballet Performance\") RETURN e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower(\"Ballet\") RETURN e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.event_type) = toLower(\"Ballet Performance\") RETURN e.date AS date"
+        ],
+        "token_usage": {
+          "prompt_tokens": 1719,
+          "completion_tokens": 653,
+          "total_tokens": 2372,
+          "calls_count": 5
+        }
+      },
+      "duration_seconds": 93.453433,
+      "status": "success",
+      "timestamp": "2025-09-21T22:15:13.663254",
+      "token_usage": {
+        "prompt_tokens": 1719,
+        "completion_tokens": 653,
+        "total_tokens": 2372,
+        "calls_count": 5
+      },
+      "expected_answer": [
+        "October 27, 2024"
+      ]
+    },
+    {
+      "question_idx": 9,
+      "question": "Recall all events related to Craft Beer Festival. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "2df98bc4-e185-4eef-8fc2-2641dd566131",
+        "question": "Recall all events related to Craft Beer Festival. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": [
+          "October 13, 2024"
+        ],
+        "standardized_answer": [
+          "October 13, 2024"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.name) = toLower($kw) OR toLower(e.event_type) = toLower($kw) RETURN DISTINCT e.date AS date"
+        ],
+        "token_usage": {
+          "prompt_tokens": 177,
+          "completion_tokens": 17,
+          "total_tokens": 194,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 11.876907,
+      "status": "success",
+      "timestamp": "2025-09-21T22:16:47.117001",
+      "token_usage": {
+        "prompt_tokens": 177,
+        "completion_tokens": 17,
+        "total_tokens": 194,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "October 13, 2024"
+      ]
+    },
+    {
+      "question_idx": 9,
+      "question": "Recall all events related to Drone Racing Event. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "e57dc8d0-f746-490d-844e-1766f5642903",
+        "question": "Recall all events related to Drone Racing Event. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": [
+          "May 28, 2025"
+        ],
+        "standardized_answer": [
+          "May 28, 2025"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE e.name = $kw OR e.event_type = $kw RETURN e.date AS date"
+        ],
+        "token_usage": {
+          "prompt_tokens": 177,
+          "completion_tokens": 17,
+          "total_tokens": 194,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 14.438563,
+      "status": "success",
+      "timestamp": "2025-09-21T22:16:58.994196",
+      "token_usage": {
+        "prompt_tokens": 177,
+        "completion_tokens": 17,
+        "total_tokens": 194,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "May 28, 2025"
+      ]
+    },
+    {
+      "question_idx": 9,
+      "question": "Recall all events related to Farmers Market. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "6da52a9b-0a1b-4781-8d98-6c827b6b1e3f",
+        "question": "Recall all events related to Farmers Market. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": [
+          "July 13, 2024"
+        ],
+        "standardized_answer": [
+          "July 13, 2024"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) OR toLower(e.event_type) CONTAINS toLower($kw) RETURN DISTINCT e.date AS date"
+        ],
+        "token_usage": {
+          "prompt_tokens": 176,
+          "completion_tokens": 17,
+          "total_tokens": 193,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 11.505307,
+      "status": "success",
+      "timestamp": "2025-09-21T22:17:13.432940",
+      "token_usage": {
+        "prompt_tokens": 176,
+        "completion_tokens": 17,
+        "total_tokens": 193,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "July 13, 2024"
+      ]
+    },
+    {
+      "question_idx": 9,
+      "question": "Recall all events related to Flower Show. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "04603dae-d4d4-4ae5-bff1-1e225acc977f",
+        "question": "Recall all events related to Flower Show. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": [
+          "March 23, 2024"
+        ],
+        "standardized_answer": [
+          "March 23, 2024"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) OR toLower(e.event_type) CONTAINS toLower($kw) RETURN e.date AS date"
+        ],
+        "token_usage": {
+          "prompt_tokens": 176,
+          "completion_tokens": 16,
+          "total_tokens": 192,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 47.516474,
+      "status": "success",
+      "timestamp": "2025-09-21T22:17:24.938324",
+      "token_usage": {
+        "prompt_tokens": 176,
+        "completion_tokens": 16,
+        "total_tokens": 192,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "March 23, 2024"
+      ]
+    }
+  ]
+}

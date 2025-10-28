@@ -1,0 +1,269 @@
+{
+  "metadata": {
+    "start_time": "2025-09-19T01:11:42.788140",
+    "database": "database13questions",
+    "question_range": "41-50",
+    "total_questions": 10,
+    "end_time": "2025-09-19T01:15:20.191857",
+    "total_duration": 217.400707
+  },
+  "results": [
+    {
+      "question_idx": 8,
+      "question": "Think about Ezra Edwards's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+      "answer": {
+        "session_id": "56cd83d1-266b-4aee-b46b-014a5d85baf6",
+        "question": "Think about Ezra Edwards's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+        "final_answer": "{\"name\":\"Bethpage Black Parkour Workshop\",\"event_type\":\"Parkour Workshop\",\"description\":\"A group of participants, led by Ezra Edwards, attend a parkour workshop involving demonstrations, challenges, and camaraderie on a golf course.\"}",
+        "standardized_answer": [
+          "{\"name\":\"Bethpage Black Parkour Workshop\",\"event_type\":\"Parkour Workshop\",\"description\":\"A group of participants, led by Ezra Edwards, attend a parkour workshop involving demonstrations, challenges, and camaraderie on a golf course.\"}"
+        ],
+        "total_iterations": 3,
+        "search_successful": true,
+        "reasoning_chain": [
+          "Execution error: {code: Neo.ClientError.Statement.TypeError} {message: Expected a string value for `toLower`, but got: StringArray[Ezra Edwards, Noa Middleton, Mara Ledbetter, Sienna Hamrick, Reid Blunt, Ronan Guevara, Other participants]; consider converting it to a string with toString().}",
+          "Execution error: {code: Neo.ClientError.Statement.TypeError} {message: Invalid input for function 'toString()': Expected a String, Float, Integer, Boolean, Temporal or Duration, got: StringArray[Ezra Edwards, Noa Middleton, Mara Ledbetter, Sienna Hamrick, Reid Blunt, Ronan Guevara, Other participants]}"
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.participants) CONTAINS toLower('Ezra Edwards') RETURN DISTINCT e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants",
+          "MATCH (e:Event) WHERE toLower(toString(e.participants)) CONTAINS toLower('Ezra Edwards') RETURN DISTINCT e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants",
+          "MATCH (e:Event) WHERE 'Ezra Edwards' IN e.participants RETURN DISTINCT e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants"
+        ]
+      },
+      "duration_seconds": 56.69944,
+      "status": "success",
+      "timestamp": "2025-09-19T01:11:42.788197",
+      "expected_answer": [
+        "Parkour Workshop"
+      ]
+    },
+    {
+      "question_idx": 8,
+      "question": "Think about Jackson Ramos's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+      "answer": {
+        "session_id": "0858af7a-68ea-43cd-8bbb-15c7fb4b763d",
+        "question": "Think about Jackson Ramos's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+        "final_answer": "{\"name\": \"High Line Tragedy Play\", \"event_type\": \"Theatrical Performance\", \"description\": \"A tragic play is performed, reflecting the struggles and despair of the characters and audience, with Jackson Ramos confronting personal and artistic challenges.\", \"participants\": [\"Jackson Ramos\", \"Remy Waterman\", \"Kylee Beard\", \"Other actors\", \"Audience\"]}",
+        "standardized_answer": [
+          "{\"name\": \"High Line Tragedy Play\", \"event_type\": \"Theatrical Performance\", \"description\": \"A tragic play is performed, reflecting the struggles and despair of the characters and audience, with Jackson Ramos confronting personal and artistic challenges.\", \"participants\": [\"Jackson Ramos\", \"Remy Waterman\", \"Kylee Beard\", \"Other actors\", \"Audience\"]}"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE $person IN e.participants RETURN DISTINCT e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants"
+        ]
+      },
+      "duration_seconds": 14.972639,
+      "status": "success",
+      "timestamp": "2025-09-19T01:12:39.488797",
+      "expected_answer": [
+        "Theater Performance"
+      ]
+    },
+    {
+      "question_idx": 8,
+      "question": "Think about Julian Ross's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+      "answer": {
+        "session_id": "fdf4b29f-4626-4def-bfc5-af6c320afa10",
+        "question": "Think about Julian Ross's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+        "final_answer": [
+          "Woolworth Building Hackathon"
+        ],
+        "standardized_answer": [
+          "Woolworth Building Hackathon"
+        ],
+        "total_iterations": 2,
+        "search_successful": true,
+        "reasoning_chain": [
+          "Execution error: {code: Neo.ClientError.Statement.TypeError} {message: Expected a string value for `toLower`, but got: StringArray[Ezra Edwards, Noa Middleton, Mara Ledbetter, Sienna Hamrick, Reid Blunt, Ronan Guevara, Other participants]; consider converting it to a string with toString().}"
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.participants) CONTAINS toLower('Julian Ross') RETURN DISTINCT e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants",
+          "MATCH (e:Event) WHERE ANY(participant IN e.participants WHERE toLower(participant) = toLower($person)) RETURN e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants"
+        ]
+      },
+      "duration_seconds": 22.321135,
+      "status": "success",
+      "timestamp": "2025-09-19T01:12:54.461729",
+      "expected_answer": [
+        "Tech Hackathon"
+      ]
+    },
+    {
+      "question_idx": 8,
+      "question": "Think about Levi Rodriguez's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+      "answer": {
+        "session_id": "b83cff01-05ed-47c8-8fe2-581526affe93",
+        "question": "Think about Levi Rodriguez's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+        "final_answer": [
+          "Levi Rodriguez hosts an astronomy trivia contest, engaging participants in a night of cosmic questions and camaraderie."
+        ],
+        "standardized_answer": [
+          "Levi Rodriguez hosts an astronomy trivia contest, engaging participants in a night of cosmic questions and camaraderie."
+        ],
+        "total_iterations": 3,
+        "search_successful": true,
+        "reasoning_chain": [
+          "Execution error: {code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input 'FOR': expected an expression, ',' or ']' (line 1, column 134 (offset: 133))\n\"MATCH (e:Event) WHERE 'Levi Rodriguez' IN e.participants AND e.participants IS NOT NULL AND toLower('Levi Rodriguez') IN [toLower(p) FOR p IN e.participants] RETURN e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants\"\n                                                                                                                                      ^}",
+          "Execution error: {code: Neo.ClientError.Statement.SyntaxError} {message: Variable `p` not defined (line 1, column 61 (offset: 60))\n\"MATCH (e:Event) WHERE toLower('Levi Rodriguez') IN [toLower(p) IN e.participants] RETURN e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants\"\n                                                             ^}"
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Levi Rodriguez' IN e.participants AND e.participants IS NOT NULL AND toLower('Levi Rodriguez') IN [toLower(p) FOR p IN e.participants] RETURN e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants",
+          "MATCH (e:Event) WHERE toLower('Levi Rodriguez') IN [toLower(p) IN e.participants] RETURN e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants",
+          "MATCH (e:Event) WHERE any(participant IN e.participants WHERE toLower(participant) = toLower('Levi Rodriguez')) RETURN e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants"
+        ]
+      },
+      "duration_seconds": 41.389315,
+      "status": "success",
+      "timestamp": "2025-09-19T01:13:16.783182",
+      "expected_answer": [
+        "Astronomy Night"
+      ]
+    },
+    {
+      "question_idx": 31,
+      "question": "What is the most recent location where Chloe Castillo was observed in the story's chronological timeline?",
+      "answer": {
+        "session_id": "912c239d-0e14-4fb7-b584-8d97a3e04ae5",
+        "question": "What is the most recent location where Chloe Castillo was observed in the story's chronological timeline?",
+        "final_answer": "American Museum of Natural History",
+        "standardized_answer": [
+          "American Museum of Natural History"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Chloe Castillo' IN e.participants ORDER BY e.date DESC LIMIT 1 RETURN e.date AS date, e.location AS location, e.participants AS participants"
+        ]
+      },
+      "duration_seconds": 16.683774,
+      "status": "success",
+      "timestamp": "2025-09-19T01:13:58.172812",
+      "expected_answer": [
+        "American Museum of Natural History"
+      ]
+    },
+    {
+      "question_idx": 31,
+      "question": "What is the most recent location where Ezra Edwards was observed in the story's chronological timeline?",
+      "answer": {
+        "session_id": "c1fdc7bb-e96e-4304-bd69-3faf29e76b70",
+        "question": "What is the most recent location where Ezra Edwards was observed in the story's chronological timeline?",
+        "final_answer": "Bethpage Black Course",
+        "standardized_answer": [
+          "Bethpage Black Course"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Ezra Edwards' IN e.participants AND e.date IS NOT NULL ORDER BY e.date DESC LIMIT 1 RETURN e.date AS date, e.location AS location, e.participants AS participants"
+        ]
+      },
+      "duration_seconds": 14.192883,
+      "status": "success",
+      "timestamp": "2025-09-19T01:14:14.856706",
+      "expected_answer": [
+        "Bethpage Black Course"
+      ]
+    },
+    {
+      "question_idx": 31,
+      "question": "What is the most recent location where Jackson Ramos was observed in the story's chronological timeline?",
+      "answer": {
+        "session_id": "ce9d0db3-de66-42a3-a16c-0dd17f1632c4",
+        "question": "What is the most recent location where Jackson Ramos was observed in the story's chronological timeline?",
+        "final_answer": "High Line Theater",
+        "standardized_answer": [
+          "High Line Theater"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Jackson Ramos' IN e.participants ORDER BY e.date DESC LIMIT 1 RETURN e.date AS date, e.location AS location, e.participants AS participants"
+        ]
+      },
+      "duration_seconds": 13.748883,
+      "status": "success",
+      "timestamp": "2025-09-19T01:14:29.049770",
+      "expected_answer": [
+        "High Line"
+      ]
+    },
+    {
+      "question_idx": 31,
+      "question": "What is the most recent location where Julian Ross was observed in the story's chronological timeline?",
+      "answer": {
+        "session_id": "73eddbf8-90a7-43a1-ab48-84fc1b751454",
+        "question": "What is the most recent location where Julian Ross was observed in the story's chronological timeline?",
+        "final_answer": "Woolworth Building",
+        "standardized_answer": [
+          "Woolworth Building"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Julian Ross' IN e.participants ORDER BY e.date DESC LIMIT 1 RETURN e.date AS date, e.location AS location, e.participants AS participants"
+        ]
+      },
+      "duration_seconds": 10.999201,
+      "status": "success",
+      "timestamp": "2025-09-19T01:14:42.798781",
+      "expected_answer": [
+        "Woolworth Building"
+      ]
+    },
+    {
+      "question_idx": 31,
+      "question": "What is the most recent location where Levi Rodriguez was observed in the story's chronological timeline?",
+      "answer": {
+        "session_id": "43004b35-2156-4f51-9c5f-ff5c792e1c23",
+        "question": "What is the most recent location where Levi Rodriguez was observed in the story's chronological timeline?",
+        "final_answer": "American Museum of Natural History",
+        "standardized_answer": [
+          "American Museum of Natural History"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Levi Rodriguez' IN e.participants ORDER BY e.date DESC LIMIT 1 RETURN e.date AS date, e.location AS location, e.participants AS participants"
+        ]
+      },
+      "duration_seconds": 13.523934,
+      "status": "success",
+      "timestamp": "2025-09-19T01:14:53.798094",
+      "expected_answer": [
+        "American Museum of Natural History"
+      ]
+    },
+    {
+      "question_idx": 32,
+      "question": "What was Chloe Castillo doing the last time they were observed in the story's timeline?",
+      "answer": {
+        "session_id": "0426d0a2-2359-47ab-9373-485f2425880d",
+        "question": "What was Chloe Castillo doing the last time they were observed in the story's timeline?",
+        "final_answer": "Chloe Castillo was unveiling her new fashion collection inspired by nature and the cosmos at her fashion show.",
+        "standardized_answer": [
+          "Chloe Castillo was unveiling her new fashion collection inspired by nature and the cosmos at her fashion show."
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Chloe Castillo' IN e.participants ORDER BY e.date DESC LIMIT 1 RETURN e.date AS date, e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants"
+        ]
+      },
+      "duration_seconds": 12.869503,
+      "status": "success",
+      "timestamp": "2025-09-19T01:15:07.322171",
+      "expected_answer": [
+        "Fashion Show"
+      ]
+    }
+  ]
+}

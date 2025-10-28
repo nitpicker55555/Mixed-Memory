@@ -2,6 +2,7 @@
 .env
 .env.backup
 .env.local
+*.env
 
 # Python cache
 __pycache__/
@@ -9,20 +10,55 @@ __pycache__/
 *.pyo
 *.pyd
 .Python
+*.py[cod]
+*$py.class
 
-# Neo4j and OpenAI credentials
-*.env
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
 
 # IDE files
 .vscode/
 .idea/
 *.swp
 *.swo
+*.sublime-project
+*.sublime-workspace
 
 # OS files
 .DS_Store
 Thumbs.db
+*.bak
 
 # Temporary files
 *.tmp
 *.temp
+*.log
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# Large data files (optional - uncomment if needed)
+# results/
+# cache/embeddings/
+# cache/neo4j/*.json
+
+# Model outputs
+*.pkl
+*.h5
+*.ckpt

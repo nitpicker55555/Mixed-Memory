@@ -1,0 +1,58 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-21 21:18:12
+Question Range: 46-50
+Total Questions Processed: 5
+Successful Searches: 3 (60.0%)
+Questions with Answers: 3 (60.0%)
+Average Iterations per Question: 3.2
+
+DETAILED RESULTS:
+------------------------------
+
+Question 46:
+  Text: Reflect on events related to Ballet Performance. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Carter Stewart']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2783 total (1978 prompt + 805 completion, 6 calls)
+
+Question 47:
+  Text: Reflect on events related to Craft Beer Festival. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Scarlett Thomas']
+  Predicted: ['Scarlett Thomas', 'Meredith Lester', 'Presley Lunt', 'Kali Newcomb', 'Ronan Francois', 'Cora Xiong', 'Nyla Bower', 'Delphi Parent']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 198 total (177 prompt + 21 completion, 1 calls)
+
+Question 48:
+  Text: Reflect on events related to Drone Racing Event. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Brooklyn Ross']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2967 total (2133 prompt + 834 completion, 6 calls)
+
+Question 49:
+  Text: Reflect on events related to Farmers Market. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Lucy Carter']
+  Predicted: ['Lucy Carter', 'Evangeline Lassiter', 'Arya Huffman']
+  Search Success: True
+  Confidence: 0.40
+  Iterations: 4
+  Token Usage: 1754 total (1241 prompt + 513 completion, 4 calls)
+
+Question 50:
+  Text: Reflect on events related to Flower Show. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Jackson Hall']
+  Predicted: ['Jackson Hall', 'Jorah Logsdon', 'Memphis Brito', 'Asa Villarreal']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 196 total (176 prompt + 20 completion, 1 calls)
+

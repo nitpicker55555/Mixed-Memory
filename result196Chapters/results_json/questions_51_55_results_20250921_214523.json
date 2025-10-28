@@ -1,0 +1,223 @@
+{
+  "metadata": {
+    "start_time": "2025-09-21T21:39:59.581151",
+    "database": "196chapters",
+    "question_range": "51-55",
+    "total_questions": 5,
+    "end_time": "2025-09-21T21:45:23.001856",
+    "total_duration": 323.419187
+  },
+  "results": [
+    {
+      "question_idx": 10,
+      "question": "Consider all events involving Ballet Performance. List all the locations where these events took place, without mentioning the events themselves.",
+      "answer": {
+        "session_id": "1a4e3fbe-f6e3-4c9a-ac3b-72eb18b04539",
+        "question": "Consider all events involving Ballet Performance. List all the locations where these events took place, without mentioning the events themselves.",
+        "final_answer": null,
+        "standardized_answer": [],
+        "total_iterations": 5,
+        "search_successful": false,
+        "reasoning_chain": [
+          "By broadening the search to include all types of dance performances, we increase the likelihood of retrieving relevant locations, as there may be ballet events categorized under a more general term.",
+          "By focusing on a more specific term that directly relates to ballet, the search is more likely to yield relevant results. This approach narrows down the search to a specific category, increasing the chances of finding the desired locations.",
+          "By using a broader term like 'Ballet Performance' and ensuring the query allows for variations in case and phrasing, it increases the chances of matching relevant events and retrieving their locations. (Enhanced with semantic search: Dance Performance in field event_type)",
+          "By using a broader keyword like 'Ballet', the search can capture a wider range of events related to ballet performances, potentially revealing locations associated with various ballet-related events.",
+          "By using a broader keyword like 'dance', the search can capture a wider range of events that may include ballet performances, thus increasing the chances of retrieving relevant locations. (Enhanced with semantic search: Dance Performance in field event_type)"
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE toUpper(e.event_type) CONTAINS toUpper($kw) RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE toUpper(e.event_type) = toUpper($kw) RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE toUpper(e.event_type) CONTAINS toUpper($kw) RETURN DISTINCT e.location AS location"
+        ],
+        "token_usage": {
+          "prompt_tokens": 1959,
+          "completion_tokens": 859,
+          "total_tokens": 2818,
+          "calls_count": 6
+        }
+      },
+      "duration_seconds": 121.994027,
+      "status": "success",
+      "timestamp": "2025-09-21T21:39:59.581196",
+      "token_usage": {
+        "prompt_tokens": 1959,
+        "completion_tokens": 859,
+        "total_tokens": 2818,
+        "calls_count": 6
+      },
+      "expected_answer": [
+        "Port Jefferson"
+      ]
+    },
+    {
+      "question_idx": 10,
+      "question": "Consider all events involving Craft Beer Festival. List all the locations where these events took place, without mentioning the events themselves.",
+      "answer": {
+        "session_id": "00bf12fd-bed7-4f8d-a524-3d94e0055ec3",
+        "question": "Consider all events involving Craft Beer Festival. List all the locations where these events took place, without mentioning the events themselves.",
+        "final_answer": [
+          "Woolworth Building"
+        ],
+        "standardized_answer": [
+          "Woolworth Building"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE e.name = $kw RETURN DISTINCT e.location AS location"
+        ],
+        "token_usage": {
+          "prompt_tokens": 304,
+          "completion_tokens": 21,
+          "total_tokens": 325,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 12.904032,
+      "status": "success",
+      "timestamp": "2025-09-21T21:42:01.575541",
+      "token_usage": {
+        "prompt_tokens": 304,
+        "completion_tokens": 21,
+        "total_tokens": 325,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "Woolworth Building"
+      ]
+    },
+    {
+      "question_idx": 10,
+      "question": "Consider all events involving Drone Racing Event. List all the locations where these events took place, without mentioning the events themselves.",
+      "answer": {
+        "session_id": "4ceb0f0c-4515-4536-a060-c051be1e68ec",
+        "question": "Consider all events involving Drone Racing Event. List all the locations where these events took place, without mentioning the events themselves.",
+        "final_answer": null,
+        "standardized_answer": [],
+        "total_iterations": 5,
+        "search_successful": false,
+        "reasoning_chain": [
+          "By using a broader keyword, the search can capture a wider range of related events that may not be explicitly labeled as 'Drone Racing Event', thus increasing the chances of retrieving relevant locations. (Enhanced with semantic search: Drone Racing Event in field name)",
+          "By using a broader keyword, the search may capture related events that are categorized differently but still pertain to drone racing, thus increasing the chances of retrieving relevant locations. (Enhanced with semantic search: Drone Racing Event in field name)",
+          "By using a broader keyword, the search may capture more relevant events that are categorized under different but related terms, increasing the chances of retrieving the desired locations. (Enhanced with semantic search: Drone Racing Event in field name)",
+          "By using a broader keyword that encompasses part of the original query, we increase the chances of retrieving relevant events that may not match the exact phrase 'Drone Racing Event'. (Enhanced with semantic search: Drone Racing Event in field name)",
+          "By using broader or related terms, the search may capture events that are categorized differently but still pertain to drone racing, thus increasing the chances of retrieving relevant locations. (Enhanced with semantic search: Drone Racing Event in field name)"
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN DISTINCT e.location AS location"
+        ],
+        "token_usage": {
+          "prompt_tokens": 2398,
+          "completion_tokens": 1096,
+          "total_tokens": 3494,
+          "calls_count": 6
+        }
+      },
+      "duration_seconds": 107.71123,
+      "status": "success",
+      "timestamp": "2025-09-21T21:42:14.479742",
+      "token_usage": {
+        "prompt_tokens": 2398,
+        "completion_tokens": 1096,
+        "total_tokens": 3494,
+        "calls_count": 6
+      },
+      "expected_answer": [
+        "Guggenheim Museum"
+      ]
+    },
+    {
+      "question_idx": 10,
+      "question": "Consider all events involving Farmers Market. List all the locations where these events took place, without mentioning the events themselves.",
+      "answer": {
+        "session_id": "966b3c2d-2251-40a7-b5fe-3230dc7142a4",
+        "question": "Consider all events involving Farmers Market. List all the locations where these events took place, without mentioning the events themselves.",
+        "final_answer": [
+          "Queensboro Bridge",
+          "Grand Hall"
+        ],
+        "standardized_answer": [
+          "Queensboro Bridge",
+          "Grand Hall"
+        ],
+        "total_iterations": 4,
+        "search_successful": true,
+        "reasoning_chain": [
+          "By using a broader keyword like 'Market', the search can capture a wider range of events that may include Farmers Markets, thus increasing the chances of retrieving relevant locations.",
+          "By broadening the search to include related terms like 'Farmers', we can capture more events that may not strictly match 'Market' but are still relevant to farmers markets.",
+          "By using a broader term like 'market', the search can capture a wider range of events that may include farmers markets without being limited to a specific keyword. This increases the likelihood of retrieving relevant locations."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw) RETURN DISTINCT e.location AS location"
+        ],
+        "token_usage": {
+          "prompt_tokens": 1160,
+          "completion_tokens": 501,
+          "total_tokens": 1661,
+          "calls_count": 4
+        }
+      },
+      "duration_seconds": 68.681976,
+      "status": "success",
+      "timestamp": "2025-09-21T21:44:02.191279",
+      "token_usage": {
+        "prompt_tokens": 1160,
+        "completion_tokens": 501,
+        "total_tokens": 1661,
+        "calls_count": 4
+      },
+      "expected_answer": [
+        "Queensboro Bridge"
+      ]
+    },
+    {
+      "question_idx": 10,
+      "question": "Consider all events involving Flower Show. List all the locations where these events took place, without mentioning the events themselves.",
+      "answer": {
+        "session_id": "8b45f548-13e2-4db3-9d32-210344b9e6c7",
+        "question": "Consider all events involving Flower Show. List all the locations where these events took place, without mentioning the events themselves.",
+        "final_answer": [
+          "Williamsburg Bridge"
+        ],
+        "standardized_answer": [
+          "Williamsburg Bridge"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) RETURN DISTINCT e.location AS location"
+        ],
+        "token_usage": {
+          "prompt_tokens": 175,
+          "completion_tokens": 16,
+          "total_tokens": 191,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 12.127922,
+      "status": "success",
+      "timestamp": "2025-09-21T21:45:10.873760",
+      "token_usage": {
+        "prompt_tokens": 175,
+        "completion_tokens": 16,
+        "total_tokens": 191,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "Williamsburg Bridge"
+      ]
+    }
+  ]
+}

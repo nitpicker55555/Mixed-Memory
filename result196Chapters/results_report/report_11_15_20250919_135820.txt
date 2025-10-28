@@ -1,0 +1,61 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-19 13:58:20
+Question Range: 10-15
+Total Questions Processed: 6
+Successful Searches: 1 (16.7%)
+Questions with Answers: 1 (16.7%)
+Average Iterations per Question: 4.7
+
+DETAILED RESULTS:
+------------------------------
+
+Question 10:
+  Text: Consider all events involving Bubble Tea Festival. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 11:
+  Text: Recall all events related to 3D Printing Workshop. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 12:
+  Text: Recall all events related to Anime Marathon. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 13:
+  Text: Recall all events related to Board Game Night. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 14:
+  Text: Recall all events related to Boat Show. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 15:
+  Text: Recall all events related to Bubble Tea Festival. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: ['March 23, 2025', 'July 31, 2025', 'September 22, 2026', 'September 03, 2026', 'October 13, 2024', 'October 27, 2024', 'November 13, 2026', 'December 25, 2025', 'December 26, 2026', 'May 11, 2026', 'September 27, 2025']
+  Search Success: True
+  Confidence: 0.60
+  Iterations: 3
+

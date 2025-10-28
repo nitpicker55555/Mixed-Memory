@@ -1,0 +1,103 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-22 23:13:48
+Question Range: 161-170
+Total Questions Processed: 10
+Successful Searches: 10 (100.0%)
+Questions with Answers: 10 (100.0%)
+Average Iterations per Question: 1.5
+
+DETAILED RESULTS:
+------------------------------
+
+Question 161:
+  Text: Reflect on all events involving Ella Ross. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['April 09, 2026']
+  Predicted: ['April 09, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 192 total (176 prompt + 16 completion, 1 calls)
+
+Question 162:
+  Text: Reflect on all events involving Isaiah Bennett. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['July 21, 2024']
+  Predicted: ['2024-07-21']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 193 total (176 prompt + 17 completion, 1 calls)
+
+Question 163:
+  Text: Think about Aurora Chavez's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.
+  Expected: ['Tech Hackathon']
+  Predicted: ['The hackathon was in full swing with participants coding and debugging, showcasing innovation and technology.', 'Ainsley Ensign remarked on the turnout and the significance of the day for technology.', 'Aurora Chavez observed Gus Brubaker stuffing a USB drive into their pocket and leaving the room suspiciously.']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+  Token Usage: 198 total (181 prompt + 17 completion, 1 calls)
+
+Question 164:
+  Text: Think about Bella Alvarez's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.
+  Expected: ['Astronomy Night']
+  Predicted: ['Bella Alvarez organized an astronomy night that turned into a nightmare as attendees witnessed a vast, writhing mass of darkness in the sky.']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+  Token Usage: 197 total (181 prompt + 16 completion, 1 calls)
+
+Question 165:
+  Text: Think about Elizabeth Hill's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.
+  Expected: ['Classical Music Concert']
+  Predicted: ['The classical music concert transformed Washington Square Park into a magical amphitheater, where the audience experienced a blend of music and nature.']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 197 total (181 prompt + 16 completion, 1 calls)
+
+Question 166:
+  Text: Think about Ella Ross's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.
+  Expected: ['Photography Exhibition']
+  Predicted: ['The photography exhibition opened with Ella Ross showcasing her portrait series, drawing attention and scrutiny from the gathered crowd.', "Kenna Badger passionately discussed the deeper meanings behind the portraits, capturing Ella's attention.", 'Hugo Vanover approached Ella Ross to inquire about the story behind the seventh portrait, creating a tense atmosphere.']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+  Token Usage: 197 total (181 prompt + 16 completion, 1 calls)
+
+Question 167:
+  Text: Think about Isaiah Bennett's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.
+  Expected: ['Burlesque Performance']
+  Predicted: ['Burlesque Show Performance', 'Interrogation of Performers', 'Return of Stolen Necklace', 'Grand Finale Preparation']
+  Search Success: True
+  Confidence: 0.60
+  Iterations: 3
+  Token Usage: 198 total (181 prompt + 17 completion, 1 calls)
+
+Question 168:
+  Text: Enumerate all activities that Aurora Chavez has been involved in, ordered from earliest to latest in the story's chronology.
+  Expected: ['Tech Hackathon']
+  Predicted: ['Hackathon', "Ainsley Ensign's Check-in", 'Observation of Gus Brubaker']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 192 total (175 prompt + 17 completion, 1 calls)
+
+Question 169:
+  Text: Enumerate all activities that Bella Alvarez has been involved in, ordered from earliest to latest in the story's chronology.
+  Expected: ['Astronomy Night']
+  Predicted: ['Astronomy Night']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 195 total (175 prompt + 20 completion, 1 calls)
+
+Question 170:
+  Text: Enumerate all activities that Elizabeth Hill has been involved in, ordered from earliest to latest in the story's chronology.
+  Expected: ['Classical Music Concert']
+  Predicted: ['Classical Music Concert']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 191 total (175 prompt + 16 completion, 1 calls)
+

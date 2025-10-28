@@ -1,0 +1,93 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-19 00:36:02
+Question Range: 31-40
+Total Questions Processed: 10
+Successful Searches: 10 (100.0%)
+Questions with Answers: 10 (100.0%)
+Average Iterations per Question: 1.8
+
+DETAILED RESULTS:
+------------------------------
+
+Question 31:
+  Text: Reflect on events related to Parkour Workshop. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Ezra Edwards', 'Owen Thomas']
+  Predicted: ['Ezra Edwards', 'Noa Middleton', 'Mara Ledbetter', 'Sienna Hamrick', 'Reid Blunt', 'Ronan Guevara', 'Owen Thomas', 'Lilah Hamilton (Glide)', 'Rocco Cormier', 'Axl Mims']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+
+Question 32:
+  Text: Reflect on events related to Theater Performance. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Mila Gonzalez', 'Jackson Ramos']
+  Predicted: ['Mila Gonzalez', 'Diem Nix', 'Eli Groth', 'Rey Pierre', 'Audience', 'Jackson Ramos', 'Remy Waterman', 'Kylee Beard', 'Other actors']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+
+Question 33:
+  Text: Consider all events involving Parkour Workshop. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Bethpage Black Course', 'Snug Harbor Cultural Center']
+  Predicted: ['Bethpage Black Course', 'Snug Harbor Cultural Center']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+
+Question 34:
+  Text: Consider all events involving Theater Performance. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Statue of Liberty', 'High Line']
+  Predicted: ['Statue of Liberty (outdoor stage)', 'High Line Theater']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+
+Question 35:
+  Text: Recall all events related to Parkour Workshop. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['September 27, 2025', 'September 13, 2025']
+  Predicted: ['September 13, 2025', 'September 27, 2025']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+
+Question 36:
+  Text: Recall all events related to Theater Performance. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['February 27, 2026']
+  Predicted: ['February 27, 2026']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+
+Question 37:
+  Text: Reflect on events related to Tech Hackathon. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Zoe Brown', 'Julian Ross']
+  Predicted: ['Julian Ross', 'Sienna Lyles', 'Dakari Liebert', 'Creed Berlin', 'Other participants', 'Zoe Brown', 'Cora Xiong']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+
+Question 38:
+  Text: Consider all events involving Tech Hackathon. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['High Line', 'Port Jefferson', 'Woolworth Building']
+  Predicted: ['Woolworth Building', 'Port Jefferson']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+
+Question 39:
+  Text: Recall all events related to Tech Hackathon. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['June 14, 2025', 'March 23, 2024', 'May 31, 2024']
+  Predicted: ['March 23, 2024', 'May 31, 2024']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+
+Question 40:
+  Text: Think about Chloe Castillo's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.
+  Expected: ['Fashion Show']
+  Predicted: ["Chloe Castillo's Fashion Show"]
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+

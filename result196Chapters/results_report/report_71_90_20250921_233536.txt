@@ -1,0 +1,193 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-21 23:35:36
+Question Range: 71-90
+Total Questions Processed: 20
+Successful Searches: 3 (15.0%)
+Questions with Answers: 3 (15.0%)
+Average Iterations per Question: 4.7
+
+DETAILED RESULTS:
+------------------------------
+
+Question 71:
+  Text: Reflect on events related to Flash Mob. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Noah Williams', 'Jackson Ramos']
+  Predicted: ['Jackson Ramos', 'Zachary Fajardo', 'Thor Latta', 'Osiris Ayala', 'Noah Williams', 'Zander Cahill', 'Gustavo Goetz', 'Zayne McCarthy']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 196 total (176 prompt + 20 completion, 1 calls)
+
+Question 72:
+  Text: Reflect on events related to Tech Product Launch. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Maya Smith', 'Julian Ross']
+  Predicted: ['Maya Smith', 'Karina Stearns']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+  Token Usage: 198 total (177 prompt + 21 completion, 1 calls)
+
+Question 73:
+  Text: What was Andrew Gomez doing the last time they were observed in the story's timeline?
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2357 total (1799 prompt + 558 completion, 4 calls)
+
+Question 74:
+  Text: What was Ava Morris doing the last time they were observed in the story's timeline?
+  Expected: []
+  Predicted: Ava Morris was last observed participating in a conversation about the historical accuracy of the time period relevant to the mystery.
+  Search Success: True
+  Confidence: 0.20
+  Iterations: 5
+  Token Usage: 2712 total (1994 prompt + 718 completion, 5 calls)
+
+Question 75:
+  Text: What was Brooklyn Sanders doing the last time they were observed in the story's timeline?
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3452 total (2598 prompt + 854 completion, 6 calls)
+
+Question 76:
+  Text: What was Caleb Perez doing the last time they were observed in the story's timeline?
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2728 total (2030 prompt + 698 completion, 5 calls)
+
+Question 77:
+  Text: What was Charlotte White doing the last time they were observed in the story's timeline?
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3867 total (2922 prompt + 945 completion, 6 calls)
+
+Question 78:
+  Text: Reflect on all events involving Andrew Gomez. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2211 total (1581 prompt + 630 completion, 5 calls)
+
+Question 79:
+  Text: Reflect on all events involving Ava Morris. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2363 total (1712 prompt + 651 completion, 5 calls)
+
+Question 80:
+  Text: Reflect on all events involving Brooklyn Sanders. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 1945 total (1408 prompt + 537 completion, 4 calls)
+
+Question 81:
+  Text: Reflect on all events involving Caleb Perez. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2927 total (2040 prompt + 887 completion, 6 calls)
+
+Question 82:
+  Text: Reflect on all events involving Charlotte White. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2373 total (1738 prompt + 635 completion, 5 calls)
+
+Question 83:
+  Text: Enumerate all activities that Andrew Gomez has been involved in, ordered from earliest to latest in the story's chronology.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3327 total (2486 prompt + 841 completion, 6 calls)
+
+Question 84:
+  Text: Enumerate all activities that Ava Morris has been involved in, ordered from earliest to latest in the story's chronology.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 1946 total (1403 prompt + 543 completion, 4 calls)
+
+Question 85:
+  Text: Enumerate all activities that Brooklyn Sanders has been involved in, ordered from earliest to latest in the story's chronology.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3424 total (2537 prompt + 887 completion, 6 calls)
+
+Question 86:
+  Text: Enumerate all activities that Caleb Perez has been involved in, ordered from earliest to latest in the story's chronology.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2639 total (1971 prompt + 668 completion, 5 calls)
+
+Question 87:
+  Text: Enumerate all activities that Charlotte White has been involved in, ordered from earliest to latest in the story's chronology.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3410 total (2488 prompt + 922 completion, 6 calls)
+
+Question 88:
+  Text: Provide a chronological list of all dates when Andrew Gomez was observed, from earliest to latest in the story's timeline.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2590 total (1815 prompt + 775 completion, 5 calls)
+
+Question 89:
+  Text: Provide a chronological list of all dates when Ava Morris was observed, from earliest to latest in the story's timeline.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3208 total (2287 prompt + 921 completion, 6 calls)
+
+Question 90:
+  Text: Provide a chronological list of all dates when Brooklyn Sanders was observed, from earliest to latest in the story's timeline.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3174 total (2296 prompt + 878 completion, 6 calls)
+

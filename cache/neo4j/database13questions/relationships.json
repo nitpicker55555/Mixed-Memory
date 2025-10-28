@@ -1,0 +1,782 @@
+[
+  {
+    "_id": 1152922604118474752,
+    "_type": "OCCURRED_AT",
+    "properties": {},
+    "start_node_id": 0,
+    "end_node_id": 66,
+    "start_labels": [
+      "Event"
+    ],
+    "end_labels": [
+      "Location"
+    ]
+  },
+  {
+    "_id": 1152922604118474753,
+    "_type": "OCCURRED_AT",
+    "properties": {},
+    "start_node_id": 1,
+    "end_node_id": 68,
+    "start_labels": [
+      "Event"
+    ],
+    "end_labels": [
+      "Location"
+    ]
+  },
+  {
+    "_id": 1152922604118474754,
+    "_type": "OCCURRED_AT",
+    "properties": {},
+    "start_node_id": 2,
+    "end_node_id": 69,
+    "start_labels": [
+      "Event"
+    ],
+    "end_labels": [
+      "Location"
+    ]
+  },
+  {
+    "_id": 1152922604118474755,
+    "_type": "OCCURRED_AT",
+    "properties": {},
+    "start_node_id": 3,
+    "end_node_id": 71,
+    "start_labels": [
+      "Event"
+    ],
+    "end_labels": [
+      "Location"
+    ]
+  },
+  {
+    "_id": 1152922604118474756,
+    "_type": "OCCURRED_AT",
+    "properties": {},
+    "start_node_id": 4,
+    "end_node_id": 72,
+    "start_labels": [
+      "Event"
+    ],
+    "end_labels": [
+      "Location"
+    ]
+  },
+  {
+    "_id": 1152922604118474757,
+    "_type": "OCCURRED_AT",
+    "properties": {},
+    "start_node_id": 5,
+    "end_node_id": 73,
+    "start_labels": [
+      "Event"
+    ],
+    "end_labels": [
+      "Location"
+    ]
+  },
+  {
+    "_id": 1152922604118474759,
+    "_type": "OCCURRED_AT",
+    "properties": {},
+    "start_node_id": 7,
+    "end_node_id": 77,
+    "start_labels": [
+      "Event"
+    ],
+    "end_labels": [
+      "Location"
+    ]
+  },
+  {
+    "_id": 1152922604118474760,
+    "_type": "OCCURRED_AT",
+    "properties": {},
+    "start_node_id": 8,
+    "end_node_id": 80,
+    "start_labels": [
+      "Event"
+    ],
+    "end_labels": [
+      "Location"
+    ]
+  },
+  {
+    "_id": 1152922604118474761,
+    "_type": "OCCURRED_AT",
+    "properties": {},
+    "start_node_id": 9,
+    "end_node_id": 68,
+    "start_labels": [
+      "Event"
+    ],
+    "end_labels": [
+      "Location"
+    ]
+  },
+  {
+    "_id": 1152922604118474762,
+    "_type": "OCCURRED_AT",
+    "properties": {},
+    "start_node_id": 10,
+    "end_node_id": 69,
+    "start_labels": [
+      "Event"
+    ],
+    "end_labels": [
+      "Location"
+    ]
+  },
+  {
+    "_id": 1152922604118474763,
+    "_type": "OCCURRED_AT",
+    "properties": {},
+    "start_node_id": 11,
+    "end_node_id": 85,
+    "start_labels": [
+      "Event"
+    ],
+    "end_labels": [
+      "Location"
+    ]
+  },
+  {
+    "_id": 1152921504606846989,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 13,
+    "end_node_id": 0,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606846990,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 14,
+    "end_node_id": 0,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606846991,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 15,
+    "end_node_id": 0,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606846992,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 16,
+    "end_node_id": 0,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606846993,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 17,
+    "end_node_id": 0,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606846994,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 18,
+    "end_node_id": 0,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606846995,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 19,
+    "end_node_id": 1,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606846996,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 20,
+    "end_node_id": 1,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606846997,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 21,
+    "end_node_id": 1,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606846999,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 23,
+    "end_node_id": 2,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1155173304420532247,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 23,
+    "end_node_id": 7,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1157425104234217495,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 23,
+    "end_node_id": 8,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606847000,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 24,
+    "end_node_id": 2,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606847001,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 25,
+    "end_node_id": 2,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606847002,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 26,
+    "end_node_id": 2,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606847004,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 28,
+    "end_node_id": 3,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606847005,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 29,
+    "end_node_id": 3,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606847006,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 30,
+    "end_node_id": 3,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1155173304420532254,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 30,
+    "end_node_id": 10,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1157425104234217502,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 30,
+    "end_node_id": 11,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606847007,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 31,
+    "end_node_id": 4,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606847008,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 32,
+    "end_node_id": 4,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606847010,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 34,
+    "end_node_id": 4,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606847011,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 35,
+    "end_node_id": 4,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606847012,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 36,
+    "end_node_id": 5,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606847015,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 39,
+    "end_node_id": 5,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606847016,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 40,
+    "end_node_id": 5,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606847018,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 42,
+    "end_node_id": 6,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606847019,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 43,
+    "end_node_id": 6,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606847020,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 44,
+    "end_node_id": 6,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606847021,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 45,
+    "end_node_id": 6,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606847023,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 47,
+    "end_node_id": 7,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606847024,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 48,
+    "end_node_id": 7,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606847025,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 49,
+    "end_node_id": 7,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606847026,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 50,
+    "end_node_id": 7,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606847027,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 51,
+    "end_node_id": 8,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606847028,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 52,
+    "end_node_id": 8,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606847030,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 54,
+    "end_node_id": 9,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606847031,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 55,
+    "end_node_id": 9,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606847032,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 56,
+    "end_node_id": 9,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606847033,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 57,
+    "end_node_id": 9,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606847034,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 58,
+    "end_node_id": 10,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606847035,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 59,
+    "end_node_id": 11,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606847036,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 60,
+    "end_node_id": 11,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606847037,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 61,
+    "end_node_id": 11,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606847038,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 62,
+    "end_node_id": 11,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606847039,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 63,
+    "end_node_id": 12,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606847040,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 64,
+    "end_node_id": 12,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  },
+  {
+    "_id": 1152921504606847041,
+    "_type": "PARTICIPATED_IN",
+    "properties": {},
+    "start_node_id": 65,
+    "end_node_id": 12,
+    "start_labels": [
+      "Person"
+    ],
+    "end_labels": [
+      "Event"
+    ]
+  }
+]

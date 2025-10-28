@@ -1,0 +1,58 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-20 13:25:23
+Question Range: 46-50
+Total Questions Processed: 5
+Successful Searches: 5 (100.0%)
+Questions with Answers: 5 (100.0%)
+Average Iterations per Question: 1.8
+
+DETAILED RESULTS:
+------------------------------
+
+Question 46:
+  Text: Reflect on events related to Ballet Performance. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Carter Stewart']
+  Predicted: ['Ronnie Randall', 'Mabel Schaffer']
+  Search Success: True
+  Confidence: 0.40
+  Iterations: 4
+  Token Usage: 1743 total (1242 prompt + 501 completion, 4 calls)
+
+Question 47:
+  Text: Reflect on events related to Craft Beer Festival. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Scarlett Thomas']
+  Predicted: []
+  Search Success: True
+  Confidence: 0.00
+  Iterations: 1
+  Token Usage: 198 total (177 prompt + 21 completion, 1 calls)
+
+Question 48:
+  Text: Reflect on events related to Drone Racing Event. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Brooklyn Ross']
+  Predicted: ['Nylah Stine', 'Jett Nunez', 'Brooklyn Ross']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+  Token Usage: 665 total (492 prompt + 173 completion, 2 calls)
+
+Question 49:
+  Text: Reflect on events related to Farmers Market. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Lucy Carter']
+  Predicted: ['Lucy Carter', 'Evangeline Lassiter', 'Arya Huffman']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 197 total (176 prompt + 21 completion, 1 calls)
+
+Question 50:
+  Text: Reflect on events related to Flower Show. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Jackson Hall']
+  Predicted: ['Jackson Hall', 'Jorah Logsdon', 'Memphis Brito', 'Asa Villarreal']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 196 total (176 prompt + 20 completion, 1 calls)
+

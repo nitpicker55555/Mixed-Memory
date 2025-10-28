@@ -1,0 +1,58 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-21 22:18:12
+Question Range: 56-60
+Total Questions Processed: 5
+Successful Searches: 4 (80.0%)
+Questions with Answers: 4 (80.0%)
+Average Iterations per Question: 1.8
+
+DETAILED RESULTS:
+------------------------------
+
+Question 56:
+  Text: Recall all events related to Ballet Performance. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['October 27, 2024']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2372 total (1719 prompt + 653 completion, 5 calls)
+
+Question 57:
+  Text: Recall all events related to Craft Beer Festival. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['October 13, 2024']
+  Predicted: ['October 13, 2024']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 194 total (177 prompt + 17 completion, 1 calls)
+
+Question 58:
+  Text: Recall all events related to Drone Racing Event. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['May 28, 2025']
+  Predicted: ['May 28, 2025']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 194 total (177 prompt + 17 completion, 1 calls)
+
+Question 59:
+  Text: Recall all events related to Farmers Market. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['July 13, 2024']
+  Predicted: ['July 13, 2024']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 193 total (176 prompt + 17 completion, 1 calls)
+
+Question 60:
+  Text: Recall all events related to Flower Show. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['March 23, 2024']
+  Predicted: ['March 23, 2024']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 192 total (176 prompt + 16 completion, 1 calls)
+

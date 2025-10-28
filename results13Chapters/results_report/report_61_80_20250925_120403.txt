@@ -1,0 +1,193 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-25 12:04:03
+Question Range: 61-80
+Total Questions Processed: 20
+Successful Searches: 20 (100.0%)
+Questions with Answers: 20 (100.0%)
+Average Iterations per Question: 1.0
+
+DETAILED RESULTS:
+------------------------------
+
+Question 61:
+  Text: Provide a chronological list of all dates when Ezra Edwards was observed, from earliest to latest in the story's timeline.
+  Expected: ['September 13, 2025']
+  Predicted: ['September 13, 2025']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 192 total (175 prompt + 17 completion, 1 calls)
+
+Question 62:
+  Text: Provide a chronological list of all dates when Jackson Ramos was observed, from earliest to latest in the story's timeline.
+  Expected: ['February 27, 2026']
+  Predicted: ['February 27, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 191 total (175 prompt + 16 completion, 1 calls)
+
+Question 63:
+  Text: Provide a chronological list of all dates when Julian Ross was observed, from earliest to latest in the story's timeline.
+  Expected: ['May 31, 2024']
+  Predicted: ['May 31, 2024']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 192 total (175 prompt + 17 completion, 1 calls)
+
+Question 64:
+  Text: Provide a chronological list of all dates when Levi Rodriguez was observed, from earliest to latest in the story's timeline.
+  Expected: ['December 26, 2026']
+  Predicted: ['December 26, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 192 total (175 prompt + 17 completion, 1 calls)
+
+Question 65:
+  Text: Reflect on all events involving Chloe Castillo. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['September 22, 2026']
+  Predicted: ['September 22, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 193 total (176 prompt + 17 completion, 1 calls)
+
+Question 66:
+  Text: Reflect on all events involving Ezra Edwards. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['September 13, 2025']
+  Predicted: ['September 13, 2025']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 193 total (176 prompt + 17 completion, 1 calls)
+
+Question 67:
+  Text: Reflect on all events involving Jackson Ramos. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['February 27, 2026']
+  Predicted: ['February 27, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 192 total (176 prompt + 16 completion, 1 calls)
+
+Question 68:
+  Text: Reflect on all events involving Julian Ross. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['May 31, 2024']
+  Predicted: ['May 31, 2024']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 193 total (176 prompt + 17 completion, 1 calls)
+
+Question 69:
+  Text: Reflect on all events involving Levi Rodriguez. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['December 26, 2026']
+  Predicted: ['December 26, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 193 total (176 prompt + 17 completion, 1 calls)
+
+Question 70:
+  Text: Consider all events that Chloe Castillo has been involved in. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['American Museum of Natural History']
+  Predicted: ['American Museum of Natural History']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 196 total (179 prompt + 17 completion, 1 calls)
+
+Question 71:
+  Text: Consider all events that Ezra Edwards has been involved in. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Bethpage Black Course']
+  Predicted: ['Bethpage Black Course']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 196 total (179 prompt + 17 completion, 1 calls)
+
+Question 72:
+  Text: Consider all events that Jackson Ramos has been involved in. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['High Line']
+  Predicted: ['High Line Theater']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 199 total (179 prompt + 20 completion, 1 calls)
+
+Question 73:
+  Text: Consider all events that Julian Ross has been involved in. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Woolworth Building']
+  Predicted: ['Woolworth Building']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 196 total (179 prompt + 17 completion, 1 calls)
+
+Question 74:
+  Text: Consider all events that Levi Rodriguez has been involved in. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['American Museum of Natural History']
+  Predicted: ['American Museum of Natural History']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 196 total (179 prompt + 17 completion, 1 calls)
+
+Question 75:
+  Text: Enumerate all activities that Chloe Castillo has been involved in, ordered from earliest to latest in the story's chronology.
+  Expected: ['Fashion Show']
+  Predicted: ["Chloe Castillo's Fashion Show"]
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 192 total (175 prompt + 17 completion, 1 calls)
+
+Question 76:
+  Text: Enumerate all activities that Ezra Edwards has been involved in, ordered from earliest to latest in the story's chronology.
+  Expected: ['Parkour Workshop']
+  Predicted: ['Bethpage Black Parkour Workshop']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 192 total (175 prompt + 17 completion, 1 calls)
+
+Question 77:
+  Text: Enumerate all activities that Jackson Ramos has been involved in, ordered from earliest to latest in the story's chronology.
+  Expected: ['Theater Performance']
+  Predicted: ['High Line Tragedy Play']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 195 total (175 prompt + 20 completion, 1 calls)
+
+Question 78:
+  Text: Enumerate all activities that Julian Ross has been involved in, ordered from earliest to latest in the story's chronology.
+  Expected: ['Tech Hackathon']
+  Predicted: ['Woolworth Building Hackathon']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 192 total (175 prompt + 17 completion, 1 calls)
+
+Question 79:
+  Text: Enumerate all activities that Levi Rodriguez has been involved in, ordered from earliest to latest in the story's chronology.
+  Expected: ['Astronomy Night']
+  Predicted: ['Astronomy Trivia Night at the Museum']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 196 total (175 prompt + 21 completion, 1 calls)
+
+Question 80:
+  Text: List all locations visited by Chloe Castillo in chronological order according to the story's timeline.
+  Expected: ['American Museum of Natural History']
+  Predicted: ['American Museum of Natural History']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 186 total (169 prompt + 17 completion, 1 calls)
+

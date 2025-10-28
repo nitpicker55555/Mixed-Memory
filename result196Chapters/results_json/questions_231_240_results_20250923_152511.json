@@ -1,0 +1,646 @@
+{
+  "metadata": {
+    "start_time": "2025-09-23T15:13:09.891963",
+    "database": "197chapters2",
+    "question_range": "231-240",
+    "total_questions": 10,
+    "end_time": "2025-09-23T15:25:11.660048",
+    "total_duration": 721.765682
+  },
+  "results": [
+    {
+      "question_idx": 23,
+      "question": "Reflect on the experiences of Chloe Castillo related to Parkour Workshop. List all the unique locations where these events took place, without mentioning the events themselves.",
+      "answer": {
+        "session_id": "0dff64e3-7306-4b8b-9606-36048d47caf6",
+        "question": "Reflect on the experiences of Chloe Castillo related to Parkour Workshop. List all the unique locations where these events took place, without mentioning the events themselves.",
+        "final_answer": null,
+        "standardized_answer": [],
+        "total_iterations": 5,
+        "search_successful": false,
+        "reasoning_chain": [
+          "By using a broader keyword like 'Parkour', the search can capture more events related to the topic, potentially revealing locations where Chloe Castillo participated without being limited to a specific event name. (Enhanced with semantic search: Parkour Workshop in field event_type)",
+          "Execution error: {code: Neo.ClientError.Statement.TypeError} {message: Expected a string value for `toLower`, but got: StringArray[Chloe Castillo, Sienna Hamrick, Reid Blunt]; consider converting it to a string with toString().}",
+          "By broadening the search to include any events that Chloe Castillo participated in, regardless of the specific event type, we increase the chances of retrieving relevant data. This approach allows for a more comprehensive collection of locations associated with her experiences. (Enhanced with semantic search: Parkour Workshop in field event_type)",
+          "By broadening the search to include any events that Chloe Castillo participated in, rather than restricting it to a specific event type, we increase the chances of finding relevant locations. This approach allows for a more comprehensive retrieval of data. (Enhanced with semantic search: Parkour Workshop in field event_type)",
+          "By removing the specific event type filter and focusing on the participant field, the search can capture a wider range of events that may include the desired workshops, thus increasing the chances of finding relevant locations."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE e.participants CONTAINS 'Chloe Castillo' AND toLower(e.name) CONTAINS toLower('Parkour Workshop') AND e.location IS NOT NULL AND e.location <> '' RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE toLower(e.participants) CONTAINS toLower($person) AND toLower(e.name) CONTAINS toLower($kw) AND e.location IS NOT NULL AND e.location <> \"\" RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE $person IN e.participants AND e.event_type = $kw AND e.location IS NOT NULL AND e.location <> '' RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE $person IN e.participants AND e.event_type = $kw AND e.location IS NOT NULL AND e.location <> '' RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE $person IN e.participants AND e.event_type = $kw AND e.location IS NOT NULL AND e.location <> '' RETURN DISTINCT e.location AS location"
+        ],
+        "token_usage": {
+          "prompt_tokens": 2000,
+          "completion_tokens": 769,
+          "total_tokens": 2769,
+          "calls_count": 5
+        }
+      },
+      "duration_seconds": 152.885269,
+      "status": "success",
+      "timestamp": "2025-09-23T15:13:09.892013",
+      "token_usage": {
+        "prompt_tokens": 2000,
+        "completion_tokens": 769,
+        "total_tokens": 2769,
+        "calls_count": 5
+      },
+      "expected_answer": [
+        "High Line",
+        "Bethpage Black Course"
+      ]
+    },
+    {
+      "question_idx": 23,
+      "question": "Reflect on the experiences of Henry Reed related to Tech Hackathon. List all the unique locations where these events took place, without mentioning the events themselves.",
+      "answer": {
+        "session_id": "7f12263c-ee36-48e3-aa71-099b6f06d627",
+        "question": "Reflect on the experiences of Henry Reed related to Tech Hackathon. List all the unique locations where these events took place, without mentioning the events themselves.",
+        "final_answer": null,
+        "standardized_answer": [],
+        "total_iterations": 5,
+        "search_successful": false,
+        "reasoning_chain": [
+          "By broadening the keyword to just 'Hackathon', the search may capture a wider range of relevant events that Henry Reed participated in, potentially yielding more results.",
+          "By removing the specific event type filter, the search can capture a broader range of events that Henry Reed participated in, potentially revealing relevant locations that were previously overlooked.",
+          "By using a broader keyword like 'Tech Event', we can capture a wider range of events that may include hackathons or similar activities. Additionally, ensuring case-insensitive matching for the participant's name may help in retrieving relevant records. (Enhanced with semantic search: Tech Conference in field event_type)",
+          "By using a broader keyword like 'Tech Event', the search can encompass a wider range of events that Henry Reed may have participated in, potentially yielding more unique locations. (Enhanced with semantic search: Tech Conference in field event_type)",
+          "By using broader terms like 'technology event', the search may capture more relevant events that Henry Reed participated in, even if they are not explicitly labeled as hackathons. This approach allows for a more inclusive search that could yield results. (Enhanced with semantic search: Tech Conference in field event_type)"
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE e.participants CONTAINS 'Henry Reed' AND toLower(e.event_type) CONTAINS toLower($kw) AND e.location IS NOT NULL AND e.location <> '' RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE e.participants CONTAINS $person AND e.event_type CONTAINS $kw AND e.location IS NOT NULL AND e.location <> \"\" RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE e.participants CONTAINS 'Henry Reed' AND e.event_type = 'Hackathon' AND e.location IS NOT NULL AND e.location <> '' RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE e.participants CONTAINS 'Henry Reed' AND e.event_type = 'Hackathon' AND e.location IS NOT NULL AND e.location <> '' RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE e.participants CONTAINS 'Henry Reed' AND (toLower(e.event_type) CONTAINS 'hackathon' OR toLower(e.event_type) CONTAINS 'tech') AND e.location IS NOT NULL AND e.location <> '' RETURN DISTINCT e.location AS location"
+        ],
+        "token_usage": {
+          "prompt_tokens": 2437,
+          "completion_tokens": 875,
+          "total_tokens": 3312,
+          "calls_count": 6
+        }
+      },
+      "duration_seconds": 141.561983,
+      "status": "success",
+      "timestamp": "2025-09-23T15:15:42.777611",
+      "token_usage": {
+        "prompt_tokens": 2437,
+        "completion_tokens": 875,
+        "total_tokens": 3312,
+        "calls_count": 6
+      },
+      "expected_answer": [
+        "Yankee Stadium",
+        "Port Jefferson"
+      ]
+    },
+    {
+      "question_idx": 22,
+      "question": "Consider all events involving both Bella Brown and Fashion Show. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "bca3d37f-ee8c-4256-afc3-1494d37bbd52",
+        "question": "Consider all events involving both Bella Brown and Fashion Show. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": [
+          "2024-03-23",
+          "January 03, 2026"
+        ],
+        "standardized_answer": [
+          "2024-03-23",
+          "January 03, 2026"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Bella Brown' IN e.participants AND toLower(e.name) CONTAINS toLower($kw) RETURN e.date AS date"
+        ],
+        "token_usage": {
+          "prompt_tokens": 179,
+          "completion_tokens": 18,
+          "total_tokens": 197,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 20.206521,
+      "status": "success",
+      "timestamp": "2025-09-23T15:18:04.339880",
+      "token_usage": {
+        "prompt_tokens": 179,
+        "completion_tokens": 18,
+        "total_tokens": 197,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "March 23, 2024",
+        "January 03, 2026"
+      ]
+    },
+    {
+      "question_idx": 22,
+      "question": "Consider all events involving both Carter Stewart and Scientific Conference. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "5a7b7d13-caaa-4568-9c19-67a0b55fc29a",
+        "question": "Consider all events involving both Carter Stewart and Scientific Conference. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": null,
+        "standardized_answer": [],
+        "total_iterations": 5,
+        "search_successful": false,
+        "reasoning_chain": [
+          "By broadening the search to include variations of the event name and focusing on the event type or description, it's more likely to capture relevant events that involve Carter Stewart and scientific conferences.",
+          "By narrowing the search to the 'name' field, we increase the chances of matching the specific event titles that include 'Scientific Conference', which should yield more accurate results.",
+          "By broadening the search to include the event type or description, we increase the chances of capturing relevant events that may not have 'Scientific Conference' in the name but are still related to it.",
+          "By allowing for variations in how 'Carter Stewart' is recorded and searching across multiple relevant fields, the chances of retrieving matching events increase. This approach also ensures that any relevant events that may not strictly match the original query are still considered.",
+          "By broadening the search terms and focusing on related keywords, the chances of capturing relevant events increase, especially if the specific term 'Scientific Conference' is not used consistently in the data. (Enhanced with semantic search: Scientific Conference in field event_type)"
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE e.participants CONTAINS 'Carter Stewart' AND e.name CONTAINS 'Scientific Conference' RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE e.participants CONTAINS $person AND (e.event_type CONTAINS $kw OR e.description CONTAINS $kw) AND e.date IS NOT NULL RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE e.participants CONTAINS $person AND e.name CONTAINS $kw AND e.date IS NOT NULL RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE e.participants = 'Carter Stewart' AND (e.event_type = 'Scientific Conference' OR e.description CONTAINS 'Scientific Conference') AND e.date IS NOT NULL RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE e.participants CONTAINS 'Carter Stewart' AND (e.name CONTAINS 'Scientific Conference' OR e.event_type CONTAINS 'Scientific Conference') AND e.date IS NOT NULL RETURN DISTINCT e.date AS date"
+        ],
+        "token_usage": {
+          "prompt_tokens": 2320,
+          "completion_tokens": 921,
+          "total_tokens": 3241,
+          "calls_count": 6
+        }
+      },
+      "duration_seconds": 286.594056,
+      "status": "success",
+      "timestamp": "2025-09-23T15:18:24.546567",
+      "token_usage": {
+        "prompt_tokens": 2320,
+        "completion_tokens": 921,
+        "total_tokens": 3241,
+        "calls_count": 6
+      },
+      "expected_answer": [
+        "September 22, 2026",
+        "March 23, 2024"
+      ]
+    },
+    {
+      "question_idx": 22,
+      "question": "Consider all events involving both Chloe Castillo and Fashion Show. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "d31f4b94-78e9-4078-860e-ca7249885ac7",
+        "question": "Consider all events involving both Chloe Castillo and Fashion Show. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": [
+          "February 22, 2025",
+          "September 22, 2026"
+        ],
+        "standardized_answer": [
+          "February 22, 2025",
+          "September 22, 2026"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Chloe Castillo' IN e.participants AND toLower(e.name) CONTAINS toLower($kw) AND e.date IS NOT NULL RETURN e.date AS date"
+        ],
+        "token_usage": {
+          "prompt_tokens": 179,
+          "completion_tokens": 19,
+          "total_tokens": 198,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 16.053966,
+      "status": "success",
+      "timestamp": "2025-09-23T15:23:11.140889",
+      "token_usage": {
+        "prompt_tokens": 179,
+        "completion_tokens": 19,
+        "total_tokens": 198,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "February 22, 2025",
+        "September 22, 2026"
+      ]
+    },
+    {
+      "question_idx": 22,
+      "question": "Consider all events involving both Chloe Castillo and Parkour Workshop. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "b79e9ca7-8ce3-44b8-bda0-d5304a37dd3c",
+        "question": "Consider all events involving both Chloe Castillo and Parkour Workshop. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": [
+          "May 11, 2026"
+        ],
+        "standardized_answer": [
+          "May 11, 2026"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Chloe Castillo' IN e.participants AND toLower(e.name) CONTAINS toLower('Parkour Workshop') RETURN DISTINCT e.date AS date"
+        ],
+        "token_usage": {
+          "prompt_tokens": 180,
+          "completion_tokens": 20,
+          "total_tokens": 200,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 18.942956,
+      "status": "success",
+      "timestamp": "2025-09-23T15:23:27.194977",
+      "token_usage": {
+        "prompt_tokens": 180,
+        "completion_tokens": 20,
+        "total_tokens": 200,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "May 11, 2026",
+        "May 07, 2024"
+      ]
+    },
+    {
+      "question_idx": 22,
+      "question": "Consider all events involving both Henry Reed and Tech Hackathon. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "cb1dcce0-ce29-4814-b70d-b290b7eb618e",
+        "question": "Consider all events involving both Henry Reed and Tech Hackathon. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": [
+          "March 23, 2024",
+          "2025-06-14"
+        ],
+        "standardized_answer": [
+          "March 23, 2024",
+          "2025-06-14"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Henry Reed' IN e.participants AND toLower(e.name) CONTAINS toLower($kw) RETURN DISTINCT e.date AS date"
+        ],
+        "token_usage": {
+          "prompt_tokens": 180,
+          "completion_tokens": 19,
+          "total_tokens": 199,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 13.548353,
+      "status": "success",
+      "timestamp": "2025-09-23T15:23:46.138024",
+      "token_usage": {
+        "prompt_tokens": 180,
+        "completion_tokens": 19,
+        "total_tokens": 199,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "March 23, 2024",
+        "June 14, 2025"
+      ]
+    },
+    {
+      "question_idx": 35,
+      "question": "Enumerate all activities that Benjamin Green has been involved in, ordered from earliest to latest in the story's chronology.",
+      "answer": {
+        "session_id": "eb90b75d-736b-4ba1-913d-5c891085940e",
+        "question": "Enumerate all activities that Benjamin Green has been involved in, ordered from earliest to latest in the story's chronology.",
+        "final_answer": [
+          "Fashion Show at Bethpage State Park",
+          "Finale of the Fashion Show",
+          "Audience Applause",
+          "Film Festival Red Carpet Appearance",
+          "Actor Meet-and-Greet",
+          "Health Incident at Film Festival",
+          "Ice Sculpture Exhibition",
+          "Hackathon at Snug Harbor Cultural Center",
+          "Project Presentation",
+          "Awards Announcement"
+        ],
+        "standardized_answer": [
+          "Fashion Show at Bethpage State Park",
+          "Finale of the Fashion Show",
+          "Audience Applause",
+          "Film Festival Red Carpet Appearance",
+          "Actor Meet-and-Greet",
+          "Health Incident at Film Festival",
+          "Ice Sculpture Exhibition",
+          "Hackathon at Snug Harbor Cultural Center",
+          "Project Presentation",
+          "Awards Announcement"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Benjamin Green' IN e.participants AND e.participants IS NOT NULL RETURN e.name AS name, e.date AS date, e.event_type AS event_type, e.participants AS participants ORDER BY e.date ASC"
+        ],
+        "token_usage": {
+          "prompt_tokens": 175,
+          "completion_tokens": 20,
+          "total_tokens": 195,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 16.474975,
+      "status": "success",
+      "timestamp": "2025-09-23T15:23:59.686518",
+      "token_usage": {
+        "prompt_tokens": 175,
+        "completion_tokens": 20,
+        "total_tokens": 195,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "Fashion Show",
+        "Scientific Conference",
+        "Film Festival",
+        "Ice Sculpture Exhibition",
+        "Tech Hackathon",
+        "Fire Dancing Performance"
+      ]
+    },
+    {
+      "question_idx": 35,
+      "question": "Enumerate all activities that Brooklyn Ross has been involved in, ordered from earliest to latest in the story's chronology.",
+      "answer": {
+        "session_id": "f5e57daa-3c8f-47e1-9492-b8af6c566245",
+        "question": "Enumerate all activities that Brooklyn Ross has been involved in, ordered from earliest to latest in the story's chronology.",
+        "final_answer": [
+          {
+            "name": "Murder Mystery Dinner",
+            "date": "June 14, 2025",
+            "event_type": "Dinner",
+            "participants": [
+              "Colton Cyphers",
+              "Brooklyn Ross",
+              "Corey Goetz",
+              "Avah Dunning"
+            ],
+            "chapter_number": 69
+          },
+          {
+            "name": "Introduction of the Game",
+            "date": "June 14, 2025",
+            "event_type": "Announcement",
+            "participants": [
+              "Colton Cyphers",
+              "Brooklyn Ross"
+            ],
+            "chapter_number": 69
+          },
+          {
+            "name": "Career Development Workshop",
+            "date": "April 09, 2026",
+            "event_type": "Workshop",
+            "participants": [
+              "Brooklyn Ross",
+              "Maci Fennell",
+              "Lila Wilkerson"
+            ],
+            "chapter_number": 102
+          },
+          {
+            "name": "Fire Hula Hoop Dance by Brooklyn Ross",
+            "date": "2026-06-08",
+            "event_type": "Performance",
+            "participants": [
+              "Brooklyn Ross",
+              "Maison Corbin"
+            ],
+            "chapter_number": 193
+          },
+          {
+            "name": "Fire Incident in the Stands",
+            "date": "2026-06-08",
+            "event_type": "Accident",
+            "participants": [
+              "Brooklyn Ross",
+              "Maison Corbin"
+            ],
+            "chapter_number": 193
+          },
+          {
+            "name": "Theater Performance",
+            "date": "August 24, 2026",
+            "event_type": "Performance",
+            "participants": [
+              "Brooklyn Ross",
+              "Gemma Ayers",
+              "Athena Aguilera",
+              "Kira Pierre"
+            ],
+            "chapter_number": 65
+          },
+          {
+            "name": "Discussion on Playwright's Intent",
+            "date": "August 24, 2026",
+            "event_type": "Conversation",
+            "participants": [
+              "Brooklyn Ross",
+              "Gemma Ayers"
+            ],
+            "chapter_number": 65
+          },
+          {
+            "name": "Suspicious Behavior of Usher",
+            "date": "August 24, 2026",
+            "event_type": "Observation",
+            "participants": [
+              "Brooklyn Ross",
+              "Athena Aguilera"
+            ],
+            "chapter_number": 65
+          },
+          {
+            "name": "Commotion in Theater",
+            "date": "August 24, 2026",
+            "event_type": "Incident",
+            "participants": [
+              "Brooklyn Ross",
+              "Kira Pierre"
+            ],
+            "chapter_number": 65
+          },
+          {
+            "name": "Discovery of Abandoned Package",
+            "date": "August 24, 2026",
+            "event_type": "Investigation",
+            "participants": [
+              "Brooklyn Ross"
+            ],
+            "chapter_number": 65
+          }
+        ],
+        "standardized_answer": [
+          "{'name': 'Murder Mystery Dinner', 'date': 'June 14, 2025', 'event_type': 'Dinner', 'participants': ['Colton Cyphers', 'Brooklyn Ross', 'Corey Goetz', 'Avah Dunning'], 'chapter_number': 69}",
+          "{'name': 'Introduction of the Game', 'date': 'June 14, 2025', 'event_type': 'Announcement', 'participants': ['Colton Cyphers', 'Brooklyn Ross'], 'chapter_number': 69}",
+          "{'name': 'Career Development Workshop', 'date': 'April 09, 2026', 'event_type': 'Workshop', 'participants': ['Brooklyn Ross', 'Maci Fennell', 'Lila Wilkerson'], 'chapter_number': 102}",
+          "{'name': 'Fire Hula Hoop Dance by Brooklyn Ross', 'date': '2026-06-08', 'event_type': 'Performance', 'participants': ['Brooklyn Ross', 'Maison Corbin'], 'chapter_number': 193}",
+          "{'name': 'Fire Incident in the Stands', 'date': '2026-06-08', 'event_type': 'Accident', 'participants': ['Brooklyn Ross', 'Maison Corbin'], 'chapter_number': 193}",
+          "{'name': 'Theater Performance', 'date': 'August 24, 2026', 'event_type': 'Performance', 'participants': ['Brooklyn Ross', 'Gemma Ayers', 'Athena Aguilera', 'Kira Pierre'], 'chapter_number': 65}",
+          "{'name': \"Discussion on Playwright's Intent\", 'date': 'August 24, 2026', 'event_type': 'Conversation', 'participants': ['Brooklyn Ross', 'Gemma Ayers'], 'chapter_number': 65}",
+          "{'name': 'Suspicious Behavior of Usher', 'date': 'August 24, 2026', 'event_type': 'Observation', 'participants': ['Brooklyn Ross', 'Athena Aguilera'], 'chapter_number': 65}",
+          "{'name': 'Commotion in Theater', 'date': 'August 24, 2026', 'event_type': 'Incident', 'participants': ['Brooklyn Ross', 'Kira Pierre'], 'chapter_number': 65}",
+          "{'name': 'Discovery of Abandoned Package', 'date': 'August 24, 2026', 'event_type': 'Investigation', 'participants': ['Brooklyn Ross'], 'chapter_number': 65}"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Brooklyn Ross' IN e.participants RETURN e.name AS name, e.date AS date, e.event_type AS event_type, e.participants AS participants, e.chapter_number AS chapter_number ORDER BY e.date ASC"
+        ],
+        "token_usage": {
+          "prompt_tokens": 175,
+          "completion_tokens": 17,
+          "total_tokens": 192,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 30.88328,
+      "status": "success",
+      "timestamp": "2025-09-23T15:24:16.161759",
+      "token_usage": {
+        "prompt_tokens": 175,
+        "completion_tokens": 17,
+        "total_tokens": 192,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "Karaoke Night",
+        "Film Festival",
+        "Drone Racing Event",
+        "Murder Mystery Dinner",
+        "Educational Workshop",
+        "Carnival",
+        "Fire Dancing Performance",
+        "Theater Performance",
+        "Tech Hackathon"
+      ]
+    },
+    {
+      "question_idx": 35,
+      "question": "Enumerate all activities that Carter Stewart has been involved in, ordered from earliest to latest in the story's chronology.",
+      "answer": {
+        "session_id": "ddd9c685-bf65-4c6f-a4a4-dac7ebc2a382",
+        "question": "Enumerate all activities that Carter Stewart has been involved in, ordered from earliest to latest in the story's chronology.",
+        "final_answer": [
+          {
+            "name": "Impromptu Karaoke Extravaganza",
+            "date": "2024-05-31",
+            "event_type": "Performance",
+            "chapter_number": 141
+          },
+          {
+            "name": "Carter's Karaoke Performance",
+            "date": "2024-05-31",
+            "event_type": "Performance",
+            "chapter_number": 141
+          },
+          {
+            "name": "Symphony Performance",
+            "date": "2025-06-14",
+            "event_type": "Performance",
+            "chapter_number": 145
+          },
+          {
+            "name": "Literary Festival",
+            "date": "2025-12-25",
+            "event_type": "Festival",
+            "chapter_number": 134
+          },
+          {
+            "name": "Art Exhibition",
+            "date": "2025-12-25",
+            "event_type": "Exhibition",
+            "chapter_number": 134
+          },
+          {
+            "name": "Carter Stewart's Performance",
+            "date": "2026-01-03",
+            "event_type": "Performance",
+            "chapter_number": 29
+          },
+          {
+            "name": "Midnight Hackathon",
+            "date": "2026-06-08",
+            "event_type": "Hackathon",
+            "chapter_number": 111
+          },
+          {
+            "name": "Unnatural Encounter",
+            "date": "2026-06-08",
+            "event_type": "Confrontation",
+            "chapter_number": 111
+          },
+          {
+            "name": "Digital Apocalypse Whisper",
+            "date": "2026-06-08",
+            "event_type": "Supernatural Event",
+            "chapter_number": 111
+          },
+          {
+            "name": "Stargazing Meditation Session",
+            "date": "2026-04-09",
+            "event_type": "Workshop",
+            "chapter_number": 136
+          }
+        ],
+        "standardized_answer": [
+          "{'name': 'Impromptu Karaoke Extravaganza', 'date': '2024-05-31', 'event_type': 'Performance', 'chapter_number': 141}",
+          "{'name': \"Carter's Karaoke Performance\", 'date': '2024-05-31', 'event_type': 'Performance', 'chapter_number': 141}",
+          "{'name': 'Symphony Performance', 'date': '2025-06-14', 'event_type': 'Performance', 'chapter_number': 145}",
+          "{'name': 'Literary Festival', 'date': '2025-12-25', 'event_type': 'Festival', 'chapter_number': 134}",
+          "{'name': 'Art Exhibition', 'date': '2025-12-25', 'event_type': 'Exhibition', 'chapter_number': 134}",
+          "{'name': \"Carter Stewart's Performance\", 'date': '2026-01-03', 'event_type': 'Performance', 'chapter_number': 29}",
+          "{'name': 'Midnight Hackathon', 'date': '2026-06-08', 'event_type': 'Hackathon', 'chapter_number': 111}",
+          "{'name': 'Unnatural Encounter', 'date': '2026-06-08', 'event_type': 'Confrontation', 'chapter_number': 111}",
+          "{'name': 'Digital Apocalypse Whisper', 'date': '2026-06-08', 'event_type': 'Supernatural Event', 'chapter_number': 111}",
+          "{'name': 'Stargazing Meditation Session', 'date': '2026-04-09', 'event_type': 'Workshop', 'chapter_number': 136}"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Carter Stewart' IN e.participants RETURN e.name AS name, e.date AS date, e.event_type AS event_type, e.chapter_number AS chapter_number, e.participants AS participants ORDER BY e.date ASC"
+        ],
+        "token_usage": {
+          "prompt_tokens": 175,
+          "completion_tokens": 21,
+          "total_tokens": 196,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 24.614323,
+      "status": "success",
+      "timestamp": "2025-09-23T15:24:47.045541",
+      "token_usage": {
+        "prompt_tokens": 175,
+        "completion_tokens": 21,
+        "total_tokens": 196,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "Scientific Conference",
+        "Karaoke Night",
+        "Ballet Performance",
+        "Classical Music Concert",
+        "Carnival",
+        "Parkour Workshop",
+        "Literary Festival",
+        "Theater Performance",
+        "Astronomy Night",
+        "Educational Workshop",
+        "Tech Hackathon",
+        "Archery Tournament",
+        "Scientific Conference"
+      ]
+    }
+  ]
+}

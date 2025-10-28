@@ -1,0 +1,193 @@
+{
+  "metadata": {
+    "start_time": "2025-09-19T14:36:42.532945",
+    "database": "196chapters",
+    "question_range": "21-25",
+    "total_questions": 5,
+    "end_time": "2025-09-19T14:39:24.659483",
+    "total_duration": 162.125234
+  },
+  "results": [
+    {
+      "question_idx": 9,
+      "question": "Recall all events related to Archery Tournament. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "600f41a4-0c09-4b76-8d3f-5fbb6e4b52be",
+        "question": "Recall all events related to Archery Tournament. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": [
+          "September 13, 2025",
+          "September 03, 2026"
+        ],
+        "standardized_answer": [
+          "September 13, 2025",
+          "September 03, 2026"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) AND e.date IS NOT NULL RETURN DISTINCT e.date AS date"
+        ]
+      },
+      "duration_seconds": 13.463855,
+      "status": "success",
+      "timestamp": "2025-09-19T14:36:42.533043",
+      "expected_answer": [
+        "September 03, 2026",
+        "March 23, 2025",
+        "September 13, 2025",
+        "March 23, 2024"
+      ]
+    },
+    {
+      "question_idx": 9,
+      "question": "Recall all events related to Burlesque Performance. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "be971959-ac41-4912-97f5-38085f0381f0",
+        "question": "Recall all events related to Burlesque Performance. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": [
+          "Unknown",
+          "July 21, 2024",
+          "March 23, 2025"
+        ],
+        "standardized_answer": [
+          "Unknown",
+          "July 21, 2024",
+          "March 23, 2025"
+        ],
+        "total_iterations": 5,
+        "search_successful": true,
+        "reasoning_chain": [
+          "By using a broader keyword like 'Burlesque', the search may capture more relevant events that are categorized under different but related terms, increasing the chances of retrieving the desired dates. (Enhanced with semantic search: Burlesque Show in field event_type)",
+          "By using a broader keyword like 'Burlesque', the search can capture more variations of the event type, potentially leading to a more comprehensive list of dates related to burlesque performances. (Enhanced with semantic search: Burlesque Show in field event_type)",
+          "By using a broader keyword like 'Burlesque', the search may capture more relevant events that include variations of the term, increasing the chances of retrieving dates for related performances. (Enhanced with semantic search: Burlesque Show in field event_type)",
+          "By broadening the search to include related terms, it increases the chances of capturing events that may not be explicitly labeled as 'Burlesque' but are similar in nature. (Enhanced with semantic search: Theater in field event_type)"
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS 'burlesque' OR toLower(e.description) CONTAINS 'burlesque' RETURN DISTINCT e.date AS date"
+        ]
+      },
+      "duration_seconds": 94.420943,
+      "status": "success",
+      "timestamp": "2025-09-19T14:36:55.997473",
+      "expected_answer": [
+        "September 13, 2025",
+        "July 21, 2024",
+        "March 23, 2025"
+      ]
+    },
+    {
+      "question_idx": 9,
+      "question": "Recall all events related to Carnival. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "534b9363-f800-4841-9f6d-7bc4b9da9ffa",
+        "question": "Recall all events related to Carnival. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": [
+          "July 31, 2025",
+          "September 13, 2025",
+          "May 11, 2026",
+          "August 24, 2026",
+          "September 22, 2026"
+        ],
+        "standardized_answer": [
+          "July 31, 2025",
+          "September 13, 2025",
+          "May 11, 2026",
+          "August 24, 2026",
+          "September 22, 2026"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) OR toLower(e.event_type) CONTAINS toLower($kw) RETURN DISTINCT e.date AS date"
+        ]
+      },
+      "duration_seconds": 12.406834,
+      "status": "success",
+      "timestamp": "2025-09-19T14:38:30.418649",
+      "expected_answer": [
+        "May 11, 2026",
+        "August 24, 2026",
+        "September 22, 2026",
+        "September 13, 2025",
+        "July 31, 2025"
+      ]
+    },
+    {
+      "question_idx": 9,
+      "question": "Recall all events related to Classical Music Concert. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "18b10b0a-d2f8-4056-b501-6af63a7faf66",
+        "question": "Recall all events related to Classical Music Concert. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": [
+          "July 25, 2024"
+        ],
+        "standardized_answer": [
+          "July 25, 2024"
+        ],
+        "total_iterations": 2,
+        "search_successful": true,
+        "reasoning_chain": [
+          "By using a broader term like 'Classical Concert', the search may capture more relevant events. Additionally, implementing a fuzzy matching or partial string matching could help in retrieving events that are related but not an exact match. (Enhanced with semantic search: Classical Music Concert in field name)"
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) RETURN DISTINCT e.date AS date"
+        ]
+      },
+      "duration_seconds": 27.859167,
+      "status": "success",
+      "timestamp": "2025-09-19T14:38:42.825619",
+      "expected_answer": [
+        "May 11, 2026",
+        "June 14, 2025",
+        "July 25, 2024"
+      ]
+    },
+    {
+      "question_idx": 9,
+      "question": "Recall all events related to Ice Sculpture Exhibition. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "237c031f-0d8c-46be-9a58-2caa422aeb28",
+        "question": "Recall all events related to Ice Sculpture Exhibition. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": [
+          "November 07, 2025",
+          "December 25, 2025",
+          "January 03, 2026",
+          "February 27, 2026",
+          "May 11, 2026",
+          "December 03, 2026"
+        ],
+        "standardized_answer": [
+          "November 07, 2025",
+          "December 25, 2025",
+          "January 03, 2026",
+          "February 27, 2026",
+          "May 11, 2026",
+          "December 03, 2026"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) RETURN e.date AS date"
+        ]
+      },
+      "duration_seconds": 13.974435,
+      "status": "success",
+      "timestamp": "2025-09-19T14:39:10.684957",
+      "expected_answer": [
+        "May 11, 2026",
+        "November 07, 2025",
+        "February 27, 2026",
+        "December 25, 2025",
+        "January 03, 2026"
+      ]
+    }
+  ]
+}

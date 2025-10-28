@@ -1,0 +1,468 @@
+{
+  "metadata": {
+    "start_time": "2025-09-23T00:08:41.835024",
+    "database": "197chapters2",
+    "question_range": "191-200",
+    "total_questions": 10,
+    "end_time": "2025-09-23T00:11:46.233719",
+    "total_duration": 184.396206
+  },
+  "results": [
+    {
+      "question_idx": 30,
+      "question": "What is the most recent date Julian Peterson was observed or mentioned in the story's chronology?",
+      "answer": {
+        "session_id": "55c3f7fc-84d9-43a1-ba64-2ebb59161402",
+        "question": "What is the most recent date Julian Peterson was observed or mentioned in the story's chronology?",
+        "final_answer": "Unknown",
+        "standardized_answer": [
+          "Unknown"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Julian Peterson' IN e.participants RETURN e.date AS date, e.participants AS participants, e.event_type AS event_type ORDER BY e.date DESC LIMIT 1"
+        ],
+        "token_usage": {
+          "prompt_tokens": 170,
+          "completion_tokens": 17,
+          "total_tokens": 187,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 16.182989,
+      "status": "success",
+      "timestamp": "2025-09-23T00:08:41.835086",
+      "token_usage": {
+        "prompt_tokens": 170,
+        "completion_tokens": 17,
+        "total_tokens": 187,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "April 09, 2026"
+      ]
+    },
+    {
+      "question_idx": 30,
+      "question": "What is the most recent date Levi Cruz was observed or mentioned in the story's chronology?",
+      "answer": {
+        "session_id": "3b783ae0-e67a-437d-8d87-40084c6b282e",
+        "question": "What is the most recent date Levi Cruz was observed or mentioned in the story's chronology?",
+        "final_answer": "November 13, 2026",
+        "standardized_answer": [
+          "November 13, 2026"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Levi Cruz' IN e.participants RETURN e.date AS date, e.participants AS participants, e.event_type AS event_type ORDER BY e.date DESC LIMIT 1"
+        ],
+        "token_usage": {
+          "prompt_tokens": 170,
+          "completion_tokens": 17,
+          "total_tokens": 187,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 14.777819,
+      "status": "success",
+      "timestamp": "2025-09-23T00:08:58.018731",
+      "token_usage": {
+        "prompt_tokens": 170,
+        "completion_tokens": 17,
+        "total_tokens": 187,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "November 13, 2026"
+      ]
+    },
+    {
+      "question_idx": 7,
+      "question": "Consider all events that Bella Brown has been involved in. List all the locations where these events took place, without mentioning the events themselves.",
+      "answer": {
+        "session_id": "83535c8f-7f24-4fb2-82bd-142da3edda16",
+        "question": "Consider all events that Bella Brown has been involved in. List all the locations where these events took place, without mentioning the events themselves.",
+        "final_answer": [
+          "Bethpage Black Course",
+          "Makeshift stage at Bethpage Black Course",
+          "The High Line",
+          "Lincoln Center",
+          "Unknown"
+        ],
+        "standardized_answer": [
+          "Bethpage Black Course",
+          "Makeshift stage at Bethpage Black Course",
+          "The High Line",
+          "Lincoln Center",
+          "Unknown"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Bella Brown' IN e.participants AND e.location IS NOT NULL AND e.location <> '' RETURN DISTINCT e.location AS location"
+        ],
+        "token_usage": {
+          "prompt_tokens": 179,
+          "completion_tokens": 16,
+          "total_tokens": 195,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 14.39579,
+      "status": "success",
+      "timestamp": "2025-09-23T00:09:12.796775",
+      "token_usage": {
+        "prompt_tokens": 179,
+        "completion_tokens": 16,
+        "total_tokens": 195,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "High Line",
+        "Bethpage Black Course",
+        "Lincoln Center"
+      ]
+    },
+    {
+      "question_idx": 7,
+      "question": "Consider all events that Hazel Lewis has been involved in. List all the locations where these events took place, without mentioning the events themselves.",
+      "answer": {
+        "session_id": "d1728cb1-fb43-4099-8e46-dd501dc80cac",
+        "question": "Consider all events that Hazel Lewis has been involved in. List all the locations where these events took place, without mentioning the events themselves.",
+        "final_answer": [
+          "Brooklyn Bridge",
+          "One World Trade Center",
+          "St. Patrick's Cathedral",
+          "Bethpage Black Course"
+        ],
+        "standardized_answer": [
+          "Brooklyn Bridge",
+          "One World Trade Center",
+          "St. Patrick's Cathedral",
+          "Bethpage Black Course"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Hazel Lewis' IN e.participants RETURN DISTINCT e.location AS location"
+        ],
+        "token_usage": {
+          "prompt_tokens": 179,
+          "completion_tokens": 17,
+          "total_tokens": 196,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 13.852731,
+      "status": "success",
+      "timestamp": "2025-09-23T00:09:27.192771",
+      "token_usage": {
+        "prompt_tokens": 179,
+        "completion_tokens": 17,
+        "total_tokens": 196,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "St. Patrick's Cathedral",
+        "Brooklyn Bridge",
+        "Bethpage Black Course",
+        "One World Trade Center"
+      ]
+    },
+    {
+      "question_idx": 7,
+      "question": "Consider all events that Jackson Ramos has been involved in. List all the locations where these events took place, without mentioning the events themselves.",
+      "answer": {
+        "session_id": "508b2630-639c-473a-98b5-93be3e9897cb",
+        "question": "Consider all events that Jackson Ramos has been involved in. List all the locations where these events took place, without mentioning the events themselves.",
+        "final_answer": [
+          "High Line",
+          "Unknown",
+          "Ellis Island",
+          "Snug Harbor Cultural Center",
+          "Central Park",
+          "Fortune Teller's Tent, Central Park",
+          "One World Trade Center"
+        ],
+        "standardized_answer": [
+          "High Line",
+          "Unknown",
+          "Ellis Island",
+          "Snug Harbor Cultural Center",
+          "Central Park",
+          "Fortune Teller's Tent, Central Park",
+          "One World Trade Center"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Jackson Ramos' IN e.participants AND e.location IS NOT NULL AND e.location <> '' RETURN DISTINCT e.location AS location"
+        ],
+        "token_usage": {
+          "prompt_tokens": 179,
+          "completion_tokens": 16,
+          "total_tokens": 195,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 15.244221,
+      "status": "success",
+      "timestamp": "2025-09-23T00:09:41.045716",
+      "token_usage": {
+        "prompt_tokens": 179,
+        "completion_tokens": 16,
+        "total_tokens": 195,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "High Line",
+        "Snug Harbor Cultural Center",
+        "Central Park",
+        "One World Trade Center",
+        "Ellis Island"
+      ]
+    },
+    {
+      "question_idx": 7,
+      "question": "Consider all events that Julian Peterson has been involved in. List all the locations where these events took place, without mentioning the events themselves.",
+      "answer": {
+        "session_id": "25e77f8c-4e49-45e9-8866-be3f4cd88f1c",
+        "question": "Consider all events that Julian Peterson has been involved in. List all the locations where these events took place, without mentioning the events themselves.",
+        "final_answer": [
+          "American Museum of Natural History",
+          "Van Cortlandt Park",
+          "Exhibition Space",
+          "Grand Hall"
+        ],
+        "standardized_answer": [
+          "American Museum of Natural History",
+          "Van Cortlandt Park",
+          "Exhibition Space",
+          "Grand Hall"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Julian Peterson' IN e.participants AND e.location IS NOT NULL AND e.location <> '' RETURN DISTINCT e.location AS location"
+        ],
+        "token_usage": {
+          "prompt_tokens": 179,
+          "completion_tokens": 17,
+          "total_tokens": 196,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 13.842139,
+      "status": "success",
+      "timestamp": "2025-09-23T00:09:56.290159",
+      "token_usage": {
+        "prompt_tokens": 179,
+        "completion_tokens": 17,
+        "total_tokens": 196,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "Van Cortlandt Park",
+        "American Museum of Natural History",
+        "Metropolitan Museum of Art"
+      ]
+    },
+    {
+      "question_idx": 7,
+      "question": "Consider all events that Levi Cruz has been involved in. List all the locations where these events took place, without mentioning the events themselves.",
+      "answer": {
+        "session_id": "ea6a6263-9338-48d9-8e01-4ed6f280601c",
+        "question": "Consider all events that Levi Cruz has been involved in. List all the locations where these events took place, without mentioning the events themselves.",
+        "final_answer": [
+          "Woolworth Building",
+          "Yankee Stadium"
+        ],
+        "standardized_answer": [
+          "Woolworth Building",
+          "Yankee Stadium"
+        ],
+        "total_iterations": 3,
+        "search_successful": true,
+        "reasoning_chain": [
+          "Execution error: {code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input 'FOR': expected an expression, ',' or ']' (line 1, column 59 (offset: 58))\n\"MATCH (e:Event) WHERE toLower('Levi Cruz') IN [toLower(p) FOR p IN e.participants] AND e.location IS NOT NULL AND e.location <> '' RETURN DISTINCT e.location AS location\"\n                                                           ^}",
+          "Execution error: {code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input 'FOR': expected an expression, ',' or ']' (line 1, column 59 (offset: 58))\n\"MATCH (e:Event) WHERE toLower('Levi Cruz') IN [toLower(p) FOR p IN e.participants] AND e.location IS NOT NULL AND e.location <> '' RETURN DISTINCT e.location AS location\"\n                                                           ^}"
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower('Levi Cruz') IN [toLower(p) FOR p IN e.participants] AND e.location IS NOT NULL AND e.location <> '' RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE toLower('Levi Cruz') IN [toLower(p) FOR p IN e.participants] AND e.location IS NOT NULL AND e.location <> '' RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(p) = toLower($person)) AND e.location IS NOT NULL AND e.location <> '' RETURN DISTINCT e.location AS location"
+        ],
+        "token_usage": {
+          "prompt_tokens": 179,
+          "completion_tokens": 17,
+          "total_tokens": 196,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 53.371378,
+      "status": "success",
+      "timestamp": "2025-09-23T00:10:10.132491",
+      "token_usage": {
+        "prompt_tokens": 179,
+        "completion_tokens": 17,
+        "total_tokens": 196,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "Woolworth Building",
+        "Yankee Stadium"
+      ]
+    },
+    {
+      "question_idx": 33,
+      "question": "Provide a chronological list of all dates when Bella Brown was observed, from earliest to latest in the story's timeline.",
+      "answer": {
+        "session_id": "e1efca43-f891-4eb4-9e02-8cc8333f022f",
+        "question": "Provide a chronological list of all dates when Bella Brown was observed, from earliest to latest in the story's timeline.",
+        "final_answer": [
+          "2024-03-23",
+          "2025-03-23",
+          "January 03, 2026"
+        ],
+        "standardized_answer": [
+          "2024-03-23",
+          "2025-03-23",
+          "January 03, 2026"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Bella Brown' IN e.participants AND e.date IS NOT NULL RETURN e.date AS date, e.participants AS participants ORDER BY e.date ASC"
+        ],
+        "token_usage": {
+          "prompt_tokens": 175,
+          "completion_tokens": 16,
+          "total_tokens": 191,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 15.421511,
+      "status": "success",
+      "timestamp": "2025-09-23T00:11:03.504164",
+      "token_usage": {
+        "prompt_tokens": 175,
+        "completion_tokens": 16,
+        "total_tokens": 191,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "March 23, 2024",
+        "March 23, 2025",
+        "January 03, 2026"
+      ]
+    },
+    {
+      "question_idx": 33,
+      "question": "Provide a chronological list of all dates when Hazel Lewis was observed, from earliest to latest in the story's timeline.",
+      "answer": {
+        "session_id": "32f93201-33c6-4ac9-940f-34cce67a9ece",
+        "question": "Provide a chronological list of all dates when Hazel Lewis was observed, from earliest to latest in the story's timeline.",
+        "final_answer": [
+          "May 28, 2025",
+          "February 27, 2026",
+          "May 11, 2026",
+          "September 03, 2026",
+          "Unknown"
+        ],
+        "standardized_answer": [
+          "May 28, 2025",
+          "February 27, 2026",
+          "May 11, 2026",
+          "September 03, 2026",
+          "Unknown"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Hazel Lewis' IN e.participants AND e.date IS NOT NULL RETURN e.date AS date, e.participants AS participants ORDER BY e.date ASC"
+        ],
+        "token_usage": {
+          "prompt_tokens": 175,
+          "completion_tokens": 17,
+          "total_tokens": 192,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 14.443475,
+      "status": "success",
+      "timestamp": "2025-09-23T00:11:18.925762",
+      "token_usage": {
+        "prompt_tokens": 175,
+        "completion_tokens": 17,
+        "total_tokens": 192,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "May 28, 2025",
+        "February 27, 2026",
+        "May 11, 2026",
+        "September 03, 2026"
+      ]
+    },
+    {
+      "question_idx": 33,
+      "question": "Provide a chronological list of all dates when Jackson Ramos was observed, from earliest to latest in the story's timeline.",
+      "answer": {
+        "session_id": "f8bd3a64-deee-4ad0-adf4-a16ffc1e1ba7",
+        "question": "Provide a chronological list of all dates when Jackson Ramos was observed, from earliest to latest in the story's timeline.",
+        "final_answer": [
+          "June 14, 2025",
+          "February 27, 2026",
+          "April 09, 2026",
+          "August 24, 2026",
+          "September 22, 2026"
+        ],
+        "standardized_answer": [
+          "June 14, 2025",
+          "February 27, 2026",
+          "April 09, 2026",
+          "August 24, 2026",
+          "September 22, 2026"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Jackson Ramos' IN e.participants AND e.date IS NOT NULL RETURN DISTINCT e.date AS date, e.participants AS participants ORDER BY e.date"
+        ],
+        "token_usage": {
+          "prompt_tokens": 175,
+          "completion_tokens": 16,
+          "total_tokens": 191,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 12.864153,
+      "status": "success",
+      "timestamp": "2025-09-23T00:11:33.369412",
+      "token_usage": {
+        "prompt_tokens": 175,
+        "completion_tokens": 16,
+        "total_tokens": 191,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "June 14, 2025",
+        "February 27, 2026",
+        "April 09, 2026",
+        "August 24, 2026",
+        "September 22, 2026"
+      ]
+    }
+  ]
+}

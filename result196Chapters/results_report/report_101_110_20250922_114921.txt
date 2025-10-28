@@ -1,0 +1,103 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-22 11:49:21
+Question Range: 101-110
+Total Questions Processed: 10
+Successful Searches: 2 (20.0%)
+Questions with Answers: 2 (20.0%)
+Average Iterations per Question: 4.8
+
+DETAILED RESULTS:
+------------------------------
+
+Question 101:
+  Text: What is the most recent location where Caleb Perez was observed in the story's chronological timeline?
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3286 total (2476 prompt + 810 completion, 6 calls)
+
+Question 102:
+  Text: What is the most recent location where Charlotte White was observed in the story's chronological timeline?
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3215 total (2325 prompt + 890 completion, 6 calls)
+
+Question 103:
+  Text: Think about Andrew Gomez's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3220 total (2319 prompt + 901 completion, 6 calls)
+
+Question 104:
+  Text: Think about Ava Morris's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2822 total (2089 prompt + 733 completion, 5 calls)
+
+Question 105:
+  Text: Think about Brooklyn Sanders's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.
+  Expected: []
+  Predicted: ['Brooklyn Ross hosted the film award ceremonies, blending cinema with magic, as she prepared to take center stage amidst a transformed park filled with floating lanterns and an excited crowd.', "Easton Perdue approached Brooklyn with a scroll containing the nominees' names, written in shimmering ink, as the ceremony was about to begin.", 'Brooklyn conjured a shower of golden sparks that rained down on the assembly, signaling the start of the ceremony.', 'A theater performance took place at the Brooklyn Museum, drawing the attention of Brooklyn Ross, who observed the events closely due to her detective instincts.', "During the intermission of the performance, Brooklyn Ross engaged in a discussion with Gemma Ayers about the playwright's intent, which left her intrigued.", 'Brooklyn Ross observed unusual behavior from usher Athena Aguilera, who seemed particularly interested in a section of the audience during the performance.', 'A sudden commotion erupted near the back of the theater, prompting Kira Pierre to stand abruptly and rush towards the exit, leaving behind a small package.', 'After the performance, Brooklyn Ross discovered an abandoned package left by Kira Pierre, which contained cryptic notes related to the play.', 'Guests gathered on the Queensboro Bridge for a murder mystery dinner hosted by Colton Cyphers, where they were tasked with unraveling a fictional crime.', 'Colton Cyphers announced the start of the murder mystery game, inviting guests to uncover the truth behind a heinous crime.', 'Brooklyn Ross and Avah Dunning engaged in a conversation about the historical accuracy of the time period relevant to the mystery, highlighting its importance in solving the case.', 'A unique hackathon where participants explored the fusion of technology and magic, exchanging groundbreaking ideas and innovations.', "Brooklyn Ross networked with tech professionals, discussing the integration of nature's wisdom into AI and future innovations.", 'Brooklyn Ross engaged in creating new ideas by melding ancient spells with neural networks at a floating workstation.', 'A pivotal workshop focused on peer review in the professional field, where participants engaged in multiple peer reviews, leading to a realization of lost creativity.', 'A drone racing event took place featuring sleek drones navigating an intricate obstacle course, with spectators and pilots engaged in the excitement.', 'Demonstrations of anti-drone technology were held in a quieter corner of the museum, contrasting with the ongoing drone racing event.', "The final race concluded with a burst of applause from the crowd as they surged towards the winner's podium.", 'A young woman performed on an enchanted stage at Yankee Stadium, captivating thousands of spectators with her magical singing and dancing, which caused flowers to bloom and illusions to appear.', 'Brooklyn Ross participated in a karaoke dance-off, mesmerizing the audience with her synchronized movements and magical voice that created harmonies and illusions.', 'Brooklyn Ross participated in a pie-eating contest at the carnival, where she faced off against other competitors as the carnival barker announced the start of the competition.', 'During the pie-eating contest, Brooklyn experienced a sharp pain in her abdomen, leading to a medical emergency as she struggled to breathe and Frey Hood shouted for help.', 'Brooklyn Ross performed a fire hula hoop dance, but struggled to maintain control of the flaming hoop, leading to a tragic incident.', "During Brooklyn's performance, the flaming hoop slipped from her grasp and flew into the crowd, causing chaos and panic as fire spread through the stands."]
+  Search Success: True
+  Confidence: 0.60
+  Iterations: 3
+  Token Usage: 768 total (587 prompt + 181 completion, 2 calls)
+
+Question 106:
+  Text: Think about Caleb Perez's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2196 total (1621 prompt + 575 completion, 4 calls)
+
+Question 107:
+  Text: Think about Charlotte White's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2987 total (2254 prompt + 733 completion, 5 calls)
+
+Question 108:
+  Text: What is the most recent date Andrew Gomez was observed or mentioned in the story's chronology?
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3383 total (2475 prompt + 908 completion, 6 calls)
+
+Question 109:
+  Text: What is the most recent date Ava Morris was observed or mentioned in the story's chronology?
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3294 total (2384 prompt + 910 completion, 6 calls)
+
+Question 110:
+  Text: What is the most recent date Brooklyn Sanders was observed or mentioned in the story's chronology?
+  Expected: []
+  Predicted: Unknown
+  Search Success: True
+  Confidence: 0.20
+  Iterations: 5
+  Token Usage: 2654 total (1858 prompt + 796 completion, 5 calls)
+

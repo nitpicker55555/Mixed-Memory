@@ -1,0 +1,463 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-25 20:28:52
+Question Range: 251-300
+Total Questions Processed: 50
+Successful Searches: 46 (92.0%)
+Questions with Answers: 46 (92.0%)
+Average Iterations per Question: 1.7
+
+DETAILED RESULTS:
+------------------------------
+
+Question 251:
+  Text: Consider all events that Chloe Castillo has been involved in. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['High Line', 'Van Cortlandt Park', 'Port Jefferson', 'American Museum of Natural History', 'Yankee Stadium', 'Bethpage Black Course', 'Grand Central Terminal']
+  Predicted: ['American Museum of Natural History', 'High Line', 'Unknown', 'Bethpage Black Course', 'Port Jefferson', 'Grand Central Terminal', 'Van Cortlandt Park']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 196 total (179 prompt + 17 completion, 1 calls)
+
+Question 252:
+  Text: Consider all events that Ezra Edwards has been involved in. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Water Mill Museum', 'Port Jefferson', 'Yankee Stadium', 'New York Botanical Garden', 'Brooklyn Bridge', 'Bethpage Black Course', 'One World Trade Center']
+  Predicted: ['Bethpage Black Course', 'New York Botanical Garden', 'One World Trade Center', 'Port Jefferson', 'Water Mill Museum', 'Yankee Stadium', 'Brooklyn Bridge']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 196 total (179 prompt + 17 completion, 1 calls)
+
+Question 253:
+  Text: Think about Benjamin Green's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.
+  Expected: ['Fashion Show', 'Ice Sculpture Exhibition', 'Film Festival', 'Tech Hackathon', 'Scientific Conference', 'Fire Dancing Performance']
+  Predicted: ['An exhibition featuring ice sculptures drew a crowd, where visitors marveled at the frozen artworks despite the rising temperatures threatening their preservation.', 'A man who once conducted ice preservation talks reflects on his past as he observes the melting sculptures.', 'Developers participated in a hackathon challenge, collaborating and pushing their limits while working on innovative projects.', 'Benjamin Green presented his project to an assembled crowd, receiving thunderous applause for his work.', 'During the awards ceremony, Benjamin Green and Genevieve Burgin were both recognized for their contributions, marking a significant moment in the hackathon.', 'Developers mingled and formed teams, sharing ideas and visions for future projects, creating a vibrant atmosphere of innovation.', 'The fashion show transformed the park into a realm of enchantment, featuring models in otherworldly garments and a runway made of living vines and flowers.', "Benjamin Green engaged in animated discussions with fashion critics about the transformative power of Heidi Carroll's latest collection.", 'The finale featured models in gowns that appeared to be spun from moonlight and starshine, leaving the audience breathless.', 'A thunderous applause erupted from the enchanted audience as the last model disappeared behind the curtain.', 'Benjamin Green attends a scientific conference in Washington Square Park, filled with researchers and onlookers, where he prepares for his presentation.', 'Benjamin Green presents his vision for the future of his field to an audience at the conference, captivating them with his passion.', 'Benjamin Green engages in a lively debate with Kaiden Wenger and Daphne Lester, discussing differing perspectives on scientific topics.', 'Benjamin Green and Messiah Ritter share a moment of connection during the conference, exchanging glances and engaging in conversation.', 'Benjamin Green stepped onto the red carpet at Madison Square Garden, engaging with fans and media while grappling with his recent diagnosis.', 'Benjamin conducted meet-and-greets with fans, signing autographs and posing for photos despite feeling unwell.', 'During the event, Benjamin stumbled and nearly lost consciousness, prompting Aileen Stanton to rush to his side.', 'Benjamin Green performed a fire staff juggling act, showcasing his skills as flames leapt from the staffs. The performance took a turn when he lost control of the staffs, leading to a dangerous situation.', 'During the performance, Benjamin lost control of the fire staffs, causing flames to spread and panic among the audience. A security guard attempted to extinguish the fire, but chaos ensued.']
+  Search Success: True
+  Confidence: 0.60
+  Iterations: 3
+  Token Usage: 197 total (181 prompt + 16 completion, 1 calls)
+
+Question 254:
+  Text: Think about Brooklyn Ross's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.
+  Expected: ['Theater Performance', 'Film Festival', 'Drone Racing Event', 'Karaoke Night', 'Educational Workshop', 'Murder Mystery Dinner', 'Tech Hackathon', 'Fire Dancing Performance', 'Carnival']
+  Predicted: ['Brooklyn Ross hosted the film award ceremonies, blending cinema with magic, as she prepared to take center stage amidst a transformed park filled with floating lanterns and an excited crowd.', "Easton Perdue approached Brooklyn with a scroll containing the nominees' names, written in shimmering ink, as the ceremony was about to begin.", 'Brooklyn conjured a shower of golden sparks that rained down on the assembly, signaling the start of the ceremony.', 'A theater performance took place at the Brooklyn Museum, drawing the attention of Brooklyn Ross, who observed the events closely due to her detective instincts.', "During the intermission of the performance, Brooklyn Ross engaged in a discussion with Gemma Ayers about the playwright's intent, which left her intrigued.", 'Brooklyn Ross observed unusual behavior from usher Athena Aguilera, who seemed particularly interested in a section of the audience during the performance.', 'A sudden commotion erupted near the back of the theater, prompting Kira Pierre to stand abruptly and rush towards the exit, leaving behind a small package.', 'After the performance, Brooklyn Ross discovered an abandoned package left by Kira Pierre, which contained cryptic notes related to the play.', 'Guests gathered on the Queensboro Bridge for a murder mystery dinner hosted by Colton Cyphers, where they were tasked with unraveling a fictional crime.', 'Colton Cyphers announced the start of the murder mystery game, inviting guests to uncover the truth behind a heinous crime.', 'Brooklyn Ross and Avah Dunning engaged in a conversation about the historical accuracy of the time period relevant to the mystery, highlighting its importance in solving the case.', 'A unique hackathon where participants explored the fusion of technology and magic, exchanging groundbreaking ideas and innovations.', "Brooklyn Ross networked with tech professionals, discussing the integration of nature's wisdom into AI and future innovations.", 'Brooklyn Ross engaged in creating new ideas by melding ancient spells with neural networks at a floating workstation.', 'A pivotal workshop focused on peer review in the professional field, where participants engaged in multiple peer reviews, leading to a realization of lost creativity.', 'A drone racing event took place featuring sleek drones navigating an intricate obstacle course, with spectators and pilots engaged in the excitement.', 'Demonstrations of anti-drone technology were held in a quieter corner of the museum, contrasting with the ongoing drone racing event.', "The final race concluded with a burst of applause from the crowd as they surged towards the winner's podium.", 'A young woman performed on an enchanted stage at Yankee Stadium, captivating thousands of spectators with her magical singing and dancing, which caused flowers to bloom and illusions to appear.', 'Brooklyn Ross participated in a karaoke dance-off, mesmerizing the audience with her synchronized movements and magical voice that created harmonies and illusions.', 'Brooklyn Ross participated in a pie-eating contest at the carnival, where she faced off against other competitors as the carnival barker announced the start of the competition.', 'During the pie-eating contest, Brooklyn experienced a sharp pain in her abdomen, leading to a medical emergency as she struggled to breathe and Frey Hood shouted for help.', 'Brooklyn Ross performed a fire hula hoop dance, but struggled to maintain control of the flaming hoop, leading to a tragic incident.', "During Brooklyn's performance, the flaming hoop slipped from her grasp and flew into the crowd, causing chaos and panic as fire spread through the stands."]
+  Search Success: True
+  Confidence: 0.60
+  Iterations: 3
+  Token Usage: 198 total (181 prompt + 17 completion, 1 calls)
+
+Question 255:
+  Text: Think about Carter Stewart's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.
+  Expected: ['Theater Performance', 'Astronomy Night', 'Archery Tournament', 'Literary Festival', 'Parkour Workshop', 'Ballet Performance', 'Karaoke Night', 'Educational Workshop', 'Tech Hackathon', 'Scientific Conference', 'Classical Music Concert', 'Carnival']
+  Predicted: ['Carter Stewart performed a captivating act at Yankee Stadium, transforming the venue into a magical realm. His performance conveyed deep emotions and connected him intimately with the audience, particularly with Meredith Strand.', "The performance of Tchaikovsky's 'Swan Lake' captivated the audience, showcasing the prima ballerina's grace and the emotional depth of the choreography, culminating in a tragic conclusion.", "The audience, including Carter and Harleigh, experienced intense emotions during the performance, with tears glistening in Harleigh's eyes.", 'A conference took place at the Metropolitan Museum of Art, featuring various presentations and discussions among attendees.', 'Carter Stewart and Sasha Dickerson were seen in a hushed conversation during the lunch break, raising suspicions.', 'A group of fitness enthusiasts gathered for a parkour workshop, where they practiced various techniques against the backdrop of museum exhibits.', 'Carter Stewart discovered a sophisticated electronic device hidden behind a display during the parkour workshop, raising suspicions about its purpose.', 'A workshop aimed at revolutionizing education took place, with attendees observing and interacting under suspicious circumstances.', "Attendees broke for lunch, during which Carter explored the building, feeling uneasy about the workshop's true purpose.", 'Presley Navarro announced the commencement of the final phase of the workshop, revealing that Carter had completed an assessment while others would undergo evaluation.', 'A hackathon took place at Trinity Church where coders were intensely working on prototype applications. The atmosphere was tense and eerie, culminating in a terrifying incident.', 'Carter Stewart encountered Amaris Edge in the darkened church, realizing the sinister nature of the code they were writing.', 'As the lights went out, Carter Stewart heard whispers of inhuman voices discussing ancient algorithms and a digital apocalypse.', 'Carter Stewart navigated through a carnival filled with colorful tents and crowds, sensing something was amiss.', 'Carter observed Jayce Waldo attempting to land a hoop in a ring toss game amidst the carnival atmosphere.', 'Carter participated in a costume contest, competing against others including Eddie Chase, who was dressed as a cyberpunk samurai.', 'The judging of the costume contest began, with Carter lost in thought as contestants took their turns on stage.', 'Carter noticed staff member Bruno Goldsmith speaking into an earpiece while watching the contestants, raising his suspicions about the carnival.', 'Carter prepared to delve deeper into the carnival, blending into the crowd with his costume as he formulated a plan.', 'A transformed Yankee Stadium hosted a literary festival featuring art exhibitions, installations, and storytelling, celebrating the magic of literature.', 'Carter organized literary-themed art exhibitions showcasing paintings of mythical creatures and far-off lands.', 'As twilight approached, thousands of enchanted candles were lit, creating a breathtaking atmosphere that transformed the stadium.', 'Carter Stewart organized a stargazing meditation session at Washington Square Park, but felt an unsettling presence as he prepared for the event.', 'Fans and players took turns singing their favorite tunes in a lively post-game celebration that turned into a karaoke event.', 'Carter Stewart performed a song, captivating the audience and eliciting laughter and cheers from the crowd.']
+  Search Success: True
+  Confidence: 0.40
+  Iterations: 4
+  Token Usage: 198 total (181 prompt + 17 completion, 1 calls)
+
+Question 256:
+  Text: Think about Chloe Castillo's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.
+  Expected: ['Fashion Show', 'Theater Performance', 'Film Festival', 'Parkour Workshop', 'Educational Workshop', 'Tech Hackathon']
+  Predicted: ['Chloe Castillo showcased her fashion creations in a magical performance, transforming the museum into a realm of high fashion and fantasy, featuring models and ethereal designs.', 'During the fashion show, Chloe conjured a storm of glittering butterflies that swirled around the audience, creating a magical atmosphere.', 'Chloe Castillo prepared for a parkour workshop at the High Line, feeling an eerie silence and an oppressive atmosphere as participants began to arrive.', 'Chloe hosted a parkour film screening the previous night, where she recognized some participants from the event.', 'Luka Shaffer screamed in terror as a sculpture began to turn its head towards the group, causing panic among the participants.', "As panic erupted, the park's features, including plants and benches, began to come to life, creating a hostile environment.", 'A fashion show commenced with unsettling occurrences, including models exhibiting unnatural movements and horrifying transformations.', 'The protagonist delivered a presentation discussing fashion technology just before the fashion show began.', 'Chloe Castillo experienced panic as she and other attendees became frozen in place, oblivious to the horror of the fashion show.', 'The final model on the runway underwent a grotesque transformation into a monstrous creature, shocking the audience.', 'An unsettling silence and eerie static filled the hall as the fashion show was about to begin, creating a tense atmosphere.', 'The walls of the venue began to ooze a thick, black substance, adding to the horror of the event.', "Chloe Castillo organized a parkour fitness workshop at the Bethpage Black Course, transforming the golf course into an obstacle course for urban acrobatics. Participants engaged in various challenges while Chloe felt a sense of unease regarding Brynn Henning's attention and a conversation with Skye Dalton.", 'An educational workshop led by Celeste Faircloth began under unsettling circumstances, with attendees experiencing a sense of dread and strangeness in the atmosphere.', 'Serenity Hawley whispered to Chloe Castillo, expressing a chilling realization that they were trapped in the workshop.', "Celeste Faircloth announced the review of Chloe Castillo's research project, revealing it in an eerie manner that suggested a connection to a greater horror.", 'The film festival opened with eager cinephiles gathering near the ticket booth, while the town was transformed with pop-up theaters and art installations.', "Shay Wells informed Chloe Castillo about Milo Paxton's demands for changes to the festival schedule.", 'Chloe Castillo discovered that the projector, which she had checked earlier, was missing, causing her to panic.', 'Chloe Castillo was pulled into the shadows by an unknown figure who threatened her to come with them if she wanted the festival to succeed.', 'An intimate theater performance took place in Grand Central Terminal, transforming the usually bustling space into a venue filled with anticipation. The performance was interrupted by a piercing scream, leading to a moment of panic among the audience.', 'Chloe Castillo discussed theater funding with Cecilia Adkins earlier in the day before attending the performance.', 'A piercing scream interrupted the performance, causing panic among the audience as Lia Parrish stumbled onto the stage with a prop knife.', 'A hackathon showcasing technological innovations, featuring various booths with demonstrations of cutting-edge gadgets and discussions on data privacy.', 'Chloe discussed data privacy with an assembled crowd, emphasizing the balance between technological advancement and personal freedom.']
+  Search Success: True
+  Confidence: 0.60
+  Iterations: 3
+  Token Usage: 198 total (181 prompt + 17 completion, 1 calls)
+
+Question 257:
+  Text: Think about Ezra Edwards's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.
+  Expected: ['Photography Exhibition', 'Fashion Show', 'Astronomy Night', 'Parkour Workshop', 'Tattoo Convention', 'Tech Hackathon', 'Educational Workshop', 'Fire Dancing Performance']
+  Predicted: ['Parkour Workshop', 'Cat Leaps Demonstration', 'Maze Navigation', 'Final Debrief', 'Educational Workshop at New York Botanical Garden', 'Document Discovery', 'Tattoo Convention', 'Cultural Discussion on Tattoos', 'Annual Fire Dancing Spectacle', "Ezra's Fire Chain Whip Routine", 'Audience Reaction to Fire Performance', 'Tech Hackathon', 'Discussion on Open-Source Development', 'Odd Request for USB Drive', 'Stargazing Event at Yankee Stadium', 'Constellation Projection', 'Storytelling Session', 'Aurora Display', 'Fashion Show on Brooklyn Bridge', 'Ezra Edwards Reveals Fashion Sketches', 'Chaos Erupts at Fashion Show', 'Photography Exhibition Opening', 'Praise from Theo Gillen', 'Technical Discussion', 'Introduction by Kellan Sanborn']
+  Search Success: True
+  Confidence: 0.60
+  Iterations: 3
+  Token Usage: 198 total (181 prompt + 17 completion, 1 calls)
+
+Question 258:
+  Text: List all locations visited by Benjamin Green in chronological order according to the story's timeline.
+  Expected: ['Bethpage State Park', 'Washington Square Park', 'Madison Square Garden', 'Washington Square Park', 'Snug Harbor Cultural Center', 'One World Trade Center']
+  Predicted: ['Bethpage State Park', 'Washington Square Park', 'Madison Square Garden', 'Snug Harbor Cultural Center', 'One World Trade Center']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 185 total (169 prompt + 16 completion, 1 calls)
+
+Question 259:
+  Text: List all locations visited by Brooklyn Ross in chronological order according to the story's timeline.
+  Expected: ['Yankee Stadium', 'High Line', 'Guggenheim Museum', 'Queensboro Bridge', 'One World Trade Center', 'Queensboro Bridge', 'Yankee Stadium', 'Brooklyn Museum', 'Fire Island National Seashore']
+  Predicted: ['Guggenheim Museum', 'Guggenheim Museum', 'Guggenheim Museum', 'Queensboro Bridge', 'Queensboro Bridge', 'Yankee Stadium', 'Yankee Stadium', 'Yankee Stadium', 'High Line, Brooklyn', 'High Line, Brooklyn', 'High Line, Brooklyn', 'Unknown', 'Unknown', 'One World Trade Center', 'Yankee Stadium', 'Brooklyn Museum', 'Brooklyn Museum', 'Brooklyn Museum', 'Brooklyn Museum', 'Brooklyn Museum', 'Fire Island National Seashore', 'Fire Island National Seashore', 'Fire Island National Seashore']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 186 total (169 prompt + 17 completion, 1 calls)
+
+Question 260:
+  Text: List all locations visited by Carter Stewart in chronological order according to the story's timeline.
+  Expected: ['Bethpage Black Course', 'Yankee Stadium', 'Port Jefferson', 'Metropolitan Museum of Art', 'Washington Square Park', 'American Museum of Natural History', 'Yankee Stadium', 'Yankee Stadium', 'Washington Square Park', 'Woolworth Building', 'Trinity Church', 'American Museum of Natural History', 'Metropolitan Museum of Art']
+  Predicted: ['Bethpage Black Course', 'Yankee Stadium', 'Yankee Stadium', 'Yankee Stadium', 'Yankee Stadium', 'Washington Square Park', 'Carnival Fairgrounds', 'Carnival Fairgrounds', 'Carnival Fairgrounds', 'Carnival Fairgrounds', 'Washington Square Park', 'Metropolitan Museum of Art', 'Yankee Stadium', 'Yankee Stadium', 'Yankee Stadium', 'Woolworth Building', 'Woolworth Building', 'Woolworth Building', 'Trinity Church', 'Trinity Church', 'Trinity Church', 'Washington Square Park', 'American Museum of Natural History']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 186 total (169 prompt + 17 completion, 1 calls)
+
+Question 261:
+  Text: List all locations visited by Chloe Castillo in chronological order according to the story's timeline.
+  Expected: ['Bethpage Black Course', 'American Museum of Natural History', 'Van Cortlandt Park', 'Grand Central Terminal', 'Yankee Stadium', 'High Line', 'American Museum of Natural History', 'Port Jefferson']
+  Predicted: ['Bethpage Black Course', 'American Museum of Natural History', 'American Museum of Natural History', 'American Museum of Natural History', 'American Museum of Natural History', 'American Museum of Natural History', 'American Museum of Natural History', 'Van Cortlandt Park', 'Van Cortlandt Park', 'Grand Central Terminal', 'Unknown', 'Grand Central Terminal', 'Unknown', 'Unknown', 'Unknown', 'High Line', 'High Line', 'High Line', 'Port Jefferson', 'Port Jefferson', 'Port Jefferson', 'Port Jefferson', 'American Museum of Natural History', 'American Museum of Natural History', 'Unknown']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 186 total (169 prompt + 17 completion, 1 calls)
+
+Question 262:
+  Text: List all locations visited by Ezra Edwards in chronological order according to the story's timeline.
+  Expected: ['One World Trade Center', 'Water Mill Museum', 'Yankee Stadium', 'One World Trade Center', 'Bethpage Black Course', 'Port Jefferson', 'Brooklyn Bridge', 'New York Botanical Garden']
+  Predicted: ['One World Trade Center', 'Water Mill Museum', 'Yankee Stadium', 'One World Trade Center', 'Bethpage Black Course', 'Brooklyn Bridge', 'Port Jefferson', 'New York Botanical Garden']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 186 total (169 prompt + 17 completion, 1 calls)
+
+Question 263:
+  Text: What is the most recent location where Benjamin Green was observed in the story's chronological timeline?
+  Expected: ['One World Trade Center']
+  Predicted: Unknown
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 186 total (170 prompt + 16 completion, 1 calls)
+
+Question 264:
+  Text: What is the most recent location where Brooklyn Ross was observed in the story's chronological timeline?
+  Expected: ['Fire Island National Seashore']
+  Predicted: Queensboro Bridge
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 187 total (170 prompt + 17 completion, 1 calls)
+
+Question 265:
+  Text: What is the most recent location where Carter Stewart was observed in the story's chronological timeline?
+  Expected: ['Metropolitan Museum of Art']
+  Predicted: Unknown
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 187 total (170 prompt + 17 completion, 1 calls)
+
+Question 266:
+  Text: What is the most recent location where Chloe Castillo was observed in the story's chronological timeline?
+  Expected: ['Port Jefferson']
+  Predicted: Unknown
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 187 total (170 prompt + 17 completion, 1 calls)
+
+Question 267:
+  Text: What is the most recent location where Ezra Edwards was observed in the story's chronological timeline?
+  Expected: ['New York Botanical Garden']
+  Predicted: Brooklyn Bridge
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 187 total (170 prompt + 17 completion, 1 calls)
+
+Question 268:
+  Text: Provide a chronological list of all dates when Benjamin Green was observed, from earliest to latest in the story's timeline.
+  Expected: ['March 23, 2024', 'July 21, 2024', 'September 27, 2025', 'February 27, 2026', 'April 09, 2026', 'May 11, 2026']
+  Predicted: ['2024-03-23', '2024-07-21', '2025-09-27', '2026-02-27', '2026-04-09', '2026-05-11']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 191 total (175 prompt + 16 completion, 1 calls)
+
+Question 269:
+  Text: Provide a chronological list of all dates when Brooklyn Ross was observed, from earliest to latest in the story's timeline.
+  Expected: ['October 12, 2024', 'October 13, 2024', 'May 28, 2025', 'June 14, 2025', 'April 09, 2026', 'May 11, 2026', 'June 08, 2026', 'August 24, 2026', 'November 13, 2026']
+  Predicted: ['May 28, 2025', 'June 14, 2025', 'October 12, 2024', 'October 13, 2024', '2026-06-08', 'May 11, 2026', 'August 24, 2026', 'November 13, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 192 total (175 prompt + 17 completion, 1 calls)
+
+Question 270:
+  Text: Provide a chronological list of all dates when Carter Stewart was observed, from earliest to latest in the story's timeline.
+  Expected: ['March 23, 2024', 'May 31, 2024', 'October 27, 2024', 'June 14, 2025', 'July 31, 2025', 'September 13, 2025', 'December 25, 2025', 'January 03, 2026', 'April 09, 2026', 'May 11, 2026', 'June 08, 2026', 'September 03, 2026', 'September 22, 2026']
+  Predicted: ['March 23, 2024', 'May 31, 2024', 'July 31, 2025', 'December 25, 2025', 'June 14, 2025', 'January 3, 2026', 'April 9, 2026', 'May 11, 2026', 'June 8, 2026', 'September 3, 2026', 'September 22, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 192 total (175 prompt + 17 completion, 1 calls)
+
+Question 271:
+  Text: Provide a chronological list of all dates when Chloe Castillo was observed, from earliest to latest in the story's timeline.
+  Expected: ['May 07, 2024', 'February 22, 2025', 'May 28, 2025', 'June 14, 2025', 'February 27, 2026', 'May 11, 2026', 'September 22, 2026', 'November 13, 2026']
+  Predicted: ['2024-05-07', '2025-02-22', '2025-05-28', '2025-06-14', '2025-06-14', '2025-06-14', '2025-05-28', '2026-02-27', '2026-02-27', '2026-02-27', '2026-05-11', '2026-05-11', '2026-05-11', '2026-09-22', '2026-09-22', '2026-11-13', '2026-11-13', '2026-11-13', '2026-11-13', 'Unknown']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 192 total (175 prompt + 17 completion, 1 calls)
+
+Question 272:
+  Text: Provide a chronological list of all dates when Ezra Edwards was observed, from earliest to latest in the story's timeline.
+  Expected: ['July 21, 2024', 'October 13, 2024', 'May 28, 2025', 'July 31, 2025', 'September 13, 2025', 'February 27, 2026', 'September 22, 2026', 'December 03, 2026']
+  Predicted: ['2024-07-21', '2024-10-13', '2024-10-13', '2024-10-13', '2025-05-28', '2025-05-28', '2025-05-28', '2025-05-28', 'July 31, 2025', 'July 31, 2025', 'September 13, 2025', 'September 13, 2025', 'September 13, 2025', 'September 13, 2025', 'September 22, 2026', 'September 22, 2026', 'September 22, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 192 total (175 prompt + 17 completion, 1 calls)
+
+Question 273:
+  Text: Reflect on all events involving Benjamin Green. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['May 11, 2026', 'July 21, 2024', 'March 23, 2024', 'April 09, 2026', 'February 27, 2026', 'September 27, 2025']
+  Predicted: ['2024-03-23', 'July 21, 2024', '2025-09-27', 'February 27, 2026', 'April 09, 2026', 'May 11, 2026', 'Unknown']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 192 total (176 prompt + 16 completion, 1 calls)
+
+Question 274:
+  Text: Reflect on all events involving Brooklyn Ross. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['May 11, 2026', 'May 28, 2025', 'October 13, 2024', 'April 09, 2026', 'August 24, 2026', 'October 12, 2024', 'November 13, 2026', 'June 08, 2026', 'June 14, 2025']
+  Predicted: ['October 12, 2024', 'October 13, 2024', 'June 14, 2025', 'May 28, 2025', 'April 09, 2026', 'May 11, 2026', 'August 24, 2026', 'November 13, 2026', '2026-06-08', 'Unknown']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 193 total (176 prompt + 17 completion, 1 calls)
+
+Question 275:
+  Text: Reflect on all events involving Carter Stewart. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['May 11, 2026', 'March 23, 2024', 'April 09, 2026', 'October 27, 2024', 'May 31, 2024', 'September 22, 2026', 'September 13, 2025', 'December 25, 2025', 'January 03, 2026', 'July 31, 2025', 'September 03, 2026', 'June 08, 2026', 'June 14, 2025']
+  Predicted: ['2024-05-31', '2024-03-23', '2025-06-14', '2025-07-31', '2025-09-13', '2025-12-25', '2026-01-03', '2026-04-09', '2026-06-08', '2026-09-03', '2026-09-22', '2026-05-11', '2024-10-27', 'Unknown']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 193 total (176 prompt + 17 completion, 1 calls)
+
+Question 276:
+  Text: Reflect on all events involving Chloe Castillo. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['May 11, 2026', 'February 22, 2025', 'May 28, 2025', 'September 22, 2026', 'February 27, 2026', 'May 07, 2024', 'November 13, 2026', 'June 14, 2025']
+  Predicted: ['2024-05-07', '2025-05-28', '2025-06-14', 'February 22, 2025', 'February 27, 2026', 'May 11, 2026', 'September 22, 2026', 'November 13, 2026', 'Unknown']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 193 total (176 prompt + 17 completion, 1 calls)
+
+Question 277:
+  Text: Reflect on all events involving Ezra Edwards. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['July 21, 2024', 'May 28, 2025', 'October 13, 2024', 'December 03, 2026', 'September 22, 2026', 'February 27, 2026', 'September 13, 2025', 'July 31, 2025']
+  Predicted: ['2024-07-21', '2024-10-13', '2025-05-28', '2025-07-31', '2025-09-13', '2026-02-27', '2026-12-03', '2026-09-22']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 193 total (176 prompt + 17 completion, 1 calls)
+
+Question 278:
+  Text: What is the most recent date Benjamin Green was observed or mentioned in the story's chronology?
+  Expected: ['May 11, 2026']
+  Predicted: Unknown
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 186 total (170 prompt + 16 completion, 1 calls)
+
+Question 279:
+  Text: What is the most recent date Brooklyn Ross was observed or mentioned in the story's chronology?
+  Expected: ['November 13, 2026']
+  Predicted: Unknown
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 187 total (170 prompt + 17 completion, 1 calls)
+
+Question 280:
+  Text: What is the most recent date Carter Stewart was observed or mentioned in the story's chronology?
+  Expected: ['September 22, 2026']
+  Predicted: Unknown
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 187 total (170 prompt + 17 completion, 1 calls)
+
+Question 281:
+  Text: What is the most recent date Chloe Castillo was observed or mentioned in the story's chronology?
+  Expected: ['November 13, 2026']
+  Predicted: Unknown
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 187 total (170 prompt + 17 completion, 1 calls)
+
+Question 282:
+  Text: What is the most recent date Ezra Edwards was observed or mentioned in the story's chronology?
+  Expected: ['December 03, 2026']
+  Predicted: September 22, 2026
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 187 total (170 prompt + 17 completion, 1 calls)
+
+Question 283:
+  Text: Consider all events involving both Henry Reed and Debate Tournament. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['July 31, 2025', 'March 23, 2025', 'May 28, 2025']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2587 total (1876 prompt + 711 completion, 5 calls)
+
+Question 284:
+  Text: Consider all events involving both Henry Reed and Photography Exhibition. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['September 22, 2026', 'October 27, 2024', 'September 03, 2026']
+  Predicted: ['October 27, 2024', 'September 22, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 197 total (179 prompt + 18 completion, 1 calls)
+
+Question 285:
+  Text: Consider all events involving both Julian Ross and Tech Hackathon. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['October 13, 2024', 'February 27, 2026', 'May 31, 2024', 'March 23, 2024']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3204 total (2337 prompt + 867 completion, 6 calls)
+
+Question 286:
+  Text: Consider all events involving both Levi Rodriguez and Tech Hackathon. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['April 09, 2026', 'November 07, 2025', 'March 23, 2025', 'July 25, 2024']
+  Predicted: ['2025-11-07', 'April 09, 2026']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+  Token Usage: 200 total (180 prompt + 20 completion, 1 calls)
+
+Question 287:
+  Text: Consider all events involving both Samuel Parker and Theater Performance. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['October 12, 2024', 'April 09, 2026', 'September 27, 2025', 'October 30, 2026']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3104 total (2241 prompt + 863 completion, 6 calls)
+
+Question 288:
+  Text: Reflect on the experiences of Henry Reed related to Debate Tournament. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: ['High Line', 'Woolworth Building', 'One World Trade Center']
+  Predicted: ['One World Trade Center', 'Floating Platform', 'Unknown', 'Woolworth Building']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 200 total (181 prompt + 19 completion, 1 calls)
+
+Question 289:
+  Text: Reflect on the experiences of Henry Reed related to Photography Exhibition. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: ['Brooklyn Bridge', 'Port Jefferson', 'Metropolitan Museum of Art']
+  Predicted: ['Port Jefferson', 'Brooklyn Bridge']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 199 total (181 prompt + 18 completion, 1 calls)
+
+Question 290:
+  Text: Reflect on the experiences of Julian Ross related to Tech Hackathon. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: ['Woolworth Building', 'Bethpage Black Course', 'Williamsburg Bridge', 'One World Trade Center']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3398 total (2506 prompt + 892 completion, 6 calls)
+
+Question 291:
+  Text: Reflect on the experiences of Levi Rodriguez related to Tech Hackathon. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: ['Snug Harbor Cultural Center', 'Bethpage State Park', 'Metropolitan Museum of Art', 'Queensboro Bridge']
+  Predicted: ['American Museum of Natural History, Planetarium', 'Snug Harbor Cultural Center', 'Unknown', 'Nondescript Room', 'One World Trade Center', 'Trinity Church', 'Washington Square Park', 'American Museum of Natural History', 'Metropolitan Museum of Art', 'Statue of Liberty']
+  Search Success: True
+  Confidence: 0.60
+  Iterations: 3
+  Token Usage: 1327 total (954 prompt + 373 completion, 3 calls)
+
+Question 292:
+  Text: Reflect on the experiences of Samuel Parker related to Theater Performance. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: ['American Museum of Natural History', 'Fire Island National Seashore', 'One World Trade Center']
+  Predicted: ['One World Trade Center', 'Fire Island National Seashore', 'American Museum of Natural History', 'High Line', 'Unknown']
+  Search Success: True
+  Confidence: 0.60
+  Iterations: 3
+  Token Usage: 1290 total (932 prompt + 358 completion, 3 calls)
+
+Question 293:
+  Text: Consider all events that Jackson Hall has been involved in. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Williamsburg Bridge', 'Metropolitan Museum of Art']
+  Predicted: ['Metropolitan Museum of Art', 'Williamsburg Bridge']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 195 total (179 prompt + 16 completion, 1 calls)
+
+Question 294:
+  Text: Consider all events that Lillian Mendoza has been involved in. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Yankee Stadium', 'Chelsea Market']
+  Predicted: ['Chelsea Market', 'Yankee Stadium', 'Backstage at Yankee Stadium']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 197 total (180 prompt + 17 completion, 1 calls)
+
+Question 295:
+  Text: Consider all events that Olivia Turner has been involved in. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Trinity Church', 'Williamsburg Bridge']
+  Predicted: ['Williamsburg Bridge', 'Trinity Church']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 196 total (179 prompt + 17 completion, 1 calls)
+
+Question 296:
+  Text: Reflect on all events involving Jackson Hall. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['March 23, 2025', 'March 23, 2024']
+  Predicted: ['March 23, 2024', 'March 23, 2025']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+  Token Usage: 192 total (176 prompt + 16 completion, 1 calls)
+
+Question 297:
+  Text: Reflect on all events involving Lillian Mendoza. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['September 13, 2025', 'November 13, 2026']
+  Predicted: ['2025-09-13', 'November 13, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 194 total (177 prompt + 17 completion, 1 calls)
+
+Question 298:
+  Text: Reflect on all events involving Olivia Turner. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['November 13, 2026', 'January 03, 2026']
+  Predicted: ['2026-01-03', '2026-11-13']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+  Token Usage: 193 total (176 prompt + 17 completion, 1 calls)
+
+Question 299:
+  Text: List all locations visited by Jackson Hall in chronological order according to the story's timeline.
+  Expected: ['Williamsburg Bridge', 'Metropolitan Museum of Art']
+  Predicted: ['Williamsburg Bridge', 'Metropolitan Museum of Art']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 185 total (169 prompt + 16 completion, 1 calls)
+
+Question 300:
+  Text: List all locations visited by Lillian Mendoza in chronological order according to the story's timeline.
+  Expected: ['Yankee Stadium', 'Chelsea Market']
+  Predicted: ['Yankee Stadium', 'Backstage at Yankee Stadium', 'Chelsea Market']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 187 total (170 prompt + 17 completion, 1 calls)
+

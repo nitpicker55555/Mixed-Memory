@@ -1,2 +1,0 @@
-question_num,question,predicted_answer,search_success,confidence,iterations
-124,"Reflect on all events involving Nora Ramos. Provide a list of all dates when these events occurred, without describing the events.","['July 13, 2024']",True,0.0,1

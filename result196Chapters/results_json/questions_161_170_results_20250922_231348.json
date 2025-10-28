@@ -1,0 +1,424 @@
+{
+  "metadata": {
+    "start_time": "2025-09-22T23:10:14.435165",
+    "database": "197chapters2",
+    "question_range": "161-170",
+    "total_questions": 10,
+    "end_time": "2025-09-22T23:13:48.080114",
+    "total_duration": 213.640959
+  },
+  "results": [
+    {
+      "question_idx": 6,
+      "question": "Reflect on all events involving Ella Ross. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "49e1cf22-3066-4a48-b44b-475a0f5e6ad5",
+        "question": "Reflect on all events involving Ella Ross. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": [
+          "April 09, 2026"
+        ],
+        "standardized_answer": [
+          "April 09, 2026"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Ella Ross' IN e.participants AND e.date IS NOT NULL RETURN DISTINCT e.date AS date"
+        ],
+        "token_usage": {
+          "prompt_tokens": 176,
+          "completion_tokens": 16,
+          "total_tokens": 192,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 16.722233,
+      "status": "success",
+      "timestamp": "2025-09-22T23:10:14.435220",
+      "token_usage": {
+        "prompt_tokens": 176,
+        "completion_tokens": 16,
+        "total_tokens": 192,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "April 09, 2026"
+      ]
+    },
+    {
+      "question_idx": 6,
+      "question": "Reflect on all events involving Isaiah Bennett. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "dd69f8b2-e473-4a8e-905e-ede3aa7415e9",
+        "question": "Reflect on all events involving Isaiah Bennett. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": [
+          "2024-07-21"
+        ],
+        "standardized_answer": [
+          "2024-07-21"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Isaiah Bennett' IN e.participants RETURN DISTINCT e.date AS date"
+        ],
+        "token_usage": {
+          "prompt_tokens": 176,
+          "completion_tokens": 17,
+          "total_tokens": 193,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 12.726765,
+      "status": "success",
+      "timestamp": "2025-09-22T23:10:31.158454",
+      "token_usage": {
+        "prompt_tokens": 176,
+        "completion_tokens": 17,
+        "total_tokens": 193,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "July 21, 2024"
+      ]
+    },
+    {
+      "question_idx": 8,
+      "question": "Think about Aurora Chavez's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+      "answer": {
+        "session_id": "21634883-8a68-4562-915b-418ddb2f14e9",
+        "question": "Think about Aurora Chavez's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+        "final_answer": [
+          "The hackathon was in full swing with participants coding and debugging, showcasing innovation and technology.",
+          "Ainsley Ensign remarked on the turnout and the significance of the day for technology.",
+          "Aurora Chavez observed Gus Brubaker stuffing a USB drive into their pocket and leaving the room suspiciously."
+        ],
+        "standardized_answer": [
+          "The hackathon was in full swing with participants coding and debugging, showcasing innovation and technology.",
+          "Ainsley Ensign remarked on the turnout and the significance of the day for technology.",
+          "Aurora Chavez observed Gus Brubaker stuffing a USB drive into their pocket and leaving the room suspiciously."
+        ],
+        "total_iterations": 2,
+        "search_successful": true,
+        "reasoning_chain": [
+          "Execution error: {code: Neo.ClientError.Statement.TypeError} {message: Expected a string value for `toLower`, but got: StringArray[Chloe Castillo, Sienna Hamrick, Reid Blunt]; consider converting it to a string with toString().}"
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.participants) CONTAINS toLower('Aurora Chavez') RETURN DISTINCT e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants",
+          "MATCH (e:Event) WHERE ANY(participant IN e.participants WHERE toLower(participant) = toLower($person)) RETURN e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants"
+        ],
+        "token_usage": {
+          "prompt_tokens": 181,
+          "completion_tokens": 17,
+          "total_tokens": 198,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 31.489953,
+      "status": "success",
+      "timestamp": "2025-09-22T23:10:43.885405",
+      "token_usage": {
+        "prompt_tokens": 181,
+        "completion_tokens": 17,
+        "total_tokens": 198,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "Tech Hackathon"
+      ]
+    },
+    {
+      "question_idx": 8,
+      "question": "Think about Bella Alvarez's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+      "answer": {
+        "session_id": "d66b01c1-ee72-40c5-8994-f86f0cfa4fca",
+        "question": "Think about Bella Alvarez's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+        "final_answer": [
+          "Bella Alvarez organized an astronomy night that turned into a nightmare as attendees witnessed a vast, writhing mass of darkness in the sky."
+        ],
+        "standardized_answer": [
+          "Bella Alvarez organized an astronomy night that turned into a nightmare as attendees witnessed a vast, writhing mass of darkness in the sky."
+        ],
+        "total_iterations": 2,
+        "search_successful": true,
+        "reasoning_chain": [
+          "Execution error: {code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input 'FOR': expected an expression, ',' or ']' (line 1, column 63 (offset: 62))\n\"MATCH (e:Event) WHERE toLower('Bella Alvarez') IN [toLower(p) FOR p IN e.participants] RETURN DISTINCT e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants\"\n                                                               ^}"
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower('Bella Alvarez') IN [toLower(p) FOR p IN e.participants] RETURN DISTINCT e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants",
+          "MATCH (e:Event) WHERE ANY(p IN e.participants WHERE toLower(p) = toLower($person)) RETURN DISTINCT e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants"
+        ],
+        "token_usage": {
+          "prompt_tokens": 181,
+          "completion_tokens": 16,
+          "total_tokens": 197,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 25.132454,
+      "status": "success",
+      "timestamp": "2025-09-22T23:11:15.375780",
+      "token_usage": {
+        "prompt_tokens": 181,
+        "completion_tokens": 16,
+        "total_tokens": 197,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "Astronomy Night"
+      ]
+    },
+    {
+      "question_idx": 8,
+      "question": "Think about Elizabeth Hill's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+      "answer": {
+        "session_id": "14b2f9f5-816d-4d0d-bc15-fb53c6f63f1f",
+        "question": "Think about Elizabeth Hill's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+        "final_answer": [
+          "The classical music concert transformed Washington Square Park into a magical amphitheater, where the audience experienced a blend of music and nature."
+        ],
+        "standardized_answer": [
+          "The classical music concert transformed Washington Square Park into a magical amphitheater, where the audience experienced a blend of music and nature."
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Elizabeth Hill' IN e.participants RETURN DISTINCT e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants"
+        ],
+        "token_usage": {
+          "prompt_tokens": 181,
+          "completion_tokens": 16,
+          "total_tokens": 197,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 13.446703,
+      "status": "success",
+      "timestamp": "2025-09-22T23:11:40.508584",
+      "token_usage": {
+        "prompt_tokens": 181,
+        "completion_tokens": 16,
+        "total_tokens": 197,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "Classical Music Concert"
+      ]
+    },
+    {
+      "question_idx": 8,
+      "question": "Think about Ella Ross's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+      "answer": {
+        "session_id": "01109225-fbf9-42a0-8322-02fdc9f8b444",
+        "question": "Think about Ella Ross's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+        "final_answer": [
+          "The photography exhibition opened with Ella Ross showcasing her portrait series, drawing attention and scrutiny from the gathered crowd.",
+          "Kenna Badger passionately discussed the deeper meanings behind the portraits, capturing Ella's attention.",
+          "Hugo Vanover approached Ella Ross to inquire about the story behind the seventh portrait, creating a tense atmosphere."
+        ],
+        "standardized_answer": [
+          "The photography exhibition opened with Ella Ross showcasing her portrait series, drawing attention and scrutiny from the gathered crowd.",
+          "Kenna Badger passionately discussed the deeper meanings behind the portraits, capturing Ella's attention.",
+          "Hugo Vanover approached Ella Ross to inquire about the story behind the seventh portrait, creating a tense atmosphere."
+        ],
+        "total_iterations": 2,
+        "search_successful": true,
+        "reasoning_chain": [
+          "Execution error: {code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input 'FOR': expected an expression, ',' or ']' (line 1, column 124 (offset: 123))\n\"MATCH (e:Event) WHERE 'Ella Ross' IN e.participants AND e.participants IS NOT NULL AND toLower('Ella Ross') IN [toLower(p) FOR p IN e.participants] RETURN DISTINCT e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants\"\n                                                                                                                            ^}"
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Ella Ross' IN e.participants AND e.participants IS NOT NULL AND toLower('Ella Ross') IN [toLower(p) FOR p IN e.participants] RETURN DISTINCT e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants",
+          "MATCH (e:Event) WHERE any(p IN e.participants WHERE toLower(p) = toLower('Ella Ross')) AND e.participants IS NOT NULL RETURN DISTINCT e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants"
+        ],
+        "token_usage": {
+          "prompt_tokens": 181,
+          "completion_tokens": 16,
+          "total_tokens": 197,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 30.185982,
+      "status": "success",
+      "timestamp": "2025-09-22T23:11:53.955507",
+      "token_usage": {
+        "prompt_tokens": 181,
+        "completion_tokens": 16,
+        "total_tokens": 197,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "Photography Exhibition"
+      ]
+    },
+    {
+      "question_idx": 8,
+      "question": "Think about Isaiah Bennett's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+      "answer": {
+        "session_id": "484627f3-000b-4b5a-a962-a872fda8def0",
+        "question": "Think about Isaiah Bennett's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.",
+        "final_answer": [
+          "Burlesque Show Performance",
+          "Interrogation of Performers",
+          "Return of Stolen Necklace",
+          "Grand Finale Preparation"
+        ],
+        "standardized_answer": [
+          "Burlesque Show Performance",
+          "Interrogation of Performers",
+          "Return of Stolen Necklace",
+          "Grand Finale Preparation"
+        ],
+        "total_iterations": 3,
+        "search_successful": true,
+        "reasoning_chain": [
+          "Execution error: {code: Neo.ClientError.Statement.TypeError} {message: Expected a string value for `toLower`, but got: StringArray[Chloe Castillo, Sienna Hamrick, Reid Blunt]; consider converting it to a string with toString().}",
+          "Execution error: {code: Neo.ClientError.Statement.TypeError} {message: Invalid input for function 'toString()': Expected a String, Float, Integer, Boolean, Temporal or Duration, got: StringArray[Chloe Castillo, Sienna Hamrick, Reid Blunt]}"
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE e.participants IS NOT NULL AND toLower(e.participants) CONTAINS toLower('Isaiah Bennett') RETURN e.name AS name, e.event_type AS event_type, e.participants AS participants, e.description AS description",
+          "MATCH (e:Event) WHERE e.participants IS NOT NULL AND toLower(toString(e.participants)) CONTAINS toLower($person) RETURN e.name AS name, e.event_type AS event_type, e.participants AS participants, e.description AS description",
+          "MATCH (e:Event) WHERE e.participants IS NOT NULL AND ANY(p IN e.participants WHERE toLower(p) = toLower($person)) RETURN e.name AS name, e.event_type AS event_type, e.participants AS participants, e.description AS description"
+        ],
+        "token_usage": {
+          "prompt_tokens": 181,
+          "completion_tokens": 17,
+          "total_tokens": 198,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 41.73399,
+      "status": "success",
+      "timestamp": "2025-09-22T23:12:24.141911",
+      "token_usage": {
+        "prompt_tokens": 181,
+        "completion_tokens": 17,
+        "total_tokens": 198,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "Burlesque Performance"
+      ]
+    },
+    {
+      "question_idx": 35,
+      "question": "Enumerate all activities that Aurora Chavez has been involved in, ordered from earliest to latest in the story's chronology.",
+      "answer": {
+        "session_id": "bf724218-df53-415c-a659-e035ab24a8a3",
+        "question": "Enumerate all activities that Aurora Chavez has been involved in, ordered from earliest to latest in the story's chronology.",
+        "final_answer": [
+          "Hackathon",
+          "Ainsley Ensign's Check-in",
+          "Observation of Gus Brubaker"
+        ],
+        "standardized_answer": [
+          "Hackathon",
+          "Ainsley Ensign's Check-in",
+          "Observation of Gus Brubaker"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Aurora Chavez' IN e.participants RETURN e.name AS name, e.date AS date, e.event_type AS event_type, e.participants AS participants ORDER BY e.date ASC"
+        ],
+        "token_usage": {
+          "prompt_tokens": 175,
+          "completion_tokens": 17,
+          "total_tokens": 192,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 15.265041,
+      "status": "success",
+      "timestamp": "2025-09-22T23:13:05.876389",
+      "token_usage": {
+        "prompt_tokens": 175,
+        "completion_tokens": 17,
+        "total_tokens": 192,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "Tech Hackathon"
+      ]
+    },
+    {
+      "question_idx": 35,
+      "question": "Enumerate all activities that Bella Alvarez has been involved in, ordered from earliest to latest in the story's chronology.",
+      "answer": {
+        "session_id": "60406a56-d514-4aa3-bd27-d075ab7570ba",
+        "question": "Enumerate all activities that Bella Alvarez has been involved in, ordered from earliest to latest in the story's chronology.",
+        "final_answer": [
+          "Astronomy Night"
+        ],
+        "standardized_answer": [
+          "Astronomy Night"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Bella Alvarez' IN e.participants RETURN e.name AS name, e.event_type AS event_type, e.date AS date, e.chapter_number AS chapter_number, e.participants AS participants ORDER BY e.date ASC, e.chapter_number ASC"
+        ],
+        "token_usage": {
+          "prompt_tokens": 175,
+          "completion_tokens": 20,
+          "total_tokens": 195,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 14.581513,
+      "status": "success",
+      "timestamp": "2025-09-22T23:13:21.141692",
+      "token_usage": {
+        "prompt_tokens": 175,
+        "completion_tokens": 20,
+        "total_tokens": 195,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "Astronomy Night"
+      ]
+    },
+    {
+      "question_idx": 35,
+      "question": "Enumerate all activities that Elizabeth Hill has been involved in, ordered from earliest to latest in the story's chronology.",
+      "answer": {
+        "session_id": "52786d2b-ef03-4e68-90b8-56fbf18534bf",
+        "question": "Enumerate all activities that Elizabeth Hill has been involved in, ordered from earliest to latest in the story's chronology.",
+        "final_answer": [
+          "Classical Music Concert"
+        ],
+        "standardized_answer": [
+          "Classical Music Concert"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Elizabeth Hill' IN e.participants RETURN DISTINCT e.name AS name, e.date AS date, e.event_type AS event_type, e.participants AS participants, e.chapter_number AS chapter_number ORDER BY e.date ASC"
+        ],
+        "token_usage": {
+          "prompt_tokens": 175,
+          "completion_tokens": 16,
+          "total_tokens": 191,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 12.356325,
+      "status": "success",
+      "timestamp": "2025-09-22T23:13:35.723664",
+      "token_usage": {
+        "prompt_tokens": 175,
+        "completion_tokens": 16,
+        "total_tokens": 191,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "Classical Music Concert"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-25 21:19:49
+Question Range: 1-10
+Total Questions Processed: 10
+Successful Searches: 10 (100.0%)
+Questions with Answers: 10 (100.0%)
+Average Iterations per Question: 1.7
+
+DETAILED RESULTS:
+------------------------------
+
+Question 1:
+  Text: Consider all events involving Astronomy Night. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['American Museum of Natural History']
+  Predicted: ['American Museum of Natural History']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+  Token Usage: 638 total (474 prompt + 164 completion, 2 calls)
+
+Question 2:
+  Text: Consider all events involving Fashion Show. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['American Museum of Natural History']
+  Predicted: ['American Museum of Natural History']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 191 total (175 prompt + 16 completion, 1 calls)
+
+Question 3:
+  Text: Consider all events involving Film Festival. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Queensboro Bridge']
+  Predicted: ['Queensboro Bridge']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+  Token Usage: 642 total (473 prompt + 169 completion, 2 calls)
+
+Question 4:
+  Text: Consider all events involving Ice Sculpture Exhibition. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Washington Square Park']
+  Predicted: ['Washington Square Park']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 193 total (176 prompt + 17 completion, 1 calls)
+
+Question 5:
+  Text: Consider all events involving Karaoke Night. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Hither Hills State Park']
+  Predicted: ['Hither Hills State Park']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 193 total (175 prompt + 18 completion, 1 calls)
+
+Question 6:
+  Text: Reflect on events related to Astronomy Night. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Levi Rodriguez']
+  Predicted: ['Levi Rodriguez', 'Presley Lunt', 'Kali Newcomb', 'Ronan Francois', 'Families', 'Audience']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+  Token Usage: 665 total (480 prompt + 185 completion, 2 calls)
+
+Question 7:
+  Text: Reflect on events related to Fashion Show. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Chloe Castillo']
+  Predicted: ['Chloe Castillo', 'Miles Pritchett', 'Amira Hayes', 'Other models', 'Audience']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 196 total (176 prompt + 20 completion, 1 calls)
+
+Question 8:
+  Text: Reflect on events related to Film Festival. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Henry Reed']
+  Predicted: ['Henry Reed', 'Zander Davenport', 'Oakley Goetz', 'Jonah Kramer', 'Karsyn Schaeffer', 'Attendees']
+  Search Success: True
+  Confidence: 0.20
+  Iterations: 5
+  Token Usage: 2475 total (1793 prompt + 682 completion, 5 calls)
+
+Question 9:
+  Text: Reflect on events related to Ice Sculpture Exhibition. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Henry Reed']
+  Predicted: ['Henry Reed', 'Luka Shaffer', 'Meredith Lester', 'Families', 'Audience']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 198 total (177 prompt + 21 completion, 1 calls)
+
+Question 10:
+  Text: Reflect on events related to Karaoke Night. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Zoe Brown']
+  Predicted: ['Zoe Brown', 'Uri Wemple', 'Hezekiah Bean', 'Live band', 'Audience']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 198 total (176 prompt + 22 completion, 1 calls)
+

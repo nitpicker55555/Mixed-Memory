@@ -1,0 +1,103 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-22 12:34:41
+Question Range: 111-120
+Total Questions Processed: 10
+Successful Searches: 1 (10.0%)
+Questions with Answers: 1 (10.0%)
+Average Iterations per Question: 5.0
+
+DETAILED RESULTS:
+------------------------------
+
+Question 111:
+  Text: What is the most recent date Caleb Perez was observed or mentioned in the story's chronology?
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3195 total (2323 prompt + 872 completion, 6 calls)
+
+Question 112:
+  Text: What is the most recent date Charlotte White was observed or mentioned in the story's chronology?
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3294 total (2422 prompt + 872 completion, 6 calls)
+
+Question 113:
+  Text: Consider all events that Andrew Gomez has been involved in. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3054 total (2154 prompt + 900 completion, 6 calls)
+
+Question 114:
+  Text: Consider all events that Ava Morris has been involved in. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2989 total (2071 prompt + 918 completion, 6 calls)
+
+Question 115:
+  Text: Consider all events that Brooklyn Sanders has been involved in. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: []
+  Predicted: ['High Line, Brooklyn', 'Washington Square Park', 'Brooklyn Museum', 'Queensboro Bridge', 'Fire Island National Seashore', 'One World Trade Center', 'Guggenheim Museum', 'Yankee Stadium', 'Trinity Church', 'Unknown']
+  Search Success: True
+  Confidence: 0.20
+  Iterations: 5
+  Token Usage: 2361 total (1683 prompt + 678 completion, 5 calls)
+
+Question 116:
+  Text: Consider all events that Caleb Perez has been involved in. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3086 total (2284 prompt + 802 completion, 6 calls)
+
+Question 117:
+  Text: Consider all events that Charlotte White has been involved in. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3079 total (2178 prompt + 901 completion, 6 calls)
+
+Question 118:
+  Text: Reflect on the experiences of Andrew Gomez related to Fashion Show. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2607 total (1904 prompt + 703 completion, 5 calls)
+
+Question 119:
+  Text: Reflect on the experiences of Andrew Gomez related to Indoor Skydiving Event. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3229 total (2330 prompt + 899 completion, 6 calls)
+
+Question 120:
+  Text: Reflect on the experiences of Andrew Gomez related to Stand-up Comedy Night. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3324 total (2396 prompt + 928 completion, 6 calls)
+

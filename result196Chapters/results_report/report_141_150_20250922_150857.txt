@@ -1,0 +1,103 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-22 15:08:57
+Question Range: 141-150
+Total Questions Processed: 10
+Successful Searches: 10 (100.0%)
+Questions with Answers: 10 (100.0%)
+Average Iterations per Question: 1.1
+
+DETAILED RESULTS:
+------------------------------
+
+Question 141:
+  Text: What is the most recent date Ella Ross was observed or mentioned in the story's chronology?
+  Expected: ['April 09, 2026']
+  Predicted: April 09, 2026
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 186 total (170 prompt + 16 completion, 1 calls)
+
+Question 142:
+  Text: What is the most recent date Isaiah Bennett was observed or mentioned in the story's chronology?
+  Expected: ['July 21, 2024']
+  Predicted: 2024-07-21
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 187 total (170 prompt + 17 completion, 1 calls)
+
+Question 143:
+  Text: What is the most recent location where Aurora Chavez was observed in the story's chronological timeline?
+  Expected: ['Water Mill Museum']
+  Predicted: Water Mill Museum
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 187 total (170 prompt + 17 completion, 1 calls)
+
+Question 144:
+  Text: What is the most recent location where Bella Alvarez was observed in the story's chronological timeline?
+  Expected: ['Williamsburg Bridge']
+  Predicted: Williamsburg Bridge
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 186 total (170 prompt + 16 completion, 1 calls)
+
+Question 145:
+  Text: What is the most recent location where Elizabeth Hill was observed in the story's chronological timeline?
+  Expected: ['Washington Square Park']
+  Predicted: Washington Square Park
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 186 total (170 prompt + 16 completion, 1 calls)
+
+Question 146:
+  Text: What is the most recent location where Ella Ross was observed in the story's chronological timeline?
+  Expected: ['Trinity Church']
+  Predicted: Trinity Church
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 186 total (170 prompt + 16 completion, 1 calls)
+
+Question 147:
+  Text: What is the most recent location where Isaiah Bennett was observed in the story's chronological timeline?
+  Expected: ['Bethpage State Park']
+  Predicted: Bethpage State Park
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 187 total (170 prompt + 17 completion, 1 calls)
+
+Question 148:
+  Text: Consider all events that Aurora Chavez has been involved in. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Water Mill Museum']
+  Predicted: ['Water Mill Museum']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 196 total (179 prompt + 17 completion, 1 calls)
+
+Question 149:
+  Text: Consider all events that Bella Alvarez has been involved in. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Williamsburg Bridge']
+  Predicted: ['Williamsburg Bridge']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+  Token Usage: 195 total (179 prompt + 16 completion, 1 calls)
+
+Question 150:
+  Text: Consider all events that Elizabeth Hill has been involved in. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Washington Square Park']
+  Predicted: ['Washington Square Park']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 195 total (179 prompt + 16 completion, 1 calls)
+

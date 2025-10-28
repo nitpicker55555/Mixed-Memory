@@ -1,0 +1,224 @@
+{
+  "metadata": {
+    "start_time": "2025-09-20T13:21:40.116732",
+    "database": "196chapters",
+    "question_range": "46-50",
+    "total_questions": 5,
+    "end_time": "2025-09-20T13:25:23.341623",
+    "total_duration": 223.223555
+  },
+  "results": [
+    {
+      "question_idx": 11,
+      "question": "Reflect on events related to Ballet Performance. Provide a list of all protagonists involved in these events, without describing the events.",
+      "answer": {
+        "session_id": "24a7ab3f-165a-4d42-98df-ae6cd074a4dd",
+        "question": "Reflect on events related to Ballet Performance. Provide a list of all protagonists involved in these events, without describing the events.",
+        "final_answer": [
+          "Ronnie Randall",
+          "Mabel Schaffer"
+        ],
+        "standardized_answer": [
+          "Ronnie Randall",
+          "Mabel Schaffer"
+        ],
+        "total_iterations": 4,
+        "search_successful": true,
+        "reasoning_chain": [
+          "By broadening the search to include related terms, we increase the likelihood of retrieving relevant events that may include ballet performances as a subset, thus potentially yielding a list of participants.",
+          "By broadening the search to include 'Ballet' as a keyword, it increases the chances of matching relevant events and their participants, as it directly relates to the original query about ballet performances.",
+          "By broadening the search to include related terms, it increases the chances of capturing relevant events that may not use the exact phrase 'Ballet Performance'. This approach allows for a more inclusive search that can yield better results."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) AND e.participants IS NOT NULL RETURN DISTINCT e.participants AS participants",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) AND e.participants IS NOT NULL RETURN DISTINCT e.participants AS participants",
+          "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) AND e.participants IS NOT NULL RETURN DISTINCT e.participants AS participants",
+          "MATCH (e:Event) WHERE (toLower(e.event_type) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) AND e.participants IS NOT NULL RETURN DISTINCT e.participants AS participants"
+        ],
+        "token_usage": {
+          "prompt_tokens": 1242,
+          "completion_tokens": 501,
+          "total_tokens": 1743,
+          "calls_count": 4
+        }
+      },
+      "duration_seconds": 85.557575,
+      "status": "success",
+      "timestamp": "2025-09-20T13:21:40.116791",
+      "token_usage": {
+        "prompt_tokens": 1242,
+        "completion_tokens": 501,
+        "total_tokens": 1743,
+        "calls_count": 4
+      },
+      "expected_answer": [
+        "Carter Stewart"
+      ]
+    },
+    {
+      "question_idx": 11,
+      "question": "Reflect on events related to Craft Beer Festival. Provide a list of all protagonists involved in these events, without describing the events.",
+      "answer": {
+        "session_id": "c908380a-e6f5-4b84-9846-1b7baf54b2ec",
+        "question": "Reflect on events related to Craft Beer Festival. Provide a list of all protagonists involved in these events, without describing the events.",
+        "final_answer": [],
+        "standardized_answer": [],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) AND e.participants IS NOT NULL RETURN DISTINCT e.participants AS participants"
+        ],
+        "token_usage": {
+          "prompt_tokens": 177,
+          "completion_tokens": 21,
+          "total_tokens": 198,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 14.132107,
+      "status": "success",
+      "timestamp": "2025-09-20T13:23:05.674832",
+      "token_usage": {
+        "prompt_tokens": 177,
+        "completion_tokens": 21,
+        "total_tokens": 198,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "Scarlett Thomas"
+      ]
+    },
+    {
+      "question_idx": 11,
+      "question": "Reflect on events related to Drone Racing Event. Provide a list of all protagonists involved in these events, without describing the events.",
+      "answer": {
+        "session_id": "d2407686-fa22-47e5-a948-5d7c2818f8f4",
+        "question": "Reflect on events related to Drone Racing Event. Provide a list of all protagonists involved in these events, without describing the events.",
+        "final_answer": [
+          "Nylah Stine",
+          "Jett Nunez",
+          "Brooklyn Ross"
+        ],
+        "standardized_answer": [
+          "Nylah Stine",
+          "Jett Nunez",
+          "Brooklyn Ross"
+        ],
+        "total_iterations": 2,
+        "search_successful": true,
+        "reasoning_chain": [
+          "By using a broader keyword, the search may capture related events that include drone racing, thus increasing the chances of retrieving relevant participants. (Enhanced with semantic search: Drone Racing Event in field name)"
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.event_type) = toLower($kw) UNWIND e.participants AS participant RETURN DISTINCT participant AS participants",
+          "MATCH (e:Event) WHERE toLower(e.name) = toLower($kw) UNWIND e.participants AS participant RETURN DISTINCT participant AS participants"
+        ],
+        "token_usage": {
+          "prompt_tokens": 492,
+          "completion_tokens": 173,
+          "total_tokens": 665,
+          "calls_count": 2
+        }
+      },
+      "duration_seconds": 96.725533,
+      "status": "success",
+      "timestamp": "2025-09-20T13:23:19.807159",
+      "token_usage": {
+        "prompt_tokens": 492,
+        "completion_tokens": 173,
+        "total_tokens": 665,
+        "calls_count": 2
+      },
+      "expected_answer": [
+        "Brooklyn Ross"
+      ]
+    },
+    {
+      "question_idx": 11,
+      "question": "Reflect on events related to Farmers Market. Provide a list of all protagonists involved in these events, without describing the events.",
+      "answer": {
+        "session_id": "000b2742-9487-46c2-b8e3-26399b6aa256",
+        "question": "Reflect on events related to Farmers Market. Provide a list of all protagonists involved in these events, without describing the events.",
+        "final_answer": [
+          "Lucy Carter",
+          "Evangeline Lassiter",
+          "Arya Huffman"
+        ],
+        "standardized_answer": [
+          "Lucy Carter",
+          "Evangeline Lassiter",
+          "Arya Huffman"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE toLower(e.name) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw) RETURN DISTINCT e.participants AS participants"
+        ],
+        "token_usage": {
+          "prompt_tokens": 176,
+          "completion_tokens": 21,
+          "total_tokens": 197,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 13.823056,
+      "status": "success",
+      "timestamp": "2025-09-20T13:24:56.532926",
+      "token_usage": {
+        "prompt_tokens": 176,
+        "completion_tokens": 21,
+        "total_tokens": 197,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "Lucy Carter"
+      ]
+    },
+    {
+      "question_idx": 11,
+      "question": "Reflect on events related to Flower Show. Provide a list of all protagonists involved in these events, without describing the events.",
+      "answer": {
+        "session_id": "9eaf39a0-19af-4521-a740-af35db79416f",
+        "question": "Reflect on events related to Flower Show. Provide a list of all protagonists involved in these events, without describing the events.",
+        "final_answer": [
+          "Jackson Hall",
+          "Jorah Logsdon",
+          "Memphis Brito",
+          "Asa Villarreal"
+        ],
+        "standardized_answer": [
+          "Jackson Hall",
+          "Jorah Logsdon",
+          "Memphis Brito",
+          "Asa Villarreal"
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE e.name CONTAINS 'Flower Show' AND e.participants IS NOT NULL RETURN DISTINCT e.participants AS participants"
+        ],
+        "token_usage": {
+          "prompt_tokens": 176,
+          "completion_tokens": 20,
+          "total_tokens": 196,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 12.985284,
+      "status": "success",
+      "timestamp": "2025-09-20T13:25:10.356124",
+      "token_usage": {
+        "prompt_tokens": 176,
+        "completion_tokens": 20,
+        "total_tokens": 196,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "Jackson Hall"
+      ]
+    }
+  ]
+}

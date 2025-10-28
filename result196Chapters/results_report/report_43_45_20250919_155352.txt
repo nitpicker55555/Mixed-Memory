@@ -1,0 +1,40 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-19 15:53:52
+Question Range: 43-45
+Total Questions Processed: 3
+Successful Searches: 3 (100.0%)
+Questions with Answers: 3 (100.0%)
+Average Iterations per Question: 2.3
+
+DETAILED RESULTS:
+------------------------------
+
+Question 43:
+  Text: Reflect on events related to Educational Workshop. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Brooklyn Ross', 'Scarlett Thomas', 'Chloe Castillo', 'Carter Stewart', 'Ezra Edwards', 'Mila Gonzalez', 'Samuel Parker', 'Julian Ross', 'Lucy Carter']
+  Predicted: ['Carter Stewart', 'Reign Cheek', 'Frankie Nesbitt', 'Declan Kuiper', 'Dariel Dempsey', 'Presley Navarro', 'Levi Rodriguez', 'Freya Huff', 'Madeleine Bourgeois', 'Joziah Dixon', 'Dariel Herrick', 'Scarlett Thomas', 'Kellan Kohl', 'Odette Flick', 'Lyanna Groth', 'Jeremias Ayers', 'Isabela Carney', 'Julian Ross', 'London Baird', 'Lilah Obrien', 'Chloe Castillo', 'Luka Shaffer', 'Nyla Bower', 'Thatcher Berlin', 'Samara Lackey', 'Dion Fisk', 'Ezra Edwards', 'Callen Yaeger', 'Chelsea Woodard', 'Trey Pardo', 'Miracle Lemaster', 'Cyrus Callahan', 'Kassidy Tipton', 'Ezra Edwards', 'Noa Middleton', 'Mara Ledbetter', 'Owen Thomas', 'Lilah Hamilton', 'Rocco Cormier', 'Axl Mims', 'Henry Reed', 'Karsyn Schaeffer', 'Benjamin Green', 'Genevieve Burgin', 'Zoe Brown', 'Remy Waterman', 'Samuel Parker', 'Alvaro Westbrook', 'Ophelia Ellison', 'Frey Matson', 'Ari Cartwright', 'Pax Langston', 'Milana Harkins', 'Rocco Bloom', 'Raina Perkins', 'Brooklynn Lugo', 'Lucy Carter', 'Gianluca Whitman', 'Shawn Knowlton']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+  Token Usage: 647 total (475 prompt + 172 completion, 2 calls)
+
+Question 44:
+  Text: Reflect on events related to Fashion Show. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Lillian Mendoza', 'Bella Brown', 'Scarlett Thomas', 'Chloe Castillo', 'Levi Rodriguez', 'Hazel Lewis', 'Lily Nguyen', 'Ezra Edwards', 'Mila Gonzalez', 'Samuel Parker', 'Henry Reed', 'Julian Ross', 'Benjamin Green']
+  Predicted: ['Chloe Castillo', 'Bella Brown', 'Sienna Hamrick', 'Reid Blunt', 'Henry Reed', 'Anika Fox', 'Brodie Lytle', 'Kendra Stahl', 'Dash Herrick', 'Heidi Carroll', 'Benjamin Green', 'Deandre Haugen', 'Robert Johns', 'Ezra Edwards', 'Caden Vincent', 'Henley Strickland']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 196 total (176 prompt + 20 completion, 1 calls)
+
+Question 45:
+  Text: Reflect on events related to Film Festival. Provide a list of all protagonists involved in these events, without describing the events.
+  Expected: ['Brooklyn Ross', 'Scarlett Thomas', 'Levi Rodriguez', 'Chloe Castillo', 'Mila Gonzalez', 'Henry Reed', 'Julian Ross', 'Benjamin Green']
+  Predicted: ['Julian Ross', 'Angelina Woodard', 'Brooklyn Ross', 'Easton Perdue', 'Jorah Cain', 'Mila Gonzalez', 'Angelo Forrester', 'Zeke Heath', 'Zaria Maynard', 'Benjamin Green', 'Chelsea Meyer', 'Aileen Stanton', 'Chloe Castillo', 'Shay Wells', 'Milo Paxton']
+  Search Success: True
+  Confidence: 0.40
+  Iterations: 4
+  Token Usage: 1753 total (1240 prompt + 513 completion, 4 calls)
+

@@ -1,0 +1,373 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-25 13:12:59
+Question Range: 81-120
+Total Questions Processed: 40
+Successful Searches: 13 (32.5%)
+Questions with Answers: 13 (32.5%)
+Average Iterations per Question: 3.8
+
+DETAILED RESULTS:
+------------------------------
+
+Question 81:
+  Text: List all locations visited by Ezra Edwards in chronological order according to the story's timeline.
+  Expected: ['Bethpage Black Course']
+  Predicted: ['Bethpage Black Course']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 186 total (169 prompt + 17 completion, 1 calls)
+
+Question 82:
+  Text: List all locations visited by Jackson Ramos in chronological order according to the story's timeline.
+  Expected: ['High Line']
+  Predicted: ['High Line Theater']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 185 total (169 prompt + 16 completion, 1 calls)
+
+Question 83:
+  Text: List all locations visited by Julian Ross in chronological order according to the story's timeline.
+  Expected: ['Woolworth Building']
+  Predicted: ['Woolworth Building']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 186 total (169 prompt + 17 completion, 1 calls)
+
+Question 84:
+  Text: List all locations visited by Levi Rodriguez in chronological order according to the story's timeline.
+  Expected: ['American Museum of Natural History']
+  Predicted: [{'location': 'American Museum of Natural History', 'date': 'December 26, 2026'}]
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 186 total (169 prompt + 17 completion, 1 calls)
+
+Question 85:
+  Text: Reflect on the experiences of Chloe Castillo related to Fashion Show. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: ['American Museum of Natural History']
+  Predicted: ['American Museum of Natural History']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+  Token Usage: 200 total (181 prompt + 19 completion, 1 calls)
+
+Question 86:
+  Text: Reflect on the experiences of Ezra Edwards related to Parkour Workshop. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: ['Bethpage Black Course']
+  Predicted: ['Bethpage Black Course']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 202 total (182 prompt + 20 completion, 1 calls)
+
+Question 87:
+  Text: Reflect on the experiences of Henry Reed related to Film Festival. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: ['Queensboro Bridge']
+  Predicted: ['Queensboro Bridge']
+  Search Success: True
+  Confidence: 0.60
+  Iterations: 3
+  Token Usage: 1279 total (884 prompt + 395 completion, 3 calls)
+
+Question 88:
+  Text: Reflect on the experiences of Henry Reed related to Ice Sculpture Exhibition. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: ['Washington Square Park']
+  Predicted: ['Washington Square Park']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 201 total (182 prompt + 19 completion, 1 calls)
+
+Question 89:
+  Text: Reflect on the experiences of Henry Reed related to Photography Exhibition. List all the unique locations where these events took place, without mentioning the events themselves.
+  Expected: ['Port Jefferson']
+  Predicted: ['Port Jefferson']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 199 total (181 prompt + 18 completion, 1 calls)
+
+Question 90:
+  Text: Consider all events involving both Chloe Castillo and Fashion Show. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['September 22, 2026']
+  Predicted: ['September 22, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 198 total (179 prompt + 19 completion, 1 calls)
+
+Question 91:
+  Text: Consider all events involving both Ezra Edwards and Parkour Workshop. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['September 13, 2025']
+  Predicted: ['September 13, 2025']
+  Search Success: True
+  Confidence: 0.60
+  Iterations: 3
+  Token Usage: 1281 total (872 prompt + 409 completion, 3 calls)
+
+Question 92:
+  Text: Consider all events involving both Henry Reed and Film Festival. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['October 13, 2024']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3243 total (2336 prompt + 907 completion, 6 calls)
+
+Question 93:
+  Text: Consider all events involving both Henry Reed and Ice Sculpture Exhibition. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['May 11, 2026']
+  Predicted: ['May 11, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 199 total (180 prompt + 19 completion, 1 calls)
+
+Question 94:
+  Text: Consider all events involving both Henry Reed and Photography Exhibition. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['September 22, 2026']
+  Predicted: ['September 22, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 197 total (179 prompt + 18 completion, 1 calls)
+
+Question 95:
+  Text: What is the most recent location where David Turner was observed in the story's chronological timeline?
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3252 total (2369 prompt + 883 completion, 6 calls)
+
+Question 96:
+  Text: What is the most recent location where Harper Gutierrez was observed in the story's chronological timeline?
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3224 total (2258 prompt + 966 completion, 6 calls)
+
+Question 97:
+  Text: What is the most recent location where Mateo Gomez was observed in the story's chronological timeline?
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2804 total (2062 prompt + 742 completion, 5 calls)
+
+Question 98:
+  Text: What is the most recent location where Violet Johnson was observed in the story's chronological timeline?
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3140 total (2252 prompt + 888 completion, 6 calls)
+
+Question 99:
+  Text: What is the most recent date David Turner was observed or mentioned in the story's chronology?
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3363 total (2470 prompt + 893 completion, 6 calls)
+
+Question 100:
+  Text: What is the most recent date Harper Gutierrez was observed or mentioned in the story's chronology?
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3135 total (2253 prompt + 882 completion, 6 calls)
+
+Question 101:
+  Text: What is the most recent date Mateo Gomez was observed or mentioned in the story's chronology?
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3021 total (2191 prompt + 830 completion, 6 calls)
+
+Question 102:
+  Text: What is the most recent date Violet Johnson was observed or mentioned in the story's chronology?
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3334 total (2427 prompt + 907 completion, 6 calls)
+
+Question 103:
+  Text: Consider all events that David Turner has been involved in. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3179 total (2264 prompt + 915 completion, 6 calls)
+
+Question 104:
+  Text: Consider all events that Harper Gutierrez has been involved in. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3149 total (2276 prompt + 873 completion, 6 calls)
+
+Question 105:
+  Text: Consider all events that Mateo Gomez has been involved in. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3035 total (2115 prompt + 920 completion, 6 calls)
+
+Question 106:
+  Text: Consider all events that Violet Johnson has been involved in. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3040 total (2153 prompt + 887 completion, 6 calls)
+
+Question 107:
+  Text: Reflect on all events involving David Turner. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2881 total (2036 prompt + 845 completion, 6 calls)
+
+Question 108:
+  Text: Reflect on all events involving Harper Gutierrez. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2349 total (1654 prompt + 695 completion, 5 calls)
+
+Question 109:
+  Text: Reflect on all events involving Mateo Gomez. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2930 total (2066 prompt + 864 completion, 6 calls)
+
+Question 110:
+  Text: Reflect on all events involving Violet Johnson. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2816 total (2009 prompt + 807 completion, 6 calls)
+
+Question 111:
+  Text: Provide a chronological list of all dates when David Turner was observed, from earliest to latest in the story's timeline.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2953 total (2123 prompt + 830 completion, 6 calls)
+
+Question 112:
+  Text: Provide a chronological list of all dates when Harper Gutierrez was observed, from earliest to latest in the story's timeline.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3087 total (2158 prompt + 929 completion, 6 calls)
+
+Question 113:
+  Text: Provide a chronological list of all dates when Mateo Gomez was observed, from earliest to latest in the story's timeline.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3009 total (2113 prompt + 896 completion, 6 calls)
+
+Question 114:
+  Text: Provide a chronological list of all dates when Violet Johnson was observed, from earliest to latest in the story's timeline.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2559 total (1835 prompt + 724 completion, 5 calls)
+
+Question 115:
+  Text: Think about David Turner's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3436 total (2524 prompt + 912 completion, 6 calls)
+
+Question 116:
+  Text: Think about Harper Gutierrez's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3347 total (2423 prompt + 924 completion, 6 calls)
+
+Question 117:
+  Text: Think about Mateo Gomez's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3138 total (2284 prompt + 854 completion, 6 calls)
+
+Question 118:
+  Text: Think about Violet Johnson's experiences. Describe all the key events they've been involved in, focusing on what happened rather than when or where it occurred.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3202 total (2369 prompt + 833 completion, 6 calls)
+
+Question 119:
+  Text: Enumerate all activities that David Turner has been involved in, ordered from earliest to latest in the story's chronology.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3190 total (2331 prompt + 859 completion, 6 calls)
+
+Question 120:
+  Text: Enumerate all activities that Harper Gutierrez has been involved in, ordered from earliest to latest in the story's chronology.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2726 total (1965 prompt + 761 completion, 5 calls)
+

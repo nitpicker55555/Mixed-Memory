@@ -1,0 +1,375 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-25 15:46:27
+Question Range: 161-200
+Total Questions Processed: 40
+Successful Searches: 30 (75.0%)
+Questions with Answers: 30 (75.0%)
+Average Iterations per Question: 2.4
+
+DETAILED RESULTS:
+------------------------------
+
+Question 161:
+  Text: Think about all events that have occurred at American Museum of Natural History. Provide a list of all dates when these events took place, without describing the events.
+  Expected: ['December 26, 2026', 'September 22, 2026']
+  Predicted: ['September 22, 2026', 'December 26, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 197 total (183 prompt + 14 completion, 1 calls)
+
+Question 162:
+  Text: Think about all events that have occurred at High Line. Provide a list of all dates when these events took place, without describing the events.
+  Expected: ['February 27, 2026', 'June 14, 2025']
+  Predicted: ['June 14, 2025']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 198 total (180 prompt + 18 completion, 1 calls)
+
+Question 163:
+  Text: Think about all events that have occurred at Port Jefferson. Provide a list of all dates when these events took place, without describing the events.
+  Expected: ['September 22, 2026', 'March 23, 2024']
+  Predicted: ['March 23, 2024', 'September 22, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 194 total (180 prompt + 14 completion, 1 calls)
+
+Question 164:
+  Text: Consider the location American Museum of Natural History. List all protagonists that have been involved in any events at this location, without mentioning the events themselves.
+  Expected: ['Levi Rodriguez', 'Chloe Castillo']
+  Predicted: ['Chloe Castillo', 'Miles Pritchett', 'Amira Hayes', 'Other models', 'Audience', 'Levi Rodriguez', 'Presley Lunt', 'Kali Newcomb', 'Ronan Francois', 'Families']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 199 total (181 prompt + 18 completion, 1 calls)
+
+Question 165:
+  Text: Consider the location High Line. List all protagonists that have been involved in any events at this location, without mentioning the events themselves.
+  Expected: ['Zoe Brown', 'Jackson Ramos']
+  Predicted: ['Zoe Brown', 'Nyla Bower', 'Delphi Parent', 'Genevieve Burgin', 'Quill Womack', 'Other participants']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 196 total (178 prompt + 18 completion, 1 calls)
+
+Question 166:
+  Text: Consider the location Port Jefferson. List all protagonists that have been involved in any events at this location, without mentioning the events themselves.
+  Expected: ['Henry Reed', 'Zoe Brown']
+  Predicted: ['Henry Reed', 'Alma Aultman', 'Alondra Wilkinson', 'Meredith Gardner', 'Audience', 'Zoe Brown', 'Cora Xiong', 'Other participants']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 196 total (178 prompt + 18 completion, 1 calls)
+
+Question 167:
+  Text: Recall the various events that have taken place at American Museum of Natural History. Describe what happened during these events, focusing on the actions or occurrences rather than the timing or people involved.
+  Expected: ['Astronomy Night', 'Fashion Show']
+  Predicted: ["Chloe Castillo's Fashion Show", 'Astronomy Trivia Night at the Museum']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 209 total (188 prompt + 21 completion, 1 calls)
+
+Question 168:
+  Text: Recall the various events that have taken place at High Line. Describe what happened during these events, focusing on the actions or occurrences rather than the timing or people involved.
+  Expected: ['Theater Performance', 'Tech Hackathon']
+  Predicted: ['High Line Final Project Presentations']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 203 total (185 prompt + 18 completion, 1 calls)
+
+Question 169:
+  Text: Recall the various events that have taken place at Port Jefferson. Describe what happened during these events, focusing on the actions or occurrences rather than the timing or people involved.
+  Expected: ['Tech Hackathon', 'Photography Exhibition']
+  Predicted: ['Henry Reed and other photographers display their works, discuss techniques, and interact with visitors at a photography exhibition.', 'A local hackathon where Zoe Brown tests user experience for new applications, fostering innovation and personal connections.']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 203 total (185 prompt + 18 completion, 1 calls)
+
+Question 170:
+  Text: Think about the events involving Astronomy Night at American Museum of Natural History. List all protagonists involved in these events, without mentioning the events themselves.
+  Expected: ['Levi Rodriguez']
+  Predicted: ['Levi Rodriguez', 'Presley Lunt', 'Kali Newcomb', 'Ronan Francois', 'Families', 'Audience']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+  Token Usage: 684 total (502 prompt + 182 completion, 2 calls)
+
+Question 171:
+  Text: Think about the events involving Fashion Show at American Museum of Natural History. List all protagonists involved in these events, without mentioning the events themselves.
+  Expected: ['Chloe Castillo']
+  Predicted: ['Chloe Castillo', 'Miles Pritchett', 'Amira Hayes', 'Other models', 'Audience']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 200 total (180 prompt + 20 completion, 1 calls)
+
+Question 172:
+  Text: Think about the events involving Parkour Workshop at Bethpage Black Course. List all protagonists involved in these events, without mentioning the events themselves.
+  Expected: ['Ezra Edwards']
+  Predicted: ['Ezra Edwards', 'Noa Middleton', 'Mara Ledbetter', 'Sienna Hamrick', 'Reid Blunt', 'Ronan Guevara', 'Other participants', 'Owen Thomas', 'Lilah Hamilton (Glide)', 'Rocco Cormier']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 201 total (180 prompt + 21 completion, 1 calls)
+
+Question 173:
+  Text: Think about the events involving Tech Hackathon at High Line. List all protagonists involved in these events, without mentioning the events themselves.
+  Expected: ['Zoe Brown']
+  Predicted: ['Julian Ross', 'Sienna Lyles', 'Dakari Liebert', 'Creed Berlin', 'Other participants', 'Zoe Brown', 'Cora Xiong']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+  Token Usage: 662 total (484 prompt + 178 completion, 2 calls)
+
+Question 174:
+  Text: Think about the events involving Theater Performance at High Line. List all protagonists involved in these events, without mentioning the events themselves.
+  Expected: ['Jackson Ramos']
+  Predicted: ['Mila Gonzalez', 'Diem Nix', 'Eli Groth', 'Rey Pierre', 'Audience', 'Jackson Ramos', 'Remy Waterman', 'Kylee Beard', 'Other actors']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+  Token Usage: 663 total (480 prompt + 183 completion, 2 calls)
+
+Question 175:
+  Text: Recall all events related to Astronomy Night that occurred at American Museum of Natural History. Provide a list of all dates when these events took place, without describing the events.
+  Expected: ['December 26, 2026']
+  Predicted: ['December 26, 2026']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+  Token Usage: 690 total (512 prompt + 178 completion, 2 calls)
+
+Question 176:
+  Text: Recall all events related to Fashion Show that occurred at American Museum of Natural History. Provide a list of all dates when these events took place, without describing the events.
+  Expected: ['September 22, 2026']
+  Predicted: ['September 22, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 201 total (185 prompt + 16 completion, 1 calls)
+
+Question 177:
+  Text: Recall all events related to Parkour Workshop that occurred at Bethpage Black Course. Provide a list of all dates when these events took place, without describing the events.
+  Expected: ['September 13, 2025']
+  Predicted: ['September 13, 2025']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+  Token Usage: 664 total (520 prompt + 144 completion, 2 calls)
+
+Question 178:
+  Text: Recall all events related to Tech Hackathon that occurred at High Line. Provide a list of all dates when these events took place, without describing the events.
+  Expected: ['June 14, 2025']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2973 total (2118 prompt + 855 completion, 6 calls)
+
+Question 179:
+  Text: Recall all events related to Theater Performance that occurred at High Line. Provide a list of all dates when these events took place, without describing the events.
+  Expected: ['February 27, 2026']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3057 total (2221 prompt + 836 completion, 6 calls)
+
+Question 180:
+  Text: Consider all events involving Chloe Castillo at American Museum of Natural History. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['September 22, 2026']
+  Predicted: ['September 22, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 199 total (181 prompt + 18 completion, 1 calls)
+
+Question 181:
+  Text: Consider all events involving Levi Rodriguez at American Museum of Natural History. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['December 26, 2026']
+  Predicted: ['December 26, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 199 total (181 prompt + 18 completion, 1 calls)
+
+Question 182:
+  Text: Consider all events involving Ezra Edwards at Bethpage Black Course. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['September 13, 2025']
+  Predicted: ['September 13, 2025']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 203 total (180 prompt + 23 completion, 1 calls)
+
+Question 183:
+  Text: Consider all events involving Jackson Ramos at High Line. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['February 27, 2026']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2318 total (1681 prompt + 637 completion, 5 calls)
+
+Question 184:
+  Text: Consider all events involving Zoe Brown at High Line. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['June 14, 2025']
+  Predicted: ['June 14, 2025']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 197 total (178 prompt + 19 completion, 1 calls)
+
+Question 185:
+  Text: Reflect on Chloe Castillo's experiences at American Museum of Natural History. Describe all the key events they've been involved in at this location, focusing on what happened rather than when it occurred.
+  Expected: ['Fashion Show']
+  Predicted: {"event_name":"Chloe Castillo's Fashion Show","event_type":"Fashion Show","description":"Chloe Castillo unveils her new fashion collection inspired by nature and the cosmos, with models showcasing her designs to an enchanted audience.","participants":["Chloe Castillo","Miles Pritchett","Amira Hayes","Other models","Audience"]}
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 210 total (188 prompt + 22 completion, 1 calls)
+
+Question 186:
+  Text: Reflect on Levi Rodriguez's experiences at American Museum of Natural History. Describe all the key events they've been involved in at this location, focusing on what happened rather than when it occurred.
+  Expected: ['Astronomy Night']
+  Predicted: Levi Rodriguez has been involved in the following key event at the American Museum of Natural History: 
+
+- Astronomy Trivia Night at the Museum: Levi Rodriguez hosts an astronomy trivia contest, engaging participants in a night of cosmic questions and camaraderie.
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 213 total (188 prompt + 25 completion, 1 calls)
+
+Question 187:
+  Text: Reflect on Ezra Edwards's experiences at Bethpage Black Course. Describe all the key events they've been involved in at this location, focusing on what happened rather than when it occurred.
+  Expected: ['Parkour Workshop']
+  Predicted: {"name": "Bethpage Black Parkour Workshop", "event_type": "Parkour Workshop", "description": "A group of participants, led by Ezra Edwards, attend a parkour workshop involving demonstrations, challenges, and camaraderie on a golf course.", "participants": ["Ezra Edwards", "Noa Middleton", "Mara Ledbetter", "Sienna Hamrick", "Reid Blunt", "Ronan Guevara", "Other participants"]}
+  Search Success: True
+  Confidence: 0.20
+  Iterations: 5
+  Token Usage: 788 total (576 prompt + 212 completion, 2 calls)
+
+Question 188:
+  Text: Reflect on Jackson Ramos's experiences at High Line. Describe all the key events they've been involved in at this location, focusing on what happened rather than when it occurred.
+  Expected: ['Theater Performance']
+  Predicted: {"event_name": "High Line Tragedy Play", "event_type": "Theatrical Performance", "description": "A tragic play is performed, reflecting the struggles and despair of the characters and audience, with Jackson Ramos confronting personal and artistic challenges.", "participants": ["Jackson Ramos", "Remy Waterman", "Kylee Beard", "Other actors", "Audience"]}
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+  Token Usage: 752 total (562 prompt + 190 completion, 2 calls)
+
+Question 189:
+  Text: Reflect on Zoe Brown's experiences at High Line. Describe all the key events they've been involved in at this location, focusing on what happened rather than when it occurred.
+  Expected: ['Tech Hackathon']
+  Predicted: Zoe Brown presents final projects at a tech event, with an atmosphere of tension and unease as participants showcase their innovations.
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 204 total (185 prompt + 19 completion, 1 calls)
+
+Question 190:
+  Text: Consider all events involving both Chloe Castillo and Fashion Show at American Museum of Natural History. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['September 22, 2026']
+  Predicted: ['September 22, 2026']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+  Token Usage: 720 total (513 prompt + 207 completion, 2 calls)
+
+Question 191:
+  Text: Consider all events involving both Levi Rodriguez and Astronomy Night at American Museum of Natural History. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['December 26, 2026']
+  Predicted: ['December 26, 2026']
+  Search Success: True
+  Confidence: 0.40
+  Iterations: 4
+  Token Usage: 1813 total (1290 prompt + 523 completion, 4 calls)
+
+Question 192:
+  Text: Consider all events involving both Ezra Edwards and Parkour Workshop at Bethpage Black Course. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['September 13, 2025']
+  Predicted: ['September 13, 2025']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+  Token Usage: 736 total (532 prompt + 204 completion, 2 calls)
+
+Question 193:
+  Text: Consider all events involving both Jackson Ramos and Theater Performance at High Line. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['February 27, 2026']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2066 total (1461 prompt + 605 completion, 4 calls)
+
+Question 194:
+  Text: Consider all events involving both Zoe Brown and Tech Hackathon at High Line. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['June 14, 2025']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3338 total (2429 prompt + 909 completion, 6 calls)
+
+Question 195:
+  Text: Consider all events involving Violet Johnson at American Museum of Natural History. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3135 total (2291 prompt + 844 completion, 6 calls)
+
+Question 196:
+  Text: Consider all events involving Owen Thomas at Bethpage Black Course. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3064 total (2179 prompt + 885 completion, 6 calls)
+
+Question 197:
+  Text: Consider all events involving Harper Gutierrez at Camp Hero State Park. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3173 total (2286 prompt + 887 completion, 6 calls)
+
+Question 198:
+  Text: Consider all events involving Mila Gonzalez at Captree State Park. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: ['February 27, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 197 total (180 prompt + 17 completion, 1 calls)
+
+Question 199:
+  Text: Consider all events involving Mateo Gomez at Coney Island. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3062 total (2186 prompt + 876 completion, 6 calls)
+
+Question 200:
+  Text: Reflect on Violet Johnson's experiences at American Museum of Natural History. Describe all the key events they've been involved in at this location, focusing on what happened rather than when it occurred.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3629 total (2764 prompt + 865 completion, 6 calls)
+

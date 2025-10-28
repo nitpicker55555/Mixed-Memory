@@ -1,0 +1,414 @@
+{
+  "metadata": {
+    "start_time": "2025-09-22T13:03:27.389656",
+    "database": "197chapters2",
+    "question_range": "121-130",
+    "total_questions": 10,
+    "end_time": "2025-09-22T14:47:16.411201",
+    "total_duration": 6229.0184260000005
+  },
+  "results": [
+    {
+      "question_idx": 23,
+      "question": "Reflect on the experiences of Aurora Chavez related to Fashion Show. List all the unique locations where these events took place, without mentioning the events themselves.",
+      "answer": {
+        "session_id": "6000801e-1812-4b9c-b411-68f8db7275ef",
+        "question": "Reflect on the experiences of Aurora Chavez related to Fashion Show. List all the unique locations where these events took place, without mentioning the events themselves.",
+        "final_answer": null,
+        "standardized_answer": [],
+        "total_iterations": 5,
+        "search_successful": false,
+        "reasoning_chain": [
+          "By broadening the search to include all events that Aurora Chavez participated in, regardless of the event type, we can ensure that we capture all relevant locations. This approach avoids the potential issue of missing events due to a specific keyword filter.",
+          "By removing the event type filter, the search can capture all events that Aurora Chavez participated in, which may yield a broader set of results and allow for the identification of unique locations.",
+          "By using a broader keyword like 'Fashion', the search can capture a wider range of events that may not be explicitly labeled as 'Fashion Show', potentially yielding more results related to Aurora Chavez's experiences.",
+          "By broadening the search to include all events that Aurora Chavez participated in, regardless of the event type, we increase the chances of finding relevant locations. This approach allows for a more comprehensive collection of data that can then be filtered for unique locations.",
+          "By broadening the search to include any events related to 'Fashion', it increases the chances of finding relevant locations associated with Aurora Chavez, even if they are not strictly categorized as 'Fashion Shows'."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Aurora Chavez' IN e.participants AND toLower(e.event_type) CONTAINS toLower($kw) RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE toLower(e.event_type) CONTAINS toLower($kw) AND $person IN e.participants RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE e.event_type = $kw AND $person IN e.participants AND e.location IS NOT NULL AND e.location <> '' RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE $person IN e.participants AND e.event_type CONTAINS $kw AND e.location IS NOT NULL AND e.location <> '' RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE e.event_type = 'Fashion Show' AND 'Aurora Chavez' IN e.participants AND e.location IS NOT NULL AND e.location <> '' RETURN DISTINCT e.location AS location"
+        ],
+        "token_usage": {
+          "prompt_tokens": 2250,
+          "completion_tokens": 917,
+          "total_tokens": 3167,
+          "calls_count": 6
+        }
+      },
+      "duration_seconds": 165.9844,
+      "status": "success",
+      "timestamp": "2025-09-22T13:03:27.389726",
+      "token_usage": {
+        "prompt_tokens": 2250,
+        "completion_tokens": 917,
+        "total_tokens": 3167,
+        "calls_count": 6
+      },
+      "expected_answer": []
+    },
+    {
+      "question_idx": 23,
+      "question": "Reflect on the experiences of Aurora Chavez related to Graduation Ceremony. List all the unique locations where these events took place, without mentioning the events themselves.",
+      "answer": {
+        "session_id": "3205be99-5b50-4cf0-bc37-b2db15d162f0",
+        "question": "Reflect on the experiences of Aurora Chavez related to Graduation Ceremony. List all the unique locations where these events took place, without mentioning the events themselves.",
+        "final_answer": null,
+        "standardized_answer": [],
+        "total_iterations": 5,
+        "search_successful": false,
+        "reasoning_chain": [
+          "By broadening the search to include any events involving Aurora Chavez and focusing solely on the participants and location fields, it increases the chances of retrieving relevant locations without being limited by specific event types or descriptions.",
+          "By broadening the search to include all events involving Aurora Chavez, we increase the chances of finding relevant locations, regardless of the specific event type or description.",
+          "By focusing solely on the participant's name and retrieving all associated locations without filtering by event type or description, the search will likely yield more results. This approach ensures that all relevant locations are considered, even if they are not explicitly labeled as graduation events.",
+          "By removing the specific filters related to event type and description, the search can capture a wider range of events that Aurora Chavez participated in, thus increasing the likelihood of finding relevant locations.",
+          "By including broader terms like 'commencement' and focusing on the event_type and description fields, the search may capture more relevant events. This approach allows for flexibility in how graduation-related events are categorized."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE e.participants CONTAINS 'Aurora Chavez' AND (toLower(e.event_type) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) AND e.location IS NOT NULL AND e.location <> '' RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE e.participants CONTAINS 'Aurora Chavez' AND (toLower(e.event_type) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) AND e.location IS NOT NULL AND e.location <> '' RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE e.participants CONTAINS 'Aurora Chavez' AND (toLower(e.event_type) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) AND e.location IS NOT NULL AND e.location <> '' RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE e.participants CONTAINS 'Aurora Chavez' AND (toLower(e.event_type) = toLower($kw) OR toLower(e.description) = toLower($kw) OR toLower(e.event_type) IN ['commencement', 'ceremony']) AND e.location IS NOT NULL AND e.location <> '' RETURN DISTINCT e.location AS location",
+          "MATCH (e:Event) WHERE e.participants CONTAINS 'Aurora Chavez' AND (toLower(e.event_type) CONTAINS 'graduation' OR toLower(e.event_type) IN ['commencement', 'ceremony'] OR toLower(e.description) CONTAINS 'graduation') AND e.location IS NOT NULL AND e.location <> '' RETURN DISTINCT e.location AS location"
+        ],
+        "token_usage": {
+          "prompt_tokens": 2876,
+          "completion_tokens": 900,
+          "total_tokens": 3776,
+          "calls_count": 6
+        }
+      },
+      "duration_seconds": 157.011469,
+      "status": "success",
+      "timestamp": "2025-09-22T13:06:13.374406",
+      "token_usage": {
+        "prompt_tokens": 2876,
+        "completion_tokens": 900,
+        "total_tokens": 3776,
+        "calls_count": 6
+      },
+      "expected_answer": []
+    },
+    {
+      "question_idx": 22,
+      "question": "Consider all events involving both Andrew Gomez and Fashion Show. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "bddcb904-3b19-4fca-a03b-d2057a87896d",
+        "question": "Consider all events involving both Andrew Gomez and Fashion Show. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": null,
+        "standardized_answer": [],
+        "total_iterations": 5,
+        "search_successful": false,
+        "reasoning_chain": [
+          "By broadening the keyword to 'Fashion Event', it may capture more relevant events while still focusing on the participants field to ensure Andrew Gomez is included. (Enhanced with semantic search: Fashion Show in field event_type)",
+          "By broadening the keyword to 'Fashion Shows', it may capture more relevant events. Additionally, ensuring that the participant's name is matched correctly without case sensitivity or formatting issues could yield better results. (Enhanced with semantic search: Fashion Show in field event_type)",
+          "By focusing on the event name directly and ensuring that the search checks for participation, we can capture relevant events more effectively.",
+          "By using a 'CONTAINS' approach for the event name, the search can capture a broader range of relevant events that may include variations or additional descriptors related to 'Fashion Show'.",
+          "By focusing on a broader keyword like 'Fashion' and ensuring that the search is case-insensitive, it increases the chances of capturing all relevant events that include 'Fashion Show' in their names, while still filtering by the participant 'Andrew Gomez'."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Andrew Gomez' IN e.participants AND e.name CONTAINS 'Fashion Show' RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE 'Andrew Gomez' IN e.participants AND toLower(e.name) CONTAINS toLower($kw) AND e.date IS NOT NULL RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE 'Andrew Gomez' IN e.participants AND e.event_type = $kw AND e.date IS NOT NULL RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE 'Andrew Gomez' IN e.participants AND e.name = $kw AND e.date IS NOT NULL RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE 'Andrew Gomez' IN e.participants AND (e.name CONTAINS 'Fashion' OR e.name CONTAINS 'Show') AND e.date IS NOT NULL RETURN DISTINCT e.date AS date"
+        ],
+        "token_usage": {
+          "prompt_tokens": 2490,
+          "completion_tokens": 986,
+          "total_tokens": 3476,
+          "calls_count": 6
+        }
+      },
+      "duration_seconds": 174.701057,
+      "status": "success",
+      "timestamp": "2025-09-22T13:08:50.386188",
+      "token_usage": {
+        "prompt_tokens": 2490,
+        "completion_tokens": 986,
+        "total_tokens": 3476,
+        "calls_count": 6
+      },
+      "expected_answer": []
+    },
+    {
+      "question_idx": 22,
+      "question": "Consider all events involving both Andrew Gomez and Indoor Skydiving Event. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "60dcb5e1-b79e-4880-b301-a7e711d91b3f",
+        "question": "Consider all events involving both Andrew Gomez and Indoor Skydiving Event. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": null,
+        "standardized_answer": [],
+        "total_iterations": 5,
+        "search_successful": false,
+        "reasoning_chain": [
+          "By broadening the search criteria to include any mention of indoor skydiving rather than requiring an exact match on the event name, the query is more likely to return relevant results. This approach allows for variations in how events are recorded in the database.",
+          "By directly querying the event type for 'Indoor Skydiving Event' and ensuring that 'Andrew Gomez' is listed as a participant, the search will be more targeted and likely yield results.",
+          "By broadening the search to include both event_type and description, the query can capture more relevant events that may not be strictly categorized under 'Indoor Skydiving Event' but still relate to indoor skydiving activities.",
+          "By focusing on an exact match for the event type rather than a partial match or description, the search may yield more accurate results. This approach assumes that the event type is a more reliable field for identifying specific events.",
+          "By focusing on an exact match for the event type rather than using a case-insensitive search or checking descriptions, the query can be more precise and likely yield results if such events exist."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Andrew Gomez' IN e.participants AND e.name = $kw RETURN e.date AS date",
+          "MATCH (e:Event) WHERE 'Andrew Gomez' IN e.participants AND (toLower(e.event_type) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) RETURN e.date AS date",
+          "MATCH (e:Event) WHERE 'Andrew Gomez' IN e.participants AND e.event_type = $kw RETURN e.date AS date",
+          "MATCH (e:Event) WHERE 'Andrew Gomez' IN e.participants AND (toLower(e.event_type) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE 'Andrew Gomez' IN e.participants AND (toLower(e.event_type) CONTAINS toLower($kw) OR toLower(e.description) CONTAINS toLower($kw)) RETURN DISTINCT e.date AS date"
+        ],
+        "token_usage": {
+          "prompt_tokens": 2825,
+          "completion_tokens": 1238,
+          "total_tokens": 4063,
+          "calls_count": 6
+        }
+      },
+      "duration_seconds": 237.016529,
+      "status": "success",
+      "timestamp": "2025-09-22T13:11:45.087501",
+      "token_usage": {
+        "prompt_tokens": 2825,
+        "completion_tokens": 1238,
+        "total_tokens": 4063,
+        "calls_count": 6
+      },
+      "expected_answer": []
+    },
+    {
+      "question_idx": 22,
+      "question": "Consider all events involving both Andrew Gomez and Stand-up Comedy Night. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "1ee61e9e-d266-4f3d-8bd8-42a0b71c03ce",
+        "question": "Consider all events involving both Andrew Gomez and Stand-up Comedy Night. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": null,
+        "standardized_answer": [],
+        "total_iterations": 5,
+        "search_successful": false,
+        "reasoning_chain": [
+          "By broadening the event name to 'Comedy Night', it allows for variations in naming conventions while still focusing on the relevant participants. This increases the chances of retrieving relevant events.",
+          "By using an exact match for 'Stand-up Comedy Night' instead of a partial match, the search is more likely to yield results. Ensuring the parameters are correctly referenced will also help in retrieving the correct data. (Enhanced with semantic search: Karaoke Night in field event_type)",
+          "By broadening the search to include variations of the event name, such as 'Comedy Night', we increase the chances of finding relevant events that involve Andrew Gomez, even if the exact title does not match.",
+          "By broadening the search to include related terms like 'Stand-up Comedy', we increase the chances of capturing relevant events that may not have 'Comedy Night' in the exact title but are still related to stand-up comedy.",
+          "By broadening the search to include partial matches or related terms in the event name or description, it increases the chances of finding relevant events involving Andrew Gomez."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Andrew Gomez' IN e.participants AND e.name = $kw RETURN e.date AS date",
+          "MATCH (e:Event) WHERE 'Andrew Gomez' IN e.participants AND toLower(e.name) CONTAINS toLower($kw) RETURN e.date AS date",
+          "MATCH (e:Event) WHERE 'Andrew Gomez' IN e.participants AND e.name = 'Stand-up Comedy Night' RETURN e.date AS date",
+          "MATCH (e:Event) WHERE 'Andrew Gomez' IN e.participants AND toLower(e.name) CONTAINS toLower('Comedy Night') RETURN e.date AS date",
+          "MATCH (e:Event) WHERE 'Andrew Gomez' IN e.participants AND e.name = 'Stand-up Comedy Night' RETURN e.date AS date"
+        ],
+        "token_usage": {
+          "prompt_tokens": 2251,
+          "completion_tokens": 862,
+          "total_tokens": 3113,
+          "calls_count": 6
+        }
+      },
+      "duration_seconds": 193.597412,
+      "status": "success",
+      "timestamp": "2025-09-22T13:15:42.104381",
+      "token_usage": {
+        "prompt_tokens": 2251,
+        "completion_tokens": 862,
+        "total_tokens": 3113,
+        "calls_count": 6
+      },
+      "expected_answer": []
+    },
+    {
+      "question_idx": 22,
+      "question": "Consider all events involving both Aurora Chavez and Fashion Show. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "23eefe1a-e289-427e-907c-2f6cad234659",
+        "question": "Consider all events involving both Aurora Chavez and Fashion Show. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": null,
+        "standardized_answer": [],
+        "total_iterations": 5,
+        "search_successful": false,
+        "reasoning_chain": [
+          "By broadening the search to include variations of the name and using a more flexible keyword like 'Fashion Events', the search may yield more relevant results. Focusing on the participants field will help ensure that the query captures all events involving Aurora Chavez. (Enhanced with semantic search: Fashion Show in field event_type)",
+          "By broadening the search terms and focusing on the participants and event type fields, the query can capture a wider range of relevant events, potentially yielding results that were missed in the original search. (Enhanced with semantic search: Fashion Show in field event_type)",
+          "By focusing on exact matches for participants and broadening the search for event names to include variations like 'Fashion Shows', the query may yield better results. Additionally, ensuring that the search checks for both the presence of the participant and the event type could help in retrieving relevant dates. (Enhanced with semantic search: Fashion Show in field event_type)",
+          "Focusing on the name or description fields may yield better results, as these fields are more likely to contain the relevant information about the events involving both Aurora Chavez and Fashion Shows.",
+          "By using a broader keyword like 'Fashion', the search can capture a wider range of relevant events that may not be explicitly labeled as 'Fashion Show', increasing the chances of finding the desired dates."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Aurora Chavez' IN e.participants AND toLower(e.name) CONTAINS toLower('Fashion Show') AND e.date IS NOT NULL RETURN e.date AS date",
+          "MATCH (e:Event) WHERE e.participants CONTAINS \"Aurora Chavez\" AND toLower(e.name) CONTAINS toLower(\"Fashion Show\") AND e.date IS NOT NULL RETURN e.date AS date",
+          "MATCH (e:Event) WHERE \"Aurora Chavez\" IN e.participants AND toLower(e.name) CONTAINS toLower($kw) AND e.date IS NOT NULL RETURN e.date AS date",
+          "MATCH (e:Event) WHERE 'Aurora Chavez' IN e.participants AND toLower(e.event_type) CONTAINS toLower($kw) AND e.date IS NOT NULL RETURN e.date AS date",
+          "MATCH (e:Event) WHERE \"Aurora Chavez\" IN e.participants AND toLower(e.name) = toLower($kw) AND e.date IS NOT NULL RETURN e.date AS date"
+        ],
+        "token_usage": {
+          "prompt_tokens": 2340,
+          "completion_tokens": 919,
+          "total_tokens": 3259,
+          "calls_count": 6
+        }
+      },
+      "duration_seconds": 5026.251467,
+      "status": "success",
+      "timestamp": "2025-09-22T13:18:55.702097",
+      "token_usage": {
+        "prompt_tokens": 2340,
+        "completion_tokens": 919,
+        "total_tokens": 3259,
+        "calls_count": 6
+      },
+      "expected_answer": []
+    },
+    {
+      "question_idx": 22,
+      "question": "Consider all events involving both Aurora Chavez and Graduation Ceremony. Provide a list of all dates when these events occurred, without describing the events.",
+      "answer": {
+        "session_id": "3c9f0571-4ba1-4204-b87d-a9a6fb2ab12f",
+        "question": "Consider all events involving both Aurora Chavez and Graduation Ceremony. Provide a list of all dates when these events occurred, without describing the events.",
+        "final_answer": null,
+        "standardized_answer": [],
+        "total_iterations": 5,
+        "search_successful": false,
+        "reasoning_chain": [
+          "By broadening the keyword to 'Graduation', it may capture related events that include 'Graduation Ceremony' in their description or name. Additionally, simplifying the person's name to 'Aurora' might help in matching variations in how the name is stored.",
+          "By broadening the keyword to just 'Graduation', it increases the chances of matching various event names that include this term, potentially capturing all relevant graduation-related events involving Aurora Chavez.",
+          "By broadening the search to include any event with 'Graduation' in its name or description, we increase the chances of finding relevant events involving Aurora Chavez, even if the exact phrase 'Graduation Ceremony' is not used.",
+          "By focusing on exact matches for the event name and ensuring case insensitivity, the search may yield more accurate results. Additionally, checking both the name and description fields for variations of 'Graduation' could help capture all relevant events. (Enhanced with semantic search: Awards Ceremony in field event_type)",
+          "By broadening the search to just 'Graduation' instead of the full phrase 'Graduation Ceremony', it allows for more potential matches. Additionally, ensuring that the participant check is correctly formatted will help in retrieving relevant events."
+        ],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Aurora Chavez' IN e.participants AND toLower(e.name) CONTAINS toLower('Graduation Ceremony') RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE 'Aurora Chavez' IN e.participants AND toLower(e.name) CONTAINS toLower($kw) RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE 'Aurora Chavez' IN e.participants AND e.name = 'Graduation Ceremony' RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE 'Aurora Chavez' IN e.participants AND (e.name CONTAINS 'Graduation' OR e.description CONTAINS 'Graduation') RETURN DISTINCT e.date AS date",
+          "MATCH (e:Event) WHERE 'Aurora Chavez' IN e.participants AND (e.name = 'Graduation Ceremony' OR e.name CONTAINS 'Graduation' OR e.description CONTAINS 'Graduation') RETURN DISTINCT e.date AS date"
+        ],
+        "token_usage": {
+          "prompt_tokens": 2265,
+          "completion_tokens": 916,
+          "total_tokens": 3181,
+          "calls_count": 6
+        }
+      },
+      "duration_seconds": 211.408078,
+      "status": "success",
+      "timestamp": "2025-09-22T14:42:41.954333",
+      "token_usage": {
+        "prompt_tokens": 2265,
+        "completion_tokens": 916,
+        "total_tokens": 3181,
+        "calls_count": 6
+      },
+      "expected_answer": []
+    },
+    {
+      "question_idx": 32,
+      "question": "What was Aurora Chavez doing the last time they were observed in the story's timeline?",
+      "answer": {
+        "session_id": "b2406143-f135-4955-9da9-06da64e33e32",
+        "question": "What was Aurora Chavez doing the last time they were observed in the story's timeline?",
+        "final_answer": "Aurora Chavez was participating in a hackathon at the Water Mill Museum on March 23, 2025.",
+        "standardized_answer": [
+          "Aurora Chavez was participating in a hackathon at the Water Mill Museum on March 23, 2025."
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Aurora Chavez' IN e.participants ORDER BY e.date DESC LIMIT 1 RETURN e.date AS date, e.name AS name, e.event_type AS event_type, e.description AS description, e.location AS location"
+        ],
+        "token_usage": {
+          "prompt_tokens": 169,
+          "completion_tokens": 17,
+          "total_tokens": 186,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 21.881799,
+      "status": "success",
+      "timestamp": "2025-09-22T14:46:13.362649",
+      "token_usage": {
+        "prompt_tokens": 169,
+        "completion_tokens": 17,
+        "total_tokens": 186,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "Tech Hackathon"
+      ]
+    },
+    {
+      "question_idx": 32,
+      "question": "What was Bella Alvarez doing the last time they were observed in the story's timeline?",
+      "answer": {
+        "session_id": "c4e1fb05-aec6-4e5f-8533-2cb416429aa4",
+        "question": "What was Bella Alvarez doing the last time they were observed in the story's timeline?",
+        "final_answer": "Bella Alvarez organized an astronomy night that turned into a nightmare as attendees witnessed a vast, writhing mass of darkness in the sky.",
+        "standardized_answer": [
+          "Bella Alvarez organized an astronomy night that turned into a nightmare as attendees witnessed a vast, writhing mass of darkness in the sky."
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Bella Alvarez' IN e.participants RETURN e.date AS date, e.name AS name, e.event_type AS event_type, e.description AS description, e.location AS location, e.participants AS participants ORDER BY e.date DESC LIMIT 1"
+        ],
+        "token_usage": {
+          "prompt_tokens": 169,
+          "completion_tokens": 16,
+          "total_tokens": 185,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 18.740713,
+      "status": "success",
+      "timestamp": "2025-09-22T14:46:35.244568",
+      "token_usage": {
+        "prompt_tokens": 169,
+        "completion_tokens": 16,
+        "total_tokens": 185,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "Astronomy Night"
+      ]
+    },
+    {
+      "question_idx": 32,
+      "question": "What was Elizabeth Hill doing the last time they were observed in the story's timeline?",
+      "answer": {
+        "session_id": "0d7a9c3a-8572-42ab-bbf5-e0d7231ac0f5",
+        "question": "What was Elizabeth Hill doing the last time they were observed in the story's timeline?",
+        "final_answer": "Elizabeth Hill was performing at a Classical Music Concert.",
+        "standardized_answer": [
+          "Elizabeth Hill was performing at a Classical Music Concert."
+        ],
+        "total_iterations": 1,
+        "search_successful": true,
+        "reasoning_chain": [],
+        "query_history": [
+          "MATCH (e:Event) WHERE 'Elizabeth Hill' IN e.participants ORDER BY e.date DESC LIMIT 1 RETURN e.date AS date, e.name AS name, e.event_type AS event_type, e.description AS description, e.participants AS participants"
+        ],
+        "token_usage": {
+          "prompt_tokens": 169,
+          "completion_tokens": 16,
+          "total_tokens": 185,
+          "calls_count": 1
+        }
+      },
+      "duration_seconds": 22.425502,
+      "status": "success",
+      "timestamp": "2025-09-22T14:46:53.985506",
+      "token_usage": {
+        "prompt_tokens": 169,
+        "completion_tokens": 16,
+        "total_tokens": 185,
+        "calls_count": 1
+      },
+      "expected_answer": [
+        "Classical Music Concert"
+      ]
+    }
+  ]
+}

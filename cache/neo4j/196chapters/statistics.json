@@ -1,0 +1,34 @@
+{
+  "total_nodes": 2794,
+  "total_relationships": 2243,
+  "nodes_by_label": [
+    {
+      "labels": [
+        "Person"
+      ],
+      "count": 1134
+    },
+    {
+      "labels": [
+        "Location"
+      ],
+      "count": 1109
+    },
+    {
+      "labels": [
+        "Event"
+      ],
+      "count": 551
+    }
+  ],
+  "relationships_by_type": [
+    {
+      "type": "PARTICIPATED_IN",
+      "count": 1134
+    },
+    {
+      "type": "OCCURRED_AT",
+      "count": 1109
+    }
+  ]
+}

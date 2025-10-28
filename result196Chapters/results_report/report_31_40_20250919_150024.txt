@@ -1,0 +1,93 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-19 15:00:24
+Question Range: 31-40
+Total Questions Processed: 10
+Successful Searches: 9 (90.0%)
+Questions with Answers: 9 (90.0%)
+Average Iterations per Question: 2.4
+
+DETAILED RESULTS:
+------------------------------
+
+Question 31:
+  Text: Recall all events related to Astronomy Night. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['May 11, 2026', 'December 26, 2026', 'May 28, 2025', 'October 30, 2026', 'April 09, 2026', 'September 22, 2026', 'October 12, 2024']
+  Predicted: ['October 12, 2024', 'May 11, 2026', 'December 26, 2026', 'October 30, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+
+Question 32:
+  Text: Recall all events related to Debate Tournament. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['May 28, 2025', 'July 13, 2024', 'January 03, 2026', 'March 23, 2025', 'July 31, 2025']
+  Predicted: ['January 03, 2026', 'July 13, 2024', 'May 28, 2025', 'October 13, 2024']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+
+Question 33:
+  Text: Recall all events related to Educational Workshop. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['May 11, 2026', 'April 09, 2026', 'December 03, 2026', 'July 13, 2024', 'September 13, 2025', 'February 27, 2026', 'May 14, 2025', 'September 03, 2026', 'June 14, 2025']
+  Predicted: ['January 26, 2025', 'March 23, 2024', 'March 24, 2024', 'May 07, 2024', 'May 31, 2024', 'July 25, 2024', 'July 13, 2024', 'October 09, 2025', 'November 07, 2025', 'September 13, 2025', 'September 27, 2025', 'June 14, 2025', 'July 31, 2025', 'May 14, 2025', 'October 13, 2024', 'February 27, 2026', 'April 09, 2026', 'May 11, 2026', 'November 13, 2026', 'December 03, 2026', 'December 26, 2026', 'October 30, 2026', 'September 03, 2026', '2026-06-08T00:00:00', 'June 17, 2025']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+
+Question 34:
+  Text: Recall all events related to Fashion Show. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['May 11, 2026', 'February 22, 2025', 'December 26, 2026', 'March 23, 2024', 'October 30, 2026', 'April 09, 2026', 'October 13, 2024', 'May 31, 2024', 'September 22, 2026', 'February 27, 2026', 'September 13, 2025', 'January 03, 2026', 'November 13, 2026', 'July 31, 2025']
+  Predicted: ['February 22, 2025', 'March 23, 2024', 'September 22, 2026', 'October 30, 2026', 'November 13, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+
+Question 35:
+  Text: Recall all events related to Film Festival. Provide a list of all dates when these events occurred, without describing the events.
+  Expected: ['December 26, 2026', 'March 23, 2024', 'October 13, 2024', 'October 27, 2024', 'November 13, 2026', 'September 27, 2025', 'September 03, 2026']
+  Predicted: ['March 23, 2025', 'July 31, 2025', 'September 27, 2025', 'December 25, 2025', 'May 11, 2026', 'September 03, 2026', 'September 22, 2026', 'November 13, 2026', 'December 26, 2026', 'October 13, 2024', 'October 27, 2024']
+  Search Success: True
+  Confidence: 0.20
+  Iterations: 5
+
+Question 36:
+  Text: Consider all events involving Astronomy Night. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['High Line', 'Williamsburg Bridge', 'Port Jefferson', 'American Museum of Natural History', 'Yankee Stadium', 'Washington Square Park', 'Metropolitan Museum of Art', 'Planting Fields Arboretum State Historic Park', 'Lincoln Center']
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+
+Question 37:
+  Text: Consider all events involving Debate Tournament. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['High Line', 'Trinity Church', 'Port Jefferson', 'American Museum of Natural History', 'Woolworth Building', 'One World Trade Center', 'Metropolitan Museum of Art']
+  Predicted: ['Floating platform in the twilight sky', 'Trinity Church', 'Port Jefferson', 'Museum of Modern Art']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+
+Question 38:
+  Text: Consider all events involving Educational Workshop. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Van Cortlandt Park', 'High Line', 'Yankee Stadium', 'New York Botanical Garden', 'Woolworth Building', 'One World Trade Center', 'Metropolitan Museum of Art', 'Long Beach Boardwalk']
+  Predicted: ['Planting Fields Arboretum State Historic Park', 'Art Deco interior of the Woolworth Building', 'High Line', 'Woolworth Building', 'Port Jefferson', 'Williamsburg Bridge', 'New York Botanical Garden', 'One World Trade Center', 'The High Line', 'Fire Island National Seashore', 'Statue of Liberty, New York', 'Trinity Church', 'Water Mill Museum', 'Van Cortlandt Park', 'Elevated Park', 'Statue of Liberty']
+  Search Success: True
+  Confidence: 0.80
+  Iterations: 2
+
+Question 39:
+  Text: Consider all events involving Fashion Show. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['High Line', 'Trinity Church', 'Museum of Modern Art', 'American Museum of Natural History', 'Yankee Stadium', 'Washington Square Park', 'Brooklyn Bridge', 'One World Trade Center', 'Bethpage State Park', 'Brooklyn Museum', 'Long Beach Boardwalk', 'Lincoln Center']
+  Predicted: ['American Museum of Natural History', 'Washington Square Park', 'Long Beach Boardwalk', 'Bethpage State Park', 'Brooklyn Bridge']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+
+Question 40:
+  Text: Consider all events involving Film Festival. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['High Line', 'Port Jefferson', 'Madison Square Garden', 'American Museum of Natural History', 'Washington Square Park', 'Metropolitan Museum of Art', 'Queensboro Bridge']
+  Predicted: ['Queensboro Bridge', 'Woolworth Building', 'American Museum of Natural History', 'Washington Square Park', 'High Line, New York', 'Bethpage Black Course', 'Madison Square Garden', 'Yankee Stadium', 'Port Jefferson', 'Unknown', 'Central Park']
+  Search Success: True
+  Confidence: 0.60
+  Iterations: 3
+

@@ -1,0 +1,103 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-22 00:03:34
+Question Range: 91-100
+Total Questions Processed: 10
+Successful Searches: 2 (20.0%)
+Questions with Answers: 2 (20.0%)
+Average Iterations per Question: 4.8
+
+DETAILED RESULTS:
+------------------------------
+
+Question 91:
+  Text: Provide a chronological list of all dates when Caleb Perez was observed, from earliest to latest in the story's timeline.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 2624 total (1895 prompt + 729 completion, 5 calls)
+
+Question 92:
+  Text: Provide a chronological list of all dates when Charlotte White was observed, from earliest to latest in the story's timeline.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3130 total (2211 prompt + 919 completion, 6 calls)
+
+Question 93:
+  Text: List all locations visited by Andrew Gomez in chronological order according to the story's timeline.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3466 total (2531 prompt + 935 completion, 6 calls)
+
+Question 94:
+  Text: List all locations visited by Ava Morris in chronological order according to the story's timeline.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3463 total (2566 prompt + 897 completion, 6 calls)
+
+Question 95:
+  Text: List all locations visited by Brooklyn Sanders in chronological order according to the story's timeline.
+  Expected: []
+  Predicted: ['Guggenheim Museum', 'Queensboro Bridge', 'Yankee Stadium', 'High Line, Brooklyn', 'One World Trade Center', 'Unknown', 'Brooklyn Museum', 'Fire Island National Seashore']
+  Search Success: True
+  Confidence: 0.20
+  Iterations: 5
+  Token Usage: 2515 total (1807 prompt + 708 completion, 5 calls)
+
+Question 96:
+  Text: List all locations visited by Caleb Perez in chronological order according to the story's timeline.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3154 total (2243 prompt + 911 completion, 6 calls)
+
+Question 97:
+  Text: List all locations visited by Charlotte White in chronological order according to the story's timeline.
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3161 total (2263 prompt + 898 completion, 6 calls)
+
+Question 98:
+  Text: What is the most recent location where Andrew Gomez was observed in the story's chronological timeline?
+  Expected: []
+  Predicted: Port Jefferson
+  Search Success: True
+  Confidence: 0.60
+  Iterations: 3
+  Token Usage: 1239 total (859 prompt + 380 completion, 3 calls)
+
+Question 99:
+  Text: What is the most recent location where Ava Morris was observed in the story's chronological timeline?
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3276 total (2352 prompt + 924 completion, 6 calls)
+
+Question 100:
+  Text: What is the most recent location where Brooklyn Sanders was observed in the story's chronological timeline?
+  Expected: []
+  Predicted: None
+  Search Success: False
+  Confidence: 0.00
+  Iterations: 5
+  Token Usage: 3299 total (2476 prompt + 823 completion, 6 calls)
+

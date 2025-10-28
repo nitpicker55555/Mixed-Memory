@@ -1,0 +1,103 @@
+AGENTIC SEARCH BATCH RESULTS REPORT
+==================================================
+
+Execution Time: 2025-09-23 00:11:46
+Question Range: 191-200
+Total Questions Processed: 10
+Successful Searches: 10 (100.0%)
+Questions with Answers: 10 (100.0%)
+Average Iterations per Question: 1.2
+
+DETAILED RESULTS:
+------------------------------
+
+Question 191:
+  Text: What is the most recent date Julian Peterson was observed or mentioned in the story's chronology?
+  Expected: ['April 09, 2026']
+  Predicted: Unknown
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 187 total (170 prompt + 17 completion, 1 calls)
+
+Question 192:
+  Text: What is the most recent date Levi Cruz was observed or mentioned in the story's chronology?
+  Expected: ['November 13, 2026']
+  Predicted: November 13, 2026
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 187 total (170 prompt + 17 completion, 1 calls)
+
+Question 193:
+  Text: Consider all events that Bella Brown has been involved in. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['High Line', 'Bethpage Black Course', 'Lincoln Center']
+  Predicted: ['Bethpage Black Course', 'Makeshift stage at Bethpage Black Course', 'The High Line', 'Lincoln Center', 'Unknown']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 195 total (179 prompt + 16 completion, 1 calls)
+
+Question 194:
+  Text: Consider all events that Hazel Lewis has been involved in. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ["St. Patrick's Cathedral", 'Brooklyn Bridge', 'Bethpage Black Course', 'One World Trade Center']
+  Predicted: ['Brooklyn Bridge', 'One World Trade Center', "St. Patrick's Cathedral", 'Bethpage Black Course']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 196 total (179 prompt + 17 completion, 1 calls)
+
+Question 195:
+  Text: Consider all events that Jackson Ramos has been involved in. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['High Line', 'Snug Harbor Cultural Center', 'Central Park', 'One World Trade Center', 'Ellis Island']
+  Predicted: ['High Line', 'Unknown', 'Ellis Island', 'Snug Harbor Cultural Center', 'Central Park', "Fortune Teller's Tent, Central Park", 'One World Trade Center']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 195 total (179 prompt + 16 completion, 1 calls)
+
+Question 196:
+  Text: Consider all events that Julian Peterson has been involved in. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Van Cortlandt Park', 'American Museum of Natural History', 'Metropolitan Museum of Art']
+  Predicted: ['American Museum of Natural History', 'Van Cortlandt Park', 'Exhibition Space', 'Grand Hall']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 196 total (179 prompt + 17 completion, 1 calls)
+
+Question 197:
+  Text: Consider all events that Levi Cruz has been involved in. List all the locations where these events took place, without mentioning the events themselves.
+  Expected: ['Woolworth Building', 'Yankee Stadium']
+  Predicted: ['Woolworth Building', 'Yankee Stadium']
+  Search Success: True
+  Confidence: 0.60
+  Iterations: 3
+  Token Usage: 196 total (179 prompt + 17 completion, 1 calls)
+
+Question 198:
+  Text: Provide a chronological list of all dates when Bella Brown was observed, from earliest to latest in the story's timeline.
+  Expected: ['March 23, 2024', 'March 23, 2025', 'January 03, 2026']
+  Predicted: ['2024-03-23', '2025-03-23', 'January 03, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 191 total (175 prompt + 16 completion, 1 calls)
+
+Question 199:
+  Text: Provide a chronological list of all dates when Hazel Lewis was observed, from earliest to latest in the story's timeline.
+  Expected: ['May 28, 2025', 'February 27, 2026', 'May 11, 2026', 'September 03, 2026']
+  Predicted: ['May 28, 2025', 'February 27, 2026', 'May 11, 2026', 'September 03, 2026', 'Unknown']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 192 total (175 prompt + 17 completion, 1 calls)
+
+Question 200:
+  Text: Provide a chronological list of all dates when Jackson Ramos was observed, from earliest to latest in the story's timeline.
+  Expected: ['June 14, 2025', 'February 27, 2026', 'April 09, 2026', 'August 24, 2026', 'September 22, 2026']
+  Predicted: ['June 14, 2025', 'February 27, 2026', 'April 09, 2026', 'August 24, 2026', 'September 22, 2026']
+  Search Success: True
+  Confidence: 1.00
+  Iterations: 1
+  Token Usage: 191 total (175 prompt + 16 completion, 1 calls)
+
